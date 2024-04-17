@@ -28,7 +28,7 @@
 
 #### profile card component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
-### recipe page [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
+#### recipe page [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
 ### results summary component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 

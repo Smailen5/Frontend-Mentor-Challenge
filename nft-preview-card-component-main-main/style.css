@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ---------- Tutta la card ---------- */
+
+.card-bg {
+    width: 250px;
+    height: 430px;
+}
+
+#card {
+    background: hsl(216, 50%, 16%);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ---------- Immagine ---------- */
+
+#card-img {
+    width: 220px;
+    margin-top: 5px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ---------- Sezione ---------- */
+
+#section {
+    margin-top: 50px;
+    margin: 0 20px 0;
+    color: white;
+    height: 40%;
+}
+
+h3 {
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.7em;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.cnt-max {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    height: 10px;
+}
+
+.data .cnt-img {
+    width: 8px;
+}
+
+.data span {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+    color: hsl(178, 100%, 50%);
+}
+
+#data span:nth-child(2) {
+    color: hsl(215, 51%, 70%);
+}
+
+#data .cnt-img:nth-child(1) {
+    width: 12px;
+}
+
+/* ---------- Div block ---------- */
+
+.block {
+    width: 100%;
+    height: 1px;
+    background: hsl(215, 32%, 27%);
+}
+
+/* ---------- Crediti ---------- */
+.tutto {
+    display: flex;
+    height: 30px;
+}
+
+.tutto * {
+    margin: 0;
+}
+
+.tutto .immagine img {
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.tutto .testo {
+    font-size: 0.75em;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+
+.tutto .testo strong {
+    color: white;
+}
+
+/* ----------Classi comuni ---------- */
+.margbt10 {
+    margin-bottom: 10px;
+}
+
+.margbt20 {
+    margin-bottom: 20px;
+}
+
+/* ---------- Al passaggio del mouse ---------- */
+.tutto .testo strong:hover,
+h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.img-active {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    position: absolute;
+    background: hsl(178, 100%, 50%, 0.5);
+    z-index: 1;
+    display: none;
+    /* display: flex; */
+}
+
+.active {
+    display: block;
+}
+.icon-view {
+    width: 40px;
+    margin: 41%;
+}

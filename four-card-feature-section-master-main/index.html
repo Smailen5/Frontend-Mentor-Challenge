@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <!-- import fonts I can't make it work otherwise -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+    </style>
+  </head>
+  <body class="font-poppins bg-very-light-gray">
+    <div class="px-6 py-12 md:pt-20 md:flex md:flex-col items-center">
+      <!-- Titolo contenitore -->
+      <div class="md:max-w-lg md:flex md:flex-col items-center">
+        <h1
+          class="text-2xl font-extralight text-center mb-4 md:mb-6 text-very-dark-blue md:text-4xl md:leading-normal md:max-w-md"
+        >
+          Reliable, efficient delivery
+          <span class="font-semibold">Powered by Technology</span>
+        </h1>
+
+        <p class="text-grayish-blue px-4 mb-14 md:mb-16 text-sm text-center">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+
+      <div class="md:grid grid-cols-3 grid-rows-4 gap-8">
+        <!-- Prima scheda -->
+        <div
+          class="rounded-lg overflow-hidden shadow-xl mb-6 p-6 relative md:row-start-2 md:row-end-4 md:m-0 md:max-w-sm md:p-8"
+        >
+          <div class="bg-cyan w-full h-1 absolute top-0 left-0"></div>
+
+          <h2 class="text-very-dark-blue font-semibold text-xl mb-2">
+            Supervisor
+          </h2>
+          <p class="text-grayish-blue text-sm tracking-wider mb-2 leading-6">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img
+            class="mt-6 float-right"
+            src="./images/icon-supervisor.svg"
+            alt="supervisor lent icon"
+          />
+        </div>
+
+        <!-- Seconda scheda -->
+        <div
+          class="rounded-lg overflow-hidden shadow-xl mb-6 p-6 relative md:row-start-1 md:row-end-3 md:m-0 md:max-w-sm md:p-8"
+        >
+          <div class="bg-red w-full h-1 absolute top-0 left-0"></div>
+
+          <h2 class="text-very-dark-blue font-semibold text-xl mb-2">
+            Team Builder
+          </h2>
+          <p class="text-grayish-blue text-sm tracking-wider mb-2 leading-6">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img
+            class="mt-6 float-right"
+            src="./images/icon-team-builder.svg"
+            alt="team builder icon"
+          />
+        </div>
+
+        <!-- Terza scheda -->
+        <div
+          class="rounded-lg overflow-hidden shadow-xl mb-6 p-6 relative md:row-start-3 md:row-end-5 md:m-0 md:max-w-sm md:p-8"
+        >
+          <div class="bg-orange w-full h-1 absolute top-0 left-0"></div>
+
+          <h2 class="text-very-dark-blue font-semibold text-xl mb-2">Karma</h2>
+          <p class="text-grayish-blue text-sm tracking-wider mb-2 leading-6">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img
+            class="mt-6 float-right"
+            src="./images/icon-karma.svg"
+            alt="karma icon"
+          />
+        </div>
+
+        <!-- Quarta scheda -->
+        <div
+          class="rounded-lg overflow-hidden shadow-xl mb-6 p-6 relative md:row-start-2 md:row-end-4 md:m-0 md:max-w-sm md:p-8"
+        >
+          <div class="bg-blue w-full h-1 absolute top-0 left-0"></div>
+
+          <h2 class="text-very-dark-blue font-semibold text-xl mb-2">
+            Calculator
+          </h2>
+          <p class="text-grayish-blue text-sm tracking-wider mb-2 leading-6">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img
+            class="mt-6 float-right"
+            src="./images/icon-calculator.svg"
+            alt="calculator icon"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

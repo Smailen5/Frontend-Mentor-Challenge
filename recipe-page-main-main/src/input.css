@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  li.py-2::marker,
+  li::marker {
+    color: hsl(14, 45%, 36%);
+  }
+  li::marker {
+    font-weight: 700;
+    font-family: 'outfit', sans-serif;
+  }
+}

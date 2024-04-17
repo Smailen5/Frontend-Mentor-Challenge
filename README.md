@@ -32,7 +32,7 @@
 
 #### results summary component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
-### social links profile [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
+#### social links profile [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
 ### social proof section [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 

@@ -4,9 +4,8 @@
 
 #### QR code [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/qr-code-component-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/qr-code-component-main-main/)
 
-#### 3 column preview card [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
+#### 3 column preview card [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/3-column-preview-card-component-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/3-column-preview-card-component-main-main/)
 
------------------------------ aggiorna link live site da qui -----------------------------
 #### article preview component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/article-preview-component-master-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/article-preview-component-master-main/)
 
 #### blog preview card [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/blog-preview-card-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/blog-preview-card-main-main/)
@@ -41,4 +40,4 @@
 
 #### testimonials grid section [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/testimonials-grid-section-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/testimonials-grid-section-main-main/)
 
-#### workit landing page [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/workit-landing-page-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/workit-landing-page-main/)
+<!-- #### workit landing page [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/workit-landing-page-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/workit-landing-page-main/) -->

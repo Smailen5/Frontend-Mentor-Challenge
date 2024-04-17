@@ -1,6 +1,5 @@
-# Frontend Mentor Challenge 😎
 
-### Frontend Mentor profile [Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+# Frontend Mentor profile 🚀 [Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 
 
 

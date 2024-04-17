@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+  </style>
+
+  <link rel="stylesheet" href="./dist/output.css">
+
+  <script defer src="./script2.js"></script>
+
+</head>
+
+<body class="font-rubik bg-very-dark-blue h-svh text-white flex justify-center items-center">
+
+  <div class="w-11/12 h-5/6 grid gap-6 lg:grid-cols-4 lg:w-4/5 lg:h-2/4">
+    <!-- contenitore principale cambia le dimensioni e la distanza dai bordi -->
+
+    <!-- card User -->
+    <div class="bg-dark-blue rounded-2xl lg:row-span-2">
+      <div
+        class="flex gap-4 items-center bg-blue rounded-2xl w-full px-6 py-8 lg:h-2/3 lg:flex-col lg:items-start lg:gap-10 ">
+        <!-- card superiore -->
+        <img src="./images/image-jeremy.png" alt="user icon"
+          class="w-14 h-14 border-2 border-white rounded-full lg:w-20 lg:h-20 ">
+        <div>
+          <div class="text-pale-blue">Report for</div>
+          <div class="text-xl lg:text-3xl lg:font-light">Jeremy Robson</div>
+        </div>
+      </div>
+
+      <div class="lg:h-1/3"><!-- card inferiore -->
+        <div id="button-group" class="grid grid-cols-3 items-center p-6 pr-0 lg:grid-cols-1 lg:justify-between lg:h-full ">
+          <input type="radio" name="select-time" id="daily" class="hidden" value="daily" checked>
+          <label for="daily" class="hover:text-white text-pale-blue cursor-pointer ">Daily</label>
+          <input type="radio" name="select-time" id="weekly" class="hidden" value="weekly">
+          <label for="weekly" class="hover:text-white text-pale-blue cursor-pointer ">Weekly</label>
+          <input type="radio" name="select-time" id="monthly" class="hidden" value="monthly">
+          <label for="monthly" class="hover:text-white text-pale-blue cursor-pointer ">Monthly</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- card Work -->
+    <div class="bg-light-red-work rounded-2xl lg:flex lg:flex-col lg:justify-between">
+      <div class="flex justify-end px-6 overflow-hidden">
+        <img src="./images/icon-work.svg" alt="icon work bag" class="-mt-4">
+      </div>
+
+      <div class="bg-dark-blue rounded-2xl w-full p-6 lg:h-3/4 cursor-pointer hover:bg-desaturated-blue">
+
+        <div class="grid grid-cols-2 h-[63px] lg:h-full lg:grid-cols-1">
+          <!-- scheda orari lavoro  ATTENZIONE IL HEIGHT DEVE ESSERE 63PX IN MOBILE, 100% in desktop, non ho capito perche non prende il valore del padre
+          anche se non definito in maniera assoluta e definito in percentuale -->
+
+          <div class="col-span-1 lg:col-span-2 lg:w-4/5 lg:row-start-1 lg:col-start-1">
+            <h3 class="font-semibold">Work</h3>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1 "><img
+              src="./images/icon-ellipsis.svg" alt="ellipsis icon"></div>
+          <div class="col-span-1 lg:col-span-2 lg:row-start-2">
+            <p id="work-hour" class="text-2xl font-light lg:text-4xl">5hrs</p>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-span-2 lg:row-start-3 lg:justify-self-start">
+            <p id="work-previous" class="text-pale-blue">Previous - 7hrs</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- card Play -->
+    <div class="bg-soft-blue-play rounded-2xl lg:flex lg:flex-col lg:justify-between">
+      <div class="flex justify-end px-6 overflow-hidden ">
+        <img src="./images/icon-play.svg" alt="icon joypad console" class="-mt-4">
+      </div>
+
+      <div class="bg-dark-blue rounded-2xl w-full p-6 lg:h-3/4 cursor-pointer hover:bg-desaturated-blue">
+        <div class="grid grid-cols-2 h-[63px] lg:h-full lg:grid-cols-1">
+          <!-- scheda orari lavoro  ATTENZIONE IL HEIGHT DEVE ESSERE 63PX -->
+          <div class="col-span-1 lg:col-span-2 lg:w-4/5 lg:row-start-1 lg:col-start-1">
+            <h3 class="font-semibold">Play</h3>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1"><img
+              src="./images/icon-ellipsis.svg" alt="ellipsis icon"></div>
+          <div class="col-span-1 lg:col-span-2 lg:row-start-2">
+            <p id="play-hour" class="text-2xl font-light lg:text-4xl">1hrs</p>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-span-2 lg:row-start-3 lg:justify-self-start">
+            <p id="play-previous" class="text-pale-blue">Previous - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card Study -->
+    <div class="bg-light-red-study rounded-2xl lg:flex lg:flex-col lg:justify-between">
+      <div class="flex justify-end px-6 overflow-hidden ">
+        <img src="./images/icon-study.svg" alt="icon book study" class="-mt-4">
+      </div>
+
+      <div class="bg-dark-blue rounded-2xl w-full p-6 lg:h-3/4 cursor-pointer hover:bg-desaturated-blue">
+        <div class="grid grid-cols-2 h-[63px] lg:h-full lg:grid-cols-1">
+          <!-- scheda orari lavoro  ATTENZIONE IL HEIGHT DEVE ESSERE 63PX -->
+          <div class="col-span-1 lg:col-span-2 lg:w-4/5 lg:row-start-1 lg:col-start-1">
+            <h3 class="font-semibold">Study</h3>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1"><img
+              src="./images/icon-ellipsis.svg" alt="ellipsis icon"></div>
+          <div class="col-span-1 lg:col-span-2 lg:row-start-2">
+            <p id="study-hour" class="text-2xl font-light lg:text-4xl">0hrs</p>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-span-2 lg:row-start-3 lg:justify-self-start">
+            <p id="study-previous" class="text-pale-blue">Previous - 1hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card Exercise -->
+    <div class="bg-lime-green-exercise rounded-2xl lg:flex lg:flex-col lg:justify-between">
+      <div class="flex justify-end px-6 overflow-hidden ">
+        <img src="./images/icon-exercise.svg" alt="icon body exercise" class="-mt-1">
+      </div>
+
+      <div class="bg-dark-blue rounded-2xl w-full p-6 lg:h-3/4 cursor-pointer hover:bg-desaturated-blue">
+        <div class="grid grid-cols-2 h-[63px] lg:h-full lg:grid-cols-1">
+          <!-- scheda orari lavoro  ATTENZIONE IL HEIGHT DEVE ESSERE 63PX -->
+          <div class="col-span-1 lg:col-span-2 lg:w-4/5 lg:row-start-1 lg:col-start-1">
+            <h3 class="font-semibold">Exercise</h3>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1"><img
+              src="./images/icon-ellipsis.svg" alt="ellipsis icon"></div>
+          <div class="col-span-1 lg:col-span-2 lg:row-start-2">
+            <p id="exercise-hour" class="text-2xl font-light lg:text-4xl">1hrs</p>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-span-2 lg:row-start-3 lg:justify-self-start">
+            <p id="exercise-previous" class="text-pale-blue">Previous - 1hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card Social -->
+    <div class="bg-violet-social rounded-2xl lg:flex lg:flex-col lg:justify-between">
+      <div class="flex justify-end px-6 overflow-hidden ">
+        <img src="./images/icon-social.svg" alt="icon social" class="-mt-4">
+      </div>
+
+      <div class="bg-dark-blue rounded-2xl w-full p-6 lg:h-3/4 cursor-pointer hover:bg-desaturated-blue">
+        <div class="grid grid-cols-2 h-[63px] lg:h-full lg:grid-cols-1">
+          <!-- scheda orari lavoro  ATTENZIONE IL HEIGHT DEVE ESSERE 63PX -->
+          <div class="col-span-1 lg:col-span-2 lg:w-4/5 lg:row-start-1 lg:col-start-1">
+            <h3 class="font-semibold">Social</h3>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1"><img
+              src="./images/icon-ellipsis.svg" alt="ellipsis icon"></div>
+          <div class="col-span-1 lg:col-span-2 lg:row-start-2">
+            <p id="social-hour" class="text-2xl font-light lg:text-4xl">1hrs</p>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-span-2 lg:row-start-3 lg:justify-self-start">
+            <p id="social-previous" class="text-pale-blue">Previous - 3hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- card Self Care -->
+    <div class="bg-soft-orange-self-care rounded-2xl lg:flex lg:flex-col lg:justify-between">
+      <div class="flex justify-end px-6 overflow-hidden ">
+        <img src="./images/icon-self-care.svg" alt="icon self care" class="-mt-4">
+      </div>
+
+      <div class="bg-dark-blue rounded-2xl w-full p-6 lg:h-3/4 cursor-pointer hover:bg-desaturated-blue">
+        <div class="grid grid-cols-2 h-[63px] lg:h-full lg:grid-cols-1">
+          <!-- scheda orari lavoro  ATTENZIONE IL HEIGHT DEVE ESSERE 63PX -->
+          <div class="col-span-1 lg:col-span-2 lg:w-4/5 lg:row-start-1 lg:col-start-1">
+            <h3 class="font-semibold">Self Care</h3>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1"><img
+              src="./images/icon-ellipsis.svg" alt="ellipsis icon"></div>
+          <div class="col-span-1 lg:col-span-2 lg:row-start-2">
+            <p id="self-hour" class="text-2xl font-light lg:text-4xl">0hrs</p>
+          </div>
+          <div class="col-span-1 justify-self-end self-center lg:col-span-2 lg:row-start-3 lg:justify-self-start">
+            <p id="self-previous" class="text-pale-blue">Previous - 1hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-4 lg:hidden"></div><!-- contenitore per la distanza dal margine inferiore -->
+  </div>
+</body>
+
+</html>

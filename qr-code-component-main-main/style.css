@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(212.31, 44.83%, 88%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* ---------- CONTENITORE BIANCO ---------- */
+
+.container {
+    display: flex;
+    width: 85vw;
+    height: 550px;
+    background-color: hsla(0, 0%, 100%, 1);
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ---------- QR CODE ---------- */
+
+.container img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* ---------- SEZIONE TESTO ---------- */
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 70vw;
+    height: 150px;
+    margin-bottom: 20px;
+}
+section h2 {
+    font-size: 22px;
+    color: hsla(217, 44%, 22%, 1);
+}
+section p {
+    color: hsla(219, 15%, 55%, 1);
+}
+
+/* ---------- MEDIA QUERY PER DESKTOP ---------- */
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 320px;
+        height: 497px;
+        justify-content: space-evenly;
+    }
+    
+    section {
+        width: 288px;
+        height: 129px;
+        gap: 16px;
+    }
+    
+}

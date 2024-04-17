@@ -1,3 +1,0 @@
-ricordati di dare i crediti per la validazione del form absolute
-
-https://howto.webarea.it/javascript/come-validare-un-indirizzo-email-in-javascript_124

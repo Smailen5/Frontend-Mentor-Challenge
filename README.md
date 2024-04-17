@@ -6,7 +6,7 @@
 
 #### 3 column preview card [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
-### article preview component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
+#### article preview component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
 ### blog preview card [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 

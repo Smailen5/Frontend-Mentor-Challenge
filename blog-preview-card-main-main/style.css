@@ -1,0 +1,128 @@
+:root {
+    /* Primary color */
+    --Yellow: hsl(47, 88%, 63%);
+    /* Neutral color */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    /* Typography */
+    --font-family: 'Figtree', sans-serif;
+    --font-size-x-small: 12px;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    --font-size-x-large: 20px;
+    --font-size-xx-large: 24px;
+    --font-weight-medium: 600;
+    --font-weight-large: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+main {
+    width: 88%;
+    height: 60%;
+    background-color: var(--White);
+    border-radius: 20px;
+    border: 1px solid var(--Black);
+    box-shadow: 8px 8px 0px #000;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-self: stretch;
+    align-items: flex-start;
+    font-size: var(--font-size-x-small);
+}
+
+.highlighted {
+    background: var(--Yellow, #F4D04E);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.highlighted>p {
+    font-weight: var(--font-weight-large);
+}
+
+section>h3 {
+    font-size: var(--font-size-x-large);
+    font-weight: var(--font-weight-large);
+}
+
+section p:nth-child(4) {
+    color: var(--Grey);
+    font-size: var(--font-size-small);
+    line-height: 150%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.userpic img {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
+
+.container span {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-large);
+    line-height: 150%;
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* stili per la media query */
+    main {
+        width: 27%;
+        height: 54%;
+    }
+
+    section {
+        font-size: var(--font-size-small);
+    }
+
+    section>h3 {
+        font-size: var(--font-size-xx-large);
+    }
+
+    section p:nth-child(4) {
+        font-size: var(--font-size-medium);
+    }
+
+    section>h3:hover {
+        color: var(--Yellow);
+    }
+    main:hover {
+        box-shadow: 16px 16px 0px 0px #000;
+    }
+}

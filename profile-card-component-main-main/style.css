@@ -1,0 +1,145 @@
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    width: 1440px;
+    height: 720px;
+    background: #19A1AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ---------- Sfere colorate ---------- */
+
+.cnt-img {
+    position: absolute;
+    bottom: 204px;
+    right: 770px;
+}
+
+.cnt-img.img2 {
+    top: 431px;
+    left: 638px;
+}
+
+main {
+    background: white;
+    width: 350px;
+    height: 374px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: relative;
+    z-index: 1;
+    box-shadow: 5px 5px 20px hsl(229, 23%, 23%);
+}
+
+/* ---------- Immagine sfondo background card ---------- */
+
+main img {
+    width: 350px;
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* ---------- Immagine profilo ---------- */
+
+#profile-img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 92px;
+    border: 5px solid white;
+}
+
+/* ---------- Container principale ---------- */
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .details h1 {
+    margin: 10px;
+}
+
+.details span {
+    font-weight: 400;
+}
+
+/* ---------- Div linea ---------- */
+
+.block {
+    width: 100%;
+    height: 1px;
+    background: #E8E9EC;
+    margin: 25px 0;
+}
+
+/* ---------- Contenitore footer ---------- */
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footer span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.footer span span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ---------- Media query smarphone ---------- */
+
+@media (max-width: 768px) {
+    body {
+        width: 375px;
+        height: 667px;
+    }
+
+    .cnt-img {
+        bottom: -672px;
+        right: -331px;
+    }
+
+    .cnt-img.img2 {
+        display: none;
+    }
+    main, main img {
+        width: 326px;
+    }
+    
+}

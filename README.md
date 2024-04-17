@@ -22,9 +22,7 @@
 
 #### order summary component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
-### order summary component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
-
-### pod request access landing page [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
+#### pod request access landing page [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
 ### product preview card component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 

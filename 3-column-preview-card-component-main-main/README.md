@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Soluzione](https://github.com/Smailen5)
-- Live Site URL: [Sito](https://smailen5.github.io/3-column-preview-card-component-main/)
+- Solution URL: [Soluzione](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/3-column-preview-card-component-main-main)
+- Live Site URL: [Sito](https://smailen5.github.io/Frontend-Mentor-Challenge/3-column-preview-card-component-main-main/)
 
 ## My process
 

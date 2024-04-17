@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site](https://smailen5.github.io/nft-preview-card-component-main/)
+- Solution here: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/nft-preview-card-component-main-main)
+- Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/nft-preview-card-component-main-main/)
 
 ## My process
 

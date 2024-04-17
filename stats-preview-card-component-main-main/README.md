@@ -31,8 +31,8 @@ Gli utenti dovrebbero essere in grado di:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Smailen5/stats-preview-card-component-main)
-- Live Site URL: [Live site URL here](https://smailen5.github.io/stats-preview-card-component-main/)
+- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/stats-preview-card-component-main-main)
+- Live Site URL: [Live site URL here](https://smailen5.github.io/Frontend-Mentor-Challenge/stats-preview-card-component-main-main/)
 
 
 ## My process

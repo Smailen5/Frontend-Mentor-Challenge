@@ -24,8 +24,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [solution](https://github.com/Smailen5/recipe-page-main)
-- Live Site URL: [live site](https://smailen5.github.io/recipe-page-main/)
+- Solution URL: [solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/recipe-page-main-main)
+- Live Site URL: [live site](https://smailen5.github.io/Frontend-Mentor-Challenge/recipe-page-main-main/)
 
 ## My process
 

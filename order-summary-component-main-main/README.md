@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Smailen5/order-summary-component-main)
-- Live Site URL: [live site](https://smailen5.github.io/order-summary-component-main/)
+- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/order-summary-component-main-main)
+- Live Site URL: [live site](https://smailen5.github.io/Frontend-Mentor-Challenge/order-summary-component-main-main/)
 
 ## My process
 

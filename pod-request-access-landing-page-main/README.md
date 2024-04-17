@@ -42,8 +42,8 @@ Screenshot desktop con effetto hover del button e paragrafo di errore.
 
 ### Links
 
-- Solution URL: [Soluzione](https://github.com/Smailen5/pod-request-access-landing-page)
-- Live Site URL: [Sito live](https://smailen5.github.io/pod-request-access-landing-page/)
+- Solution URL: [Soluzione](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/pod-request-access-landing-page-main)
+- Live Site URL: [Sito live](https://smailen5.github.io/Frontend-Mentor-Challenge/pod-request-access-landing-page-main/)
 
 ## My process
 

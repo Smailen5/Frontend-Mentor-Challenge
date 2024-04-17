@@ -28,8 +28,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Smailen5/profile-card-component-main)
-- Live Site URL: [Live site URL here](https://smailen5.github.io/profile-card-component-main/)
+- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/profile-card-component-main-main)
+- Live Site URL: [Live site URL here](https://smailen5.github.io/Frontend-Mentor-Challenge/profile-card-component-main-main/)
 
 ## My process
 

@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://github.com/Smailen5/interactive-rating-component-main)
-- Live Site URL: [live site URL here](https://smailen5.github.io/interactive-rating-component-main/)
+- Solution URL: [solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/interactive-rating-component-main-main)
+- Live Site URL: [live site URL here](https://smailen5.github.io/Frontend-Mentor-Challenge/interactive-rating-component-main-main/)
 
 ## My process
 

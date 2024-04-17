@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/testimonials-grid-section-main)
-- Live Site URL: [Live site](https://smailen5.github.io/testimonials-grid-section-main/)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/testimonials-grid-section-main-main)
+- Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/testimonials-grid-section-main-main/)
 
 ## My process
 

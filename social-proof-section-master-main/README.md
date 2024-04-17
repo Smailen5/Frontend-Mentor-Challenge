@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Soluzione URL: [Soluzione QUI](https://github.com/Smailen5/social-proof-section-master)
-- Sito Live URL: [Sito live QUI](https://smailen5.github.io/social-proof-section-master/)
+- Soluzione URL: [Soluzione QUI](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/social-proof-section-master-main)
+- Sito Live URL: [Sito live QUI](https://smailen5.github.io/Frontend-Mentor-Challenge/social-proof-section-master-main/)
 
 ## My process
 

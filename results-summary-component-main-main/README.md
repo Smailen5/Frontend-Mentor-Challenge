@@ -23,7 +23,8 @@
 
 ### Links
 
-- Live Site URL: [Live site URL here](https://smailen5.github.io/results-summary-component-main/)
+- Solution here: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/results-summary-component-main-main)
+- Live Site URL: [Live site URL here](https://smailen5.github.io/Frontend-Mentor-Challenge/results-summary-component-main-main/)
 
 ### My process
 

@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/article-preview-component-master)
-- Live Site URL: [Live site](https://smailen5.github.io/article-preview-component-master/)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/article-preview-component-master-main)
+- Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/article-preview-component-master-main/)
 
 ## My process
 

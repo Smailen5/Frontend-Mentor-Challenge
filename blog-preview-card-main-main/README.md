@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Smailen5/blog-preview-card-main)
-- Live Site URL: [Add live site URL here](https://smailen5.github.io/blog-preview-card-main/)
+- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/blog-preview-card-main-main)
+- Live Site URL: [Add live site URL here](https://smailen5.github.io/Frontend-Mentor-Challenge/blog-preview-card-main-main/)
 
 ## My process
 

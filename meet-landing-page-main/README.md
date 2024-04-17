@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/meet-landing-page)
-- Live Site URL: [Live site](https://smailen5.github.io/meet-landing-page/)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/meet-landing-page-main)
+- Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/meet-landing-page-main/)
 
 ## My process
 

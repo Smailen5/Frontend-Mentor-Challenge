@@ -36,7 +36,7 @@
 
 #### social proof section [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
-### stats preview card component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
+#### stats preview card component [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 
 ### testimonials grid section [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/)
 

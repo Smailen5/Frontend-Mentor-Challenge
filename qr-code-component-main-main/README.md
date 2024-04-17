@@ -16,13 +16,13 @@ This is my first challenge on [Frontend Mentor](https://www.frontendmentor.io/ho
 
 - versione 1.1
 
-![Version Descktop v 1.1](/screenshot/desktop-version-1.1.jpeg)
-![Version Mobile v 1.1](/screenshot/smartphone-version-1.1.jpeg)
+![Version Desktop v 1.1](./screenshot/desktop-version-1.1.jpeg)
+![Version Mobile v 1.1](./screenshot/smartphone-version-1.1.jpeg)
 
 - versione 1.0
 
-![Version Descktop](/screenshot/web-version.jpeg)
-![Version Mobile](/screenshot/mobile-version.jpeg)
+![Version Desktop](./screenshot/web-version.jpeg)
+![Version Mobile](./screenshot/mobile-version.jpeg)
 
 ### Links
 

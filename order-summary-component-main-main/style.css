@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(225, 100%, 95%);
+}
+
+body .img-bg {
+    position: absolute;
+    bottom: 250px;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+body .img-bg-mobile {
+    display: none;
+}
+
+.card-cnt {
+    width: 400px;
+    height: 650px;
+    background: white;
+    border-radius: 15px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main span {
+    color: hsl(224, 23%, 55%);
+}
+
+.section h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.section p {
+    width: 95%;
+    margin: 25px 0;
+    text-align: center;
+    line-height: 25px;
+    color: hsl(224, 23%, 55%);
+}
+
+.container {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: hsl(225, 100%, 99%);
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.container a {
+    font-weight: 700;
+}
+
+.content-container {
+    display: flex;
+    gap: 10px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+}
+
+.date span:nth-child(1) {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-weight: 700;
+    box-shadow: 10px 10px 10px hsl(225, 100%, 94%);
+}
+
+main span:nth-child(5) {
+    font-weight: 900;
+}
+/* ---------- Al passaggio del mouse ----------*/
+
+button:hover {
+    cursor: pointer;
+    background: hsl(225, 100%, 70%);
+}
+main span:nth-child(5) {
+    cursor: pointer;
+}
+.container a {
+    color: hsl(225, 100%, 70%);
+}
+
+/* ---------- Media query per smarphone ----------*/
+@media only screen and (max-width: 600px) {
+
+
+    body .img-bg:nth-child(1) {
+        display: none;
+    }
+
+    body .img-bg-mobile {
+        display: block;
+        position: absolute;
+        bottom: 250px;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .card-cnt {
+        width: 90%;
+        height: 90%;
+    }
+}

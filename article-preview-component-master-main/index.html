@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <link rel="stylesheet" href="./dist/output.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+  </style>
+  <script defer src="./dist/script.js"></script>
+</head>
+
+<body class="font-Manrope text-base flex justify-center items-center h-screen bg-Light-Grayish-Blue">
+
+  <!-- Per ora tengo queste misure poi si vedra quando arrivo al layout del desktop -->
+  <div class="w-10/12 md:w-7/12 lg:w-6/12 rounded-xl bg-white overflow-hidden relative lg:flex lg:overflow-visible	">
+
+    <!-- contenitore immagine -->
+    <div class="w-full h-36 bg-center bg-cover bg-no-repeat lg:h-auto lg:bg-left lg:rounded-l-xl"
+      style="background-image: url(./images/drawers.jpg);"></div>
+
+    <!-- contenitore testo parte inferiore -->
+    <div class="p-8 pb-4">
+      <h2 class="text-Dark-Grayish-Blue font-bold text-lg pb-4 lg:text-xl">
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </h2>
+
+      <p class="text-Dark-Blue  pb-7">
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.
+      </p>
+
+      <!-- contenitore principale per gestire il layout di share e user -->
+      <div id="footerUser" class="flex justify-between items-center lg:pb-4 ">
+        <!--qua ci va invisibile non hidden attenzione-->
+        <div class="flex gap-3 items-center"><!-- contenitore per gestire il layout di user -->
+          <img src="./images/avatar-michelle.jpg" alt="" class="rounded-full w-10 h-10">
+          <div class="flex flex-col">
+            <h2 class="text-Dark-Grayish-Blue font-bold">Michelle Appleton</h2>
+            <p class="text-Grayish-Blue">28 Jun 2020</p>
+          </div>
+        </div>
+        <div id="share"
+          class="w-7 h-7 bg-no-repeat bg-Light-Grayish-Blue rounded-full bg-center cursor-pointer lg:hover:fill-Light-Grayish-Blue hover:bg-Dark-Grayish-Blue"
+          style="background-image: url(./images/icon-share.svg);">
+        </div>
+      </div>
+      <!-- contenitore a comparsa alla pressione di share -->
+      <div id="footerShare"
+        class="w-full h-14 bg-Dark-Grayish-Blue absolute bottom-0 start-0
+         hidden lg:rounded-xl lg:w-52 lg:-end-16 lg:bottom-24	">
+        <!--ricordati di aggiungere hidden e start-0 o qui va tutto a puttane-->
+        <div class="h-full flex justify-between items-center px-8 ">
+          <!-- contenitore sinistro icone e share -->
+          <div class="flex gap-3">
+            <div class="text-Grayish-Blue uppercase tracking-ultraWide ">Share</div>
+            <div id="Loghi" class="flex gap-3 ">
+              <div style="background-image: url(./images/icon-facebook.svg);"
+                class="bg-no-repeat bg-contain bg-center p-[35%]"></div>
+              <div style="background-image: url(./images/icon-twitter.svg);"
+                class="bg-no-repeat bg-contain bg-center p-[35%]"></div>
+              <div style="background-image: url(./images/icon-pinterest.svg);"
+                class="bg-no-repeat bg-contain bg-center p-[35%]"></div>
+            </div>
+          </div>
+          <!-- contenitore destro icona share -->
+          <div id="shareSecondary"
+            class="w-7 h-7 bg-no-repeat bg-Dark-Blue rounded-full flex justify-center items-center cursor-pointer animate-pulse lg:hidden">
+            <!-- inserito icona da font-awesome perche non invertiva bene i colori l'icona in dotazione-->
+            <i class="fa-solid fa-share invert scale-125"></i>
+          </div>
+        </div>
+        <div class="w-5 h-5 bg-Dark-Grayish-Blue right-2/4 absolute overflow-hidde">
+          <div class="w-5 h-5 bg-white right-2/4 rotate-45 absolute top-1"></div>
+          <div class="w-5 h-5 bg-white left-2/4 rotate-45 absolute top-1"></div>
+          <div class="w-5 h-1 bg-white absolute bottom-0"></div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <script src="https://kit.fontawesome.com/b4ac31209a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

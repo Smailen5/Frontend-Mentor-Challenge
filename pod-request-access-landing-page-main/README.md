@@ -31,9 +31,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot della soluzione smartphone](/starter-code/screenshot/smartphone.jpeg)
-![Screenshot della soluzione tablet](/starter-code/screenshot/tablet.jpeg)
-![Screenshot della soluzione desktop](/starter-code/screenshot/desktop.jpeg)
+![Screenshot della soluzione smartphone](./starter-code/screenshot/smartphone.jpeg)
+![Screenshot della soluzione tablet](./starter-code/screenshot/tablet.jpeg)
+![Screenshot della soluzione desktop](./starter-code/screenshot/desktop.jpeg)
 
 Screenshot desktop con effetto hover del button e paragrafo di errore.
 

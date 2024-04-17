@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Phone](/images/Phone.jpeg)
-![Desktop](/images/descktop.jpeg)
+![Phone](./images/Phone.jpeg)
+![Desktop](./images/descktop.jpeg)
 
 ### Links
 

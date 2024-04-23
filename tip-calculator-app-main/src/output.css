@@ -616,6 +616,10 @@ video {
   margin-top: 1rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -762,6 +766,18 @@ video {
   padding-top: 1.5rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -790,6 +806,10 @@ video {
   font-weight: 700;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .tracking-ultra-wide {
   letter-spacing: 0.3em;
 }
@@ -816,4 +836,23 @@ video {
 
 input[type="number"]{
   color: hsl(183, 100%, 15%);
+}
+
+.hover\:fill-white:hover {
+  fill: hsl(0, 0%, 100%);
+}
+
+.active\:bg-white:active {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.active\:bg-strong-cyan:active {
+  --tw-bg-opacity: 1;
+  background-color: hsl(172 67% 45% / var(--tw-bg-opacity));
+}
+
+.active\:text-very-dark-cyan:active {
+  --tw-text-opacity: 1;
+  color: hsl(183 100% 15% / var(--tw-text-opacity));
 }

@@ -45,7 +45,7 @@ resetButton.addEventListener("click", function () {
   tipAmount.innerText = "$0.00";
   totalAmount.innerText = "$0.00";
 })
-
+// ricordati che devi aggiungere la possibilita di inserire un valore
 custom.addEventListener("click", () => {
     alert('questa funzione non e ancora disponibile, riprova tra un po')
 })

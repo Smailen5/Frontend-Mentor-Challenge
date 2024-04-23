@@ -588,6 +588,10 @@ video {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -846,6 +850,10 @@ input[type="number"]{
   color: hsl(183, 100%, 15%);
 }
 
+.invalid\:border:invalid {
+  border-width: 1px;
+}
+
 .hover\:fill-white:hover {
   fill: hsl(0, 0%, 100%);
 }
@@ -863,6 +871,10 @@ input[type="number"]{
 .active\:text-very-dark-cyan:active {
   --tw-text-opacity: 1;
   color: hsl(183 100% 15% / var(--tw-text-opacity));
+}
+
+.peer:invalid ~ .peer-invalid\:visible {
+  visibility: visible;
 }
 
 @media (min-width: 1024px) {
@@ -934,6 +946,10 @@ input[type="number"]{
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-4 {
@@ -1032,5 +1048,19 @@ input[type="number"]{
 
   .lg\:text-xl {
     font-size: 64px;
+  }
+
+  .lg\:focus-visible\:border:focus-visible {
+    border-width: 1px;
+  }
+
+  .lg\:focus-visible\:border-strong-cyan:focus-visible {
+    --tw-border-opacity: 1;
+    border-color: hsl(172 67% 45% / var(--tw-border-opacity));
+  }
+
+  .lg\:active\:bg-grayish-cyan:active {
+    --tw-bg-opacity: 1;
+    background-color: hsl(184 14% 56% / var(--tw-bg-opacity));
   }
 }

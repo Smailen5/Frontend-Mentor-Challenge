@@ -110,3 +110,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+- con min="1" mi sono risparmiato 5 righe di codice per verificare che il valore inserito fosse maggiore di 0 XD GGGGGGGG fonte w3school
+https://www.w3schools.com/tags/att_input_min.asp
+
+- trasformare le stringhe in numeri e stato facile, mi son ricordato che esiste gia una funzione per questo
+tipInput.addEventListener('input', function(event){
+    const tipNumber = Number(event.target.value);
+}) Number() e non toNumber() come pensavo all'inizio
+
+- 

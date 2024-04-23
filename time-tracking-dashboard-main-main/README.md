@@ -13,6 +13,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Attributions](#attributions)
 
 
 ## Overview
@@ -130,3 +131,7 @@ function daily(data) {
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
+
+## Attributions
+
+A big shoutout goes to [@Grego14](https://www.frontendmentor.io/profile/Grego14) who gave me good advice both for refactoring the JS code and regarding button listeners.

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input[type="number"]{
+    color: hsl(183, 100%, 15%);
+}

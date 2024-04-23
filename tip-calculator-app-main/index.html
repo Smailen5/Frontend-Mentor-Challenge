@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
 
 
   <link rel="stylesheet" href="./src/output.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+  </style>
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
-<body>
 
-  Bill
+<body class="font-space-mono font-bold bg-light-grayish-cyan grid justify-items-center items-center ">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <div class="max-w-28 text-base tracking-ultra-wide py-8 text-very-dark-cyan font-bold">
+    <h3>SPLI<br>TTER</h3>
+  </div>
 
-  Number of People
+  <div class="card bg-white p-6 rounded-t-3xl grid">
+    <!-- Input bill -->
+    <div class="relative pb-4">
+      <label for="bill-input" class="text-grayish-cyan ">Bill</label>
+      <input type="number" name="bill" id="bill-input"
+        class="w-full bg-very-light-grayish-cyan text-very-dark-cyan p-1 px-4 text-right ">
+      <img src="./images/icon-dollar.svg" alt="Icona dollaro" class="absolute left-5 top-7 mt-1 mr-1">
+    </div>
+    <!-- Select tip -->
+    <div class="pb-4">
+      <p class="text-grayish-cyan pb-2">Select Tip %</p>
+      <div class="grid grid-cols-2 gap-4">
+        <label for="5" class="text-center bg-very-dark-cyan text-white rounded-md py-2">5%</label>
+        <input type="radio" name="select-tip" id="5" class="hidden">
+        <label for="10" class="text-center bg-very-dark-cyan text-white rounded-md py-2">10%</label>
+        <input type="radio" name="select-tip" id="10" class="hidden">
+        <label for="15" class="text-center bg-very-dark-cyan text-white rounded-md py-2">15%</label>
+        <input type="radio" name="select-tip" id="15" class="hidden">
+        <label for="25" class="text-center bg-very-dark-cyan text-white rounded-md py-2">25%</label>
+        <input type="radio" name="select-tip" id="25" class="hidden">
+        <label for="50" class="text-center bg-very-dark-cyan text-white rounded-md py-2">50%</label>
+        <input type="radio" name="select-tip" id="50" class="hidden">
+        <label for="custom"
+          class="text-center bg-very-light-grayish-cyan text-grayish-cyan rounded-md py-2">Custom</label>
+        <input type="radio" name="select-tip" id="custom" class="hidden">
+      </div>
+    </div>
+    <!-- Input number of people -->
+    <div class="relative pb-4">
+      <label for="person-input" class="text-grayish-cyan ">Number of People</label>
+      <input type="number" name="person-input" id="person-input"
+        class="w-full bg-very-light-grayish-cyan text-very-dark-cyan p-1 px-4 text-right ">
+      <img src="./images/icon-person.svg" alt="Icona persona" class="absolute left-5 top-7 mt-1 mr-1">
+    </div>
+    <!-- Output container -->
+    <div class="bg-very-dark-cyan rounded-xl p-4 pt-6 text-white grid gap-4">
+      <div class="flex justify-between items-center">
+        <p class="text-xs">Tip Amount<br><span class="text-grayish-cyan">/ person</span></p>
+        <div class="text-strong-cyan text-base">$4.27</div>
+      </div>
 
-  Tip Amount
-  / person
+      <div class="flex justify-between items-center">
+        <p class="text-xs">Total<br><span class="text-grayish-cyan">/ person</span></p>
+        <div class="text-strong-cyan text-base">$32.79</div>
+      </div>
+    
+      <button type="reset" class="bg-strong-cyan text-very-dark-cyan w-full mt-4 rounded-md p-2">Reset</button>
+    </div>
 
-  Total
-  / person
 
-  Reset
-  
-  <div class="attribution">
+  </div>
+
+
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+
 </html>

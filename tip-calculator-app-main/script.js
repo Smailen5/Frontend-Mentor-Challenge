@@ -4,6 +4,7 @@ const peopleInput = document.querySelector("#people-input");
 const resetButton = document.querySelector("#reset-button");
 const tipAmount = document.querySelector("#tip-amount");
 const totalAmount = document.querySelector("#total-amount");
+const custom = document.querySelector("#custom");
 
 // inizializzo le variabili per poterle usare fuori dalle funzioni
 let billNumber;
@@ -43,4 +44,8 @@ resetButton.addEventListener("click", function () {
   peopleInput.value = "";
   tipAmount.innerText = "$0.00";
   totalAmount.innerText = "$0.00";
+})
+
+custom.addEventListener("click", () => {
+    alert('questa funzione non e ancora disponibile, riprova tra un po')
 })

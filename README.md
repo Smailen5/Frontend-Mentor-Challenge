@@ -2,6 +2,7 @@
 # My portfolio from Frontend Mentor 🚀 [Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 
 
+#### Tip calculator [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/tip-calculator-app-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/tip-calculator-app-main/)
 
 #### Time tracking dashboard [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/time-tracking-dashboard-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/time-tracking-dashboard-main-main/)
 

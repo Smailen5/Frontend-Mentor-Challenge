@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      "jet-brains": ["JetBrains Mono", "monospace"],
+    },
+    extend: {
+      colors: {
+        "green-custom": "#A4FFAF",
+      },
+    },
+    plugins: [],
   },
-  plugins: [],
-}
+};

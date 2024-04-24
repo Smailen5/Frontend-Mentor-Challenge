@@ -1,34 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
   <title>Frontend Mentor | Password generator app</title>
 
-  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./src/output.css" />
 </head>
 
-<body>
-  <div class="bg-slate-500 container h-20"></div>
-  Password Generator
+<body class="font-jet-brains bg-slate-900 flex flex-col justify-center items-center gap-6 h-svh">
+  <h3 class="text-slate-500">Password Generator</h3>
 
-  P4$5W0rD!
+  <div class="grid gap-4 w-2/5 text-white">
+    <!-- contenitore password -->
+    <div class="bg-gray-600 flex items-center justify-between p-5 px-8">
+      <div>
+        <p class="text-3xl">P4$5W0rD!</p>
+      </div>
+      <div>
+        <!-- default fill="#A4FFAF" -->
+        <svg width="21" height="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.341 3.091 17.909.659A2.25 2.25 0 0 0 16.319 0H8.25A2.25 2.25 0 0 0 6 2.25V4.5H2.25A2.25 2.25 0 0 0 0 6.75v15A2.25 2.25 0 0 0 2.25 24h10.5A2.25 2.25 0 0 0 15 21.75V19.5h3.75A2.25 2.25 0 0 0 21 17.25V4.682a2.25 2.25 0 0 0-.659-1.591ZM12.469 21.75H2.53a.281.281 0 0 1-.281-.281V7.03a.281.281 0 0 1 .281-.281H6v10.5a2.25 2.25 0 0 0 2.25 2.25h4.5v1.969a.282.282 0 0 1-.281.281Zm6-4.5H8.53a.281.281 0 0 1-.281-.281V2.53a.281.281 0 0 1 .281-.281H13.5v4.125c0 .621.504 1.125 1.125 1.125h4.125v9.469a.282.282 0 0 1-.281.281Zm.281-12h-3v-3h.451c.075 0 .147.03.2.082L18.667 4.6a.283.283 0 0 1 .082.199v.451Z"
+            class="fill-green-custom" />
+        </svg>
+      </div>
+    </div>
+    <!-- contenitore caratteri -->
+    <div class="bg-gray-600 p-8">
+      <div class="flex items-center justify-between">
+        <div>Character Length</div>
+        <div class="text-3xl text-green-custom">10</div>
+      </div>
+      <!-- Slider -->
+      <input type="range" name="character-range" id="character-range" class="py-6 w-full" />
+      <!-- Contenitore checkbox -->
+      <div class="grid gap-3">
+        <!----------
 
-  Character Length
+          Qua bisognera aggiungere il colore di background e togliere il bordo al click del label 
 
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
+        ---------->
+        <div class="flex items-center gap-4">
+          <div class="w-5 h-5 border-white border-2 flex items-center justify-center">
+            <img src="./assets/images/icon-check.svg" alt="icon checked" class="w-3 h-3 invisible">
+          </div>
+          <input type="checkbox" name="uppercase" id="uppercase" class="hidden" />
+          <label for="uppercase">Include Uppercase Letters</label>
+        </div>
 
-  Strength
+        <div class="flex items-center gap-4">
+          <div class="w-5 h-5 border-white border-2 flex items-center justify-center">
+            <img src="./assets/images/icon-check.svg" alt="icon checked" class="w-3 h-3 invisible">
+          </div>
+          <input type="checkbox" name="lowercase" id="lowercase" class="hidden" />
+          <label for="lowercase">Include Lowercase Letters</label>
+        </div>
 
-  Generate
+        <div class="flex items-center gap-4">
+          <div class="w-5 h-5 border-white border-2 flex items-center justify-center">
+            <img src="./assets/images/icon-check.svg" alt="icon checked" class="w-3 h-3 invisible">
+          </div>
+          <input type="checkbox" name="numbers" id="numbers" class="hidden" />
+          <label for="numbers">Include Numbers</label>
+        </div>
 
+        <div class="flex items-center gap-4">
+          <div class="w-5 h-5 border-white border-2 flex items-center justify-center">
+            <img src="./assets/images/icon-check.svg" alt="icon checked" class="w-3 h-3 invisible">
+          </div>
+          <input type="checkbox" name="symbols" id="symbols" class="hidden" />
+          <label for="symbols">Include Symbols</label>
+        </div>
+      </div>
+      <!-- Risultato password -->
+      <div class="bg-gray-800 p-5 px-6 my-8 flex items-center justify-between">
+        <div>
+          <p class="uppercase text-slate-400">Strength</p>
+        </div>
+        <!-- contenitore barre -->
+        <div class="flex gap-3">
+          <div class="uppercase text-lg mt-2">Medium</div>
+          <!-- Barre da riempire -->
+          <div class="flex gap-2">
+            <div class="border-2 border-yellow-300 p-1 py-3 bg-yellow-300"></div>
+            <div class="border-2 border-yellow-300 p-1 py-3 bg-yellow-300"></div>
+            <div class="border-2 border-white p-1 py-3"></div>
+            <div class="border-2 border-white p-1 py-3"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Bottone -->
+      <button class="bg-green-custom w-full p-4 text-gray-600 uppercase flex items-center  justify-center gap-3">
+        Generate
+        <img src="./assets/images/icon-arrow-right.svg" alt="" class="w-3 h-3" />
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>

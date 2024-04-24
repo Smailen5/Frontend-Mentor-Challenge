@@ -112,3 +112,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+
+- ho usato questo codice che ho rivisto e aggiustato per il mio utilizzo 
+https://codepen.io/chakachuk/pen/jOdVXEp?editors=1010
+
+- questo e stato molto utile per capire shadow DOM e poter cambiare il colore di thumb
+https://dev.to/rashidshamloo/styling-input-range-sliders-nge
+
+- questo e stato utile per capire come usare peer
+https://marek-rozmus.medium.com/styling-checkbox-with-tailwind-46a92c157e2d

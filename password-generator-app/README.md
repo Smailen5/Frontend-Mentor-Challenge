@@ -1,6 +1,6 @@
 # Frontend Mentor - Password generator app solution
 
-This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -16,8 +16,6 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,22 +28,17 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
+
 ### Screenshot
 
-![](./screenshot.jpg)
+![](../screen%20capture/desktop%20password%20generator.jpeg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/password-generator-app)
+- Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/password-generator-app/)
+
 
 ## My process
 
@@ -56,83 +49,71 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Tailwind css
+- JavaScript vanilla
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+- At first, I wanted to display the password in a paragraph, but then I realized that I would lose some methods that I needed in JavaScript. So, I changed it to a text input instead.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!-- Before -->
+<p id="password" class="text-3xl"></p>
+<!-- After -->
+<input
+  type="text"
+  name="password"
+  id="password"
+  class="text-3xl text-white bg-gray-600"
+  placeholder="Password here"
+/>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+
+- I wanted to add a promise to check if I copied the password correctly or not.
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+navigator.clipboard
+  .writeText(password.value)
+  .then(() => {
+    // Alert che il testo è stato copiato con successo
+    alert("Copied the text: " + password.value);
+  })
+  .catch((error) => {
+    // Gestione degli errori
+    console.error("Unable to copy text: ", error);
+    alert("Unable to copy text: " + error);
+  });
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+The next time I work on this code, I'd like to do a thorough refactoring of the entire script. I'm sure there's room for improvement.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Resource 1](https://codepen.io/chakachuk/pen/jOdVXEp?editors=1010) - I used this code, which I revised and adjusted for my use.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Resource 2](https://dev.to/rashidshamloo/styling-input-range-sliders-nge) - This was very helpful in understanding shadow DOM and being able to change the color of the thumb.
+
+- [Resource 3](https://marek-rozmus.medium.com/styling-checkbox-with-tailwind-46a92c157e2d) - That was helpful in understanding how to use peer.
+
+- [Resource 4](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) - Used for array methods for a slip.
+
+- [Resource 5](https://stackoverflow.com/questions/1497481/javascript-password-generator) -
+  Useful for understanding how to generate a password from a specific charset, adapted to my purpose.
+
+- [Resource 6](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) -
+  I found it very convenient to add and remove classes stored in an array as described by MDN.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-
-
-- ho usato questo codice che ho rivisto e aggiustato per il mio utilizzo 
-https://codepen.io/chakachuk/pen/jOdVXEp?editors=1010
-
-- questo e stato molto utile per capire shadow DOM e poter cambiare il colore di thumb
-https://dev.to/rashidshamloo/styling-input-range-sliders-nge
-
-- questo e stato utile per capire come usare peer
-https://marek-rozmus.medium.com/styling-checkbox-with-tailwind-46a92c157e2d
-
-- utilizzato per i metodi degli array per un lapsus
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-
-- utile per capire come generare una password da un charset certo, adattato al mio scopo
-https://stackoverflow.com/questions/1497481/javascript-password-generator
-
-- all'inizio volevo scrivere la password in un paragrafo ma mi son reso conto che avrei perso dei metodi che mi servivano in js,
-ho quindi cambiato in un input di tipo text, ho dovuto adeguare tutto il codice che usava il paragrafo
-
-- ho voluto aggiungere una promise per capire se ho copiato la password correttamente o meno
-
-- ho trovato molto comodo aggiungere e rimuovere le classi messe in un array come dice mdn
-https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+...

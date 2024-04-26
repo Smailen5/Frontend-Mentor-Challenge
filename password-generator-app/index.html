@@ -10,18 +10,18 @@
   <title>Frontend Mentor | Password generator app</title>
 
   <link rel="stylesheet" href="./src/output.css" />
-  <script defer src="./src/input-fill.js"></script>
+  <script defer src="./src/script.js"></script>
 </head>
 
 <body class="font-jet-brains bg-slate-900 flex flex-col justify-center items-center gap-6 h-svh">
   <h3 class="text-slate-500">Password Generator</h3>
 
   <div class="grid gap-4 w-2/5 text-white">
-    <!-- contenitore password -->
+    <!-- Container password -->
     <div class="bg-gray-600 flex items-center justify-between p-5 px-8">
       <div>
         <!-- <p id="password" class="text-3xl"></p> -->
-        <input type="text" name="password" id="password" class="text-3xl text-white bg-gray-600" placeholder="P4$5W0rD!"></input>
+        <input type="text" name="password" id="password" class="text-3xl text-white bg-gray-600" placeholder="Password here"></input>
       </div>
       <div>
         <!-- default fill="#A4FFAF" -->
@@ -32,17 +32,17 @@
         </svg>
       </div>
     </div>
-    <!-- Contenitore seconda scheda -->
+    <!-- Container seconda scheda -->
     <div class="bg-gray-600 p-8">
-      <!-- contenitore caratteri -->
+      <!-- Container caratteri -->
       <div class="flex items-center justify-between pb-4">
         <div>Character Length</div>
         <div id="character-length" class="text-3xl text-green-custom">10</div>
       </div>
-      <!-- Slider valore minimo 0 massimo 100 -->
+      <!-- Slider value min 1 max 20 -->
       <input type="range" name="character-range" id="character-range" value="10" step="1" min="1" max="20"
         class="appearance-none w-full h-2 m-0 p-0 cursor-grab" />
-      <!-- Contenitore checkbox -->
+      <!-- Container checkbox -->
       <div class="grid gap-3 pt-6" id="checkbox-group">
         <!----------
 
@@ -93,15 +93,15 @@
           </svg>
         </div>
       </div>
-      <!-- Risultato password -->
+      <!-- Result password strength -->
       <div class="bg-gray-800 p-5 px-6 my-8 flex items-center justify-between">
         <div>
-          <p id="strength" class="uppercase text-slate-400">Strength</p>
+          <p class="uppercase text-slate-400">Strength</p>
         </div>
-        <!-- contenitore barre -->
+        <!-- container bars -->
         <div class="flex gap-3">
-          <div class="uppercase text-lg mt-2">Medium</div>
-          <!-- Barre da riempire -->
+          <div id="strength" class="uppercase text-lg mt-2"></div>
+          <!-- Bars to fill -->
           <div class="flex gap-2">
             <div id="bar-1" class="border-2 border-white p-1 py-3"></div>
             <div id="bar-2" class="border-2 border-white p-1 py-3"></div>
@@ -110,7 +110,7 @@
           </div>
         </div>
       </div>
-      <!-- Bottone -->
+      <!-- Button -->
       <button id="generate" class="bg-green-custom w-full p-4 text-gray-600 uppercase flex items-center  justify-center gap-3">
         Generate
         <img src="./assets/images/icon-arrow-right.svg" alt="" class="w-3 h-3" />

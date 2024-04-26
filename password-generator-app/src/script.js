@@ -2,16 +2,14 @@ const input = document.getElementById("character-range");
 const output = document.getElementById("character-length");
 // const thumb = document.getElementById("thumb"); ------ non serve a niente perche e qui
 
-// console.log();
-
-/* --------- gestione input range e cambio colore barra --------- */
+/* --------- Managing input range and changing the color of the bar. --------- */
 let val = parseFloat(input.value);
-let min = parseFloat(input.min) || 0;
-let max = parseFloat(input.max) || 100;
+let min = parseFloat(input.min) || 1;
+let max = parseFloat(input.max) || 20;
 
 output.textContent = val;
 
-/* --------- funzione input range e cambio colore --------- */
+/* --------- Function for input range and color change. --------- */
 function handleInput() {
   let val = parseFloat(input.value);
   let fillPercent = ((val - min) / (max - min)) * 100;
@@ -28,9 +26,9 @@ input.addEventListener("input", handleInput);
 input.addEventListener("change", handleInput);
 
 handleInput();
-/* ---------- fine funzione per input range ---------- */
+/* ---------- End of function for input range. ---------- */
 
-/* --------- Gestione aggiunta lettere e caratteri --------- */
+/* --------- Managing addition of letters and characters. --------- */
 
 const uppercase = document.getElementById("uppercase");
 const lowercase = document.getElementById("lowercase");
@@ -54,7 +52,7 @@ group.addEventListener("click", function (e) {
   }
 });
 
-// rimuovi elemento se gia incluso nell'array
+// Remove element if already included in the array
 function rimuoviInutili(selected) {
   const index = include.indexOf(selected);
   if (index !== -1) {
@@ -62,9 +60,9 @@ function rimuoviInutili(selected) {
     console.log(include);
   }
 }
-/* --------- fine Gestione aggiunta lettere e caratteri --------- */
+/* --------- End of handling addition of letters and characters. --------- */
 
-/* --------- Genero la password --------- */
+/* --------- Generate password--------- */
 
 const buttonGenerate = document.getElementById("generate");
 const password = document.getElementById("password");
@@ -101,9 +99,9 @@ function generatePassword() {
   return retVal;
 }
 
-/* --------- fine Genero la password --------- */
+/* --------- End Generate password --------- */
 
-/* --------- Gestione copia password --------- */
+/* --------- Managing copy password --------- */
 
 const copy = document.getElementById("copy");
 
@@ -129,9 +127,9 @@ function copyToClipboard() {
     });
 }
 
-/* --------- fine Gestione copia password --------- */
+/* --------- End Managing copy password --------- */
 
-/* --------- Gestione forza password --------- */
+/* --------- Managing password strength --------- */
 
 const strength = document.getElementById("strength");
 const bar1 = document.getElementById("bar-1");
@@ -145,21 +143,21 @@ function controlStrength() {
   const cls = [ "bg-yellow-300", "border-yellow-300" ];
 
   if (strengthValue <= 5) {
-    strength.textContent = "Weak";
+    strength.textContent = "Very Weak";
     bar1.classList.add(...cls)
     bar2.classList.remove(...cls)
     bar3.classList.remove(...cls)
     bar4.classList.remove(...cls)
   }
   if (strengthValue > 5 && strengthValue <= 8) {
-    strength.textContent = "Medium";
+    strength.textContent = "Weak";
     bar1.classList.add(...cls)
     bar2.classList.add(...cls)
     bar3.classList.remove(...cls)
     bar4.classList.remove(...cls)
   }
   if (strengthValue > 8) {
-    strength.textContent = "Strong";
+    strength.textContent = "Medium";
     bar1.classList.add(...cls)
     bar2.classList.add(...cls)
     bar3.classList.add(...cls)
@@ -175,4 +173,4 @@ function controlStrength() {
 
 }
 
-/* --------- fine Gestione forza password --------- */
+/* --------- End Managing password strength --------- */

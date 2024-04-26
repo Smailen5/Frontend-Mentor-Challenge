@@ -122,3 +122,17 @@ https://dev.to/rashidshamloo/styling-input-range-sliders-nge
 
 - questo e stato utile per capire come usare peer
 https://marek-rozmus.medium.com/styling-checkbox-with-tailwind-46a92c157e2d
+
+- utilizzato per i metodi degli array per un lapsus
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+- utile per capire come generare una password da un charset certo, adattato al mio scopo
+https://stackoverflow.com/questions/1497481/javascript-password-generator
+
+- all'inizio volevo scrivere la password in un paragrafo ma mi son reso conto che avrei perso dei metodi che mi servivano in js,
+ho quindi cambiato in un input di tipo text, ho dovuto adeguare tutto il codice che usava il paragrafo
+
+- ho voluto aggiungere una promise per capire se ho copiato la password correttamente o meno
+
+- ho trovato molto comodo aggiungere e rimuovere le classi messe in un array come dice mdn
+https://developer.mozilla.org/en-US/docs/Web/API/Element/classList

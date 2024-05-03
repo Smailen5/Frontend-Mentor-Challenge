@@ -19,7 +19,7 @@ module.exports = {
       base: "17px",
       lg: "20px",
       xl: "28px",
-      "2xl": "50px",
+      "2xl": "60px",
     },
     extend: {},
   },

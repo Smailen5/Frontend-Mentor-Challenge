@@ -95,7 +95,7 @@ function generatePassword() {
     retVal += charset.charAt(Math.floor(Math.random() * n));
   }
   password.value = retVal;
-  console.log(retVal);
+  // console.log(retVal);
   return retVal;
 }
 

@@ -1,54 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./src/output.css">
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-  </style>
-
+  <meta charset="UTF-8" />
+  <!-- Non devo scrivere il percorso da public ma direttamente /favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <!-- attenzione a questo file di css, non credo debba stare qui, prova a rimuoverlo e vedere che succede
+  tailwind dovrebbe funzionare correttamente e creare le classi lo stesso -->
+  <link rel="stylesheet" href="/componenet-with-signup-form/dist/assets/index-CYiWaJ3m.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Mentor | Intro component with sign up form</title>
-
 </head>
 
-<body class="font-poppins bg-red text-white flex items-center justify-center h-svh"
-  style="background-image: url(./images/bg-intro-mobile.png);">
-  <!-- contenitore principale -->
-  <div class="w-11/12 h-3/4 grid gap-8 lg:grid-cols-2 lg:items-center lg:w-10/12">
-    <!-- contenitore heading e paragrafo -->
-    <div class="text-center grid gap-4 lg:text-left">
-      <h2 class="text-xl font-bold lg:text-2xl">Learn to code by watching others</h2>
-
-      <p class="text-base lg:text-lg">See how experienced developers solve problems in real-time. Watching scripted
-        tutorials is
-        great,
-        but understanding how developers think is invaluable.</p>
-    </div>
-    <!-- contenitore form e bottone viola -->
-    <div class="grid gap-4 max-w-xl pb-12">
-      <button class="bg-blue p-4 px-12 rounded-xl shadow-darkBlue shadow-md"><span class="font-bold">Try it free 7
-          days</span> then $20/mo.
-        thereafter</button>
-
-      <div class="bg-white rounded-xl p-6 grid gap-4 shadow-darkBlue shadow-lg lg:p-10 lg:gap-6">
-        <form action="#" class="grid gap-4 lg:gap-6">
-          <input type="text" name="name" id="name" placeholder="First Name" class="border border-gray p-4 pl-8 rounded-sm text-darkBlue font-bold">
-          <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="border border-gray p-4 pl-8 rounded-sm text-darkBlue font-bold">
-          <input type="email" name="email" id="email" placeholder="Email Address" class="border border-gray p-4 pl-8 rounded-sm text-darkBlue font-bold">
-          <input type="password" name="password" id="password" placeholder="Password" class="border border-gray p-4 pl-8 rounded-sm text-darkBlue font-bold">
-          <button type="submit" class="bg-green p-4 rounded-md shadow-green shadow-md uppercase">Claim your free trial</button>
-        </form>
-        <p class="text-gray text-center text-sm">By clicking the button, you are agreeing to our <a href="#"
-            class="text-red font-bold">Terms and Services</a></p>
-      </div>
-    </div>
-  </div>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

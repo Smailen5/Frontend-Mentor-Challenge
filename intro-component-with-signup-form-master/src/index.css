@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Poppins, sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("./assets/images/bg-intro-mobile.png");
+  color: hsl(0, 0%, 100%);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

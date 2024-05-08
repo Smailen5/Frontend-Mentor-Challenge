@@ -112,3 +112,25 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+- mi ha aiutato a scrivere il codice per prevenire l'invio del modulo https://legacy.reactjs.org/docs/handling-events.html
+
+- non sono riuscito a cambiare la classe al componente una volta creato, ho quindi deciso di passarla come props, non so se sia corretto ma funziona 
+```js
+function Button({
+  color = "green",
+  roundedSize = "xl",
+  uppercase = "lowercase",
+}) {
+  return (
+    <button className={`rounded-${roundedSize} bg-${color} ${uppercase}`}>
+    </button>
+```
+
+- come impostare il backgroundImage in react 
+https://www.freecodecamp.org/italian/news/come-impostare-una-immagine-di-background-in-react-usando-il-css-in-linea/
+
+- qui ho trovato il codice per l'ombra cosi non sono stato a fare prove
+https://manuarora.in/boxshadows
+
+- 

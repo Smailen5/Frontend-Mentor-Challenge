@@ -2,7 +2,7 @@
 # My portfolio from Frontend Mentor 🚀 [Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 
 
-#### Intro component with signup form (First React App) [Solution](https://github.com/Smailen5/componenet-with-signup-form) - [Live site](https://main--componen-with-singup-form.netlify.app/)
+#### Intro component with signup form (First React App) [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/componenet-with-signup-form) - [Live site](https://component-with-sigup-form.netlify.app/)
 
 
 #### Password generator only desktop version [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/password-generator-app) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/password-generator-app/)

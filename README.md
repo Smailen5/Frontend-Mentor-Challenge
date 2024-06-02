@@ -104,3 +104,10 @@
 
 <!-- Questo esercizio e ancora in lavorazione -->
 <!-- #### workit landing page [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/workit-landing-page-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/workit-landing-page-main/) -->
+
+
+## Author
+
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

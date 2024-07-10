@@ -3,7 +3,11 @@
 
 ### Trovi altri esercizi non inerenti a Frontend Mentor in react [qui](https://smailen5.github.io/react-esercizi/)
 
+---
 
+[![CodeFactor](https://www.codefactor.io/repository/github/smailen5/frontend-mentor-challenge/badge)](https://www.codefactor.io/repository/github/smailen5/frontend-mentor-challenge)
+
+---
 
 #### Intro component with sign up form (First React App) [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/componenet-with-signup-form) - [Live site](https://component-with-sigup-form.netlify.app/)
 

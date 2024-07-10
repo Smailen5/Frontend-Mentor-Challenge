@@ -9,7 +9,8 @@ input::-webkit-slider-thumb {
   border-radius: 50%;
   -webkit-appearance: none;
 }
-/* cerca di non scrivere classi tailwind in input.css */
+/* cerca di non scrivere classi tailwind in input.css
+TODO: anziche aggiungere classi, scrivi direttamente stile in linea con javascript */
 .bg-yellow-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity)) /* #fde047 */;

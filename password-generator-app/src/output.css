@@ -834,7 +834,8 @@ input::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 
-/* cerca di non scrivere classi tailwind in input.css */
+/* cerca di non scrivere classi tailwind in input.css
+TODO: anziche aggiungere classi, scrivi direttamente stile in linea con javascript */
 
 .bg-yellow-300 {
   --tw-bg-opacity: 1;

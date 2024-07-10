@@ -4,7 +4,6 @@
 
 input::-webkit-slider-thumb {
   border: solid 12px white;
-  border-radius: 0;
   height: 25px;
   width: 25px;
   border-radius: 50%;

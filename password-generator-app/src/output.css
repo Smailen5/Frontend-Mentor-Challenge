@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -712,11 +712,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-yellow-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(253 224 71 / var(--tw-border-opacity));
-}
-
 .bg-gray-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
@@ -735,16 +730,6 @@ video {
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .fill-green-custom {
@@ -843,7 +828,6 @@ video {
 
 input::-webkit-slider-thumb {
   border: solid 12px white;
-  border-radius: 0;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -861,16 +845,4 @@ input::-webkit-slider-thumb {
 
 .peer:checked ~ .peer-checked\:block {
   display: block;
-}
-
-.peer:checked ~ .peer-checked\:fill-white {
-  fill: #fff;
-}
-
-.peer:hover ~ .peer-hover\:fill-white {
-  fill: #fff;
-}
-
-.peer:hover ~ .peer-hover\:fill-green-custom {
-  fill: #A4FFAF;
 }

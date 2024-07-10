@@ -9,3 +9,12 @@ input::-webkit-slider-thumb {
   border-radius: 50%;
   -webkit-appearance: none;
 }
+/* cerca di non scrivere classi tailwind in input.css */
+.bg-yellow-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity)) /* #fde047 */;
+}
+.border-r-yellow-300 {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(253 224 71 / var(--tw-border-opacity)) /* #fde047 */;
+}

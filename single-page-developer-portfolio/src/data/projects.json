@@ -1,0 +1,44 @@
+[
+  {
+    "title": "design portfolio",
+    "technologies": ["html", "css"],
+    "image": "../assets/images/thumbnail-project-1-small.webp",
+    "liveSite": "#",
+    "github": "#"
+  },
+  {
+    "title": "e-learning landing page",
+    "technologies": ["html", "css"],
+    "image": "../assets/images/thumbnail-project-2-small.webp",
+    "liveSite": "#",
+    "github": "#"
+  },
+  {
+    "title": "todo web app",
+    "technologies": ["html", "css", "javascript"],
+    "image": "../assets/images/thumbnail-project-3-small.webp",
+    "liveSite": "#",
+    "github": "#"
+  },
+  {
+    "title": "entertainment web app",
+    "technologies": ["html", "css", "javascript"],
+    "image": "../assets/images/thumbnail-project-4-small.webp",
+    "liveSite": "#",
+    "github": "#"
+  },
+  {
+    "title": "memory game",
+    "technologies": ["html", "css", "javascript"],
+    "image": "../assets/images/thumbnail-project-5-small.webp",
+    "liveSite": "#",
+    "github": "#"
+  },
+  {
+    "title": "art gallery showcase",
+    "technologies": ["html", "css", "javascript"],
+    "image": "../assets/images/thumbnail-project-6-small.webp",
+    "liveSite": "#",
+    "github": "#"
+  }
+]

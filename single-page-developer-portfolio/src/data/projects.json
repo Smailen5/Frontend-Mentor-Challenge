@@ -1,50 +1,51 @@
 [
-  {
-    "id": 1,
-    "title": "design portfolio",
-    "technologies": ["html", "css"],
-    "image": "../assets/images/thumbnail-project-1-small.webp",
-    "liveSite": "#",
-    "github": "#"
-  },
-  {
-    "id": 2,
-    "title": "e-learning landing page",
-    "technologies": ["html", "css"],
-    "image": "../assets/images/thumbnail-project-2-small.webp",
-    "liveSite": "#",
-    "github": "#"
-  },
-  {
-    "id": 3,
-    "title": "todo web app",
-    "technologies": ["html", "css", "javascript"],
-    "image": "../assets/images/thumbnail-project-3-small.webp",
-    "liveSite": "#",
-    "github": "#"
-  },
-  {
-    "id": 4,
-    "title": "entertainment web app",
-    "technologies": ["html", "css", "javascript"],
-    "image": "../assets/images/thumbnail-project-4-small.webp",
-    "liveSite": "#",
-    "github": "#"
-  },
-  {
-    "id": 5,
-    "title": "memory game",
-    "technologies": ["html", "css", "javascript"],
-    "image": "../assets/images/thumbnail-project-5-small.webp",
-    "liveSite": "#",
-    "github": "#"
-  },
-  {
-    "id": 6,
-    "title": "art gallery showcase",
-    "technologies": ["html", "css", "javascript"],
-    "image": "../assets/images/thumbnail-project-6-small.webp",
-    "liveSite": "#",
-    "github": "#"
-  }
-]
+    {
+      "id": 1,
+      "title": "design portfolio",
+      "technologies": ["html", "css"],
+      "image": "thumbnailProject1",
+      "liveSite": "#",
+      "github": "#"
+    },
+    {
+      "id": 2,
+      "title": "e-learning landing page",
+      "technologies": ["html", "css"],
+      "image": "thumbnailProject2",
+      "liveSite": "#",
+      "github": "#"
+    },
+    {
+      "id": 3,
+      "title": "todo web app",
+      "technologies": ["html", "css", "javascript"],
+      "image": "thumbnailProject3",
+      "liveSite": "#",
+      "github": "#"
+    },
+    {
+      "id": 4,
+      "title": "entertainment web app",
+      "technologies": ["html", "css", "javascript"],
+      "image": "thumbnailProject4",
+      "liveSite": "#",
+      "github": "#"
+    },
+    {
+      "id": 5,
+      "title": "memory game",
+      "technologies": ["html", "css", "javascript"],
+      "image": "thumbnailProject5",
+      "liveSite": "#",
+      "github": "#"
+    },
+    {
+      "id": 6,
+      "title": "art gallery showcase",
+      "technologies": ["html", "css", "javascript"],
+      "image": "thumbnailProject6",
+      "liveSite": "#",
+      "github": "#"
+    }
+  ]
+  

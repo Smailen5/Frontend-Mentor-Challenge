@@ -8,7 +8,9 @@ const Navbar = () => {
   const brandLogo = "adamkeyes";
   return (
     <nav className="flex flex-col items-center py-4 gap-6">
-      <header className="font-semibold text-2xl">{brandLogo}</header>
+      <header className="font-semibold text-2xl font-spaceGrotesk">
+        {brandLogo}
+      </header>
       {/* icone social */}
       <div className="flex gap-4">
         <img src={iconGithub} alt="alt" />

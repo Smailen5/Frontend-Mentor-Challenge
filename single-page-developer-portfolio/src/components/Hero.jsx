@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden font-spaceGrotesk">
       {/* sezione immagini */}
-      <div className="relative top-0 -z-20 mx-auto flex flex-col items-center h-80">
+      <div className="relative top-0 -z-20 mx-auto flex h-80 flex-col items-center">
         <img
           src={rings}
           alt="rings"
@@ -20,12 +20,12 @@ const Hero = () => {
         />
       </div>
       {/* sezione presentazione */}
-      <section className="text-center pt-8 px-10">
+      <section className="px-10 pt-8 text-center">
         <h2 className="text-4xl font-semibold">
           Nice to meet you! I&apos;m{" "}
           <span className="border-b-4 border-emerald-400">Adam Keyes</span>.
         </h2>
-        <p className="mt-8 text-neutral-400 ">
+        <p className="mt-8 text-neutral-400">
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.
         </p>

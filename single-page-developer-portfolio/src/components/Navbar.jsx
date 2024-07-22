@@ -7,8 +7,8 @@ import iconTwitter from "../assets/icon-twitter.svg";
 const Navbar = () => {
   const brandLogo = "adamkeyes";
   return (
-    <nav className="flex flex-col items-center py-6 gap-6">
-      <header className="font-semibold text-2xl font-spaceGrotesk">
+    <nav className="flex flex-col items-center gap-6 py-6">
+      <header className="font-spaceGrotesk text-2xl font-semibold">
         {brandLogo}
       </header>
       {/* icone social */}

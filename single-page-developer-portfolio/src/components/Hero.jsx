@@ -16,13 +16,16 @@ const Hero = () => {
         <img
           src={circle}
           alt="circle"
-          className="absolute -right-16 bottom-0"
+          className="absolute -right-16 bottom-5 scale-125"
         />
       </div>
       {/* sezione presentazione */}
       <section className="text-center pt-8 px-10">
-        <h2 className="text-4xl font-semibold">Nice to meet you! I&apos;m Adam Keyes.</h2>
-        <p className="mt-8 text-neutral-400">
+        <h2 className="text-4xl font-semibold">
+          Nice to meet you! I&apos;m{" "}
+          <span className="border-b-4 border-emerald-400">Adam Keyes</span>.
+        </h2>
+        <p className="mt-8 text-neutral-400 ">
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.
         </p>

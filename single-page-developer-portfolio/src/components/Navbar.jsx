@@ -1,9 +1,10 @@
-
-
 const Navbar = () => {
+  const brandLogo = "adamkeyes";
   return (
-    <div>Navbar</div>
-  )
-}
+    <div>
+      <header className="">{brandLogo}</header>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

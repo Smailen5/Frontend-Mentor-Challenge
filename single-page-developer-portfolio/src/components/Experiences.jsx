@@ -1,32 +1,19 @@
+import experiences from "../data/experiences.json";
+
 const Experiences = () => {
   return (
     <div className="mt-8 px-4">
       <hr />
       <section>
-        <article>
-            <h4>html</h4>
-            <h5>4 Years Experience</h5>
-        </article>
-
-        <article>
-            <h4>html</h4>
-            <h5>4 Years Experience</h5>
-        </article>
-
-        <article>
-            <h4>html</h4>
-            <h5>4 Years Experience</h5>
-        </article>
-
-        <article>
-            <h4>html</h4>
-            <h5>4 Years Experience</h5>
-        </article>
-
-        <article>
-            <h4>html</h4>
-            <h5>4 Years Experience</h5>
-        </article>
+        {experiences.map((experience) => {
+          const { skill, years } = experience;
+          return (
+            <article key={skill}>
+              <h4>{skill}</h4>
+              <h5>{years}</h5>
+            </article>
+          );
+        })}
       </section>
       <hr />
     </div>

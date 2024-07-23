@@ -30,7 +30,7 @@ const Hero = () => {
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.
         </p>
-        <Button>Contact me</Button>
+        <Button classButton="mt-8">Contact me</Button>
       </section>
     </div>
   );

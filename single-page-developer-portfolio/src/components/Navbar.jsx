@@ -10,7 +10,7 @@ const Navbar = () => {
       </header>
       {/* icone social */}
       <div className="flex gap-8">
-      <a href="#">
+        <a href="#">
           <img src={github} alt="alt" />
         </a>
         <a href="#">

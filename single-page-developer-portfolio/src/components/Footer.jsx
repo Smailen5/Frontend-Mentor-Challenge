@@ -13,10 +13,18 @@ const Navbar = () => {
       </header>
       {/* icone social */}
       <div className="flex gap-8">
-        <img src={iconGithub} alt="alt" />
-        <img src={iconFrontend} alt="alt" />
-        <img src={iconLinkedin} alt="alt" />
-        <img src={iconTwitter} alt="alt" />
+        <a href="#">
+          <img src={iconGithub} alt="alt" />
+        </a>
+        <a href="#">
+          <img src={iconFrontend} alt="alt" />
+        </a>
+        <a href="#">
+          <img src={iconLinkedin} alt="alt" />
+        </a>
+        <a href="#">
+          <img src={iconTwitter} alt="alt" />
+        </a>
       </div>
     </footer>
   );

@@ -20,7 +20,7 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
           );
         })}
       </div>
-      <div className="flex gap-8 pb-12">
+      <div className="flex gap-8 pb-12 pt-6">
         <Button>view project</Button>
         <Button>view code</Button>
       </div>

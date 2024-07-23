@@ -3,7 +3,7 @@
 // singolo progetto
 import React from "react";
 import images from "../data/images.js";
-import { ContactMe } from "./ContactMe";
+import { ContactMe } from "./Button.jsx";
 
 const Project = ({ image, title, technologies, liveSite, github }) => {
   // console.log(image);

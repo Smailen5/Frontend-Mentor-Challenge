@@ -1,7 +1,7 @@
 import imageProfile from "../assets/images/image-profile-mobile.webp";
 import rings from "../assets/images/pattern-rings.svg";
 import circle from "../assets/images/pattern-circle.svg";
-import { ContactMe } from "./ContactMe";
+import { ContactMe } from "./Button";
 
 const Hero = () => {
   return (

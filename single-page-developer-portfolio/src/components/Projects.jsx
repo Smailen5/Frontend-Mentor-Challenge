@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { ContactMe } from "./ContactMe";
+import { ContactMe } from "./Button";
 import Project from "./Project";
 import projects from "../data/projects.json";
 

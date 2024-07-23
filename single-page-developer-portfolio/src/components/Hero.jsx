@@ -21,7 +21,7 @@ const Hero = () => {
   const isTablet = width >= 768;
 
   return (
-    <div className="relative top-36 overflow-x-clip font-spaceGrotesk md:top-36 pb-20">
+    <div className="relative top-36 overflow-x-clip pb-36 font-spaceGrotesk md:pb-28">
       {/* sezione immagini */}
       <div className="relative top-0 -z-20 mx-auto flex h-80 flex-col items-center">
         {/* gruppo di rings a sinistra */}
@@ -50,15 +50,14 @@ const Hero = () => {
       </div>
 
       {/* sezione presentazione */}
-      <section className="px-10 pt-8 text-center md:absolute md:top-0 md:flex md:w-4/5 md:flex-col md:items-start md:gap-11 md:text-left">
+      <section className="px-10 pt-8 text-center md:absolute md:top-0 md:flex md:w-4/5 md:flex-col md:items-start md:gap-10 md:text-left">
         <h2 className="text-4xl font-semibold md:text-8xl">
           Nice to {isTablet && <br />} meet you! I&apos;m{" "}
-          <span className="border-b-4 border-emerald-400">Adam Keyes</span>.
+          <span className="border-b-8 border-emerald-400">Adam Keyes</span>.
         </h2>
-        <p className="mt-8 text-lg text-neutral-400">
-          Based in the UK, I&apos;m a front-end developer {isTablet && <br />}
-          passionate about building accessible web apps {isTablet && <br />}
-          that users love.
+        <p className="mt-8 text-lg text-neutral-400 md:w-4/5 md:text-2xl">
+          Based in the UK, I&apos;m a front-end developer passionate about
+          building accessible web apps that users love.
         </p>
         <Button classButton="mt-8">Contact me</Button>
       </section>

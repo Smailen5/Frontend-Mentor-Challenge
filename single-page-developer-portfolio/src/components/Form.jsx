@@ -45,10 +45,11 @@ const Form = () => {
           placeholder="MESSAGE"
           className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
         />
-        <div className="flex justify-end">
+        <div className="flex justify-end pb-8">
           <ContactMe>Send message</ContactMe>
         </div>
       </form>
+      <hr className="border-neutral-400" />
     </section>
   );
 };

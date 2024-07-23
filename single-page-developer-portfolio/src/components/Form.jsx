@@ -2,6 +2,7 @@
 import React from "react";
 import Button from "./Button";
 import Footer from "./Footer";
+import rings from "../assets/images/pattern-rings.svg";
 
 const Form = () => {
   return (
@@ -14,7 +15,7 @@ const Form = () => {
         </p>
       </div>
 
-      <form className="flex flex-col gap-8 pb-12">
+      <form className="flex flex-col gap-8 pb-12 relative">
         <label className="hidden" htmlFor="name">
           name
         </label>
@@ -49,6 +50,8 @@ const Form = () => {
         <div className="flex justify-end pb-12">
           <Button type="submit">Send message</Button>
         </div>
+
+        <img src={rings} alt={rings} className="absolute -left-72 bottom-7  scale-125" />
       </form>
       <hr className="border-neutral-400" />
       <Footer />

@@ -46,7 +46,7 @@ const Form = () => {
           placeholder="MESSAGE"
           className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
         />
-        <div className="flex justify-end pb-8">
+        <div className="flex justify-end pb-12">
           <Button type="submit">Send message</Button>
         </div>
       </form>

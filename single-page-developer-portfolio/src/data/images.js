@@ -40,9 +40,9 @@ const images = {
     large: thumbnailProject6Large,
   },
   imageProfile: {
-    small: imageProfileSmall,
-    medium: imageProfileMedium,
-    large: imageProfileLarge,
+    sm: imageProfileSmall,
+    md: imageProfileMedium,
+    lg: imageProfileLarge,
   },
 };
 

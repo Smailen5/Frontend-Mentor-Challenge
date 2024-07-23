@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { ContactMe } from "./Button";
+import Button from "./Button";
 import Footer from "./Footer";
 
 const Form = () => {
@@ -47,7 +47,7 @@ const Form = () => {
           className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
         />
         <div className="flex justify-end pb-8">
-          <ContactMe>Send message</ContactMe>
+          <Button type="submit">Send message</Button>
         </div>
       </form>
       <hr className="border-neutral-400" />

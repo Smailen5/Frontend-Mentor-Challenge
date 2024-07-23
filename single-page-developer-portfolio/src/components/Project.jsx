@@ -3,7 +3,7 @@
 // singolo progetto
 import React from "react";
 import images from "../data/images.js";
-import { ContactMe } from "./Button.jsx";
+import Button from "./Button.jsx";
 
 const Project = ({ image, title, technologies, liveSite, github }) => {
   // console.log(image);
@@ -21,8 +21,8 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
         })}
       </div>
       <div className="flex gap-8 pb-12">
-        <ContactMe>view project</ContactMe>
-        <ContactMe>view code</ContactMe>
+        <Button>view project</Button>
+        <Button>view code</Button>
       </div>
     </article>
   );

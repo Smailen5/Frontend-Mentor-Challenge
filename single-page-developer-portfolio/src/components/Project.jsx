@@ -9,8 +9,12 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
   return (
     <article>
       <img src={images[image]} alt={title} className="w-full" />
-      <h4>{title}</h4>
-      <h5>{technologies}</h5>
+      <h4 className="pb-4 pt-6 text-3xl font-bold uppercase">{title}</h4>
+      <h5 className="pb-4 text-xl uppercase text-neutral-400">
+        {technologies.map((tech) => {
+          return tech + " ";
+        })}
+      </h5>
       <div className="flex justify-between pb-4">
         <ContactMe>view project</ContactMe>
         <ContactMe>view code</ContactMe>

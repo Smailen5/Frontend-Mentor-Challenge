@@ -15,44 +15,49 @@ const Form = () => {
         </p>
       </div>
 
-      <form className="flex flex-col gap-8 pb-12 relative">
-        <label className="hidden" htmlFor="name">
-          name
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="NAME"
-          className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
-        />
+      <div className="relative">
+        <form className="flex flex-col gap-8 pb-12 z-10 relative">
+          <label className="hidden" htmlFor="name">
+            name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="NAME"
+            className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
+          />
 
-        <label className="hidden" htmlFor="email">
-          name
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="EMAIL"
-          className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
-        />
+          <label className="hidden" htmlFor="email">
+            name
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="EMAIL"
+            className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
+          />
 
-        <label className="hidden" htmlFor="message">
-          name
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="MESSAGE"
-          className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
+          <label className="hidden" htmlFor="message">
+            name
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="MESSAGE"
+            className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
+          />
+          <div className="flex justify-end pb-12">
+            <Button type="submit">Send message</Button>
+          </div>
+        </form>
+        <img
+          src={rings}
+          alt={rings}
+          className="absolute -left-72 bottom-7 top-40 scale-125 "
         />
-        <div className="flex justify-end pb-12">
-          <Button type="submit">Send message</Button>
-        </div>
-
-        <img src={rings} alt={rings} className="absolute -left-72 bottom-7  scale-125" />
-      </form>
+      </div>
       <hr className="border-neutral-400" />
       <Footer />
     </section>

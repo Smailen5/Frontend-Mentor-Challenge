@@ -3,7 +3,8 @@ import rings from "../assets/images/pattern-rings.svg";
 
 const Experiences = () => {
   return (
-    <div className="py-20 px-4 font-spaceGrotesk relative overflow-x-hidden">
+    // controlla il mt-80 quando hai finito con Hero
+    <div className="py-20 px-4 font-spaceGrotesk relative overflow-x-hidden md:mt-80">
       <hr />
       <section className="my-10 flex flex-col items-center gap-8 text-center">
         {experiences.map((experience) => {

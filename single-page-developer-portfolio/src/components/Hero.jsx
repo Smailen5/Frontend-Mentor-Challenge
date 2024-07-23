@@ -29,11 +29,11 @@ const Hero = () => {
         <img
           src={circle}
           alt="circle"
-          className="absolute -right-16 bottom-5 scale-125"
+          className="absolute -right-16 bottom-5 scale-125 md:-bottom-36"
         />
       </div>
       {/* sezione presentazione */}
-      <section className="px-10 pt-8 text-center">
+      <section className="px-10 pt-8 text-center md:absolute md:top-0">
         <h2 className="text-4xl font-semibold">
           Nice to meet you! I&apos;m{" "}
           <span className="border-b-4 border-emerald-400">Adam Keyes</span>.

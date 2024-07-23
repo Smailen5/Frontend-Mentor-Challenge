@@ -9,7 +9,10 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
   // console.log(image);
   return (
     <article>
-      <img src={images[image]} alt={title} className="w-full" />
+      <picture>
+        <source media="(min-width: 768px)" srcSet={images[image].large} />
+        <img src={images[image]} alt={title} className="w-full" />
+      </picture>
       <h4 className="pb-4 pt-6 text-3xl font-bold uppercase">{title}</h4>
       <div className="flex gap-4">
         {technologies.map((tech) => {

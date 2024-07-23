@@ -5,7 +5,7 @@ import thumbnailProject2Large from "../assets/images/thumbnail-project-2-large.w
 import thumbnailProject3Small from "../assets/images/thumbnail-project-3-small.webp";
 import thumbnailProject3Large from "../assets/images/thumbnail-project-3-large.webp";
 import thumbnailProject4Small from "../assets/images/thumbnail-project-4-small.webp";
-import thumbnailProject4Large from "../assets/images/thumbnail-project-4-Large.webp";
+import thumbnailProject4Large from "../assets/images/thumbnail-project-4-large.webp";
 import thumbnailProject5Small from "../assets/images/thumbnail-project-5-small.webp";
 import thumbnailProject5Large from "../assets/images/thumbnail-project-5-large.webp";
 import thumbnailProject6Small from "../assets/images/thumbnail-project-6-small.webp";

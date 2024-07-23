@@ -12,7 +12,7 @@ const Navbar = () => {
         {brandLogo}
       </header>
       {/* icone social */}
-      <div className="flex gap-4">
+      <div className="flex gap-8">
         <img src={iconGithub} alt="alt" />
         <img src={iconFrontend} alt="alt" />
         <img src={iconLinkedin} alt="alt" />

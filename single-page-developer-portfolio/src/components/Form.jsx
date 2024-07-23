@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { ContactMe } from "./ContactMe";
+import Footer from "./Footer";
 
 const Form = () => {
   return (
@@ -50,6 +51,7 @@ const Form = () => {
         </div>
       </form>
       <hr className="border-neutral-400" />
+      <Footer />
     </section>
   );
 };

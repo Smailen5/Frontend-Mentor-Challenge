@@ -26,7 +26,7 @@ const Hero = () => {
           Nice to meet you! I&apos;m{" "}
           <span className="border-b-4 border-emerald-400">Adam Keyes</span>.
         </h2>
-        <p className="mt-8 text-neutral-400">
+        <p className="mt-8 text-neutral-400 text-lg">
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.
         </p>

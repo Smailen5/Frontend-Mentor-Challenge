@@ -5,7 +5,7 @@ import images from "../data/images.js";
 
 const Hero = () => {
   return (
-    <div className="relative overflow-hidden font-spaceGrotesk">
+    <div className="relative overflow-x-clip font-spaceGrotesk top-36 md:top-10">
       {/* sezione immagini */}
       <div className="relative top-0 -z-20 mx-auto flex h-80 flex-col items-center">
         <img

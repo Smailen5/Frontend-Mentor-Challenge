@@ -1,8 +1,5 @@
 /* eslint-disable no-unused-vars */
-import iconFrontend from "../assets/icon-frontend-mentor.svg";
-import iconGithub from "../assets/icon-github.svg";
-import iconLinkedin from "../assets/icon-linkedin.svg";
-import iconTwitter from "../assets/icon-twitter.svg";
+import { github, frontend, twitter, linkedin } from "../data/socialIcon";
 
 const Navbar = () => {
   const brandLogo = "adamkeyes";
@@ -14,16 +11,16 @@ const Navbar = () => {
       {/* icone social */}
       <div className="flex gap-8">
       <a href="#">
-          <img src={iconGithub} alt="alt" />
+          <img src={github} alt="alt" />
         </a>
         <a href="#">
-          <img src={iconFrontend} alt="alt" />
+          <img src={frontend} alt="alt" />
         </a>
         <a href="#">
-          <img src={iconLinkedin} alt="alt" />
+          <img src={linkedin} alt="alt" />
         </a>
         <a href="#">
-          <img src={iconTwitter} alt="alt" />
+          <img src={twitter} alt="alt" />
         </a>
       </div>
     </nav>

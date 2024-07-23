@@ -55,7 +55,7 @@ const Form = () => {
         <img
           src={rings}
           alt={rings}
-          className="absolute -left-72 bottom-32 scale-125 "
+          className="absolute -left-72 bottom-36 scale-125 "
         />
       </div>
       <hr className="border-neutral-400" />

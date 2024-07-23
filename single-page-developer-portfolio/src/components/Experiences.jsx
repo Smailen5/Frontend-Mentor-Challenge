@@ -17,7 +17,7 @@ const Experiences = () => {
           );
         })}
       </section>
-      {/* devo mettere la funzione handleResize in un context cosi posso usarla anche qui */}
+      {/* TODO: devo mettere la funzione handleResize in un context cosi posso usarla anche qui */}
       {/* {window.innerWidth <= 768 && <hr/>} */}
       <hr />
       <img src={rings} alt="rings" className="absolute -right-72 bottom-7 -z-10 scale-125" />

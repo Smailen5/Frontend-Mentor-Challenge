@@ -5,19 +5,27 @@ import images from "../data/images.js";
 
 const Hero = () => {
   return (
-    <div className="relative overflow-x-clip font-spaceGrotesk top-36 md:top-36">
+    <div className="relative top-36 overflow-x-clip font-spaceGrotesk md:top-36">
       {/* sezione immagini */}
       <div className="relative top-0 -z-20 mx-auto flex h-80 flex-col items-center">
+        {/* gruppo di rings a sinistra */}
         <img
           src={rings}
           alt="rings"
           className="absolute -left-64 top-4 -z-10 scale-125"
         />
+
+        {/* immagine profilo */}
         <picture className="absolute -top-36 w-52 md:right-0 md:w-1/3">
           <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
-          <img src={images.imageProfile.sm} alt="immagine profilo" className="" />
+          <img
+            src={images.imageProfile.sm}
+            alt="immagine profilo"
+            className=""
+          />
         </picture>
 
+        {/* cerchio a destra */}
         <img
           src={circle}
           alt="circle"

@@ -4,6 +4,7 @@
 
 @layer base {
   html {
+    font-family: "Space Grotesk";
     background-color: #171717;
     color: #e5e5e5;
   }

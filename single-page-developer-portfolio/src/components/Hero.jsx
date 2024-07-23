@@ -16,7 +16,7 @@ const Hero = () => {
         />
 
         {/* immagine profilo */}
-        <picture className="absolute -top-36 w-52 md:right-0 md:w-1/3">
+        <picture className="absolute -top-36 w-52 md:right-0 md:w-2/5">
           <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
           <img
             src={images.imageProfile.sm}
@@ -29,12 +29,13 @@ const Hero = () => {
         <img
           src={circle}
           alt="circle"
-          className="absolute -right-16 bottom-5 scale-125 md:-bottom-36"
+          className="absolute -right-16 bottom-5 scale-125 md:-bottom-64"
         />
       </div>
+
       {/* sezione presentazione */}
-      <section className="px-10 pt-8 text-center md:absolute md:top-0">
-        <h2 className="text-4xl font-semibold">
+      <section className="px-10 pt-8 text-center md:absolute md:top-0 md:w-4/5 md:text-left">
+        <h2 className="text-4xl font-semibold md:text-7xl">
           Nice to meet you! I&apos;m{" "}
           <span className="border-b-4 border-emerald-400">Adam Keyes</span>.
         </h2>

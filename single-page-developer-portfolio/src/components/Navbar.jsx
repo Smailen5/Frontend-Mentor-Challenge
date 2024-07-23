@@ -4,8 +4,8 @@ import { github, frontend, twitter, linkedin } from "../data/socialIcon";
 const Navbar = () => {
   const brandLogo = "adamkeyes";
   return (
-    <nav className="absolute flex w-full flex-col items-center gap-6 pt-6">
-      <div className="absolute flex flex-col items-center gap-6">
+    <nav className="absolute flex w-full flex-col items-center pt-6">
+      <div className="absolute flex w-full flex-col items-center gap-6 px-8 md:flex-row md:justify-between">
         <header className="font-spaceGrotesk text-2xl font-semibold">
           {brandLogo}
         </header>

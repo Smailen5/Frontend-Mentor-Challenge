@@ -46,16 +46,16 @@ const Form = () => {
             id="message"
             name="message"
             placeholder="MESSAGE"
-            className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
+            className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8 resize-none"
           />
           <div className="flex justify-end pb-12">
-            <Button type="submit">Send message</Button>
+            <Button type="submit" classButton={"mt-4"}>Send message</Button>
           </div>
         </form>
         <img
           src={rings}
           alt={rings}
-          className="absolute -left-72 bottom-7 top-40 scale-125 "
+          className="absolute -left-72 bottom-32 scale-125 "
         />
       </div>
       <hr className="border-neutral-400" />

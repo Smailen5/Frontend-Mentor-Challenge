@@ -10,6 +10,9 @@ import thumbnailProject5Small from "../assets/images/thumbnail-project-5-small.w
 import thumbnailProject5Large from "../assets/images/thumbnail-project-5-large.webp";
 import thumbnailProject6Small from "../assets/images/thumbnail-project-6-small.webp";
 import thumbnailProject6Large from "../assets/images/thumbnail-project-6-large.webp";
+import imageProfileSmall from "../assets/images/image-profile-mobile.webp";
+import imageProfileMedium from "../assets/images/image-profile-tablet.webp";
+import imageProfileLarge from "../assets/images/image-profile-desktop.webp";
 
 const images = {
   thumbnailProject1: {
@@ -35,6 +38,11 @@ const images = {
   thumbnailProject6: {
     small: thumbnailProject6Small,
     large: thumbnailProject6Large,
+  },
+  imageProfile: {
+    small: imageProfileSmall,
+    medium: imageProfileMedium,
+    large: imageProfileLarge,
   },
 };
 

@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 
 const AppContext = createContext();
 
-const AppProvider = ({ children }) => {
-  const useWindowWidth = () => {
+const useWindowWidth = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -15,6 +14,8 @@ const AppProvider = ({ children }) => {
     }, []);
     return width;
   };
+const AppProvider = ({ children }) => {
+  
 
 
   return <AppContext.Provider value={{ useWindowWidth }}>{children}</AppContext.Provider>;

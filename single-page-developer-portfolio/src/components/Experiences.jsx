@@ -11,8 +11,8 @@ const Experiences = () => {
           const { skill, years } = experience;
           return (
             <article key={skill} className="flex flex-col gap-2 md:items-start">
-              <h4 className="text-4xl font-semibold">{skill}</h4>
-              <h5 className="text-neutral-400">{years}</h5>
+              <h4 className="text-4xl font-semibold md:text-6xl">{skill}</h4>
+              <h5 className="text-neutral-400 md:text-2xl">{years}</h5>
             </article>
           );
         })}

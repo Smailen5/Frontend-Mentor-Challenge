@@ -6,8 +6,8 @@ import { useGlobalContext } from "../context";
 
 const Hero = () => {
   const { useWindowWidth } = useGlobalContext();
-  const width = useWindowWidth();
-  const isTablet = width >= 768;
+  const windowWidth = useWindowWidth();
+  const isTablet = windowWidth >= 768 && windowWidth < 1280;
 
   return (
     <div className="relative top-36 overflow-x-clip pb-36 font-spaceGrotesk md:pb-28">
@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
 
       {/* sezione presentazione */}
-      <section className="px-10 pt-8 text-center md:absolute md:top-0 md:flex md:w-4/5 md:flex-col md:items-start md:gap-10 md:text-left">
+      <section className="px-10 pt-8 text-center md:absolute md:top-0 md:flex md:w-4/5 md:flex-col md:items-start md:gap-10 md:text-left xl:px-56">
         <h2 className="text-4xl font-semibold md:text-8xl">
           Nice to {isTablet && <br />} meet you! I&apos;m{" "}
           <span className="border-b-4 border-emerald-400 md:border-b-8">

@@ -2,21 +2,23 @@ import rings from "../assets/images/pattern-rings.svg";
 import circle from "../assets/images/pattern-circle.svg";
 import Button from "./Button";
 import images from "../data/images.js";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import { useGlobalContext } from "../context";
 
 // controlla se cambia la larghezza e ritorna la larghezza attuale
-const useWindowWidth = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+// const useWindowWidth = () => {
+//   const [width, setWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  return width;
-};
+//   useEffect(() => {
+//     const handleResize = () => setWidth(window.innerWidth);
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
+//   return width;
+// };
 
 const Hero = () => {
+  const { useWindowWidth } = useGlobalContext()
   const width = useWindowWidth();
   const isTablet = width >= 768;
 

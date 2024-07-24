@@ -8,6 +8,7 @@ const Hero = () => {
   const { useWindowWidth } = useGlobalContext();
   const windowWidth = useWindowWidth();
   const isTablet = windowWidth >= 768 && windowWidth < 1280;
+  const isDesktop = windowWidth >= 1280;
 
   return (
     <div className="relative top-36 overflow-x-clip pb-36 font-spaceGrotesk md:pb-28">
@@ -41,7 +42,7 @@ const Hero = () => {
       {/* sezione presentazione */}
       <section className="px-10 pt-8 text-center md:absolute md:top-0 md:flex md:w-4/5 md:flex-col md:items-start md:gap-10 md:text-left xl:px-56">
         <h2 className="text-4xl font-semibold md:text-8xl">
-          Nice to {isTablet && <br />} meet you! I&apos;m{" "}
+          Nice to {isTablet && <br />} meet you!{isDesktop && <br />} I&apos;m{" "}
           <span className="border-b-4 border-emerald-400 md:border-b-8">
             Adam Keyes
           </span>

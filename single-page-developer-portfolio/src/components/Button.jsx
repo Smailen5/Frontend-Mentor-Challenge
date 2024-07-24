@@ -4,7 +4,7 @@
   return (
     <button
       type={type}
-      className={`${classButton} inline-block border-b-2 border-emerald-400 pb-3 text-xl uppercase`}
+      className={`${classButton} inline-block border-b-2 border-emerald-400 pb-3 text-xl uppercase md:text-2xl`}
     >
       {children}
     </button>

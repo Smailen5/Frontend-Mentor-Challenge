@@ -18,7 +18,7 @@ const Hero = () => {
         <img
           src={rings}
           alt="rings"
-          className="absolute -left-64 top-4 -z-10 scale-125"
+          className="absolute -left-64 top-4 -z-10 scale-125 xl:-left-10"
         />
 
         {/* immagine profilo */}
@@ -35,7 +35,7 @@ const Hero = () => {
         <img
           src={circle}
           alt="circle"
-          className="absolute -right-16 bottom-5 scale-125 md:-bottom-64"
+          className="absolute -right-16 bottom-5 scale-125 md:-bottom-64 xl:right-[44rem] xl:-bottom-80"
         />
       </div>
 

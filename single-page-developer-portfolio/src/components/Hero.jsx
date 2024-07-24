@@ -23,6 +23,7 @@ const Hero = () => {
 
         {/* immagine profilo */}
         <picture className="absolute -top-36 w-52 md:right-0 md:w-2/5">
+          <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
           <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
           <img
             src={images.imageProfile.sm}

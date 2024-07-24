@@ -5,10 +5,10 @@ import projects from "../data/projects.json";
 
 const Projects = () => {
   return (
-    <div className="px-4 pt-4 md:px-10">
-      <header className="mb-8 flex items-center justify-between">
-        <h2 className="text-4xl font-semibold">Projects</h2>
-        <Button>Contact me</Button>
+    <div className="px-4 pt-4 md:px-10 md:pt-12">
+      <header className="mb-8 flex items-center justify-between md:mb-16">
+        <h2 className="text-4xl font-semibold md:text-7xl">Projects</h2>
+        <Button classButton={"md:text-2xl"}>Contact me</Button>
       </header>
       <section>
         {projects.map((project) => (

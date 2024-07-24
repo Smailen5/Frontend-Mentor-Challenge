@@ -8,8 +8,8 @@ const Form = () => {
   return (
     <section className="bg-neutral-800 px-4 md:grid md:place-items-center">
       <div className="flex flex-col gap-4 py-12 text-center md:w-1/2">
-        <h4 className="text-4xl font-bold">Contact</h4>
-        <p className="text-lg">
+        <h4 className="text-4xl font-bold md:text-7xl">Contact</h4>
+        <p className="text-lg md:text-xl">
           I would love to hear about your project and how I could help. Please
           fill in the form, and I&apos;ll get back to you as soon as possible.
         </p>

@@ -20,7 +20,8 @@ const Hero = () => {
           alt="rings"
           className="absolute -left-64 top-4 -z-10 scale-125 xl:-left-10"
         />
-
+        
+        {/* TODO: posiziona l'immagine per desktop */}
         {/* immagine profilo */}
         <picture className="absolute -top-36 w-52 md:right-0 md:w-2/5">
           <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
@@ -36,7 +37,7 @@ const Hero = () => {
         <img
           src={circle}
           alt="circle"
-          className="absolute -right-16 bottom-5 scale-125 md:-bottom-64 xl:right-[44rem] xl:-bottom-80"
+          className="absolute -right-16 bottom-5 scale-125 md:-bottom-64 xl:-bottom-80 xl:right-[44rem]"
         />
       </div>
 

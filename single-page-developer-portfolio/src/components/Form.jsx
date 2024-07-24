@@ -55,11 +55,11 @@ const Form = () => {
         <img
           src={rings}
           alt={rings}
-          className="absolute -left-72 bottom-36 scale-125 md:-left-full md:bottom-0"
+          className="absolute -left-72 bottom-36 scale-125 md:-left-full md:bottom-12"
         />
       </div>
-      <hr className="border-neutral-400" />
-      <Footer />
+      {/* <hr className="border-neutral-400" />
+      <Footer /> */}
     </section>
   );
 };

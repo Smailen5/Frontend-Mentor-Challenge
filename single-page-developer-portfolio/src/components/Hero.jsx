@@ -4,9 +4,8 @@ import Button from "./Button";
 import images from "../data/images.js";
 import { useGlobalContext } from "../context";
 
-
 const Hero = () => {
-  const { useWindowWidth } = useGlobalContext()
+  const { useWindowWidth } = useGlobalContext();
   const width = useWindowWidth();
   const isTablet = width >= 768;
 
@@ -43,7 +42,10 @@ const Hero = () => {
       <section className="px-10 pt-8 text-center md:absolute md:top-0 md:flex md:w-4/5 md:flex-col md:items-start md:gap-10 md:text-left">
         <h2 className="text-4xl font-semibold md:text-8xl">
           Nice to {isTablet && <br />} meet you! I&apos;m{" "}
-          <span className="border-b-8 border-emerald-400">Adam Keyes</span>.
+          <span className="border-b-4 border-emerald-400 md:border-b-8">
+            Adam Keyes
+          </span>
+          .
         </h2>
         <p className="mt-8 text-lg text-neutral-400 md:w-4/5 md:text-2xl">
           Based in the UK, I&apos;m a front-end developer passionate about

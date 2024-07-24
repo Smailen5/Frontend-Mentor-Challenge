@@ -4,13 +4,13 @@ import rings from "../assets/images/pattern-rings.svg";
 const Experiences = () => {
   return (
     // controlla il mt-80 quando hai finito con Hero
-    <div className="py-20 px-4 font-spaceGrotesk relative overflow-x-hidden md:mt-80 md:px-10">
+    <div className="py-20 px-4 relative overflow-x-hidden md:mt-80 md:px-10">
       <hr />
-      <section className="my-10 flex flex-col items-center gap-8 text-center md:grid md:grid-cols-2 md:justify-items-start">
+      <section className="my-10 flex flex-col items-center gap-8 text-center md:grid md:grid-cols-2 md:justify-items-start md:my-20 md:gap-16">
         {experiences.map((experience) => {
           const { skill, years } = experience;
           return (
-            <article key={skill} className="flex flex-col gap-2 md:items-start">
+            <article key={skill} className="flex flex-col gap-2 md:items-start md:gap-6">
               <h4 className="text-4xl font-semibold md:text-6xl">{skill}</h4>
               <h5 className="text-neutral-400 md:text-2xl">{years}</h5>
             </article>

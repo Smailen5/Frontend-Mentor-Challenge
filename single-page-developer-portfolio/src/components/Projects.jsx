@@ -10,7 +10,7 @@ const Projects = () => {
         <h2 className="text-4xl font-semibold md:text-7xl">Projects</h2>
         <Button classButton={"md:text-2xl"}>Contact me</Button>
       </header>
-      <section>
+      <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {projects.map((project) => (
           <Project key={project.id} {...project} />
         ))}

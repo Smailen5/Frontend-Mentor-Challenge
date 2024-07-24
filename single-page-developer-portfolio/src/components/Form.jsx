@@ -16,7 +16,7 @@ const Form = () => {
       </div>
 
       <div className="relative md:w-1/2">
-        <form className="flex flex-col gap-8 pb-12 z-10 relative">
+        <form className="relative z-10 flex flex-col gap-8 pb-12">
           <label className="hidden" htmlFor="name">
             name
           </label>
@@ -46,10 +46,12 @@ const Form = () => {
             id="message"
             name="message"
             placeholder="MESSAGE"
-            className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8 resize-none"
+            className="h-28 resize-none border-b-2 border-neutral-400 bg-transparent pb-4 pl-8 md:h-36"
           />
           <div className="flex justify-end pb-12">
-            <Button type="submit" classButton={"mt-4"}>Send message</Button>
+            <Button type="submit" classButton={"mt-4"}>
+              Send message
+            </Button>
           </div>
         </form>
         <img

@@ -48,7 +48,7 @@ const Hero = () => {
           </span>
           .
         </h2>
-        <p className="mt-8 text-lg text-neutral-400 md:w-4/5 md:text-2xl">
+        <p className="mt-8 text-lg text-neutral-400 md:w-4/5 md:text-2xl xl:w-4/6 xl:text-3xl">
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.
         </p>

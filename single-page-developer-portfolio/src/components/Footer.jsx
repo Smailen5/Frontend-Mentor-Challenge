@@ -13,16 +13,16 @@ const Navbar = () => {
         {/* icone social */}
         <div className="flex gap-8 md:w- h-auto">
           <a href="#">
-            <img src={github} alt="alt" className="w-8" />
+            <img src={github} alt="alt" className="md:w-8" />
           </a>
           <a href="#">
-            <img src={frontend} alt="alt" className="w-8" />
+            <img src={frontend} alt="alt" className="md:w-8" />
           </a>
           <a href="#">
-            <img src={linkedin} alt="alt" className="w-8" />
+            <img src={linkedin} alt="alt" className="md:w-8" />
           </a>
           <a href="#">
-            <img src={twitter} alt="alt" className="w-8" />
+            <img src={twitter} alt="alt" className="md:w-8" />
           </a>
         </div>
       </footer>

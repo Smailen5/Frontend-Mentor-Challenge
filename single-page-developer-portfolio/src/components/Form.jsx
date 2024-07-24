@@ -6,8 +6,8 @@ import rings from "../assets/images/pattern-rings.svg";
 
 const Form = () => {
   return (
-    <section className="bg-neutral-800 px-4">
-      <div className="flex flex-col gap-4 py-12 text-center">
+    <section className="bg-neutral-800 px-4 md:grid md:place-items-center">
+      <div className="flex flex-col gap-4 py-12 text-center md:w-1/2">
         <h4 className="text-4xl font-bold">Contact</h4>
         <p className="text-lg">
           I would love to hear about your project and how I could help. Please
@@ -15,7 +15,7 @@ const Form = () => {
         </p>
       </div>
 
-      <div className="relative">
+      <div className="relative md:w-1/2">
         <form className="flex flex-col gap-8 pb-12 z-10 relative">
           <label className="hidden" htmlFor="name">
             name

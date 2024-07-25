@@ -5,8 +5,8 @@ import rings from "../assets/images/pattern-rings.svg";
 
 const Form = () => {
   return (
-    <section className="bg-neutral-800 px-4 md:grid md:place-items-center xl:grid-cols-2 xl:items-start xl:pt-24 xl:relative">
-      <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:text-left xl:pt-0 xl:gap-12">
+    <section className="relative bg-neutral-800 px-4 md:grid md:place-items-center xl:grid-cols-2 xl:items-start xl:pt-24 md:pb-10">
+      <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:gap-12 xl:pt-0 xl:text-left">
         <h4 className="text-4xl font-bold md:text-7xl xl:text-8xl">Contact</h4>
         <p className="text-lg md:text-xl">
           I would love to hear about your project and how I could help. Please
@@ -56,14 +56,14 @@ const Form = () => {
         <img
           src={rings}
           alt={rings}
-          className="absolute -left-72 bottom-36 scale-125 md:-left-full md:bottom-12 xl:hidden"
+          className="absolute -left-72 bottom-36 hidden scale-125 md:-left-full md:bottom-12"
         />
       </div>
       <img
-          src={rings}
-          alt={rings}
-          className="absolute -left-48 scale-125 xl:bottom-20"
-        />
+        src={rings}
+        alt={rings}
+        className="absolute -left-72 bottom-32 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
+      />
     </section>
   );
 };

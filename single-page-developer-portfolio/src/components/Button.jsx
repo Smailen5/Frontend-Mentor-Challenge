@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { twMerge } from "tailwind-merge";
-const Button = ({ children, type, className, href }) => {
+const Button = ({ children, type, className, href, target }) => {
   // ricordati di modificare il mt-8 in mt-4 e di adeguare il codice dove viene usato il componente
   return (
     <button
@@ -10,7 +10,9 @@ const Button = ({ children, type, className, href }) => {
         className,
       )}
     >
-      <a href={href}>{children}</a>
+      <a href={href} target={target}>
+        {children}
+      </a>
     </button>
   );
 };

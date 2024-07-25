@@ -19,8 +19,8 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
         {isDesktop && (
           <div className="absolute right-0 top-0 grid h-full w-full max-w-full place-items-center bg-black/70 opacity-0 transition-opacity duration-500 group-[&:hover]:opacity-100">
           <div className="flex flex-col items-center gap-14">
-            <Button href={liveSite}>view project</Button>
-            <Button href={github}>view code</Button>
+            <Button href={liveSite} target="_blank">view project</Button>
+            <Button href={github} target="_blank">view code</Button>
           </div>
         </div>
         )}
@@ -37,8 +37,8 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
         })}
       </div>
       <div className="flex gap-8 pb-12 pt-6 xl:hidden">
-        <Button href={liveSite}>view project</Button>
-        <Button href={github}>view code</Button>
+        <Button href={liveSite} target="_blank">view project</Button>
+        <Button href={github} target="_blank">view code</Button>
       </div>
     </article>
   );

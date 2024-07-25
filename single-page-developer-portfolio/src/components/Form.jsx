@@ -2,27 +2,36 @@
 import React from "react";
 import Button from "./Button";
 import rings from "../assets/images/pattern-rings.svg";
-import { useState } from "react";
+// import { useState } from "react";
+import { Formik } from "formik";
+import * as yup from "yup";
+
+
+const initialValue = {
+  name: "",
+  email: "",
+  message: "",
+};
 
 const Form = () => {
-  const [input, setInput] = useState({});
+  // const [input, setInput] = useState({});
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { name, email, message } = input;
-    alert(`You are sending me these data: 
-      name: ${name}, 
-      email: ${email}, 
-      message: ${message}`);
-    alert("Thank you for your message!");
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const { name, email, message } = input;
+  //   alert(`You are sending me these data:
+  //     name: ${name},
+  //     email: ${email},
+  //     message: ${message}`);
+  //   alert("Thank you for your message!");
+  // };
 
-  const handleChange = (e) => {
-    setInput((prevInput) => ({
-      ...prevInput,
-      [e.target.name]: e.target.value,
-    }));
-  };
+  // const handleChange = (e) => {
+  //   setInput((prevInput) => ({
+  //     ...prevInput,
+  //     [e.target.name]: e.target.value,
+  //   }));
+  // };
 
   return (
     <section className="relative bg-neutral-800 px-4 md:grid md:place-items-center md:pb-10 xl:grid-cols-2 xl:items-start xl:pt-24">
@@ -35,51 +44,80 @@ const Form = () => {
       </div>
 
       <div className="relative md:w-1/2">
-        <form
-          onSubmit={handleSubmit}
-          id="contact"
-          className="relative z-10 flex flex-col gap-8 pb-12"
+        <Formik
+          initialValues={initialValue}
+          onSubmit={(values, {setSubmitting}) => {
+            setSubmitting(true);
+            setTimeout(() => {
+              setSubmitting(false);
+              alert(JSON.stringify(values))
+            }, 1000);
+          }}
         >
-          <label className="hidden" htmlFor="name">
-            name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="NAME"
-            onChange={handleChange}
-            className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
-          />
+          {({
+            values,
+            errors,
+            handleChange,
+            handleSubmit,
+            handleBlur,
+            isSubmitting,
+            isValid,
+            dirty,
+            touched,
+          }) => (
+            // console.log(values),
+            <form
+              onSubmit={handleSubmit}
+              id="contact"
+              className="relative z-10 flex flex-col gap-8 pb-12"
+            >
+              <label className="hidden" htmlFor="name">
+                name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="NAME"
+                onChange={handleChange}
+                value={values.name}
+                className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
+              />
+              {errors.name && touched.name && <p>{errors.name}</p>}
 
-          <label className="hidden" htmlFor="email">
-            name
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="EMAIL"
-            onChange={handleChange}
-            className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
-          />
+              <label className="hidden" htmlFor="email">
+                name
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="EMAIL"
+                onChange={handleChange}
+                value={values.email}
+                className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
+              />
 
-          <label className="hidden" htmlFor="message">
-            name
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="MESSAGE"
-            onChange={handleChange}
-            className="h-28 resize-none border-b-2 border-neutral-400 bg-transparent pb-4 pl-8 md:h-36"
-          />
-          <div className="flex justify-end pb-12">
-            <Button type="submit" classButton={"mt-4"}>
-              Send message
-            </Button>
-          </div>
-        </form>
+              <label className="hidden" htmlFor="message">
+                name
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="MESSAGE"
+                onChange={handleChange}
+                value={values.message}
+                className="h-28 resize-none border-b-2 border-neutral-400 bg-transparent pb-4 pl-8 md:h-36"
+              />
+              <div className="flex justify-end pb-12">
+                <Button type="submit" classButton={"mt-4"}>
+                  Send message
+                </Button>
+              </div>
+            </form>
+          )}
+        </Formik>
+
         <img
           src={rings}
           alt={rings}

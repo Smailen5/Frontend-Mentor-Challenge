@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Button from "./Button";
-import Footer from "./Footer";
 import rings from "../assets/images/pattern-rings.svg";
 
 const Form = () => {
@@ -65,8 +64,6 @@ const Form = () => {
           alt={rings}
           className="absolute -left-48 scale-125 xl:bottom-20"
         />
-      {/* <hr className="border-neutral-400" />
-      <Footer /> */}
     </section>
   );
 };

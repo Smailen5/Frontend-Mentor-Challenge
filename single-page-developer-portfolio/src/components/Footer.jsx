@@ -4,7 +4,7 @@ import { github, frontend, twitter, linkedin } from "../data/socialIcon";
 const Navbar = () => {
   const brandLogo = "adamkeyes";
   return (
-    <div className="px-4 md:px-10 bg-neutral-800">
+    <div className="px-4 md:px-10 bg-neutral-800 xl:px-56 xl:pb-12">
       <hr className="border-neutral-400 md:border-neutral-100" />
       <footer className="flex flex-col items-center gap-6 py-12 md:flex-row md:justify-between">
         <header className="font-spaceGrotesk text-2xl font-semibold md:text-4xl">

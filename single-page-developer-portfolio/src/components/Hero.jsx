@@ -11,7 +11,7 @@ const Hero = () => {
   const isDesktop = windowWidth >= 1280;
 
   return (
-    <div className="relative top-36 overflow-x-clip pb-36 font-spaceGrotesk md:pb-28 lg:pb-72">
+    <div className="relative top-36 overflow-x-clip pb-36 font-spaceGrotesk md:pb-28 xl:pb-72">
       {/* sezione immagini */}
       <div className="relative top-0 -z-20 mx-auto flex h-80 flex-col items-center">
         {/* gruppo di rings a sinistra */}
@@ -23,7 +23,7 @@ const Hero = () => {
 
         {/* TODO: posiziona l'immagine per desktop */}
         {/* immagine profilo */}
-        <picture className="absolute -top-36 w-52 md:right-0 md:w-2/5 lg:-top-44 lg:right-48 lg:w-[30%]">
+        <picture className="absolute -top-36 w-52 md:right-0 md:w-2/5 xl:-top-44 xl:right-48 xl:w-[30%]">
           <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
           <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
           <img

@@ -23,7 +23,7 @@ const Hero = () => {
         
         {/* TODO: posiziona l'immagine per desktop */}
         {/* immagine profilo */}
-        <picture className="absolute -top-36 w-52 md:right-0 md:w-2/5">
+        <picture className="absolute -top-36 w-52 md:right-0 md:w-2/5 lg:w-[30%] lg:right-48 lg:-top-44">
           <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
           <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
           <img

@@ -15,7 +15,7 @@ const Form = () => {
       </div>
 
       <div className="relative md:w-1/2">
-        <form className="relative z-10 flex flex-col gap-8 pb-12">
+        <form id="contact" className="relative z-10 flex flex-col gap-8 pb-12">
           <label className="hidden" htmlFor="name">
             name
           </label>

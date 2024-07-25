@@ -10,7 +10,7 @@ const Navbar = () => {
           {brandLogo}
         </header>
         {/* icone social */}
-        <div className="flex gap-8">
+        <div className="flex gap-8 xl:pr-8">
           <a href="#">
             <img src={github} alt="alt" className="md:w-8" />
           </a>

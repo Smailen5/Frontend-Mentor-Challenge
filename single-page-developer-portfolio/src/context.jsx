@@ -4,6 +4,11 @@ import { useState, useEffect } from "react";
 
 const AppContext = createContext();
 
+// Brand Logo o nome brand
+const brandLogo = () => {
+  return <a href="#" className="capitalize">adam keys</a>;
+};
+
 // controlla larghezza schermo e ne ritorna il valore
 const useWindowWidth = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -18,7 +23,7 @@ const useWindowWidth = () => {
 
 const AppProvider = ({ children }) => {
   return (
-    <AppContext.Provider value={{ useWindowWidth }}>
+    <AppContext.Provider value={{ useWindowWidth, brandLogo }}>
       {children}
     </AppContext.Provider>
   );

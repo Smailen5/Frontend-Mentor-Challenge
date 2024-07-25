@@ -6,6 +6,7 @@ import images from "../data/images.js";
 import Button from "./Button.jsx";
 import { useGlobalContext } from "../context";
 
+// controlla le chiavi che ricevi dalla chiamata API e sostituiscile di conseguenza
 const Project = ({ image, title, technologies, liveSite, github }) => {
   const { useWindowWidth } = useGlobalContext();
   const windowWidth = useWindowWidth();

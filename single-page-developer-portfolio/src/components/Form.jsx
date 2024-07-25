@@ -6,7 +6,7 @@ import rings from "../assets/images/pattern-rings.svg";
 
 const Form = () => {
   return (
-    <section className="bg-neutral-800 px-4 md:grid md:place-items-center xl:grid-cols-2">
+    <section className="bg-neutral-800 px-4 md:grid md:place-items-center xl:grid-cols-2 xl:items-start xl:pt-24">
       <div className="flex flex-col gap-4 py-12 text-center md:w-1/2">
         <h4 className="text-4xl font-bold md:text-7xl">Contact</h4>
         <p className="text-lg md:text-xl">

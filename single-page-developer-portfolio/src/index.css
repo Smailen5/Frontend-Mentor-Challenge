@@ -3,10 +3,23 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* sfondo */
+    --color-bg-black: #151515;
+    --color-bg-semi-black: #242424;
+    /* accento colore */
+    --color-green-accent: #4ee1a0;
+    /* testo */
+    --color-text-paragraph: #d9d9d9;
+    --color-text: #ffffff;
+  }
+}
+
+@layer base {
   html {
     font-family: "Space Grotesk";
     background-color: #171717;
-    color: #e5e5e5;
+    color: var(--color-text);
   }
 }
 

@@ -8,6 +8,12 @@ export default {
     extend: {
       fontFamily: {
         spaceGrotesk: ['Space Grotesk', 'sans-serif'],
+      },
+      textColor: {
+        skin: {
+          base: 'var(--color-text)',
+          paragraph: 'var(--color-text-paragraph)',
+        }
       }
     },
   },

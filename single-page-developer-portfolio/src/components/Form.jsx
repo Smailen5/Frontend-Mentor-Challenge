@@ -5,6 +5,7 @@ import rings from "../assets/images/pattern-rings.svg";
 // import { useState } from "react";
 import { Formik } from "formik";
 import * as yup from "yup";
+import ErrorMessage from "./ErrorMessage";
 
 // Validazione schema da yup
 const validationSchema = yup.object({
@@ -102,7 +103,7 @@ const Form = () => {
 
                 {/* messaggio di errore per nome */}
                 {errors.name && touched.name && (
-                  <p className="text-right text-red-500">{errors.name}</p>
+                  <ErrorMessage>{errors.name}</ErrorMessage>
                 )}
               </div>
 
@@ -126,7 +127,7 @@ const Form = () => {
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
                 {/* messaggio di errore per email */}
-                {errors.email && touched.email && <p>{errors.email}</p>}
+                {errors.email && touched.email && <ErrorMessage>{errors.email}</ErrorMessage>}
               </div>
 
               <label className="hidden" htmlFor="message">
@@ -148,7 +149,7 @@ const Form = () => {
                   } h-28 resize-none border-b-2 bg-transparent pb-4 pl-8 md:h-36`}
                 />
                 {/* messaggio di errore per messaggio */}
-                {errors.message && touched.message && <p className="text-red-500 text-right">{errors.message}</p>}
+                {errors.message && touched.message && <ErrorMessage>{errors.message}</ErrorMessage>}
               </div>
 
               <div className="flex justify-end pb-12">

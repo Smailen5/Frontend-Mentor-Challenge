@@ -1,7 +1,60 @@
-# React + Vite
+# Frontend Mentor - Portfolio single page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Table of contents
 
-[sito live](https://66acfedd0175d378b05368b4--fanciful-tulumba-14b591.netlify.app/)
+- [Overview](#overview)=
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+
+## Overview
+
+
+### Screenshot
+
+![desktop](../screen%20capture//portfolio-dekstop.jpeg)
+
+
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/single-page-developer-portfolio)
+- Live Site URL: [Add live site URL here](https://66acfedd0175d378b05368b4--fanciful-tulumba-14b591.netlify.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- React.js
+- Tailwind
+- React icons
+- Formik
+- Yup
+
+
+### What I learned
+
+- Managed forms with Formik and validation with Yup, enhancing form handling and user input validation in React applications.
+
+
+### Useful resources
+
+- [Formik Documentation](https://formik.org/docs/tutorial) - Comprehensive guide to Formik, a powerful form library for React.
+- [Yup Documentation](https://formik.org/docs/guides/validation) - Useful resource for learning how to integrate Yup for form validation.
+
+
+## Author
+
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

@@ -4,22 +4,26 @@
 
 @layer base {
   :root {
-    /* sfondo */
-    --color-bg-black: #151515;
-    --color-bg-semi-black: #242424;
-    /* accento colore */
-    --color-green-accent: #4ee1a0;
-    /* testo */
-    --color-text-paragraph: #d9d9d9;
-    --color-text: #ffffff;
+    /* Background colors */
+    --color-bg-primary: #151515; /* Sfondo principale */
+    --color-bg-secondary: #242424; /* Sfondo secondario */
+
+    /* Accent color */
+    --color-accent-primary: #d9d9d9; /* Colore di accento principale */
+    --color-accent-secondary: #4ee1a0; /* Colore di accento secondario */
+
+    /* Text colors */
+    --color-text-primary: #ffffff; /* Testo principale */
+    --color-text-secondary: #d9d9d9; /* Testo secondario */
+    --color-text-error: #ef4444; /* Colore del testo per errori */
   }
 }
 
 @layer base {
   html {
     font-family: "Space Grotesk";
-    background-color: #171717;
-    color: var(--color-text);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
   }
 }
 

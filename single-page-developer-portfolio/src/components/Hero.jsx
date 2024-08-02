@@ -45,12 +45,12 @@ const Hero = () => {
       <section className="px-10 pt-8 text-center md:absolute md:top-0 md:flex md:w-4/5 md:flex-col md:items-start md:gap-10 md:text-left xl:px-56 xl:pt-20">
         <h2 className="text-4xl font-semibold md:text-8xl">
           Nice to {isTablet && <br />} meet you!{isDesktop && <br />} I&apos;m{" "}
-          <span className="border-b-4 border-emerald-400 md:border-b-8">
+          <span className="border-b-4 border-skin-accent md:border-b-8">
             Adam Keyes
           </span>
           .
         </h2>
-        <p className="mt-8 text-lg text-skin-paragraph md:w-4/5 md:text-2xl xl:w-4/6 xl:text-3xl">
+        <p className="mt-8 text-lg text-skin-variant md:w-4/5 md:text-2xl xl:w-4/6 xl:text-3xl">
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.
         </p>

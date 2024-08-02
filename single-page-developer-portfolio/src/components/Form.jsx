@@ -21,10 +21,10 @@ const initialValue = {
 const Form = () => {  
 
   return (
-    <section className="relative bg-neutral-800 px-4 md:grid md:place-items-center md:pb-10 xl:grid-cols-2 xl:items-start xl:pt-24">
+    <section className="relative bg-skin-semiBlack px-4 md:grid md:place-items-center md:pb-10 xl:grid-cols-2 xl:items-start xl:pt-24">
       <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:gap-12 xl:pt-0 xl:text-left">
         <h4 className="text-4xl font-bold md:text-7xl xl:text-8xl">Contact</h4>
-        <p className="text-lg md:text-xl">
+        <p className="text-lg md:text-xl text-skin-variant">
           I would love to hear about your project and how I could help. Please
           fill in the form, and I&apos;ll get back to you as soon as possible.
         </p>
@@ -68,10 +68,10 @@ const Form = () => {
                   value={values.name}
                   className={`${
                     errors.name && touched.name
-                      ? "border-red-500"
+                      ? "border-skin-error"
                       : values.name && !errors.name
-                        ? "border-emerald-400"
-                        : "border-neutral-400"
+                        ? "border-skin-accent"
+                        : "border-skin-base"
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
                 {/* messaggio di errore per nome */}
@@ -93,10 +93,10 @@ const Form = () => {
                   value={values.email}
                   className={`${
                     errors.email && touched.email
-                      ? "border-red-500"
+                      ? "border-skin-error"
                       : values.email && !errors.email
-                        ? "border-emerald-400"
-                        : "border-neutral-400"
+                        ? "border-skin-accent"
+                        : "border-skin-base"
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
                 {/* messaggio di errore per email */}
@@ -117,10 +117,10 @@ const Form = () => {
                   value={values.message}
                   className={`${
                     errors.message && touched.message
-                      ? "border-red-500"
+                      ? "border-skin-error"
                       : values.message && !errors.message
-                        ? "border-emerald-400"
-                        : "border-neutral-400"
+                        ? "border-skin-accent"
+                        : "border-skin-base"
                   } h-28 resize-none border-b-2 bg-transparent pb-4 pl-8 md:h-36`}
                 />
                 {/* messaggio di errore per messaggio */}

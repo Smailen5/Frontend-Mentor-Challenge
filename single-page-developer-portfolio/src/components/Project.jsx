@@ -32,7 +32,7 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
       <div className="flex gap-4">
         {technologies.map((tech) => {
           return (
-            <h5 key={tech} className="text-xl uppercase text-neutral-400">
+            <h5 key={tech} className="text-xl uppercase text-skin-variant">
               {tech}
             </h5>
           );

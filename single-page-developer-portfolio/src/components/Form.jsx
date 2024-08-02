@@ -2,7 +2,6 @@
 import React from "react";
 import Button from "./Button";
 import rings from "../assets/images/pattern-rings.svg";
-// import { useState } from "react";
 import { Formik } from "formik";
 import * as yup from "yup";
 import ErrorMessage from "./ErrorMessage";
@@ -22,24 +21,6 @@ const initialValue = {
 };
 
 const Form = () => {
-  // const [input, setInput] = useState({});
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const { name, email, message } = input;
-  //   alert(`You are sending me these data:
-  //     name: ${name},
-  //     email: ${email},
-  //     message: ${message}`);
-  //   alert("Thank you for your message!");
-  // };
-
-  // const handleChange = (e) => {
-  //   setInput((prevInput) => ({
-  //     ...prevInput,
-  //     [e.target.name]: e.target.value,
-  //   }));
-  // };
 
   return (
     <section className="relative bg-neutral-800 px-4 md:grid md:place-items-center md:pb-10 xl:grid-cols-2 xl:items-start xl:pt-24">

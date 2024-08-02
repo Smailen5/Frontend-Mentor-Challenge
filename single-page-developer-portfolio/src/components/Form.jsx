@@ -99,7 +99,6 @@ const Form = () => {
                         : "border-neutral-400"
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
-                {console.log(!errors.message, touched.message)}
 
                 {/* messaggio di errore per nome */}
                 {errors.name && touched.name && (

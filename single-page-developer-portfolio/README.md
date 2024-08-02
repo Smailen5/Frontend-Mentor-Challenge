@@ -3,7 +3,7 @@
 
 ## Table of contents
 
-- [Overview](#overview)=
+- [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)

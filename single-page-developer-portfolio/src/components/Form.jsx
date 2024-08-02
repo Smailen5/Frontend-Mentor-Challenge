@@ -82,46 +82,74 @@ const Form = () => {
               <label className="hidden" htmlFor="name">
                 name
               </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="NAME"
-                onChange={handleChange}
-                value={values.name}
-                className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
-              />
-              {/* messaggio di errore per nome */}
-              {errors.name && touched.name && <p>{errors.name}</p>}
+              <div className="grid">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="NAME"
+                  onChange={handleChange}
+                  value={values.name}
+                  className={`${
+                    errors.name && touched.name
+                      ? "border-red-500"
+                      : values.name && !errors.name
+                        ? "border-emerald-400"
+                        : "border-neutral-400"
+                  } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
+                />
+                {console.log(!errors.message, touched.message)}
+
+                {/* messaggio di errore per nome */}
+                {errors.name && touched.name && (
+                  <p className="text-right text-red-500">{errors.name}</p>
+                )}
+              </div>
 
               <label className="hidden" htmlFor="email">
                 name
               </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="EMAIL"
-                onChange={handleChange}
-                value={values.email}
-                className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
-              />
-              {/* messaggio di errore per email */}
-              {errors.email && touched.email && <p>{errors.email}</p>}
+              <div className="grid">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="EMAIL"
+                  onChange={handleChange}
+                  value={values.email}
+                  className={`${
+                    errors.email && touched.email
+                      ? "border-red-500"
+                      : values.email && !errors.email
+                        ? "border-emerald-400"
+                        : "border-neutral-400"
+                  } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
+                />
+                {/* messaggio di errore per email */}
+                {errors.email && touched.email && <p>{errors.email}</p>}
+              </div>
 
               <label className="hidden" htmlFor="message">
                 name
               </label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="MESSAGE"
-                onChange={handleChange}
-                value={values.message}
-                className="h-28 resize-none border-b-2 border-neutral-400 bg-transparent pb-4 pl-8 md:h-36"
-              />
-              {/* messaggio di errore per messaggio */}
-              {errors.message && touched.message && <p>{errors.message}</p>}
+              <div className="grid">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="MESSAGE"
+                  onChange={handleChange}
+                  value={values.message}
+                  className={`${
+                    errors.message && touched.message
+                      ? "border-red-500"
+                      : values.message && !errors.message
+                        ? "border-emerald-400"
+                        : "border-neutral-400"
+                  } h-28 resize-none border-b-2 bg-transparent pb-4 pl-8 md:h-36`}
+                />
+                {/* messaggio di errore per messaggio */}
+                {errors.message && touched.message && <p className="text-red-500 text-right">{errors.message}</p>}
+              </div>
 
               <div className="flex justify-end pb-12">
                 <Button
@@ -130,7 +158,7 @@ const Form = () => {
                 >
                   {/* TODO: controllare l'operatore && non capisco come sta funzionando */}
                   {/* {console.log((!isValid && !dirty) && 'come')} */}
-                  {!isValid && !dirty ? 'invalid form' : 'send message'}
+                  {!isValid && !dirty ? "invalid form" : "send message"}
                 </Button>
               </div>
             </form>

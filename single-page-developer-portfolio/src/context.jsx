@@ -1,5 +1,6 @@
 import { createContext, useContext } from "react";
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const AppContext = createContext();
 
@@ -38,3 +39,7 @@ const useGlobalContext = () => {
 
 // eslint-disable-next-line react-refresh/only-export-components
 export { AppProvider, useGlobalContext };
+
+AppProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+}

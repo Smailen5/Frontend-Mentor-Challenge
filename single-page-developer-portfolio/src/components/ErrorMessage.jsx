@@ -1,4 +1,5 @@
 import { CiCircleAlert } from "react-icons/ci";
+import PropTypes from "prop-types";
 
 export default function ErrorMessage({ children }) {
   return (
@@ -8,3 +9,7 @@ export default function ErrorMessage({ children }) {
     </>
   );
 }
+
+ErrorMessage.propTypes = {
+  children: PropTypes.string,
+};

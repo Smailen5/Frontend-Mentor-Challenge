@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-
+import PropTypes from "prop-types";
 const Button = ({ children, type, className, href, target }) => {
   // ricordati di modificare il mt-8 in mt-4 e di adeguare il codice dove viene usato il componente
   return (
@@ -15,6 +15,14 @@ const Button = ({ children, type, className, href, target }) => {
       </a>
     </button>
   );
+};
+
+Button.propTypes = {
+  children: PropTypes.node,
+  type: PropTypes.string,
+  className: PropTypes.string,
+  href: PropTypes.string,
+  target: PropTypes.string,
 };
 
 export default Button;

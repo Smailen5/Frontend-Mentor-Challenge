@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
 import Button from "./Button";
 import rings from "../assets/images/pattern-rings.svg";
 import { Formik } from "formik";
@@ -20,7 +18,7 @@ const initialValue = {
   message: "",
 };
 
-const Form = () => {
+const Form = () => {  
 
   return (
     <section className="relative bg-neutral-800 px-4 md:grid md:place-items-center md:pb-10 xl:grid-cols-2 xl:items-start xl:pt-24">
@@ -53,9 +51,9 @@ const Form = () => {
           }) => (
             // console.log(values),
             <form
-              onSubmit={handleSubmit}
-              id="contact"
-              className="relative z-10 flex flex-col gap-8 pb-12"
+            onSubmit={handleSubmit}
+            id="contact"
+            className="relative z-10 flex flex-col gap-8 pb-12"
             >
               <label className="hidden" htmlFor="name">
                 name

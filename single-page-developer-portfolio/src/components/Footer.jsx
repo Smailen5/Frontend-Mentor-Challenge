@@ -14,16 +14,17 @@ const Navbar = () => {
         {/* icone social */}
         <div className="md:w- flex h-auto gap-8">
           <a href="#">
-            <img src={github} alt="alt" className="md:w-8" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" />
+            <img src={github} alt="alt" className="md:w-8 hover:fill-emerald-400" />
           </a>
           <a href="#">
-            <img src={frontend} alt="alt" className="md:w-8" />
+            <img src={frontend} alt="alt" className="md:w-8 hover:fil-emerald-400" />
           </a>
           <a href="#">
-            <img src={linkedin} alt="alt" className="md:w-8" />
+            <img src={linkedin} alt="alt" className="md:w-8 hover:fil-emerald-400" />
           </a>
           <a href="#">
-            <img src={twitter} alt="alt" className="md:w-8" />
+            <img src={twitter} alt="alt" className="md:w-8 hover:fil-emerald-400" />
           </a>
         </div>
       </footer>

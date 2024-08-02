@@ -11,19 +11,18 @@ const Hero = () => {
   const isDesktop = windowWidth >= 1280;
 
   return (
-    <div className="relative top-36 overflow-x-clip pb-36 font-spaceGrotesk md:pb-28 xl:pb-72">
+    <div className="relative mx-[10%] flex flex-col gap-12 xl:min-h-fit xl:pt-20">
       {/* sezione immagini */}
-      <div className="relative top-0 -z-20 mx-auto flex h-80 flex-col items-center">
+      <div className="h-80 xl:order-2">
         {/* gruppo di rings a sinistra */}
         <img
           src={rings}
           alt="rings"
-          className="absolute -left-64 top-4 -z-10 scale-125 xl:-left-10"
+          className="absolute -left-52 top-8 -z-10 scale-125 xl:-left-10"
         />
 
-        {/* TODO: posiziona l'immagine per desktop */}
         {/* immagine profilo */}
-        <picture className="absolute -top-36 w-52 md:right-0 md:w-2/5 xl:-top-44 xl:right-56 xl:w-[30%]">
+        <picture className="absolute -top-32 right-1/2 w-52 translate-x-1/2 xl:w-[30%]">
           <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
           <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
           <img
@@ -37,12 +36,12 @@ const Hero = () => {
         <img
           src={circle}
           alt="circle"
-          className="absolute -right-16 bottom-5 scale-125 md:-bottom-64 xl:-bottom-80 xl:right-[46rem]"
+          className="absolute -right-28 bottom-1/2 scale-110"
         />
       </div>
 
       {/* sezione presentazione */}
-      <section className="px-10 pt-8 text-center md:absolute md:top-0 md:flex md:w-4/5 md:flex-col md:items-start md:gap-10 md:text-left xl:px-56 xl:pt-20">
+      <section className="text-center md:top-0 md:flex md:w-3/5 md:flex-col md:items-start md:gap-10 md:text-left xl:order-1">
         <h2 className="text-4xl font-semibold md:text-8xl">
           Nice to {isTablet && <br />} meet you!{isDesktop && <br />} I&apos;m{" "}
           <span className="border-b-4 border-skin-accent md:border-b-8">
@@ -50,11 +49,13 @@ const Hero = () => {
           </span>
           .
         </h2>
-        <p className="mt-8 text-lg text-skin-variant md:w-4/5 md:text-2xl xl:w-4/6 xl:text-3xl">
+        <p className="mt-8 text-lg text-skin-variant md:w-4/5 md:text-2xl xl:text-3xl">
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.
         </p>
-        <Button className="mt-8 xl:mt-14" href="#contact">Contact me</Button>
+        <Button className="mt-8 xl:mt-14" href="#contact">
+          Contact me
+        </Button>
       </section>
     </div>
   );

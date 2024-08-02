@@ -33,7 +33,7 @@ export default {
       },
       fill: {
         skin: {
-          accent: 'var(--color-accent-primary)',
+          accent: 'var(--color-accent-secondary)',
         }
       }
     },

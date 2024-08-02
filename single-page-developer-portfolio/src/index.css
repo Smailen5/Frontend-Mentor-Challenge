@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    font-family: "Space Grotesk";
     /* Background colors */
     --color-bg-primary: #151515; /* Sfondo principale */
     --color-bg-secondary: #242424; /* Sfondo secondario */

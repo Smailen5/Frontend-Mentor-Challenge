@@ -91,6 +91,7 @@ const Form = () => {
                 value={values.name}
                 className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
               />
+              {/* messaggio di errore per nome */}
               {errors.name && touched.name && <p>{errors.name}</p>}
 
               <label className="hidden" htmlFor="email">
@@ -105,6 +106,7 @@ const Form = () => {
                 value={values.email}
                 className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
               />
+              {/* messaggio di errore per email */}
               {errors.email && touched.email && <p>{errors.email}</p>}
 
               <label className="hidden" htmlFor="message">
@@ -118,6 +120,7 @@ const Form = () => {
                 value={values.message}
                 className="h-28 resize-none border-b-2 border-neutral-400 bg-transparent pb-4 pl-8 md:h-36"
               />
+              {/* messaggio di errore per messaggio */}
               {errors.message && touched.message && <p>{errors.message}</p>}
 
               <div className="flex justify-end pb-12">
@@ -126,7 +129,7 @@ const Form = () => {
                   className={`mt-4 ${(!isValid && !dirty) & "text-red-500"}`}
                 >
                   {/* TODO: controllare l'operatore && non capisco come sta funzionando */}
-                  {console.log((!isValid && !dirty) && 'come')}
+                  {/* {console.log((!isValid && !dirty) && 'come')} */}
                   {!isValid && !dirty ? 'invalid form' : 'send message'}
                 </Button>
               </div>

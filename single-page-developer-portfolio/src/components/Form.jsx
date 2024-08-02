@@ -140,11 +140,6 @@ const Form = () => {
           )}
         </Formik>
 
-        <img
-          src={rings}
-          alt={rings}
-          className="absolute -left-72 bottom-36 hidden scale-125 md:-left-full md:bottom-12"
-        />
       </div>
       <img
         src={rings}

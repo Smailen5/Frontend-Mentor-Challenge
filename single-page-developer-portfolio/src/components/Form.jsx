@@ -68,10 +68,6 @@ const Form = () => {
             errors,
             handleChange,
             handleSubmit,
-            handleBlur,
-            isSubmitting,
-            isValid,
-            dirty,
             touched,
           }) => (
             // console.log(values),

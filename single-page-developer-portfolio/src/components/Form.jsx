@@ -83,7 +83,7 @@ const Form = () => {
               <label className="hidden" htmlFor="name">
                 name
               </label>
-              <div className="grid">
+              <div className="grid relative">
                 <input
                   type="text"
                   id="name"
@@ -99,7 +99,6 @@ const Form = () => {
                         : "border-neutral-400"
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
-
                 {/* messaggio di errore per nome */}
                 {errors.name && touched.name && (
                   <ErrorMessage>{errors.name}</ErrorMessage>
@@ -109,7 +108,7 @@ const Form = () => {
               <label className="hidden" htmlFor="email">
                 name
               </label>
-              <div className="grid">
+              <div className="grid relative">
                 <input
                   type="email"
                   id="email"
@@ -132,7 +131,7 @@ const Form = () => {
               <label className="hidden" htmlFor="message">
                 name
               </label>
-              <div className="grid">
+              <div className="grid relative">
                 <textarea
                   id="message"
                   name="message"

@@ -83,7 +83,7 @@ const Form = () => {
               <label className="hidden" htmlFor="name">
                 name
               </label>
-              <div className="grid relative">
+              <div className="relative grid">
                 <input
                   type="text"
                   id="name"
@@ -108,7 +108,7 @@ const Form = () => {
               <label className="hidden" htmlFor="email">
                 name
               </label>
-              <div className="grid relative">
+              <div className="relative grid">
                 <input
                   type="email"
                   id="email"
@@ -125,13 +125,15 @@ const Form = () => {
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
                 {/* messaggio di errore per email */}
-                {errors.email && touched.email && <ErrorMessage>{errors.email}</ErrorMessage>}
+                {errors.email && touched.email && (
+                  <ErrorMessage>{errors.email}</ErrorMessage>
+                )}
               </div>
 
               <label className="hidden" htmlFor="message">
                 name
               </label>
-              <div className="grid relative">
+              <div className="relative grid">
                 <textarea
                   id="message"
                   name="message"
@@ -147,17 +149,14 @@ const Form = () => {
                   } h-28 resize-none border-b-2 bg-transparent pb-4 pl-8 md:h-36`}
                 />
                 {/* messaggio di errore per messaggio */}
-                {errors.message && touched.message && <ErrorMessage>{errors.message}</ErrorMessage>}
+                {errors.message && touched.message && (
+                  <ErrorMessage>{errors.message}</ErrorMessage>
+                )}
               </div>
 
               <div className="flex justify-end pb-12">
-                <Button
-                  type="submit"
-                  className={`mt-4 ${(!isValid && !dirty) & "text-red-500"}`}
-                >
-                  {/* TODO: controllare l'operatore && non capisco come sta funzionando */}
-                  {/* {console.log((!isValid && !dirty) && 'come')} */}
-                  {!isValid && !dirty ? "invalid form" : "send message"}
+                <Button type="submit" className="mt-4">
+                  Send message
                 </Button>
               </div>
             </form>

@@ -11,7 +11,7 @@ const Hero = () => {
   const isDesktop = windowWidth >= 1280;
 
   return (
-    <div className="relative mx-[10%] flex flex-col gap-12 xl:min-h-fit xl:pt-20">
+    <div className="relative mx-[5%] md:mx-[10%] flex flex-col gap-12 xl:min-h-fit xl:pt-20">
       {/* sezione immagini */}
       <div className="h-80 xl:order-2">
         {/* gruppo di rings a sinistra */}
@@ -42,7 +42,7 @@ const Hero = () => {
 
       {/* sezione presentazione */}
       <section className="text-center md:top-0 md:flex md:w-3/5 md:flex-col md:items-start md:gap-10 md:text-left xl:order-1">
-        <h2 className="text-4xl font-semibold md:text-8xl">
+        <h2 className="text-4.5xl font-semibold md:text-8xl">
           Nice to {isTablet && <br />} meet you!{isDesktop && <br />} I&apos;m{" "}
           <span className="border-b-4 border-skin-accent md:border-b-8">
             Adam Keyes

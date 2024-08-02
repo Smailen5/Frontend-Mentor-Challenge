@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize:{
+        '4.5xl': ['2.5rem', '2.75rem'],
+      },
       fontFamily: {
         spaceGrotesk: ['Space Grotesk', 'sans-serif'],
       },

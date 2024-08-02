@@ -6,6 +6,11 @@ import rings from "../assets/images/pattern-rings.svg";
 import { Formik } from "formik";
 import * as yup from "yup";
 
+const validationSchema = yup.object({
+  name: yup.string().max(15).required(),
+  email: yup.string().email().required(),
+  message: yup.string().min(50).required(),
+});
 
 const initialValue = {
   name: "",
@@ -46,11 +51,12 @@ const Form = () => {
       <div className="relative md:w-1/2">
         <Formik
           initialValues={initialValue}
-          onSubmit={(values, {setSubmitting}) => {
+          validationSchema={validationSchema}
+          onSubmit={(values, { setSubmitting }) => {
             setSubmitting(true);
             setTimeout(() => {
               setSubmitting(false);
-              alert(JSON.stringify(values))
+              alert(JSON.stringify(values));
             }, 1000);
           }}
         >
@@ -97,6 +103,7 @@ const Form = () => {
                 value={values.email}
                 className="border-b-2 border-neutral-400 bg-transparent pb-4 pl-8"
               />
+              {errors.email && touched.email && <p>{errors.email}</p>}
 
               <label className="hidden" htmlFor="message">
                 name
@@ -109,9 +116,16 @@ const Form = () => {
                 value={values.message}
                 className="h-28 resize-none border-b-2 border-neutral-400 bg-transparent pb-4 pl-8 md:h-36"
               />
+              {errors.message && touched.message && <p>{errors.message}</p>}
+
               <div className="flex justify-end pb-12">
-                <Button type="submit" classButton={"mt-4"}>
-                  Send message
+                <Button
+                  type="submit"
+                  className={`mt-4 ${(!isValid && !dirty) & "text-red-500"}`}
+                >
+                  {/* TODO: controllare l'operatore && non capisco come sta funzionando */}
+                  {console.log((!isValid && !dirty) && 'come')}
+                  {!isValid && !dirty ? 'invalid form' : 'send message'}
                 </Button>
               </div>
             </form>

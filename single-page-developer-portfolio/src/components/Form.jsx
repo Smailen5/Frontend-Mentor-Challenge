@@ -6,12 +6,14 @@ import rings from "../assets/images/pattern-rings.svg";
 import { Formik } from "formik";
 import * as yup from "yup";
 
+// Validazione schema da yup
 const validationSchema = yup.object({
   name: yup.string().max(15).required(),
   email: yup.string().email().required(),
   message: yup.string().min(50).required(),
 });
 
+// Valore iniziale
 const initialValue = {
   name: "",
   email: "",

@@ -9,7 +9,7 @@ import { useGlobalContext } from "../context";
 const Navbar = () => {
   const { brandLogo } = useGlobalContext();
   return (
-    <nav className="flex flex-col items-center gap-6 pt-6 md:mx-[10%] md:flex-row md:justify-between xl:pt-10">
+    <nav className="flex flex-col items-center gap-6 pt-6 md:mx-[5%] xl:mx-[10%] md:flex-row md:justify-between xl:pt-10">
       <header className="text-2xl font-semibold md:text-4xl">
         {brandLogo()}
       </header>

@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-// import { github, frontend, twitter, linkedin } from "../data/socialIcon";
 import { SiGithub, SiFrontendmentor, SiLinkedin, SiTwitter } from "react-icons/si";
 import { useGlobalContext } from "../context";
 

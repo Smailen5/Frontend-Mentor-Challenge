@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { createContext, useContext } from "react";
 import { useState, useEffect } from "react";
 
@@ -6,7 +5,11 @@ const AppContext = createContext();
 
 // Brand Logo o nome brand
 const brandLogo = () => {
-  return <a href="#" className="capitalize">adam keys</a>;
+  return (
+    <a href="#" className="capitalize">
+      adam keys
+    </a>
+  );
 };
 
 // controlla larghezza schermo e ne ritorna il valore

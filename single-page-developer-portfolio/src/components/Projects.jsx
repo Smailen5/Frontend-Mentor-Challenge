@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import Button from "./Button";
 import Project from "./Project";
 // fai la chiamata API qui e passa i dati a project

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { CiCircleAlert } from "react-icons/ci";
 
 export default function ErrorMessage({ children }) {

@@ -8,7 +8,7 @@ const Experiences = () => {
   const isTablet = width >= 768;
   return (
     // controlla il mt-80 quando hai finito con Hero
-    <div className="relative overflow-x-hidden px-4 py-20 md:mt-80 md:px-10 xl:px-56">
+    <div className="relative overflow-x-hidden px-4 pt-20 md:mt-24 md:px-10 xl:mx-[10%] xl:mt-48 xl:overflow-visible xl:px-0">
       <hr />
       <section className="my-10 flex flex-col items-center gap-8 text-center md:my-20 md:grid md:grid-cols-2 md:justify-items-start md:gap-16 xl:grid-cols-3">
         {experiences.map((experience) => {
@@ -29,7 +29,7 @@ const Experiences = () => {
       <img
         src={rings}
         alt="rings"
-        className="absolute -right-72 bottom-7 -z-10 scale-125 xl:bottom-24"
+        className="absolute -right-72 bottom-7 -z-10 scale-125 lg:-right-24 lg:bottom-24 lg:translate-x-1/2 xl:-bottom-20 xl:-right-36"
       />
     </div>
   );

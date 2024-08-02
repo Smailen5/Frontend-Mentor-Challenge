@@ -11,7 +11,7 @@ const Hero = () => {
   const isDesktop = windowWidth >= 1280;
 
   return (
-    <div className="relative flex flex-col gap-12 overflow-x-clip px-[5%] md:flex-row md:gap-0 lg:min-h-[768px] lg:pt-20 xl:mx-[10%] xl:min-h-fit xl:overflow-visible">
+    <div className="relative flex flex-col gap-12 overflow-x-clip px-[5%] md:flex-row md:gap-0 lg:min-h-[768px] lg:pt-20 xl:mx-[10%] xl:min-h-fit xl:overflow-visible xl:px-0">
       {/* sezione immagini */}
       <div className="h-80 overflow-hidden xl:order-2">
         {/* gruppo di rings a sinistra */}
@@ -22,7 +22,7 @@ const Hero = () => {
         />
 
         {/* immagine profilo */}
-        <picture className="absolute right-1/2 -z-10 w-52 translate-x-1/2 max-md:-top-32 lg:-right-24 lg:-top-16 lg:w-1/2 lg:translate-x-0 xl:-right-8 xl:-top-20 xl:w-[35%]">
+        <picture className="absolute right-1/2 -z-10 w-52 translate-x-1/2 max-md:-top-32 lg:-right-24 lg:-top-16 lg:w-1/2 lg:translate-x-0 xl:right-0 xl:-top-20 xl:w-[35%]">
           <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
           <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
           <img

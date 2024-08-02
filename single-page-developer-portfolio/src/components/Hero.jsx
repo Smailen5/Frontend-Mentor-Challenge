@@ -11,18 +11,18 @@ const Hero = () => {
   const isDesktop = windowWidth >= 1280;
 
   return (
-    <div className="relative mx-[5%] md:mx-[10%] flex flex-col gap-12 xl:min-h-fit xl:pt-20">
+    <div className="relative mx-[5%] flex flex-col gap-12 md:flex-row md:gap-0 lg:pt-20 xl:mx-[10%] xl:min-h-fit">
       {/* sezione immagini */}
       <div className="h-80 xl:order-2">
         {/* gruppo di rings a sinistra */}
         <img
           src={rings}
           alt="rings"
-          className="absolute -left-52 top-8 -z-10 scale-125 xl:-left-10"
+          className="scale- absolute -left-full top-8 -z-10 translate-x-1/3 lg:-left-64 lg:translate-x-0"
         />
 
         {/* immagine profilo */}
-        <picture className="absolute -top-32 right-1/2 w-52 translate-x-1/2 xl:w-[30%]">
+        <picture className="absolute -top-32 right-1/2 -z-10 w-52 translate-x-1/2 xl:w-[30%]">
           <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
           <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
           <img

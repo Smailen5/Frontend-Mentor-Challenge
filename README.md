@@ -9,7 +9,7 @@
 
 ---
 
-### Single page developer portfolio [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/single-page-developer-portfolio) [Live site](https://66acfedd0175d378b05368b4--fanciful-tulumba-14b591.netlify.app/)
+#### Single page developer portfolio [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/single-page-developer-portfolio) - [Live site](https://66acfedd0175d378b05368b4--fanciful-tulumba-14b591.netlify.app/)
 
 ![Anteprima](./screen%20capture//portfolio-dekstop.jpeg)
 

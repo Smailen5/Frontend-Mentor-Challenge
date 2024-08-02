@@ -1,5 +1,10 @@
 /* eslint-disable no-unused-vars */
-import { github, frontend, twitter, linkedin } from "../data/socialIcon";
+import {
+  SiFrontendmentor,
+  SiGithub,
+  SiLinkedin,
+  SiTwitter,
+} from "react-icons/si";
 import { useGlobalContext } from "../context";
 
 const Navbar = () => {
@@ -12,19 +17,18 @@ const Navbar = () => {
           {brandLogo()}
         </header>
         {/* icone social */}
-        <div className="md:w- flex h-auto gap-8">
+        <div className="flex h-auto gap-8">
           <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" />
-            <img src={github} alt="alt" className="md:w-8 hover:fill-emerald-400" />
+            <SiGithub className="hover:fill-emerald-400 md:size-8" />
           </a>
           <a href="#">
-            <img src={frontend} alt="alt" className="md:w-8 hover:fil-emerald-400" />
+            <SiFrontendmentor className="hover:fill-emerald-400 md:size-8" />
           </a>
           <a href="#">
-            <img src={linkedin} alt="alt" className="md:w-8 hover:fil-emerald-400" />
+            <SiLinkedin className="hover:fill-emerald-400 md:size-8" />
           </a>
           <a href="#">
-            <img src={twitter} alt="alt" className="md:w-8 hover:fil-emerald-400" />
+            <SiTwitter className="hover:fill-emerald-400 md:size-8" />
           </a>
         </div>
       </footer>

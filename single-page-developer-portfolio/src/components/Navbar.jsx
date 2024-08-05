@@ -14,7 +14,7 @@ const Navbar = () => {
         {brandLogo()}
       </header>
       {/* icone social */}
-      <div className="flex gap-8 text-2xl">
+      <div className="flex gap-8 text-xl">
         <a href="#">
           <SiGithub className="" />
         </a>

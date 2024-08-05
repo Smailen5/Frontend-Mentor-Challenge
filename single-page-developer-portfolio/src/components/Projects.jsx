@@ -5,7 +5,19 @@ import Project from "./Project";
 import projects from "../data/projects.json";
 
 const Projects = () => {
-  return <div className="">projects</div>;
+  return (
+    <section className="m-4">
+      <header className="flex items-center justify-between">
+        <h3 className="text-3xl font-bold">Projects</h3>
+        <Button href="#" type="button">
+          contact me
+        </Button>
+      </header>
+      {projects.map((project) => (
+        <Project key={project.id} {...project} />
+      ))}
+    </section>
+  );
 };
 
 export default Projects;

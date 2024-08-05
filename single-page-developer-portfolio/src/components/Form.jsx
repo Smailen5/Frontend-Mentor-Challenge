@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Button from "./Button";
 import rings from "../assets/images/pattern-rings.svg";
 import { Formik } from "formik";
@@ -21,8 +22,9 @@ const initialValue = {
 const Form = () => {  
 
   return (
-    <section className="relative bg-skin-semiBlack px-4 md:grid md:place-items-center md:pb-10 xl:grid-cols-2 xl:items-start xl:pt-24">
-      <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:gap-12 xl:pt-0 xl:text-left">
+    <section className="">
+      form
+      {/* <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:gap-12 xl:pt-0 xl:text-left">
         <h4 className="text-4xl font-bold md:text-7xl xl:text-8xl">Contact</h4>
         <p className="text-lg md:text-xl text-skin-variant">
           I would love to hear about your project and how I could help. Please
@@ -74,7 +76,7 @@ const Form = () => {
                         : "border-skin-base"
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
-                {/* messaggio di errore per nome */}
+                
                 {errors.name && touched.name && (
                   <ErrorMessage>{errors.name}</ErrorMessage>
                 )}
@@ -99,7 +101,7 @@ const Form = () => {
                         : "border-skin-base"
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
-                {/* messaggio di errore per email */}
+                
                 {errors.email && touched.email && (
                   <ErrorMessage>{errors.email}</ErrorMessage>
                 )}
@@ -123,7 +125,7 @@ const Form = () => {
                         : "border-skin-base"
                   } h-28 resize-none border-b-2 bg-transparent pb-4 pl-8 md:h-36`}
                 />
-                {/* messaggio di errore per messaggio */}
+                
                 {errors.message && touched.message && (
                   <ErrorMessage>{errors.message}</ErrorMessage>
                 )}
@@ -137,13 +139,13 @@ const Form = () => {
             </form>
           )}
         </Formik>
-
       </div>
       <img
         src={rings}
         alt={rings}
         className="absolute -left-72 bottom-32 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
-      />
+      /> 
+        */}
     </section>
   );
 };

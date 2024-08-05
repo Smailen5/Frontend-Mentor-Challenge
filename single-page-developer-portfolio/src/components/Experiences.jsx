@@ -8,7 +8,23 @@ const Experiences = () => {
   const width = useWindowWidth();
   const isTablet = width >= 768;
   return (
-    <div className="">experiences</div>
+    <div className="relative overflow-x-clip py-8">
+      <hr className="mx-4" />
+      <div className="flex flex-col gap-8 py-8 text-center">
+        {experiences.map((experience) => (
+          <div key={experience.skill}>
+            <h3 className="text-3xl font-bold">{experience.skill}</h3>
+            <h4 className="mt-2 text-skin-variant">{experience.years}</h4>
+          </div>
+        ))}
+      </div>
+      <hr className="mx-4" />
+      <img
+        src={rings}
+        alt="icon rings"
+        className="absolute -right-1/3 bottom-0 translate-x-1/3"
+      />
+    </div>
   );
 };
 

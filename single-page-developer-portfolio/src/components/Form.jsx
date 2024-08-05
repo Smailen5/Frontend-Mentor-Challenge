@@ -4,6 +4,7 @@ import rings from "../assets/images/pattern-rings.svg";
 import { Formik } from "formik";
 import * as yup from "yup";
 import ErrorMessage from "./ErrorMessage";
+import Footer from "./Footer";
 
 // Validazione schema da yup
 const validationSchema = yup.object({
@@ -128,6 +129,7 @@ const Form = () => {
                   Send message
                 </Button>
               </div>
+              <hr />
             </form>
           )}
         </Formik>
@@ -135,8 +137,9 @@ const Form = () => {
       <img
         src={rings}
         alt={rings}
-        className="absolute -left-52 bottom-36 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
+        className="absolute -left-52 bottom-72 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
       />
+      <Footer />
     </section>
   );
 };

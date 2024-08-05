@@ -13,9 +13,11 @@ const Projects = () => {
           contact me
         </Button>
       </header>
-      {projects.map((project) => (
-        <Project key={project.id} {...project} />
-      ))}
+      <section className="my-8 flex flex-col gap-8">
+        {projects.map((project) => (
+          <Project key={project.id} {...project} />
+        ))}
+      </section>
     </section>
   );
 };

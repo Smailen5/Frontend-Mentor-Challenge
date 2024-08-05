@@ -19,14 +19,12 @@ const initialValue = {
   message: "",
 };
 
-const Form = () => {  
-
+const Form = () => {
   return (
-    <section className="">
-      form
-      {/* <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:gap-12 xl:pt-0 xl:text-left">
+    <section className="relative mt-14 bg-skin-semiBlack px-4">
+      <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:gap-12 xl:pt-0 xl:text-left">
         <h4 className="text-4xl font-bold md:text-7xl xl:text-8xl">Contact</h4>
-        <p className="text-lg md:text-xl text-skin-variant">
+        <p className="text-sm text-skin-variant md:text-xl">
           I would love to hear about your project and how I could help. Please
           fill in the form, and I&apos;ll get back to you as soon as possible.
         </p>
@@ -44,18 +42,12 @@ const Form = () => {
             }, 1000);
           }}
         >
-          {({
-            values,
-            errors,
-            handleChange,
-            handleSubmit,
-            touched,
-          }) => (
+          {({ values, errors, handleChange, handleSubmit, touched }) => (
             // console.log(values),
             <form
-            onSubmit={handleSubmit}
-            id="contact"
-            className="relative z-10 flex flex-col gap-8 pb-12"
+              onSubmit={handleSubmit}
+              id="contact"
+              className="relative z-10 flex flex-col gap-8 pb-12"
             >
               <label className="hidden" htmlFor="name">
                 name
@@ -76,7 +68,7 @@ const Form = () => {
                         : "border-skin-base"
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
-                
+
                 {errors.name && touched.name && (
                   <ErrorMessage>{errors.name}</ErrorMessage>
                 )}
@@ -101,7 +93,7 @@ const Form = () => {
                         : "border-skin-base"
                   } border-b-2 bg-transparent pb-4 pl-8 uppercase`}
                 />
-                
+
                 {errors.email && touched.email && (
                   <ErrorMessage>{errors.email}</ErrorMessage>
                 )}
@@ -125,7 +117,7 @@ const Form = () => {
                         : "border-skin-base"
                   } h-28 resize-none border-b-2 bg-transparent pb-4 pl-8 md:h-36`}
                 />
-                
+
                 {errors.message && touched.message && (
                   <ErrorMessage>{errors.message}</ErrorMessage>
                 )}
@@ -143,9 +135,8 @@ const Form = () => {
       <img
         src={rings}
         alt={rings}
-        className="absolute -left-72 bottom-32 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
-      /> 
-        */}
+        className="absolute -left-52 bottom-36 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
+      />
     </section>
   );
 };

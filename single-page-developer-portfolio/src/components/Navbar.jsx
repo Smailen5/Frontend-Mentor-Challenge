@@ -9,12 +9,12 @@ import { useGlobalContext } from "../context";
 const Navbar = () => {
   const { brandLogo } = useGlobalContext();
   return (
-    <nav className="">
-      <header className="">
+    <nav className="flex items-center justify-center flex-col gap-4 mt-8">
+      <header className="font-bold text-2xl">
         {brandLogo()}
       </header>
       {/* icone social */}
-      <div className="">
+      <div className="flex gap-8 text-2xl">
         <a href="#">
           <SiGithub className="" />
         </a>

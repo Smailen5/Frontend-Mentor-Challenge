@@ -8,8 +8,8 @@ const Experiences = () => {
   const width = useWindowWidth();
   const isTablet = width >= 768;
   return (
-    <div className="relative overflow-x-clip py-8 md:py-16">
-      <hr className="mx-4 md:mx-8" />
+    <div className="relative overflow-x-clip py-8 md:py-16 xl:py-24">
+      <hr className="mx-4 md:mx-8 xl:mx-36" />
       <div className="flex flex-col gap-8 py-8 text-center md:mx-8 md:grid md:grid-cols-2 md:gap-12 md:text-left">
         {experiences.map((experience) => (
           <div key={experience.skill}>

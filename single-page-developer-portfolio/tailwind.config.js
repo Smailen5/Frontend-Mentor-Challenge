@@ -8,7 +8,8 @@ export default {
     extend: {
       fontSize:{
         '4.5xl': ['2.5rem', '2.75rem'],
-        '8xl': ['6rem', '6rem'],
+        '7xl': ['4.5rem', '4.5rem'],
+        '8xl': ['5.60rem', '6rem'],
       },
       fontFamily: {
         spaceGrotesk: ['Space Grotesk', 'sans-serif'],

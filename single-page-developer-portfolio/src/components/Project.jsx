@@ -2,7 +2,7 @@
 // singolo progetto
 import images from "../data/images.js";
 import Button from "./Button.jsx";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../context.jsx";
 import PropTypes from "prop-types";
 
 // controlla le chiavi che ricevi dalla chiamata API e sostituiscile di conseguenza

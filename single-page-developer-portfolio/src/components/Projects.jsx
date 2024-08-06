@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Button from "./Button";
 import Project from "./Project";
 // fai la chiamata API qui e passa i dati a project
@@ -5,17 +6,19 @@ import projects from "../data/projects.json";
 
 const Projects = () => {
   return (
-    <div className="px-4 pt-4 md:px-10 md:pt-12 xl:px-56 xl:mb-32">
-      <header className="mb-8 flex items-center justify-between md:mb-16 xl:mb-24">
-        <h2 className="text-4xl font-semibold md:text-7xl xl:text-8xl">Projects</h2>
-        <Button href="#contact">Contact me</Button>
+    <section className="m-4">
+      <header className="flex items-center justify-between">
+        <h3 className="text-3xl font-bold">Projects</h3>
+        <Button href="#" type="button">
+          contact me
+        </Button>
       </header>
-      <section className="grid grid-cols-1 gap-8 md:grid-cols-2 md:mb-12">
+      <section className="my-8 flex flex-col gap-8">
         {projects.map((project) => (
           <Project key={project.id} {...project} />
         ))}
       </section>
-    </div>
+    </section>
   );
 };
 

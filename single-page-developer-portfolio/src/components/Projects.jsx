@@ -6,14 +6,14 @@ import projects from "../data/projects.json";
 
 const Projects = () => {
   return (
-    <section className="m-4 md:mx-8">
+    <section className="m-4 md:mx-8 xl:mx-36">
       <header className="flex items-center justify-between">
-        <h3 className="text-3xl font-bold md:text-7xl">Projects</h3>
+        <h3 className="text-3xl font-bold md:text-7xl xl:text-8xl">Projects</h3>
         <Button href="#" type="button">
           contact me
         </Button>
       </header>
-      <section className="mt-8 flex flex-col gap-8 md:grid md:grid-cols-2 md:mt-12 md:gap-y-12">
+      <section className="mt-8 flex flex-col gap-8 md:grid md:grid-cols-2 md:mt-12 md:gap-y-12 xl:mt-20">
         {projects.map((project) => (
           <Project key={project.id} {...project} />
         ))}

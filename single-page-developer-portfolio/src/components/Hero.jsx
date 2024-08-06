@@ -21,7 +21,7 @@ const Hero = () => {
         className="absolute -left-1/3 top-36 -z-20 -translate-x-1/4 md:-left-1/2 md:top-20 md:translate-x-1/4 lg:-left-1/3"
       />
 
-      <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:h-[30rem]">
+      <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:h-[30rem] lg:items-start">
         {/* <img
           src={rings}
           alt="rings icon"
@@ -61,8 +61,8 @@ const Hero = () => {
           /> */}
         </div>
 
-        <section className="flex-1 md:absolute md:mx-4 md:mt-10 md:flex-none">
-          <div className="mx-4 flex flex-col items-center gap-8 text-center md:w-2/3 md:items-start md:gap-12 md:text-left lg:gap-16">
+        <section className="flex-1 md:absolute mx-8 md:mt-10 md:flex-none">
+          <div className=" flex flex-col items-center gap-8 text-center md:w-2/3 md:items-start md:gap-12 md:text-left lg:gap-16">
             <h2 className="text-4xl font-bold md:text-7xl">
               Nice to{isTablet && !isDesktop && <br />} meet you! I&apos;m{" "}
               <span className="border-b-2 border-skin-accent">Adam Keyes</span>.

@@ -23,7 +23,7 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
 
       <div className="my-4 flex flex-col gap-4">
         <h3 className="text-2xl font-bold uppercase">{title}</h3>
-        <div className="flex flex-wrap gap-4 uppercase text-skin-variant">
+        <div className="flex flex-wrap gap-4 uppercase text-skin-variant md:text-xl">
           {technologies.map((tech) => (
             <h4 key={tech}>{tech}</h4>
           ))}

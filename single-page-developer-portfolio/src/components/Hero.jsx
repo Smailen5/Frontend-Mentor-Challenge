@@ -18,7 +18,7 @@ const Hero = () => {
       <img
         src={rings}
         alt="rings icon"
-        className="absolute -left-1/3 top-36 -z-20 -translate-x-1/4 md:-left-1/2 md:top-20 md:translate-x-1/4 lg:-left-1/3"
+        className="absolute -left-1/3 top-36 -z-20 -translate-x-1/4 md:-left-1/2 md:top-20 md:translate-x-1/4 lg:-left-1/3 xl:-left-1/4 xl:translate-x-2/4"
       />
 
       <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:h-[30rem] lg:items-start xl:h-[37rem]">

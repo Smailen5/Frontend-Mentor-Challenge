@@ -23,7 +23,8 @@ const Hero = () => {
         {/* immagine profilo con div per centrarla */}
         <div className="flex justify-center">
           <picture className="absolute -top-28 -z-10 size-[11.5rem]">
-            <source />
+            <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
+            <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
             <img src={images.imageProfile.sm} alt="image profile" />
           </picture>
         </div>

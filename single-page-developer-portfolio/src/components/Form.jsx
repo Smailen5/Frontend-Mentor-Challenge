@@ -22,7 +22,7 @@ const initialValue = {
 
 const Form = () => {
   return (
-    <section className="relative mt-14 md:mt-20 bg-skin-semiBlack px-4 md:flex md:flex-col md:items-center md:px-8 md:gap-8">
+    <section className="relative mt-14 bg-skin-semiBlack px-4 md:mt-20 md:flex md:flex-col md:items-center md:gap-8 md:px-8">
       <div className="flex flex-col gap-4 py-12 text-center md:w-2/3 md:gap-8 md:pt-16">
         <h4 className="text-4xl font-bold md:text-7xl">Contact</h4>
         <p className="text-sm text-skin-variant md:text-xl">
@@ -137,7 +137,7 @@ const Form = () => {
       <img
         src={rings}
         alt={rings}
-        className="absolute -left-1/3 -translate-x-1/4 bottom-64 scale-125 md:-left-3/4 md:translate-x-1/4 md:bottom-36"
+        className="absolute -left-1/3 bottom-64 -translate-x-1/4 scale-125 md:-left-3/4 md:bottom-36 md:translate-x-1/4 lg:-left-1/4 lg:-translate-x-1/4"
       />
       {/* <hr className="w-full"/> */}
       <Footer />

@@ -45,7 +45,7 @@ const Hero = () => {
       </div>
 
       <section className="flex-1 md:absolute md:flex-none md:mt-10 md:mx-4">
-        <div className="mx-4 flex flex-col items-center gap-8 text-center md:items-start md:w-2/3 md:text-left md:gap-12">
+        <div className="mx-4 flex flex-col items-center gap-8 text-center md:items-start md:w-2/3 md:text-left md:gap-12 lg:gap-16">
           <h2 className="text-4xl font-bold md:text-7xl">
             Nice to{isTablet && !isDesktop && <br/>} meet you! I&apos;m{" "}
             <span className="border-b-2 border-skin-accent">Adam Keyes</span>.

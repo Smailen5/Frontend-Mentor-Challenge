@@ -18,10 +18,10 @@ const Hero = () => {
       <img
         src={rings}
         alt="rings icon"
-        className="absolute -left-1/3 top-36 -z-20 -translate-x-1/4 scale-125 md:absolute md:-left-80 md:-top-4"
+        className="absolute -left-1/3 top-36 -z-20 -translate-x-1/4 md:-left-1/2 md:top-20 md:translate-x-1/4"
       />
 
-      <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:block md:h-[30rem]">
+      <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:h-[30rem]">
         {/* <img
           src={rings}
           alt="rings icon"

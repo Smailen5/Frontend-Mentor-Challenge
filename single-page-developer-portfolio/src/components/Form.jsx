@@ -137,7 +137,7 @@ const Form = () => {
       <img
         src={rings}
         alt={rings}
-        className="absolute -left-52 bottom-72 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
+        className="absolute -left-1/3 -translate-x-1/4 bottom-64 scale-125 md:-left-3/4 md:translate-x-1/4 md:bottom-36"
       />
       {/* <hr className="w-full"/> */}
       <Footer />

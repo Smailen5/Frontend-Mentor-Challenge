@@ -13,7 +13,7 @@ const Projects = () => {
           contact me
         </Button>
       </header>
-      <section className="my-8 flex flex-col gap-8 md:grid md:grid-cols-2 md:my-12 md:gap-y-12">
+      <section className="mt-8 flex flex-col gap-8 md:grid md:grid-cols-2 md:mt-12 md:gap-y-12">
         {projects.map((project) => (
           <Project key={project.id} {...project} />
         ))}

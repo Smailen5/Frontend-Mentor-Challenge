@@ -22,7 +22,7 @@ const initialValue = {
 
 const Form = () => {
   return (
-    <section className="relative mt-14 bg-skin-semiBlack px-4">
+    <section className="relative mt-14 md:mt-20 bg-skin-semiBlack px-4">
       <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:gap-12 xl:pt-0 xl:text-left">
         <h4 className="text-4xl font-bold md:text-7xl xl:text-8xl">Contact</h4>
         <p className="text-sm text-skin-variant md:text-xl">

@@ -16,9 +16,19 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
   // console.log(image);
   return (
     <article className="">
-      <picture>
+      <picture className="group relative">
         <source media="(min-width: 1280px)" srcSet={images[image].large} />
-        <img src={images[image].small} alt={title} />
+        <img src={images[image].small} alt={title} className="" />
+        {isDesktop && (
+          <div className="absolute top-0 hidden h-full w-full flex-col items-center justify-center gap-8 bg-black/70 group-hover:flex">
+            <Button href={liveSite} target="_blank">
+              view project
+            </Button>
+            <Button href={github} target="_blank">
+              view code
+            </Button>
+          </div>
+        )}
       </picture>
 
       <div className="my-4 flex flex-col gap-4">
@@ -28,14 +38,16 @@ const Project = ({ image, title, technologies, liveSite, github }) => {
             <h4 key={tech}>{tech}</h4>
           ))}
         </div>
-        <div className="flex gap-8">
-          <Button href={liveSite} target="_blank">
-            view project
-          </Button>
-          <Button href={github} target="_blank">
-            view code
-          </Button>
-        </div>
+        {!isDesktop && (
+          <div className="flex gap-8">
+            <Button href={liveSite} target="_blank">
+              view project
+            </Button>
+            <Button href={github} target="_blank">
+              view code
+            </Button>
+          </div>
+        )}
       </div>
     </article>
   );

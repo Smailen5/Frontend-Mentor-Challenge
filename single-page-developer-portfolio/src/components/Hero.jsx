@@ -18,11 +18,11 @@ const Hero = () => {
         <img
           src={rings}
           alt="rings icon"
-          className="relative -left-60 top-8 -z-20 scale-125"
+          className="relative -left-60 top-8 -z-20 scale-125 md:-left-80 md:top-0"
         />
         {/* immagine profilo con div per centrarla */}
         <div className="flex justify-center">
-          <picture className="absolute -top-28 -z-10 size-[11.5rem]">
+          <picture className="absolute -top-28 -z-10 size-[11.5rem] md:right-0 md:size-80">
             <source media="(min-width: 1280px)" srcSet={images.imageProfile.lg} />
             <source media="(min-width: 768px)" srcSet={images.imageProfile.md} />
             <img src={images.imageProfile.sm} alt="image profile" />
@@ -32,7 +32,7 @@ const Hero = () => {
         <img
           src={circle}
           alt="icon circle"
-          className="absolute -right-1/3 bottom-0 -z-10 -translate-x-1/3"
+          className="absolute -right-1/3 bottom-0 -z-10 -translate-x-1/3 md:-right-16 md:bottom-2 md:translate-x-0 "
         />
       </div>
 

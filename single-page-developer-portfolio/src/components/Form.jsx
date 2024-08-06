@@ -129,7 +129,7 @@ const Form = () => {
                   Send message
                 </Button>
               </div>
-              <hr className="md:hidden block" />
+              {/* <hr className="md:hidden block" /> */}
             </form>
           )}
         </Formik>
@@ -139,7 +139,7 @@ const Form = () => {
         alt={rings}
         className="absolute -left-52 bottom-72 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
       />
-      <hr className="w-full"/>
+      {/* <hr className="w-full"/> */}
       <Footer />
     </section>
   );

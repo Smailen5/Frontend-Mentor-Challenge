@@ -15,7 +15,7 @@ const Hero = () => {
   
 
   return (
-    <section className="relative mt-28 flex h-screen flex-col items-center gap-12 overflow-x-clip md:block md:h-[30rem]">
+    <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:block md:h-[30rem]">
       <img
           src={rings}
           alt="rings icon"
@@ -40,7 +40,7 @@ const Hero = () => {
         <img
           src={circle}
           alt="icon circle"
-          className="absolute -right-1/3 bottom-0 -z-10 -translate-x-1/3 md:-right-16 md:bottom-0 md:translate-x-0 "
+          className="absolute -right-1/3 bottom-0 -z-10 sm:-right-1/4 sm:-translate-x-3/4 -translate-x-1/3 md:-right-16 md:bottom-0 md:translate-x-0 "
         />
       </div>
 

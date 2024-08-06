@@ -50,7 +50,7 @@ const Hero = () => {
             <img
               src={circle}
               alt="icon circle"
-              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:translate-x-1/4"
+              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:-translate-x-1/4"
             />
           </div>
 

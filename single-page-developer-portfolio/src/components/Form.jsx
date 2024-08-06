@@ -22,16 +22,16 @@ const initialValue = {
 
 const Form = () => {
   return (
-    <section className="relative mt-14 md:mt-20 bg-skin-semiBlack px-4">
-      <div className="flex flex-col gap-4 py-12 text-center md:w-1/2 xl:gap-12 xl:pt-0 xl:text-left">
-        <h4 className="text-4xl font-bold md:text-7xl xl:text-8xl">Contact</h4>
+    <section className="relative mt-14 md:mt-20 bg-skin-semiBlack px-4 md:flex md:flex-col md:items-center md:px-8 md:gap-8">
+      <div className="flex flex-col gap-4 py-12 text-center md:w-2/3 md:gap-8 md:pt-16">
+        <h4 className="text-4xl font-bold md:text-7xl">Contact</h4>
         <p className="text-sm text-skin-variant md:text-xl">
           I would love to hear about your project and how I could help. Please
           fill in the form, and I&apos;ll get back to you as soon as possible.
         </p>
       </div>
 
-      <div className="relative md:w-1/2">
+      <div className="relative md:w-2/3">
         <Formik
           initialValues={initialValue}
           validationSchema={validationSchema}
@@ -129,7 +129,7 @@ const Form = () => {
                   Send message
                 </Button>
               </div>
-              <hr />
+              <hr className="md:hidden block" />
             </form>
           )}
         </Formik>
@@ -137,8 +137,9 @@ const Form = () => {
       <img
         src={rings}
         alt={rings}
-        className="absolute -left-52 bottom-72  scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
+        className="absolute -left-52 bottom-72 scale-125 md:-left-80 md:bottom-16 xl:-left-72 xl:bottom-20"
       />
+      <hr className="w-full"/>
       <Footer />
     </section>
   );

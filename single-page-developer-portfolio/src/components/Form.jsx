@@ -48,7 +48,7 @@ const Form = () => {
             <form
               onSubmit={handleSubmit}
               id="contact"
-              className="relative z-10 flex flex-col gap-8 pb-12"
+              className="relative z-10 flex flex-col gap-8"
             >
               <label className="hidden" htmlFor="name">
                 name
@@ -124,7 +124,7 @@ const Form = () => {
                 )}
               </div>
 
-              <div className="flex justify-end pb-12">
+              <div className="flex justify-end pb-16">
                 <Button type="submit" className="mt-4">
                   Send message
                 </Button>

@@ -21,14 +21,14 @@ const Hero = () => {
         className="absolute -left-1/3 top-36 -z-20 -translate-x-1/4 md:-left-1/2 md:top-20 md:translate-x-1/4 lg:-left-1/3"
       />
 
-      <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:h-[30rem] lg:items-start">
+      <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:h-[30rem] lg:items-start xl:h-[37rem]">
         {/* <img
           src={rings}
           alt="rings icon"
           className="absolute -left-60 top-8 -z-20 scale-125 md:-left-80 md:-top-4 md:absolute"
           /> */}
         {/* immagine profilo e icone */}
-        <div className="relative w-full flex-1 md:static md:-z-10 md:flex-none">
+        <div className="md:flex-non relative w-full flex-1 md:static md:-z-10">
           {/* <img
           src={rings}
           alt="rings icon"
@@ -36,7 +36,7 @@ const Hero = () => {
           /> */}
           {/* immagine profilo con div per centrarla */}
           <div className="flex justify-center">
-            <picture className="absolute -top-28 -z-10 size-[11.5rem] md:right-0 md:size-80">
+            <picture className="absolute -top-28 -z-10 size-[11.5rem] md:right-0 md:size-80 xl:right-24 xl:size-[30%]">
               <source
                 media="(min-width: 1280px)"
                 srcSet={images.imageProfile.lg}
@@ -50,7 +50,7 @@ const Hero = () => {
             <img
               src={circle}
               alt="icon circle"
-              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0"
+              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:translate-x-1/4"
             />
           </div>
 
@@ -61,13 +61,13 @@ const Hero = () => {
           /> */}
         </div>
 
-        <section className="flex-1 md:absolute mx-8 md:mt-10 md:flex-none">
-          <div className=" flex flex-col items-center gap-8 text-center md:w-2/3 md:items-start md:gap-12 md:text-left lg:gap-16">
-            <h2 className="text-4xl font-bold md:text-7xl">
+        <section className="md:flex-non mx-8 flex-1 md:absolute md:mt-10 lg:mx-24 xl:ml-36">
+          <div className="flex flex-col items-center gap-8 text-center md:w-2/3 md:items-start md:gap-12 md:text-left lg:gap-16 xl:w-3/4">
+            <h2 className="text-4xl font-bold md:text-7xl xl:text-8xl">
               Nice to{isTablet && !isDesktop && <br />} meet you! I&apos;m{" "}
               <span className="border-b-2 border-skin-accent">Adam Keyes</span>.
             </h2>
-            <p className="text-skin-variant md:w-11/12 md:text-lg">
+            <p className="text-skin-variant md:w-11/12 md:text-lg xl:w-2/4">
               Based in the UK, I&apos;m a front-end developer passionate about
               building accessible web apps that users love.
             </p>

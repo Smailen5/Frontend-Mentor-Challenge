@@ -17,6 +17,9 @@ export default {
       fontSize: {
         "4.5xl": ["2.5rem", "2.63rem"],
       },
+      letterSpacing:{
+        "6": ".65rem",
+      }
     },
   },
   plugins: [],

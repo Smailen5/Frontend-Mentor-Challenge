@@ -12,8 +12,8 @@ const Hero = () => {
 
       <div className="flex items-center justify-center bg-gradient-primary pb-24 pt-14">
         <section className="h-[310px] w-6/12 text-center">
-          <h2 className="uppercase text-primary font-light text-4.5xl">
-            we&apos;re <span className="text-neutral">coming soon</span>
+          <h2 className="uppercase text-primary font-light text-4.5xl px-8 tracking-6">
+            we&apos;re <span className="text-neutral font-semibold">coming soon</span>
           </h2>
           <p>
             Hello fellow shoppers! We&apos;re currently building our new fashion

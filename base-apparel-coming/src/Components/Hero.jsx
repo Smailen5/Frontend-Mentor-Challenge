@@ -55,7 +55,7 @@ const Hero = () => {
                     type="email"
                     name="email"
                     placeholder="Email Address"
-                    className="bg-transparent border-primary-transparent h-12 w-full rounded-full border py-3 pl-6 pr-16 text-neutral outline-none placeholder:text-primary placeholder:opacity-50 invalid:border-secondary focus:invalid:border-2"
+                    className="bg-transparent border-primary-transparent peer h-12 w-full rounded-full border py-3 pl-6 pr-16 text-neutral outline-none placeholder:text-primary placeholder:opacity-50 invalid:border-secondary focus:invalid:border-2"
                   />
                   <ErrorMessage
                     name="email"
@@ -72,7 +72,7 @@ const Hero = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="absolute bottom-0 right-0 top-0 flex h-12 w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary"
+                    className="absolute bottom-0 right-0 top-0 flex h-12 w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary peer-invalid:cursor-not-allowed"
                   >
                     <img src="/images/icon-arrow.svg" alt="icon arrow" />
                   </button>

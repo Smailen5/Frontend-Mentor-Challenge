@@ -13,10 +13,10 @@ const Experiences = () => {
       <div className="flex flex-col gap-8 py-8 text-center md:mx-8 md:grid md:grid-cols-2 md:gap-12 md:text-left xl:mx-36 xl:grid-cols-3 xl:py-16">
         {experiences.map((experience) => (
           <div key={experience.skill}>
-            <h3 className="text-3xl font-bold md:text-4xl xl:text-5xl">
+            <h3 className="text-3xl font-bold md:text-4xl xl:text-5xl 2xl:text-6xl">
               {experience.skill}
             </h3>
-            <h4 className="mt-2 text-skin-variant md:mt-6 xl:text-xl">
+            <h4 className="mt-2 text-skin-variant md:mt-6 xl:text-xl 2xl:text-4xl">
               {experience.years}
             </h4>
           </div>

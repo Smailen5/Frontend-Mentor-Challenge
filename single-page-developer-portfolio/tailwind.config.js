@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        "2xl": "2560px",
+        "2xl": "1536px",
       },
       fontSize: {
         "4.5xl": ["2.5rem", "2.75rem"],

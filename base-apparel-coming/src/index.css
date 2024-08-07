@@ -1,3 +1,34 @@
+/* Font Josephine Sans da Google */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary colors */
+    --clr-desaturated-red: hsl(0, 36%, 70%);
+    --clr-soft-red: hsl(0, 93%, 68%);
+
+    /* Neutral colors */
+    --clr-neutral: hsl(0, 6%, 24%);
+
+    /* Gradient colors */
+    --clr-gradient-primary: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+    --clr-gradient-secondary: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+
+    /* Typography */
+    --tp-size: 16px;
+
+    /* Fonts */
+    --font-primary:"Josefin Sans", sans-serif;
+  }
+}
+
+@layer base {
+  html {
+    font-family: var(--font-primary);
+    font-size: var(--tp-size);
+  }
+}

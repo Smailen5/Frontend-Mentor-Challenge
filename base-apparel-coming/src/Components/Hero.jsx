@@ -45,7 +45,7 @@ const Hero = () => {
               }, 300);
             }}
           >
-            {({ handleSubmit, isSubmitting }) => (
+            {({ handleSubmit, isSubmitting, errors, touched }) => (
               <Form onSubmit={handleSubmit} noValidate>
                 <label htmlFor="email" className="sr-only">
                   Email Address
@@ -62,7 +62,13 @@ const Hero = () => {
                     component="p"
                     className="mt-1 pl-6 text-left text-secondary"
                   />
-                  
+                  {errors.email && touched.email && (
+                    <img
+                      src="/images/icon-error.svg"
+                      alt="icon error"
+                      className="absolute right-20 top-1/3 -translate-y-1/2"
+                    />
+                  )}
                   <button
                     type="submit"
                     disabled={isSubmitting}

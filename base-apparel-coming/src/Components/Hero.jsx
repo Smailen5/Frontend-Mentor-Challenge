@@ -1,7 +1,12 @@
 const Hero = () => {
   return (
-    <div>Hero</div>
-  )
-}
+    <section className="w-full">
+      <picture>
+        <source media="(min-width: 768px)" srcSet="/images/hero-desktop.jpg" />
+        <img src="/images/hero-mobile.jpg" alt="hero" />
+      </picture>
+    </section>
+  );
+};
 
-export default Hero
+export default Hero;

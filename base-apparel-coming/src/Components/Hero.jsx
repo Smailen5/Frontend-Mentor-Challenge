@@ -12,7 +12,7 @@ const initialValues = {
 
 const Hero = () => {
   return (
-    <section className="w-full bg-gradient-primary">
+    <section className="w-full bg-gradient-primary xl:flex xl:flex-row-reverse xl:h-screen">
       <picture>
         <source media="(min-width: 768px)" srcSet="/images/hero-desktop.jpg" />
         <img

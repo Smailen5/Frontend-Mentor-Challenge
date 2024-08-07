@@ -9,23 +9,21 @@ import { useGlobalContext } from "../context";
 const Navbar = () => {
   const { brandLogo } = useGlobalContext();
   return (
-    <nav className="flex items-center justify-center flex-col gap-4 mt-8 absolute top-0 left-0 right-0 md:flex-row md:justify-between md:mx-8 xl:ml-36 xl:mr-40">
-      <header className="font-bold text-2xl md:text-3xl">
-        {brandLogo()}
-      </header>
+    <nav className="absolute left-0 right-0 top-0 mt-8 flex flex-col items-center justify-center gap-4 md:mx-8 md:flex-row md:justify-between xl:ml-36 xl:mr-40">
+      <header className="text-2xl font-bold md:text-3xl">{brandLogo()}</header>
       {/* icone social */}
       <div className="flex gap-8 text-xl md:text-2xl">
         <a href="#">
-          <SiGithub className="" />
+          <SiGithub className="hover:fill-skin-accent" />
         </a>
         <a href="#">
-          <SiFrontendmentor className="" />
+          <SiFrontendmentor className="hover:fill-skin-accent" />
         </a>
         <a href="#">
-          <SiLinkedin className="" />
+          <SiLinkedin className="hover:fill-skin-accent" />
         </a>
         <a href="#">
-          <SiTwitter className="" />
+          <SiTwitter className="hover:fill-skin-accent" />
         </a>
       </div>
     </nav>

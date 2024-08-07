@@ -17,16 +17,16 @@ const Navbar = () => {
         {/* icone social */}
         <div className="flex gap-8 text-xl md:text-2xl">
           <a href="#">
-            <SiGithub className="" />
+            <SiGithub className="hover:fill-skin-accent" />
           </a>
           <a href="#">
-            <SiFrontendmentor className="" />
+            <SiFrontendmentor className="hover:fill-skin-accent" />
           </a>
           <a href="#">
-            <SiLinkedin className="" />
+            <SiLinkedin className="hover:fill-skin-accent" />
           </a>
           <a href="#">
-            <SiTwitter className="" />
+            <SiTwitter className="hover:fill-skin-accent" />
           </a>
         </div>
       </div>

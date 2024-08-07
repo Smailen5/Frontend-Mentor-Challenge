@@ -37,21 +37,22 @@ const Hero = () => {
               />
               <img src={images.imageProfile.sm} alt="image profile" />
             </picture>
+            {/* immagine cerchio */}
             <img
               src={circle}
               alt="icon circle"
-              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:-translate-x-1/4 2xl:bottom-48 2xl:scale-150"
+              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:-translate-x-1/4 2xl:bottom-28 2xl:scale-125"
             />
           </div>
         </div>
 
-        <section className="mx-8 flex-1 md:absolute md:mt-10 lg:mx-24 xl:ml-36 2xl:mt-32">
-          <div className="flex flex-col items-center gap-8 text-center md:w-2/3 md:items-start md:gap-12 md:text-left lg:gap-16 xl:w-3/4 2xl:gap-28">
+        <section className="mx-8 flex-1 md:absolute md:mt-10 lg:mx-24 xl:ml-36 2xl:mt-36">
+          <div className="flex flex-col items-center gap-8 text-center md:w-2/3 md:items-start md:gap-12 md:text-left lg:gap-16 xl:w-3/4 2xl:gap-20">
             <h2 className="text-4xl font-bold md:text-6xl 2xl:text-8xl">
               Nice to{isTablet && !isDesktop && <br />} meet you! I&apos;m{" "}
               <span className="border-b-2 border-skin-accent">Adam Keyes</span>.
             </h2>
-            <p className="text-skin-variant md:w-11/12 md:text-lg xl:w-2/4 2xl:text-2xl">
+            <p className="text-skin-variant md:w-11/12 md:text-lg xl:w-2/4 2xl:text-xl">
               Based in the UK, I&apos;m a front-end developer passionate about
               building accessible web apps that users love.
             </p>

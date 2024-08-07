@@ -6,6 +6,7 @@ export default {
       primary: "var(--clr-desaturated-red)",
       secondary: "var(--clr-soft-red)",
       neutral: "var(--clr-neutral)",
+      "primary-transparent": "hsla(0, 36%, 70%, .5)",
     },
     backgroundImage: {
       "gradient-primary":
@@ -17,9 +18,9 @@ export default {
       fontSize: {
         "4.5xl": ["2.5rem", "2.63rem"],
       },
-      letterSpacing:{
-        "6": ".65rem",
-      }
+      letterSpacing: {
+        6: ".65rem",
+      },
     },
   },
   plugins: [],

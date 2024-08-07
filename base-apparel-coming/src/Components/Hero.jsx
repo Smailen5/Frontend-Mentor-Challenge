@@ -3,7 +3,7 @@ import { Formik, ErrorMessage, Field, Form } from "formik";
 import { object, string } from "yup";
 
 const validationSchema = object({
-  email: string().email("please provide a valid email").required(),
+  email: string().email("Please provide a valid email").required(),
 });
 
 const initialValues = {
@@ -55,13 +55,14 @@ const Hero = () => {
                     type="email"
                     name="email"
                     placeholder="Email Address"
-                    className="bg-transparent border-primary-transparent h-12 w-full rounded-full border py-3 pl-6 text-primary outline-none placeholder:text-primary placeholder:opacity-50"
+                    className="bg-transparent border-primary-transparent h-12 w-full rounded-full border py-3 pl-6 pr-16 text-neutral outline-none placeholder:text-primary placeholder:opacity-50 invalid:border-secondary focus:invalid:border-2"
                   />
                   <ErrorMessage
                     name="email"
                     component="p"
-                    className="mt-2 pl-6 text-left text-secondary"
+                    className="mt-1 pl-6 text-left text-secondary"
                   />
+                  
                   <button
                     type="submit"
                     disabled={isSubmitting}

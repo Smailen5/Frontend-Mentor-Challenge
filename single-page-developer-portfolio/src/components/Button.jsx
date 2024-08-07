@@ -6,7 +6,7 @@ const Button = ({ children, type, className, href, target }) => {
     <button
       type={type}
       className={twMerge(
-        "inline-block border-b-2 border-skin-accent pb-3 text-xl uppercase hover:text-skin-accent md:text-2xl 2xl:text-4xl",
+        "inline-block border-b-2 border-skin-accent pb-3 text-xl uppercase hover:text-skin-accent",
         className,
       )}
     >

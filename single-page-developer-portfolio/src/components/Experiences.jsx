@@ -26,7 +26,7 @@ const Experiences = () => {
       <img
         src={rings}
         alt="icon rings"
-        className="absolute -right-1/3 bottom-0 translate-x-1/3 md:-right-2/3 md:bottom-6 md:-translate-x-1/3 lg:-right-1/2 lg:-translate-x-1/2 xl:-right-1/3 xl:-translate-x-1/3 xl:bottom-28"
+        className="absolute -right-1/3 bottom-0 translate-x-1/3 md:-right-2/3 md:bottom-6 md:-translate-x-1/3 lg:-right-1/2 lg:-translate-x-1/2 xl:-right-1/3 xl:-translate-x-1/4 xl:bottom-28"
       />
     </div>
   );

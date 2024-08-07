@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className="m-4 md:mx-8 xl:mx-36">
       <header className="flex items-center justify-between">
-        <h3 className="text-3xl font-bold md:text-7xl xl:text-8xl">Projects</h3>
+        <h3 className="text-3xl font-bold md:text-7xl">Projects</h3>
         <Button href="#" type="button">
           contact me
         </Button>

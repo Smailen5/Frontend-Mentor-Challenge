@@ -13,7 +13,11 @@ export default {
       "gradient-secondary":
         "linear-gradient(135deg, var(--clr-gradient-secondary-from), var(--clr-gradient-secondary-to))",
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        "4.5xl": ["2.5rem", "2.63rem"],
+      },
+    },
   },
   plugins: [],
 };

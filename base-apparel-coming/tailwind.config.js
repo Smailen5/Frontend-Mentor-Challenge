@@ -7,6 +7,7 @@ export default {
       secondary: "var(--clr-soft-red)",
       neutral: "var(--clr-neutral)",
       "primary-transparent": "hsla(0, 36%, 70%, .5)",
+      transparent: "transparent",
     },
     backgroundImage: {
       "gradient-primary":

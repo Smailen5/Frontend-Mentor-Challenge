@@ -34,7 +34,7 @@ const Hero = () => {
                 placeholder="Email Address"
                 autoComplete="current-email"
                 required
-                className="bg-white h-12 w-full rounded-full border border-primary-transparent py-3 pl-6 text-primary outline-none placeholder:text-primary placeholder:opacity-50"
+                className=" bg-bg-transparent h-12 w-full rounded-full border border-primary-transparent py-3 pl-6 text-primary outline-none placeholder:text-primary placeholder:opacity-50"
               />
               <button
                 type="submit"

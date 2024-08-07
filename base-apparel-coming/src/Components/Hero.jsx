@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Formik, ErrorMessage, Field, Form } from "formik";
 import { object, string } from "yup";
 import { twMerge } from "tailwind-merge";
 import Header from "./Header";
+import { Children } from "react";
 
 const validationSchema = object({
   email: string().email("Please provide a valid email").required(),
@@ -12,7 +14,7 @@ const initialValues = {
   email: "",
 };
 
-const Hero = () => {
+const Hero = ({ children }) => {
   return (
     <section className="w-full bg-gradient-primary xl:flex xl:h-screen xl:flex-row-reverse">
       <picture>
@@ -21,7 +23,8 @@ const Hero = () => {
       </picture>
 
       <div>
-        <Header />
+        {children}
+        {/* <Header className="mx-auto w-6/12 scale-125 px-0 xl:block" /> */}
         <div className="flex items-center justify-center px-8 pb-24 pt-14 sm:px-0">
           <section className="mx-auto flex h-[310px] flex-col justify-between text-center sm:w-6/12">
             <h2 className="text-4.5xl tracking-6 font-light uppercase text-primary sm:px-8">

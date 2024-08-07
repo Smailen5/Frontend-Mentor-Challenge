@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
+      <Hero>
+        <Header className="mx-auto w-6/12 px-0 xl:block" classImg="scale-125" />
+      </Hero>
     </>
   );
 }

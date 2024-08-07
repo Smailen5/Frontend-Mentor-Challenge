@@ -1,3 +1,15 @@
+/* eslint-disable no-unused-vars */
+import { Formik, ErrorMessage, Field, Form } from "formik";
+import { object, string } from "yup";
+
+const validationSchema = object({
+  email: string().email("please provide a valid email").required(),
+});
+
+const initialValues = {
+  email: "",
+};
+
 const Hero = () => {
   return (
     <section className="w-full">
@@ -22,28 +34,45 @@ const Hero = () => {
             and our launch deals.
           </p>
 
-          <form>
-            <label htmlFor="email" className="sr-only">
-              Email Address
-            </label>
-            <div className="relative">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email Address"
-                autoComplete="current-email"
-                required
-                className="bg-transparent border-primary-transparent h-12 w-full rounded-full border py-3 pl-6 text-primary outline-none placeholder:text-primary placeholder:opacity-50"
-              />
-              <button
-                type="submit"
-                className="absolute bottom-0 right-0 top-0 flex h-12 w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary"
-              >
-                <img src="/images/icon-arrow.svg" alt="icon arrow" />
-              </button>
-            </div>
-          </form>
+          <Formik
+            validationSchema={validationSchema}
+            initialValues={initialValues}
+            onSubmit={(values, { setSubmitting }) => {
+              setSubmitting(true);
+              setTimeout(() => {
+                setSubmitting(false);
+                alert(JSON.stringify(values));
+              }, 300);
+            }}
+          >
+            {({ handleSubmit, isSubmitting }) => (
+              <Form onSubmit={handleSubmit} noValidate>
+                <label htmlFor="email" className="sr-only">
+                  Email Address
+                </label>
+                <div className="relative">
+                  <Field
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    className="bg-transparent border-primary-transparent h-12 w-full rounded-full border py-3 pl-6 text-primary outline-none placeholder:text-primary placeholder:opacity-50"
+                  />
+                  <ErrorMessage
+                    name="email"
+                    component="p"
+                    className="mt-2 pl-6 text-left text-secondary"
+                  />
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="absolute bottom-0 right-0 top-0 flex h-12 w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary"
+                  >
+                    <img src="/images/icon-arrow.svg" alt="icon arrow" />
+                  </button>
+                </div>
+              </Form>
+            )}
+          </Formik>
         </section>
       </div>
     </section>

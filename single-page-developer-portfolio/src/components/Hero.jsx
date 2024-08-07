@@ -22,18 +22,8 @@ const Hero = () => {
       />
 
       <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:h-[59.7vh] lg:items-start xl:h-[65vh] 2xl:h-[80vh]">
-        {/* <img
-          src={rings}
-          alt="rings icon"
-          className="absolute -left-60 top-8 -z-20 scale-125 md:-left-80 md:-top-4 md:absolute"
-          /> */}
         {/* immagine profilo e icone */}
         <div className="md:flex-non relative w-full flex-1 md:static md:-z-10">
-          {/* <img
-          src={rings}
-          alt="rings icon"
-          className="relative -left-60 top-8 -z-20 scale-125 md:-left-80 md:top-0 md:hidden"
-          /> */}
           {/* immagine profilo con div per centrarla */}
           <div className="flex justify-center">
             <picture className="absolute -top-28 -z-10 size-[11.5rem] md:right-0 md:size-80 xl:right-36 xl:size-[30%]">
@@ -50,15 +40,9 @@ const Hero = () => {
             <img
               src={circle}
               alt="icon circle"
-              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:-translate-x-1/4 2xl:scale-150 2xl:bottom-48 "
+              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:-translate-x-1/4 2xl:bottom-48 2xl:scale-150"
             />
           </div>
-
-          {/* <img
-            src={circle}
-            alt="icon circle"
-            className="absolute border border-red-500 -right-1/3 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0"
-          /> */}
         </div>
 
         <section className="mx-8 flex-1 md:absolute md:mt-10 lg:mx-24 xl:ml-36 2xl:mt-32">

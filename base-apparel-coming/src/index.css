@@ -15,14 +15,16 @@
     --clr-neutral: hsl(0, 6%, 24%);
 
     /* Gradient colors */
-    --clr-gradient-primary: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
-    --clr-gradient-secondary: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+    --clr-gradient-primary-from: hsl(0, 0%, 100%);
+    --clr-gradient-primary-to: hsl(0, 100%, 98%);
+    --clr-gradient-secondary-from: hsl(0, 80%, 86%);
+    --clr-gradient-secondary-to: hsl(0, 74%, 74%);
 
     /* Typography */
     --tp-size: 16px;
 
     /* Fonts */
-    --font-primary:"Josefin Sans", sans-serif;
+    --font-primary: "Josefin Sans", sans-serif;
   }
 }
 

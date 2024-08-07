@@ -6,20 +6,36 @@ const Hero = () => {
         <img
           src="/images/hero-mobile.jpg"
           alt="hero"
-          className="w-full pt-[5.5rem]"
+          className="w-full pt-[5.8rem]"
         />
       </picture>
 
-      <div className="flex items-center justify-center bg-gradient-primary pb-24 pt-14">
-        <section className="h-[310px] w-6/12 text-center">
-          <h2 className="uppercase text-primary font-light text-4.5xl px-8 tracking-6">
-            we&apos;re <span className="text-neutral font-semibold">coming soon</span>
+      <div className="flex items-center justify-center bg-gradient-primary px-8 pb-24 pt-14 sm:px-0">
+        <section className="mx-auto flex h-[310px] flex-col gap-8 text-center sm:w-6/12">
+          <h2 className="text-4.5xl tracking-6 font-light uppercase text-primary sm:px-8">
+            we&apos;re{" "}
+            <span className="font-semibold text-neutral">coming soon</span>
           </h2>
-          <p>
+          <p className="text-sm text-primary">
             Hello fellow shoppers! We&apos;re currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
+
+          <form>
+            <label htmlFor="email" className="sr-only">
+              Email Address
+            </label>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                autoComplete="current-email"
+              />
+            </div>
+          </form>
         </section>
       </div>
     </section>

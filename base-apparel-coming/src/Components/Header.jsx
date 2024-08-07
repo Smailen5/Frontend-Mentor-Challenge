@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="w-full bg-transparent p-8 fixe">
+    <header className="bg-transparent w-full p-8 xl:hidden">
       <div>
         <img src="/images/logo.svg" alt="logo" className="w-32" />
       </div>

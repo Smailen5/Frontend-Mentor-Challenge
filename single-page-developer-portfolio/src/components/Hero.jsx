@@ -18,7 +18,7 @@ const Hero = () => {
       <img
         src={rings}
         alt="rings icon"
-        className="absolute -left-1/3 top-36 -z-20 -translate-x-1/4 md:-left-1/2 md:top-20 md:translate-x-1/4 lg:-left-1/3 xl:-left-1/4 xl:translate-x-2/4"
+        className="absolute -left-1/3 top-36 -z-20 -translate-x-1/4 md:-left-1/2 md:top-20 md:translate-x-1/4 lg:-left-1/3 xl:-left-1/4 xl:translate-x-2/4 2xl:left-0 2xl:top-44 2xl:-translate-x-1/4 2xl:scale-150"
       />
 
       <section className="relative mt-28 flex h-[640px] flex-col items-center gap-12 overflow-x-clip md:h-[30rem] lg:items-start xl:h-[37rem] 2xl:h-[71rem]">
@@ -50,7 +50,7 @@ const Hero = () => {
             <img
               src={circle}
               alt="icon circle"
-              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:-translate-x-1/4"
+              className="absolute -right-1/4 bottom-0 -z-10 -translate-x-1/3 sm:-right-1/4 sm:-translate-x-3/4 md:-right-16 md:bottom-0 md:translate-x-0 xl:bottom-20 xl:right-1/3 xl:-translate-x-1/4 2xl:scale-150 2xl:bottom-48 "
             />
           </div>
 
@@ -61,13 +61,13 @@ const Hero = () => {
           /> */}
         </div>
 
-        <section className="md:flex-non mx-8 flex-1 md:absolute md:mt-10 lg:mx-24 xl:ml-36">
-          <div className="flex flex-col items-center gap-8 text-center md:w-2/3 md:items-start md:gap-12 md:text-left lg:gap-16 xl:w-3/4">
-            <h2 className="text-4xl font-bold md:text-7xl xl:text-8xl">
+        <section className="mx-8 flex-1 md:absolute md:mt-10 lg:mx-24 xl:ml-36 2xl:mt-32">
+          <div className="flex flex-col items-center gap-8 text-center md:w-2/3 md:items-start md:gap-12 md:text-left lg:gap-16 xl:w-3/4 2xl:gap-28">
+            <h2 className="text-4xl font-bold md:text-7xl xl:text-8xl 2xl:text-9xl">
               Nice to{isTablet && !isDesktop && <br />} meet you! I&apos;m{" "}
               <span className="border-b-2 border-skin-accent">Adam Keyes</span>.
             </h2>
-            <p className="text-skin-variant md:w-11/12 md:text-lg xl:w-2/4">
+            <p className="text-skin-variant md:w-11/12 md:text-lg xl:w-2/4 2xl:text-4xl">
               Based in the UK, I&apos;m a front-end developer passionate about
               building accessible web apps that users love.
             </p>

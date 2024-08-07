@@ -6,10 +6,6 @@ export default {
       primary: "var(--clr-desaturated-red)",
       secondary: "var(--clr-soft-red)",
       neutral: "var(--clr-neutral)",
-      gradientPrimaryFrom: "var(--clr-gradient-primary-from)",
-      gradientPrimaryTo: "var(--clr-gradient-primary-to)",
-      gradientSecondaryFrom: "var(--clr-gradient-secondary-from)",
-      gradientSecondaryTo: "var(--clr-gradient-secondary-to)",
     },
     backgroundImage: {
       "gradient-primary":

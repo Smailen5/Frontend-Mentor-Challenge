@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div>Navbar</div>
+    <header className=" bg-gradient-primary">Header</header>
   )
 }
 

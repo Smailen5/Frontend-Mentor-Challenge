@@ -1,5 +1,5 @@
-import { twMerge } from "tailwind-merge";
 import PropsType from "prop-types";
+import { twMerge } from "tailwind-merge";
 import logo from "../assets/logo.svg";
 
 const LogoBrand = ({ className, classImg }) => {

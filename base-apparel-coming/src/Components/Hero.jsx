@@ -1,7 +1,7 @@
+import pattern from "../assets/bg-pattern-desktop.svg";
+import FormComponent from "./FormComponent";
 import LogoBrand from "./LogoBrand";
 import PictureGirl from "./PictureGirl";
-import FormComponent from "./FormComponent";
-import pattern from "../assets/bg-pattern-desktop.svg";
 
 const Hero = () => {
   return (

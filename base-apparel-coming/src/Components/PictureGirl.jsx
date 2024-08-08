@@ -1,5 +1,5 @@
-import heroMobile from "../assets/images/hero-mobile.jpg";
 import heroDesktop from "../assets/images/hero-desktop.jpg";
+import heroMobile from "../assets/images/hero-mobile.jpg";
 
 function PictureGirl() {
   return (

@@ -1,7 +1,7 @@
-import { Formik, ErrorMessage, Field, Form } from "formik";
+import { ErrorMessage, Field, Form, Formik } from "formik";
 import { object, string } from "yup";
-import iconError from "../assets/icon-error.svg";
 import iconArrow from "../assets/icon-arrow.svg";
+import iconError from "../assets/icon-error.svg";
 
 const validationSchema = object({
   email: string().email("Please provide a valid email").required(),

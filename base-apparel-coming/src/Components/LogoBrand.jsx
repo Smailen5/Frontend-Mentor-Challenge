@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { twMerge } from "tailwind-merge";
+import PropsType from "prop-types";
 
 const LogoBrand = ({ className, classImg }) => {
   return (
@@ -20,6 +20,11 @@ const LogoBrand = ({ className, classImg }) => {
       </div>
     </section>
   );
+};
+
+LogoBrand.propTypes = {
+  className: PropsType.string,
+  classImg: PropsType.string,
 };
 
 export default LogoBrand;

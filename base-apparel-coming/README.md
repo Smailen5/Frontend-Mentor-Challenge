@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Laptop](../screen%20capture//base-apparel-laptop.jpeg)
+<!-- ![Laptop](../screen%20capture//base-apparel-laptop.jpeg) -->
 ![Desktop](../screen%20capture//base-apparel-desktop.jpeg)
 
 

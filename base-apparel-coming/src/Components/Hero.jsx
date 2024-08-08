@@ -25,9 +25,9 @@ const Hero = ({ children }) => {
       <div>
         {children}
         {/* <Header className="mx-auto w-6/12 scale-125 px-0 xl:block" /> */}
-        <div className="flex items-center justify-center px-8 pb-24 pt-14 sm:px-0">
-          <section className="mx-auto flex h-[310px] flex-col justify-between text-center sm:w-6/12">
-            <h2 className="text-4.5xl tracking-6 font-light uppercase text-primary sm:px-8">
+        <div className="flex items-center justify-center px-8 pb-24 pt-14 sm:px-0 xl:px-0">
+          <section className="mx-auto flex h-[310px] flex-col justify-between text-center sm:w-6/12 xl:text-left">
+            <h2 className="text-4.5xl tracking-6 font-light uppercase text-primary sm:px-8 xl:px-0">
               we&apos;re{" "}
               <span className="font-semibold text-neutral">coming soon</span>
             </h2>

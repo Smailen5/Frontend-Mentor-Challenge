@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/base-apparel-coming)
-- Live Site URL: [Add live site URL here](https://66b50fe73bacca6322bb5a2a--iridescent-entremet-637a7d.netlify.app/)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/base-apparel-coming)
+- Live Site URL: [Live site](https://66b50fe73bacca6322bb5a2a--iridescent-entremet-637a7d.netlify.app/)
 
 ## My process
 
@@ -100,9 +100,9 @@ In future projects, I plan to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 

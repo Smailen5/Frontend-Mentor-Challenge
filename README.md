@@ -9,6 +9,10 @@
 
 ---
 
+#### Base apparel [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/base-apparel-coming) - [Live site](https://66b50fe73bacca6322bb5a2a--iridescent-entremet-637a7d.netlify.app/)
+
+![Anteprima](./screen%20capture//base-apparel-desktop.jpeg)
+
 #### Single page developer portfolio [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/single-page-developer-portfolio) - [Live site](https://66acfedd0175d378b05368b4--fanciful-tulumba-14b591.netlify.app/)
 
 ![Anteprima](./screen%20capture//portfolio-dekstop.jpeg)

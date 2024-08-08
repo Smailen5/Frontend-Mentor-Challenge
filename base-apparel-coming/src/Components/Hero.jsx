@@ -4,6 +4,8 @@
 import { twMerge } from "tailwind-merge";
 import LogoBrand from "./LogoBrand";
 import PictureGirl from "./PictureGirl";
+import FormComponent from "./FormComponent";
+
 
 const Hero = () => {
   return (
@@ -26,6 +28,8 @@ const Hero = () => {
                 fashion store. Add your email below to stay up-to-date with
                 announcements and our launch deals.
               </p>
+
+             <FormComponent />
             </section>
           </div>
         </div>

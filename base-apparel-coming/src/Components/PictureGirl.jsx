@@ -3,7 +3,7 @@ import heroDesktop from "../assets/images/hero-desktop.jpg";
 
 function PictureGirl() {
   return (
-    <picture className="flex-shrink-0">
+    <picture className="flex-shrink-0 h-screen">
       <source media="(min-width: 1280px)" srcSet={heroDesktop} />
       <img
         src={heroMobile}

@@ -14,6 +14,7 @@ export default {
         "linear-gradient(135deg, var(--clr-gradient-primary-from), var(--clr-gradient-primary-to))",
       "gradient-secondary":
         "linear-gradient(135deg, var(--clr-gradient-secondary-from), var(--clr-gradient-secondary-to))",
+        "gradient-secondary-hover": "linear-gradient(135deg, hsla(0, 80%, 86%, .5), hsla(0, 74%, 74%, .5))",
     },
     extend: {
       fontSize: {

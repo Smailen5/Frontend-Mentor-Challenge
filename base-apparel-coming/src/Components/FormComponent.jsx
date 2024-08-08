@@ -44,7 +44,7 @@ function FormComponent() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="absolute bottom-0 right-0 flex h-full w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary peer-invalid:cursor-not-allowed xl:w-28"
+              className="absolute bottom-0 right-0 flex h-full w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary hover:bg-gradient-secondary-hover peer-invalid:cursor-not-allowed xl:w-28"
             >
               <img src="/images/icon-arrow.svg" alt="icon arrow" />
             </button>

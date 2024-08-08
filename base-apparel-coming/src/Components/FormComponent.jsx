@@ -34,6 +34,7 @@ function FormComponent() {
               type="email"
               name="email"
               placeholder="Email Address"
+              aria-label="Email Address"
               className="peer relative h-12 w-full rounded-full border border-primary-transparent bg-transparent py-3 pl-6 pr-28 text-neutral outline-none placeholder:text-primary placeholder:opacity-50 invalid:border-secondary focus:invalid:border-2 xl:h-14 xl:pr-40"
             />
             {errors.email && touched.email && (
@@ -45,6 +46,7 @@ function FormComponent() {
             )}
             <button
               type="submit"
+              aria-label="submit form"
               disabled={isSubmitting}
               className="peer-valid:hover:bg-gradient-secondary-hover absolute bottom-0 right-0 flex h-full w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary peer-invalid:cursor-not-allowed xl:w-28"
             >

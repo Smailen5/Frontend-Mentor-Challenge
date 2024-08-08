@@ -18,7 +18,7 @@ const Hero = ({ children }) => {
   return (
     <section className="w-full bg-gradient-primary xl:flex xl:h-screen xl:flex-row-reverse">
       <picture className="flex-shrink-0">
-        <source media="(min-width: 768px)" srcSet="/images/hero-desktop.jpg" />
+        <source media="(min-width: 1280px)" srcSet="/images/hero-desktop.jpg" />
         <img
           src="/images/hero-mobile.jpg"
           alt="hero"

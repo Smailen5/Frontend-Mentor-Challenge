@@ -22,10 +22,10 @@ const Hero = ({ children }) => {
         <img src="/images/hero-mobile.jpg" alt="hero" className="w-full xl:h-full " />
       </picture>
 
-      <div className="xl:flex xl:flex-col xl:justify-between">
+      <div className="xl:flex xl:flex-col">
         {children}
         {/* <Header className="mx-auto w-6/12 scale-125 px-0 xl:block" /> */}
-        <div className="flex items-center justify-center px-8 pb-24 pt-14 sm:px-0 xl:px-0 xl:pt-0 xl:h-full">
+        <div className="flex items-center justify-center px-8 pb-24 pt-14 sm:px-0 xl:px-0 xl:h-full xl:py-10">
           <section className="mx-auto flex h-[310px] flex-col justify-between text-center sm:w-6/12 xl:w-7/12 xl:text-left xl:h-2/3">
             <h2 className="text-4.5xl font-light uppercase tracking-6 text-primary sm:px-8 xl:px-0 xl:text-6xl">
               we&apos;re{" "}
@@ -58,7 +58,7 @@ const Hero = ({ children }) => {
                       type="email"
                       name="email"
                       placeholder="Email Address"
-                      className="peer h-12 w-full rounded-full border border-primary-transparent bg-transparent py-3 pl-6 pr-16 text-neutral outline-none placeholder:text-primary placeholder:opacity-50 invalid:border-secondary focus:invalid:border-2"
+                      className="peer h-12 w-full rounded-full border border-primary-transparent bg-transparent py-3 pl-6 pr-16 text-neutral outline-none placeholder:text-primary placeholder:opacity-50 invalid:border-secondary focus:invalid:border-2 xl:h-14"
                     />
                     <ErrorMessage
                       name="email"
@@ -75,7 +75,7 @@ const Hero = ({ children }) => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="absolute bottom-0 right-0 top-0 flex h-12 w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary peer-invalid:cursor-not-allowed"
+                      className="absolute bottom-0 right-0 top-0 flex h-full w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary peer-invalid:cursor-not-allowed xl:h-full"
                     >
                       <img src="/images/icon-arrow.svg" alt="icon arrow" />
                     </button>

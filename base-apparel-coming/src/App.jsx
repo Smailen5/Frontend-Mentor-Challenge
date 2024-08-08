@@ -6,7 +6,7 @@ function App() {
     <>
       <Header />
       <Hero>
-        <Header className="mx-auto w-6/12 px-0 xl:block" classImg="scale-125" />
+        <Header className="mx-auto w-6/12 px-0 xl:block hidden" classImg="scale-125" />
       </Hero>
     </>
   );

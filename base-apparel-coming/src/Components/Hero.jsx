@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <LogoBrand />
-      <section className="h-ful w-full bg-gradient-primary sm:h-auto xl:flex xl:flex-row-reverse">
+      <section className="w-full bg-gradient-primary sm:h-auto xl:flex xl:flex-row-reverse">
         <PictureGirl />
 
         <div className="relative z-0 xl:flex xl:w-full xl:flex-col">

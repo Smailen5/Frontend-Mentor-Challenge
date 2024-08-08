@@ -1,11 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-
-import { twMerge } from "tailwind-merge";
 import LogoBrand from "./LogoBrand";
 import PictureGirl from "./PictureGirl";
 import FormComponent from "./FormComponent";
-
 
 const Hero = () => {
   return (
@@ -29,7 +26,7 @@ const Hero = () => {
                 announcements and our launch deals.
               </p>
 
-             <FormComponent />
+              <FormComponent />
             </section>
           </div>
         </div>

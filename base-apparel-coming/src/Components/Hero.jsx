@@ -6,14 +6,14 @@ const Hero = () => {
   return (
     <>
       <LogoBrand />
-      <section className="w-full bg-gradient-primary xl:flex h-screen xl:flex-row-reverse">
+      <section className="h-screen w-full bg-gradient-primary xl:flex xl:flex-row-reverse">
         <PictureGirl />
 
         <div className="relative z-0 xl:flex xl:w-full xl:flex-col">
           <img
             src="../../images/bg-pattern-desktop.svg"
             alt="pattern hills"
-            className="absolute left-0 top-0 -z-10 h-full w-full"
+            className="absolute left-0 top-0 -z-10 hidden h-full w-full xl:block"
           />
           <LogoBrand className="hidden xl:block" classImg="scale-125" />
           <div className="flex items-center justify-center px-8 pb-24 pt-14 sm:px-0 xl:h-full xl:px-0 xl:py-10">

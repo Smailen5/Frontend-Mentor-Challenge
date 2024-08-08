@@ -31,7 +31,7 @@ const Hero = ({ children }) => {
               we&apos;re{" "}
               <span className="font-semibold text-neutral">coming soon</span>
             </h2>
-            <p className="text-sm text-primary">
+            <p className="text-sm text-primary xl:w-5/6 xl:text-base">
               Hello fellow shoppers! We&apos;re currently building our new
               fashion store. Add your email below to stay up-to-date with
               announcements and our launch deals.

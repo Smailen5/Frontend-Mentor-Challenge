@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import PropsType from "prop-types";
+import logo from "../assets/logo.svg";
 
 const LogoBrand = ({ className, classImg }) => {
   return (
@@ -12,7 +13,7 @@ const LogoBrand = ({ className, classImg }) => {
       <div className="xl:mx-auto xl:pl-8">
         <div className="xl:mx-auto xl:w-[28rem]">
           <img
-            src="/images/logo.svg"
+            src={logo}
             alt="logo"
             className={twMerge("w-32", classImg)}
           />

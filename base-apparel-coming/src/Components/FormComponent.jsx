@@ -1,5 +1,7 @@
 import { Formik, ErrorMessage, Field, Form } from "formik";
 import { object, string } from "yup";
+import iconError from "../assets/icon-error.svg";
+import iconArrow from "../assets/icon-arrow.svg";
 
 const validationSchema = object({
   email: string().email("Please provide a valid email").required(),
@@ -36,7 +38,7 @@ function FormComponent() {
             />
             {errors.email && touched.email && (
               <img
-                src="/images/icon-error.svg"
+                src={iconError}
                 alt="icon error"
                 className="absolute right-20 top-1/2 -translate-y-1/2 xl:right-32"
               />
@@ -46,7 +48,7 @@ function FormComponent() {
               disabled={isSubmitting}
               className="peer-valid:hover:bg-gradient-secondary-hover absolute bottom-0 right-0 flex h-full w-16 items-center justify-center rounded-full bg-gradient-secondary text-2xl text-[#fff] shadow-md shadow-primary peer-invalid:cursor-not-allowed xl:w-28"
             >
-              <img src="/images/icon-arrow.svg" alt="icon arrow" />
+              <img src={iconArrow} alt="icon arrow" />
             </button>
             <ErrorMessage
               name="email"

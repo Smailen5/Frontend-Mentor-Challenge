@@ -1,17 +1,18 @@
 import LogoBrand from "./LogoBrand";
 import PictureGirl from "./PictureGirl";
 import FormComponent from "./FormComponent";
+import pattern from "../assets/bg-pattern-desktop.svg";
 
 const Hero = () => {
   return (
     <>
       <LogoBrand />
-      <section className="h-ful sm:h-auto w-full bg-gradient-primary xl:flex xl:flex-row-reverse">
+      <section className="h-ful w-full bg-gradient-primary sm:h-auto xl:flex xl:flex-row-reverse">
         <PictureGirl />
 
         <div className="relative z-0 xl:flex xl:w-full xl:flex-col">
           <img
-            src="../../images/bg-pattern-desktop.svg"
+            src={pattern}
             alt="pattern hills"
             className="absolute left-0 top-0 -z-10 hidden h-full w-full xl:block"
           />

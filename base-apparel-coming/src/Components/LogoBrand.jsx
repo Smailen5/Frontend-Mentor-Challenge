@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { twMerge } from "tailwind-merge";
 
-const Header = ({ className, classImg }) => {
+const LogoBrand = ({ className, classImg }) => {
   return (
     <header
       className={twMerge("w-full bg-transparent p-8 xl:p-0 xl:pt-20 xl:hidden", className)}
@@ -19,4 +19,4 @@ const Header = ({ className, classImg }) => {
   );
 };
 
-export default Header;
+export default LogoBrand;

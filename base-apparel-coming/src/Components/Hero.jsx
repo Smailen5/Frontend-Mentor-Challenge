@@ -22,12 +22,12 @@ const Hero = ({ children }) => {
         <img src="/images/hero-mobile.jpg" alt="hero" className="w-full" />
       </picture>
 
-      <div>
+      <div className="xl:flex xl:flex-col xl:justify-between">
         {children}
         {/* <Header className="mx-auto w-6/12 scale-125 px-0 xl:block" /> */}
-        <div className="flex items-center justify-center px-8 pb-24 pt-14 sm:px-0 xl:px-0">
-          <section className="mx-auto flex h-[310px] flex-col justify-between text-center sm:w-6/12 xl:text-left">
-            <h2 className="text-4.5xl tracking-6 font-light uppercase text-primary sm:px-8 xl:px-0">
+        <div className="flex items-center justify-center px-8 pb-24 pt-14 sm:px-0 xl:px-0 xl:pt-0 xl:h-full">
+          <section className="mx-auto flex h-[310px] flex-col justify-between text-center sm:w-6/12 xl:w-7/12 xl:text-left xl:h-2/3">
+            <h2 className="text-4.5xl font-light uppercase tracking-6 text-primary sm:px-8 xl:px-0 xl:text-6xl">
               we&apos;re{" "}
               <span className="font-semibold text-neutral">coming soon</span>
             </h2>
@@ -58,7 +58,7 @@ const Hero = ({ children }) => {
                       type="email"
                       name="email"
                       placeholder="Email Address"
-                      className="bg-transparent border-primary-transparent peer h-12 w-full rounded-full border py-3 pl-6 pr-16 text-neutral outline-none placeholder:text-primary placeholder:opacity-50 invalid:border-secondary focus:invalid:border-2"
+                      className="peer h-12 w-full rounded-full border border-primary-transparent bg-transparent py-3 pl-6 pr-16 text-neutral outline-none placeholder:text-primary placeholder:opacity-50 invalid:border-secondary focus:invalid:border-2"
                     />
                     <ErrorMessage
                       name="email"

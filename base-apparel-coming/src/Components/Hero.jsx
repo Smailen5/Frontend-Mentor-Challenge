@@ -4,6 +4,7 @@ import { Formik, ErrorMessage, Field, Form } from "formik";
 import { object, string } from "yup";
 import { twMerge } from "tailwind-merge";
 import LogoBrand from "./LogoBrand";
+import PictureGirl from "./PictureGirl";
 
 const validationSchema = object({
   email: string().email("Please provide a valid email").required(),
@@ -16,19 +17,9 @@ const initialValues = {
 const Hero = () => {
   return (
     <>
-    <LogoBrand />
+      <LogoBrand />
       <section className="w-full bg-gradient-primary xl:flex xl:h-screen xl:flex-row-reverse">
-        <picture className="flex-shrink-0">
-          <source
-            media="(min-width: 1280px)"
-            srcSet="/images/hero-desktop.jpg"
-          />
-          <img
-            src="/images/hero-mobile.jpg"
-            alt="hero"
-            className="w-full xl:h-full"
-          />
-        </picture>
+        <PictureGirl />
 
         <div className="xl:flex xl:w-full xl:flex-col">
           <LogoBrand className="hidden xl:block" classImg="scale-125" />

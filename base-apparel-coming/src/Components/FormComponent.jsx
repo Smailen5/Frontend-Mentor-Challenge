@@ -11,7 +11,7 @@ const initialValues = {
   email: "",
 };
 
-function FormComponent() {
+function FormComponent(){
   return (
     <Formik
       validationSchema={validationSchema}

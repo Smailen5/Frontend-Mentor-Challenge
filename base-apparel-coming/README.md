@@ -108,6 +108,7 @@ In future projects, I plan to:
 
 A big thank you to:
 
+- A big thank you to [Rupali](https://www.frontendmentor.io/profile/rupali317) for the valuable feedback.
 - Frontend Mentor: For providing the challenge and valuable feedback.
 - The React Community: For their ongoing support and resources.
 - Tailwind CSS Team: For the amazing utility-first CSS framework ❤.

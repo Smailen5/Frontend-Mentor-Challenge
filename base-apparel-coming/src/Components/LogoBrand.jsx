@@ -4,7 +4,7 @@ import logo from "../assets/logo.svg";
 
 const LogoBrand = ({ className, classImg }) => {
   return (
-    <section
+    <header
       className={twMerge(
         "w-full bg-transparent p-8 xl:hidden xl:p-0 xl:pt-20",
         className,
@@ -19,7 +19,7 @@ const LogoBrand = ({ className, classImg }) => {
           />
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 

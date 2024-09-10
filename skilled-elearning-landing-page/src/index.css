@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* colors */
+  --primary-clr-blue: #13183f;
+  --primary-clr-light-blue: #666ca3;
+  --primary-clr-pink: #f74780;
+  --primary-clr-light-pink: #ffa7c3;
+  --primary-clr-white: #ffffff;
+  --primary-clr-grey: #83869a;
+
+  /* gradients */
+  --gradient-clr-pink: linear-gradient(322deg, hsl(322, 87%,55%) 0%, hsl(13, 100%, 64%) 100%);
+  --gradient-clr-blue: linear-gradient(237deg, hsl(237, 100%, 64%) 0%, hsl(322, 87%, 55%) 100%);
+}

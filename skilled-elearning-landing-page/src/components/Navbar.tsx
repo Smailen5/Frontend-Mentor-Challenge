@@ -6,7 +6,7 @@ export const Navbar = () => {
     <header className="p-4">
       <nav className="flex justify-between items-center">
         <img src={logo} alt="logo" />
-        <Button >Get Started</Button>
+        <Button size={'lg'} className="text-lg">Get Started</Button>
       </nav>
     </header>
   );

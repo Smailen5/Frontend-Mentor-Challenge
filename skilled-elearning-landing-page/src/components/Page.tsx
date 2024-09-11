@@ -4,7 +4,7 @@ type PageProps = {
 };
 export const Page: React.FC<PageProps> = ({ children, isOpacity }) => {
   return (
-    <section className="px-4 py-20 bg-opacity-5 relative">
+    <section className="px-4 py-14 bg-opacity-5 relative overflow-hidden">
       {isOpacity && (
         <>
           <div className="absolute inset-0 bg-gradient-to-t from-clr-light-blue to-clr-white">

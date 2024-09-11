@@ -1,4 +1,5 @@
 import { heroData } from "../data/data";
+import { HeroImage } from "./HeroImage";
 import { Page } from "./Page";
 import { Button } from "./ui/Button";
 
@@ -10,7 +11,11 @@ export const Hero = () => {
           {heroData.title}
         </h1>
         <p className="text-clr-grey text-xl">{heroData.subtitle}</p>
-        <Button variant={'orange'} size={"lg"}>Get Started</Button>
+        <Button variant={"orange"} size={"lg"}>
+          Get Started
+        </Button>
+
+        <HeroImage />
       </div>
     </Page>
   );

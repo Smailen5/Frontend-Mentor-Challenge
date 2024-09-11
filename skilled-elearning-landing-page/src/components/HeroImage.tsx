@@ -16,7 +16,7 @@ export const HeroImage = () => {
         type="image/png"
         media="(min-width: 768px)"
       />
-      <img src={imgHeroWebp} alt="image hero" className="" />
+      <img src={imgHeroWebp} alt="image hero" className="scale-125" />
     </picture>
   );
 };

@@ -1,4 +1,4 @@
-import { Cards, Hero, Navbar } from "./components";
+import { Cards, Footer, Hero, Navbar } from "./components";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
         <Navbar />
         <Hero />
         <Cards />
-        <div>App</div>
+        <Footer />
       </div>
     </>
   );

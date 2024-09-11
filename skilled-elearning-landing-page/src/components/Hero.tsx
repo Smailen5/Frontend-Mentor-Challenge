@@ -1,3 +1,12 @@
+import { heroData } from "../data/data";
+import { Button } from "./ui/Button";
+
 export const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <section>
+      <h1>{heroData.title}</h1>
+      <p>{heroData.subtitle}</p>
+      <Button size={"lg"}>Get Started</Button>
+    </section>
+  );
 };

@@ -1,6 +1,5 @@
 import { heroData } from "../data/data";
-import { HeroImage } from "./HeroImage";
-import { Page } from "./Page";
+import { HeroImage, Page } from "./index";
 import { Button } from "./ui/Button";
 
 export const Hero = () => {

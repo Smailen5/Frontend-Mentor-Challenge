@@ -11,17 +11,17 @@ export const Card: React.FC<CardProps> = ({ title, description, image }) => {
   // se la descrizione non esiste torna una card diversa
   if (!description) {
     return (
-      <article className="bg-gradient-pink p-8 rounded-2xl ">
-        <h3 className="text-clr-white font-bold text-2xl">{title}</h3>
+      <article className="rounded-2xl bg-gradient-pink p-8">
+        <h3 className="text-2xl font-bold text-clr-white">{title}</h3>
       </article>
     );
   }
 
   return (
-    <article className="bg-clr-white p-8 pt-12 rounded-2xl space-y-4 relative">
+    <article className="relative space-y-4 rounded-2xl bg-clr-white p-8 pt-12">
       <CardImage image={image} />
-      <h3 className="text-clr-blue font-bold text-2xl">{title}</h3>
-      <p className="text-clr-grey font-semibold">{description}</p>
+      <h3 className="text-2xl font-bold text-clr-blue">{title}</h3>
+      <p className="font-semibold text-clr-grey">{description}</p>
       <Button variant={"ghost"}>Get Started</Button>
     </article>
   );

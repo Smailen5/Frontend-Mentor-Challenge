@@ -8,4 +8,3 @@ import { Navbar } from "./Navbar";
 import { Page } from "./Page";
 
 export { Card, CardImage, Cards, Footer, Hero, HeroImage, Navbar, Page };
-

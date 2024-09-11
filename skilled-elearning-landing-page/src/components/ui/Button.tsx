@@ -10,20 +10,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-clr-blue text-clr-white text-lg font-bold shadow hover:opacity-60",
+          "bg-clr-blue text-clr-white text-xl font-bold shadow hover:opacity-60",
         orange:
-          "bg-gradient-pink text-clr-white text-lg font-bold shadow-sm hover:opacity-60",
-        outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+          "bg-gradient-pink text-clr-white text-xl font-bold shadow-sm hover:opacity-60",
+        blue: "bg-gradient-blue text-clr-white text-xl font-bold shadow-sm hover:opacity-60",
         ghost: "hover:opacity-60 font-bold text-xl text-clr-pink",
-        link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
         default: "h-9",
-        sm: "h-8 px-3 text-xs",
-        lg: "h-14 px-8",
+        sm: "h-12 px-6",
+        lg: "h-16 px-8",
         icon: "h-9 w-9",
       },
     },

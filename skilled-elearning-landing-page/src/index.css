@@ -15,12 +15,12 @@
 
   /* gradients */
   --gradient-clr-pink: linear-gradient(
-    322deg,
-    hsl(322, 87%, 55%) 0%,
-    hsl(13, 100%, 64%) 100%
+    180deg,
+    hsl(13, 100%, 64%) 0%,
+    hsl(322, 87%, 55%) 100%
   );
   --gradient-clr-blue: linear-gradient(
-    237deg,
+    180deg,
     hsl(237, 100%, 64%) 0%,
     hsl(322, 87%, 55%) 100%
   );

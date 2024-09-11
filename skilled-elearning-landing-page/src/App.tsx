@@ -1,4 +1,4 @@
-import { Hero, Navbar } from "./components";
+import { Cards, Hero, Navbar } from "./components";
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <div className="font-plus-jakarta">
         <Navbar />
         <Hero />
+        <Cards />
         <div>App</div>
       </div>
     </>

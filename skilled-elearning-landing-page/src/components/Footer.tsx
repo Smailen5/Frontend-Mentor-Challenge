@@ -1,3 +1,15 @@
+import logo from "../assets/logo-light.svg";
+import { Button } from "./ui/Button";
+
 export const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className="bg-clr-blue p-4 py-6">
+      <div className="flex justify-between items-center">
+        <img src={logo} alt="logo" className="w-20" />
+        <Button variant={"blue"} size={"sm"}>
+          Get Started
+        </Button>
+      </div>
+    </footer>
+  );
 };

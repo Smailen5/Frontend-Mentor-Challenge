@@ -1,7 +1,7 @@
 const heroData = {
   title: "Maximize skill, minimize budget",
   subtitle:
-    "Our modern courses across a range og in-demand skills will give you the knowledge you need to live the life you want.",
+    "Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.",
 };
 
 const dataCards = [

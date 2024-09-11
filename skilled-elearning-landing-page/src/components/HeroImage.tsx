@@ -5,7 +5,7 @@ import imgHero2xWebp from "../assets/image-hero-mobile@2x.webp";
 
 export const HeroImage = () => {
   return (
-    <picture className="scale-125 mt-10">
+    <picture className="mt-10">
       <source
         srcSet={`${imgHero2xWebp} 2x, ${imgHeroWebp} 1x`}
         type="image/webp"
@@ -16,7 +16,7 @@ export const HeroImage = () => {
         type="image/png"
         media="(min-width: 768px)"
       />
-      <img src={imgHeroWebp} alt="image hero" />
+      <img src={imgHeroWebp} alt="image hero" className="" />
     </picture>
   );
 };

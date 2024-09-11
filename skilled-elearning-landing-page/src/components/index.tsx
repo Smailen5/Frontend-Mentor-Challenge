@@ -1,8 +1,9 @@
 import { Card } from "./Card";
+import { Cards } from "./Cards";
 import { Footer } from "./Footer";
 import { Hero } from "./Hero";
+import { HeroImage } from "./HeroImage";
 import { Navbar } from "./Navbar";
 import { Page } from "./Page";
-import { HeroImage } from "./HeroImage";
 
-export { Card, Footer, Hero, Navbar, Page, HeroImage };
+export { Card, Cards, Footer, Hero, HeroImage, Navbar, Page };

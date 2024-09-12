@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <Page>
       <div className="grid grid-cols-1 gap-20 md:grid-cols-2 md:gap-0 items-center">
-        <div className="flex flex-col items-start gap-8">
+        <div className="flex flex-col items-start gap-8 lg:max-w-md">
           <h1 className="text-4.5xl font-extrabold text-clr-blue">
             {heroData.title}
           </h1>

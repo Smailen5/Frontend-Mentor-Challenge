@@ -10,16 +10,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-clr-blue text-clr-white text-xl font-bold shadow hover:opacity-60 md:h-12 md:px-6",
+          "bg-clr-blue text-clr-white text-xl font-semibold shadow hover:opacity-60 md:h-12 md:px-6",
         orange:
-          "bg-gradient-pink text-clr-white text-xl font-bold shadow-sm hover:opacity-60 md:h-12 md:px-6",
-        blue: "bg-gradient-blue text-clr-white text-xl font-bold shadow-sm hover:opacity-60",
+          "bg-gradient-pink text-clr-white text-xl font-semibold shadow-sm hover:opacity-60 md:h-12 md:px-6",
+        blue: "bg-gradient-blue text-clr-white text-xl font-semibold shadow-sm hover:opacity-60",
         ghost: "hover:opacity-60 font-bold text-xl text-clr-pink",
       },
       size: {
         default: "h-9",
-        sm: "h-12 px-6",
-        lg: "h-16 px-8",
+        sm: "h-12 px-6 lg:h-16 lg:px-10",
+        lg: "h-14 px-8 md:h-12 md:px-6 lg:h-16 lg:px-10",
         icon: "h-9 w-9",
       },
     },

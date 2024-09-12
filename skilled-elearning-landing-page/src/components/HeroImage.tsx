@@ -53,7 +53,7 @@ import imgHeroDesktopWebp2x from "../assets/image-hero-desktop@2x.webp";
 
 export const HeroImage = () => {
   return (
-    <picture className="relative h-auto w-full md:h-[150%] md:min-w-[150%] md:-translate-y-20 md:translate-x-60 lg:-translate-y-32 lg:translate-x-72">
+    <picture className="h-auto w-full md:h-[150%] md:min-w-[150%] md:-translate-y-20 md:translate-x-60 lg:-translate-y-32 lg:translate-x-72 xl:translate-x-96">
       {/* IMMAGINI DESKTOP */}
       <source
         srcSet={`${imgHeroDesktopWebp2x} 2x, ${imgHeroDesktopWebp} 1x}`}

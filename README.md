@@ -9,6 +9,10 @@
 
 ---
 
+#### Skilled elearning [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/skilled-elearning-landing-page) - [Live site](https://soft-shortbread-7ebd18.netlify.app/)
+
+![Anteprima](./screen%20capture/skilled-elearning-desktop.jpeg)
+
 #### Base apparel [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/base-apparel-coming) - [Live site](https://66b50fe73bacca6322bb5a2a--iridescent-entremet-637a7d.netlify.app/)
 
 ![Anteprima](./screen%20capture//base-apparel-desktop.jpeg)

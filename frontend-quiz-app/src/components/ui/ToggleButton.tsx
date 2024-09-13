@@ -1,5 +1,5 @@
-import iconSun from "../assets/images/icon-sun-dark.svg";
-import iconMoon from "../assets/images/icon-moon-dark.svg";
+import iconSun from "../../assets/images/icon-sun-dark.svg";
+import iconMoon from "../../assets/images/icon-moon-dark.svg";
 
 export const ToggleButton = () => {
   return (

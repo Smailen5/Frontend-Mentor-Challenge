@@ -1,4 +1,4 @@
-import { ToggleButton } from "./ToggleButton";
+import { ToggleButton } from "./ui/ToggleButton";
 type NavbarProps = {
   quizzes?: { title: string };
 };
@@ -13,7 +13,7 @@ export const Navbar: React.FC<NavbarProps> = ({ quizzes }) => {
     );
   }
   return (
-    <header className="flex justify-end mx-auto px-4 py-6 max-w-screen-lg">
+    <header className="mx-auto flex max-w-screen-lg justify-end px-4 py-6">
       {/* Navbar */}
       <nav className="">
         <ToggleButton />

@@ -13,7 +13,6 @@ type Quiz = {
 
 export const Hero = () => {
   const { quizzes }: { quizzes: Quiz[] } = quizzesData; // Specifica il tipo
-  // const { title } = quizzes;
   return (
     <section>
       <h2>Welcome to the Frontend Quiz!</h2>

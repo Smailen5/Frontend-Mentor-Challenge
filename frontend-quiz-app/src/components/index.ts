@@ -2,6 +2,7 @@
 
 // Atoms
 export { Button } from "./atoms/Button";
+export { Page } from "./atoms/Page";
 export { ToggleButton } from "./atoms/ToggleButton";
 
 // Molecules

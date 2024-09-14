@@ -41,7 +41,6 @@ export const QuizForm: React.FC<QuizFormProps> = ({ questions }) => {
           <button onClick={goToNextQuestion}>vai avanti</button>
         </section>
       </div>
-      ;
     </>
   );
 };

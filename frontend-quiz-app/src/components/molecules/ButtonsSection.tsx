@@ -23,3 +23,11 @@ export const ButtonsSection = (props: { quizzes: Quiz[] }) => {
     </section>
   );
 };
+
+type ButtonAnswerProps = {
+  option: string;
+};
+
+export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({ option }) => {
+  return <button className="p-2 bg-red-200">{option}</button>;
+};

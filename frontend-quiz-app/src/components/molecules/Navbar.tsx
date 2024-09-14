@@ -1,4 +1,4 @@
-import { ToggleButton } from "./ui/ToggleButton";
+import { ToggleButton } from "../atoms/ToggleButton";
 type NavbarProps = {
   quizzes?: { title: string };
 };

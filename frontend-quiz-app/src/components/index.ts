@@ -1,5 +1,4 @@
-import { Navbar } from "./Navbar";
-import { Hero } from "./Hero";
+import { Navbar } from "./molecules/Navbar";
+import { Hero } from "./molecules/Hero";
 
-
-export { Navbar, Hero }
+export { Navbar, Hero };

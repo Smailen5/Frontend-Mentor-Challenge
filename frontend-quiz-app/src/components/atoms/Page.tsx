@@ -2,5 +2,5 @@ type PageProps = {
   children: React.ReactNode;
 };
 export const Page: React.FC<PageProps> = ({ children }) => {
-  return <section>{children}</section>;
+  return <section className="mx-auto p-4">{children}</section>;
 };

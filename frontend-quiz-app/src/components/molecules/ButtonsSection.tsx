@@ -26,8 +26,10 @@ export const ButtonsSection = (props: { quizzes: Quiz[] }) => {
 
 type ButtonAnswerProps = {
   option: string;
+  onClick: ;
+  isSelected?:
 };
 
-export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({ option }) => {
-  return <button className="p-2 bg-red-200">{option}</button>;
+export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({ option, onClick }) => {
+  return <button onClick={onclick} className="p-2 bg-red-200">{option}</button>;
 };

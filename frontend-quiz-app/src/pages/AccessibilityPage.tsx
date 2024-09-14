@@ -1,3 +1,11 @@
+import { QuizForm } from "../components";
+import { useQuiz } from "../utils/useQuiz";
+
 export const AccessibilityPage = () => {
-  return <div>AccessibilityPage</div>;
+  const questions = useQuiz({ selectedQuiz: "Accessibility" });
+
+  if (!questions) {
+    return <div>Quiz not found</div>;
+  }
+  return <QuizForm questions={questions} />;
 };

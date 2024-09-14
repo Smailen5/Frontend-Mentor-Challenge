@@ -8,9 +8,5 @@ export const HtmlPage = () => {
     return <div>Quiz not found</div>;
   }
 
-  return (
-    <>
-      <QuizForm questions={questions} />
-    </>
-  );
+  return <QuizForm questions={questions} />;
 };

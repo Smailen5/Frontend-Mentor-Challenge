@@ -1,11 +1,12 @@
-import { Navbar, Hero } from "./components";
+import { RouterProvider } from "react-router-dom";
+import { Navbar } from "./components";
+import { router } from "./routes/routes";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      App
+      <RouterProvider router={router} />
     </>
   );
 }

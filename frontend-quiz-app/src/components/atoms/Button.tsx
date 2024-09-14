@@ -7,7 +7,6 @@ type ButtonProps = {
 
 export const Button: React.FC<ButtonProps> = ({ children, icon }) => {
   const iconSrc = icon ? iconMaps[icon] : undefined;
-  console.log(iconSrc);
 
   return (
     <button className="flex w-full items-center gap-4 rounded-lg bg-slate-400 p-4">

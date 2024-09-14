@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../atoms/Button";
 
 type Quiz = {
@@ -13,9 +14,11 @@ export const ButtonsSection = (props: { quizzes: Quiz[] }) => {
   return (
     <section className="flex flex-col gap-4">
       {props.quizzes.map((quiz) => (
-        <Button key={quiz.title} {...quiz}>
-          {quiz.title}
-        </Button>
+        <Link to={`/${quiz.title.toLowerCase()}-quiz`}>
+          <Button key={quiz.title} {...quiz}>
+            {quiz.title}
+          </Button>
+        </Link>
       ))}
     </section>
   );

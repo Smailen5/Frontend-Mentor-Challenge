@@ -2,7 +2,7 @@
     "quizzes": [
         {
             "title": "HTML",
-            "icon": "iconHtml",
+            "icon": "IconHtml",
             "questions": [
                 {
                     "question": "What does HTML stand for?",
@@ -108,7 +108,7 @@
         },
         {
             "title": "CSS",
-            "icon": "iconCss",
+            "icon": "IconCss",
             "questions": [
                 {
                     "question": "What does CSS stand for?",
@@ -214,7 +214,7 @@
         },
         {
             "title": "JavaScript",
-            "icon": "iconJavascript",
+            "icon": "IconJavascript",
             "questions": [
                 {
                     "question": "Which syntax is correct to output 'Hello World' in an alert box?",
@@ -320,7 +320,7 @@
         },
         {
             "title": "Accessibility",
-            "icon": "iconAccessibility",
+            "icon": "IconAccessibility",
             "questions": [
                 {
                     "question": "What does 'WCAG' stand for?",

@@ -1,6 +1,6 @@
 type ScorePageProps = {
-  correctAnswers: number;
-  questionLength:number;
+  correctAnswers?: number;
+  questionLength?:number;
 }
 
 export const ScorePage:React.FC<ScorePageProps> = ({correctAnswers, questionLength}) => {

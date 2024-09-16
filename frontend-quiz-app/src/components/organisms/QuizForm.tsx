@@ -28,11 +28,13 @@ export const QuizForm: React.FC<QuizFormProps> = ({ questions }) => {
     // controlla che la risposta sia corretta
     if (selectedAnswer === question.answer) {
       setCorrectAnswers(correctAnswers + 1);
+      console.log(correctAnswers);
+      
     }
     setIsAnswerSubmitted(true); // l'utente ha inviato la risposta
   };
 
-  const goToNextQuestion = () => {
+  const handleNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedAnswer(null);
@@ -65,9 +67,12 @@ export const QuizForm: React.FC<QuizFormProps> = ({ questions }) => {
             />
           ))}
           {!isAnswerSubmitted ? (
-            button onClick={handleSubmitAnswer}>Submit Answer</button>
-          ): (<button onClick={handleNextQuestion}>Vai alla prossima domanda</button>)}
-          <
+            <button onClick={handleSubmitAnswer}>Submit Answer</button>
+          ) : (
+            <button onClick={handleNextQuestion}>
+              Vai alla prossima domanda
+            </button>
+          )}
         </section>
       </div>
     </>

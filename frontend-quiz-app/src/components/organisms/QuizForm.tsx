@@ -28,15 +28,15 @@ export const QuizForm: React.FC<QuizFormProps> = ({ questions }) => {
 
   const handleSubmitAnswer = () => {
     // controlla che la risposta sia corretta
-    console.log(selectedAnswer === question.answer);
+    //! console.log(selectedAnswer === question.answer);
 
     if (selectedAnswer === question.answer) {
-      console.log(selectedAnswer);
+      //! console.log(selectedAnswer);
 
       setCorrectAnswers(correctAnswers + 1);
-      console.log(correctAnswers);
+      //! console.log(correctAnswers);
     } else {
-      console.log("risposta sbagliata");
+      //! console.log("risposta sbagliata");
     }
     setIsAnswerSubmitted(true); // l'utente ha inviato la risposta
   };
@@ -57,7 +57,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({ questions }) => {
   };
 
   if (isQuizCompleted) {
-    return <ScorePage />;
+    return <ScorePage correctAnswers={correctAnswers} questionLength={questions.length} />;
   }
 
   return (

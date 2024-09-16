@@ -118,3 +118,17 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+<!-- ! RICORDATI DI SPIEGARE COME HAI RISOLTO L'IMPORTAZIONE DELLE SVG ♥ RINGRAZIA ANCHE LE FONTI 
+
+articolo utilissimo e spiegato bene, mi ha fatto capire dove sbagliavo e come modificare il plugin per renderlo piu semplice
+* meglio se non modifichi il plugin, ce un problema da guardare meglio
+! https://medium.com/@praizjosh/how-to-import-svg-files-as-react-components-in-vite-97d6e1f2c046 
+
+documentazione di plugin svgr, purtroppo ho capito poco, almeno non sono stato in grado di seguirla
+! https://www.npmjs.com/package/vite-plugin-svgr
+
+primo articolo che mi ha fatto capire dove sbagliavo
+! https://stackoverflow.com/questions/77280652/vite-plugin-svgr-does-not-working-in-vite-react-and-typescript 
+
+!-->

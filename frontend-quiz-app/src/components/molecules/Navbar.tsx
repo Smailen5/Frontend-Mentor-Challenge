@@ -6,14 +6,14 @@ export const Navbar: React.FC<NavbarProps> = ({ quizzes }) => {
   // navbar nelle pagine quiz
   if (quizzes) {
     return (
-      <header className="flex justify-between">
+      <header className="flex justify-between dark:bg-slate-400">
         <h2>{quizzes.title}</h2>
         <ToggleButton />
       </header>
     );
   }
   return (
-    <header className="mx-auto flex max-w-screen-lg justify-end px-4 py-6">
+    <header className="mx-auto flex max-w-screen-lg justify-end px-4 py-6 dark:bg-slate-400">
       {/* Navbar */}
       <nav className="">
         <ToggleButton />

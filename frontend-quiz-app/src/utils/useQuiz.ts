@@ -23,7 +23,7 @@ export const useQuiz = ({ selectedQuiz }: useQuizProps) => {
   );
 
   //   restituisce le domande del quiz trovato
-  return quiz?.questions;
+  return quiz;
 };
 
 // ! ATTENZIONE: useQuiz puo restituire null, controlla sempre se hai la risposta prima di utilizzarla

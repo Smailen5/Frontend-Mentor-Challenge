@@ -25,11 +25,11 @@ export const Score: React.FC<ScoreProps> = ({
           <span className="text-7xl font-bold">{correctAnswers}</span>
           <span>of out {questionLength}</span>
         </div>
+        <button className="w-full rounded-md bg-violet-500 p-2 text-white">
+          Play Again
+        </button>
       </div>
-
-      <button className="w-full rounded-md bg-violet-500 p-2 text-white">
-        Play Again
-      </button>
+      
     </section>
   );
 };

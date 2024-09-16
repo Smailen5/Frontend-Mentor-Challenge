@@ -1,12 +1,15 @@
 import { ToggleButton } from "../atoms/ToggleButton";
+import IconQuiz from "./IconQuiz";
+
 type NavbarProps = {
-  quizzes?: { title: string };
+  quizzes?: { title: string; icon: string };
 };
 export const Navbar: React.FC<NavbarProps> = ({ quizzes }) => {
   // navbar nelle pagine quiz
   if (quizzes) {
     return (
       <header className="flex justify-between dark:bg-slate-400">
+        <IconQuiz title={quizzes.title} icon={quizzes.icon} />
         <h2>{quizzes.title}</h2>
         <ToggleButton />
       </header>

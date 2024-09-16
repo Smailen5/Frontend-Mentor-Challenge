@@ -7,10 +7,12 @@ type Questions = {
   answer: string;
 };
 type QuizFormProps = {
+  title: string;
+  icon: string;
   questions: Questions[];
 };
 
-export const QuizForm: React.FC<QuizFormProps> = ({ questions }) => {
+export const QuizForm: React.FC<QuizFormProps> = ({ title, icon, questions }) => {
   // stato per l'indice della domanda corrente
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   // risposta selezionata
@@ -54,10 +56,13 @@ export const QuizForm: React.FC<QuizFormProps> = ({ questions }) => {
       setIsQuizCompleted(true);
     }
   };
+console.log(icon);
 
   if (isQuizCompleted) {
     return (
       <Score
+      title={title}
+      icon='iconHtml'
         correctAnswers={correctAnswers}
         questionLength={questions.length}
       />

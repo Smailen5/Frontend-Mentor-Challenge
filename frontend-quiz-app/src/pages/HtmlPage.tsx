@@ -1,4 +1,4 @@
-import { QuizForm } from "../components";
+import { Navbar, QuizForm } from "../components";
 import { useQuiz } from "../utils/useQuiz";
 
 export const HtmlPage = () => {
@@ -8,5 +8,10 @@ export const HtmlPage = () => {
     return <div>Quiz not found</div>;
   }
 
-  return <QuizForm questions={questions} />;
+  return (
+    <>
+      <Navbar quizzes={{ title: "HTML quiz" }} />
+      <QuizForm questions={questions} />
+    </>
+  );
 };

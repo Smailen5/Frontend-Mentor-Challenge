@@ -1,4 +1,4 @@
-import { QuizForm } from "../components";
+import { Navbar, QuizForm } from "../components";
 import { useQuiz } from "../utils/useQuiz";
 
 export const CssPage = () => {
@@ -7,5 +7,10 @@ export const CssPage = () => {
   if (!questions) {
     return <div>Quiz not found</div>;
   }
-  return <QuizForm questions={questions} />;
+  return (
+    <>
+      <Navbar quizzes={{ title: "CSS quiz" }} />
+      <QuizForm questions={questions} />
+    </>
+  );
 };

@@ -1,3 +1,4 @@
+/// <reference types="vite-plugin-svgr/client" />
 import { RouterProvider } from "react-router-dom";
 import { Page } from "./components";
 import { router } from "./routes/routes";

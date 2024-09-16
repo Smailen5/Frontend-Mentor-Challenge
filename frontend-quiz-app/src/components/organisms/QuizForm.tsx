@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { ScorePage } from "../../pages";
-import { ButtonAnswer } from "../index";
+import { ButtonAnswer, Score } from "../index";
 
 type Questions = {
   question: string;
@@ -57,7 +56,12 @@ export const QuizForm: React.FC<QuizFormProps> = ({ questions }) => {
   };
 
   if (isQuizCompleted) {
-    return <ScorePage correctAnswers={correctAnswers} questionLength={questions.length} />;
+    return (
+      <Score
+        correctAnswers={correctAnswers}
+        questionLength={questions.length}
+      />
+    );
   }
 
   return (

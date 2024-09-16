@@ -7,7 +7,7 @@ export const Navbar: React.FC<NavbarProps> = ({ quizzes }) => {
   if (quizzes) {
     return (
       <header className="flex justify-between">
-        {quizzes.title}
+        <h2>{quizzes.title}</h2>
         <ToggleButton />
       </header>
     );

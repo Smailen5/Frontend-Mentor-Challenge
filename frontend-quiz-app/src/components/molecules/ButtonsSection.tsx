@@ -40,7 +40,10 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
   return (
     <button
       onClick={onClick}
-      className={twMerge(`bg-red-200 p-2`, `${className}`)}
+      className={twMerge(
+        `bg-red-200 p-2 focus:border-2 focus:border-violet-500`,
+        `${className}`,
+      )}
     >
       {option}
     </button>

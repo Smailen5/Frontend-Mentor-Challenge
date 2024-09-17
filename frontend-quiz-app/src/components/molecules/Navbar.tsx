@@ -15,8 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({ quizzes }) => {
     );
   }
   return (
-    <header className="mx-auto flex max-w-screen-lg justify-end px-4 py-6 dark:bg-slate-400">
-      {/* Navbar */}
+    <header className="mx-auto flex max-w-screen-lg justify-end px-4 py-6 ">
       <nav className="">
         <ToggleButton />
       </nav>

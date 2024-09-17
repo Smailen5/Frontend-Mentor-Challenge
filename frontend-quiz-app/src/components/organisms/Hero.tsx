@@ -12,9 +12,9 @@ type Quiz = {
 };
 
 export const Hero = () => {
-  const { quizzes }: { quizzes: Quiz[] } = quizzesData; // Specifica il tipo
+  const { quizzes }: { quizzes: Quiz[] } = quizzesData;
   return (
-    <section className="flex flex-col gap-4">
+    <section className="flex flex-col gap-10">
       <div className="space-y-4">
         <h2 className="text-4xl">
           Welcome to the <strong>Frontend Quiz!</strong>

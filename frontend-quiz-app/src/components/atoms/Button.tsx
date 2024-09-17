@@ -1,16 +1,14 @@
 import IconQuiz from "../molecules/IconQuiz";
 
 type ButtonProps = {
-  children: React.ReactNode;
   title: string;
   icon: string;
 };
 
-export const Button: React.FC<ButtonProps> = ({ children, icon }) => {
+export const Button: React.FC<ButtonProps> = ({ icon, title }) => {
   return (
-    <button className="flex w-full items-center gap-4 rounded-lg bg-white p-4">
-      <IconQuiz icon={icon} />
-      {children}
+    <button className="flex w-full items-center gap-2 rounded-xl bg-white p-3 font-bold">
+      <IconQuiz icon={icon} title={title} />
     </button>
   );
 };

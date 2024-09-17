@@ -4,12 +4,12 @@ import { useDarkModeContext } from "../../utils/darkModeContext";
 
 export const ToggleButton = () => {
   const { darkMode, toggleDarkMode } = useDarkModeContext();
-  
+
   return (
     <div className={`${darkMode && "dark"}`}>
-      <label className="inline-flex cursor-pointer items-center dark:bg-black">
+      <label className="inline-flex cursor-pointer items-center gap-2">
         <span>
-          <img src={iconSun} alt="icon sun" />
+          <img src={darkMode ? iconSun : iconSun} alt="icon sun" />
         </span>
         <input
           type="checkbox"
@@ -17,9 +17,9 @@ export const ToggleButton = () => {
           className="peer sr-only"
           onClick={toggleDarkMode}
         />
-        <div className="peer relative h-6 w-11 rounded-full bg-violet-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-violet-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-violet-300 rtl:peer-checked:after:-translate-x-full dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-violet-800" />
+        <div className="peer relative h-6 w-11 rounded-full bg-purple-600 after:absolute after:start-[4px] after:top-[4px] after:h-4 after:w-4 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-focus:outline-none rtl:peer-checked:after:-translate-x-full" />
         <span>
-          <img src={iconMoon} alt="icon moon" />
+          <img src={darkMode ? iconMoon : iconMoon} alt="icon moon" />
         </span>
       </label>
     </div>

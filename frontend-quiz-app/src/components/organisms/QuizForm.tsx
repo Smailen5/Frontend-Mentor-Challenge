@@ -82,7 +82,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({
 
         <div>barra di quante domande sono state fatte e quante ne mancano</div>
       </div>
-      <section className="flex flex-col gap-4">
+      <section className="flex flex-col gap-3">
         {question.options.map((option, optionIndex) => {
           let buttonStyle = "";
           // se la risposta e stata inviata
@@ -113,10 +113,18 @@ export const QuizForm: React.FC<QuizFormProps> = ({
           );
         })}
         {!isAnswerSubmitted ? (
-          <button onClick={handleSubmitAnswer}>Submit Answer</button>
+          <button
+            onClick={handleSubmitAnswer}
+            className="rounded-md bg-purple-600 p-4 font-semibold tracking-wider text-white"
+          >
+            Submit Answer
+          </button>
         ) : (
-          <button onClick={handleNextQuestion}>
-            Vai alla prossima domanda
+          <button
+            onClick={handleNextQuestion}
+            className="rounded-md bg-purple-600 p-4 font-semibold tracking-wider text-white"
+          >
+            Next Question
           </button>
         )}
         {noSelectedAnswer && (

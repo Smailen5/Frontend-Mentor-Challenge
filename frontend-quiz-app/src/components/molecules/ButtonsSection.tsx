@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../atoms/Button";
+import { twMerge } from "tailwind-merge";
 
 type Quiz = {
   title: string;
@@ -37,7 +38,10 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
   className,
 }) => {
   return (
-    <button onClick={onClick} className={`bg-red-200 p-2 ${className}`}>
+    <button
+      onClick={onClick}
+      className={twMerge(`bg-red-200 p-2`, `${className}`)}
+    >
       {option}
     </button>
   );

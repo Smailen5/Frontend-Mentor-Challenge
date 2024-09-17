@@ -28,22 +28,39 @@ type ButtonAnswerProps = {
   onClick: () => void;
   isSelected?: boolean;
   className?: string;
+  optionIndex: number;
 };
 
 export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
   option,
   onClick,
   className,
+  optionIndex,
 }) => {
+  // converte i numeri dell'indice in lettere
+  function indexToLetters(index: number): string {
+    let result = "";
+    while (index >= 0) {
+      console.log(index);
+
+      result = String.fromCharCode((index % 26) + 65) + result;
+      index = Math.floor(index / 26) - 1;
+    }
+    return result;
+  }
+
   return (
     <button
       onClick={onClick}
       className={twMerge(
-        `bg-red-200 p-2 focus:border-2 focus:border-violet-500`,
+        `flex w-full items-center gap-4 rounded-xl bg-white p-3 font-bold focus:border-2 focus:border-violet-500`,
         `${className}`,
       )}
     >
-      {option}
+      <span className="flex size-10 min-w-10 items-center justify-center rounded-md bg-slate-500">
+        {indexToLetters(optionIndex)}
+      </span>
+      <p>{option}</p>
     </button>
   );
 };

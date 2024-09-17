@@ -13,7 +13,7 @@ export const Page: React.FC<PageProps> = ({ children }) => {
   const { darkMode } = useDarkModeContext();
   return (
     <>
-      <div className="relative min-h-screen">
+      <div className="relative min-h-screen overflow-hidden">
         {/* colore di sfondo */}
         <div className="absolute inset-0 z-0 bg-gray-100 dark:bg-gray-900" />
         <picture className="absolute z-0">
@@ -43,7 +43,9 @@ export const Page: React.FC<PageProps> = ({ children }) => {
             className="relative z-0"
           />
         </picture>
-        <section className="relative z-10 mx-auto p-4 font-rubik">{children}</section>
+        <section className="font-rubik relative z-10 mx-auto p-4">
+          {children}
+        </section>
       </div>
     </>
   );

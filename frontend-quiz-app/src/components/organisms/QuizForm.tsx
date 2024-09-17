@@ -12,11 +12,17 @@ type QuizFormProps = {
   questions: Questions[];
 };
 
-export const QuizForm: React.FC<QuizFormProps> = ({ title, icon, questions }) => {
+export const QuizForm: React.FC<QuizFormProps> = ({
+  title,
+  icon,
+  questions,
+}) => {
   // stato per l'indice della domanda corrente
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   // risposta selezionata
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  // risposta non selezionata
+  const [noSelectedAnswer, setNoSelectedAnswer] = useState(false);
   // form inviato
   const [isAnswerSubmitted, setIsAnswerSubmitted] = useState(false);
   // risposte corrette
@@ -36,19 +42,24 @@ export const QuizForm: React.FC<QuizFormProps> = ({ title, icon, questions }) =>
 
       setCorrectAnswers(correctAnswers + 1);
       //! console.log(correctAnswers);
-    } else {
+    } else if (selectedAnswer === null) {
+      if (selectedAnswer === null || selectedAnswer === false) {
+        setNoSelectedAnswer(true);
+      }
+      return;
       //! console.log("risposta sbagliata");
     }
+    setNoSelectedAnswer(false);
     setIsAnswerSubmitted(true); // l'utente ha inviato la risposta
   };
 
   const handleNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      // console.log(selectedAnswer);
+      // ! console.log(selectedAnswer);
 
       setSelectedAnswer(null);
-      // console.log(selectedAnswer);
+      // ! console.log(selectedAnswer);
 
       setIsAnswerSubmitted(false);
     } else {
@@ -56,13 +67,13 @@ export const QuizForm: React.FC<QuizFormProps> = ({ title, icon, questions }) =>
       setIsQuizCompleted(true);
     }
   };
-console.log(icon);
+  // ! console.log(icon);
 
   if (isQuizCompleted) {
     return (
       <Score
-      title={title}
-      icon='iconHtml'
+        title={title}
+        icon={icon}
         correctAnswers={correctAnswers}
         questionLength={questions.length}
       />
@@ -106,6 +117,9 @@ console.log(icon);
             <button onClick={handleNextQuestion}>
               Vai alla prossima domanda
             </button>
+          )}
+          {noSelectedAnswer && (
+            <p className="text-center text-red-500">Please select an answer</p>
           )}
         </section>
       </div>

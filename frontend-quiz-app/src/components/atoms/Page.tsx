@@ -43,7 +43,7 @@ export const Page: React.FC<PageProps> = ({ children }) => {
             className="relative z-0"
           />
         </picture>
-        <section className="relative z-10 mx-auto p-4">{children}</section>
+        <section className="relative z-10 mx-auto p-4 font-rubik">{children}</section>
       </div>
     </>
   );

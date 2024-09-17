@@ -21,6 +21,8 @@ export const QuizForm: React.FC<QuizFormProps> = ({
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   // risposta selezionata
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  // risposta non selezionata
+  const [noSelectedAnswer, setNoSelectedAnswer] = useState(false);
   // form inviato
   const [isAnswerSubmitted, setIsAnswerSubmitted] = useState(false);
   // risposte corrette
@@ -32,10 +34,16 @@ export const QuizForm: React.FC<QuizFormProps> = ({
   const question = questions[currentQuestionIndex];
 
   const handleSubmitAnswer = () => {
+    // se non selezioni niente
+    if (selectedAnswer === null) {
+      setNoSelectedAnswer(true);
+      return;
+    }
     // controlla che la risposta sia corretta
     if (selectedAnswer === question.answer) {
       setCorrectAnswers(correctAnswers + 1);
     }
+    setNoSelectedAnswer(false);
     setIsAnswerSubmitted(true); // l'utente ha inviato la risposta
   };
 
@@ -81,13 +89,13 @@ export const QuizForm: React.FC<QuizFormProps> = ({
               if (option === question.answer) {
                 console.log(option === question.answer);
                 // stile per la risposta corretta
-                buttonStyle = "bg-green-500";
+                buttonStyle = "border-2 border-green-500";
               } else if (
                 option === selectedAnswer &&
                 option !== question.answer
               ) {
                 // stile per la risposta errata
-                buttonStyle = "bg-red-500";
+                buttonStyle = "border-2 border-red-500";
               }
             }
             return (
@@ -106,6 +114,9 @@ export const QuizForm: React.FC<QuizFormProps> = ({
             <button onClick={handleNextQuestion}>
               Vai alla prossima domanda
             </button>
+          )}
+          {noSelectedAnswer && (
+            <p className="text-center text-red-500">Please select an answer</p>
           )}
         </section>
       </div>

@@ -115,14 +115,14 @@ export const QuizForm: React.FC<QuizFormProps> = ({
         {!isAnswerSubmitted ? (
           <button
             onClick={handleSubmitAnswer}
-            className="rounded-md bg-purple-600 p-4 font-semibold tracking-wider text-white"
+            className="rounded-xl bg-purple-600 p-4 font-semibold tracking-wider text-white"
           >
             Submit Answer
           </button>
         ) : (
           <button
             onClick={handleNextQuestion}
-            className="rounded-md bg-purple-600 p-4 font-semibold tracking-wider text-white"
+            className="rounded-xl bg-purple-600 p-4 font-semibold tracking-wider text-white"
           >
             Next Question
           </button>

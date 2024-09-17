@@ -73,7 +73,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({
 
   return (
     <>
-      <div className="space-y-2 pt-10">
+      <div className="space-y-2 py-10">
         <p className="italic">
           Question {currentQuestionIndex + 1} of {questions.length}
         </p>

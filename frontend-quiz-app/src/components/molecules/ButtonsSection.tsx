@@ -41,8 +41,6 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
   function indexToLetters(index: number): string {
     let result = "";
     while (index >= 0) {
-      console.log(index);
-
       result = String.fromCharCode((index % 26) + 65) + result;
       index = Math.floor(index / 26) - 1;
     }
@@ -57,10 +55,10 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
         `${className}`,
       )}
     >
-      <span className="flex size-10 min-w-10 items-center justify-center rounded-md bg-slate-500">
+      <span className="flex size-10 min-w-10 items-center justify-center rounded-md bg-slate-200 font-semibold">
         {indexToLetters(optionIndex)}
       </span>
-      <p>{option}</p>
+      <p className="tracking-widest">{option}</p>
     </button>
   );
 };

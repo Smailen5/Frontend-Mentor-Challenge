@@ -1,6 +1,9 @@
 import { useState } from "react";
-import { ButtonAnswer, Score } from "../index";
-import { IconsAnswer } from "../molecules/IconsAnswer";
+// import { ButtonAnswer, Score } from "../index";
+// import { IconsAnswer } from "../molecules/IconsAnswer";
+import { Score } from "../index";
+import { QuizAnswer } from "../molecules/QuizAnswer";
+import { handleSubmitAnswer, handleNextQuestion } from "../../utils/quizUtils";
 
 type Questions = {
   question: string;
@@ -34,32 +37,52 @@ export const QuizForm: React.FC<QuizFormProps> = ({
   // ottiene la domanda corrente
   const question = questions[currentQuestionIndex];
 
-  const handleSubmitAnswer = () => {
-    // se non selezioni niente
-    if (selectedAnswer === null) {
-      setNoSelectedAnswer(true);
-      return;
-    }
-    // controlla che la risposta sia corretta
-    if (selectedAnswer === question.answer) {
-      setCorrectAnswers(correctAnswers + 1);
-    }
-    setNoSelectedAnswer(false);
-    setIsAnswerSubmitted(true); // l'utente ha inviato la risposta
+  const handleSubmit = () => {
+    handleSubmitAnswer(
+      selectedAnswer,
+      question,
+      correctAnswers,
+      setCorrectAnswers,
+      setIsAnswerSubmitted,
+      setNoSelectedAnswer,
+    );
   };
-
-  const handleNextQuestion = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-
-      setSelectedAnswer(null);
-
-      setIsAnswerSubmitted(false);
-    } else {
-      // gestisci la fine del test qui, manda il componente ScorePage
-      setIsQuizCompleted(true);
-    }
+  const handleNext = () => {
+    handleNextQuestion(
+      currentQuestionIndex,
+      questions,
+      setCurrentQuestionIndex,
+      setSelectedAnswer,
+      setIsAnswerSubmitted,
+      setIsQuizCompleted,
+    );
   };
+  // const handleSubmitAnswer = () => {
+  //   // se non selezioni niente
+  //   if (selectedAnswer === null) {
+  //     setNoSelectedAnswer(true);
+  //     return;
+  //   }
+  //   // controlla che la risposta sia corretta
+  //   if (selectedAnswer === question.answer) {
+  //     setCorrectAnswers(correctAnswers + 1);
+  //   }
+  //   setNoSelectedAnswer(false);
+  //   setIsAnswerSubmitted(true); // l'utente ha inviato la risposta
+  // };
+
+  // const handleNextQuestion = () => {
+  //   if (currentQuestionIndex < questions.length - 1) {
+  //     setCurrentQuestionIndex(currentQuestionIndex + 1);
+
+  //     setSelectedAnswer(null);
+
+  //     setIsAnswerSubmitted(false);
+  //   } else {
+  //     // gestisci la fine del test qui, manda il componente ScorePage
+  //     setIsQuizCompleted(true);
+  //   }
+  // };
 
   if (isQuizCompleted) {
     return (
@@ -84,7 +107,13 @@ export const QuizForm: React.FC<QuizFormProps> = ({
         <div>barra di quante domande sono state fatte e quante ne mancano</div>
       </div>
       <section className="flex flex-col gap-3">
-        {question.options.map((option, optionIndex) => {
+        <QuizAnswer
+          question={question}
+          isAnswerSubmitted={isAnswerSubmitted}
+          selectedAnswer={selectedAnswer}
+          setSelectedAnswer={setSelectedAnswer}
+        />
+        {/* {question.options.map((option, optionIndex) => {
           let buttonStyle = "";
           let indexStyle = "";
           let showCorrectIcon = false;
@@ -125,17 +154,17 @@ export const QuizForm: React.FC<QuizFormProps> = ({
               />
             </ButtonAnswer>
           );
-        })}
+        })} */}
         {!isAnswerSubmitted ? (
           <button
-            onClick={handleSubmitAnswer}
+            onClick={handleSubmit}
             className="rounded-xl bg-purple-600 p-4 font-semibold tracking-wider text-white"
           >
             Submit Answer
           </button>
         ) : (
           <button
-            onClick={handleNextQuestion}
+            onClick={handleNext}
             className="rounded-xl bg-purple-600 p-4 font-semibold tracking-wider text-white"
           >
             Next Question

@@ -61,7 +61,7 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
         {indexToLetters(optionIndex)}
       </span>
       <div className="flex w-full items-center justify-between">
-        <p className="tracking-widest">{option}</p>
+        <p className="text-sm tracking-widest">{option}</p>
         {children}
       </div>
     </button>

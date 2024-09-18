@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IconQuiz, ToggleButton } from "../index";
 
 type NavbarProps = {
@@ -8,7 +9,9 @@ export const Navbar: React.FC<NavbarProps> = ({ quizzes }) => {
   if (quizzes) {
     return (
       <header className="flex items-center justify-between">
-        <IconQuiz title={quizzes.title} icon={quizzes.icon} />
+        <Link to={"/"}>
+          <IconQuiz title={quizzes.title} icon={quizzes.icon} />
+        </Link>
         <ToggleButton />
       </header>
     );

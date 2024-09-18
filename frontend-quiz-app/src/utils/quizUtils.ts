@@ -1,10 +1,38 @@
+import quizzesData from "../data.json";
+
+type Quiz = {
+  title: string;
+  icon: string;
+  questions: Question[];
+};
+
+type useQuizProps = {
+  selectedQuiz: string;
+};
+
+//! Cerca il quiz selezionato
+export const useSearchQuiz = ({ selectedQuiz }: useQuizProps) => {
+  // Trova il quiz con il titolo HTML
+  const quiz = quizzesData.quizzes.find(
+    (quiz: Quiz) => quiz.title === selectedQuiz,
+  );
+
+  //   restituisce le domande del quiz trovato
+  return quiz;
+};
+
+// ATTENZIONE: useQuiz puo restituire null, controlla sempre se hai la risposta prima di utilizzarla
+// ** if (!question) {
+// **  return <div>Quiz not found</div>
+// ** }
+
 type Question = {
   question: string;
   options: string[];
   answer: string;
 };
 
-// Controlla se e stata selezionata una risposta e se e corretta
+//! Controlla se e stata selezionata una risposta e se e corretta
 export const handleSubmitAnswer = (
   selectedAnswer: string | null,
   question: Question,
@@ -26,7 +54,7 @@ export const handleSubmitAnswer = (
   setIsAnswerSubmitted(true);
 };
 
-// Seleziona la prossima domanda
+//! Seleziona la prossima domanda
 export const handleNextQuestion = (
   currentQuestionIndex: number,
   questions: Question[],

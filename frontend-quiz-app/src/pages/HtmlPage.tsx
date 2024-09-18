@@ -1,8 +1,8 @@
 import { Navbar, QuizForm } from "../components";
-import { useQuiz } from "../utils/useQuiz";
+import { useSearchQuiz } from "../utils/quizUtils";
 
 export const HtmlPage = () => {
-  const quiz = useQuiz({ selectedQuiz: "HTML" });
+  const quiz = useSearchQuiz({ selectedQuiz: "HTML" });
 
   if (!quiz) {
     return <div>Quiz not found</div>;

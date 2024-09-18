@@ -1,7 +1,7 @@
 import { useDarkModeContext } from "../../utils/darkModeContext";
 import { iconDarkMode } from "../../assets/images";
 
-export const ToggleButton = () => {
+export const ToggleButton:React.FC = () => {
   const { darkMode, toggleDarkMode } = useDarkModeContext();
   const { IconSun, IconMoon } = darkMode
     ? iconDarkMode.light

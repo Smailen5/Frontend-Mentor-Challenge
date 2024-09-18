@@ -23,7 +23,9 @@ export const Score: React.FC<ScoreProps> = ({
       <div className="flex flex-col gap-3">
         <div className="flex w-full flex-col items-center gap-4 rounded-xl bg-white p-8">
           <IconQuiz title={title} icon={icon} />
-          <span className="text-7xl font-bold">{correctAnswers}</span>
+          <span className="text-7xl font-bold">
+            {correctAnswers ? correctAnswers : "0"}
+          </span>
           <span>of out {questionLength}</span>
         </div>
         <Link to="/">

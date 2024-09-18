@@ -86,6 +86,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({
       <section className="flex flex-col gap-3">
         {question.options.map((option, optionIndex) => {
           let buttonStyle = "";
+          let indexStyle = "";
           let showCorrectIcon = false;
           let showErrorIcon = false;
           // se la risposta e stata inviata
@@ -96,6 +97,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({
               console.log(option === question.answer);
               // stile per la risposta corretta
               buttonStyle = "border-2 border-green-500";
+              indexStyle = "bg-green-500 text-white";
               showCorrectIcon = true;
             } else if (
               option === selectedAnswer &&
@@ -103,6 +105,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({
             ) {
               // stile per la risposta errata
               buttonStyle = "border-2 border-red-500";
+              indexStyle = "bg-red-500 text-white";
               showErrorIcon = true;
             }
           }
@@ -113,7 +116,8 @@ export const QuizForm: React.FC<QuizFormProps> = ({
               option={option}
               onClick={() => setSelectedAnswer(option)}
               isSelected={selectedAnswer === option}
-              className={buttonStyle}
+              classButton={buttonStyle}
+              classIndex={indexStyle}
             >
               <IconsAnswer
                 showCorrectIcon={showCorrectIcon}

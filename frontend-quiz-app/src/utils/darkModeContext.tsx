@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 // Definiamo il tipo per il contesto
 type DarkModeContextType = {
@@ -7,7 +7,9 @@ type DarkModeContextType = {
 };
 
 // Creiamo il contesto con un valore iniziale
-const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined);
+const DarkModeContext = createContext<DarkModeContextType | undefined>(
+  undefined,
+);
 
 // Provider del contesto
 const DarkModeProvider = ({ children }: { children: React.ReactNode }) => {
@@ -16,6 +18,22 @@ const DarkModeProvider = ({ children }: { children: React.ReactNode }) => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  useEffect(() => {
+    // Recupera la preferenza da localStorage
+    const saveMode = localStorage.getItem("dark");
+    if (saveMode === null) {
+      setDarkMode(false);
+    } else {
+      setDarkMode(saveMode === "true");
+    }
+  }, []);
+
+  useEffect(() => {
+    // salva la preferenza nel localStorage
+    localStorage.setItem("dark", String(darkMode));
+  }, [darkMode]);
+
   return (
     <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
       {children}
@@ -25,12 +43,11 @@ const DarkModeProvider = ({ children }: { children: React.ReactNode }) => {
 
 // Custom hook per usare il contesto
 const useDarkModeContext = () => {
-  const context = useContext(DarkModeContext)
-  if(context === undefined){
+  const context = useContext(DarkModeContext);
+  if (context === undefined) {
     throw new Error("contesto non trovato");
-    
   }
-  return context
+  return context;
 };
 
 // eslint-disable-next-line react-refresh/only-export-components

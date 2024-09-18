@@ -29,6 +29,7 @@ type ButtonAnswerProps = {
   isSelected?: boolean;
   className?: string;
   optionIndex: number;
+  children?: React.ReactNode;
 };
 
 export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
@@ -36,6 +37,7 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
   onClick,
   className,
   optionIndex,
+  children,
 }) => {
   // converte i numeri dell'indice in lettere
   function indexToLetters(index: number): string {
@@ -58,7 +60,10 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
       <span className="flex size-10 min-w-10 items-center justify-center rounded-md bg-slate-200 font-semibold">
         {indexToLetters(optionIndex)}
       </span>
-      <p className="tracking-widest">{option}</p>
+      <div className="flex w-full items-center justify-between">
+        <p className="tracking-widest">{option}</p>
+        {children}
+      </div>
     </button>
   );
 };

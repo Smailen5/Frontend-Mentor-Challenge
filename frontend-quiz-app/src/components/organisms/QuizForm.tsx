@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ButtonAnswer, Score } from "../index";
+import { IconsAnswer } from "../molecules/IconsAnswer";
 
 type Questions = {
   question: string;
@@ -85,6 +86,8 @@ export const QuizForm: React.FC<QuizFormProps> = ({
       <section className="flex flex-col gap-3">
         {question.options.map((option, optionIndex) => {
           let buttonStyle = "";
+          let showCorrectIcon = false;
+          let showErrorIcon = false;
           // se la risposta e stata inviata
           if (isAnswerSubmitted) {
             console.log(isAnswerSubmitted);
@@ -93,12 +96,14 @@ export const QuizForm: React.FC<QuizFormProps> = ({
               console.log(option === question.answer);
               // stile per la risposta corretta
               buttonStyle = "border-2 border-green-500";
+              showCorrectIcon = true;
             } else if (
               option === selectedAnswer &&
               option !== question.answer
             ) {
               // stile per la risposta errata
               buttonStyle = "border-2 border-red-500";
+              showErrorIcon = true;
             }
           }
           return (
@@ -109,7 +114,12 @@ export const QuizForm: React.FC<QuizFormProps> = ({
               onClick={() => setSelectedAnswer(option)}
               isSelected={selectedAnswer === option}
               className={buttonStyle}
-            />
+            >
+              <IconsAnswer
+                showCorrectIcon={showCorrectIcon}
+                showErrorIcon={showErrorIcon}
+              />
+            </ButtonAnswer>
           );
         })}
         {!isAnswerSubmitted ? (

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { handleNextQuestion, handleSubmitAnswer } from "../../utils/quizUtils";
 import { Score } from "../index";
 import { QuizAnswer } from "../molecules/QuizAnswer";
+import { ButtonSubmit } from "../molecules/ButtonSubmit";
 
 type Questions = {
   question: string;
@@ -85,7 +86,13 @@ export const QuizForm: React.FC<QuizFormProps> = ({
           selectedAnswer={selectedAnswer}
           setSelectedAnswer={setSelectedAnswer}
         />
-        {!isAnswerSubmitted ? (
+        <ButtonSubmit
+          isAnswerSubmitted={isAnswerSubmitted}
+          handleSubmit={handleSubmit}
+          handleNext={handleNext}
+          noSelectedAnswer={noSelectedAnswer}
+        />
+        {/* {!isAnswerSubmitted ? (
           <button
             onClick={handleSubmit}
             className="rounded-xl bg-purple-600 p-4 font-semibold tracking-wider text-white"
@@ -102,7 +109,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({
         )}
         {noSelectedAnswer && (
           <p className="text-center text-red-500">Please select an answer</p>
-        )}
+        )} */}
       </section>
     </>
   );

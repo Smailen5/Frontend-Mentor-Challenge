@@ -29,8 +29,6 @@ export const QuizAnswer: React.FC<QuizAnswerProps> = ({
         let showErrorIcon = false;
         // se la risposta e stata inviata
         if (isAnswerSubmitted) {
-          console.log(isAnswerSubmitted);
-
           if (option === question.answer) {
             console.log(option === question.answer);
             // stile per la risposta corretta

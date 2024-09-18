@@ -6,7 +6,8 @@ export { Page } from "./atoms/Page";
 export { ToggleButton } from "./atoms/ToggleButton";
 
 // Molecules
-export { ButtonAnswer, ButtonsSection } from "./molecules/ButtonsSection";
+export { ButtonAnswer } from "./molecules/ButtonAnswer";
+export { ButtonsSection } from "./molecules/ButtonsSection";
 export { ButtonSubmit } from "./molecules/ButtonSubmit";
 export { IconQuiz } from "./molecules/IconQuiz";
 export { IconsAnswer } from "./molecules/IconsAnswer";

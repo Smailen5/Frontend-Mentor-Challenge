@@ -13,7 +13,7 @@ const iconsBackground: { [key: string]: string } = {
   IconAccessibility: "#F6E7FF",
 };
 
-const IconQuiz: React.FC<IconQuizProps> = ({ title, icon }) => {
+export const IconQuiz: React.FC<IconQuizProps> = ({ title, icon }) => {
   const IconComponent = iconMaps[icon];
   const iconBackground = iconsBackground[icon] || "#ffffff";
 
@@ -34,5 +34,3 @@ const IconQuiz: React.FC<IconQuizProps> = ({ title, icon }) => {
     </>
   );
 };
-
-export default IconQuiz;

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Button } from "../atoms/Button";
 import { twMerge } from "tailwind-merge";
+import { Button } from "../index";
 
 type Quiz = {
   title: string;
@@ -59,7 +59,12 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
         `${classButton}`,
       )}
     >
-      <span className={twMerge("flex size-10 min-w-10 items-center justify-center rounded-md bg-slate-200 font-semibold", `${classIndex}`)}>
+      <span
+        className={twMerge(
+          "flex size-10 min-w-10 items-center justify-center rounded-md bg-slate-200 font-semibold",
+          `${classIndex}`,
+        )}
+      >
         {indexToLetters(optionIndex)}
       </span>
       <div className="flex w-full items-center justify-between">

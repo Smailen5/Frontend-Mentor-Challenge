@@ -1,5 +1,5 @@
 import { ButtonAnswer } from "../index";
-import { IconsAnswer } from "../molecules/IconsAnswer";
+import { IconsAnswer } from "../index";
 
 type Questions = {
     question: string;

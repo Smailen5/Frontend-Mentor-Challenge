@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import IconQuiz from "../molecules/IconQuiz";
+import { IconQuiz } from "../index";
 
 type ScoreProps = {
   title: string;

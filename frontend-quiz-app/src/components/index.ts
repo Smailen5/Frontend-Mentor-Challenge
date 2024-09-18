@@ -7,7 +7,11 @@ export { ToggleButton } from "./atoms/ToggleButton";
 
 // Molecules
 export { ButtonAnswer, ButtonsSection } from "./molecules/ButtonsSection";
+export { ButtonSubmit } from "./molecules/ButtonSubmit";
+export { IconQuiz } from "./molecules/IconQuiz";
+export { IconsAnswer } from "./molecules/IconsAnswer";
 export { Navbar } from "./molecules/Navbar";
+export { QuizAnswer } from "./molecules/QuizAnswer";
 
 // Organisms
 export { Header } from "./organisms/Header";

@@ -1,5 +1,4 @@
-import { ToggleButton } from "../atoms/ToggleButton";
-import IconQuiz from "./IconQuiz";
+import { IconQuiz, ToggleButton } from "../index";
 
 type NavbarProps = {
   quizzes?: { title: string; icon: string };

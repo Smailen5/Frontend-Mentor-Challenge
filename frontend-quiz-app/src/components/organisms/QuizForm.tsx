@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { handleNextQuestion, handleSubmitAnswer } from "../../utils/quizUtils";
-import { Score } from "../index";
-import { QuizAnswer } from "../molecules/QuizAnswer";
-import { ButtonSubmit } from "../molecules/ButtonSubmit";
+import { ButtonSubmit, QuizAnswer, Score } from "../index";
 
 type Questions = {
   question: string;

@@ -1,4 +1,4 @@
-import IconQuiz from "../molecules/IconQuiz";
+import { IconQuiz } from "../index";
 
 type ButtonProps = {
   title: string;

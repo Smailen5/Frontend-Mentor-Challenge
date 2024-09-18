@@ -6,6 +6,8 @@ import IconMoonDark from "./icon-moon-dark.svg?react";
 import IconMoonLight from "./icon-moon-light.svg?react";
 import IconSunDark from "./icon-sun-dark.svg?react";
 import IconSunLight from "./icon-sun-light.svg?react";
+import IconCorrect from './icon-correct.svg'
+import IconError from './icon-error.svg'
 
 type IconComponents = {
   [key: string]: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -37,3 +39,8 @@ export const iconDarkMode: IconDarkMode = {
     IconMoon: IconMoonDark,
   },
 };
+
+export const iconAnswer ={
+  IconCorrect,
+  IconError
+}

@@ -16,22 +16,28 @@ const DarkModeProvider = ({ children }: { children: React.ReactNode }) => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      localStorage.setItem("theme", newMode ? "dark" : "light");
+      return newMode;
+    });
   };
 
   useEffect(() => {
-    // Recupera la preferenza da localStorage
-    const saveMode = localStorage.getItem("dark");
-    if (saveMode === null) {
-      setDarkMode(false);
-    } else {
-      setDarkMode(saveMode === "true");
+    // Recupera la preferenza dal localStorage o dalle preferenze di sistema
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setDarkMode(savedTheme === "dark");
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setDarkMode(true);
     }
-  }, []);
 
-  useEffect(() => {
-    // salva la preferenza nel localStorage
-    localStorage.setItem("dark", String(darkMode));
+    // Aggiunge o rimuove la classe "dark" dal body quando cambia darkMode
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
   }, [darkMode]);
 
   return (

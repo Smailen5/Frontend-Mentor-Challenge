@@ -1,5 +1,5 @@
-import { useDarkModeContext } from "../../utils/darkModeContext";
 import { iconDarkMode } from "../../assets/images";
+import { useDarkModeContext } from "../../utils/darkModeContext";
 
 export const ToggleButton: React.FC = () => {
   const { darkMode, toggleDarkMode } = useDarkModeContext();
@@ -8,7 +8,6 @@ export const ToggleButton: React.FC = () => {
     : iconDarkMode.dark;
 
   return (
-    <div className={`${darkMode && "dark"}`}>
       <label className="inline-flex cursor-pointer items-center gap-2">
         <span>
           <IconSun aria-label="icon sun" className="size-5" />
@@ -24,6 +23,5 @@ export const ToggleButton: React.FC = () => {
           <IconMoon aria-label="icon moon" className="size-5" />
         </span>
       </label>
-    </div>
   );
 };

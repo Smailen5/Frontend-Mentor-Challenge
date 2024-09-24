@@ -20,14 +20,14 @@ export const IconQuiz: React.FC<IconQuizProps> = ({ title, icon }) => {
   return (
     <>
       {IconComponent ? (
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 md:gap-8">
           <IconComponent
             style={{ background: iconBackground }}
-            className="size-11 rounded-md p-2"
+            className="size-11 rounded-md p-2 md:size-14 md:rounded-xl"
             aria-label={`${title} icon`}
           />
           {title && (
-            <h2 className="dark:text-pureWhite text-darkNavy font-rubik text-xl font-semibold">
+            <h2 className="dark:text-pureWhite text-darkNavy font-rubik text-xl font-semibold tracking-wide md:text-3xl md:font-normal">
               {title}
             </h2>
           )}

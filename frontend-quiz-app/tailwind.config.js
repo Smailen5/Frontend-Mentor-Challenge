@@ -3,15 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      pureWhite: "hsl(var(--clr-pureWhite))",
-      lightGrey: "hsl(var(--clr-lightGrey ))",
-      lightBluish: "hsl(var(--clr-lightBluish ))",
-      greyNavy: "hsl(var(--clr-greyNavy ))",
-      navy: "hsl(var(--clr-navy ))",
-      darkNavy: "hsl(var(--clr-darkNavy ))",
-      purple: "hsl(var(--clr-purple ))",
-      green: "hsl(var(--clr-green ))",
-      red: "hsl(var(--clr-red ))",
+      pureWhite: "var(--clr-pureWhite)",
+      lightGrey: "var(--clr-lightGrey)",
+      lightBluish: "var(--clr-lightBluish)",
+      greyNavy: "var(--clr-greyNavy)",
+      navy: "var(--clr-navy)",
+      darkNavy: "var(--clr-darkNavy)",
+      purple: "var(--clr-purple)",
+      green: "var(--clr-green)",
+      red: "var(--clr-red)",
     },
     extend: {
       fontFamily: {

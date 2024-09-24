@@ -12,7 +12,7 @@ type Quiz = {
 };
 export const ButtonsSection = (props: { quizzes: Quiz[] }) => {
   return (
-    <section className="flex flex-col gap-4">
+    <section className="flex flex-col gap-4 md:gap-6">
       {props.quizzes.map((quiz) => (
         <Link to={`/${quiz.title.toLowerCase()}-quiz`} key={quiz.title}>
           <Button {...quiz} />

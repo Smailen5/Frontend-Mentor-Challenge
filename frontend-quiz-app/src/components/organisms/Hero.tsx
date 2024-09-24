@@ -14,13 +14,13 @@ type Quiz = {
 export const Hero = () => {
   const { quizzes }: { quizzes: Quiz[] } = quizzesData;
   return (
-    <section className="flex flex-col gap-10 pt-6">
-      <div className="space-y-4">
-        <h2 className="text-darkNavy dark:text-lightGrey text-4xl font-light">
+    <section className="flex flex-col gap-10 pt-6 md:gap-14 md:pt-12">
+      <div className="space-y-4 md:space-y-2">
+        <h2 className="text-darkNavy dark:text-lightGrey text-4xl font-light md:text-6xl md:leading-tight md:tracking-wider">
           Welcome to the{" "}
           <strong className="font-semibold">Frontend Quiz!</strong>
         </h2>
-        <p className="text-greyNavy dark:text-lightBluish italic">
+        <p className="text-greyNavy dark:text-lightBluish italic md:text-xl">
           Pick a subject to get started.
         </p>
       </div>

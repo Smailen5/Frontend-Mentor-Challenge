@@ -1,16 +1,20 @@
-import mobileLight from "../../assets/images/pattern-background-mobile-light.svg";
-import tabletLight from "../../assets/images/pattern-background-tablet-light.svg";
-import desktopLight from "../../assets/images/pattern-background-desktop-light.svg";
-import mobileDark from "../../assets/images/pattern-background-mobile-dark.svg";
-import tabletDark from "../../assets/images/pattern-background-tablet-dark.svg";
-import desktopDark from "../../assets/images/pattern-background-desktop-dark.svg";
 import { useDarkModeContext } from "../../utils/darkModeContext";
+import { backgroundImage } from "../../assets/images";
 
 type PageProps = {
   children: React.ReactNode;
 };
 export const Page: React.FC<PageProps> = ({ children }) => {
   const { darkMode } = useDarkModeContext();
+  const {
+    mobileLight,
+    tabletLight,
+    desktopLight,
+    mobileDark,
+    tabletDark,
+    desktopDark,
+  } = backgroundImage;
+
   return (
     <>
       <div className="relative min-h-screen overflow-hidden">
@@ -35,7 +39,6 @@ export const Page: React.FC<PageProps> = ({ children }) => {
             media="(max-width: 767px)"
             className="block dark:hidden"
           />
-
           {/* Fallback per browser senza supporto <picture> */}
           <img
             src={darkMode ? mobileDark : mobileLight}
@@ -43,7 +46,7 @@ export const Page: React.FC<PageProps> = ({ children }) => {
             className="relative z-0"
           />
         </picture>
-        <section className="font-rubik relative z-10 mx-auto p-4">
+        <section className="relative z-10 mx-auto p-4 font-rubik">
           {children}
         </section>
       </div>

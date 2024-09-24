@@ -27,7 +27,8 @@ export const IconQuiz: React.FC<IconQuizProps> = ({ title, icon }) => {
             aria-label={`${title} icon`}
           />
           {title && (
-            <h2 className="dark:text-pureWhite text-darkNavy font-rubik text-xl font-semibold tracking-wide md:text-3xl md:font-normal">
+            <h2 className="dark:text-pureWhite text-darkNavy font-rubik text-xl font-semibold
+             tracking-wide md:text-3xl md:font-normal">
               {title}
             </h2>
           )}

@@ -68,16 +68,18 @@ export const QuizForm: React.FC<QuizFormProps> = ({
 
   return (
     <>
-      <div className="space-y-2 py-10">
-        <p className="italic dark:text-lightBluish text-greyNavy">
+      <div className="space-y-2 py-10 md:space-y-8 md:py-12">
+        <p className="dark:text-lightBluish text-greyNavy italic md:text-xl">
           Question {currentQuestionIndex + 1} of {questions.length}
         </p>
 
-        <h2 className="text-xl font-semibold dark:text-pureWhite text-navy">{question.question}</h2>
-
+        <h2 className="dark:text-pureWhite text-navy text-xl font-medium tracking-wide md:text-3xl md:leading-snug md:tracking-wider">
+          {question.question}
+        </h2>
+        {/* //! NON DIMENTICARE di aggiungere la barra di progresso */}
         <div>barra di quante domande sono state fatte e quante ne mancano</div>
       </div>
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 md:gap-6">
         <QuizAnswer
           question={question}
           isAnswerSubmitted={isAnswerSubmitted}

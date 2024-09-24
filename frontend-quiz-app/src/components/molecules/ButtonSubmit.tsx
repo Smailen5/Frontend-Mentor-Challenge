@@ -16,20 +16,20 @@ export const ButtonSubmit: React.FC<ButtonSubmitProps> = ({
       {!isAnswerSubmitted ? (
         <button
           onClick={handleSubmit}
-          className="rounded-xl bg-purple-600 p-4 font-semibold tracking-wider text-white"
+          className="bg-purple text-pureWhite rounded-xl p-4 font-semibold tracking-wider"
         >
           Submit Answer
         </button>
       ) : (
         <button
           onClick={handleNext}
-          className="rounded-xl bg-purple-600 p-4 font-semibold tracking-wider text-white"
+          className="bg-purple text-pureWhite rounded-xl p-4 font-semibold tracking-wider"
         >
           Next Question
         </button>
       )}
       {noSelectedAnswer && (
-        <p className="text-center text-red-500">Please select an answer</p>
+        <p className="text-red text-center">Please select an answer</p>
       )}
     </>
   );

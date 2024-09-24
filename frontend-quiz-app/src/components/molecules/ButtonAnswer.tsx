@@ -23,20 +23,24 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
     <button
       onClick={onClick}
       className={twMerge(
-        `flex w-full items-center gap-4 rounded-xl bg-white p-3 font-bold focus:border-2 focus:border-violet-500`,
+        `bg-pureWhite text-darkNavy focus:border-purple dark:bg-navy group flex w-full items-center gap-4 rounded-xl p-3 font-bold transition-none focus:border-2`,
         `${classButton}`,
       )}
     >
+      {/* Indice domanda */}
       <span
         className={twMerge(
-          "flex size-10 min-w-10 items-center justify-center rounded-md bg-slate-200 font-semibold",
+          "bg-lightGrey group-focus:bg-purple group-focus:text-pureWhite flex size-10 min-w-10 items-center justify-center rounded-md font-semibold transition-none",
           `${classIndex}`,
         )}
       >
         {indexToLetters(optionIndex)}
       </span>
+      {/* Domanda */}
       <div className="flex w-full items-center justify-between">
-        <p className="text-sm tracking-widest">{option}</p>
+        <p className="text-darkNavy dark:text-pureWhite text-sm tracking-widest">
+          {option}
+        </p>
         {children}
       </div>
     </button>

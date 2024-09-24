@@ -16,12 +16,15 @@ export const Hero = () => {
   return (
     <section className="flex flex-col gap-10 pt-6">
       <div className="space-y-4">
-        <h2 className="text-4xl">
-          Welcome to the <strong>Frontend Quiz!</strong>
+        <h2 className="text-darkNavy dark:text-lightGrey text-4xl font-light">
+          Welcome to the{" "}
+          <strong className="font-semibold">Frontend Quiz!</strong>
         </h2>
-        <p className="italic">Pick a subject to get started.</p>
+        <p className="text-greyNavy dark:text-lightBluish italic">
+          Pick a subject to get started.
+        </p>
       </div>
-      <ButtonsSection quizzes={quizzes}></ButtonsSection>
+      <ButtonsSection quizzes={quizzes} />
     </section>
   );
 };

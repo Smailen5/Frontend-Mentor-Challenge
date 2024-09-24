@@ -19,7 +19,7 @@ export const Page: React.FC<PageProps> = ({ children }) => {
     <>
       <div className="relative min-h-screen overflow-hidden">
         {/* colore di sfondo */}
-        <div className="absolute inset-0 z-0 bg-gray-100 dark:bg-gray-900" />
+        <div className="absolute inset-0 z-0 bg-lightGrey dark:bg-darkNavy" />
         <picture className="absolute z-0">
           {/* Tema chiaro/scuro - desktop */}
           <source

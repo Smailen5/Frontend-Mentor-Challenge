@@ -2,10 +2,10 @@ import { ButtonAnswer } from "../index";
 import { IconsAnswer } from "../index";
 
 type Questions = {
-    question: string;
-    options: string[];
-    answer: string;
-  };
+  question: string;
+  options: string[];
+  answer: string;
+};
 
 type QuizAnswerProps = {
   question: Questions;
@@ -32,13 +32,13 @@ export const QuizAnswer: React.FC<QuizAnswerProps> = ({
           if (option === question.answer) {
             console.log(option === question.answer);
             // stile per la risposta corretta
-            buttonStyle = "border-2 border-green-500";
-            indexStyle = "bg-green-500 text-white";
+            buttonStyle = "border-2 border-green";
+            indexStyle = "bg-green text-pureWhite";
             showCorrectIcon = true;
           } else if (option === selectedAnswer && option !== question.answer) {
             // stile per la risposta errata
-            buttonStyle = "border-2 border-red-500";
-            indexStyle = "bg-red-500 text-white";
+            buttonStyle = "border-2 border-red";
+            indexStyle = "bg-red text-pureWhite";
             showErrorIcon = true;
           }
         }

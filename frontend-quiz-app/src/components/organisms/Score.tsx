@@ -15,21 +15,23 @@ export const Score: React.FC<ScoreProps> = ({
 }) => {
   return (
     <section className="flex flex-col gap-6 pt-10">
-      <h2 className="text-4xl font-light">
+      <h2 className="text-darkNavy dark:text-pureWhite text-4xl font-light">
         Quiz completed <br />
         <span className="font-bold">You scored...</span>
       </h2>
 
       <div className="flex flex-col gap-3">
-        <div className="flex w-full flex-col items-center gap-4 rounded-xl bg-white p-8">
+        <div className="bg-pureWhite dark:bg-navy flex w-full flex-col items-center gap-4 rounded-xl p-8">
           <IconQuiz title={title} icon={icon} />
-          <span className="text-7xl font-bold">
+          <span className="text-darkNavy dark:text-pureWhite text-7xl font-bold">
             {correctAnswers ? correctAnswers : "0"}
           </span>
-          <span>of out {questionLength}</span>
+          <span className="text-greyNavy dark:text-lightBluish">
+            out of {questionLength}
+          </span>
         </div>
         <Link to="/">
-          <button className="w-full rounded-xl bg-purple-600 p-3 font-semibold text-white">
+          <button className="bg-purple text-pureWhite w-full rounded-xl p-3 font-semibold">
             Play Again
           </button>
         </Link>

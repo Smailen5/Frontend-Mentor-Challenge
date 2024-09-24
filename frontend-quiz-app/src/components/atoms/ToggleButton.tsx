@@ -18,7 +18,10 @@ export const ToggleButton: React.FC = () => {
           checked={darkMode}
           onChange={toggleDarkMode}
         />
-        <div className="peer relative h-6 w-10 rounded-full bg-purple-600 after:absolute after:start-[4px] after:top-[4px] after:h-4 after:w-4 after:rounded-full after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-focus:outline-none rtl:peer-checked:after:-translate-x-full" />
+        <div className="peer relative h-6 w-10 rounded-full bg-purple after:absolute after:start-[4px]
+        after:top-[4px] after:h-4 after:w-4 after:rounded-full after:bg-pureWhite after:transition-all
+        after:content-[''] peer-checked:after:translate-x-full peer-focus:outline-none
+        rtl:peer-checked:after:-translate-x-full" />
         <span>
           <IconMoon aria-label="icon moon" className="size-5" />
         </span>

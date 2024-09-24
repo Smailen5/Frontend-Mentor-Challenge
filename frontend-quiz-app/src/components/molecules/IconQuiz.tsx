@@ -26,7 +26,11 @@ export const IconQuiz: React.FC<IconQuizProps> = ({ title, icon }) => {
             className="size-11 rounded-md p-2"
             aria-label={`${title} icon`}
           />
-          {title && <h2 className="text-xl font-bold">{title}</h2>}
+          {title && (
+            <h2 className="dark:text-pureWhite text-darkNavy font-rubik text-xl font-semibold">
+              {title}
+            </h2>
+          )}
         </div>
       ) : (
         <span>Icon not found</span>

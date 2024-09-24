@@ -69,11 +69,11 @@ export const QuizForm: React.FC<QuizFormProps> = ({
   return (
     <>
       <div className="space-y-2 py-10">
-        <p className="italic">
+        <p className="italic dark:text-lightBluish text-greyNavy">
           Question {currentQuestionIndex + 1} of {questions.length}
         </p>
 
-        <h2 className="text-xl font-semibold">{question.question}</h2>
+        <h2 className="text-xl font-semibold dark:text-pureWhite text-navy">{question.question}</h2>
 
         <div>barra di quante domande sono state fatte e quante ne mancano</div>
       </div>

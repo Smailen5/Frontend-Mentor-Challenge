@@ -68,31 +68,37 @@ export const QuizForm: React.FC<QuizFormProps> = ({
 
   return (
     <>
-      <div className="space-y-2 py-10 md:space-y-8 md:py-12">
-        <p className="dark:text-lightBluish text-greyNavy italic md:text-xl">
-          Question {currentQuestionIndex + 1} of {questions.length}
-        </p>
+      <div className="lg:grid lg:grid-cols-2 lg:gap-20 lg:pt-20">
+        <div className="lg:flex lg:flex-col lg:justify-between lg:h-4/5">
+          <div className="space-y-2 py-10 md:space-y-8 md:py-12 lg:py-0">
+            <p className="italic text-greyNavy md:text-xl dark:text-lightBluish">
+              Question {currentQuestionIndex + 1} of {questions.length}
+            </p>
 
-        <h2 className="dark:text-pureWhite text-navy text-xl font-medium tracking-wide md:text-3xl md:leading-snug md:tracking-wider">
-          {question.question}
-        </h2>
-        {/* //! NON DIMENTICARE di aggiungere la barra di progresso */}
-        <div>barra di quante domande sono state fatte e quante ne mancano</div>
+            <h2 className="text-xl font-medium tracking-wide text-navy md:text-3xl md:leading-snug md:tracking-wider lg:text-4xl lg:leading-tight dark:text-pureWhite">
+              {question.question}
+            </h2>
+          </div>
+          {/* //! NON DIMENTICARE di aggiungere la barra di progresso */}
+          <div className="bg-pureWhite">
+            barra di quante domande sono state fatte e quante ne mancano
+          </div>
+        </div>
+        <section className="flex flex-col gap-3 md:gap-6">
+          <QuizAnswer
+            question={question}
+            isAnswerSubmitted={isAnswerSubmitted}
+            selectedAnswer={selectedAnswer}
+            setSelectedAnswer={setSelectedAnswer}
+          />
+          <ButtonSubmit
+            isAnswerSubmitted={isAnswerSubmitted}
+            handleSubmit={handleSubmit}
+            handleNext={handleNext}
+            noSelectedAnswer={noSelectedAnswer}
+          />
+        </section>
       </div>
-      <section className="flex flex-col gap-3 md:gap-6">
-        <QuizAnswer
-          question={question}
-          isAnswerSubmitted={isAnswerSubmitted}
-          selectedAnswer={selectedAnswer}
-          setSelectedAnswer={setSelectedAnswer}
-        />
-        <ButtonSubmit
-          isAnswerSubmitted={isAnswerSubmitted}
-          handleSubmit={handleSubmit}
-          handleNext={handleNext}
-          noSelectedAnswer={noSelectedAnswer}
-        />
-      </section>
     </>
   );
 };

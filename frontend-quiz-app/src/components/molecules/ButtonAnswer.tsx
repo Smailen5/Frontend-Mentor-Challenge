@@ -24,7 +24,8 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
       onClick={onClick}
       className={twMerge(
         `bg-pureWhite text-darkNavy focus:border-purple dark:bg-navy group flex w-full items-center
-         gap-4 rounded-xl p-3 font-bold transition-none focus:border-2 md:rounded-3xl md:gap-8`,
+         gap-4 rounded-xl p-3 font-bold transition-none focus:border-2 md:rounded-3xl md:gap-8
+         lg:p-5`,
         `${classButton}`,
       )}
     >

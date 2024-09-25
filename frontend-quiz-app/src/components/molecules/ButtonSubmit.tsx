@@ -17,7 +17,7 @@ export const ButtonSubmit: React.FC<ButtonSubmitProps> = ({
         <button
           onClick={handleSubmit}
           className="bg-purple text-pureWhite rounded-xl p-4 font-medium tracking-wider 
-          md:text-2xl md:rounded-3xl py-8 mt-4"
+          md:text-2xl md:rounded-3xl py-8 mt-4 lg:hover:bg-purpleLight"
         >
           Submit Answer
         </button>

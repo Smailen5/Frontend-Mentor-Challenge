@@ -14,7 +14,7 @@ export const Score: React.FC<ScoreProps> = ({
   questionLength,
 }) => {
   return (
-    <section className="flex flex-col gap-6 pt-10 md:gap-14 md:pt-14">
+    <section className="flex flex-col gap-6 pt-10 md:gap-14 md:pt-14 lg:grid lg:grid-cols-2 lg:pt-20">
       <h2 className="text-darkNavy dark:text-pureWhite text-4xl font-light md:text-6xl md:tracking-wide
       md:leading-tight">
         Quiz completed <br />

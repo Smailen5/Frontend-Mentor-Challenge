@@ -7,7 +7,7 @@ type ButtonProps = {
 
 export const Button: React.FC<ButtonProps> = ({ icon, title }) => {
   return (
-    <button className="bg-pureWhite text-darkNavy dark:bg-navy w-full rounded-xl p-3 font-bold md:rounded-3xl">
+    <button className="w-full rounded-xl bg-pureWhite p-3 font-bold text-darkNavy md:rounded-3xl lg:p-5 dark:bg-navy">
       <IconQuiz icon={icon} title={title} />
     </button>
   );

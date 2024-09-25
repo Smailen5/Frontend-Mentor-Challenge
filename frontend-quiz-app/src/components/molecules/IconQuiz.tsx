@@ -23,7 +23,7 @@ export const IconQuiz: React.FC<IconQuizProps> = ({ title, icon }) => {
         <div className="flex items-center gap-4 md:gap-8">
           <IconComponent
             style={{ background: iconBackground }}
-            className="size-11 rounded-md p-2 md:size-14 md:rounded-xl"
+            className="size-11 rounded-md p-2 md:size-14 md:rounded-xl lg:size-16"
             aria-label={`${title} icon`}
           />
           {title && (

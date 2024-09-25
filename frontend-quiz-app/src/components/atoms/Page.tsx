@@ -19,7 +19,7 @@ export const Page: React.FC<PageProps> = ({ children }) => {
     <>
       <div className="relative min-h-screen overflow-hidden">
         {/* colore di sfondo */}
-        <div className="bg-lightGrey dark:bg-darkNavy absolute inset-0 z-0" />
+        <div className="absolute inset-0 z-0 bg-lightGrey dark:bg-darkNavy" />
         <picture className="absolute z-0">
           {/* Tema chiaro/scuro - desktop */}
           <source
@@ -46,7 +46,7 @@ export const Page: React.FC<PageProps> = ({ children }) => {
             className="relative z-0"
           />
         </picture>
-        <section className="relative z-10 mx-auto p-4 font-rubik md:px-14 md:pt-10">
+        <section className="relative z-10 mx-auto max-w-screen-xl p-4 font-rubik md:px-14 md:pt-10 lg:pt-20">
           {children}
         </section>
       </div>

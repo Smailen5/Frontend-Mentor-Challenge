@@ -43,7 +43,7 @@ export const Page: React.FC<PageProps> = ({ children }) => {
           <img
             src={darkMode ? mobileDark : mobileLight}
             alt="Background pattern"
-            className="relative z-0"
+            className="relative z-0 lg:h-screen xl:w-screen"
           />
         </picture>
         <section className="relative z-10 mx-auto max-w-screen-xl p-4 font-rubik md:px-14 md:pt-10 lg:pt-20">

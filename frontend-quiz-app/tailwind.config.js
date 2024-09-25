@@ -10,6 +10,8 @@ export default {
       navy: "var(--clr-navy)",
       darkNavy: "var(--clr-darkNavy)",
       purple: "var(--clr-purple)",
+      purpleLight: "var(--clr-purple-light)",
+      purpleUltraLight: "var(--clr-purple-ultraLight)",
       green: "var(--clr-green)",
       red: "var(--clr-red)",
     },

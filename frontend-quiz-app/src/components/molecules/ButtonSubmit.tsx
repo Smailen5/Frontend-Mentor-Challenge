@@ -1,3 +1,5 @@
+import { iconAnswer } from "../../assets/images/"
+
 type ButtonSubmitProps = {
   isAnswerSubmitted: boolean;
   handleSubmit: () => void;
@@ -31,7 +33,13 @@ export const ButtonSubmit: React.FC<ButtonSubmitProps> = ({
         </button>
       )}
       {noSelectedAnswer && (
-        <p className="text-red text-center">Please select an answer</p>
+        <>
+        <div className="flex items-center justify-center gap-2">
+
+        <img src={iconAnswer.IconError} alt="icon error" />
+        <p className="text-red dark:text-pureWhite md:text-xl lg:text-2xl">Please select an answer</p>
+        </div>
+        </>
       )}
     </>
   );

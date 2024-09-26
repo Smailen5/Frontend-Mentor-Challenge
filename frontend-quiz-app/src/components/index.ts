@@ -3,6 +3,7 @@
 // Atoms
 export { Button } from "./atoms/Button";
 export { Page } from "./atoms/Page";
+export { ProgressBar } from "./atoms/ProgressBarr";
 export { ToggleButton } from "./atoms/ToggleButton";
 
 // Molecules

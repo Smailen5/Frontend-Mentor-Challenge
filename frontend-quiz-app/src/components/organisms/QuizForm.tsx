@@ -79,10 +79,6 @@ export const QuizForm: React.FC<QuizFormProps> = ({
               {question.question}
             </h2>
           </div>
-          {/* //! NON DIMENTICARE di aggiungere la barra di progresso */}
-          <div className="bg-pureWhite">
-            barra di quante domande sono state fatte e quante ne mancano
-          </div>
           <ProgressBar
             value={currentQuestionIndex + 1}
             maxValue={questions.length}

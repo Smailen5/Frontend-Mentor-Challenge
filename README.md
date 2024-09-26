@@ -1,6 +1,5 @@
 # My portfolio from Frontend Mentor 🚀 [Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 
-
 ### Trovi altri esercizi non inerenti a Frontend Mentor in react [qui](https://smailen5.github.io/react-esercizi/)
 
 ---
@@ -8,6 +7,10 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/smailen5/frontend-mentor-challenge/badge)](https://www.codefactor.io/repository/github/smailen5/frontend-mentor-challenge)
 
 ---
+
+#### Frontend quiz [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/frontend-quiz-app) - [Live site](https://bejewelled-creponne-01b996.netlify.app/)
+
+![Anteprima](./screen%20capture/frontend-quiz-desktop.jpeg)
 
 #### Skilled elearning [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/skilled-elearning-landing-page) - [Live site](https://soft-shortbread-7ebd18.netlify.app/)
 
@@ -67,6 +70,7 @@
 
 <!-- Il design sembra rotto in desktop ultra wide controlla bene -->
 <!-- EDIT: le dimensioni massime della card vanno limitate, in wide e in ultra wide la scheda si allarga troppo -->
+
 #### newsletter sign up with success message [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/newsletter-sign-up-with-success-message-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/newsletter-sign-up-with-success-message-main-main/)
 
 ![Anteprima](./screen%20capture/newsletter-sign-up-with-success-message.jpeg)
@@ -117,10 +121,8 @@
 
 ![Anteprima](./screen%20capture/testimonials-grid-section.jpeg)
 
-
 <!-- Questo esercizio e ancora in lavorazione -->
 <!-- #### workit landing page [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/workit-landing-page-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/workit-landing-page-main/) -->
-
 
 ## Author
 

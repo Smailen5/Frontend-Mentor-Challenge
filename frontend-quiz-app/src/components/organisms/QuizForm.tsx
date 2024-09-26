@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { handleNextQuestion, handleSubmitAnswer } from "../../utils/quizUtils";
-import { ButtonSubmit, QuizAnswer, Score } from "../index";
+import { ButtonSubmit, ProgressBar, QuizAnswer, Score } from "../index";
 
 type Questions = {
   question: string;
@@ -69,7 +69,7 @@ export const QuizForm: React.FC<QuizFormProps> = ({
   return (
     <>
       <div className="lg:grid lg:grid-cols-2 lg:gap-20 lg:pt-20">
-        <div className="lg:flex lg:flex-col lg:justify-between lg:h-4/5">
+        <div className="lg:flex lg:h-4/5 lg:flex-col lg:justify-between">
           <div className="space-y-2 py-10 md:space-y-8 md:py-12 lg:py-0">
             <p className="italic text-greyNavy md:text-xl dark:text-lightBluish">
               Question {currentQuestionIndex + 1} of {questions.length}
@@ -83,6 +83,10 @@ export const QuizForm: React.FC<QuizFormProps> = ({
           <div className="bg-pureWhite">
             barra di quante domande sono state fatte e quante ne mancano
           </div>
+          <ProgressBar
+            value={currentQuestionIndex + 1}
+            maxValue={questions.length}
+          />
         </div>
         <section className="flex flex-col gap-3 md:gap-6">
           <QuizAnswer

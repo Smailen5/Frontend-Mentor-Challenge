@@ -42,7 +42,8 @@ export const ButtonAnswer: React.FC<ButtonAnswerProps> = ({
       </span>
       {/* Domanda */}
       <div className="flex w-full items-center justify-between">
-        <p className="text-darkNavy dark:text-pureWhite text-sm tracking-widest md:text-2xl">
+        <p className="text-darkNavy dark:text-pureWhite text-sm tracking-widest md:text-xl xl:text-2xl
+           font-medium">
           {option}
         </p>
         {children}

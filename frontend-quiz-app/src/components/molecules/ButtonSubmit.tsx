@@ -19,7 +19,7 @@ export const ButtonSubmit: React.FC<ButtonSubmitProps> = ({
         <button
           onClick={handleSubmit}
           className="bg-purple text-pureWhite rounded-xl p-4 font-medium tracking-wider 
-          md:text-2xl md:rounded-3xl py-8 mt-4 lg:hover:bg-purpleLight"
+          md:text-2xl md:rounded-3xl py-6 mt-4 lg:hover:bg-purpleLight"
         >
           Submit Answer
         </button>
@@ -27,7 +27,7 @@ export const ButtonSubmit: React.FC<ButtonSubmitProps> = ({
         <button
           onClick={handleNext}
           className="bg-purple text-pureWhite rounded-xl p-4 font-medium tracking-wider 
-          md:text-2xl md:rounded-3xl py-8 mt-4"
+          md:text-2xl md:rounded-3xl py-6 mt-4"
         >
           Next Question
         </button>

@@ -36,11 +36,11 @@ function App() {
                       What is Frontend Mentor, and how will it help me?
                     </AccordionTrigger>
                     <AccordionContent>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Similique repudiandae officiis ipsum perferendis,
-                      dignissimos ullam vel harum optio animi sint earum dicta
-                      explicabo eos velit porro esse, exercitationem reiciendis
-                      nisi.
+                      testo di prova testo di prova testo di prova testo di
+                      prova testo di prova testo di prova testo di prova testo
+                      di prova testo di prova testo di prova testo di prova
+                      testo di prova testo di prova testo di prova testo di
+                      prova testo di prova
                     </AccordionContent>
                   </AccordionItem>
 
@@ -49,8 +49,9 @@ function App() {
                       Is Frontend Mentor free?
                     </AccordionTrigger>
                     <AccordionContent>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      testo di prova testo di prova testo di prova testo di
+                      prova testo di prova testo di prova testo di prova testo
+                      di prova testo di prova testo di prova
                     </AccordionContent>
                   </AccordionItem>
 
@@ -59,11 +60,9 @@ function App() {
                       Can i use Frontend Mentor projects in my portfolio?
                     </AccordionTrigger>
                     <AccordionContent>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Similique repudiandae officiis ipsum perferendis,
-                      dignissimos ullam vel harum optio animi sint earum dicta
-                      explicabo eos velit porro esse, exercitationem reiciendis
-                      nisi.
+                      testo di prova testo di prova testo di prova testo di
+                      prova testo di prova testo di prova testo di prova testo
+                      di prova testo di prova testo di prova testo di prova
                     </AccordionContent>
                   </AccordionItem>
 
@@ -72,7 +71,11 @@ function App() {
                       How ca in get help if I'm stuck on a challenge?
                     </AccordionTrigger>
                     <AccordionContent>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      testo di prova testo di prova testo di prova testo di
+                      prova testo di prova testo di prova testo di prova testo
+                      di prova testo di prova testo di prova testo di prova
+                      testo di prova testo di prova testo di prova testo di
+                      prova testo di prova testo di prova testo di prova
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>

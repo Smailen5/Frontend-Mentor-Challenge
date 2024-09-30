@@ -5,9 +5,9 @@
 @layer base {
   :root {
     --White: 0, 0%, 100%;
-    --Light-pink: hsl(275, 100%, 97%);
-    --Grayish-purple: hsl(292, 16%, 49%);
-    --Dark-purple: hsl(292, 42%, 14%);
+    --Light-pink: 275, 100%, 97%;
+    --Grayish-purple: 292, 16%, 49%;
+    --Dark-purple: 292, 42%, 14%;
   }
   .dark {
     --background: 0 0% 3.9%;

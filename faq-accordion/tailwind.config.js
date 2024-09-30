@@ -4,10 +4,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      white: "hsl(var(--White))",
-      pink: "hsl(var(--Light-pink))",
-      purple: "hsl(var(--Grayish-purple))",
-      "dark-purple": "hsl(var(--Dark-purple",
+      background: "hsl(var(--Light-pink))",
+      "card-background": "hsl(var(--White))",
+      foreground: "hsl(var(--Dark-purple",
+      "foreground-muted": "hsl(var(--Grayish-purple))",
     },
     extend: {
       borderRadius: {

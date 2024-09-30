@@ -3,6 +3,9 @@ export default {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      "work-sans": ["WorkSans", "sans-serif"],
+    },
     colors: {
       background: "hsl(var(--Light-pink))",
       "card-background": "hsl(var(--White))",

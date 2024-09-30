@@ -4,8 +4,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@radix-ui/react-accordion";
-import { Background } from "./components/atoms/Background";
+} from "@/components/atoms/accordion";
+import { Background } from "@/components/atoms/Background";
 import {
   Card,
   CardContent,
@@ -30,7 +30,7 @@ function App() {
             <CardContent>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>
+                  <AccordionTrigger className="">
                     What is Frontend Mentor, and how will it help me?
                     {/* <IconPlus /> */}
                   </AccordionTrigger>

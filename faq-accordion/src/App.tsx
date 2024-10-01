@@ -22,7 +22,7 @@ function App() {
             {/* sezione card accordion */}
             <Card>
               <CardHeader>
-                <IconStar className="size-6" />
+                <IconStar className="size-6 lg:size-12" />
                 <CardTitle>FAQs</CardTitle>
               </CardHeader>
               <CardContent>

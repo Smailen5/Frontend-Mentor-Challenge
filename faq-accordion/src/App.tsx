@@ -1,11 +1,7 @@
 /// <reference types="vite-plugin-svgr/client" />
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/atoms/accordion";
+
 import { Background } from "@/components/atoms/Background";
+import { Accordion } from "@/components/atoms/accordion2";
 import {
   Card,
   CardContent,
@@ -30,7 +26,14 @@ function App() {
                 <CardTitle>FAQs</CardTitle>
               </CardHeader>
               <CardContent>
-                <Accordion type="single" collapsible className="w-full">
+                <Accordion />
+                {/* <Accordion
+                  type="single"
+                  value={openItem}
+                  onValueChange={(value) => setOpenItem(value)}
+                  collapsible
+                  className="w-full"
+                >
                   <AccordionItem value="item-1">
                     <AccordionTrigger className="">
                       What is Frontend Mentor, and how will it help me?
@@ -78,7 +81,7 @@ function App() {
                       prova testo di prova testo di prova testo di prova
                     </AccordionContent>
                   </AccordionItem>
-                </Accordion>
+                </Accordion> */}
               </CardContent>
             </Card>
           </Page>

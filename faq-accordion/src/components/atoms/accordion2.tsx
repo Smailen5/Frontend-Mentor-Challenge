@@ -26,27 +26,27 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
     }
   }, [isOpen]);
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault(); // Evita lo scroll della pagina
-      onToggle();
-    }
-  };
+  // const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+  //   if (event.key === "Enter" || event.key === " ") {
+  //     event.preventDefault(); // Evita lo scroll della pagina
+  //     onToggle();
+  //   }
+  // };
 
   return (
     <article className="border-b border-background last:border-none">
-      <header
+      <button
         onClick={onToggle}
-        onKeyDown={handleKeyDown}
+        // onKeyDown={handleKeyDown}
         tabIndex={0}
         aria-expanded={isOpen}
-        className="flex cursor-pointer items-center justify-between gap-8 py-4"
+        className="flex w-full cursor-pointer items-center justify-between gap-8 py-4"
       >
         <h2 className="text-foreground text-base font-bold leading-5 lg:text-lg">
           {title}
         </h2>
         <span>{isOpen ? <IconMinus /> : <IconPlus />}</span>
-      </header>
+      </button>
       {/* Contenuto dell'accordion */}
       <div
         ref={contentRef}

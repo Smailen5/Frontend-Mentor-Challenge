@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { IconPlus, IconMinus } from "@/assets/images/index";
 import accordion from "@/assets/data/accordion.json";
 
@@ -17,13 +17,15 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   isOpen,
   onToggle,
 }) => {
-  //   const [isOpen, setIsOpen] = useState(false);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  const [maxHeight, setMaxHeight] = useState<string | undefined>("0px");
 
-  //   const toggleAccordion = () => {
-  //     setIsOpen(!isOpen);
-  //   };
+  useLayoutEffect(() => {
+    if (contentRef.current) {
+      setMaxHeight(isOpen ? `${contentRef.current.scrollHeight}px` : "0px");
+    }
+  }, [isOpen]);
 
-  // Funzione per gestire la pressione dei tasti
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault(); // Evita lo scroll della pagina
@@ -31,30 +33,28 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
     }
   };
 
-  // Gli passi un title e un content poi gestisce tutto lui
   return (
     <article className="border-b">
       <header
         onClick={onToggle}
-        onKeyDown={handleKeyDown} // Aggiungi l'handler per i tasti
-        tabIndex={0} // Rende l'elemento navigabile tramite tastiera
-        aria-expanded={isOpen} // Indica se l'accordion è aperto o chiuso
-        className="flex cursor-pointer items-center justify-between py-4"
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
+        aria-expanded={isOpen}
+        className="flex cursor-pointer items-center justify-between py-4 transition-all duration-500 ease-in-out"
       >
         <h2 className="text-lg font-bold">{title}</h2>
-        {/* Icona per l'apertura e la chiusura */}
         <span>{isOpen ? <IconMinus /> : <IconPlus />}</span>
       </header>
-      {/* Contenuto accordion */}
-      {isOpen && (
-        <div
-          className="overflow-hidden pb-4 text-base"
-          role="region"
-          aria-labelledby={`accordion-item-${index}`}
-        >
-          <p>{content}</p>
-        </div>
-      )}
+      {/* Contenuto dell'accordion */}
+      <div
+        ref={contentRef}
+        className="pb- transition-max-height overflow-hidden text-base duration-500 ease-in-out"
+        style={{ maxHeight }}
+        role="region"
+        aria-labelledby={`accordion-item-${index}`}
+      >
+        <p>{content}</p>
+      </div>
     </article>
   );
 };

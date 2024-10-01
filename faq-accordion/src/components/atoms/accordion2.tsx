@@ -42,7 +42,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         aria-expanded={isOpen}
         className="flex cursor-pointer items-center justify-between gap-8 py-4"
       >
-        <h2 className="text-foreground text-base font-bold leading-5">
+        <h2 className="text-foreground text-base font-bold leading-5 lg:text-lg">
           {title}
         </h2>
         <span>{isOpen ? <IconMinus /> : <IconPlus />}</span>
@@ -50,7 +50,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       {/* Contenuto dell'accordion */}
       <div
         ref={contentRef}
-        className="pb- transition-max-height overflow-hidden text-sm duration-500 ease-in-out"
+        className="pb- transition-max-height overflow-hidden text-sm duration-500 ease-in-out lg:text-base"
         style={{ maxHeight }}
         role="region"
         aria-labelledby={`accordion-item-${index}`}

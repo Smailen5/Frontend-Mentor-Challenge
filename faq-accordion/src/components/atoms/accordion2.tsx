@@ -26,18 +26,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
     }
   }, [isOpen]);
 
-  // const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
-  //   if (event.key === "Enter" || event.key === " ") {
-  //     event.preventDefault(); // Evita lo scroll della pagina
-  //     onToggle();
-  //   }
-  // };
-
   return (
     <article className="border-b border-background last:border-none">
       <button
         onClick={onToggle}
-        // onKeyDown={handleKeyDown}
         tabIndex={0}
         aria-expanded={isOpen}
         className="flex w-full cursor-pointer items-center justify-between gap-8 py-4"

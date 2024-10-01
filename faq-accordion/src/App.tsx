@@ -27,61 +27,6 @@ function App() {
               </CardHeader>
               <CardContent>
                 <Accordion />
-                {/* <Accordion
-                  type="single"
-                  value={openItem}
-                  onValueChange={(value) => setOpenItem(value)}
-                  collapsible
-                  className="w-full"
-                >
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger className="">
-                      What is Frontend Mentor, and how will it help me?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      testo di prova testo di prova testo di prova testo di
-                      prova testo di prova testo di prova testo di prova testo
-                      di prova testo di prova testo di prova testo di prova
-                      testo di prova testo di prova testo di prova testo di
-                      prova testo di prova
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-2">
-                    <AccordionTrigger>
-                      Is Frontend Mentor free?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      testo di prova testo di prova testo di prova testo di
-                      prova testo di prova testo di prova testo di prova testo
-                      di prova testo di prova testo di prova
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-3">
-                    <AccordionTrigger>
-                      Can i use Frontend Mentor projects in my portfolio?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      testo di prova testo di prova testo di prova testo di
-                      prova testo di prova testo di prova testo di prova testo
-                      di prova testo di prova testo di prova testo di prova
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-4">
-                    <AccordionTrigger>
-                      How ca in get help if I'm stuck on a challenge?
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      testo di prova testo di prova testo di prova testo di
-                      prova testo di prova testo di prova testo di prova testo
-                      di prova testo di prova testo di prova testo di prova
-                      testo di prova testo di prova testo di prova testo di
-                      prova testo di prova testo di prova testo di prova
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion> */}
               </CardContent>
             </Card>
           </Page>

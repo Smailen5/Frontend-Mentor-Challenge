@@ -1,7 +1,8 @@
 /// <reference types="vite-plugin-svgr/client" />
 
+import { Accordion } from "@/components/atoms/accordion";
 import { Background } from "@/components/atoms/Background";
-import { Accordion } from "@/components/atoms/accordion2";
+import { IconStar } from "./assets/images";
 import {
   Card,
   CardContent,
@@ -9,7 +10,6 @@ import {
   CardTitle,
 } from "./components/atoms/card";
 import { Page } from "./components/atoms/Page";
-import { IconStar } from "./assets/images";
 
 function App() {
   return (

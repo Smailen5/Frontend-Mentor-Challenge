@@ -34,26 +34,28 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   };
 
   return (
-    <article className="border-b">
+    <article className="border-b border-background last:border-none">
       <header
         onClick={onToggle}
         onKeyDown={handleKeyDown}
         tabIndex={0}
         aria-expanded={isOpen}
-        className="flex cursor-pointer items-center justify-between py-4 transition-all duration-500 ease-in-out"
+        className="flex cursor-pointer items-center justify-between gap-8 py-4"
       >
-        <h2 className="text-lg font-bold">{title}</h2>
+        <h2 className="text-foreground text-base font-bold leading-5">
+          {title}
+        </h2>
         <span>{isOpen ? <IconMinus /> : <IconPlus />}</span>
       </header>
       {/* Contenuto dell'accordion */}
       <div
         ref={contentRef}
-        className="pb- transition-max-height overflow-hidden text-base duration-500 ease-in-out"
+        className="pb- transition-max-height overflow-hidden text-sm duration-500 ease-in-out"
         style={{ maxHeight }}
         role="region"
         aria-labelledby={`accordion-item-${index}`}
       >
-        <p>{content}</p>
+        <p className="pb-6 text-foreground-muted">{content}</p>
       </div>
     </article>
   );

@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Smartphone](../screen%20capture/faq-accordio-smartphone.jpeg)
+![Smartphone](../screen%20capture/faq-accordion-smartphone.jpeg)
 ![Desktop](../screen%20capture/faq-accordion-desktop.jpeg)
 
 ### Links

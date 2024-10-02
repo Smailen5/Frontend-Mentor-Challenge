@@ -8,6 +8,10 @@
 
 ---
 
+#### Faq Accordion [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/faq-accordion) - [Live site](https://velvety-pixie-ac034e.netlify.app/)
+
+![Anteprima](./screen%20capture/faq-accordion-desktop.jpeg)
+
 #### Frontend quiz [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/frontend-quiz-app) - [Live site](https://bejewelled-creponne-01b996.netlify.app/)
 
 ![Anteprima](./screen%20capture/frontend-quiz-desktop.jpeg)

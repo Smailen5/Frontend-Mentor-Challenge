@@ -32,7 +32,6 @@ Users should be able to:
 ![Smartphone](../screen%20capture/faq-accordio-smartphone.jpeg)
 ![Desktop](../screen%20capture/faq-accordion-desktop.jpeg)
 
-
 ### Links
 
 - Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/faq-accordion)
@@ -60,12 +59,12 @@ I practiced using the `svgr` library, Shadcn UI, and Atomic Design. I also learn
 To see how you can add code snippets, see below:
 
 I replaced the `header` tag with the `button` tag to improve accessibility and added the `aria` attribute:
+
 ```jsx
-<button tabIndex={0} aria-expanded={isOpen} >
+<button tabIndex={0} aria-expanded={isOpen}>
   <h2>...</h2>
 </button>
-``` 
-
+```
 
 ### Continued development
 
@@ -81,7 +80,6 @@ I replaced the `header` tag with the `button` tag to improve accessibility and a
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-
 
 ## Acknowledgments
 

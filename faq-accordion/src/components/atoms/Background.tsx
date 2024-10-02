@@ -1,3 +1,5 @@
+import { BackgroundMobile, BackgroundDesktop } from "@/assets/images";
+
 type BackgroundProps = {
   children: React.ReactNode;
 };
@@ -5,10 +7,12 @@ type BackgroundProps = {
 export const Background: React.FC<BackgroundProps> = ({ children }) => {
   return (
     <div className="relative h-screen w-full bg-background">
-      <picture>
+      <picture className="w-full">
+        <source media="(min-width: 1024px)" srcSet={BackgroundDesktop} />
         <img
-          src="../src/assets/images/background-pattern-mobile.svg"
+          srcSet={BackgroundMobile}
           alt="background image"
+          className="w-full"
         />
       </picture>
       {children}

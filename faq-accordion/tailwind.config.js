@@ -11,6 +11,7 @@ export default {
       "card-background": "hsl(var(--White))",
       foreground: "hsl(var(--Dark-purple",
       "foreground-muted": "hsl(var(--Grayish-purple))",
+      accent: "hsl(var(--Pink))"
     },
     extend: {
       borderRadius: {

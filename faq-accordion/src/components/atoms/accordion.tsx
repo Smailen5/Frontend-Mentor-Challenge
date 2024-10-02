@@ -1,57 +1,80 @@
-import * as React from "react";
-import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import accordion from "@/assets/data/accordion.json";
 
-import { cn } from "@/lib/utils";
-import { IconPlus } from "@/assets/images";
+import { IconMinus, IconPlus } from "@/assets/images/index";
+import { useLayoutEffect, useRef, useState } from "react";
 
-const Accordion = AccordionPrimitive.Root;
+type AccordionItemProps = {
+  title: string;
+  content: string;
+  index: number;
+  isOpen: boolean;
+  onToggle: () => void;
+};
 
-const AccordionItem = React.forwardRef<
-  React.ElementRef<typeof AccordionPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
->(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item
-    ref={ref}
-    className={cn("border-b", className)}
-    {...props}
-  />
-));
-AccordionItem.displayName = "AccordionItem";
+const AccordionItem: React.FC<AccordionItemProps> = ({
+  title,
+  content,
+  index,
+  isOpen,
+  onToggle,
+}) => {
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  const [maxHeight, setMaxHeight] = useState<string | undefined>("0px");
 
-const AccordionTrigger = React.forwardRef<
-  React.ElementRef<typeof AccordionPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
-    <AccordionPrimitive.Trigger
-      ref={ref}
-      className={cn(
-        "flex flex-1 items-center justify-between gap-8 py-4 text-left text-lg font-bold",
-        className,
-      )}
-      {...props}
-    >
-      {children}
-      <IconPlus className="size-20 max-h-8 max-w-8" />
-    </AccordionPrimitive.Trigger>
-  </AccordionPrimitive.Header>
-));
-AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
+  useLayoutEffect(() => {
+    if (contentRef.current) {
+      setMaxHeight(isOpen ? `${contentRef.current.scrollHeight}px` : "0px");
+    }
+  }, [isOpen]);
 
-const AccordionContent = React.forwardRef<
-  React.ElementRef<typeof AccordionPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
->(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Content
-    ref={ref}
-    className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-base"
-    {...props}
-  >
-    <p className={cn("text-foreground-muted pb-4 pt-0", className)}>
-      {children}
-    </p>
-  </AccordionPrimitive.Content>
-));
-AccordionContent.displayName = AccordionPrimitive.Content.displayName;
+  return (
+    <article className="border-b border-background last:border-none">
+      <button
+        onClick={onToggle}
+        tabIndex={0}
+        aria-expanded={isOpen}
+        className="hover:text-accent flex w-full cursor-pointer items-center justify-between gap-8 py-4"
+      >
+        <h2 className="text-foreground text-base font-bold leading-5 lg:text-lg">
+          {title}
+        </h2>
+        <span>{isOpen ? <IconMinus /> : <IconPlus />}</span>
+      </button>
+      {/* Contenuto dell'accordion */}
+      <div
+        ref={contentRef}
+        className="pb- transition-max-height overflow-hidden text-sm duration-500 ease-in-out lg:text-base"
+        style={{ maxHeight }}
+        role="region"
+        aria-labelledby={`accordion-item-${index}`}
+      >
+        <p className="pb-6 text-foreground-muted">{content}</p>
+      </div>
+    </article>
+  );
+};
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent };
+const Accordion = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <section>
+      {accordion.map((item, index) => (
+        <AccordionItem
+          key={"item-" + index}
+          title={item.title}
+          content={item.content}
+          index={index}
+          isOpen={openIndex === index}
+          onToggle={() => toggleAccordion(index)}
+        />
+      ))}
+    </section>
+  );
+};
+
+export { Accordion };

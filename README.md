@@ -8,6 +8,10 @@
 
 ---
 
+#### Faq Accordion [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/faq-accordion) - [Live site](https://velvety-pixie-ac034e.netlify.app/)
+
+![Anteprima](./screen%20capture/faq-accordion-desktop.jpeg)
+
 #### Frontend quiz [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/frontend-quiz-app) - [Live site](https://bejewelled-creponne-01b996.netlify.app/)
 
 ![Anteprima](./screen%20capture/frontend-quiz-desktop.jpeg)
@@ -126,6 +130,7 @@
 
 ## Author
 
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
 - Github - [Smailen5](https://github.com/Smailen5)
-- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Frontend Mentor - [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

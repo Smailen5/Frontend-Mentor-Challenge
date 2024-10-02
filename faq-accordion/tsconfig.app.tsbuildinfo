@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/assets/images/index.ts","./src/components/atoms/background.tsx","./src/components/atoms/page.tsx","./src/components/atoms/accordion.tsx","./src/components/atoms/card.tsx","./src/lib/utils.ts"],"version":"5.6.2"}

@@ -1,9 +1,20 @@
-import { Form, Formik } from "formik";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import { object, string, boolean } from "yup";
+import { Button } from "../atoms/button";
 import { ContainerInput } from "../atoms/containerInput";
-import { Input } from "../atoms/input";
 import { Label } from "../atoms/label";
 import { Page } from "../molecules/page";
-import { Button } from "../atoms/button";
+
+const validationSchema = object({
+  name: string().required(),
+  lastName: string().required(),
+  email: string().email().required(),
+  queryType: string()
+    .oneOf(["general", "support"], "Seleziona un tipo valido")
+    .required(),
+  message: string().required(),
+  consent: boolean().oneOf([true], "Il consenso è richiesto").required(),
+});
 
 const initialValues = {
   name: "",
@@ -11,7 +22,7 @@ const initialValues = {
   email: "",
   queryType: "",
   message: "",
-  contact: "",
+  consent: false,
 };
 
 export const FormPage = () => {
@@ -19,39 +30,124 @@ export const FormPage = () => {
     <Page>
       <Formik
         initialValues={initialValues}
+        validationSchema={validationSchema}
         onSubmit={(value) => {
           console.log(value);
         }}
       >
         {() => (
           <Form>
-            <Label>First Name *</Label>
-            <Input />
+            <Label htmlFor="name">First Name *</Label>
+            <Field
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="given-name"
+              aria-describedby="name-error"
+              required
+              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            />
+            <ErrorMessage
+              id="name-error"
+              name="name"
+              component="p"
+              className="text-red-500"
+            />
 
-            <Label>Last Name *</Label>
-            <Input />
+            <Label htmlFor="lastName">Last Name *</Label>
+            <Field
+              id="lastName"
+              name="lastName"
+              type="text"
+              autocomplete="family-name"
+              aria-describedby="lastName-error"
+              required
+              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            />
+            <ErrorMessage
+              id="lastName-error"
+              name="lastName"
+              component="p"
+              className="text-red-500"
+            />
 
-            <Label>Email Address *</Label>
-            <Input />
+            <Label htmlFor="email">Email Address *</Label>
+            <Field
+              id="email"
+              name="email"
+              type="text"
+              autocomplete="email"
+              aria-describedby="email-error"
+              required
+              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            />
+            <ErrorMessage
+              id="email-error"
+              name="email"
+              component="p"
+              className="text-red-500"
+            />
 
             <fieldset>
               <legend>Query Type *</legend>
               <ContainerInput>
-                <input type="radio" />
-                <Label>General Enquiry</Label>
+                <Field
+                  id="general"
+                  name="queryType"
+                  type="radio"
+                  value="general"
+                  aria-describedby="queryType-error"
+                />
+                <Label htmlFor="general">General Enquiry</Label>
               </ContainerInput>
 
               <ContainerInput>
-                <input type="radio" />
-                <Label>Support Request</Label>
+                <Field
+                  id="support"
+                  name="queryType"
+                  type="radio"
+                  value="support"
+                  aria-describedby="queryType-error"
+                />
+                <Label htmlFor="support">Support Request</Label>
               </ContainerInput>
+              <ErrorMessage
+                id="queryType-error"
+                name="queryType"
+                component="p"
+                className="text-red-500"
+              />
             </fieldset>
 
-            <Label>Message *</Label>
-            <Input type="text" />
+            <Label htmlFor="message">Message *</Label>
+            <Field
+              id="message"
+              name="message"
+              type="text"
+              aria-describedby="message-error"
+            />
+            <ErrorMessage
+              id="message-error"
+              name="message"
+              component="p"
+              className="text-red-500"
+            />
 
-            <input type="checkbox" />
-            <Label>I consent to being contacted by the team *</Label>
+            <input
+              id="consent"
+              name="consent"
+              type="checkbox"
+              aria-describedby="consent-error"
+            />
+            <Label htmlFor="consent">
+              I consent to being contacted by the team *
+            </Label>
+            <ErrorMessage
+              id="consent-error"
+              name="consent"
+              component="p"
+              className="text-red-500"
+            />
 
             <Button type="submit">Submit</Button>
           </Form>

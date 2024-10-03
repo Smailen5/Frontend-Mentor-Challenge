@@ -22,7 +22,7 @@ const initialValues = {
   email: "",
   queryType: "",
   message: "",
-  consent: true, // ricordati di cambiarlo in false, serve solo per i test
+  consent: false,
 };
 
 export const FormPage = () => {
@@ -139,7 +139,7 @@ export const FormPage = () => {
             />
 
             {/* Campo di tipo CHECKBOX */}
-            <input
+            <Field
               id="consent"
               name="consent"
               type="checkbox"

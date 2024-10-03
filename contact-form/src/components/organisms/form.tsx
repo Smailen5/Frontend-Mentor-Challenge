@@ -22,7 +22,7 @@ const initialValues = {
   email: "",
   queryType: "",
   message: "",
-  consent: false,
+  consent: true, // ricordati di cambiarlo in false, serve solo per i test
 };
 
 export const FormPage = () => {
@@ -35,8 +35,8 @@ export const FormPage = () => {
           console.log(value);
         }}
       >
-        {() => (
-          <Form>
+        {({ handleSubmit }) => (
+          <Form onSubmit={handleSubmit}>
             <Label htmlFor="name">First Name *</Label>
             <Field
               id="name"

@@ -38,63 +38,69 @@ export const FormPage = () => {
         {({ handleSubmit }) => (
           <Form onSubmit={handleSubmit} noValidate>
             {/* Campo di input NOME */}
-            <Label htmlFor="name">First Name *</Label>
-            <Field
-              id="name"
-              name="name"
-              type="text"
-              autoComplete="given-name"
-              aria-describedby="name-error"
-              required
-              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            />
-            <ErrorMessage
-              id="name-error"
-              name="name"
-              component="p"
-              className="text-red-500"
-            />
+            <ContainerInput>
+              <Label htmlFor="name">First Name *</Label>
+              <Field
+                id="name"
+                name="name"
+                type="text"
+                autoComplete="given-name"
+                aria-describedby="name-error"
+                required
+                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              />
+              <ErrorMessage
+                id="name-error"
+                name="name"
+                component="p"
+                className="text-red-500"
+              />
+            </ContainerInput>
 
             {/* Campo di input COGNOME */}
-            <Label htmlFor="lastName">Last Name *</Label>
-            <Field
-              id="lastName"
-              name="lastName"
-              type="text"
-              autoComplete="family-name"
-              aria-describedby="lastName-error"
-              required
-              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            />
-            <ErrorMessage
-              id="lastName-error"
-              name="lastName"
-              component="p"
-              className="text-red-500"
-            />
+            <ContainerInput>
+              <Label htmlFor="lastName">Last Name *</Label>
+              <Field
+                id="lastName"
+                name="lastName"
+                type="text"
+                autoComplete="family-name"
+                aria-describedby="lastName-error"
+                required
+                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              />
+              <ErrorMessage
+                id="lastName-error"
+                name="lastName"
+                component="p"
+                className="text-red-500"
+              />
+            </ContainerInput>
 
             {/* Campo di input EMAIL */}
-            <Label htmlFor="email">Email Address *</Label>
-            <Field
-              id="email"
-              name="email"
-              type="text"
-              autoComplete="email"
-              aria-describedby="email-error"
-              required
-              className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            />
-            <ErrorMessage
-              id="email-error"
-              name="email"
-              component="p"
-              className="text-red-500"
-            />
+            <ContainerInput>
+              <Label htmlFor="email">Email Address *</Label>
+              <Field
+                id="email"
+                name="email"
+                type="text"
+                autoComplete="email"
+                aria-describedby="email-error"
+                required
+                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              />
+              <ErrorMessage
+                id="email-error"
+                name="email"
+                component="p"
+                className="text-red-500"
+              />
+            </ContainerInput>
 
             {/* Selezione di tipo RADIO */}
             <fieldset>
               <legend>Query Type *</legend>
-              <ContainerInput>
+              <ContainerInput type="radio">
                 <Field
                   id="general"
                   name="queryType"
@@ -105,7 +111,7 @@ export const FormPage = () => {
                 <Label htmlFor="general">General Enquiry</Label>
               </ContainerInput>
 
-              <ContainerInput>
+              <ContainerInput type="radio">
                 <Field
                   id="support"
                   name="queryType"
@@ -124,19 +130,21 @@ export const FormPage = () => {
             </fieldset>
 
             {/* Campo di input MESSAGGIO */}
-            <Label htmlFor="message">Message *</Label>
-            <Field
-              id="message"
-              name="message"
-              type="text"
-              aria-describedby="message-error"
-            />
-            <ErrorMessage
-              id="message-error"
-              name="message"
-              component="p"
-              className="text-red-500"
-            />
+            <ContainerInput>
+              <Label htmlFor="message">Message *</Label>
+              <Field
+                id="message"
+                name="message"
+                type="text"
+                aria-describedby="message-error"
+              />
+              <ErrorMessage
+                id="message-error"
+                name="message"
+                component="p"
+                className="text-red-500"
+              />
+            </ContainerInput>
 
             {/* Campo di tipo CHECKBOX */}
             <Field

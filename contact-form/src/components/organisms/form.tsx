@@ -1,7 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import { object, string, boolean } from "yup";
+import { boolean, object, string } from "yup";
 import { Button } from "../atoms/button";
-import { ContainerInput } from "../atoms/containerInput";
+import { Container } from "../atoms/containerInput";
 import { Label } from "../atoms/label";
 import { Page } from "../molecules/page";
 
@@ -38,7 +38,7 @@ export const FormPage = () => {
         {({ handleSubmit }) => (
           <Form onSubmit={handleSubmit} noValidate>
             {/* Campo di input NOME */}
-            <ContainerInput>
+            <Container>
               <Label htmlFor="name">First Name *</Label>
               <Field
                 id="name"
@@ -55,10 +55,10 @@ export const FormPage = () => {
                 component="p"
                 className="text-red-500"
               />
-            </ContainerInput>
+            </Container>
 
             {/* Campo di input COGNOME */}
-            <ContainerInput>
+            <Container>
               <Label htmlFor="lastName">Last Name *</Label>
               <Field
                 id="lastName"
@@ -75,10 +75,10 @@ export const FormPage = () => {
                 component="p"
                 className="text-red-500"
               />
-            </ContainerInput>
+            </Container>
 
             {/* Campo di input EMAIL */}
-            <ContainerInput>
+            <Container>
               <Label htmlFor="email">Email Address *</Label>
               <Field
                 id="email"
@@ -95,42 +95,44 @@ export const FormPage = () => {
                 component="p"
                 className="text-red-500"
               />
-            </ContainerInput>
+            </Container>
 
             {/* Selezione di tipo RADIO */}
             <fieldset>
-              <legend>Query Type *</legend>
-              <ContainerInput type="radio">
-                <Field
-                  id="general"
-                  name="queryType"
-                  type="radio"
-                  value="general"
-                  aria-describedby="queryType-error"
-                />
-                <Label htmlFor="general">General Enquiry</Label>
-              </ContainerInput>
+              <Container variant={'input'}>
+                <legend>Query Type *</legend>
+                <Container variant={'radio'}>
+                  <Field
+                    id="general"
+                    name="queryType"
+                    type="radio"
+                    value="general"
+                    aria-describedby="queryType-error"
+                  />
+                  <Label htmlFor="general">General Enquiry</Label>
+                </Container>
 
-              <ContainerInput type="radio">
-                <Field
-                  id="support"
+                <Container variant={'radio'} >
+                  <Field
+                    id="support"
+                    name="queryType"
+                    type="radio"
+                    value="support"
+                    aria-describedby="queryType-error"
+                  />
+                  <Label htmlFor="support">Support Request</Label>
+                </Container>
+                <ErrorMessage
+                  id="queryType-error"
                   name="queryType"
-                  type="radio"
-                  value="support"
-                  aria-describedby="queryType-error"
+                  component="p"
+                  className="text-red-500"
                 />
-                <Label htmlFor="support">Support Request</Label>
-              </ContainerInput>
-              <ErrorMessage
-                id="queryType-error"
-                name="queryType"
-                component="p"
-                className="text-red-500"
-              />
+              </Container>
             </fieldset>
 
             {/* Campo di input MESSAGGIO */}
-            <ContainerInput>
+            <Container>
               <Label htmlFor="message">Message *</Label>
               <Field
                 id="message"
@@ -144,7 +146,7 @@ export const FormPage = () => {
                 component="p"
                 className="text-red-500"
               />
-            </ContainerInput>
+            </Container>
 
             {/* Campo di tipo CHECKBOX */}
             <Field

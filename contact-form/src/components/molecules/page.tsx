@@ -8,12 +8,12 @@ type PageProps = {
 export const Page: React.FC<PageProps> = ({ children }) => {
   return (
     <Background>
-      <div className="flex items-center justify-center py-8 px-4">
+      <div className="flex items-center justify-center px-4 py-8">
         <Card>
           <CardHeader>
             <CardTitle>Contact Us</CardTitle>
-            <CardContent>{children}</CardContent>
           </CardHeader>
+          <CardContent>{children}</CardContent>
         </Card>
       </div>
     </Background>

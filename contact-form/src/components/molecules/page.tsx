@@ -8,7 +8,7 @@ type PageProps = {
 export const Page: React.FC<PageProps> = ({ children }) => {
   return (
     <Background>
-      <div className="flex items-center justify-center py-6">
+      <div className="flex items-center justify-center py-6 px-4">
         <Card>
           <CardHeader>
             <CardTitle>Contact Us</CardTitle>

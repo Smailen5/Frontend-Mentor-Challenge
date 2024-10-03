@@ -1,9 +1,7 @@
+import { FormPage } from "./components/organisms/form";
+
 function App() {
-  return (
-    <>
-      <div>App</div>
-    </>
-  );
+  return <FormPage />;
 }
 
 export default App;

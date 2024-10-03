@@ -43,7 +43,7 @@ export const FormPage = () => {
               id="name"
               name="name"
               type="text"
-              autocomplete="given-name"
+              autoComplete="given-name"
               aria-describedby="name-error"
               required
               className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
@@ -61,7 +61,7 @@ export const FormPage = () => {
               id="lastName"
               name="lastName"
               type="text"
-              autocomplete="family-name"
+              autoComplete="family-name"
               aria-describedby="lastName-error"
               required
               className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
@@ -79,7 +79,7 @@ export const FormPage = () => {
               id="email"
               name="email"
               type="text"
-              autocomplete="email"
+              autoComplete="email"
               aria-describedby="email-error"
               required
               className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
@@ -154,7 +154,7 @@ export const FormPage = () => {
               component="p"
               className="text-red-500"
             />
-            
+
             {/* Bottone di tipo SUBMIT */}
             <Button type="submit">Submit</Button>
           </Form>

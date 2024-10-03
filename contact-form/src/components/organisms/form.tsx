@@ -37,6 +37,7 @@ export const FormPage = () => {
       >
         {({ handleSubmit }) => (
           <Form onSubmit={handleSubmit}>
+            {/* Campo di input NOME */}
             <Label htmlFor="name">First Name *</Label>
             <Field
               id="name"
@@ -54,6 +55,7 @@ export const FormPage = () => {
               className="text-red-500"
             />
 
+            {/* Campo di input COGNOME */}
             <Label htmlFor="lastName">Last Name *</Label>
             <Field
               id="lastName"
@@ -71,6 +73,7 @@ export const FormPage = () => {
               className="text-red-500"
             />
 
+            {/* Campo di input EMAIL */}
             <Label htmlFor="email">Email Address *</Label>
             <Field
               id="email"
@@ -88,6 +91,7 @@ export const FormPage = () => {
               className="text-red-500"
             />
 
+            {/* Selezione di tipo RADIO */}
             <fieldset>
               <legend>Query Type *</legend>
               <ContainerInput>
@@ -119,6 +123,7 @@ export const FormPage = () => {
               />
             </fieldset>
 
+            {/* Campo di input MESSAGGIO */}
             <Label htmlFor="message">Message *</Label>
             <Field
               id="message"
@@ -133,6 +138,7 @@ export const FormPage = () => {
               className="text-red-500"
             />
 
+            {/* Campo di tipo CHECKBOX */}
             <input
               id="consent"
               name="consent"
@@ -148,7 +154,8 @@ export const FormPage = () => {
               component="p"
               className="text-red-500"
             />
-
+            
+            {/* Bottone di tipo SUBMIT */}
             <Button type="submit">Submit</Button>
           </Form>
         )}

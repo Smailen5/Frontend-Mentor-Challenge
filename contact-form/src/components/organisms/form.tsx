@@ -36,7 +36,7 @@ export const FormPage = () => {
         }}
       >
         {({ handleSubmit }) => (
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} noValidate>
             {/* Campo di input NOME */}
             <Label htmlFor="name">First Name *</Label>
             <Field

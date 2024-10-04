@@ -139,6 +139,7 @@ export const FormPage = () => {
                   <Button
                     variant={"outline"}
                     size={"lg"}
+                    type="button"
                     value={"support"}
                     onClick={() => setFieldValue("queryType", "support")}
                     className={`${values.queryType === 'support' && 'bg-background'}`}

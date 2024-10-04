@@ -1,7 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { boolean, object, string } from "yup";
 import { Button } from "../atoms/button";
-import { Container } from "../atoms/containerInput";
+import { Container } from "../atoms/container";
 import { Label } from "../atoms/label";
 import { Page } from "../molecules/page";
 
@@ -37,48 +37,50 @@ export const FormPage = () => {
       >
         {({ handleSubmit }) => (
           <Form onSubmit={handleSubmit} noValidate>
-            {/* Campo di input NOME */}
-            <Container>
-              <Label htmlFor="name">
-                First Name <span>*</span>
-              </Label>
-              <Field
-                id="name"
-                name="name"
-                type="text"
-                autoComplete="given-name"
-                aria-describedby="name-error"
-                required
-                className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              />
-              <ErrorMessage
-                id="name-error"
-                name="name"
-                component="p"
-                className="text-red-500"
-              />
-            </Container>
+            <Container variant={"flex"}>
+              {/* Campo di input NOME */}
+              <Container>
+                <Label htmlFor="name">
+                  First Name <span>*</span>
+                </Label>
+                <Field
+                  id="name"
+                  name="name"
+                  type="text"
+                  autoComplete="given-name"
+                  aria-describedby="name-error"
+                  required
+                  className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                />
+                <ErrorMessage
+                  id="name-error"
+                  name="name"
+                  component="p"
+                  className="text-red-500"
+                />
+              </Container>
 
-            {/* Campo di input COGNOME */}
-            <Container>
-              <Label htmlFor="lastName">
-                Last Name <span>*</span>
-              </Label>
-              <Field
-                id="lastName"
-                name="lastName"
-                type="text"
-                autoComplete="family-name"
-                aria-describedby="lastName-error"
-                required
-                className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              />
-              <ErrorMessage
-                id="lastName-error"
-                name="lastName"
-                component="p"
-                className="text-red-500"
-              />
+              {/* Campo di input COGNOME */}
+              <Container>
+                <Label htmlFor="lastName">
+                  Last Name <span>*</span>
+                </Label>
+                <Field
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  autoComplete="family-name"
+                  aria-describedby="lastName-error"
+                  required
+                  className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                />
+                <ErrorMessage
+                  id="lastName-error"
+                  name="lastName"
+                  component="p"
+                  className="text-red-500"
+                />
+              </Container>
             </Container>
 
             {/* Campo di input EMAIL */}
@@ -109,37 +111,39 @@ export const FormPage = () => {
                 <legend className="text-base font-semibold">
                   Query Type <span>*</span>
                 </legend>
-                <Container variant={"radio"}>
-                  <Field
-                    id="general"
-                    name="queryType"
-                    type="radio"
-                    value="general"
-                    aria-describedby="queryType-error"
-                  />
-                  <Label htmlFor="general" className="text-lg">
-                    General Enquiry
-                  </Label>
-                </Container>
+                <Container variant={"flex"}>
+                  <Container variant={"radio"}>
+                    <Field
+                      id="general"
+                      name="queryType"
+                      type="radio"
+                      value="general"
+                      aria-describedby="queryType-error"
+                    />
+                    <Label htmlFor="general" className="text-lg">
+                      General Enquiry
+                    </Label>
+                  </Container>
 
-                <Container variant={"radio"}>
-                  <Field
-                    id="support"
+                  <Container variant={"radio"}>
+                    <Field
+                      id="support"
+                      name="queryType"
+                      type="radio"
+                      value="support"
+                      aria-describedby="queryType-error"
+                    />
+                    <Label htmlFor="support" className="text-lg">
+                      Support Request
+                    </Label>
+                  </Container>
+                  <ErrorMessage
+                    id="queryType-error"
                     name="queryType"
-                    type="radio"
-                    value="support"
-                    aria-describedby="queryType-error"
+                    component="p"
+                    className="text-red-500"
                   />
-                  <Label htmlFor="support" className="text-lg">
-                    Support Request
-                  </Label>
                 </Container>
-                <ErrorMessage
-                  id="queryType-error"
-                  name="queryType"
-                  component="p"
-                  className="text-red-500"
-                />
               </Container>
             </fieldset>
 
@@ -153,7 +157,7 @@ export const FormPage = () => {
                 name="message"
                 type="text"
                 aria-describedby="message-error"
-                className="bg-input-background flex h-56 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="bg-input-background flex h-56 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:h-24"
               />
               <ErrorMessage
                 id="message-error"

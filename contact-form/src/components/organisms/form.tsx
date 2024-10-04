@@ -112,13 +112,19 @@ export const FormPage = () => {
                   Query Type <span>*</span>
                 </legend>
                 <Container variant={"flex"}>
-                  <Container variant={"radio"}>
+                  <Button
+                    variant={"outline"}
+                    size={"lg"}
+                    // Simula il click del radio Field nascosto
+                    onClick={() => document.getElementById("general")?.click()}
+                  >
                     <Field
                       id="general"
                       name="queryType"
                       type="radio"
                       value="general"
                       aria-describedby="queryType-error"
+                      className="sr-only"
                     />
                     <Label
                       htmlFor="general"
@@ -126,15 +132,20 @@ export const FormPage = () => {
                     >
                       General Enquiry
                     </Label>
-                  </Container>
+                  </Button>
 
-                  <Container variant={"radio"}>
+                  <Button
+                    variant={"outline"}
+                    size={"lg"}
+                    onClick={() => document.getElementById("support")?.click()}
+                  >
                     <Field
                       id="support"
                       name="queryType"
                       type="radio"
                       value="support"
                       aria-describedby="queryType-error"
+                      className="sr-only"
                     />
                     <Label
                       htmlFor="support"
@@ -142,7 +153,7 @@ export const FormPage = () => {
                     >
                       Support Request
                     </Label>
-                  </Container>
+                  </Button>
                   <ErrorMessage
                     id="queryType-error"
                     name="queryType"

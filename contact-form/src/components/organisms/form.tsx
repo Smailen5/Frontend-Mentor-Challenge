@@ -118,7 +118,7 @@ export const FormPage = () => {
                     size={"lg"}
                     type="button"
                     value={"general"}
-                    // Simula il click del radio Field nascosto
+                    // Cambia lo stato direttamente in formik
                     onClick={() => setFieldValue("queryType", "general")}
                   >
                     <Circle active={values.queryType === "general"} />

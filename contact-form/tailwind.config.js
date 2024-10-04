@@ -48,7 +48,8 @@ export default {
   			},
   			border: 'hsl(var(--border))',
   			input: {
-				DEFAULT: 'hsl(var(--background-input))',
+				DEFAULT: 'hsl(var(--input))',
+				background: 'hsl(var(--background-input))',
 				foreground: 'hsl(var(--input))',
 			},
   			ring: 'hsl(var(--ring))',

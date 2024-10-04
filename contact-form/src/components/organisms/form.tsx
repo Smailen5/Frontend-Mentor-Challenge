@@ -131,7 +131,7 @@ export const FormPage = () => {
                       aria-describedby="queryType-error"
                       className="sr-only"
                     />
-                    <Label htmlFor="general" className="text-lg">
+                    <Label htmlFor="general" className="text-lg cursor-pointer">
                       General Enquiry
                     </Label>
                   </Button>
@@ -153,7 +153,7 @@ export const FormPage = () => {
                       aria-describedby="queryType-error"
                       className="sr-only"
                     />
-                    <Label htmlFor="support" className="text-lg">
+                    <Label htmlFor="support" className="text-lg cursor-pointer">
                       Support Request
                     </Label>
                   </Button>

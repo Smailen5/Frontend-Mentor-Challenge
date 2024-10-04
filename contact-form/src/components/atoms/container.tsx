@@ -6,10 +6,11 @@ import { cn } from "@/lib/utils";
 const containerVariants = cva("space-y-2 pb-4", {
   variants: {
     variant: {
-      default: "space-y-2 pb-6",
+      default: "pb-6 flex-1 flex flex-col gap-2 md:gap-1",
       input: "space-y-4 pb-6",
-      radio: "flex space-y-0 rounded-md border border-input py-2 px-6 gap-3",
+      radio: "flex space-y-0 rounded-md border border-input py-2 px-6 gap-3 md:flex-1",
       checkbox: "flex items-center space-y-0 rounded-md gap-4 pt-4 pb-8",
+      flex: "flex items-center gap-4 space-y-0 pb-0",
     },
   },
   defaultVariants: {

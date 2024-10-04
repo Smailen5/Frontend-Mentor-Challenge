@@ -120,6 +120,7 @@ export const FormPage = () => {
                     value={"general"}
                     // Cambia lo stato direttamente in formik
                     onClick={() => setFieldValue("queryType", "general")}
+                    className={`${values.queryType === 'general' && 'bg-background'}`}
                   >
                     <Circle active={values.queryType === "general"} />
                     <Field
@@ -140,6 +141,7 @@ export const FormPage = () => {
                     size={"lg"}
                     value={"support"}
                     onClick={() => setFieldValue("queryType", "support")}
+                    className={`${values.queryType === 'support' && 'bg-background'}`}
                   >
                     <Circle active={values.queryType === "support"} />
                     <Field

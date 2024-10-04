@@ -177,6 +177,7 @@ export const FormPage = () => {
                 name="message"
                 type="text"
                 aria-describedby="message-error"
+                autoComplete="off"
                 className="bg-input-background flex h-56 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:h-24"
               />
               <ErrorMessage

@@ -36,7 +36,7 @@ export const FormPage = () => {
           console.log(value);
         }}
       >
-        {({ handleSubmit }) => (
+        {({ handleSubmit, setFieldValue, values }) => (
           <Form onSubmit={handleSubmit} noValidate>
             <Container variant={"flex"}>
               {/* Campo di input NOME */}
@@ -116,11 +116,12 @@ export const FormPage = () => {
                   <Button
                     variant={"outline"}
                     size={"lg"}
+                    type="button"
+                    value={"general"}
                     // Simula il click del radio Field nascosto
-                    onClick={() => document.getElementById("general")?.click()}
-                    className="group"
+                    onClick={() => setFieldValue("queryType", "general")}
                   >
-                    <Circle />
+                    <Circle active={values.queryType === "general"} />
                     <Field
                       id="general"
                       name="queryType"
@@ -129,10 +130,7 @@ export const FormPage = () => {
                       aria-describedby="queryType-error"
                       className="sr-only"
                     />
-                    <Label
-                      htmlFor="general"
-                      className="text-lg"
-                    >
+                    <Label htmlFor="general" className="text-lg">
                       General Enquiry
                     </Label>
                   </Button>
@@ -140,10 +138,10 @@ export const FormPage = () => {
                   <Button
                     variant={"outline"}
                     size={"lg"}
-                    onClick={() => document.getElementById("support")?.click()}
-                    className="group"
+                    value={"support"}
+                    onClick={() => setFieldValue("queryType", "support")}
                   >
-                    <Circle />
+                    <Circle active={values.queryType === "support"} />
                     <Field
                       id="support"
                       name="queryType"
@@ -152,10 +150,7 @@ export const FormPage = () => {
                       aria-describedby="queryType-error"
                       className="sr-only"
                     />
-                    <Label
-                      htmlFor="support"
-                      className="text-lg"
-                    >
+                    <Label htmlFor="support" className="text-lg">
                       Support Request
                     </Label>
                   </Button>

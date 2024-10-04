@@ -4,6 +4,7 @@ import { Button } from "../atoms/button";
 import { Container } from "../atoms/container";
 import { Label } from "../atoms/label";
 import { Page } from "../molecules/page";
+import { Circle } from "../atoms/circle";
 
 const validationSchema = object({
   name: string().required(),
@@ -117,7 +118,9 @@ export const FormPage = () => {
                     size={"lg"}
                     // Simula il click del radio Field nascosto
                     onClick={() => document.getElementById("general")?.click()}
+                    className="group"
                   >
+                    <Circle />
                     <Field
                       id="general"
                       name="queryType"
@@ -128,7 +131,7 @@ export const FormPage = () => {
                     />
                     <Label
                       htmlFor="general"
-                      className="text-lg md:cursor-pointer"
+                      className="text-lg"
                     >
                       General Enquiry
                     </Label>
@@ -138,7 +141,9 @@ export const FormPage = () => {
                     variant={"outline"}
                     size={"lg"}
                     onClick={() => document.getElementById("support")?.click()}
+                    className="group"
                   >
+                    <Circle />
                     <Field
                       id="support"
                       name="queryType"
@@ -149,7 +154,7 @@ export const FormPage = () => {
                     />
                     <Label
                       htmlFor="support"
-                      className="text-lg md:cursor-pointer"
+                      className="text-lg"
                     >
                       Support Request
                     </Label>

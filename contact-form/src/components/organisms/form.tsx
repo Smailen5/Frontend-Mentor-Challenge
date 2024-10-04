@@ -39,7 +39,9 @@ export const FormPage = () => {
           <Form onSubmit={handleSubmit} noValidate>
             {/* Campo di input NOME */}
             <Container>
-              <Label htmlFor="name">First Name *</Label>
+              <Label htmlFor="name">
+                First Name <span>*</span>
+              </Label>
               <Field
                 id="name"
                 name="name"
@@ -47,7 +49,7 @@ export const FormPage = () => {
                 autoComplete="given-name"
                 aria-describedby="name-error"
                 required
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
               />
               <ErrorMessage
                 id="name-error"
@@ -59,7 +61,9 @@ export const FormPage = () => {
 
             {/* Campo di input COGNOME */}
             <Container>
-              <Label htmlFor="lastName">Last Name *</Label>
+              <Label htmlFor="lastName">
+                Last Name <span>*</span>
+              </Label>
               <Field
                 id="lastName"
                 name="lastName"
@@ -67,7 +71,7 @@ export const FormPage = () => {
                 autoComplete="family-name"
                 aria-describedby="lastName-error"
                 required
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
               />
               <ErrorMessage
                 id="lastName-error"
@@ -79,7 +83,9 @@ export const FormPage = () => {
 
             {/* Campo di input EMAIL */}
             <Container>
-              <Label htmlFor="email">Email Address *</Label>
+              <Label htmlFor="email">
+                Email Address <span>*</span>
+              </Label>
               <Field
                 id="email"
                 name="email"
@@ -87,7 +93,7 @@ export const FormPage = () => {
                 autoComplete="email"
                 aria-describedby="email-error"
                 required
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
               />
               <ErrorMessage
                 id="email-error"
@@ -99,9 +105,11 @@ export const FormPage = () => {
 
             {/* Selezione di tipo RADIO */}
             <fieldset>
-              <Container variant={'input'}>
-                <legend>Query Type *</legend>
-                <Container variant={'radio'}>
+              <Container variant={"input"}>
+                <legend className="text-base font-semibold">
+                  Query Type <span>*</span>
+                </legend>
+                <Container variant={"radio"}>
                   <Field
                     id="general"
                     name="queryType"
@@ -109,10 +117,12 @@ export const FormPage = () => {
                     value="general"
                     aria-describedby="queryType-error"
                   />
-                  <Label htmlFor="general">General Enquiry</Label>
+                  <Label htmlFor="general" className="text-lg">
+                    General Enquiry
+                  </Label>
                 </Container>
 
-                <Container variant={'radio'} >
+                <Container variant={"radio"}>
                   <Field
                     id="support"
                     name="queryType"
@@ -120,7 +130,9 @@ export const FormPage = () => {
                     value="support"
                     aria-describedby="queryType-error"
                   />
-                  <Label htmlFor="support">Support Request</Label>
+                  <Label htmlFor="support" className="text-lg">
+                    Support Request
+                  </Label>
                 </Container>
                 <ErrorMessage
                   id="queryType-error"
@@ -133,12 +145,15 @@ export const FormPage = () => {
 
             {/* Campo di input MESSAGGIO */}
             <Container>
-              <Label htmlFor="message">Message *</Label>
+              <Label htmlFor="message">
+                Message <span>*</span>
+              </Label>
               <Field
                 id="message"
                 name="message"
                 type="text"
                 aria-describedby="message-error"
+                className="bg-input-background flex h-56 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
               />
               <ErrorMessage
                 id="message-error"
@@ -149,24 +164,29 @@ export const FormPage = () => {
             </Container>
 
             {/* Campo di tipo CHECKBOX */}
-            <Field
-              id="consent"
-              name="consent"
-              type="checkbox"
-              aria-describedby="consent-error"
-            />
-            <Label htmlFor="consent">
-              I consent to being contacted by the team *
-            </Label>
-            <ErrorMessage
-              id="consent-error"
-              name="consent"
-              component="p"
-              className="text-red-500"
-            />
+            <Container variant={"checkbox"}>
+              <Field
+                id="consent"
+                name="consent"
+                type="checkbox"
+                aria-describedby="consent-error"
+                className="size-5"
+              />
+              <Label htmlFor="consent" className="text-base leading-6">
+                I consent to being contacted by the team <span>*</span>
+              </Label>
+              <ErrorMessage
+                id="consent-error"
+                name="consent"
+                component="p"
+                className="text-red-500"
+              />
+            </Container>
 
             {/* Bottone di tipo SUBMIT */}
-            <Button type="submit">Submit</Button>
+            <Button type="submit" size={"full"}>
+              Submit
+            </Button>
           </Form>
         )}
       </Formik>

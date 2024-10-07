@@ -5,6 +5,7 @@ import { Container } from "../atoms/container";
 import { Label } from "../atoms/label";
 import { Page } from "../molecules/page";
 import { Circle } from "../atoms/circle";
+import { Square } from "../atoms/square";
 
 const validationSchema = object({
   name: string().required(),
@@ -51,7 +52,7 @@ export const FormPage = () => {
                   autoComplete="given-name"
                   aria-describedby="name-error"
                   required
-                  className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer"
+                  className="flex h-12 w-full rounded-md border border-input bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer"
                 />
                 <ErrorMessage
                   id="name-error"
@@ -73,7 +74,7 @@ export const FormPage = () => {
                   autoComplete="family-name"
                   aria-describedby="lastName-error"
                   required
-                  className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer"
+                  className="flex h-12 w-full rounded-md border border-input bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer"
                 />
                 <ErrorMessage
                   id="lastName-error"
@@ -96,7 +97,7 @@ export const FormPage = () => {
                 autoComplete="email"
                 aria-describedby="email-error"
                 required
-                className="bg-input-background flex h-12 w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer"
+                className="flex h-12 w-full rounded-md border border-input bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer"
               />
               <ErrorMessage
                 id="email-error"
@@ -178,7 +179,7 @@ export const FormPage = () => {
                 name="message"
                 aria-describedby="message-error"
                 autoComplete="off"
-                className="bg-input-background flex h-56 w-full resize-none rounded-md border border-input px-6 py-2 text-sm font-semibold leading-6 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:h-24"
+                className="flex h-56 w-full resize-none rounded-md border border-input bg-input-background px-6 py-2 text-sm font-semibold leading-6 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:h-24"
               />
               <ErrorMessage
                 id="message-error"
@@ -195,11 +196,16 @@ export const FormPage = () => {
                 name="consent"
                 type="checkbox"
                 aria-describedby="consent-error"
-                className="size-5"
+                className="sr-only"
+              />
+              <Square
+                active={values.consent}
+                setFieldValues={setFieldValue}
+                consent={values.consent}
               />
               <Label
                 htmlFor="consent"
-                className="text-base leading-6 md:cursor-pointer"
+                className="text-base leading-6 peer-focus-visible:ring-2 peer-focus-visible:ring-primary peer-focus-visible:ring-offset-2 md:cursor-pointer"
               >
                 I consent to being contacted by the team <span>*</span>
               </Label>

@@ -16,6 +16,7 @@ export const Square: React.FC<SquareType> = ({
       type="button"
       role="checkbox"
       aria-checked={active}
+      aria-label={active ? "Consent granted": "Grant consent"}
       tabIndex={0}
       onClick={() => setFieldValues("consent", !consent)}
       className={`size-5 min-w-5 ${!active && "border"} peer border-gray-300 bg-white focus:outline-none`}

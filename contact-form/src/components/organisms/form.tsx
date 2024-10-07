@@ -10,7 +10,7 @@ import { Square } from "../atoms/square";
 const validationSchema = object({
   name: string().required("This field is required"),
   lastName: string().required("This field is required"),
-  email: string().email("Please enter a valid email address").required(),
+  email: string().email("Please enter a valid email address").required("This field is required"),
   queryType: string()
     .oneOf(["general", "support"], "Please a select valid query type")
     .required("Please select a query type"),

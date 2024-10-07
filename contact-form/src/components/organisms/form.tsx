@@ -8,14 +8,16 @@ import { Circle } from "../atoms/circle";
 import { Square } from "../atoms/square";
 
 const validationSchema = object({
-  name: string().required(),
-  lastName: string().required(),
-  email: string().email().required(),
+  name: string().required("This field is required"),
+  lastName: string().required("This field is required"),
+  email: string().email("Please enter a valid email address").required(),
   queryType: string()
-    .oneOf(["general", "support"], "Seleziona un tipo valido")
+    .oneOf(["general", "support"], "Please a select valid query type")
+    .required("Please select a query type"),
+  message: string().required("This field is required"),
+  consent: boolean()
+    .oneOf([true], "To submit this form, please consent to being contacted")
     .required(),
-  message: string().required(),
-  consent: boolean().oneOf([true], "Il consenso è richiesto").required(),
 });
 
 const initialValues = {

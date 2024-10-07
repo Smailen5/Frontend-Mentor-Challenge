@@ -62,7 +62,7 @@ export const FormPage = () => {
                   id="name-error"
                   name="name"
                   component="p"
-                  className="text-red-500"
+                  className="text-destructive"
                 />
               </Container>
 
@@ -84,7 +84,7 @@ export const FormPage = () => {
                   id="lastName-error"
                   name="lastName"
                   component="p"
-                  className="text-red-500"
+                  className="text-destructive"
                 />
               </Container>
             </Container>
@@ -107,7 +107,7 @@ export const FormPage = () => {
                 id="email-error"
                 name="email"
                 component="p"
-                className="text-red-500"
+                className="text-destructive"
               />
             </Container>
 
@@ -167,7 +167,7 @@ export const FormPage = () => {
                   id="queryType-error"
                   name="queryType"
                   component="p"
-                  className="text-red-500"
+                  className="text-destructive"
                 />
               </Container>
             </fieldset>
@@ -189,7 +189,7 @@ export const FormPage = () => {
                 id="message-error"
                 name="message"
                 component="p"
-                className="text-red-500"
+                className="text-destructive"
               />
             </Container>
 
@@ -219,7 +219,7 @@ export const FormPage = () => {
                 id="consent-error"
                 name="consent"
                 component="p"
-                className="text-red-500"
+                className="text-destructive"
               />
             </div>
 

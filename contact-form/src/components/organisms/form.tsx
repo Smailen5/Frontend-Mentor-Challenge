@@ -190,32 +190,34 @@ export const FormPage = () => {
             </Container>
 
             {/* Campo di tipo CHECKBOX */}
-            <Container variant={"checkbox"}>
-              <Field
-                id="consent"
-                name="consent"
-                type="checkbox"
-                aria-describedby="consent-error"
-                className="sr-only"
-              />
-              <Square
-                active={values.consent}
-                setFieldValues={setFieldValue}
-                consent={values.consent}
-              />
-              <Label
-                htmlFor="consent"
-                className="text-base leading-6 peer-focus-visible:ring-2 peer-focus-visible:ring-primary peer-focus-visible:ring-offset-2 md:cursor-pointer"
-              >
-                I consent to being contacted by the team <span>*</span>
-              </Label>
+            <div className="pb-10 pt-4">
+              <Container variant={"checkbox"}>
+                <Field
+                  id="consent"
+                  name="consent"
+                  type="checkbox"
+                  aria-describedby="consent-error"
+                  className="sr-only"
+                />
+                <Square
+                  active={values.consent}
+                  setFieldValues={setFieldValue}
+                  consent={values.consent}
+                />
+                <Label
+                  htmlFor="consent"
+                  className="text-base leading-6 peer-focus-visible:ring-2 peer-focus-visible:ring-primary peer-focus-visible:ring-offset-2 md:cursor-pointer"
+                >
+                  I consent to being contacted by the team <span>*</span>
+                </Label>
+              </Container>
               <ErrorMessage
                 id="consent-error"
                 name="consent"
                 component="p"
                 className="text-red-500"
               />
-            </Container>
+            </div>
 
             {/* Bottone di tipo SUBMIT */}
             <Button type="submit" size={"full"}>

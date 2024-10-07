@@ -52,13 +52,7 @@ export const FormPage = () => {
                   autoComplete="given-name"
                   aria-describedby="name-error"
                   required
-                  className={`
-                    flex h-12 w-full rounded-md border border-input ${errors.name && "border-destructive"} 
-                  bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent 
-                  file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground 
-                  hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                  focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer
-                  `}
+                  className={`flex h-12 w-full rounded-md border border-input ${errors.name && "border-destructive"} bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer`}
                 />
                 <ErrorMessage
                   id="name-error"
@@ -164,13 +158,13 @@ export const FormPage = () => {
                       Support Request
                     </Label>
                   </Button>
-                  <ErrorMessage
-                    id="queryType-error"
-                    name="queryType"
-                    component="p"
-                    className="text-red-500"
-                  />
                 </Container>
+                <ErrorMessage
+                  id="queryType-error"
+                  name="queryType"
+                  component="p"
+                  className="text-red-500"
+                />
               </Container>
             </fieldset>
 

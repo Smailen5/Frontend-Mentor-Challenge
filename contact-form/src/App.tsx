@@ -1,3 +1,4 @@
+/// <reference types="vite-plugin-svgr/client" />
 import { FormPage } from "./components/organisms/form";
 
 function App() {

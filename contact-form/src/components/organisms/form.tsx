@@ -39,7 +39,7 @@ export const FormPage = () => {
           console.log(value);
         }}
       >
-        {({ handleSubmit, setFieldValue, values, errors }) => (
+        {({ handleSubmit, setFieldValue, values, errors, touched }) => (
           <Form onSubmit={handleSubmit} noValidate>
             <Container variant={"flex"}>
               {/* Campo di input NOME */}
@@ -54,7 +54,7 @@ export const FormPage = () => {
                   autoComplete="given-name"
                   aria-describedby="name-error"
                   required
-                  className={`flex h-12 w-full rounded-md border border-input ${errors.name && "border-destructive"} bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer`}
+                  className={`flex h-12 w-full rounded-md border border-input ${errors.name && touched.name && "border-destructive"} bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer`}
                 />
                 <ErrorMessage
                   id="name-error"
@@ -76,7 +76,7 @@ export const FormPage = () => {
                   autoComplete="family-name"
                   aria-describedby="lastName-error"
                   required
-                  className={`flex h-12 w-full rounded-md border border-input ${errors.lastName && "border-destructive"} bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer`}
+                  className={`flex h-12 w-full rounded-md border border-input ${errors.lastName && touched.lastName && "border-destructive"} bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer`}
                 />
                 <ErrorMessage
                   id="lastName-error"
@@ -99,7 +99,7 @@ export const FormPage = () => {
                 autoComplete="email"
                 aria-describedby="email-error"
                 required
-                className={`flex h-12 w-full rounded-md border border-input ${errors.email && "border-destructive"} bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer`}
+                className={`flex h-12 w-full rounded-md border border-input ${errors.email && touched.email && "border-destructive"} bg-input-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:cursor-pointer`}
               />
               <ErrorMessage
                 id="email-error"
@@ -181,7 +181,7 @@ export const FormPage = () => {
                 name="message"
                 aria-describedby="message-error"
                 autoComplete="off"
-                className={`flex h-56 w-full resize-none rounded-md border border-input ${errors.message && "border-destructive"} bg-input-background px-6 py-2 text-sm font-semibold leading-6 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:h-24`}
+                className={`flex h-56 w-full resize-none rounded-md border border-input ${errors.message && touched.message && "border-destructive"} bg-input-background px-6 py-2 text-sm font-semibold leading-6 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:h-24`}
               />
               <ErrorMessage
                 id="message-error"

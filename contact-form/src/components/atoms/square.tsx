@@ -18,7 +18,7 @@ export const Square: React.FC<SquareType> = ({
       aria-checked={active}
       tabIndex={0}
       onClick={() => setFieldValues("consent", !consent)}
-      className={`size-5 ${!active && "border"} peer border-gray-300 bg-white focus:outline-none`}
+      className={`size-5 min-w-5 ${!active && "border"} peer border-gray-300 bg-white focus:outline-none`}
     >
       {active && (
         <img srcSet={Checkbox} alt="checkbox icon" className="size-5" />

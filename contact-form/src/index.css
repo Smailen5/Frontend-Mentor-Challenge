@@ -1,0 +1,56 @@
+@import "./assets/fonts/fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ### Primary
+
+- Green 200 (lighter): hsl(148, 38%, 91%)
+- Green 600 (medium): hsl(169, 82%, 27%)
+- Red: hsl(0, 66%, 54%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey 500 (medium): hsl(186, 15%, 59%)
+- Grey 900 (darker): hsl(187, 24%, 22%) */
+
+@layer base {
+  :root {
+    --background: 148, 38%, 91%; /* Green 200 (lighter): hsl(148, 38%, 91%) */
+    --foreground: 187, 24%, 22%; /* Grey 900 (darker): hsl(187, 24%, 22%) */
+    --card: 0 0% 100%; /* White: hsl(0, 0%, 100% */
+    --card-foreground: 187, 24%, 22%; /* Grey 900 (darker): hsl(187, 24%, 22%) */
+    --popover: 187, 24%, 22%; /* White: Grey 900 (darker): hsl(187, 24%, 22%) */
+    --popover-foreground: 0, 0%, 100%; /* White: hsl(0, 0%, 100%) */
+    --primary: 169, 82%, 27%; /* Green 600 (medium): hsl(169, 82%, 27%) */
+    --primary-foreground: 0 0% 100%; /* White: hsl(0, 0%, 100% */
+    --secondary: 187, 24%, 22%; /* Grey 900 (darker): hsl(187, 24%, 22%) */
+    --secondary-foreground: 186, 15%, 59%; /* Grey 500 (medium): hsl(186, 15%, 59%) */
+    --muted: 186, 15%, 59%; /* Grey 500 (medium): hsl(186, 15%, 59%) */
+    --muted-foreground: 187, 24%, 22%; /* Grey 900 (darker): hsl(187, 24%, 22%) */
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0, 66%, 54%; /* Red: hsl(0, 66%, 54%) */
+    --border: 0 0% 100%; /* White: hsl(0, 0%, 100% */
+    --input: 186, 15%, 59%; /* Grey 500 (medium): hsl(186, 15%, 59%) */
+    --background-input: 0 0% 100%; /* White: hsl(0, 0%, 100% */
+    --ring: 169, 82%, 27%; /* Green 600 (medium): hsl(169, 82%, 27%) */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+span {
+  color: var(--primary);
+}

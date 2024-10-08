@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/contact-form)
-- Live Site URL: [Add live site URL here](https://deft-taiyaki-8b9fbf.netlify.app/)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/contact-form)
+- Live Site URL: [Live site](https://deft-taiyaki-8b9fbf.netlify.app/)
 
 ## My process
 

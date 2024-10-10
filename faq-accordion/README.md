@@ -81,6 +81,11 @@ I replaced the `header` tag with the `button` tag to improve accessibility and a
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 
-## Acknowledgments
 
-...
+### Acknowledgments
+
+Thanks to [Eli Seta](https://www.frontendmentor.io/profile/elisilk) for the valuable feedback that helped me improve the project, particularly for:
+
+- Having the FAQ open on page load.
+- Correctly aligning the titles in the buttons.
+- Ensuring the proper loading of the fonts.

@@ -33,7 +33,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         onClick={onToggle}
         tabIndex={0}
         aria-expanded={isOpen}
-        className="hover:text-accent flex w-full cursor-pointer items-center justify-between gap-8 py-4"
+        className="flex w-full cursor-pointer items-center justify-between gap-8 py-4 text-left hover:text-accent"
       >
         <h2 className="text-foreground text-base font-bold leading-5 lg:text-lg">
           {title}

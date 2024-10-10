@@ -1,7 +1,7 @@
 import accordion from "@/assets/data/accordion.json";
 
 import { IconMinus, IconPlus } from "@/assets/images/index";
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 type AccordionItemProps = {
   title: string;
@@ -56,6 +56,11 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  // La prima domanda viene aperta di default
+  useEffect(()=>{
+    setOpenIndex(0)
+  },[])
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);

@@ -1,7 +1,7 @@
 import accordion from "@/assets/data/accordion.json";
 
 import { IconMinus, IconPlus } from "@/assets/images/index";
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 type AccordionItemProps = {
   title: string;
@@ -33,7 +33,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         onClick={onToggle}
         tabIndex={0}
         aria-expanded={isOpen}
-        className="hover:text-accent flex w-full cursor-pointer items-center justify-between gap-8 py-4"
+        className="flex w-full cursor-pointer items-center justify-between gap-8 py-4 text-left hover:text-accent"
       >
         <h2 className="text-foreground text-base font-bold leading-5 lg:text-lg">
           {title}
@@ -56,6 +56,11 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  // La prima domanda viene aperta di default
+  useEffect(()=>{
+    setOpenIndex(0)
+  },[])
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);

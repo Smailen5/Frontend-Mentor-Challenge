@@ -26,8 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](./screenshot/desktop.jpeg)
-![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/3-column-preview-card-component.jpeg)
 
 
 ### Links

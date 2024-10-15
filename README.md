@@ -50,7 +50,7 @@
 
 #### QR code [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/qr-code-component-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/qr-code-component-main-main/)
 
-![Anteprima](./screen-capture/qr-code-component-main-main.jepg)
+![Anteprima](./screen-capture/qr-code-component-main-main.jpeg)
 
 #### 3 column preview card [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/3-column-preview-card-component-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/3-column-preview-card-component-main-main/)
 

@@ -99,6 +99,8 @@
 <!-- EDIT: il problema piu che altro risiede nelle media query, il design per smartphone e totalmente sbagliato -->
 <!-- #### product preview card component [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/product-preview-card-component-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/product-preview-card-component-main-main/) -->
 
+<!-- ![Anteprima](./screen-capture/product-preview-card-component-main-main.jpeg) -->
+
 <!-- sembra non essere posizionato correttamente al centro -->
 <!-- EDIT: va riscritto tutto il codice, le misure sono assolute, il design non e responsive, va scritto tutto da capo -->
 <!-- #### profile card component [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/profile-card-component-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/profile-card-component-main-main/)

@@ -43,7 +43,7 @@ Users should be able to:
 - Flexbox
 
 
-### Tecnologie
+### Technologies
 
 - HTML
 - CSS

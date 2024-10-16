@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](../screen%20capture/3-column-preview-card-component.jpeg)
+![desktop](../screen-capture/3-column-preview-card-component-main-main.jpeg)
 
 
 ### Links

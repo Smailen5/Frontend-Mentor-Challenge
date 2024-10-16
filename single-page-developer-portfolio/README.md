@@ -1,17 +1,4 @@
-# Frontend Mentor - Portfolio single page
-
-
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
+# Portfolio single page
 
 ## Overview
 

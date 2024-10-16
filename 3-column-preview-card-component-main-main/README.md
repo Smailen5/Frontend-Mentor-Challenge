@@ -43,6 +43,12 @@ Users should be able to:
 - Flexbox
 
 
+### Tecnologie
+
+- HTML
+- CSS
+- JavaScript
+
 ### What I learned
 
 Ho utilizzato per la prima volta la regola !important, in quanto il selettore usato in precedenza era molto più specifico

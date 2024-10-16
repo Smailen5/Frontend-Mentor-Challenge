@@ -2,7 +2,6 @@
 
 This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Overview
 
 ### The challenge
@@ -17,9 +16,9 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![Laptop](../screen%20capture//base-apparel-laptop.jpeg) -->
-![Desktop](../screen%20capture//base-apparel-desktop.jpeg)
+<!-- ![Laptop](../screen-capture//base-apparel-laptop.jpeg) -->
 
+![Desktop](../screen-capture//base-apparel-desktop.jpeg)
 
 ### Links
 
@@ -33,7 +32,6 @@ Users should be able to:
 - HTML5
 - Tailwind
 - React
-
 
 ### What I learned
 
@@ -65,7 +63,6 @@ Code Snippets I'm Proud Of:
 }
 ```
 
-
 ### Continued development
 
 In future projects, I plan to:
@@ -74,20 +71,17 @@ In future projects, I plan to:
 - Explore advanced React patterns like context and hooks for better state management.
 - Enhance form validation by integrating more complex validation rules and user feedback.
 
-
 ### Useful resources
 
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation) - Essential for understanding utility-first styling.
 - [Formik Documentation](https://formik.org/docs) - Great for managing forms and validation in React.
 - [React Documentation](https://react.dev/) - For React component and state management best practices.
 
-
 ## Author
 
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-
 
 ## Acknowledgments
 

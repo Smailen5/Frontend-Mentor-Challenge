@@ -2,11 +2,9 @@
 
 ## Overview
 
-
 ### Screenshot
 
-![desktop](../screen%20capture//portfolio-dekstop.jpeg)
-
+![desktop](../screen-capture//portfolio-dekstop.jpeg)
 
 ### Links
 
@@ -25,17 +23,14 @@
 - Formik
 - Yup
 
-
 ### What I learned
 
 - Managed forms with Formik and validation with Yup, enhancing form handling and user input validation in React applications.
-
 
 ### Useful resources
 
 - [Formik Documentation](https://formik.org/docs/tutorial) - Comprehensive guide to Formik, a powerful form library for React.
 - [Yup Documentation](https://formik.org/docs/guides/validation) - Useful resource for learning how to integrate Yup for form validation.
-
 
 ## Author
 

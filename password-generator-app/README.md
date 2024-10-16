@@ -2,7 +2,6 @@
 
 This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Overview
 
 ### The challenge
@@ -15,17 +14,14 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-
 ### Screenshot
 
-![](../screen%20capture/desktop%20password%20generator.jpeg)
-
+![](../screen-capture/desktop%20password%20generator.jpeg)
 
 ### Links
 
 - Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/password-generator-app)
 - Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/password-generator-app/)
-
 
 ## My process
 
@@ -35,7 +31,6 @@ Users should be able to:
 - Mobile-first workflow
 - Tailwind
 - JavaScript
-
 
 ### What I learned
 
@@ -49,7 +44,7 @@ Users should be able to:
   type="text"
   name="password"
   id="password"
-  class="text-3xl text-white bg-gray-600"
+  class="bg-gray-600 text-3xl text-white"
   placeholder="Password here"
 />
 ```
@@ -70,11 +65,9 @@ navigator.clipboard
   });
 ```
 
-
 ### Continued development
 
 The next time I work on this code, I'd like to do a thorough refactoring of the entire script. I'm sure there's room for improvement.
-
 
 ### Useful resources
 

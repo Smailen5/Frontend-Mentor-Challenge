@@ -2,7 +2,6 @@
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Overview
 
 ### The challenge
@@ -15,9 +14,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](../screen%20capture/mobile%20tip%20calculator.jpeg)
-![](../screen%20capture/desktop%20tip%20calculator.jpeg)
-
+![](../screen-capture/mobile%20tip%20calculator.jpeg)
+![](../screen-capture/desktop%20tip%20calculator.jpeg)
 
 ### Links
 
@@ -33,34 +31,31 @@ Users should be able to:
 - Tailwind
 - JavaScript
 
-
 ### What I learned
 
 With `min="1"`, I saved myself 5 lines of code to verify that the entered value was greater than 0 XD GGGGGGGG source w3school
 
 ```html
-<input min="1">
+<input min="1" />
 ```
 
 Converting strings into numbers was easy; I remembered that there's already a function for this:
 
 ```js
-tipInput.addEventListener('input', function(event){
-    const tipNumber = Number(event.target.value);
-}) 
+tipInput.addEventListener("input", function (event) {
+  const tipNumber = Number(event.target.value);
+});
 ```
-`Number()` instead of `toNumber()`, as I initially thought.
 
+`Number()` instead of `toNumber()`, as I initially thought.
 
 ### Continued development
 
 I want to add the custom button in the future. For now, I've only created it, but I haven't figured out how to make it work as requested.
 
-
 ### Useful resources
 
 - [w3school](https://www.w3schools.com/tags/att_input_min.asp) - w3school resource for input attribute
-
 
 ## Author
 

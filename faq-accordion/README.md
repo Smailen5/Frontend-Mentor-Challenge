@@ -2,7 +2,6 @@
 
 This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Overview
 
 ### The challenge
@@ -16,8 +15,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Smartphone](../screen%20capture/faq-accordion-smartphone.jpeg)
-![Desktop](../screen%20capture/faq-accordion-desktop.jpeg)
+![Smartphone](../screen-capture/faq-accordion-smartphone.jpeg)
+![Desktop](../screen-capture/faq-accordion-desktop.jpeg)
 
 ### Links
 
@@ -35,7 +34,6 @@ Users should be able to:
 - Shadcn
 - Typescript
 - React
-
 
 ### What I learned
 
@@ -65,7 +63,6 @@ I replaced the `header` tag with the `button` tag to improve accessibility and a
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-
 
 ### Acknowledgments
 

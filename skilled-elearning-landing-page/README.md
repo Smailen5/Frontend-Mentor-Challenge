@@ -4,7 +4,6 @@
 
 This is a solution to the [Skilled e-learning landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Overview
 
 ### The challenge
@@ -16,8 +15,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Phone](../screen%20capture/skilled-elearning-phone.jpeg)
-![Desktop](../screen%20capture/skilled-elearning-desktop.jpeg)
+![Phone](../screen-capture/skilled-elearning-phone.jpeg)
+![Desktop](../screen-capture/skilled-elearning-desktop.jpeg)
 
 ### Links
 
@@ -34,21 +33,17 @@ Users should be able to:
 - Shadcn
 - Typescript
 
-
 ### What I learned
 
 This exercise has been very useful for learning how to customize Shadcn UI components and practicing with TypeScript.
-
 
 ### Continued development
 
 I notice that I have some issues with the UI when using `absolute` for very large components. In the future, I would like to focus on this and understand what I'm doing wrong.
 
-
 ### Useful resources
 
 - [Shadcn ui](https://ui.shadcn.com/) - Documentation.
-
 
 ## Author
 
@@ -57,7 +52,4 @@ I notice that I have some issues with the UI when using `absolute` for very larg
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 
-
 ## Acknowledgments
-
-

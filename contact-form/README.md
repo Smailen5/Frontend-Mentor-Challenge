@@ -1,7 +1,6 @@
 # Contact form
 
-This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
 
@@ -20,10 +19,9 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](../screen%20capture/contact-form-smartphone.jpeg)
-![desktop](../screen%20capture/contact-form-desktop.jpeg)
+![smartphone](../screen-capture/contact-form-smartphone.jpeg)
+![desktop](../screen-capture/contact-form-desktop.jpeg)
 ![ligthouse score](./src/assets/screenshot/litgthouse-result.PNG)
-
 
 ### Links
 
@@ -43,13 +41,11 @@ Users should be able to:
 - Yup
 - React
 
-
 ### What I learned
 
 I learned how to create components following the logic of Shadcn. By using Shadcn, my code becomes consistent across the project.
 
 I also practice accessibility for forms and discovered new attributes.
-
 
 ### Continued development
 
@@ -64,15 +60,13 @@ className={`${values.queryType === "general" && "bg-background"}`}
 
 ```jsx
 // Hide element from layout but keep it visible to screen reader
-className="sr-only"
+className = "sr-only";
 ```
-
 
 ### Useful resources
 
 - [Shadcn ui](https://ui.shadcn.com/) - Shadcn Ui docs
 - [Formik](https://formik.org/docs/tutorial) - Formik docs.
-
 
 ## Author
 
@@ -80,7 +74,6 @@ className="sr-only"
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-
 
 ## Acknowledgments
 

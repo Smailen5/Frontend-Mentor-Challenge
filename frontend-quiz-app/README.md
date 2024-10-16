@@ -1,7 +1,6 @@
 # Frontend quiz app
 
-This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
 
@@ -23,9 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](../screen%20capture/frontend-quiz-smartphone.jpeg)
-![desktop](../screen%20capture/frontend-quiz-desktop.jpeg)
-
+![smartphone](../screen-capture/frontend-quiz-smartphone.jpeg)
+![desktop](../screen-capture/frontend-quiz-desktop.jpeg)
 
 ### Links
 
@@ -45,9 +43,7 @@ Users should be able to:
 - Tailwind Merge
 - Svgr
 
-
 ### What I learned
-
 
 - **Atomic Design**: I became familiar with Atomic Design, organizing the code into hierarchical components (atoms, molecules, organisms), improving code readability and reusability.
 
@@ -57,19 +53,16 @@ Users should be able to:
 
 - **Dark Mode with Tailwind**: I implemented dark mode using Tailwind CSS, retrieving the preference from the device and saving it in `localStorage` to ensure a consistent user experience.
 
-
 ### Continued development
 
 I want to try adding localization in Italian for the quizzes.
-
 
 ### Useful resources
 
 - [progress bar react](https://react.dev/reference/react-dom/components/progress) - This resource was very helpful for understanding how to set up my ProgressBar. I didn't use this progress bar because when I use Tailwind, I prefer not to write CSS in the global stylesheet.
 - [svgr npm](https://www.npmjs.com/package/vite-plugin-svgr) - Very useful for using SVG icons as React components.
-- [svgr resource 1](https://medium.com/@praizjosh/how-to-import-svg-files-as-react-components-in-vite-97d6e1f2c046 )
+- [svgr resource 1](https://medium.com/@praizjosh/how-to-import-svg-files-as-react-components-in-vite-97d6e1f2c046)
 - [svgr resource 2](https://stackoverflow.com/questions/77280652/vite-plugin-svgr-does-not-working-in-vite-react-and-typescript)
-
 
 ## Author
 
@@ -78,7 +71,4 @@ I want to try adding localization in Italian for the quizzes.
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 
-
 ## Acknowledgments
-
-

@@ -48,17 +48,14 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
-- Tailwind CSS
+- Tailwind
 - TypeScript
 - SVGR
 - Formik
 - Yup
-- [React](https://reactjs.org/) - JS library
+- React
 
 
 ### What I learned

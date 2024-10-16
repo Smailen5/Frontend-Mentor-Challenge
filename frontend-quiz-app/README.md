@@ -50,17 +50,14 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- React
 - React router dom 6
 - Typescript
-- Tailwind CSS
+- Tailwind
 - Tailwind Merge
-- Svgr plugin
+- Svgr
 
 
 ### What I learned

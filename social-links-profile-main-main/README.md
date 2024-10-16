@@ -38,10 +38,9 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- Flexbox
+- HTML5
 - Mobile-first workflow
-- Tailwind CSS
+- Tailwind
 
 
 ### What I learned

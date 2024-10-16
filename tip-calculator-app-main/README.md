@@ -41,13 +41,10 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
 - Tailwind
-- JavaScript vanilla
+- JavaScript
 
 
 ### What I learned

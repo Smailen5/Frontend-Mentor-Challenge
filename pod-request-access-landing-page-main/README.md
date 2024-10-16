@@ -49,12 +49,10 @@ Screenshot desktop con effetto hover del button e paragrafo di errore.
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
+- CSS
 - Mobile-first workflow
-- Javascript vanilla
+- Javascript
 
 
 ### What I learned

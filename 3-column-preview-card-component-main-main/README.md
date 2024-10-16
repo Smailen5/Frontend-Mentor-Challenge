@@ -38,16 +38,9 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-
-
-### Technologies
-
-- HTML
+- HTML5
 - CSS
-- JavaScript
+
 
 ### What I learned
 

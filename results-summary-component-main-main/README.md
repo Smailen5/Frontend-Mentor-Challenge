@@ -30,9 +30,8 @@
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
+- CSS
 - Mobile-first workflow
 
 ### What I learned

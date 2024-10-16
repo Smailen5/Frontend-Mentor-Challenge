@@ -30,12 +30,9 @@
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
-- React.js
+- React
 - Tailwind
 - React icons
 - Formik

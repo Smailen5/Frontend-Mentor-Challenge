@@ -42,15 +42,11 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
-- [Tailwind CSS](https://tailwindcss.com/) - CSS library
-- [Shadcn ui](https://ui.shadcn.com/) - "Component" library
-- [Typescript](https://www.typescriptlang.org/) - JS superset
-- [React+Vite](https://vitejs.dev/guide/) - JS library
+- Tailwind
+- Shadcn
+- Typescript
 
 
 ### What I learned

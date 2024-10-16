@@ -31,9 +31,8 @@ This is my first challenge on [Frontend Mentor](https://www.frontendmentor.io/ho
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
+- CSS
 
 ## Author
 

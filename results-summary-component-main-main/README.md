@@ -2,8 +2,8 @@
 
 ### The challenge
 
-- The challenge was starting from the mobile version and then adapting it to the desktop
-- See hover state for button element on the page
+- The challenge was starting from the mobile version and then adapting it to the desktop ✔
+- See hover state for button element on the page ✔
 
 ### Screenshot
 

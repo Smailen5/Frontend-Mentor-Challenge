@@ -7,7 +7,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### The challenge
 
-- Costruire il progetto secondo i disegni forniti
+- View the optimal layout depending on their device's screen size 
+
 
 ### Screenshot
 

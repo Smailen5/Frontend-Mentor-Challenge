@@ -9,8 +9,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- View the optimal layout depending on their device's screen size ✔
+- See hover states for interactive elements ✔
 
 ### Screenshot
 
@@ -37,7 +37,7 @@ Users should be able to:
 - Non capisco perche la classe active viene aggiunta è rimossa di continuo anche se il mouse si trova all'interno dell'immagine, in futuro spero di risolvere
   potrebbe funzionare dando a img-active un colore totalmente trasparente anziche display none e al passaggio del mouse cambio il colore, potrebbero esserci
   problemi con icon-view.
-- Il problema con img-active non susiste è dovuto alla tab Dev Tolls attiva, quindi il codice funziona
+- Il problema con img-active non sussiste è dovuto alla tab Dev Tolls attiva, quindi il codice funziona
 
 ## Author
 

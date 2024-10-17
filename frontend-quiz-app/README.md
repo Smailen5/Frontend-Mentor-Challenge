@@ -22,8 +22,11 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](../screen-capture/frontend-quiz-smartphone.jpeg)
-![desktop](../screen-capture/frontend-quiz-desktop.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![smartphone](./screenshot/smartphone%20quiz.jpeg)
+![desktop](./screenshot/desktop%20dark.jpeg)
+![desktop](./screenshot/desktop%20ligth.jpeg)
+
 
 ### Links
 

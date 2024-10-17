@@ -14,8 +14,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](../screen-capture/mobile%20tip%20calculator.jpeg)
-![](../screen-capture/desktop%20tip%20calculator.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20active.jpeg)
 
 ### Links
 

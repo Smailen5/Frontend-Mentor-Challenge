@@ -16,7 +16,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](../screen-capture/desktop%20password%20generator.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20active.jpeg)
 
 ### Links
 

@@ -14,8 +14,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Phone](./images/Phone.jpeg)
-![Desktop](./images/descktop.jpeg)
+![smartphone](./images/smartphone.jpeg)
+![desktop](./images/descktop.jpeg)
+![desktop](./images/descktop%20hover.jpeg)
 
 ### Links
 

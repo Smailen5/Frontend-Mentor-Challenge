@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./screenshot/desktop.jpeg)
-![Mobile](./screenshot/mobile.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
 
 
 ### Links

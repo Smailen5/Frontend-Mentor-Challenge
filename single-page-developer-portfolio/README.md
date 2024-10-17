@@ -4,7 +4,9 @@
 
 ### Screenshot
 
-![desktop](../screen-capture//portfolio-dekstop.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](../screen-capture/single-page-developer-portfolio.jpeg)
+
 
 ### Links
 

@@ -14,8 +14,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Pc version](./images/Laptop.jpeg)
-![Smartphone version](./images/Phone%20Portrait.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20hover.jpeg)
+
 
 ### Links
 

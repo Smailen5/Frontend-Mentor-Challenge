@@ -14,7 +14,9 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](../screen-capture/3-column-preview-card-component-main-main.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20hover.jpeg)
 
 
 ### Links

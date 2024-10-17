@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Smartphone](../screen-capture/faq-accordion-smartphone.jpeg)
-![Desktop](../screen-capture/faq-accordion-desktop.jpeg)
+![Smartphone](./screenshot/smartphone.jpeg)
+![Desktop](./screenshot/desktop.jpeg)
 
 ### Links
 

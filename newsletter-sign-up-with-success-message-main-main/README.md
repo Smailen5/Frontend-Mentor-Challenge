@@ -19,10 +19,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/smartphone.jpeg)
-![](./screenshot/smartphone%20error.jpeg)
-![](./screenshot/chrome-capture-2024-3-12.jpeg)
-![](./screenshot/desktop%20error.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![smartphone](./screenshot/smartphone%20error.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20error.jpeg)
 
 ### Links
 

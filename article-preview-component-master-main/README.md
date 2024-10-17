@@ -14,10 +14,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/smartphone.jpeg)
-![](./screenshot/smartphone%20active.jpeg)
-![](./screenshot/desktop.jpeg)
-![](./screenshot/desktop%20active.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![smartphone](./screenshot/smartphone%20active.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20active.jpeg)
 
 ### Links
 

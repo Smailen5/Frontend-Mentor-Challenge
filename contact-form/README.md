@@ -19,9 +19,10 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](../screen-capture/contact-form-smartphone.jpeg)
-![desktop](../screen-capture/contact-form-desktop.jpeg)
-![ligthouse score](./src/assets/screenshot/litgthouse-result.PNG)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20error.jpeg)
+![ligthouse score](./screenshot/litgthouse-result.PNG)
 
 ### Links
 

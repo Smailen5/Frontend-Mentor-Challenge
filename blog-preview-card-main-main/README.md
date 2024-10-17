@@ -13,9 +13,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](/solution/smartphone.jpeg)
-![](/solution/desktop.jpeg)
-![](/solution/hover%20desktop.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20hover.jpeg)
+
 
 
 ### Links

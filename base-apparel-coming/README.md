@@ -18,7 +18,9 @@ Users should be able to:
 
 <!-- ![Laptop](../screen-capture//base-apparel-laptop.jpeg) -->
 
-![Desktop](../screen-capture//base-apparel-desktop.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![Desktop](./screenshot/desktop.jpeg)
+![Desktop](./screenshot/desktop%20error.jpeg)
 
 ### Links
 

@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](../screen-capture/component-with-signup-form-desktop.jpeg)
-![mobile](../screen-capture/component-with-signup-form-mobile.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
 
 ### Links
 

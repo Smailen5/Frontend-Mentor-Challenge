@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Phone](../screen-capture/skilled-elearning-phone.jpeg)
-![Desktop](../screen-capture/skilled-elearning-desktop.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
 
 ### Links
 

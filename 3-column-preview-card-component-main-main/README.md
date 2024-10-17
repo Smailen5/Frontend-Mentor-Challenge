@@ -50,7 +50,7 @@ In futuro vorrei aggiungere degli effiti di slide con JavaScript e magari animar
 
 ## Author
 
-- Website - [Smailen](https://github.com/Smailen5)
-- Frontend Mentor - [@Smaylen5](https://www.frontendmentor.io/profile/Smailen5)
-- Linkedin - [@smailen](https://www.linkedin.com/in/smailen-vargas/)
-- Threads - [@smailen_art](https://www.threads.net/@smailen_art)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

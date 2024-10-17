@@ -34,8 +34,9 @@ I want to focus more on Media Queries, I understand the basics but, I want to cr
 
 ## Author
 
-- GitHub - [Smailen5](https://github.com/Smailen5)
-- Frontend Mentor - [Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 
 ## Acknowledgments

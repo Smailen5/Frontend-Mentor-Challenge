@@ -45,6 +45,7 @@ I've applied what I've learned with Tailwind in my first project, so it's all ne
 
 ## Author
 
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
 - Github - [Smailen5](https://github.com/Smailen5)
-- Frontend Mentor - [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
-- Linkedin - [@smailen-vargas](https://www.linkedin.com/in/smailen-vargas/)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

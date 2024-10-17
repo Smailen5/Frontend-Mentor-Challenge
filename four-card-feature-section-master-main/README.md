@@ -50,6 +50,7 @@ Unfortunately, I couldn't import the fonts as I wanted using `@import` in the CS
 
 ## Author
 
-- Linkedin - [smailen-vargas](https://www.linkedin.com/in/smailen-vargas/)
-- Frontend Mentor - [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
-- Github - [@Smailen5](https://github.com/Smailen5)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

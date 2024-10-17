@@ -30,7 +30,8 @@ This is my first challenge on [Frontend Mentor](https://www.frontendmentor.io/ho
 
 ## Author
 
-- Website - [smailen](https://github.com/Smailen5)
-- Frontend Mentor - [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 

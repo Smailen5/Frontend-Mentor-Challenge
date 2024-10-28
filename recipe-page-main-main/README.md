@@ -7,8 +7,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![smartphone](./screenshot/smartphone.jpeg)
-![desktop](./screenshot/desktop.jpeg)
+![smartphone](./screenshot/Smartphone.jpeg)
+<!-- ![desktop](./screenshot/desktop.jpeg) -->
 
 
 ### Links

@@ -5,7 +5,8 @@
 ### Screenshot
 
 ![smartphone](./screenshot/smartphone.jpeg)
-![desktop](./screenshot/single-page-developer-portfolio.webp)
+<!-- converti questa immagine in jpeg -->
+<!-- ![desktop](./screenshot/single-page-developer-portfolio.webp) -->
 
 
 ### Links

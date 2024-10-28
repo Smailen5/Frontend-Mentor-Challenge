@@ -5,7 +5,7 @@
 ### Screenshot
 
 ![smartphone](./screenshot/smartphone.jpeg)
-![desktop](../screen-capture/single-page-developer-portfolio.jpeg)
+![desktop](../screen-capture/single-page-developer-portfolio.webp)
 
 
 ### Links

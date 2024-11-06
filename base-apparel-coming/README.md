@@ -16,7 +16,6 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![Laptop](../screen-capture//base-apparel-laptop.jpeg) -->
 
 ![smartphone](./screenshot/smartphone.jpeg)
 ![Desktop](./screenshot/desktop.jpeg)

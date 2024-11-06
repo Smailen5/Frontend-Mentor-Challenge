@@ -51,5 +51,3 @@ I notice that I have some issues with the UI when using `absolute` for very larg
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-
-## Acknowledgments

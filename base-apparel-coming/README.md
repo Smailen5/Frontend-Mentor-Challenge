@@ -32,6 +32,7 @@ Users should be able to:
 
 - HTML5
 - Tailwind
+- Javascript
 - React
 
 ### What I learned

@@ -20,8 +20,8 @@
 
 - HTML5
 - Mobile-first workflow
-- React
 - Tailwind
+- React
 - React icons
 - Formik
 - Yup

@@ -1,7 +1,6 @@
 # Pod request access landing page
 
-This is a solution to the [Pod request access landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pod-request-access-landing-page-eyTmdkLSG). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Pod request access landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pod-request-access-landing-page-eyTmdkLSG). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
 
@@ -21,7 +20,6 @@ Users should be able to:
 ![desktop](./screenshot/desktop.jpeg)
 ![desktop](./screenshot/desktop%20error.jpeg)
 
-
 ### Links
 
 - Solution URL: [Soluzione](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/pod-request-access-landing-page-main)
@@ -34,40 +32,39 @@ Users should be able to:
 - HTML5
 - CSS
 - Mobile-first workflow
-- Javascript
-
+- JavaScript
 
 ### What I learned
 
 Ho imparato a inserire un validatore di email:
+
 ```js
 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-        return true;
-    } else {
-        return false;
-    }
+  return true;
+} else {
+  return false;
+}
 ```
 
 Ho usato l'operatore ternario per semplificare la lettura del codice:
+
 ```js
-if(!isEmailValid ? emailInvalid() : emailValid());
+if (!isEmailValid ? emailInvalid() : emailValid());
 ```
 
 Ho usato un div per inserire l'immagine di background da css per poterla modificare nelle media query:
-```html
-  <div class="background-img"></div>
-```
 
+```html
+<div class="background-img"></div>
+```
 
 ### Continued development
 
 Aggiungere i colori e i `font-size` come variabili
 
-
 ### Useful resources
 
-- [Validatore email](https://howto.webarea.it/javascript/come-validare-un-indirizzo-email-in-javascript_124) - Mi ha aiutato per creare il codice per il validatore di email.
-
+- [Validatore email](https://howto.webarea.it/JavaScript/come-validare-un-indirizzo-email-in-javascript_124) - Mi ha aiutato per creare il codice per il validatore di email.
 
 ## Author
 
@@ -75,4 +72,3 @@ Aggiungere i colori e i `font-size` come variabili
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-

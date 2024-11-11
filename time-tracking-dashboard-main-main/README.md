@@ -2,7 +2,6 @@
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Overview
 
 ### The challenge
@@ -19,7 +18,6 @@ Users should be able to:
 ![desktop](./screenshot/desktop.jpeg)
 ![desktop](./screenshot/desktop%20active.jpeg)
 
-
 ### Links
 
 - Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/time-tracking-dashboard-main-main)
@@ -32,8 +30,7 @@ Users should be able to:
 - HTML5
 - Mobile-first workflow
 - Tailwind
-- Javascript
-
+- JavaScript
 
 ### What I learned
 
@@ -45,7 +42,9 @@ Users should be able to:
     <h3>Work</h3>
   </div>
 
-  <div class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1">
+  <div
+    class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1"
+  >
     <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
   </div>
 
@@ -53,7 +52,9 @@ Users should be able to:
     <p>5hrs</p>
   </div>
 
-  <div class="col-span-1 justify-self-end self-center lg:col-span-2 lg:row-start-3 lg:justify-self-start">
+  <div
+    class="col-span-1 justify-self-end self-center lg:col-span-2 lg:row-start-3 lg:justify-self-start"
+  >
     <p>Previous - 7hrs</p>
   </div>
 </div>
@@ -67,8 +68,10 @@ Users should be able to:
     <h3>Work</h3>
   </div>
 
-  <div class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1">
-    <img src=""/>
+  <div
+    class="col-span-1 justify-self-end self-center lg:col-start-2 lg:row-start-1"
+  >
+    <img src="" />
   </div>
 </div>
 ```
@@ -104,11 +107,9 @@ function daily(data) {
 }
 ```
 
-
 ### Useful resources
 
 - [StackOverFlow](https://stackoverflow.com/questions/65784357/tailwindcss-change-label-when-radio-button-checked) - I used Stack Overflow to find out how to set radio inputs to not visible. Initially, I tried with `appearance-none`, but they still remain in the flow of the page, so it's better to use `hidden`.
-
 
 ## Author
 

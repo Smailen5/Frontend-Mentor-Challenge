@@ -31,7 +31,7 @@ Users should be able to:
 - HTML5
 - Mobile-first workflow
 - Tailwind
-- Javascript
+- JavaScript
 
 ### What I learned
 
@@ -80,7 +80,7 @@ The next time I work on this code, I'd like to do a thorough refactoring of the 
 
 - [Resource 4](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) - Used for array methods for a slip.
 
-- [Resource 5](https://stackoverflow.com/questions/1497481/javascript-password-generator) -
+- [Resource 5](https://stackoverflow.com/questions/1497481/JavaScript-password-generator) -
   Useful for understanding how to generate a password from a specific charset, adapted to my purpose.
 
 - [Resource 6](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) -

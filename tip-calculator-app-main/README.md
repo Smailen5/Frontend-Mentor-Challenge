@@ -30,7 +30,7 @@ Users should be able to:
 - HTML5
 - Mobile-first workflow
 - Tailwind
-- Javascript
+- JavaScript
 
 ### What I learned
 

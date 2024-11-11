@@ -2,7 +2,6 @@
 
 This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Overview
 
 ### The challenge
@@ -32,7 +31,6 @@ Users should be able to:
 - Mobile-first workflow
 - Tailwind
 - JavaScript
-
 
 ### What I learned
 
@@ -67,10 +65,9 @@ function addClassOnScreenWidth(className, screenWidth) {
 }
 
 window.onload = () => {
-  addClassOnScreenWidth("animate-pulse", 1024)
-}
+  addClassOnScreenWidth("animate-pulse", 1024);
+};
 ```
-
 
 ## Author
 

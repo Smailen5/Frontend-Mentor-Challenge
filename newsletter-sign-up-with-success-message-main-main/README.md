@@ -2,7 +2,6 @@
 
 This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Overview
 
 ### The challenge
@@ -36,7 +35,7 @@ Users should be able to:
 - HTML5
 - Mobile-first workflow
 - Tailwind
-- Javascript
+- JavaScript
 
 ### What I learned
 
@@ -50,11 +49,11 @@ For the first time, I used the font provided directly with the exercise instead 
 
 ```css
 @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 ```
 
 Reading the Frontend Mentor article, I discovered that there is a constructor to retrieve data from the form, and it was fantastic because it simplifies the process a lot.
@@ -75,12 +74,10 @@ It was nice to use regular expressions for the first time to validate an email. 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 ```
 
-
 ### Useful resources
 
-- [Frontend Mentor article](https://www.frontendmentor.io/learning-paths/javascript-fundamentals-oR7g6-mTZ-/steps/661589482f40450f91f5883b/article/read) - Frontend Mentor article that was very helpful for retrieving data from the form.
-- [Regular expression](https://www.udemy.com/course/maestro-javascript/learn/lecture/21066530#overview) - Course where I learned how to use regular expressions to validate forms.
-
+- [Frontend Mentor article](https://www.frontendmentor.io/learning-paths/JavaScript-fundamentals-oR7g6-mTZ-/steps/661589482f40450f91f5883b/article/read) - Frontend Mentor article that was very helpful for retrieving data from the form.
+- [Regular expression](https://www.udemy.com/course/maestro-JavaScript/learn/lecture/21066530#overview) - Course where I learned how to use regular expressions to validate forms.
 
 ## Author
 

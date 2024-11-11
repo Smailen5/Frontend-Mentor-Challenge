@@ -16,7 +16,6 @@ Users should be able to:
 
 ### Screenshot
 
-
 ![smartphone](./screenshot/smartphone.jpeg)
 ![Desktop](./screenshot/desktop.jpeg)
 ![Desktop](./screenshot/desktop%20error.jpeg)
@@ -32,7 +31,7 @@ Users should be able to:
 
 - HTML5
 - Tailwind
-- Javascript
+- JavaScript
 - React
 
 ### What I learned

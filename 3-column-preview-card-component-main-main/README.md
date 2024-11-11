@@ -1,7 +1,6 @@
 # 3 Column preview card component
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
 
@@ -18,7 +17,6 @@ Users should be able to:
 ![desktop](./screenshot/desktop.jpeg)
 ![desktop](./screenshot/desktop%20hover.jpeg)
 
-
 ### Links
 
 - Solution URL: [Soluzione](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/3-column-preview-card-component-main-main)
@@ -31,22 +29,19 @@ Users should be able to:
 - HTML5
 - CSS
 
-
 ### What I learned
 
 Ho utilizzato per la prima volta la regola !important, in quanto il selettore usato in precedenza era molto più specifico
 
 ```css
 .button:hover {
-    color: #F2F2F2 !important;
+  color: #f2f2f2 !important;
 }
 ```
-
 
 ### Continued development
 
 In futuro vorrei aggiungere degli effiti di slide con JavaScript e magari animare le icone svg
-
 
 ## Author
 

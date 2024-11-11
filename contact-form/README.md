@@ -42,6 +42,7 @@ Users should be able to:
 - Yup
 - React
 
+
 ### What I learned
 
 I learned how to create components following the logic of Shadcn. By using Shadcn, my code becomes consistent across the project.

@@ -32,6 +32,7 @@ Users should be able to:
 - Tailwind
 - Shadcn
 - TypeScript
+- React
 
 ### What I learned
 

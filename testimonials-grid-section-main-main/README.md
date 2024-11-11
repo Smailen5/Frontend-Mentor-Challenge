@@ -29,6 +29,7 @@ Users should be able to:
 - HTML5
 - CSS
 - Mobile-first workflow
+- Tailwind
 
 
 ### What I learned

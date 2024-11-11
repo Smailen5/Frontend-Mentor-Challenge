@@ -38,12 +38,12 @@ Users should be able to:
 
 - HTML5
 - Mobile-first workflow
-- React
-- React router dom 6
-- TypeScript
 - Tailwind
 - Tailwind Merge
+- TypeScript
 - Svgr
+- React
+- React router dom 6
 
 ### What I learned
 

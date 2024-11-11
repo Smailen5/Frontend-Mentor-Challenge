@@ -29,9 +29,9 @@ Users should be able to:
 
 - HTML5
 - Mobile-first workflow
-- Svgr
 - Tailwind
 - Shadcn
+- Svgr
 - TypeScript
 - React
 

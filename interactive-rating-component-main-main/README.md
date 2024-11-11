@@ -34,7 +34,7 @@ Users should be able to:
 - HTML5
 - CSS
 - Mobile-first workflow
-- JavaScript
+- Javascript
 
 
 ### What I learned

@@ -79,4 +79,3 @@ className = "sr-only";
 ## Acknowledgments
 
 ...
-

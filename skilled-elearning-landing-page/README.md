@@ -31,7 +31,7 @@ Users should be able to:
 - Mobile-first workflow
 - Tailwind
 - Shadcn
-- Typescript
+- TypeScript
 
 ### What I learned
 

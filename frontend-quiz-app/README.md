@@ -27,7 +27,6 @@ Users should be able to:
 ![desktop](./screenshot/desktop%20dark.jpeg)
 ![desktop](./screenshot/desktop%20ligth.jpeg)
 
-
 ### Links
 
 - Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/frontend-quiz-app)
@@ -41,7 +40,7 @@ Users should be able to:
 - Mobile-first workflow
 - React
 - React router dom 6
-- Typescript
+- TypeScript
 - Tailwind
 - Tailwind Merge
 - Svgr
@@ -65,7 +64,7 @@ I want to try adding localization in Italian for the quizzes.
 - [progress bar react](https://react.dev/reference/react-dom/components/progress) - This resource was very helpful for understanding how to set up my ProgressBar. I didn't use this progress bar because when I use Tailwind, I prefer not to write CSS in the global stylesheet.
 - [svgr npm](https://www.npmjs.com/package/vite-plugin-svgr) - Very useful for using SVG icons as React components.
 - [svgr resource 1](https://medium.com/@praizjosh/how-to-import-svg-files-as-react-components-in-vite-97d6e1f2c046)
-- [svgr resource 2](https://stackoverflow.com/questions/77280652/vite-plugin-svgr-does-not-working-in-vite-react-and-typescript)
+- [svgr resource 2](https://stackoverflow.com/questions/77280652/vite-plugin-svgr-does-not-working-in-vite-react-and-TypeScript)
 
 ## Author
 

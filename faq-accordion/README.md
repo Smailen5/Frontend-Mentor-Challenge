@@ -32,7 +32,7 @@ Users should be able to:
 - Svgr
 - Tailwind
 - Shadcn
-- Typescript
+- TypeScript
 - React
 
 ### What I learned
@@ -71,4 +71,3 @@ Thanks to [Eli Seta](https://www.frontendmentor.io/profile/elisilk) for the valu
 - Having the FAQ open on page load.
 - Correctly aligning the titles in the buttons.
 - Ensuring the proper loading of the fonts.
-

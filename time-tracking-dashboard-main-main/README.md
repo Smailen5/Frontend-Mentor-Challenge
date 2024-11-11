@@ -32,7 +32,7 @@ Users should be able to:
 - HTML5
 - Mobile-first workflow
 - Tailwind
-- JavaScript
+- Javascript
 
 
 ### What I learned

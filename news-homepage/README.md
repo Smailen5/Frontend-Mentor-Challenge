@@ -39,6 +39,21 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 Questo progetto utilizza [standard-version](https://github.com/conventional-changelog/standard-version) per gestire automaticamente versioni e changelog.
 
+### Convenzioni per i Commit
+
+I commit devono seguire il formato Conventional Commits con il tipo in inglese e la descrizione in italiano:
+
+- `feat: aggiunta nuova funzionalità...`
+- `fix: risolto problema...`
+- `docs: aggiornata documentazione...`
+- `style: migliorato layout...`
+- `refactor: riorganizzato codice...`
+- `perf: ottimizzate prestazioni...`
+- `test: aggiunti test...`
+- `chore: aggiornata configurazione...`
+
+### Comandi per le Release
+
 Per creare una nuova release:
 ```bash
 pnpm release

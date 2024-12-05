@@ -3,19 +3,24 @@
   "infile": "CHANGELOG.md",
   "header": "# Changelog\n\nTutti i cambiamenti notevoli a questo progetto saranno documentati in questo file.\n",
   "types": [
-    {"type": "feat", "section": "Funzionalità"},
-    {"type": "fix", "section": "Correzioni"},
+    {"type": "feat", "section": "Nuove Funzionalità"},
+    {"type": "fix", "section": "Correzioni Bug"},
     {"type": "chore", "hidden": true},
     {"type": "docs", "section": "Documentazione"},
     {"type": "style", "hidden": true},
     {"type": "refactor", "section": "Refactoring"},
-    {"type": "perf", "section": "Prestazioni"},
-    {"type": "test", "hidden": true}
+    {"type": "perf", "section": "Ottimizzazioni"},
+    {"type": "test", "hidden": true},
+    {"type": "build", "hidden": true},
+    {"type": "ci", "hidden": true}
   ],
+  "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+  "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
   "skip": {
     "bump": false,
     "changelog": false,
     "commit": false,
     "tag": false
-  }
+  },
+  "releaseCommitMessageFormat": "chore(release): {{currentTag}}\n\nAggiornamento versione e changelog"
 }

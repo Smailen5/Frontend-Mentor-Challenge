@@ -18,9 +18,9 @@ export const Sidebar = ({
       <div
         className={`border-1 fixed inset-y-0 right-0 top-0 z-50 w-64 transform bg-background shadow-lg transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}
       >
-        <div className="px-4 pl-6 pt-6">
+        <div className="px-4 pr-2 pt-4">
           <div className="mb-20 flex w-full justify-end">
-            <button onClick={() => setIsOpen(false)}>
+            <button onClick={() => setIsOpen(false)} className="p-2">
               <Image
                 src={"/icon-menu-close.svg"}
                 alt="close"
@@ -33,8 +33,10 @@ export const Sidebar = ({
           <ul className="space-y-4">
             {navigationLinks.map((link, index) => {
               return (
-                <li key={index}>
-                  <Link href={link.href}>{link.title}</Link>
+                <li key={index} className="">
+                  <Link href={link.href} className="p-2">
+                    {link.title}
+                  </Link>
                 </li>
               );
             })}

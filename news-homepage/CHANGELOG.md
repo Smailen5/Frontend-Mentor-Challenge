@@ -2,6 +2,14 @@
 
 Tutti i cambiamenti notevoli a questo progetto saranno documentati in questo file.
 
+### [0.1.9](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.8...news-homepage@0.1.9) (2024-12-05)
+
+
+### ♻️ Code Refactoring
+
+* update Navbar button for responsive design ([6d0e9ce](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/6d0e9cef7e20ed28d070986f48ce3471b3d206d7))
+* update typography in Tailwind configuration and components ([10de801](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/10de801851971895fee81d24a2d0addeb65b326e))
+
 ### [0.1.8](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.7...news-homepage@0.1.8) (2024-12-05)
 
 

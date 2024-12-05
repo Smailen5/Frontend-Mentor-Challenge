@@ -6,7 +6,7 @@ interface ButtonProps {
 export const Button = ({ children, onClick }: ButtonProps) => {
   return (
     <button
-      className="bg-soft-red p-2 px-7 text-sm font-bold uppercase tracking-widest"
+      className="bg-soft-red p-3 px-8 text-sm font-bold uppercase tracking-[0.2rem]"
       onClick={onClick}
     >
       {children}

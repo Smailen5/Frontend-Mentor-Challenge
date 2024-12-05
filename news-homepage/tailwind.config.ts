@@ -21,6 +21,11 @@ export default {
       fontFamily: {
         sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
       },
+      fontSize: {
+        "4.5xl": ["2.5rem", {
+          lineHeight: "2.5rem",
+        }],
+      },
     },
   },
   plugins: [],

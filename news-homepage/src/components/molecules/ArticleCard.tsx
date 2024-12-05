@@ -46,7 +46,7 @@ export const ArticleCard = ({ number, title, content, image }: ArticleCardProps)
         <div className="text-4xl font-bold text-soft-red text-start">{number}</div>
         <NewsItem
           headingClass="text-very-dark-blue text-lg"
-          paragraphClass="text-dark-grayish-blue text-base"
+          paragraphClass="text-dark-grayish-blue text-sm"
           heading={title}
           paragraph={content}
           isLast

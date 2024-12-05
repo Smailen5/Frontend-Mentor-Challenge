@@ -41,7 +41,7 @@ export const NewsItem = ({ heading, paragraph, isLast, headingClass, paragraphCl
         <Heading className={twMerge("text-xl font-semibold text-off-white", headingClass)}>
           {heading}
         </Heading>
-        <Paragraph className={twMerge("text-grayish-blue", paragraphClass)}>{paragraph}</Paragraph>
+        <Paragraph className={twMerge("text-grayish-blue tracking-wide", paragraphClass)}>{paragraph}</Paragraph>
       </div>
 
       {/* Mostra la linea di separazione solo se non è l'ultimo elemento */}

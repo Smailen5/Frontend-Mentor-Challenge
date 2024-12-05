@@ -12,7 +12,7 @@ export const Navbar = () => {
         <Link href="/">
           <Image src={"/logo.svg"} alt="logo" width={40} height={40} />
         </Link>
-        <button onClick={() => setIsOpen(true)}>
+        <button onClick={() => setIsOpen(true)} className='md:hidden'>
           <Image src={"/icon-menu.svg"} alt="menu" width={40} height={40} />
         </button>
       </nav>

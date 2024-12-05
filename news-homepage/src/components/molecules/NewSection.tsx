@@ -1,24 +1,22 @@
 import { Heading } from "../atoms/Heading";
 // import { Paragraph } from "../atoms/Paragraph";
+import { newsContents } from "../../config/contents";
 import { NewsItem } from "./NewsItem";
 
 export const NewSection = () => {
-  const newsItems = {
-    heading: "Hydrogen VS Electric Cars",
-    paragraph: "Will hydrogen-fueled cars ever catch up to EVs?",
-  };
   return (
-    <div className="w-full bg-very-dark-blue p-4 space-y-6">
+    <div className="w-full space-y-6 bg-very-dark-blue p-4">
       <Heading className="text-2xl font-semibold text-soft-orange">New</Heading>
 
       <div>
-        <NewsItem heading={newsItems.heading} paragraph={newsItems.paragraph} />
-        <NewsItem heading={newsItems.heading} paragraph={newsItems.paragraph} />
-        <NewsItem
-          heading={newsItems.heading}
-          paragraph={newsItems.paragraph}
-          isLast
-        />
+        {newsContents.map((news, index) => (
+          <NewsItem
+            key={index}
+            heading={news.title}
+            paragraph={news.content}
+            isLast={index === newsContents.length - 1}
+          />
+        ))}
       </div>
     </div>
   );

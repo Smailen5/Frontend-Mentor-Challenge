@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <Navbar />
-        <div className="pt-14">{children}</div>
+        <div className="py-16">{children}</div>
       </body>
     </html>
   );

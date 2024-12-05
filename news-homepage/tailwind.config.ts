@@ -22,6 +22,9 @@ export default {
         sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
       },
       fontSize: {
+        "medium": ["0.925rem",{
+          lineHeight: "1.75rem"
+        }],
         "4.5xl": ["2.5rem", {
           lineHeight: "2.5rem",
         }],

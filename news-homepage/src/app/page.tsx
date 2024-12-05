@@ -1,9 +1,10 @@
 import { ArticleSection } from "@/components/molecules/ArticleSection";
+import { NewSection } from "@/components/molecules/NewSection";
+import { TopArticleSection } from "@/components/organisms/TopArticleSection";
 import { ButtonProvider } from "@/config/buttonContext";
 import Image from "next/image";
 import web3Desktop from "../assets/images/image-web-3-desktop.jpg";
 import web3 from "../assets/images/image-web-3-mobile.jpg";
-import { NewSection } from '@/components/molecules/NewSection';
 
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
       </ButtonProvider>
 
       <NewSection />
+
+      <TopArticleSection />
     </div>
   );
 }

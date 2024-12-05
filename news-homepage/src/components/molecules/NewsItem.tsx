@@ -1,3 +1,4 @@
+import { twMerge } from 'tailwind-merge';
 import { Heading } from "../atoms/Heading";
 import { Paragraph } from "../atoms/Paragraph";
 
@@ -12,6 +13,8 @@ interface NewsItemProps {
   heading: string;
   paragraph: string;
   isLast?: boolean;
+  headingClass?:string;
+  paragraphClass?: string;
 }
 
 /**
@@ -31,14 +34,14 @@ interface NewsItemProps {
  * />
  * ```
  */
-export const NewsItem = ({ heading, paragraph, isLast }: NewsItemProps) => {
+export const NewsItem = ({ heading, paragraph, isLast, headingClass, paragraphClass }: NewsItemProps) => {
   return (
     <>
       <div className="space-y-2">
-        <Heading className="text-xl font-semibold text-off-white">
+        <Heading className={twMerge("text-xl font-semibold text-off-white", headingClass)}>
           {heading}
         </Heading>
-        <Paragraph className="text-grayish-blue">{paragraph}</Paragraph>
+        <Paragraph className={twMerge("text-grayish-blue", paragraphClass)}>{paragraph}</Paragraph>
       </div>
 
       {/* Mostra la linea di separazione solo se non è l'ultimo elemento */}

@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/molecules/Navbar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -11,9 +12,9 @@ const inter = localFont({
 export const metadata: Metadata = {
   title: "News Homepage",
   description: "News Homepage",
-  icons:{
-    icon:"/favicon-32x32.png"
-  }
+  icons: {
+    icon: "/favicon-32x32.png",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} antialiased`}>
+        <Navbar />
+        <div className="pt-14">{children}</div>
+      </body>
     </html>
   );
 }

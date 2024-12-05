@@ -1,5 +1,4 @@
 import { Heading } from "../atoms/Heading";
-// import { Paragraph } from "../atoms/Paragraph";
 import { newsContents } from "../../config/contents";
 import { NewsItem } from "./NewsItem";
 

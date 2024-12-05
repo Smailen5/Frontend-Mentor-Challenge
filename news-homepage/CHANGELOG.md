@@ -2,6 +2,16 @@
 
 Tutti i cambiamenti notevoli a questo progetto saranno documentati in questo file.
 
+### [0.1.7](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.6...news-homepage@0.1.7) (2024-12-05)
+
+
+### ♻️ Code Refactoring
+
+* enhance Home component with new sections and improved NewsItem styling ([dbc0d06](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/dbc0d06e703209ba5ffcd549bbb0e2959af25eb2))
+* enhance layout and structure of components for improved content presentation ([38d2b35](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/38d2b3576df45d1929a8ff6a5a1915ff3680583d))
+* enhance NewSection and NewsItem components for dynamic content rendering ([f64abcb](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/f64abcbd818d5ee4d5c24bb746ba063b9333a5bd))
+* enhance Paragraph, NewSection, and NewsItem components for improved styling and flexibility ([bd59899](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/bd59899479b32a162a5ef26bb94231cd272d2750))
+
 ### [0.1.6](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.5...news-homepage@0.1.6) (2024-12-05)
 
 

@@ -1,13 +1,13 @@
 {
   "name": "news-homepage",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "release": "standard-version --packageFiles package.json --bumpFiles package.json --infile CHANGELOG.md --sign --tag-prefix 'news-homepage@'"
+    "release": "standard-version --packageFiles package.json --bumpFiles package.json --infile CHANGELOG.md --tag-prefix 'news-homepage@'"
   },
   "dependencies": {
     "next": "15.0.3",

@@ -6,7 +6,7 @@ import { NewsItem } from "./NewsItem";
 export const NewSection = () => {
   return (
     <div className="w-full space-y-6 bg-very-dark-blue p-4">
-      <Heading className="text-2xl font-semibold text-soft-orange">New</Heading>
+      <Heading className="text-3xl font-semibold text-soft-orange">New</Heading>
 
       <div>
         {newsContents.map((news, index) => (

@@ -35,14 +35,14 @@ export const NewsItem = ({ heading, paragraph, isLast }: NewsItemProps) => {
   return (
     <>
       <div className="space-y-2">
-        <Heading className="text-lg font-semibold text-off-white">
+        <Heading className="text-xl font-semibold text-off-white">
           {heading}
         </Heading>
-        <Paragraph>{paragraph}</Paragraph>
+        <Paragraph className="text-grayish-blue">{paragraph}</Paragraph>
       </div>
 
       {/* Mostra la linea di separazione solo se non è l'ultimo elemento */}
-      {!isLast && <hr className="my-6" />}
+      {!isLast && <hr className="my-6 border-dark-grayish-blue" />}
     </>
   );
 };

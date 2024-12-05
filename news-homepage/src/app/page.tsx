@@ -15,16 +15,20 @@ export default function Home() {
           height={250}
         />
       </picture>
-      <div>
-        <h2>The Bright Future of Web 3.0?</h2>
+      <div className="my-4 space-y-4">
+        <h2 className="text-very-dark-blue text-4xl font-extrabold">
+          The Bright Future of Web 3.0?
+        </h2>
 
-        <p>
-          We dive into the next evolution of the web that claims to put the power
-          of the platforms back into the hands of the people. But is it really
-          fulfilling its promise?
+        <p className="text-dark-grayish-blue">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
         </p>
 
-        <button className=''>Read More</button>
+        <button className="bg-soft-red p-2 px-7 text-sm font-bold uppercase tracking-widest">
+          Read More
+        </button>
       </div>
     </div>
   );

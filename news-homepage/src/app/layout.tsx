@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/molecules/Navbar";
+import { Navbar } from "@/components/atoms/Navbar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";

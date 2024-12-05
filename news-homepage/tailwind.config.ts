@@ -18,6 +18,9 @@ export default {
         "dark-grayish-blue": "var(--Dark-grayish-blue)",
         "very-dark-blue": "var(--Very-dark-blue)",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
+      },
     },
   },
   plugins: [],

@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} antialiased`}>
+      <body>
         <Navbar />
         <div className="py-16">{children}</div>
       </body>

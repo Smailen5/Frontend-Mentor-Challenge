@@ -2,6 +2,23 @@
 
 Tutti i cambiamenti notevoli a questo progetto saranno documentati in questo file.
 
+### [0.1.6](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.5...news-homepage@0.1.6) (2024-12-05)
+
+
+### ✨ Features
+
+* enhance news homepage with new color variables and responsive image layout ([e7c7252](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/e7c725243df479beca2934e5138b21d9b3772d8f))
+
+
+### ♻️ Code Refactoring
+
+* :lipstick: improve styling and structure of news homepage content ([097149f](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/097149f0c22e7eb9e6a0f9cfa56760154e525780))
+* :recycle: update versioning configuration in .versionrc.json ([e96215a](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/e96215a590c5844e5651200427a51431721a1a0f))
+* enhance Navbar and Sidebar components for improved styling and functionality ([bc394d2](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/bc394d29392d7bc60662bb8812cd015a944f6d58))
+* replace Navbar component and update imports ([b9ec91b](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/b9ec91b5ff9de90069a45097f9864088992f1300))
+* standardize code formatting and improve sidebar styling ([58dfcd6](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/58dfcd696f07e85cb583a11a8399e0fa85099eb3))
+* update layout and styling for news homepage ([32b83db](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/32b83db64ee62684135efdfdccbd479e088b011e))
+
 ### [0.1.5](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.4...news-homepage@0.1.5) (2024-12-05)
 
 

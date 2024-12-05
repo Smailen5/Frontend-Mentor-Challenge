@@ -1,6 +1,6 @@
 import { navigationLinks } from "@/config/navigation";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
 export const Sidebar = ({
   isOpen,
@@ -18,8 +18,8 @@ export const Sidebar = ({
       <div
         className={`border-1 fixed inset-y-0 right-0 top-0 z-50 w-64 transform bg-background shadow-lg transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}
       >
-        <div className="p-4">
-          <div className="flex w-full justify-end">
+        <div className="px-4 pl-6 pt-6">
+          <div className="mb-20 flex w-full justify-end">
             <button onClick={() => setIsOpen(false)}>
               <Image
                 src={"/icon-menu-close.svg"}
@@ -30,7 +30,7 @@ export const Sidebar = ({
             </button>
           </div>
 
-          <ul>
+          <ul className="space-y-4">
             {navigationLinks.map((link, index) => {
               return (
                 <li key={index}>

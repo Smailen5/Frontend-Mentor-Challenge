@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { Sidebar } from '../atoms/Sidebar';
+import { Sidebar } from "../atoms/Sidebar";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

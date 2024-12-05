@@ -1,0 +1,21 @@
+{
+  "path": ".",
+  "infile": "CHANGELOG.md",
+  "header": "# Changelog\n\nTutti i cambiamenti notevoli a questo progetto saranno documentati in questo file.\n",
+  "types": [
+    {"type": "feat", "section": "Funzionalità"},
+    {"type": "fix", "section": "Correzioni"},
+    {"type": "chore", "hidden": true},
+    {"type": "docs", "section": "Documentazione"},
+    {"type": "style", "hidden": true},
+    {"type": "refactor", "section": "Refactoring"},
+    {"type": "perf", "section": "Prestazioni"},
+    {"type": "test", "hidden": true}
+  ],
+  "skip": {
+    "bump": false,
+    "changelog": false,
+    "commit": false,
+    "tag": false
+  }
+}

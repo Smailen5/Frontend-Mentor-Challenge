@@ -8,6 +8,10 @@
 
 ---
 
+#### New Homepage [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/news-homepage) - [Live site](https://news-homepage-beta-eight.vercel.app/)
+
+![Anteprima](./screen%20capture/news-homepage-desktop.jpeg)
+
 #### Contact Form [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/contact-form) - [Live site](https://deft-taiyaki-8b9fbf.netlify.app/)
 
 ![Anteprima](./screen%20capture/contact-form-desktop.jpeg)

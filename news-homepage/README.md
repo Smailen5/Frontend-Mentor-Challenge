@@ -1,77 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - News homepage solution
 
-## Getting Started
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### The challenge
 
-## Learn More
+Users should be able to:
 
-To learn more about Next.js, take a look at the following resources:
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Screenshot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![smartphone](../screen%20capture/news-homepage-smartphone.jpeg)
+![desktop](../screen%20capture/news-homepage-desktop.jpeg)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Solution URL: [Solution URL](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/news-homepage)
+- Live Site URL: [Live site URL](https://news-homepage-beta-eight.vercel.app/)
 
-## Gestione delle Versioni e Changelog
+## My process
 
-Questo progetto utilizza [standard-version](https://github.com/conventional-changelog/standard-version) per gestire automaticamente versioni e changelog.
+### Built with
 
-### Convenzioni per i Commit
+- HTML5
+- CSS
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Next.js
+- Tailwind
+- Typescript
+- pnpm
+- standard-version
 
-I commit devono seguire il formato Conventional Commits con il tipo in inglese e la descrizione in italiano:
 
-- `feat: aggiunta nuova funzionalità...`
-- `fix: risolto problema...`
-- `docs: aggiornata documentazione...`
-- `style: migliorato layout...`
-- `refactor: riorganizzato codice...`
-- `perf: ottimizzate prestazioni...`
-- `test: aggiunti test...`
-- `chore: aggiornata configurazione...`
+### What I learned
 
-### Comandi per le Release
+...
 
-Per creare una nuova release:
-```bash
-pnpm release
-```
 
-Per creare una release con un incremento specifico:
-```bash
-# release patch (0.0.x)
-pnpm release -- --release-as patch
+### Continued development
 
-# release minor (0.x.0)
-pnpm release -- --release-as minor
+...
 
-# release major (x.0.0)
-pnpm release -- --release-as major
-```
+### Useful resources
 
-Per creare la prima release:
-```bash
-pnpm release -- --first-release
-```
+...
+
+
+## Author
+
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
+
+
+## Acknowledgments
+
+...

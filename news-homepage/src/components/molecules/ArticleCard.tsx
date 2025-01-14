@@ -35,18 +35,32 @@ interface ArticleCardProps {
  * />
  * ```
  */
-export const ArticleCard = ({ number, title, content, image }: ArticleCardProps) => {
+export const ArticleCard = ({
+  number,
+  title,
+  content,
+  image,
+}: ArticleCardProps) => {
   return (
     <div className="flex gap-4">
       {/* Immagine dell'articolo */}
-      <Image src={image} alt="retro pc" width={100} height={150} />
+      <Image
+        src={image}
+        alt="retro pc"
+        width={100}
+        height={150}
+        className="aspect-[4/5] xl:h-32"
+      />
 
       {/* Contenuto dell'articolo */}
-      <div className="flex flex-col justify-between">
-        <div className="text-4xl font-bold text-soft-red text-start">{number}</div>
+      <div className="flex flex-col justify-between xl:justify-start xl:space-y-2">
+        <div className="text-start text-4xl font-bold text-soft-red">
+          {number}
+        </div>
         <NewsItem
-          headingClass="text-very-dark-blue text-lg"
-          paragraphClass="text-dark-grayish-blue text-sm"
+          containerClass="xl:flex xl:flex-col xl:justify-between xl:h-full"
+          headingClass="text-very-dark-blue text-lg xl:text-base xl:font-extrabold lg:hover:text-soft-red"
+          paragraphClass="text-dark-grayish-blue text-sm xl:text-sm"
           heading={title}
           paragraph={content}
           isLast

@@ -2,6 +2,34 @@
 
 Tutti i cambiamenti notevoli a questo progetto saranno documentati in questo file.
 
+### [0.1.10](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.9...news-homepage@0.1.10) (2025-01-14)
+
+
+### ♻️ Code Refactoring
+
+* enhance ArticleCard and TopArticleSection for improved layout and responsiveness ([83b552c](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/83b552c89e1945a363c916342a1102b000535f8e))
+* enhance ArticleCard, NewSection, and NewsItem components for improved responsiveness and styling ([ec8969a](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/ec8969a1d2883c8f2f60de6d3ab7276e90143e6f))
+* enhance ArticleSection and MainContent for improved responsiveness and styling ([ccee9cb](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/ccee9cb80c3cc4525b4abae9a042762e1b1d6106))
+* enhance ArticleSection and NewSection for improved layout and responsiveness ([4b1b653](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/4b1b653f18123e32cfda4e849380603772c11a1e))
+* enhance button and navigation components for improved responsiveness and styling ([204419e](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/204419eb14e1bd51af2779c4cc99ae7b1cc2f147))
+* enhance button and paragraph styles for improved responsiveness and readability ([8ea1aa7](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/8ea1aa726f8167cb2969bdd5967f7e4029e4b4bb))
+* enhance component structure and navigation links ([b426548](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/b4265488997df88b4f332375a2f7da953e287df9))
+* enhance layout and component structure for improved responsiveness ([c82809e](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/c82809e4b8f6a2e5ae2ab12a6a91e85d2ce4cedc))
+* enhance Navbar and layout for improved responsiveness and structure ([c0cae14](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/c0cae14b233cac05145e4f2d9b9967afbebc784c))
+* enhance responsiveness and styling across multiple components ([e9400c9](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/e9400c9ab1aace28a62baa14a37534ff002f8256))
+* improve component styles and layout for enhanced responsiveness ([b4a2893](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/b4a2893d1e30ed6a4281b2a577647bc4f939efe6))
+* improve layout and responsiveness across key components ([eb5b454](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/eb5b454058f695aa4a33eab0116c2e6437e3940d))
+* improve MainContent layout and responsiveness ([2bbb39d](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/2bbb39de26aba1a486808dd4f6689363bb8da8eb))
+* remove unused category pages and enhance sidebar link functionality ([e2e3543](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/e2e35433f87ece706e9c30bca8ce919ff628da72))
+
+### [0.1.9](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.8...news-homepage@0.1.9) (2024-12-05)
+
+
+### ♻️ Code Refactoring
+
+* update Navbar button for responsive design ([6d0e9ce](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/6d0e9cef7e20ed28d070986f48ce3471b3d206d7))
+* update typography in Tailwind configuration and components ([10de801](https://github.com/Smailen5/Frontend-Mentor-Challenge---/commit/10de801851971895fee81d24a2d0addeb65b326e))
+
 ### [0.1.8](https://github.com/Smailen5/Frontend-Mentor-Challenge---/compare/news-homepage@0.1.7...news-homepage@0.1.8) (2024-12-05)
 
 

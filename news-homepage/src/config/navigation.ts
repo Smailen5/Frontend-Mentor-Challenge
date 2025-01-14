@@ -10,18 +10,18 @@ export const navigationLinks: NavItem[] = [
   },
   {
     title: "New",
-    href: "/new",
+    href: "#new",
   },
   {
     title: "Popular",
-    href: "/popular",
+    href: "#popular",
   },
   {
     title: "Trending",
-    href: "/trending",
+    href: "#",
   },
   {
     title: "Categories",
-    href: "/categories",
+    href: "#",
   },
 ];

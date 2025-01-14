@@ -34,7 +34,11 @@ export const Sidebar = ({
             {navigationLinks.map((link, index) => {
               return (
                 <li key={index} className="">
-                  <Link href={link.href} className="p-2">
+                  <Link
+                    href={link.href}
+                    className="p-2"
+                    onClick={() => setIsOpen(false)}
+                  >
                     {link.title}
                   </Link>
                 </li>

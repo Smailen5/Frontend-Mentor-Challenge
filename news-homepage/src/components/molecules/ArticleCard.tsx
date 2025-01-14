@@ -35,17 +35,30 @@ interface ArticleCardProps {
  * />
  * ```
  */
-export const ArticleCard = ({ number, title, content, image }: ArticleCardProps) => {
+export const ArticleCard = ({
+  number,
+  title,
+  content,
+  image,
+}: ArticleCardProps) => {
   return (
     <div className="flex gap-4">
       {/* Immagine dell'articolo */}
-      <Image src={image} alt="retro pc" width={100} height={150} />
+      <Image
+        src={image}
+        alt="retro pc"
+        width={100}
+        height={150}
+        className="aspect-[4/5] lg:h-32"
+      />
 
       {/* Contenuto dell'articolo */}
-      <div className="flex flex-col justify-between">
-        <div className="text-4xl font-bold text-soft-red text-start">{number}</div>
+      <div className="flex flex-col justify-between lg:justify-normal lg:space-y-2">
+        <div className="text-start text-4xl font-bold text-soft-red">
+          {number}
+        </div>
         <NewsItem
-          headingClass="text-very-dark-blue text-lg"
+          headingClass="text-very-dark-blue text-lg lg:text-xl lg:font-extrabold"
           paragraphClass="text-dark-grayish-blue text-sm"
           heading={title}
           paragraph={content}

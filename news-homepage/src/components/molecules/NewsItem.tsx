@@ -13,6 +13,7 @@ interface NewsItemProps {
   heading: string;
   paragraph: string;
   isLast?: boolean;
+  containerClass?: string;
   headingClass?:string;
   paragraphClass?: string;
 }
@@ -34,10 +35,10 @@ interface NewsItemProps {
  * />
  * ```
  */
-export const NewsItem = ({ heading, paragraph, isLast, headingClass, paragraphClass }: NewsItemProps) => {
+export const NewsItem = ({ heading, paragraph, isLast, containerClass, headingClass, paragraphClass }: NewsItemProps) => {
   return (
     <>
-      <div className="space-y-2 lg:my-8">
+      <div className={twMerge("space-y-2", containerClass)}>
         <Heading className={twMerge("text-xl font-semibold text-off-white lg:text-2xl", headingClass)}>
           {heading}
         </Heading>

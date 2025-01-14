@@ -8,7 +8,7 @@ interface NewSectionProps {
 
 export const NewSection = ({ id }: NewSectionProps) => {
   return (
-    <div className="my-14 w-full space-y-6 bg-very-dark-blue p-4 py-6 lg:my-0 lg:p-6 lg:py-8 lg:mb-4">
+    <div className="my-14 w-full space-y-6 bg-very-dark-blue p-4 py-6 lg:my-0 lg:mb-4 lg:p-6 lg:py-8">
       <Heading
         id={id}
         className="text-3xl font-semibold text-soft-orange lg:text-4.5xl"
@@ -23,6 +23,7 @@ export const NewSection = ({ id }: NewSectionProps) => {
             heading={news.title}
             paragraph={news.content}
             isLast={index === newsContents.length - 1}
+            containerClass="lg:my-8"
           />
         ))}
       </div>

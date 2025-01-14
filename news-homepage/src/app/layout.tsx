@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} antialiased`}>
       <body>
         <Navbar />
-        <div className="mx-auto max-w-screen-xl px-4 py-16 xl:px-20">
+        <div className="mx-auto max-w-screen-xl px-4 py-16 md:py-24 lg:py-48 xl:px-20">
           {children}
         </div>
       </body>

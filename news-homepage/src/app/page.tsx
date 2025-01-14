@@ -5,7 +5,7 @@ import { MainContent } from "@/components/organisms/MainContent";
 
 export default function Home() {
   return (
-    <div className="p-4">
+    <div className="">
       {/* <picture className='xl:hidden'>
         <source srcSet={web3Desktop.src} media="(min-width:768px)" />
         <Image

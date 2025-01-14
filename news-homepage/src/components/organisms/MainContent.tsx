@@ -27,7 +27,7 @@ export const MainContent = () => {
   return (
     <main className="xl:space-y-16">
       <div className="xl:grid xl:grid-cols-3 xl:gap-x-8">
-        <div className="xl:col-span-2 xl:grid xl:grid-rows-[auto_1fr]">
+        <div className="xl:col-span-2 xl:grid xl:grid-rows-2">
           <picture className="xl:col-span-3">
             <source srcSet={web3Desktop.src} media="(min-width:768px)" />
             <Image

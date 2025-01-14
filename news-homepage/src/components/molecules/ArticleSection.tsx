@@ -28,7 +28,7 @@ export const ArticleSection = ({
   return (
     <div
       className={twMerge(
-        "my-4 *:space-y-4 xl:mt-8 xl:grid xl:grid-cols-2",
+        "my-4 *:space-y-4 lg:m-0 xl:grid xl:grid-cols-2",
         className,
       )}
     >

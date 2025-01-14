@@ -1,18 +1,7 @@
-# Frontend Mentor - Social links profile solution
+# Social links profile
 
 This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview
 
@@ -20,13 +9,13 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 Users should be able to:
 
-- See hover and focus states for all interactive elements on the page
+- See hover and focus states for all interactive elements on the page ✔
 
 ### Screenshot
 
-![](./screenshot/Smartphone.jpeg)
-![](./screenshot/Desktop.jpeg)
-![](./screenshot/DesktopHover.jpeg)
+![smartphone](./screenshot/Smartphone.jpeg)
+![desktop](./screenshot/Desktop.jpeg)
+![desktop](./screenshot/DesktopHover.jpeg)
 
 
 ### Links
@@ -38,10 +27,9 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- Flexbox
+- HTML5
 - Mobile-first workflow
-- Tailwind CSS
+- Tailwind
 
 
 ### What I learned
@@ -57,6 +45,7 @@ I've applied what I've learned with Tailwind in my first project, so it's all ne
 
 ## Author
 
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
 - Github - [Smailen5](https://github.com/Smailen5)
-- Frontend Mentor - [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
-- Linkedin - [@smailen-vargas](https://www.linkedin.com/in/smailen-vargas/)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

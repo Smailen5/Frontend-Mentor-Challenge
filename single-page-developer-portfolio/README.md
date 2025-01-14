@@ -1,24 +1,12 @@
-# Frontend Mentor - Portfolio single page
-
-
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
+# Portfolio single page
 
 ## Overview
 
-
 ### Screenshot
 
-![desktop](../screen%20capture//portfolio-dekstop.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+<!-- converti questa immagine in jpeg -->
+<!-- ![desktop](./screenshot/single-page-developer-portfolio.webp) -->
 
 
 ### Links
@@ -30,31 +18,26 @@
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
-- React.js
 - Tailwind
+- React
 - React icons
 - Formik
 - Yup
 
-
 ### What I learned
 
 - Managed forms with Formik and validation with Yup, enhancing form handling and user input validation in React applications.
-
 
 ### Useful resources
 
 - [Formik Documentation](https://formik.org/docs/tutorial) - Comprehensive guide to Formik, a powerful form library for React.
 - [Yup Documentation](https://formik.org/docs/guides/validation) - Useful resource for learning how to integrate Yup for form validation.
 
-
 ## Author
 
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

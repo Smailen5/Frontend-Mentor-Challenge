@@ -1,20 +1,6 @@
-# Frontend Mentor - Password generator app solution
+# Password generator app
 
 This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -22,36 +8,30 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
 
 Users should be able to:
 
-- Generate a password based on the selected inclusion options
-- Copy the generated password to the computer's clipboard
-- See a strength rating for their generated password
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-
+- Generate a password based on the selected inclusion options ✔
+- Copy the generated password to the computer's clipboard ✔
+- See a strength rating for their generated password ✔
+- View the optimal layout for the interface depending on their device's screen size ❌
+- See hover and focus states for all interactive elements on the page ❌
 
 ### Screenshot
 
-![](../screen%20capture/desktop%20password%20generator.jpeg)
-
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20active.jpeg)
 
 ### Links
 
 - Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/password-generator-app)
 - Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/password-generator-app/)
 
-
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
-- Tailwind css
-- JavaScript vanilla
-
+- Tailwind
+- JavaScript
 
 ### What I learned
 
@@ -65,7 +45,7 @@ Users should be able to:
   type="text"
   name="password"
   id="password"
-  class="text-3xl text-white bg-gray-600"
+  class="bg-gray-600 text-3xl text-white"
   placeholder="Password here"
 />
 ```
@@ -86,11 +66,9 @@ navigator.clipboard
   });
 ```
 
-
 ### Continued development
 
 The next time I work on this code, I'd like to do a thorough refactoring of the entire script. I'm sure there's room for improvement.
-
 
 ### Useful resources
 
@@ -102,7 +80,7 @@ The next time I work on this code, I'd like to do a thorough refactoring of the 
 
 - [Resource 4](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) - Used for array methods for a slip.
 
-- [Resource 5](https://stackoverflow.com/questions/1497481/javascript-password-generator) -
+- [Resource 5](https://stackoverflow.com/questions/1497481/JavaScript-password-generator) -
   Useful for understanding how to generate a password from a specific charset, adapted to my purpose.
 
 - [Resource 6](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) -
@@ -110,6 +88,7 @@ The next time I work on this code, I'd like to do a thorough refactoring of the 
 
 ## Author
 
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

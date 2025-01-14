@@ -1,18 +1,7 @@
-# Frontend Mentor - Stats preview card component solution
+# Stats preview card component
 
 This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
 
 ## Overview
 
@@ -25,8 +14,8 @@ Gli utenti dovrebbero essere in grado di:
 
 ### Screenshot
 
-![Desktop](./images/Desktop.jpeg)
-![Phone](./images/Phone.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
 
 
 ### Links
@@ -39,9 +28,8 @@ Gli utenti dovrebbero essere in grado di:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
+- CSS
 
 
 ### What I learned
@@ -89,6 +77,7 @@ Sicuramente è da ottimizare meglio per il responsive design, tornerò in futuro
 
 ## Author
 
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
 - Github - [Smailen5](https://github.com/Smailen5)
-- Frontend Mentor - [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
-- Linkedin - [@smailen](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

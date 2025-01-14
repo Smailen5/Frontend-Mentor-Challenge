@@ -1,21 +1,6 @@
-# Frontend Mentor - Base Apparel coming soon page solution
+# Base Apparel coming soon page
 
 This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 
 ## Overview
 
@@ -23,17 +8,17 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+- View the optimal layout for the site depending on their device's screen size ✔
+- See hover states for all interactive elements on the page ✔
 - Receive an error message when the `form` is submitted if:
-  - The `input` field is empty
-  - The email address is not formatted correctly
+  - The `input` field is empty ✔
+  - The email address is not formatted correctly ✔
 
 ### Screenshot
 
-<!-- ![Laptop](../screen%20capture//base-apparel-laptop.jpeg) -->
-![Desktop](../screen%20capture//base-apparel-desktop.jpeg)
-
+![smartphone](./screenshot/smartphone.jpeg)
+![Desktop](./screenshot/desktop.jpeg)
+![Desktop](./screenshot/desktop%20error.jpeg)
 
 ### Links
 
@@ -44,11 +29,10 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Tailwind CSS
+- HTML5
+- Tailwind
+- JavaScript
 - React
-
 
 ### What I learned
 
@@ -80,7 +64,6 @@ Code Snippets I'm Proud Of:
 }
 ```
 
-
 ### Continued development
 
 In future projects, I plan to:
@@ -89,20 +72,18 @@ In future projects, I plan to:
 - Explore advanced React patterns like context and hooks for better state management.
 - Enhance form validation by integrating more complex validation rules and user feedback.
 
-
 ### Useful resources
 
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation) - Essential for understanding utility-first styling.
 - [Formik Documentation](https://formik.org/docs) - Great for managing forms and validation in React.
 - [React Documentation](https://react.dev/) - For React component and state management best practices.
 
-
 ## Author
 
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-
 
 ## Acknowledgments
 

@@ -1,21 +1,6 @@
-# Frontend Mentor - Contact form solution
+# Contact form
 
-This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
+This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
 
@@ -34,10 +19,10 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](../screen%20capture/contact-form-smartphone.jpeg)
-![desktop](../screen%20capture/contact-form-desktop.jpeg)
-![ligthouse score](./src/assets/screenshot/litgthouse-result.PNG)
-
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20error.jpeg)
+![ligthouse score](./screenshot/litgthouse-result.PNG)
 
 ### Links
 
@@ -48,17 +33,14 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
-- Tailwind CSS
+- Tailwind
 - TypeScript
 - SVGR
 - Formik
 - Yup
-- [React](https://reactjs.org/) - JS library
+- React
 
 
 ### What I learned
@@ -66,7 +48,6 @@ Users should be able to:
 I learned how to create components following the logic of Shadcn. By using Shadcn, my code becomes consistent across the project.
 
 I also practice accessibility for forms and discovered new attributes.
-
 
 ### Continued development
 
@@ -81,15 +62,13 @@ className={`${values.queryType === "general" && "bg-background"}`}
 
 ```jsx
 // Hide element from layout but keep it visible to screen reader
-className="sr-only"
+className = "sr-only";
 ```
-
 
 ### Useful resources
 
 - [Shadcn ui](https://ui.shadcn.com/) - Shadcn Ui docs
 - [Formik](https://formik.org/docs/tutorial) - Formik docs.
-
 
 ## Author
 
@@ -97,7 +76,6 @@ className="sr-only"
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-
 
 ## Acknowledgments
 

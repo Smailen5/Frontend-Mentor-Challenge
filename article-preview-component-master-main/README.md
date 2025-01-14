@@ -1,18 +1,6 @@
-# Frontend Mentor - Article preview component solution
+# Article preview component
 
 This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
-
 
 ## Overview
 
@@ -20,15 +8,15 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 Users should be able to:
 
-- View the optimal layout for the component depending on their device's screen size
-- See the social media share links when they click the share icon
+- View the optimal layout for the component depending on their device's screen size ✔
+- See the social media share links when they click the share icon ✔
 
 ### Screenshot
 
-![](./screenshot/smartphone.jpeg)
-![](./screenshot/smartphone%20active.jpeg)
-![](./screenshot/desktop.jpeg)
-![](./screenshot/desktop%20active.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![smartphone](./screenshot/smartphone%20active.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20active.jpeg)
 
 ### Links
 
@@ -39,14 +27,10 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - Mobile-first workflow
 - Tailwind
-- JavaScript Vanilla
-
+- JavaScript
 
 ### What I learned
 
@@ -81,13 +65,13 @@ function addClassOnScreenWidth(className, screenWidth) {
 }
 
 window.onload = () => {
-  addClassOnScreenWidth("animate-pulse", 1024)
-}
+  addClassOnScreenWidth("animate-pulse", 1024);
+};
 ```
-
 
 ## Author
 
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

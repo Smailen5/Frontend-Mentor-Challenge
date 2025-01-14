@@ -1,16 +1,10 @@
-# Frontend Mentor - QR code component
+# QR code component
 
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
 This is my first challenge on [Frontend Mentor](https://www.frontendmentor.io/home)
 
-## Table of contents
-
-- [Screenshot](#screenshot)
-- [Links](#links)
-- [Built with](#built-with)
-- [Author](#author)
 
 ### Screenshot
 
@@ -31,13 +25,13 @@ This is my first challenge on [Frontend Mentor](https://www.frontendmentor.io/ho
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
+- CSS
 
 ## Author
 
-- Website - [smailen](https://github.com/Smailen5)
-- Frontend Mentor - [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 

@@ -1,25 +1,15 @@
-## Table of contents
-
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+# Result summary component
 
 ### The challenge
 
-- The challenge was starting from the mobile version and then adapting it to the desktop
-- See hover state for button element on the page
+- The challenge was starting from the mobile version and then adapting it to the desktop ✔
+- See hover state for button element on the page ✔
 
 ### Screenshot
 
-![Capture mobile version](./screenshot/result-summary-mobile-version.jpeg)
-![Capture web version](./screenshot/result-summary-web-version.jpeg)
-![Capture web version button active](./screenshot/result-summary-web-version-active-button.jpeg)
+![capture smartphone version](./screenshot/result-summary-mobile-version.jpeg)
+![capture desktop version](./screenshot/result-summary-web-version.jpeg)
+![capture desktop version button active](./screenshot/result-summary-web-version-active-button.jpeg)
 
 ### Links
 
@@ -30,9 +20,8 @@
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
+- CSS
 - Mobile-first workflow
 
 ### What I learned
@@ -45,8 +34,9 @@ I want to focus more on Media Queries, I understand the basics but, I want to cr
 
 ## Author
 
-- GitHub - [Smailen5](https://github.com/Smailen5)
-- Frontend Mentor - [Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 
 ## Acknowledgments

@@ -1,29 +1,19 @@
-# Frontend Mentor - Profile card component solution
+# Profile card component
 
 This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
 
 
 ## Overview
 
 ### The challenge
 
-- Costruire il progetto secondo i disegni forniti
+- View the optimal layout depending on their device's screen size 
+
 
 ### Screenshot
 
-![Desktop](./images/desktop.jpeg)
-![Smartphone](./images/Phone.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
 
 
 ### Links
@@ -35,9 +25,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
+- CSS
 
 
 ### What I learned
@@ -61,6 +50,7 @@ body {
 
 ## Author
 
-- Website - [Smailen](https://github.com/Smailen5)
-- Frontend Mentor - [@Smailen](https://www.frontendmentor.io/profile/Smailen5)
-- Linkedin - [@Smailen](https://www.linkedin.com/in/smailen-vargas/)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

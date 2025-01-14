@@ -1,19 +1,6 @@
-# Frontend Mentor - 3-column preview card component solution
+# 3 Column preview card component
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
 
@@ -21,14 +8,14 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- View the optimal layout depending on their device's screen size ✔
+- See hover states for interactive elements ✔
 
 ### Screenshot
 
-![](./screenshot/desktop.jpeg)
-![](./screenshot/smartphone.jpeg)
-
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20hover.jpeg)
 
 ### Links
 
@@ -39,10 +26,8 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-
+- HTML5
+- CSS
 
 ### What I learned
 
@@ -50,19 +35,17 @@ Ho utilizzato per la prima volta la regola !important, in quanto il selettore us
 
 ```css
 .button:hover {
-    color: #F2F2F2 !important;
+  color: #f2f2f2 !important;
 }
 ```
-
 
 ### Continued development
 
 In futuro vorrei aggiungere degli effiti di slide con JavaScript e magari animare le icone svg
 
-
 ## Author
 
-- Website - [Smailen](https://github.com/Smailen5)
-- Frontend Mentor - [@Smaylen5](https://www.frontendmentor.io/profile/Smailen5)
-- Linkedin - [@smailen](https://www.linkedin.com/in/smailen-vargas/)
-- Threads - [@smailen_art](https://www.threads.net/@smailen_art)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

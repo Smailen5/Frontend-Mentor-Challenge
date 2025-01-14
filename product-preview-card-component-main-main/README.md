@@ -1,15 +1,6 @@
-# Frontend Mentor - Product preview card component solution
+# Product preview card component
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
-
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
 
 
 ## Overview
@@ -18,13 +9,15 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+- View the optimal layout depending on their device's screen size ✔
+- See hover and focus states for interactive elements ✔
 
 ### Screenshot
 
-![Pc version](./images/Laptop.jpeg)
-![Smartphone version](./images/Phone%20Portrait.jpeg)
+![smartphone](./screenshot/smartphone.jpeg)
+![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshot/desktop%20hover.jpeg)
+
 
 ### Links
 
@@ -35,12 +28,13 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
+- CSS
 - Mobile-first workflow
 
 ## Author
 
-- Frontend Mentor - [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)

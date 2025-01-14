@@ -7,7 +7,7 @@ interface TopArticleSectionProps {
 
 export const TopArticleSection = ({ id }: TopArticleSectionProps) => {
   return (
-    <div id={id} className="flex flex-col gap-8 xl:h-40 xl:flex-row">
+    <div id={id} className="flex flex-col gap-8 xl:h-32 xl:flex-row">
       {articleContents.map((article) => (
         <ArticleCard key={article.number} {...article} />
       ))}

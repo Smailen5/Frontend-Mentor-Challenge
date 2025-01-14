@@ -53,13 +53,14 @@ export const ArticleCard = ({
       />
 
       {/* Contenuto dell'articolo */}
-      <div className="flex flex-col justify-between xl:justify-normal xl:space-y-2">
+      <div className="flex flex-col justify-between xl:justify-start xl:space-y-2">
         <div className="text-start text-4xl font-bold text-soft-red">
           {number}
         </div>
         <NewsItem
-          headingClass="text-very-dark-blue text-lg xl:text-xl xl:font-extrabold"
-          paragraphClass="text-dark-grayish-blue text-sm"
+          containerClass="xl:flex xl:flex-col xl:justify-between xl:h-full"
+          headingClass="text-very-dark-blue text-lg xl:text-base xl:font-extrabold"
+          paragraphClass="text-dark-grayish-blue text-sm xl:text-sm"
           heading={title}
           paragraph={content}
           isLast

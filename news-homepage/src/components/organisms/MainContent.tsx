@@ -25,10 +25,10 @@ import web3 from "../../assets/images/image-web-3-mobile.jpg";
  */
 export const MainContent = () => {
   return (
-    <main className="xl:space-y-16">
+    <main className="space-y-8 xl:space-y-12">
       <div className="xl:grid xl:grid-cols-3 xl:gap-x-8">
-        <div className="xl:col-span-2 xl:grid xl:grid-rows-2">
-          <picture className="xl:col-span-3">
+        <div className="xl:col-span-2">
+          <picture>
             <source srcSet={web3Desktop.src} media="(min-width:768px)" />
             <Image
               src={web3.src}
@@ -45,7 +45,7 @@ export const MainContent = () => {
               content="We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"
               buttonText="Read More"
               onButtonClick="readMore"
-              className="xl:col-span-3"
+              className="mt-6 xl:mt-8"
             />
           </ButtonProvider>
         </div>

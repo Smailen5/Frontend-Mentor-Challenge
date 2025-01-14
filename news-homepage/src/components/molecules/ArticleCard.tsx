@@ -49,16 +49,16 @@ export const ArticleCard = ({
         alt="retro pc"
         width={100}
         height={150}
-        className="aspect-[4/5] lg:h-32"
+        className="aspect-[4/5] xl:h-32"
       />
 
       {/* Contenuto dell'articolo */}
-      <div className="flex flex-col justify-between lg:justify-normal lg:space-y-2">
+      <div className="flex flex-col justify-between xl:justify-normal xl:space-y-2">
         <div className="text-start text-4xl font-bold text-soft-red">
           {number}
         </div>
         <NewsItem
-          headingClass="text-very-dark-blue text-lg lg:text-xl lg:font-extrabold"
+          headingClass="text-very-dark-blue text-lg xl:text-xl xl:font-extrabold"
           paragraphClass="text-dark-grayish-blue text-sm"
           heading={title}
           paragraph={content}

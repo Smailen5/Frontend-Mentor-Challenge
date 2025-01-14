@@ -4,7 +4,7 @@ import { Button } from "@/components/atoms/Button";
 import { Heading } from "@/components/atoms/Heading";
 import { Paragraph } from "@/components/atoms/Paragraph";
 import { useButtonContext } from "@/config/buttonContext";
-import { twMerge } from 'tailwind-merge';
+import { twMerge } from "tailwind-merge";
 
 type ButtonType = "primary" | "secondary" | "readMore" | "submit";
 
@@ -26,10 +26,15 @@ export const ArticleSection = ({
   const { buttonActions } = useButtonContext();
 
   return (
-    <div className={twMerge("my-4 *:space-y-4 lg:mt-8 lg:grid lg:grid-cols-2", className)}>
+    <div
+      className={twMerge(
+        "my-4 *:space-y-4 xl:mt-8 xl:grid xl:grid-cols-2",
+        className,
+      )}
+    >
       <Heading className="text-6xl">{title}</Heading>
-      <div className="lg:grid lg:grid-cols-2 lg:justify-between lg:gap-y-4">
-        <Paragraph className="lg:col-span-2">{content}</Paragraph>
+      <div className="xl:grid xl:grid-cols-2 xl:justify-between xl:gap-y-4">
+        <Paragraph className="xl:col-span-2">{content}</Paragraph>
         <Button onClick={buttonActions[onButtonClick]}>{buttonText}</Button>
       </div>
     </div>

@@ -6,7 +6,7 @@ import { MainContent } from "@/components/organisms/MainContent";
 export default function Home() {
   return (
     <div className="p-4">
-      {/* <picture className='lg:hidden'>
+      {/* <picture className='xl:hidden'>
         <source srcSet={web3Desktop.src} media="(min-width:768px)" />
         <Image
           src={web3.src}

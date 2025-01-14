@@ -8,7 +8,7 @@ export const Paragraph = ({ children, className }: ParagraphProps) => {
   return (
     <p
       className={twMerge(
-        "text-medium leading-6 text-dark-grayish-blue lg:text-lg",
+        "text-medium leading-6 text-dark-grayish-blue xl:text-lg",
         className,
       )}
     >

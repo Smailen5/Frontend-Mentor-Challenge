@@ -1,9 +1,13 @@
 import { ArticleCard } from "../molecules/ArticleCard";
 import { articleContents } from "../../config/contents";
 
-export const TopArticleSection = () => {
+interface TopArticleSectionProps {
+  id: string;
+}
+
+export const TopArticleSection = ({id}:TopArticleSectionProps) => {
   return (
-    <div className='flex flex-col gap-8'>
+    <div id={id} className='flex flex-col gap-8'>
       {articleContents.map((article) => (
         <ArticleCard key={article.number} {...article} />
       ))}

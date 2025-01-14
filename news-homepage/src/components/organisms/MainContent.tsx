@@ -31,9 +31,9 @@ export const MainContent = () => {
         />
       </ButtonProvider>
 
-      <NewSection />
+      <NewSection id="new" />
 
-      <TopArticleSection />
+      <TopArticleSection id='popular' />
     </main>
   );
 };

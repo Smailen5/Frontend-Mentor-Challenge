@@ -3,6 +3,10 @@ import { ArticleSection } from "../molecules/ArticleSection";
 import { NewSection } from "../molecules/NewSection";
 import { TopArticleSection } from "./TopArticleSection";
 
+import Image from "next/image";
+import web3Desktop from "../../assets/images/image-web-3-desktop.jpg";
+import web3 from "../../assets/images/image-web-3-mobile.jpg";
+
 /**
  * MainContent - Componente organismo che raggruppa le sezioni principali della pagina
  *
@@ -21,19 +25,34 @@ import { TopArticleSection } from "./TopArticleSection";
  */
 export const MainContent = () => {
   return (
-    <main>
-      <ButtonProvider>
-        <ArticleSection
-          title="The Bright Future of Web 3.0?"
-          content="We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"
-          buttonText="Read More"
-          onButtonClick="readMore"
-        />
-      </ButtonProvider>
+    <main className='space-y-8'>
+      <div className="grid grid-cols-3 gap-x-8">
+        <div className="col-span-2 lg:grid lg:grid-rows-2">
+          <picture>
+            <source srcSet={web3Desktop.src} media="(min-width:768px)" />
+            <Image
+              src={web3.src}
+              alt="web"
+              layout="responsive"
+              width={375}
+              height={250}
+            />
+          </picture>
 
-      <NewSection id="new" />
+          <ButtonProvider>
+            <ArticleSection
+              title="The Bright Future of Web 3.0?"
+              content="We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"
+              buttonText="Read More"
+              onButtonClick="readMore"
+            />
+          </ButtonProvider>
+        </div>
 
-      <TopArticleSection id='popular' />
+        <NewSection id="new" />
+      </div>
+
+      <TopArticleSection id="popular" />
     </main>
   );
 };

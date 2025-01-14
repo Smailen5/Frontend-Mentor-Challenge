@@ -23,10 +23,12 @@ export const ArticleSection = ({
   const { buttonActions } = useButtonContext();
 
   return (
-    <div className="my-4 space-y-4">
+    <div className="my-4 *:space-y-4 lg:grid lg:grid-cols-2">
       <Heading>{title}</Heading>
-      <Paragraph>{content}</Paragraph>
-      <Button onClick={buttonActions[onButtonClick]}>{buttonText}</Button>
+      <div>
+        <Paragraph>{content}</Paragraph>
+        <Button onClick={buttonActions[onButtonClick]}>{buttonText}</Button>
+      </div>
     </div>
   );
 };

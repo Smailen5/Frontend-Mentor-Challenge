@@ -48,7 +48,7 @@ export const NewsItem = ({
       <div className={twMerge("space-y-2", containerClass)}>
         <Heading
           className={twMerge(
-            "text-xl font-semibold text-off-white xl:text-2xl",
+            "text-xl font-semibold text-off-white lg:cursor-pointer lg:transition-colors lg:duration-500 lg:ease-in-out xl:text-2xl",
             headingClass,
           )}
         >

@@ -59,7 +59,7 @@ export const ArticleCard = ({
         </div>
         <NewsItem
           containerClass="xl:flex xl:flex-col xl:justify-between xl:h-full"
-          headingClass="text-very-dark-blue text-lg xl:text-base xl:font-extrabold"
+          headingClass="text-very-dark-blue text-lg xl:text-base xl:font-extrabold lg:hover:text-soft-red"
           paragraphClass="text-dark-grayish-blue text-sm xl:text-sm"
           heading={title}
           paragraph={content}

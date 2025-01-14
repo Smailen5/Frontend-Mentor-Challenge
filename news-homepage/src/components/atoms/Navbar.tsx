@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <>
       <div className="fixed left-0 top-0 z-40 w-full bg-background">
-        <nav className="mx-auto flex max-w-screen-xl items-center justify-between p-4 px-4 pt-6 xl:px-20 md:py-10 lg:py-14 xl:pt-20">
+        <nav className="mx-auto flex max-w-screen-xl items-center justify-between p-4 px-4 pt-6 md:py-10 lg:py-14 xl:px-20 xl:pt-20">
           <Link href="/">
             <Image
               src={"/logo.svg"}
@@ -29,7 +29,12 @@ export const Navbar = () => {
               {navigationLinks.map((link, index) => {
                 return (
                   <li key={index}>
-                    <Link href={link.href}>{link.title}</Link>
+                    <Link
+                      href={link.href}
+                      className="hover:text-soft-red transition-colors duration-500 ease-in-out"
+                    >
+                      {link.title}
+                    </Link>
                   </li>
                 );
               })}

@@ -24,7 +24,7 @@ export const NewSection = ({ id }: NewSectionProps) => {
             paragraph={news.content}
             isLast={index === newsContents.length - 1}
             containerClass="xl:my-8"
-            headingClass='xl:text-xl'
+            headingClass='xl:text-xl lg:hover:text-soft-orange'
             paragraphClass='xl:text-sm'
           />
         ))}

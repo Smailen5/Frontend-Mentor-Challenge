@@ -23,7 +23,7 @@ export const ArticleSection = ({
   const { buttonActions } = useButtonContext();
 
   return (
-    <div className="my-4 *:space-y-4 lg:my-8 lg:grid lg:grid-cols-2">
+    <div className="my-4 *:space-y-4 lg:mt-8 lg:grid lg:grid-cols-2">
       <Heading className="text-6xl">{title}</Heading>
       <div className="lg:grid lg:grid-cols-2 lg:justify-between lg:gap-y-4">
         <Paragraph className="lg:col-span-2">{content}</Paragraph>

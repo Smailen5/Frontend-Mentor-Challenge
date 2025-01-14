@@ -25,9 +25,9 @@ import web3 from "../../assets/images/image-web-3-mobile.jpg";
  */
 export const MainContent = () => {
   return (
-    <main className="space-y-8">
-      <div className="grid grid-cols-3 gap-x-8">
-        <div className="col-span-2 lg:grid lg:grid-rows-[auto_1fr]">
+    <main className="lg:space-y-16">
+      <div className="lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <div className="lg:col-span-2 lg:grid lg:grid-rows-[auto_1fr]">
           <picture>
             <source srcSet={web3Desktop.src} media="(min-width:768px)" />
             <Image

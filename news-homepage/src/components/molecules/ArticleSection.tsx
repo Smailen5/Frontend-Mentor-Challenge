@@ -28,13 +28,13 @@ export const ArticleSection = ({
   return (
     <div
       className={twMerge(
-        "my-4 *:space-y-4 lg:m-0 xl:grid xl:grid-cols-2",
+        "my-4 *:space-y-6 lg:m-0 xl:grid xl:grid-cols-2",
         className,
       )}
     >
       <Heading className="text-6xl">{title}</Heading>
-      <div className="xl:grid xl:grid-cols-2 xl:justify-between xl:gap-y-4">
-        <Paragraph className="xl:col-span-2">{content}</Paragraph>
+      <div className="xl:grid xl:grid-cols-2 xl:justify-between xl:gap-y-6">
+        <Paragraph className="xl:col-span-2 xl:text-base">{content}</Paragraph>
         <Button onClick={buttonActions[onButtonClick]}>{buttonText}</Button>
       </div>
     </div>

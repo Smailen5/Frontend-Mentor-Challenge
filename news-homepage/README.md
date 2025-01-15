@@ -48,7 +48,7 @@ Users should be able to:
 - Mobile-first workflow
 - Next.js
 - Tailwind
-- Typescript
+- TypeScript
 - pnpm
 - standard-version
 

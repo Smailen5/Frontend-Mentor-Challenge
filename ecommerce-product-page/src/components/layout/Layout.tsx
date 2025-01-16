@@ -1,4 +1,4 @@
-import Navbar from "../molecules/Navbar";
+import Navbar from "@/components/molecules/Navbar";
 
 type LayoutProps = {
   children: React.ReactNode;

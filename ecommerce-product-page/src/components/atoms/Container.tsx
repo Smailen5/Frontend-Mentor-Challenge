@@ -13,9 +13,9 @@ const containerVariants = cva("", {
       /** Stile base con sfondo predefinito */
       default: "bg-background",
       /** Layout per contenitori di immagini con flex e spaziatura */
-      image: "flex items-center gap-4",
+      image: "flex items-center gap-6",
       /** Layout per la barra di navigazione con flex e padding */
-      navbar: "mx-auto flex h-full items-center justify-between px-4",
+      navbar: "mx-auto flex h-full items-center justify-between px-6",
       /** Wrapper principale con altezza e larghezza fisse */
       wrapper: "bg-background h-16 w-full",
     },

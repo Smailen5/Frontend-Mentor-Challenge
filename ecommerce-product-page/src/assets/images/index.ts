@@ -19,6 +19,12 @@ import imageProduct1 from "@/assets/images/image-product-1.jpg";
 import imageProduct2 from "@/assets/images/image-product-2.jpg";
 import imageProduct3 from "@/assets/images/image-product-3.jpg";
 import imageProduct4 from "@/assets/images/image-product-4.jpg";
+const imageProducts = [
+  imageProduct1,
+  imageProduct2,
+  imageProduct3,
+  imageProduct4,
+];
 
 // Thumbnails
 import thumbnailProduct1 from "@/assets/images/image-product-1-thumbnail.jpg";
@@ -40,6 +46,7 @@ export {
   imageProduct2,
   imageProduct3,
   imageProduct4,
+  imageProducts,
   logo,
   thumbnailProduct1,
   thumbnailProduct2,

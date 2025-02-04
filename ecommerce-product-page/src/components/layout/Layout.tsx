@@ -4,13 +4,13 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-function Layout ({ children }: LayoutProps) {
+function Layout({ children }: LayoutProps) {
   return (
     <div>
       <Navbar />
-      <main>{children}</main>
+      <main className="container mx-auto">{children}</main>
     </div>
   );
-};
+}
 
 export default Layout;

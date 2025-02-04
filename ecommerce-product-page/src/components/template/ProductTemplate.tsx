@@ -1,8 +1,9 @@
+import Layout from '../layout/Layout'
 
 
 function ProductTemplate() {
   return (
-    <div>Product Template</div>
+    <Layout>Product Template</Layout>
   )
 }
 

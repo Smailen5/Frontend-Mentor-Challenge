@@ -1,6 +1,66 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --color-background: var(--white);
+  --color-foreground: var(--very-dark-blue);
+
+  --color-card: var(--white);
+  --color-card-foreground: var(--very-dark-blue);
+
+  --color-popover: var(--white);
+  --color-popover-foreground: var(--very-dark-blue);
+
+  --color-primary: var(--orange);
+  --color-primary-foreground: var(--very-dark-blue);
+
+  --color-secondary: var(--light-grayish-blue);
+  --color-secondary-foreground: var(--very-dark-blue);
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: var(--grayish-blue);
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: var(--dark-grayish-blue);
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @layer base {
   :root {

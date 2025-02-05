@@ -1,11 +1,21 @@
-import { Product } from "@/page/Product";
+/**
+ * @file App.tsx
+ * @description Main application component with routing setup
+ */
 
-function App() {
+import { routes } from "@/routes/routes";
+import { BrowserRouter, useRoutes } from "react-router-dom";
+
+const AppRoutes = () => {
+  return useRoutes(routes);
+};
+
+const App = () => {
   return (
-    <>
-      <Product />
-    </>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -4,7 +4,7 @@ export interface ProductData {
   description: string;
   price: {
     original: number;
-    current: number;
+    // current: number;
     discount?: number;
   };
 }

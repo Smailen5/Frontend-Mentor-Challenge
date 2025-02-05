@@ -40,7 +40,7 @@ function ProductTemplate() {
         </div>
 
         {/* Componente aggiungi al carrello */}
-        <button className="bg-primary shadow-primary flex h-14 w-full items-center justify-center gap-4 rounded-lg font-bold">
+        <button className="bg-primary shadow-primary/25 flex h-14 w-full items-center justify-center gap-4 rounded-lg font-bold shadow-xl">
           <img src={iconCart} alt="cart" />
           Add to cart
         </button>

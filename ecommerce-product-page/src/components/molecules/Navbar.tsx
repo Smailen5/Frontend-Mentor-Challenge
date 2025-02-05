@@ -8,7 +8,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="container mx-auto flex justify-between bg-background p-4 px-6 pb-6">
+      <nav className="bg-background container mx-auto flex justify-between p-4 pb-6">
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(true)}>
             <Image src={iconMenu} alt="menu" />

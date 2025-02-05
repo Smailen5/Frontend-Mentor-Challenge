@@ -1,8 +1,9 @@
-import { iconCart, iconMinus, iconPlus } from "@/assets/images";
+import { iconCart } from "@/assets/images";
 import Layout from "../layout/Layout";
 import CarouselImage from "../molecules/CarouselImage";
-import ProductDescription from '../molecules/ProductDescription';
-import ProductPrice from '../molecules/ProductPrice';
+import ProductDescription from "../molecules/ProductDescription";
+import ProductPrice from "../molecules/ProductPrice";
+import ProductQuantity from "../molecules/ProductQuantity";
 
 function ProductTemplate() {
   return (
@@ -17,21 +18,7 @@ function ProductTemplate() {
         <ProductPrice />
 
         {/* Componente quantità */}
-        <div
-          className="bg-secondary flex h-14 items-center justify-between rounded-lg px-6"
-          role="group"
-          aria-label="Quantity selector"
-        >
-          <button type="button" aria-label="Decrease quantity">
-            <img src={iconMinus} aria-hidden="true" />
-          </button>
-          <output className="font-bold" aria-label="Current quantity">
-            0
-          </output>
-          <button type="button" aria-label="Increase quantity">
-            <img src={iconPlus} aria-hidden="true" />
-          </button>
-        </div>
+        <ProductQuantity />
 
         {/* Componente aggiungi al carrello */}
         <button

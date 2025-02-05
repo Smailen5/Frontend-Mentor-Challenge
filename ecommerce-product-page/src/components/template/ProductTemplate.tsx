@@ -46,22 +46,23 @@ function ProductTemplate() {
           aria-label="Quantity selector"
         >
           <button type="button" aria-label="Decrease quantity">
-            <img src={iconMinus} alt="" aria-hidden="true" />
+            <img src={iconMinus} aria-hidden="true" />
           </button>
           <output className="font-bold" aria-label="Current quantity">
             0
           </output>
           <button type="button" aria-label="Increase quantity">
-            <img src={iconPlus} alt="" aria-hidden="true" />
+            <img src={iconPlus} aria-hidden="true" />
           </button>
         </div>
 
         {/* Componente aggiungi al carrello */}
         <button
+          type="button"
           className="bg-primary shadow-primary/25 focus:ring-primary/50 flex h-14 w-full items-center justify-center gap-4 rounded-lg font-bold text-white shadow-xl hover:opacity-90 focus:ring-2 focus:outline-none"
           aria-label="Add to cart"
         >
-          <img src={iconCart} alt="" aria-hidden="true" className="h-5 w-5" />
+          <img src={iconCart} aria-hidden="true" className="h-5 w-5" />
           <span>Add to cart</span>
         </button>
       </div>

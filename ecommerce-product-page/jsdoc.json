@@ -11,7 +11,29 @@
   },
   "opts": {
     "destination": "./src/docs",
-    "recurse": true
+    "recurse": true,
+    "template": "node_modules/clean-jsdoc-theme",
+    "theme_opts": {
+      "default_theme": "dark",
+      "title": "E-commerce Documentation",
+      "menu": [
+        {
+          "title": "Website",
+          "link": "/",
+          "target": "_self"
+        }
+      ],
+      "meta": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        }
+      ],
+      "search": true,
+      "create_style": true,
+      "include_css": [],
+      "include_js": []
+    }
   },
   "tags": {
     "allowUnknownTags": true

@@ -1,9 +1,48 @@
+/**
+ * @file CarouselImage.tsx
+ * @description Image carousel component with next/previous navigation and animations
+ */
+
 import { iconNext, iconPrevious, imageProducts } from "@/assets/images";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
+/**
+ * Slide animation variants configuration
+ * @typedef {Object} SlideVariants
+ * @property {Function} enter - Animation for entering slides
+ * @property {Object} center - Animation for centered slides
+ * @property {Function} exit - Animation for exiting slides
+ */
+
+/**
+ * CarouselImage component
+ * @component
+ * @description A carousel component that displays product images with animated transitions.
+ * Features include:
+ * - Next/Previous navigation buttons
+ * - Smooth slide animations
+ * - Responsive image display
+ * - Keyboard navigation support
+ *
+ * @example
+ * ```tsx
+ * <CarouselImage />
+ * ```
+ *
+ * @returns {JSX.Element} An image carousel with:
+ * - Navigation buttons
+ * - Animated image transitions
+ * - Full-width responsive display
+ *
+ * @accessibility
+ * - Uses semantic button elements
+ * - Includes aria-labels for navigation
+ * - Supports keyboard navigation
+ */
 const CarouselImage = () => {
   const [currentImage, setCurrentImage] = useState(0);
+
   const [direction, setDirection] = useState(0);
 
   const handleNextImage = () => {

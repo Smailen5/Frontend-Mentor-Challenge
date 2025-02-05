@@ -1,3 +1,8 @@
+/**
+ * @file ProductTemplate.tsx
+ * @description Template component for the product page layout
+ */
+
 import { iconCart } from "@/assets/images";
 import Layout from "../layout/Layout";
 import CarouselImage from "../molecules/CarouselImage";
@@ -5,6 +10,18 @@ import ProductDescription from "../molecules/ProductDescription";
 import ProductPrice from "../molecules/ProductPrice";
 import ProductQuantity from "../molecules/ProductQuantity";
 
+/**
+ * ProductTemplate component
+ * @component
+ * @description Renders the main product page layout including carousel, description, price, quantity selector and add to cart button
+ *
+ * @example
+ * ```tsx
+ * <ProductTemplate />
+ * ```
+ *
+ * @returns {JSX.Element} A complete product page layout
+ */
 function ProductTemplate() {
   return (
     <Layout>

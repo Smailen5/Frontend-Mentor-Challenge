@@ -1,5 +1,25 @@
+/**
+ * @file ProductPrice.tsx
+ * @description Component for displaying product price information including current price, discount, and original price.
+ */
+
 import { sneakers } from "@/data";
 
+/**
+ * ProductPrice component
+ * @component
+ * @description Renders product price information including current price, discount, and original price
+ *
+ * @example
+ * ```tsx
+ * <ProductPrice />
+ * ```
+ *
+ * @returns {JSX.Element} A product price information section with:
+ * - Current price
+ * - Discount percentage (if applicable)
+ * - Original price (if applicable)
+ */
 const ProductPrice = () => {
   const { price } = sneakers;
 

@@ -36,7 +36,7 @@ const CarouselImage = () => {
   };
 
   return (
-    <div className="relative h-80 overflow-hidden">
+    <div className="relative h-[300px] overflow-hidden">
       <button
         className="bg-background absolute top-1/2 left-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
         onClick={handlePrevImage}
@@ -57,7 +57,7 @@ const CarouselImage = () => {
             x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 },
           }}
-          className="absolute h-full w-full object-cover"
+          className="absolute h-[300px] w-full object-cover"
         />
       </AnimatePresence>
 

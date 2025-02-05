@@ -15,35 +15,28 @@ function ProductTemplate() {
           </h2>
           <h1 className="text-3xl font-bold">Fall Limited Edition Sneakers</h1>
         </div>
-        <p className="text-base text-gray-500" role="contentinfo">
+        <p className="text-base text-gray-500">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they'll withstand everything
           the weather can offer.
         </p>
 
         {/* Componente prezzo */}
-        <div
-          className="my-8 flex h-8 items-center justify-between font-bold"
-          role="contentinfo"
-          aria-label="Product price"
-        >
+        <div className="my-8 flex h-8 items-center justify-between font-bold">
           <div className="flex gap-4">
-            <div className="text-3xl" aria-label="Current price">
+            <p className="text-3xl">
+              <span className="sr-only">Current price:</span>
               $125.00
-            </div>
-            <span
-              className="flex items-center justify-center rounded-lg bg-black px-3 text-white"
-              aria-label="Discount"
-            >
+            </p>
+            <span className="flex items-center justify-center rounded-lg bg-black px-3 text-white">
+              <span className="sr-only">Discount:</span>
               50%
             </span>
           </div>
-          <span
-            className="text-accent-foreground text-base"
-            aria-label="Original price"
-          >
+          <p className="text-accent-foreground text-base">
+            <span className="sr-only">Original price:</span>
             $250.00
-          </span>
+          </p>
         </div>
 
         {/* Componente quantità */}
@@ -52,13 +45,13 @@ function ProductTemplate() {
           role="group"
           aria-label="Quantity selector"
         >
-          <button aria-label="Decrease quantity">
+          <button type="button" aria-label="Decrease quantity">
             <img src={iconMinus} alt="" aria-hidden="true" />
           </button>
-          <span className="font-bold" aria-label="Current quantity">
+          <output className="font-bold" aria-label="Current quantity">
             0
-          </span>
-          <button aria-label="Increase quantity">
+          </output>
+          <button type="button" aria-label="Increase quantity">
             <img src={iconPlus} alt="" aria-hidden="true" />
           </button>
         </div>

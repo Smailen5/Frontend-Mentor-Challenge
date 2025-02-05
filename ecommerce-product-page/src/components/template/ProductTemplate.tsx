@@ -35,7 +35,9 @@ function ProductTemplate() {
           </div>
           <p className="text-accent-foreground text-base">
             <span className="sr-only">Original price:</span>
-            $250.00
+            <del className="decoration-accent-foreground line-through decoration-1">
+              $250.00
+            </del>
           </p>
         </div>
 
@@ -59,7 +61,7 @@ function ProductTemplate() {
         {/* Componente aggiungi al carrello */}
         <button
           type="button"
-          className="bg-primary shadow-primary/25 focus:ring-primary/50 flex h-14 w-full items-center justify-center gap-4 rounded-lg font-bold text-white shadow-xl hover:opacity-90 focus:ring-2 focus:outline-none"
+          className="bg-primary shadow-primary/25 focus:ring-primary/50 text-primary-foreground flex h-14 w-full items-center justify-center gap-4 rounded-lg font-bold shadow-xl hover:opacity-75 focus:ring-2 focus:outline-none"
           aria-label="Add to cart"
         >
           <img src={iconCart} aria-hidden="true" className="h-5 w-5" />

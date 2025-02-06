@@ -6,7 +6,6 @@
 import { iconCart, iconMenu, imageAvatar, logo } from "@/assets/images";
 import Image from "@/components/atoms/Image";
 import { useState } from "react";
-import { Button } from "../ui/button";
 import { Sidebar } from "./Sidebar";
 
 /**
@@ -27,17 +26,20 @@ function Navbar() {
     <>
       <nav className="bg-background container mx-auto flex justify-between p-4 pb-6">
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" onClick={() => setIsOpen(true)}>
+          <button
+            className="rounded-lg p-2 hover:bg-gray-100"
+            onClick={() => setIsOpen(true)}
+          >
             <Image src={iconMenu} alt="menu" />
-          </Button>
+          </button>
 
           <img src={logo} alt="logo" />
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon">
+          <button className="rounded-lg p-2 hover:bg-gray-100">
             <img src={iconCart} alt="cart" />
-          </Button>
+          </button>
           <img src={imageAvatar} alt="user" className="h-8 w-8" />
         </div>
       </nav>

@@ -1,11 +1,20 @@
 /**
  * @file routes.tsx
- * @description Application routes configuration
+ * @description Application routes configuration with lazy loading for documentation
  */
 
-import Documentation from "@/components/pages/Documentation";
+import Loading from "@/components/molecules/Loading";
 import { Product } from "@/page/Product";
+import { Suspense, lazy } from "react";
 import { RouteObject } from "react-router-dom";
+
+/**
+ * Lazy loaded Documentation component
+ * Only loaded when the /docs route is accessed
+ */
+const DocumentationLazy = lazy(
+  () => import("@/components/pages/Documentation"),
+);
 
 /**
  * Application routes configuration
@@ -18,6 +27,10 @@ export const routes: RouteObject[] = [
   },
   {
     path: "/docs",
-    element: <Documentation />,
+    element: (
+      <Suspense fallback={<Loading loadingName="documentation" />}>
+        <DocumentationLazy />
+      </Suspense>
+    ),
   },
 ];

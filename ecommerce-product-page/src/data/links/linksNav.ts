@@ -1,4 +1,4 @@
-import { linksNavProps } from "../types";
+import { linksNavProps } from "@/types";
 
 export const linksNav: linksNavProps[] = [
   {

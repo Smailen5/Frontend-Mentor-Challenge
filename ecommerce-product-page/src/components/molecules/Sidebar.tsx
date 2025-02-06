@@ -6,7 +6,7 @@
 import iconClose from "@/assets/images/icon-close.svg";
 import Image from "@/components/atoms/Image";
 import { linksNav } from "@/data/links/linksNav";
-import { SidebarProps } from "@/data/types";
+import { SidebarProps } from "@/types";
 
 /**
  * Sidebar component

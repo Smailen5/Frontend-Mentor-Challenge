@@ -1,4 +1,4 @@
-import { ProductData } from "../types";
+import { ProductData } from "@/types";
 
 export const sneakers: ProductData = {
   company: "Sneaker Company",

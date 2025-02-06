@@ -5,10 +5,6 @@
   /* Font personalizzato */
   --font-kumbh: "Kumbh Sans", sans-serif;
 
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
-
   --color-background: var(--white);
   --color-foreground: var(--very-dark-blue);
 

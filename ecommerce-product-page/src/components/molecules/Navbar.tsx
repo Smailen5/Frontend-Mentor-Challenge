@@ -4,6 +4,7 @@
  */
 
 import { iconCart, iconMenu, imageAvatar, logo } from "@/assets/images";
+import { Button } from "@/components/atoms/Button";
 import Image from "@/components/atoms/Image";
 import { useState } from "react";
 import { Sidebar } from "./Sidebar";
@@ -26,12 +27,15 @@ function Navbar() {
     <>
       <nav className="bg-background container mx-auto flex justify-between p-4 pb-6">
         <div className="flex items-center gap-2">
-          <button
-            className="rounded-lg p-2 hover:bg-gray-100"
+          <Button
+            variant={"ghost"}
+            size={"icon"}
+            rounded={"lg"}
+            className=""
             onClick={() => setIsOpen(true)}
           >
             <Image src={iconMenu} alt="menu" />
-          </button>
+          </Button>
 
           <img src={logo} alt="logo" />
         </div>

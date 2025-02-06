@@ -6,7 +6,7 @@
 import { cva } from "class-variance-authority";
 
 export const buttonVariants = cva(
-  "rounded-lg font-medium transition-colors focus:outline-none",
+  "font-medium transition-colors duration-300 ease-in-out focus:outline-none cursor-pointer",
   {
     variants: {
       variant: {
@@ -15,7 +15,14 @@ export const buttonVariants = cva(
       },
       size: {
         default: "h-10 px-4 py-2",
-        icon: "h-10 w-10 p-2",
+        icon: "h-10 w-10 p-2 flex items-center justify-center",
+      },
+      rounded: {
+        lg: "rounded-lg",
+        md: "rounded-md",
+        sm: "rounded-sm",
+        xs: "rounded-xs",
+        full: "rounded-full",
       },
     },
     defaultVariants: {

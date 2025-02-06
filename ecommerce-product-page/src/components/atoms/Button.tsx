@@ -27,10 +27,16 @@ interface ButtonProps
  * </Button>
  * ```
  */
-const Button = ({ className, variant, size, ...props }: ButtonProps) => {
+const Button = ({
+  className,
+  variant,
+  size,
+  rounded,
+  ...props
+}: ButtonProps) => {
   return (
     <button
-      className={twMerge(buttonVariants({ variant, size }), className)}
+      className={twMerge(buttonVariants({ variant, size, rounded }), className)}
       {...props}
     />
   );

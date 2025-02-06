@@ -1,34 +1,26 @@
+/**
+ * @file Sidebar.tsx
+ * @description Mobile navigation sidebar component with overlay
+ */
+
 import iconClose from "@/assets/images/icon-close.svg";
 import Image from "@/components/atoms/Image";
+import { linksNav } from "@/data/links/linksNav";
+import { SidebarProps } from "@/data/types";
 
-type SidebarProps = {
-  isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
-};
-
-const links = [
-  {
-    label: "collections",
-    href: "/collections",
-  },
-  {
-    label: "men",
-    href: "/men",
-  },
-  {
-    label: "women",
-    href: "/women",
-  },
-  {
-    label: "about",
-    href: "/about",
-  },
-  {
-    label: "contact",
-    href: "/contact",
-  },
-];
-
+/**
+ * Sidebar component
+ * @component
+ * @description Mobile navigation sidebar with dark overlay and animated transitions
+ *
+ * @example
+ * ```tsx
+ * <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+ * ```
+ *
+ * @param {SidebarProps} props - Component props
+ * @returns {JSX.Element} Sidebar with navigation links and overlay
+ */
 export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   return (
     <>
@@ -42,7 +34,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
 
       {/* Sidebar effettiva */}
       <div
-        className={`bg-background fixed left-0 top-0 z-30 h-screen w-2/3 transform transition-transform duration-300 ease-in-out ${
+        className={`bg-background fixed top-0 left-0 z-30 h-screen w-2/3 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -55,7 +47,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           />
 
           <ul className="flex flex-col gap-6">
-            {links.map((link) => {
+            {linksNav.map((link) => {
               return (
                 <li key={link.label}>
                   <a

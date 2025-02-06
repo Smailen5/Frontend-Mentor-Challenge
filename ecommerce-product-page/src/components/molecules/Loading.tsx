@@ -6,10 +6,11 @@
 import Layout from "../layout/Layout";
 
 /**
- * Loading component props
- * @typedef {Object} LoadingProps
- * @property {string} [loadingName] - Optional text to append to "Loading" message
+ * @interface LoadingProps
  */
+interface LoadingProps {
+  loadingName?: string;
+}
 
 /**
  * Loading component
@@ -26,7 +27,7 @@ import Layout from "../layout/Layout";
  * @param {string} [props.loadingName] - Optional text to append to "Loading" message
  * @returns {JSX.Element} A loading message within the main layout
  */
-const Loading = ({ loadingName }: { loadingName?: string }) => {
+const Loading = ({ loadingName }: LoadingProps) => {
   return (
     <Layout>
       <p className="p-4">Loading{loadingName ? ` ${loadingName}` : ""}...</p>

@@ -1,3 +1,18 @@
+/**
+ * @file types.ts
+ * @description Type definitions for product data and navigation links
+ */
+
+/**
+ * Product data interface
+ * @interface ProductData
+ * @property {string} company - Company name
+ * @property {string} title - Product title
+ * @property {string} description - Product description
+ * @property {Object} price - Product price information
+ * @property {number} price.original - Original product price
+ * @property {number} [price.discount] - Optional discount percentage
+ */
 export interface ProductData {
   company: string;
   title: string;
@@ -7,4 +22,26 @@ export interface ProductData {
     // current: number;
     discount?: number;
   };
+}
+
+/**
+ * Navigation link properties
+ * @interface linksNavProps
+ * @property {string} label - Display text for the link
+ * @property {string} href - URL destination for the link
+ */
+export interface linksNavProps {
+  label: string;
+  href: string;
+}
+
+/**
+ * Sidebar component props
+ * @interface SidebarProps
+ * @property {boolean} isOpen - Controls sidebar visibility
+ * @property {function} setIsOpen - Function to update sidebar state
+ */
+export interface SidebarProps {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 }

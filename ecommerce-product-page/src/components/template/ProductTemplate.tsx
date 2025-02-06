@@ -5,10 +5,14 @@
 
 import { iconCart } from "@/assets/images";
 import Layout from "../layout/Layout";
-import CarouselImage from "../molecules/CarouselImage";
+// import CarouselImage from "../molecules/CarouselImage";
+import { lazy, Suspense } from "react";
+import Loading from "../molecules/Loading";
 import ProductDescription from "../molecules/ProductDescription";
 import ProductPrice from "../molecules/ProductPrice";
 import ProductQuantity from "../molecules/ProductQuantity";
+
+const Carousel = lazy(() => import("../molecules/CarouselImage"));
 
 /**
  * ProductTemplate component
@@ -25,7 +29,9 @@ import ProductQuantity from "../molecules/ProductQuantity";
 function ProductTemplate() {
   return (
     <Layout>
-      <CarouselImage />
+      <Suspense fallback={<Loading />}>
+        <Carousel />
+      </Suspense>
 
       {/* Componente descrizione */}
       <div className="space-y-4 p-6">

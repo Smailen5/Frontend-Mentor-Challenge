@@ -3,8 +3,6 @@
  * @description Generic loading component with customizable message
  */
 
-import Layout from "../layout/Layout";
-
 /**
  * @interface LoadingProps
  */
@@ -29,9 +27,9 @@ interface LoadingProps {
  */
 const Loading = ({ loadingName }: LoadingProps) => {
   return (
-    <Layout>
-      <p className="p-4">Loading{loadingName ? ` ${loadingName}` : ""}...</p>
-    </Layout>
+    <div className="flex h-72 w-full items-center justify-center p-4 text-center">
+      Loading{loadingName ? ` ${loadingName}` : ""}...
+    </div>
   );
 };
 

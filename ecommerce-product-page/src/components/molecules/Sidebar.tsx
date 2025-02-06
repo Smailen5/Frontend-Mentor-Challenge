@@ -7,6 +7,7 @@ import iconClose from "@/assets/images/icon-close.svg";
 import Image from "@/components/atoms/Image";
 import { linksNav } from "@/data/links/linksNav";
 import { SidebarProps } from "@/types";
+import { Button } from "../atoms/Button";
 
 /**
  * Sidebar component
@@ -39,12 +40,13 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
         }`}
       >
         <div className="h-full space-y-14 p-6">
-          <Image
-            src={iconClose}
-            alt="close"
-            onClick={() => setIsOpen(false)}
-            className="cursor-pointer"
-          />
+          <Button variant={"ghost"} size={"icon"} rounded={"lg"}>
+            <Image
+              src={iconClose}
+              alt="close"
+              onClick={() => setIsOpen(false)}
+            />
+          </Button>
 
           <ul className="flex flex-col gap-6">
             {linksNav.map((link) => {

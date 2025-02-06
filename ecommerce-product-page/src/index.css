@@ -20,14 +20,11 @@
   --color-secondary: var(--light-grayish-blue);
   --color-secondary-foreground: var(--very-dark-blue);
 
-  --color-muted: hsl(var(--muted));
+  --color-muted: var(--dark-grayish-blue);
   --color-muted-foreground: var(--grayish-blue);
 
-  --color-accent: hsl(var(--accent));
+  --color-accent: var(--grayish-blue);
   --color-accent-foreground: var(--dark-grayish-blue);
-
-  --color-destructive: hsl(var(--destructive));
-  --color-destructive-foreground: hsl(var(--destructive-foreground));
 }
 
 /*

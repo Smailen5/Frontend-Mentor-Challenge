@@ -31,7 +31,6 @@ function Navbar() {
             variant={"ghost"}
             size={"icon"}
             rounded={"lg"}
-            className=""
             onClick={() => setIsOpen(true)}
           >
             <Image src={iconMenu} alt="menu" />
@@ -41,9 +40,9 @@ function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="rounded-lg p-2 hover:bg-gray-100">
+          <Button variant={"ghost"} size={"icon"} rounded={"lg"}>
             <img src={iconCart} alt="cart" />
-          </button>
+          </Button>
           <img src={imageAvatar} alt="user" className="h-8 w-8" />
         </div>
       </nav>

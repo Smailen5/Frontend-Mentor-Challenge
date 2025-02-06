@@ -4,6 +4,7 @@
  */
 
 import { iconMinus, iconPlus } from "@/assets/images";
+import { Button } from "../atoms/Button";
 
 /**
  * ProductQuantity component
@@ -32,15 +33,27 @@ const ProductQuantity = () => {
       role="group"
       aria-label="Quantity selector"
     >
-      <button type="button" aria-label="Decrease quantity">
+      <Button
+        type="button"
+        aria-label="Decrease quantity"
+        variant={"ghost"}
+        size={"icon"}
+        rounded={"lg"}
+      >
         <img src={iconMinus} aria-hidden="true" />
-      </button>
+      </Button>
       <output className="font-bold" aria-label="Current quantity">
         0
       </output>
-      <button type="button" aria-label="Increase quantity">
+      <Button
+        type="button"
+        aria-label="Increase quantity"
+        variant={"ghost"}
+        size={"icon"}
+        rounded={"lg"}
+      >
         <img src={iconPlus} aria-hidden="true" />
-      </button>
+      </Button>
     </div>
   );
 };

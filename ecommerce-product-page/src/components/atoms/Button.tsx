@@ -3,9 +3,9 @@
  * @description Custom button component with variants
  */
 
+import { buttonVariants } from "@/variants/buttonVariants";
 import { type VariantProps } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
-import { buttonVariants } from "./button-variants";
 
 /**
  * @interface ButtonProps

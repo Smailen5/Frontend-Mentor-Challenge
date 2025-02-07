@@ -6,6 +6,7 @@
 import { iconNext, iconPrevious, imageProducts } from "@/assets/images";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import ImageFallback from "./ImageFallback";
 
 /**
  * Slide animation variants configuration
@@ -76,36 +77,42 @@ const CarouselImage = () => {
 
   return (
     <div className="relative h-[300px] overflow-hidden">
-      <button
-        className="bg-background absolute top-1/2 left-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
-        onClick={handlePrevImage}
-      >
-        <img src={iconPrevious} alt="previous" className="scale-90" />
-      </button>
+      {!imageProducts[currentImage] ? (
+        <ImageFallback />
+      ) : (
+        <>
+          <button
+            className="bg-background absolute top-1/2 left-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
+            onClick={handlePrevImage}
+          >
+            <img src={iconPrevious} alt="previous" className="scale-90" />
+          </button>
 
-      <AnimatePresence initial={false} custom={direction}>
-        <motion.img
-          key={currentImage}
-          src={imageProducts[currentImage]}
-          custom={direction}
-          variants={slideVariants}
-          initial="enter"
-          animate="center"
-          exit="exit"
-          transition={{
-            x: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 },
-          }}
-          className="absolute h-[300px] w-full object-cover"
-        />
-      </AnimatePresence>
+          <AnimatePresence initial={false} custom={direction}>
+            <motion.img
+              key={currentImage}
+              src={imageProducts[currentImage]}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 },
+              }}
+              className="absolute h-[300px] w-full object-cover"
+            />
+          </AnimatePresence>
 
-      <button
-        className="bg-background absolute top-1/2 right-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
-        onClick={handleNextImage}
-      >
-        <img src={iconNext} alt="next" className="scale-90" />
-      </button>
+          <button
+            className="bg-background absolute top-1/2 right-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
+            onClick={handleNextImage}
+          >
+            <img src={iconNext} alt="next" className="scale-90" />
+          </button>
+        </>
+      )}
     </div>
   );
 };

@@ -7,6 +7,7 @@ import { iconNext, iconPrevious, imageProducts } from "@/assets/images";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import ImageFallback from "./ImageFallback";
+import Cart from './Cart';
 
 /**
  * Slide animation variants configuration
@@ -113,6 +114,7 @@ const CarouselImage = () => {
           </button>
         </>
       )}
+      <Cart isOpen={true} />
     </div>
   );
 };

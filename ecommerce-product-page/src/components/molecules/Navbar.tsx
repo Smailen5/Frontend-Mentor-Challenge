@@ -7,8 +7,8 @@ import { iconCart, iconMenu, imageAvatar, logo } from "@/assets/images";
 import { Button } from "@/components/atoms/Button";
 import Image from "@/components/atoms/Image";
 import { useState } from "react";
+// import Cart from "./Cart";
 import { Sidebar } from "./Sidebar";
-
 /**
  * Navbar component
  * @component
@@ -23,9 +23,11 @@ import { Sidebar } from "./Sidebar";
  */
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+
   return (
     <>
-      <nav className="bg-background container mx-auto flex justify-between p-4 pb-6">
+      <nav className="bg-background relative container mx-auto flex justify-between p-4 pb-6">
         <div className="flex items-center gap-2">
           <Button
             variant={"ghost"}
@@ -40,11 +42,17 @@ function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant={"ghost"} size={"icon"} rounded={"lg"}>
+          <Button
+            variant={"ghost"}
+            size={"icon"}
+            rounded={"lg"}
+            onClick={() => setCartOpen(!cartOpen)}
+          >
             <img src={iconCart} alt="cart" />
           </Button>
           <img src={imageAvatar} alt="user" className="h-8 w-8" />
         </div>
+        {/* <Cart isOpen={cartOpen} /> */}
       </nav>
 
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />

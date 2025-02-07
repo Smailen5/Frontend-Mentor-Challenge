@@ -1,10 +1,6 @@
 import { iconDelete } from "@/assets/images";
+import { CartContentProps } from "@/types";
 import { Button } from "../atoms/Button";
-
-interface CartContentProps {
-  thumbnail: string;
-  items: number;
-}
 
 const CartContent = ({ thumbnail, items }: CartContentProps) => {
   return (
@@ -44,7 +40,9 @@ const CartContent = ({ thumbnail, items }: CartContentProps) => {
           </Button>
         </>
       ) : (
-        "Your cart is empty."
+        <p className="text-accent-foreground font-bold">
+          <span className="sr-only">the cart is empty</span>Your cart is empty.
+        </p>
       )}
     </main>
   );

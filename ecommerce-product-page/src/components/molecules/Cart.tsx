@@ -1,10 +1,7 @@
 import { thumbnailProduct1 } from "@/assets/images";
 
+import { CartProps } from "@/types";
 import CartContent from "./CartContent";
-
-interface CartProps {
-  isOpen: boolean;
-}
 
 const Cart = ({ isOpen }: CartProps) => {
   return (

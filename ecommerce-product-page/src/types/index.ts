@@ -45,3 +45,23 @@ export interface SidebarProps {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }
+
+/**
+ * Cart component props
+ * @interface CartProps
+ * @property {boolean} isOpen - Controls cart visibility
+ */
+export interface CartProps {
+  isOpen: boolean;
+}
+
+/**
+ * CartContent component props
+ * @interface CartContentProps
+ * @property {string} thumbnail - Product thumbnail image
+ * @property {number} items - Number of items in the cart
+ */
+export interface CartContentProps {
+  thumbnail: string;
+  items: number;
+}

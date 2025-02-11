@@ -76,5 +76,7 @@ export interface CartContextProps {
   cartOpen: boolean;
   setCartOpen: (cartOpen: boolean) => void;
   thumbnailProduct1?: string;
-  items: number;
+  quantity: number;
+  handleAddToCart: ()=>void;
+  handleRemoveFromCart: ()=>void;
 }

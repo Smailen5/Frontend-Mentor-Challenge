@@ -5,6 +5,7 @@
 
 import { iconMinus, iconPlus } from "@/assets/images";
 import { Button } from "../atoms/Button";
+import { useCart } from '@/lib/hooks/useCart';
 
 /**
  * ProductQuantity component
@@ -27,6 +28,8 @@ import { Button } from "../atoms/Button";
  * - Groups related controls with role="group"
  */
 const ProductQuantity = () => {
+ const {quantity, handleAddToCart, handleRemoveFromCart} = useCart();
+
   return (
     <div
       className="bg-secondary flex h-14 items-center justify-between rounded-lg px-6"
@@ -39,11 +42,12 @@ const ProductQuantity = () => {
         variant={"ghost"}
         size={"icon"}
         rounded={"lg"}
+        onClick={handleRemoveFromCart}
       >
         <img src={iconMinus} aria-hidden="true" />
       </Button>
       <output className="font-bold" aria-label="Current quantity">
-        0
+        {quantity}
       </output>
       <Button
         type="button"
@@ -51,6 +55,7 @@ const ProductQuantity = () => {
         variant={"ghost"}
         size={"icon"}
         rounded={"lg"}
+        onClick={handleAddToCart}
       >
         <img src={iconPlus} aria-hidden="true" />
       </Button>

@@ -3,7 +3,7 @@ import { CartProps } from "@/types";
 import CartContent from "./CartContent";
 
 const Cart = ({ isOpen }: CartProps) => {
-  const { thumbnailProduct1, items } = useCart();
+  const { thumbnailProduct1, quantity } = useCart();
   return (
     <aside
       className={`absolute top-0 z-20 flex h-full w-full items-start justify-center p-2 ${
@@ -22,7 +22,7 @@ const Cart = ({ isOpen }: CartProps) => {
 
         <hr className="border-muted-foreground" />
 
-        <CartContent thumbnail={thumbnailProduct1} items={items} />
+        <CartContent thumbnail={thumbnailProduct1} items={quantity} />
       </section>
     </aside>
   );

@@ -65,3 +65,14 @@ export interface CartContentProps {
   thumbnail: string;
   items: number;
 }
+
+/**
+ * Cart context properties
+ * @interface CartContextProps
+ * @property {boolean} cartOpen - Controls cart visibility
+ * @property {function} setCartOpen - Function to update cart state
+ */
+export interface CartContextProps {
+  cartOpen: boolean;
+  setCartOpen: (cartOpen: boolean) => void;
+}

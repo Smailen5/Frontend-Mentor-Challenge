@@ -67,7 +67,7 @@ function ProductTemplate() {
             })
           }
         >
-          <IconCart aria-hidden="true" />
+          <IconCart aria-hidden="true" className="[&>path]:fill-current" />
           <span>Add to cart</span>
         </Button>
       </div>

@@ -50,7 +50,7 @@ function Navbar() {
               rounded={"lg"}
               onClick={() => setCartOpen(!cartOpen)}
             >
-              <IconCart aria-hidden={true} />
+              <IconCart aria-hidden={true} className="[&>path]:fill-current" />
             </Button>
             {cart.quantity > 0 && (
               <span

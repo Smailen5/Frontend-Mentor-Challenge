@@ -2,12 +2,12 @@ import { iconDelete } from "@/assets/images";
 import { CartContentProps } from "@/types";
 import { Button } from "../atoms/Button";
 
-const CartContent = ({ thumbnail, items }: CartContentProps) => {
+const CartContent = ({ thumbnail, quantity }: CartContentProps) => {
   return (
     <main
-      className={`${items > 0 ? "space-y-6 p-6 pb-8" : "flex h-48 items-center justify-center"}`}
+      className={`${quantity > 0 ? "space-y-6 p-6 pb-8" : "flex h-48 items-center justify-center"}`}
     >
-      {items > 0 ? (
+      {quantity > 0 ? (
         <>
           <article className="flex items-center gap-3">
             <img

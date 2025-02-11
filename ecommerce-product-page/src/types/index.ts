@@ -63,7 +63,7 @@ export interface CartProps {
  */
 export interface CartContentProps {
   thumbnail?: string;
-  items: number;
+  quantity: number;
 }
 
 /**

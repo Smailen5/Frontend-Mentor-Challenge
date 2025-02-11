@@ -22,7 +22,7 @@ const Cart = ({ isOpen }: CartProps) => {
 
         <hr className="border-muted-foreground" />
 
-        <CartContent thumbnail={thumbnailProduct1} items={quantity} />
+        <CartContent thumbnail={thumbnailProduct1} quantity={quantity} />
       </section>
     </aside>
   );

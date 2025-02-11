@@ -25,6 +25,7 @@ import { Sidebar } from "./Sidebar";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { cartOpen, setCartOpen } = useCart();
+  const { cart } = useCart();
 
   return (
     <>
@@ -43,14 +44,24 @@ function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button
-            variant={"ghost"}
-            size={"icon"}
-            rounded={"lg"}
-            onClick={() => setCartOpen(!cartOpen)}
-          >
-            <img src={iconCart} alt="cart" />
-          </Button>
+          <div className="relative">
+            <Button
+              variant={"ghost"}
+              size={"icon"}
+              rounded={"lg"}
+              onClick={() => setCartOpen(!cartOpen)}
+            >
+              <img src={iconCart} alt="cart" />
+            </Button>
+            {cart.quantity > 0 && (
+              <span
+                className="bg-primary absolute top-1 right-0 cursor-pointer rounded-xl px-2 text-xs text-white"
+                onClick={() => setCartOpen(!cartOpen)}
+              >
+                {cart.quantity}
+              </span>
+            )}
+          </div>
           <img src={imageAvatar} alt="user" className="h-8 w-8" />
         </div>
         {/* <Cart isOpen={cartOpen} /> */}

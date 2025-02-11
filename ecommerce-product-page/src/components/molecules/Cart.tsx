@@ -4,7 +4,8 @@ import CartContent from "./CartContent";
 
 const Cart = ({ isOpen }: CartComponentProps) => {
   const { cart } = useCart();
-  console.log(cart)
+  const { thumbnail, quantity, price } = cart;
+  console.log(cart);
   return (
     <aside
       className={`absolute top-0 z-20 flex h-full w-full items-start justify-center p-2 ${
@@ -23,11 +24,7 @@ const Cart = ({ isOpen }: CartComponentProps) => {
 
         <hr className="border-muted-foreground" />
 
-        <CartContent
-          thumbnail={cart.thumbnail}
-          quantity={cart.quantity}
-          price={cart.price}
-        />
+        <CartContent thumbnail={thumbnail} quantity={quantity} price={price} />
       </section>
     </aside>
   );

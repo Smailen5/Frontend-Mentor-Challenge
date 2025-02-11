@@ -2,8 +2,20 @@ import { iconDelete } from "@/assets/images";
 import { CartContentProps } from "@/types";
 import { Button } from "../atoms/Button";
 
-const CartContent = ({ cartData, title }: CartContentProps) => {
+const CartContent = ({
+  cartData,
+  title,
+  handleRemoveFromCart,
+}: CartContentProps) => {
   const { thumbnail, quantity, price } = cartData;
+
+  const handleDelete = () => {
+    handleRemoveFromCart({
+      thumbnail: undefined,
+      quantity: 0,
+      price: 0,
+    });
+  };
 
   return (
     <main
@@ -36,6 +48,7 @@ const CartContent = ({ cartData, title }: CartContentProps) => {
               size="icon"
               rounded={"lg"}
               className="h-auto self-center"
+              onClick={handleDelete}
             >
               <img src={iconDelete} alt="delete" className="h-5 w-4" />
             </Button>

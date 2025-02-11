@@ -79,6 +79,7 @@ export interface CartProps {
 export interface CartContentProps {
   cartData: CartProps;
   title: string;
+  handleRemoveFromCart: (cart: CartProps) => void;
 }
 
 /**

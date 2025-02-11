@@ -4,7 +4,7 @@ import { CartComponentProps } from "@/types";
 import CartContent from "./CartContent";
 
 const Cart = ({ isOpen }: CartComponentProps) => {
-  const { cart } = useCart();
+  const { cart, setCart } = useCart();
   const { title } = sneakers;
 
   return (
@@ -25,7 +25,11 @@ const Cart = ({ isOpen }: CartComponentProps) => {
 
         <hr className="border-muted-foreground" />
 
-        <CartContent cartData={cart} title={title} />
+        <CartContent
+          cartData={cart}
+          title={title}
+          handleRemoveFromCart={setCart}
+        />
       </section>
     </aside>
   );

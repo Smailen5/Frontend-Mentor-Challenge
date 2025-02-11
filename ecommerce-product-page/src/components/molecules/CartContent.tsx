@@ -2,7 +2,9 @@ import { iconDelete } from "@/assets/images";
 import { CartContentProps } from "@/types";
 import { Button } from "../atoms/Button";
 
-const CartContent = ({ thumbnail, quantity, price }: CartContentProps) => {
+const CartContent = ({ cartData, title }: CartContentProps) => {
+  const { thumbnail, quantity, price } = cartData;
+
   return (
     <main
       className={`${quantity > 0 ? "space-y-6 p-6 pb-8" : "flex h-48 items-center justify-center"}`}
@@ -18,10 +20,14 @@ const CartContent = ({ thumbnail, quantity, price }: CartContentProps) => {
 
             {/* Testo prodotto e costo */}
             <div className="text-accent-foreground flex-1">
-              <h4 className="text-sm">Fall Limited Edition Sneakers</h4>
+              <h4 className="text-sm">{title}</h4>
               <p className="mt-1">
-                <span className="text-sm">${price} x {quantity} </span>
-                <span className="text-foreground font-bold">${(price * quantity).toFixed(2)}</span>
+                <span className="text-sm">
+                  ${price} x {quantity}{" "}
+                </span>
+                <span className="text-foreground font-bold">
+                  ${(price * quantity).toFixed(2)}
+                </span>
               </p>
             </div>
 

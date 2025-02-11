@@ -73,13 +73,12 @@ export interface CartProps {
 /**
  * CartContent component props
  * @interface CartContentProps
- * @property {string} thumbnail - Product thumbnail image
- * @property {number} items - Number of items in the cart
+ * @property {CartProps} cartData - Cart data
+ * @property {string} title - Product title
  */
 export interface CartContentProps {
-  thumbnail?: string;
-  quantity: number;
-  price: number;
+  cartData: CartProps;
+  title: string;
 }
 
 /**

@@ -1,11 +1,12 @@
+import { sneakers } from "@/data";
 import { useCart } from "@/lib/hooks/useCart";
 import { CartComponentProps } from "@/types";
 import CartContent from "./CartContent";
 
 const Cart = ({ isOpen }: CartComponentProps) => {
   const { cart } = useCart();
-  const { thumbnail, quantity, price } = cart;
-  console.log(cart);
+  const { title } = sneakers;
+
   return (
     <aside
       className={`absolute top-0 z-20 flex h-full w-full items-start justify-center p-2 ${
@@ -24,7 +25,7 @@ const Cart = ({ isOpen }: CartComponentProps) => {
 
         <hr className="border-muted-foreground" />
 
-        <CartContent thumbnail={thumbnail} quantity={quantity} price={price} />
+        <CartContent cartData={cart} title={title} />
       </section>
     </aside>
   );

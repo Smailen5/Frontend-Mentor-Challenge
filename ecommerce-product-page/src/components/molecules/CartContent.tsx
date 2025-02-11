@@ -54,7 +54,10 @@ const CartContent = ({
             </Button>
           </article>
 
-          <Button className="text-primary-foreground h-14 w-full rounded-lg font-bold">
+          <Button
+            className="text-primary-foreground h-14 w-full rounded-lg font-bold"
+            onClick={() => alert("the checkout is not available yet")}
+          >
             Checkout
           </Button>
         </>

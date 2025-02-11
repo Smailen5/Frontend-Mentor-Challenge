@@ -5,12 +5,12 @@ import { Button } from "../atoms/Button";
 const CartContent = ({
   cartData,
   title,
-  handleRemoveFromCart,
+  handleRemoveCart,
 }: CartContentProps) => {
   const { thumbnail, quantity, price } = cartData;
 
   const handleDelete = () => {
-    handleRemoveFromCart({
+    handleRemoveCart({
       thumbnail: undefined,
       quantity: 0,
       price: 0,

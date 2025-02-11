@@ -49,15 +49,6 @@ export interface SidebarProps {
 }
 
 /**
- * Cart component props
- * @interface CartComponentProps
- * @property {boolean} isOpen - Controls cart visibility
- */
-export interface CartComponentProps {
-  isOpen: boolean;
-}
-
-/**
  * Cart data props
  * @interface CartProps
  * @property {string} thumbnail - Product thumbnail image
@@ -79,7 +70,7 @@ export interface CartProps {
 export interface CartContentProps {
   cartData: CartProps;
   title: string;
-  handleRemoveFromCart: (cart: CartProps) => void;
+  handleRemoveCart: (cart: CartProps) => void;
 }
 
 /**

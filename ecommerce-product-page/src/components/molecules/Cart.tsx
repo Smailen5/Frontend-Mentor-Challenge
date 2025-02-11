@@ -1,9 +1,8 @@
 import { sneakers } from "@/data";
 import { useCart } from "@/lib/hooks/useCart";
-import { CartComponentProps } from "@/types";
 import CartContent from "./CartContent";
 
-const Cart = ({ isOpen }: CartComponentProps) => {
+const Cart = ({ isOpen }: {isOpen: boolean}) => {
   const { cart, setCart } = useCart();
   const { title } = sneakers;
 
@@ -28,7 +27,7 @@ const Cart = ({ isOpen }: CartComponentProps) => {
         <CartContent
           cartData={cart}
           title={title}
-          handleRemoveFromCart={setCart}
+          handleRemoveCart={setCart}
         />
       </section>
     </aside>

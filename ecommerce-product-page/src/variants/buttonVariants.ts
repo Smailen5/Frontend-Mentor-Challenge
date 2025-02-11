@@ -10,9 +10,11 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-white hover:opacity-80",
-        secondary: "bg-secondary text-secondary-foreground hover:opacity-80",
-        ghost: "bg-transparent text-foreground hover:bg-accent/15 focus:ring-2 focus:ring-accent",
+        default:
+          "bg-primary shadow-primary/25 focus-visible:ring-primary/50 text-primary-foreground font-bold shadow-xl hover:opacity-75 focus-visible:ring-2 focus-visible:outline-none",
+        secondary: "bg-secondary text-secondary-foreground hover:opacity-75",
+        ghost:
+          "bg-transparent text-foreground hover:bg-accent/15 focus-visible:ring-2 focus-visible:ring-accent",
       },
       size: {
         default: "h-10 px-4 py-2",

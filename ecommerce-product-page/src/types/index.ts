@@ -62,7 +62,7 @@ export interface CartProps {
  * @property {number} items - Number of items in the cart
  */
 export interface CartContentProps {
-  thumbnail: string;
+  thumbnail?: string;
   items: number;
 }
 
@@ -75,4 +75,6 @@ export interface CartContentProps {
 export interface CartContextProps {
   cartOpen: boolean;
   setCartOpen: (cartOpen: boolean) => void;
+  thumbnailProduct1?: string;
+  items: number;
 }

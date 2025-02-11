@@ -42,7 +42,7 @@ function Navbar() {
           <img src={logo} alt="logo" />
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <div className="relative">
             <Button
               variant={"ghost"}
@@ -61,7 +61,7 @@ function Navbar() {
               </span>
             )}
           </div>
-          <img src={imageAvatar} alt="user" className="h-8 w-8" />
+          <img src={imageAvatar} alt="user" className="h-6 w-6" />
         </div>
         {/* <Cart isOpen={cartOpen} /> */}
       </nav>

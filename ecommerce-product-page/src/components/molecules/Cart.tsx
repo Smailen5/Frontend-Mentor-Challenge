@@ -1,9 +1,10 @@
 import { useCart } from "@/lib/hooks/useCart";
-import { CartProps } from "@/types";
+import { CartComponentProps } from "@/types";
 import CartContent from "./CartContent";
 
-const Cart = ({ isOpen }: CartProps) => {
-  const { thumbnailProduct1, quantity } = useCart();
+const Cart = ({ isOpen }: CartComponentProps) => {
+  const { cart } = useCart();
+  console.log(cart)
   return (
     <aside
       className={`absolute top-0 z-20 flex h-full w-full items-start justify-center p-2 ${
@@ -22,7 +23,7 @@ const Cart = ({ isOpen }: CartProps) => {
 
         <hr className="border-muted-foreground" />
 
-        <CartContent thumbnail={thumbnailProduct1} quantity={quantity} />
+        <CartContent thumbnail={cart.thumbnail} quantity={cart.quantity} />
       </section>
     </aside>
   );

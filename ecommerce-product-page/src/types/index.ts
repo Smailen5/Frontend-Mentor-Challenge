@@ -3,6 +3,8 @@
  * @description Type definitions for product data and navigation links
  */
 
+import { Dispatch, SetStateAction } from "react";
+
 /**
  * Product data interface
  * @interface ProductData
@@ -48,11 +50,24 @@ export interface SidebarProps {
 
 /**
  * Cart component props
- * @interface CartProps
+ * @interface CartComponentProps
  * @property {boolean} isOpen - Controls cart visibility
  */
-export interface CartProps {
+export interface CartComponentProps {
   isOpen: boolean;
+}
+
+/**
+ * Cart data props
+ * @interface CartProps
+ * @property {string} thumbnail - Product thumbnail image
+ * @property {number} quantity - Number of items
+ * @property {number} price - Total price
+ */
+export interface CartProps {
+  thumbnail: string | undefined;
+  quantity: number;
+  price: number;
 }
 
 /**
@@ -69,14 +84,19 @@ export interface CartContentProps {
 /**
  * Cart context properties
  * @interface CartContextProps
- * @property {boolean} cartOpen - Controls cart visibility
- * @property {function} setCartOpen - Function to update cart state
  */
 export interface CartContextProps {
   cartOpen: boolean;
   setCartOpen: (cartOpen: boolean) => void;
   thumbnailProduct1?: string;
   quantity: number;
-  handleAddToCart: ()=>void;
-  handleRemoveFromCart: ()=>void;
+  handleAddToCart: () => void;
+  handleRemoveFromCart: () => void;
+  cart: CartProps;
+  setCart: Dispatch<SetStateAction<CartProps>>;
+  handleCart: (params: {
+    thumbnail: string | undefined;
+    quantity: number;
+    price: number;
+  }) => void;
 }

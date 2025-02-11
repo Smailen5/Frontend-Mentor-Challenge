@@ -20,7 +20,7 @@ const CartContent = ({ thumbnail, quantity }: CartContentProps) => {
             <div className="text-accent-foreground flex-1">
               <h4 className="text-sm">Fall Limited Edition Sneakers</h4>
               <p className="mt-1">
-                <span className="text-sm">$125.00 x 3 </span>
+                <span className="text-sm">$125.00 x {quantity} </span>
                 <span className="text-foreground font-bold">$375.00</span>
               </p>
             </div>

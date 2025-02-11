@@ -4,18 +4,29 @@
  */
 
 import { thumbnailProduct1 } from "@/assets/images";
+import { CartProps } from "@/types";
 import { Dispatch, SetStateAction } from "react";
 
-interface CartActions {
+interface QuantityActions {
   quantity: number;
   setQuantity: Dispatch<SetStateAction<number>>;
 }
 
-export const handleAddToCart = ({ quantity, setQuantity }: CartActions) => {
+interface CartActions {
+  thumbnail: string | undefined;
+  quantity: number;
+  price: number;
+  setCart: Dispatch<SetStateAction<CartProps>>;
+}
+
+export const handleAddToCart = ({ quantity, setQuantity }: QuantityActions) => {
   setQuantity(quantity + 1);
 };
 
-export const handleRemoveFromCart = ({ quantity, setQuantity }: CartActions) => {
+export const handleRemoveFromCart = ({
+  quantity,
+  setQuantity,
+}: QuantityActions) => {
   if (quantity > 0) {
     setQuantity(quantity - 1);
   }
@@ -23,4 +34,19 @@ export const handleRemoveFromCart = ({ quantity, setQuantity }: CartActions) => 
 
 export const cartDefaults = {
   thumbnailProduct1,
+};
+
+export const handleCart = ({
+  thumbnail,
+  quantity,
+  price,
+  setCart,
+}: CartActions) => {
+  if (quantity > 0) {
+    setCart({
+      thumbnail,
+      quantity,
+      price,
+    });
+  }
 };

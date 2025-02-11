@@ -24,6 +24,8 @@ const CartContent = ({
       {quantity > 0 ? (
         <>
           <article className="flex items-center gap-3">
+            {/* Immagine prodotto */}
+            {/* TODO: Aggiungere un placeholder quando non c'è un'immagine */}
             <img
               src={thumbnail}
               alt="thumbnail"

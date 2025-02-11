@@ -3,7 +3,7 @@
  * @description Image carousel component with next/previous navigation and animations
  */
 
-import { iconNext, iconPrevious, imageProducts } from "@/assets/images";
+import { IconNext, IconPrevious, imageProducts } from "@/assets/images";
 import { useCart } from "@/lib/hooks/useCart";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
@@ -84,10 +84,11 @@ const CarouselImage = () => {
       ) : (
         <>
           <button
+            aria-label="previous image"
             className="bg-background absolute top-1/2 left-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
             onClick={handlePrevImage}
           >
-            <img src={iconPrevious} alt="previous" className="scale-90" />
+            <IconPrevious aria-hidden={true} />
           </button>
 
           <AnimatePresence initial={false} custom={direction}>
@@ -108,10 +109,11 @@ const CarouselImage = () => {
           </AnimatePresence>
 
           <button
+            aria-label="next image"
             className="bg-background absolute top-1/2 right-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
             onClick={handleNextImage}
           >
-            <img src={iconNext} alt="next" className="scale-90" />
+            <IconNext aria-hidden={true} />
           </button>
         </>
       )}

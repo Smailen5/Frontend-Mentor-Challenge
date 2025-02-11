@@ -3,9 +3,8 @@
  * @description Main navigation component with mobile menu, cart and user profile
  */
 
-import { iconCart, iconMenu, imageAvatar, logo } from "@/assets/images";
+import { IconCart, IconMenu, imageAvatar, logo } from "@/assets/images";
 import { Button } from "@/components/atoms/Button";
-import Image from "@/components/atoms/Image";
 import { useState } from "react";
 // import Cart from "./Cart";
 import { useCart } from "@/lib/hooks/useCart";
@@ -37,7 +36,7 @@ function Navbar() {
             rounded={"lg"}
             onClick={() => setIsOpen(true)}
           >
-            <Image src={iconMenu} alt="menu" />
+            <IconMenu aria-hidden={true} />
           </Button>
 
           <img src={logo} alt="logo" />
@@ -51,7 +50,7 @@ function Navbar() {
               rounded={"lg"}
               onClick={() => setCartOpen(!cartOpen)}
             >
-              <img src={iconCart} alt="cart" />
+              <IconCart aria-hidden={true} />
             </Button>
             {cart.quantity > 0 && (
               <span

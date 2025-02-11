@@ -3,7 +3,7 @@
  * @description Template component for the product page layout
  */
 
-import { iconCart } from "@/assets/images";
+import { IconCart } from "@/assets/images";
 import { sneakers } from "@/data";
 import { useCart } from "@/lib/hooks/useCart";
 import { calculatePrice } from "@/lib/utils/price";
@@ -67,7 +67,7 @@ function ProductTemplate() {
             })
           }
         >
-          <img src={iconCart} aria-hidden="true" className="h-5 w-5" />
+          <IconCart aria-hidden="true" />
           <span>Add to cart</span>
         </Button>
       </div>

@@ -3,9 +3,9 @@
  * @description Component for managing product quantity selection with increment/decrement controls.
  */
 
-import { iconMinus, iconPlus } from "@/assets/images";
+import { IconMinus, IconPlus } from "@/assets/images";
+import { useCart } from "@/lib/hooks/useCart";
 import { Button } from "../atoms/Button";
-import { useCart } from '@/lib/hooks/useCart';
 
 /**
  * ProductQuantity component
@@ -28,7 +28,7 @@ import { useCart } from '@/lib/hooks/useCart';
  * - Groups related controls with role="group"
  */
 const ProductQuantity = () => {
- const {quantity, handleAddToCart, handleRemoveFromCart} = useCart();
+  const { quantity, handleAddToCart, handleRemoveFromCart } = useCart();
 
   return (
     <div
@@ -44,7 +44,7 @@ const ProductQuantity = () => {
         rounded={"lg"}
         onClick={handleRemoveFromCart}
       >
-        <img src={iconMinus} aria-hidden="true" />
+        <IconMinus aria-hidden={true} />
       </Button>
       <output className="font-bold" aria-label="Current quantity">
         {quantity}
@@ -57,7 +57,7 @@ const ProductQuantity = () => {
         rounded={"lg"}
         onClick={handleAddToCart}
       >
-        <img src={iconPlus} aria-hidden="true" />
+        <IconPlus aria-hidden={true} />
       </Button>
     </div>
   );

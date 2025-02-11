@@ -3,8 +3,7 @@
  * @description Mobile navigation sidebar component with overlay
  */
 
-import iconClose from "@/assets/images/icon-close.svg";
-import Image from "@/components/atoms/Image";
+import { IconClose } from "@/assets/images";
 import { linksNav } from "@/data/links/linksNav";
 import { SidebarProps } from "@/types";
 import { Button } from "../atoms/Button";
@@ -40,12 +39,13 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
         }`}
       >
         <div className="h-full space-y-14 p-6">
-          <Button variant={"ghost"} size={"icon"} rounded={"lg"}>
-            <Image
-              src={iconClose}
-              alt="close"
-              onClick={() => setIsOpen(false)}
-            />
+          <Button
+            aria-label="close sidebar"
+            variant={"ghost"}
+            size={"icon"}
+            rounded={"lg"}
+          >
+            <IconClose onClick={() => setIsOpen(false)} aria-hidden={true} />
           </Button>
 
           <ul className="flex flex-col gap-6">

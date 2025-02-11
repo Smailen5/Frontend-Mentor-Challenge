@@ -1,4 +1,4 @@
-import { iconDelete } from "@/assets/images";
+import { IconDelete } from "@/assets/images";
 import { CartContentProps } from "@/types";
 import { Button } from "../atoms/Button";
 
@@ -50,7 +50,7 @@ const CartContent = ({
               className="h-auto self-center"
               onClick={handleDelete}
             >
-              <img src={iconDelete} alt="delete" className="h-5 w-4" />
+              <IconDelete aria-hidden={true} />
             </Button>
           </article>
 

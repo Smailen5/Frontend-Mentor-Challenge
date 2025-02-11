@@ -1,12 +1,12 @@
-// Icone
-import iconCart from "@/assets/images/icon-cart.svg";
-import iconClose from "@/assets/images/icon-close.svg";
-import iconDelete from "@/assets/images/icon-delete.svg";
-import iconMenu from "@/assets/images/icon-menu.svg";
-import iconMinus from "@/assets/images/icon-minus.svg";
-import iconNext from "@/assets/images/icon-next.svg";
-import iconPlus from "@/assets/images/icon-plus.svg";
-import iconPrevious from "@/assets/images/icon-previous.svg";
+// Icone svg
+import IconCart from "@/assets/images/icon-cart.svg?react";
+import IconClose from "@/assets/images/icon-close.svg?react";
+import IconDelete from "@/assets/images/icon-delete.svg?react";
+import IconMenu from "@/assets/images/icon-menu.svg?react";
+import IconMinus from "@/assets/images/icon-minus.svg?react";
+import IconNext from "@/assets/images/icon-next.svg?react";
+import IconPlus from "@/assets/images/icon-plus.svg?react";
+import IconPrevious from "@/assets/images/icon-previous.svg?react";
 
 // Logo
 import logo from "@/assets/images/logo.svg";
@@ -33,14 +33,14 @@ import thumbnailProduct3 from "@/assets/images/image-product-3-thumbnail.jpg";
 import thumbnailProduct4 from "@/assets/images/image-product-4-thumbnail.jpg";
 
 export {
-  iconCart,
-  iconClose,
-  iconDelete,
-  iconMenu,
-  iconMinus,
-  iconNext,
-  iconPlus,
-  iconPrevious,
+  IconCart,
+  IconClose,
+  IconDelete,
+  IconMenu,
+  IconMinus,
+  IconNext,
+  IconPlus,
+  IconPrevious,
   imageAvatar,
   imageProduct1,
   imageProduct2,

@@ -8,7 +8,7 @@ const Cart = ({ isOpen }: {isOpen: boolean}) => {
 
   return (
     <aside
-      className={`absolute top-0 z-20 flex h-full w-full items-start justify-center p-2 ${
+      className={`absolute top-0 z-10 flex h-full w-full items-start justify-center p-2 ${
         isOpen ? "absolute" : "hidden"
       }`}
     >

@@ -8,6 +8,7 @@ import Layout from "../layout/Layout";
 // import CarouselImage from "../molecules/CarouselImage";
 import { sneakers } from "@/data";
 import { useCart } from "@/lib/hooks/useCart";
+import { calculatePrice } from "@/lib/utils/price";
 import { lazy, Suspense } from "react";
 import Loading from "../molecules/Loading";
 import ProductDescription from "../molecules/ProductDescription";
@@ -57,7 +58,10 @@ function ProductTemplate() {
             handleCart({
               thumbnail: thumbnailProduct1,
               quantity,
-              price: price.original,
+              price: calculatePrice({
+                originalPrice: price.original,
+                discount: price.discount,
+              }),
             })
           }
         >

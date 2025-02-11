@@ -23,7 +23,11 @@ const Cart = ({ isOpen }: CartComponentProps) => {
 
         <hr className="border-muted-foreground" />
 
-        <CartContent thumbnail={cart.thumbnail} quantity={cart.quantity} />
+        <CartContent
+          thumbnail={cart.thumbnail}
+          quantity={cart.quantity}
+          price={cart.price}
+        />
       </section>
     </aside>
   );

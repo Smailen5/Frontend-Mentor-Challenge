@@ -8,6 +8,7 @@ import { Button } from "@/components/atoms/Button";
 import Image from "@/components/atoms/Image";
 import { useState } from "react";
 // import Cart from "./Cart";
+import { useCart } from "@/lib/hooks/useCart";
 import { Sidebar } from "./Sidebar";
 /**
  * Navbar component
@@ -23,7 +24,7 @@ import { Sidebar } from "./Sidebar";
  */
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [cartOpen, setCartOpen] = useState(false);
+  const { cartOpen, setCartOpen } = useCart();
 
   return (
     <>

@@ -4,10 +4,11 @@
  */
 
 import { iconNext, iconPrevious, imageProducts } from "@/assets/images";
+import { useCart } from "@/lib/hooks/useCart";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import Cart from "./Cart";
 import ImageFallback from "./ImageFallback";
-import Cart from './Cart';
 
 /**
  * Slide animation variants configuration
@@ -44,8 +45,8 @@ import Cart from './Cart';
  */
 const CarouselImage = () => {
   const [currentImage, setCurrentImage] = useState(0);
-
   const [direction, setDirection] = useState(0);
+  const { cartOpen } = useCart();
 
   const handleNextImage = () => {
     setDirection(1);
@@ -114,7 +115,7 @@ const CarouselImage = () => {
           </button>
         </>
       )}
-      <Cart isOpen={true} />
+      <Cart isOpen={cartOpen} />
     </div>
   );
 };

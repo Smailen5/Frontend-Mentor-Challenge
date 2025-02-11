@@ -5,6 +5,7 @@
 
 import { routes } from "@/routes/routes";
 import { BrowserRouter, useRoutes } from "react-router-dom";
+import { CartProvider } from "./lib/context/CartProvider";
 
 const AppRoutes = () => {
   return useRoutes(routes);
@@ -12,9 +13,11 @@ const AppRoutes = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </CartProvider>
   );
 };
 

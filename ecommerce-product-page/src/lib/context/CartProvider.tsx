@@ -3,7 +3,11 @@
  * @description Cart context provider component
  */
 
-import { thumbnailProduct1 } from "@/assets/images";
+import {
+  cartDefaults,
+  handleAddToCart,
+  handleRemoveFromCart,
+} from "@/lib/actions/cartActions";
 import { useState, type ReactNode } from "react";
 import { CartContext } from "./CartContext";
 
@@ -17,27 +21,16 @@ interface CartProviderProps {
  * @description Provides cart state and setter to child components
  */
 export const CartProvider = ({ children }: CartProviderProps) => {
-  const [cartOpen, setCartOpen] = useState(false);
-  const [quantity, setQuantity] = useState(0);
-
-  const handleAddToCart = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const handleRemoveFromCart = () => {
-    if (quantity > 0) {
-      setQuantity(quantity - 1);
-    }
-  };
+  const [cartOpen, setCartOpen] = useState<boolean>(false);
+  const [quantity, setQuantity] = useState<number>(0);
 
   const value = {
     cartOpen,
     setCartOpen,
-    thumbnailProduct1,
+    ...cartDefaults,
     quantity,
-    setQuantity,
-    handleAddToCart,
-    handleRemoveFromCart,
+    handleAddToCart: () => handleAddToCart({ quantity, setQuantity }),
+    handleRemoveFromCart: () => handleRemoveFromCart({ quantity, setQuantity }),
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

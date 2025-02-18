@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <>
       <nav className="bg-background relative container mx-auto flex justify-between p-4 pb-6 lg:px-32">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 lg:gap-12">
           {/* Mobile menu */}
           <Button
             variant={"ghost"}
@@ -44,7 +44,7 @@ function Navbar() {
           {/* Logo */}
           <img src={logo} alt="logo" />
 
-          <ul className="lg:flex gap-4 hidden">
+          <ul className="lg:flex gap-6 hidden">
             <NavLinks />
           </ul>
         </div>

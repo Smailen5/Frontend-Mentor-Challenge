@@ -47,11 +47,13 @@ function ProductTemplate() {
           {/* Componente prezzo */}
           <ProductPrice />
 
-          {/* Componente quantità */}
-          <ProductQuantity />
+          <div className="gap-4 lg:flex space-y-4 lg:space-y-0 lg:h-12">
+            {/* Componente quantità */}
+            <ProductQuantity />
 
-          {/* Componente aggiungi al carrello */}
-          <ProductButton />
+            {/* Componente aggiungi al carrello */}
+            <ProductButton />
+          </div>
         </div>
       </div>
     </Layout>

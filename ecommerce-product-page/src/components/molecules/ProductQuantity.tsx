@@ -32,7 +32,7 @@ const ProductQuantity = () => {
 
   return (
     <div
-      className="bg-secondary flex h-14 items-center justify-between rounded-lg px-6"
+      className="bg-secondary flex h-14 items-center justify-between rounded-lg px-6 lg:h-auto lg:w-full lg:flex-1 lg:px-0 lg:gap-6"
       role="group"
       aria-label="Quantity selector"
     >

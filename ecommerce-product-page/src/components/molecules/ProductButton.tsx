@@ -13,7 +13,7 @@ const ProductButton = () => {
       type="button"
       rounded={"lg"}
       size={"icon"}
-      className="h-14 w-full gap-4"
+      className="h-14 w-full gap-4 lg:h-auto lg:text-sm"
       aria-label="Add to cart"
       onClick={() =>
         handleCart({
@@ -26,6 +26,7 @@ const ProductButton = () => {
         })
       }
     >
+      {/* TODO: ridurre dimensione icona in modalita desktop */}
       <IconCart aria-hidden="true" className="[&>path]:fill-current" />
       <span>Add to cart</span>
     </Button>

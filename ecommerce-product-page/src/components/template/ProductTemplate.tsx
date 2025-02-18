@@ -34,7 +34,7 @@ function ProductTemplate() {
         <Carousel />
       </Suspense>
 
-      <div className="lg:flex lg:gap-20 lg:px-10 lg:py-20">
+      <div className="lg:flex lg:items-center lg:gap-24 lg:px-10 lg:py-20">
         {/* Contenitore componente immagini */}
         <div className="hidden w-1/2 flex-1 lg:block">
           <ProductGallery />
@@ -47,7 +47,7 @@ function ProductTemplate() {
           {/* Componente prezzo */}
           <ProductPrice />
 
-          <div className="gap-4 lg:flex space-y-4 lg:space-y-0 lg:h-12">
+          <div className="gap-4 space-y-4 lg:flex lg:h-12 lg:space-y-0">
             {/* Componente quantità */}
             <ProductQuantity />
 

@@ -18,7 +18,7 @@ const NavLinks = ({ setIsOpen }: NavLinsPros) => {
           <li key={link.label}>
             <a
               href={link.href}
-              className={`${setIsOpen ? "text-xl font-bold" : ""} text-accent-foreground text-sm capitalize`}
+              className={`${setIsOpen ? "text-foreground text-xl font-bold" : "text-accent-foreground text-sm"} capitalize`}
               onClick={handleOpen}
             >
               {link.label}

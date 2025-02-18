@@ -78,7 +78,9 @@ function Navbar() {
         </div>
       </nav>
 
-      <hr className="border-accent-foreground lg:mx-32" />
+      <div className="container mx-auto hidden px-32 w-full lg:block" >
+        <hr />
+      </div>
 
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
     </>

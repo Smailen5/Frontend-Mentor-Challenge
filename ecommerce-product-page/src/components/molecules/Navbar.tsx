@@ -5,8 +5,9 @@
 
 import { IconCart, IconMenu, imageAvatar, logo } from "@/assets/images";
 import { Button } from "@/components/atoms/Button";
-import { useState } from "react";
 import { useCart } from "@/lib/hooks/useCart";
+import { useState } from "react";
+import NavLinks from "./NavLinks";
 import { Sidebar } from "./Sidebar";
 /**
  * Navbar component
@@ -40,7 +41,12 @@ function Navbar() {
             <IconMenu aria-hidden={true} />
           </Button>
 
+          {/* Logo */}
           <img src={logo} alt="logo" />
+
+          <ul className="lg:flex gap-4 hidden">
+            <NavLinks />
+          </ul>
         </div>
 
         <div className="flex items-center gap-2">

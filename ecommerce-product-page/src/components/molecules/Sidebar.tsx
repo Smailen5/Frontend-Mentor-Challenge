@@ -4,9 +4,9 @@
  */
 
 import { IconClose } from "@/assets/images";
-import { linksNav } from "@/data/links/linksNav";
 import { SidebarProps } from "@/types";
 import { Button } from "../atoms/Button";
+import NavLinks from "./NavLinks";
 
 /**
  * Sidebar component
@@ -49,19 +49,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           </Button>
 
           <ul className="flex flex-col gap-6">
-            {linksNav.map((link) => {
-              return (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-xl font-bold capitalize"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              );
-            })}
+            <NavLinks setIsOpen={setIsOpen} />
           </ul>
         </div>
       </div>

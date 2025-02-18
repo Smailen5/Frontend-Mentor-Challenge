@@ -26,6 +26,26 @@ export const routes: RouteObject[] = [
     element: <Product />,
   },
   {
+    path: "/collections",
+    element: <Product />,
+  },
+  {
+    path: "/men",
+    element: <Product />,
+  },
+  {
+    path: "/women",
+    element: <Product />,
+  },
+  {
+    path: "/about",
+    element: <Product />,
+  },
+  {
+    path: "/contact",
+    element: <Product />,
+  },
+  {
     path: "/docs",
     element: (
       <Suspense fallback={<Loading loadingName="documentation" />}>

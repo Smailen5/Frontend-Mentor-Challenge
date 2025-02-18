@@ -6,7 +6,6 @@
 import { IconCart, IconMenu, imageAvatar, logo } from "@/assets/images";
 import { Button } from "@/components/atoms/Button";
 import { useState } from "react";
-// import Cart from "./Cart";
 import { useCart } from "@/lib/hooks/useCart";
 import { Sidebar } from "./Sidebar";
 /**
@@ -28,13 +27,15 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-background relative container mx-auto flex justify-between p-4 pb-6">
+      <nav className="bg-background relative container mx-auto flex justify-between p-4 pb-6 lg:px-32">
         <div className="flex items-center gap-2">
+          {/* Mobile menu */}
           <Button
             variant={"ghost"}
             size={"icon"}
             rounded={"lg"}
             onClick={() => setIsOpen(true)}
+            className="lg:hidden"
           >
             <IconMenu aria-hidden={true} />
           </Button>
@@ -44,6 +45,7 @@ function Navbar() {
 
         <div className="flex items-center gap-2">
           <div className="relative">
+            {/* Cart icon */}
             <Button
               variant={"ghost"}
               size={"icon"}
@@ -63,7 +65,6 @@ function Navbar() {
           </div>
           <img src={imageAvatar} alt="user" className="h-6 w-6" />
         </div>
-        {/* <Cart isOpen={cartOpen} /> */}
       </nav>
 
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />

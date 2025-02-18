@@ -7,6 +7,9 @@ import { IconCart, IconMenu, imageAvatar, logo } from "@/assets/images";
 import { Button } from "@/components/atoms/Button";
 import { useCart } from "@/lib/hooks/useCart";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Image from "../atoms/Image";
+import Cart from "./Cart";
 import NavLinks from "./NavLinks";
 import { Sidebar } from "./Sidebar";
 /**
@@ -25,6 +28,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { cartOpen, setCartOpen } = useCart();
   const { cart } = useCart();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -70,15 +74,21 @@ function Navbar() {
             )}
           </div>
           {/* User avatar */}
-          <img
+          <Image
             src={imageAvatar}
             alt="user"
-            className="h-6 w-6 lg:h-10 lg:w-10"
+            className="ring-primary h-6 w-6 cursor-pointer rounded-full hover:ring-2 lg:h-10 lg:w-10"
+            onClick={() => navigate("/")}
           />
+        </div>
+
+        {/* Cart in desktop mode */}
+        <div className="absolute top-1/4 right-1/6 hidden w-96 translate-x-1/2 translate-y-10 lg:block">
+          <Cart isOpen={cartOpen} />
         </div>
       </nav>
 
-      <div className="container mx-auto hidden px-32 w-full lg:block" >
+      <div className="container mx-auto hidden w-full px-32 lg:block">
         <hr />
       </div>
 

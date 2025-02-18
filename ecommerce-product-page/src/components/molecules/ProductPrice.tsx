@@ -24,8 +24,8 @@ const ProductPrice = () => {
   const { price } = sneakers;
 
   return (
-    <div className="my-8 flex h-8 items-center justify-between font-bold">
-      <div className="flex gap-4">
+    <div className="my-8 flex h-8 items-center justify-between font-bold lg:h-auto lg:flex-col lg:items-start lg:gap-4">
+      <div className="flex gap-4 lg:items-center">
         <p className="text-3xl">
           <span className="sr-only">Current price:</span>$
           {price.discount
@@ -33,7 +33,7 @@ const ProductPrice = () => {
             : price.original}
         </p>
         {price.discount && (
-          <span className="flex items-center justify-center rounded-lg bg-black px-3 text-white">
+          <span className="flex items-center justify-center rounded-lg bg-black px-3 text-white lg:h-6 lg:text-sm">
             <span className="sr-only">Discount:</span>
             {price.discount}%
           </span>

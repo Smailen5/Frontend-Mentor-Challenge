@@ -31,8 +31,8 @@ const ProductDescription = () => {
       <h2 className="text-accent-foreground text-sm font-bold uppercase">
         {company}
       </h2>
-      <h1 className="text-3xl font-bold">{title}</h1>
-      <p className="text-base text-gray-500">{description}</p>
+      <h1 className="text-3xl font-bold lg:text-4xl lg:mb-8">{title}</h1>
+      <p className="text-base text-gray-500 lg:text-sm">{description}</p>
     </>
   );
 };

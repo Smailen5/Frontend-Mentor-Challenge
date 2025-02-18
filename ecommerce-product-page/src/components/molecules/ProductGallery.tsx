@@ -14,18 +14,18 @@ const ProductGallery = () => {
     <div className="space-y-8">
       <Image
         src={imageProducts[currentImage]}
-        alt="image 1"
+        alt={`product image ${currentImage + 1}`}
         className="rounded-2xl"
       />
 
-      <div className="flex h-20 w-full justify-between gap-4">
+      <div className="flex h-20 w-full flex-wrap justify-between gap-4">
         {imageProducts.map((image, index) => {
           return (
             <Image
               key={index}
               src={image}
-              alt="image 1"
-              className="rounded-xl"
+              alt={`product image ${index + 1}`}
+              className="size-20 rounded-xl"
               onClick={() => handleImage(index)}
             />
           );

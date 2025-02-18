@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-background relative container mx-auto flex justify-between p-4 pb-6 lg:px-32">
+      <nav className="bg-background relative container mx-auto flex justify-between p-4 pb-7 lg:px-32">
         <div className="flex items-center gap-2 lg:gap-12">
           {/* Mobile menu */}
           <Button
@@ -49,7 +49,7 @@ function Navbar() {
           <img src={logo} alt="logo" />
 
           <ul className="hidden gap-6 lg:flex">
-            <NavLinks />
+            <NavLinks isSidebar />
           </ul>
         </div>
 

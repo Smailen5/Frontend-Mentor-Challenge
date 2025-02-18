@@ -21,13 +21,17 @@ const ProductGallery = () => {
       <div className="flex h-20 w-full flex-wrap justify-between gap-4">
         {imageProducts.map((image, index) => {
           return (
-            <Image
-              key={index}
-              src={image}
-              alt={`product image ${index + 1}`}
-              className="size-20 rounded-xl"
-              onClick={() => handleImage(index)}
-            />
+            <div key={index} className="relative">
+              <Image
+                src={image}
+                alt={`product image ${index + 1}`}
+                className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${currentImage === index && "opacity-50"}`}
+                onClick={() => handleImage(index)}
+              />
+              {currentImage === index && (
+                <div className="ring-primary absolute inset-0 rounded-xl ring-2" />
+              )}
+            </div>
           );
         })}
       </div>

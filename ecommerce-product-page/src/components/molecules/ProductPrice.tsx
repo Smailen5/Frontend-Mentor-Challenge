@@ -43,7 +43,7 @@ const ProductPrice = () => {
         <p className="text-accent-foreground text-base">
           <span className="sr-only">Original price:</span>
           <del className="decoration-accent-foreground line-through decoration-1">
-            ${price.original}
+            ${price.original.toFixed(2)}
           </del>
         </p>
       )}

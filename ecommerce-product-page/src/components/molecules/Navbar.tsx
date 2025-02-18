@@ -78,6 +78,8 @@ function Navbar() {
         </div>
       </nav>
 
+      <hr className="border-accent-foreground lg:mx-32" />
+
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );

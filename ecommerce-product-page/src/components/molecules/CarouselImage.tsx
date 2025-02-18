@@ -78,7 +78,7 @@ const CarouselImage = () => {
   };
 
   return (
-    <div className="relative h-[300px] overflow-hidden">
+    <div className="relative h-[300px] overflow-hidden lg:hidden">
       {!imageProducts[currentImage] ? (
         <ImageFallback />
       ) : (

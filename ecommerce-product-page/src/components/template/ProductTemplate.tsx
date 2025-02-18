@@ -28,22 +28,30 @@ const Carousel = lazy(() => import("../molecules/CarouselImage"));
 function ProductTemplate() {
   return (
     <Layout>
-      <Suspense fallback={<Loading />}>
-        <Carousel />
-      </Suspense>
+      {/* <div className="lg:hidden"> */}
+        {/* Carousel */}
+        <Suspense fallback={<Loading />}>
+          <Carousel />
+        </Suspense>
+      {/* </div> */}
 
-      {/* Componente descrizione */}
-      <div className="space-y-4 p-6">
-        <ProductDescription />
+      <div className="lg:flex lg:gap-12 lg:px-10 lg:py-20">
+        {/* Componente immagini */}
+        <div className="hidden w-1/2 bg-red-500 lg:block"></div>
 
-        {/* Componente prezzo */}
-        <ProductPrice />
+        <div className="flex-1 space-y-4 p-6">
+          {/* Componente descrizione */}
+          <ProductDescription />
 
-        {/* Componente quantità */}
-        <ProductQuantity />
+          {/* Componente prezzo */}
+          <ProductPrice />
 
-        {/* Componente aggiungi al carrello */}
-        <ProductButton />
+          {/* Componente quantità */}
+          <ProductQuantity />
+
+          {/* Componente aggiungi al carrello */}
+          <ProductButton />
+        </div>
       </div>
     </Layout>
   );

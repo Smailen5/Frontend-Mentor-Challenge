@@ -3,7 +3,7 @@
  * @description Main navigation component with mobile menu, cart and user profile
  */
 
-import { IconCart, IconMenu, imageAvatar, logo } from "@/assets/images";
+import { IconCart, IconMenu, imageAvatar, Logo } from "@/assets/images";
 import { Button } from "@/components/atoms/Button";
 import { useCart } from "@/lib/hooks/useCart";
 import { useState } from "react";
@@ -46,7 +46,10 @@ function Navbar() {
           </Button>
 
           {/* Logo */}
-          <img src={logo} alt="logo" />
+          <Logo
+            className="cursor-pointer"
+            onClick={() => navigate("/")}
+          />
 
           <ul className="hidden gap-6 lg:flex">
             <NavLinks isSidebar />

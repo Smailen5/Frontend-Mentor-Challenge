@@ -9,7 +9,7 @@ import IconPlus from "@/assets/images/icon-plus.svg?react";
 import IconPrevious from "@/assets/images/icon-previous.svg?react";
 
 // Logo
-import logo from "@/assets/images/logo.svg";
+import Logo from "@/assets/images/logo.svg?react";
 
 // Avatar
 import imageAvatar from "@/assets/images/image-avatar.png";
@@ -47,7 +47,7 @@ export {
   imageProduct3,
   imageProduct4,
   imageProducts,
-  logo,
+  Logo,
   thumbnailProduct1,
   thumbnailProduct2,
   thumbnailProduct3,

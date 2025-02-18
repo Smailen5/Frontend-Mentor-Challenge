@@ -44,12 +44,12 @@ function Navbar() {
           {/* Logo */}
           <img src={logo} alt="logo" />
 
-          <ul className="lg:flex gap-6 hidden">
+          <ul className="hidden gap-6 lg:flex">
             <NavLinks />
           </ul>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 lg:gap-8">
           <div className="relative">
             {/* Cart icon */}
             <Button
@@ -69,7 +69,12 @@ function Navbar() {
               </span>
             )}
           </div>
-          <img src={imageAvatar} alt="user" className="h-6 w-6" />
+          {/* User avatar */}
+          <img
+            src={imageAvatar}
+            alt="user"
+            className="h-6 w-6 lg:h-10 lg:w-10"
+          />
         </div>
       </nav>
 

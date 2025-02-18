@@ -25,7 +25,7 @@ const ProductGallery = () => {
               <Image
                 src={image}
                 alt={`product image ${index + 1}`}
-                className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${currentImage === index && "opacity-50"}`}
+                className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${currentImage === index && "opacity-25"}`}
                 onClick={() => handleImage(index)}
               />
               {currentImage === index && (

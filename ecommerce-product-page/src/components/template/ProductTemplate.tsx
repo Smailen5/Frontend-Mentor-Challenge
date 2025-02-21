@@ -3,11 +3,10 @@
  * @description Template component for the product page layout
  */
 
-import { IconClose } from "@/assets/images";
 import { lazy, Suspense, useState } from "react";
-import { Button } from "../atoms/Button";
 import Layout from "../layout/Layout";
 import Loading from "../molecules/Loading";
+import OverlayGallery from "../molecules/OverlayGallery";
 import ProductButton from "../molecules/ProductButton";
 import ProductDescription from "../molecules/ProductDescription";
 import ProductGallery from "../molecules/ProductGallery";
@@ -43,26 +42,10 @@ function ProductTemplate() {
           <ProductGallery setOverlay={setOverlayGallery} />
 
           {/* Overlay */}
-          {overlayGallery && (
-            <div className="absolute inset-0 flex items-center justify-center bg-black/75">
-              {/* Contenitore overlay */}
-              <div className="flex flex-col items-center justify-center">
-                {/* Contenitore immagine */}
-                <div className="z-50 h-1/2 w-1/2">
-                  <div className="flex justify-end">
-                    <Button
-                      variant={"ghost"}
-                      size={"icon"}
-                      onClick={() => setOverlayGallery(false)}
-                    >
-                      <IconClose className="hover:[&>path]:fill-primary [&>path]:fill-white" />
-                    </Button>
-                  </div>
-                  <ProductGallery />
-                </div>
-              </div>
-            </div>
-          )}
+          <OverlayGallery
+            overlay={overlayGallery}
+            setOverlay={setOverlayGallery}
+          />
         </div>
 
         <div className="flex-1 space-y-4 p-6">

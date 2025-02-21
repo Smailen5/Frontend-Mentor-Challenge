@@ -41,9 +41,8 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
                   className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${!setOverlay && currentImage === index ? "opacity-75" : currentImage === index && "opacity-25"}`}
                   onClick={() => handleImage(index)}
                 />
-                {/* {currentImage === index && (
-                  <div className="ring-primary absolute inset-0 rounded-xl ring-2" />
-                )} */}
+
+                {/* Ring ha bisogno di gestire l'immagine perche crea un overlay */}
                 {!setOverlay && currentImage === index ? (
                   <Ring className="bg-white/75" />
                 ) : !setOverlay ? (

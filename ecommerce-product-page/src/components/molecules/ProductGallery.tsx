@@ -1,6 +1,7 @@
 import { imageProducts } from "@/assets/images";
 import { useState } from "react";
 import Image from "../atoms/Image";
+import Ring from "../atoms/Ring";
 
 interface ProductGalleryProps {
   setOverlay?: (overlay: boolean) => void;
@@ -40,8 +41,13 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
                   className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${currentImage === index && "opacity-25"}`}
                   onClick={() => handleImage(index)}
                 />
-                {currentImage === index && (
+                {/* {currentImage === index && (
                   <div className="ring-primary absolute inset-0 rounded-xl ring-2" />
+                )} */}
+                {!setOverlay && currentImage === index ? (
+                  <Ring className="" />
+                ) : (
+                  currentImage === index && <Ring />
                 )}
               </div>
             );

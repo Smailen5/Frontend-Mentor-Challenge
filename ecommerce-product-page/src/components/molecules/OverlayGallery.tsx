@@ -21,8 +21,9 @@ const OverlayGallery = ({ overlay, setOverlay }: OverlayGalleryProps) => {
                   variant={"ghost"}
                   size={"icon"}
                   onClick={() => setOverlay(false)}
+                  className="group/close"
                 >
-                  <IconClose className="hover:[&>path]:fill-primary [&>path]:fill-white" />
+                  <IconClose className="group-hover/close:[&>path]:fill-primary [&>path]:fill-white" />
                 </Button>
               </div>
               <ProductGallery />

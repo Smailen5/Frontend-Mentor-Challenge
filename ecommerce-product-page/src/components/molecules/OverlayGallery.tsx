@@ -7,10 +7,7 @@ interface OverlayGalleryProps {
   setOverlay: (overlay: boolean) => void;
 }
 
-const OverlayGallery = ({
-  overlay,
-  setOverlay,
-}: OverlayGalleryProps) => {
+const OverlayGallery = ({ overlay, setOverlay }: OverlayGalleryProps) => {
   return (
     <>
       {overlay && (

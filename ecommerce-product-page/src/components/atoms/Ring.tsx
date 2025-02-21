@@ -1,11 +1,14 @@
 interface RingProps {
   className?: string;
+  noRing?: boolean;
+  onClick?: () => void;
 }
 
-const Ring = ({ className }: RingProps) => {
+const Ring = ({ className, noRing, onClick }: RingProps) => {
   return (
     <div
-      className={`ring-primary absolute inset-0 rounded-xl ring-2 ${className}`}
+      className={`absolute inset-0 cursor-pointer rounded-xl ${!noRing && "ring-primary ring-2"} ${className}`}
+      onClick={onClick}
     />
   );
 };

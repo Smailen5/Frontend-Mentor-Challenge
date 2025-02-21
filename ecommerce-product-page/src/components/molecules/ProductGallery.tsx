@@ -38,14 +38,20 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
                 <Image
                   src={image}
                   alt={`product image ${index + 1}`}
-                  className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${currentImage === index && "opacity-25"}`}
+                  className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${!setOverlay && currentImage === index ? "opacity-75" : currentImage === index && "opacity-25"}`}
                   onClick={() => handleImage(index)}
                 />
                 {/* {currentImage === index && (
                   <div className="ring-primary absolute inset-0 rounded-xl ring-2" />
                 )} */}
                 {!setOverlay && currentImage === index ? (
-                  <Ring className="" />
+                  <Ring className="bg-white/75" />
+                ) : !setOverlay ? (
+                  <Ring
+                    noRing
+                    className="hover:bg-white/50"
+                    onClick={() => handleImage(index)}
+                  />
                 ) : (
                   currentImage === index && <Ring />
                 )}

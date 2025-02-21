@@ -44,9 +44,7 @@ function ProductTemplate() {
 
           {/* Overlay */}
           {overlayGallery && (
-            <div
-              className="absolute inset-0 flex items-center justify-center bg-black/75"
-            >
+            <div className="absolute inset-0 flex items-center justify-center bg-black/75">
               {/* Contenitore overlay */}
               <div className="flex flex-col items-center justify-center">
                 {/* Contenitore immagine */}
@@ -55,10 +53,9 @@ function ProductTemplate() {
                     <Button
                       variant={"ghost"}
                       size={"icon"}
-                      className=""
                       onClick={() => setOverlayGallery(false)}
                     >
-                      <IconClose className="" />
+                      <IconClose className="hover:[&>path]:fill-primary [&>path]:fill-white" />
                     </Button>
                   </div>
                   <ProductGallery />

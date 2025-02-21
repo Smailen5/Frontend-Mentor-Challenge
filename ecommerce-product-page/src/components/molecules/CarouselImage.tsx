@@ -8,8 +8,8 @@ import { useCart } from "@/lib/hooks/useCart";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Cart from "./Cart";
+import GalleryButton from "./GalleryButton";
 import ImageFallback from "./ImageFallback";
-import GalleryButton from './GalleryButton';
 
 /**
  * Slide animation variants configuration
@@ -88,40 +88,23 @@ const CarouselImage = () => {
             handleNextImage={handleNextImage}
             handlePrevImage={handlePrevImage}
           >
-            {/* <button
-          {/* <button
-            aria-label="previous image"
-            className="bg-background absolute top-1/2 left-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
-            onClick={handlePrevImage}
-            >
-            <IconPrevious aria-hidden={true} />
-          </button> */}
-
-          <AnimatePresence initial={false} custom={direction}>
-            <motion.img
-              key={currentImage}
-              src={imageProducts[currentImage]}
-              custom={direction}
-              variants={slideVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{
-                x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.2 },
-              }}
-              className="absolute h-[300px] w-full object-cover"
+            <AnimatePresence initial={false} custom={direction}>
+              <motion.img
+                key={currentImage}
+                src={imageProducts[currentImage]}
+                custom={direction}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.2 },
+                }}
+                className="absolute h-[300px] w-full object-cover"
               />
-          </AnimatePresence>
-
-          {/* <button
-            aria-label="next image"
-            className="bg-background absolute top-1/2 right-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
-            onClick={handleNextImage}
-            >
-            <IconNext aria-hidden={true} />
-          </button> */}
-            </GalleryButton>
+            </AnimatePresence>
+          </GalleryButton>
         </>
       )}
       <Cart isOpen={cartOpen} />

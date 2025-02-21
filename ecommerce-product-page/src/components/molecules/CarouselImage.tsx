@@ -3,12 +3,13 @@
  * @description Image carousel component with next/previous navigation and animations
  */
 
-import { IconNext, IconPrevious, imageProducts } from "@/assets/images";
+import { imageProducts } from "@/assets/images";
 import { useCart } from "@/lib/hooks/useCart";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Cart from "./Cart";
 import ImageFallback from "./ImageFallback";
+import GalleryButton from './GalleryButton';
 
 /**
  * Slide animation variants configuration
@@ -83,13 +84,18 @@ const CarouselImage = () => {
         <ImageFallback />
       ) : (
         <>
-          <button
+          <GalleryButton
+            handleNextImage={handleNextImage}
+            handlePrevImage={handlePrevImage}
+          >
+            {/* <button
+          {/* <button
             aria-label="previous image"
             className="bg-background absolute top-1/2 left-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
             onClick={handlePrevImage}
-          >
+            >
             <IconPrevious aria-hidden={true} />
-          </button>
+          </button> */}
 
           <AnimatePresence initial={false} custom={direction}>
             <motion.img
@@ -105,16 +111,17 @@ const CarouselImage = () => {
                 opacity: { duration: 0.2 },
               }}
               className="absolute h-[300px] w-full object-cover"
-            />
+              />
           </AnimatePresence>
 
-          <button
+          {/* <button
             aria-label="next image"
             className="bg-background absolute top-1/2 right-4 z-10 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full"
             onClick={handleNextImage}
-          >
+            >
             <IconNext aria-hidden={true} />
-          </button>
+          </button> */}
+            </GalleryButton>
         </>
       )}
       <Cart isOpen={cartOpen} />

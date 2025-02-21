@@ -5,12 +5,11 @@
 
 import { imageProducts } from "@/assets/images";
 import { useCart } from "@/lib/hooks/useCart";
+import { useImageGallery } from "@/lib/hooks/useImageGallery";
 import { AnimatePresence, motion } from "framer-motion";
-// import { useState } from "react";
 import Cart from "./Cart";
 import GalleryButton from "./GalleryButton";
 import ImageFallback from "./ImageFallback";
-import { useImageGallery } from '@/lib/hooks/useImageGallery';
 
 /**
  * Slide animation variants configuration
@@ -46,22 +45,9 @@ import { useImageGallery } from '@/lib/hooks/useImageGallery';
  * - Supports keyboard navigation
  */
 const CarouselImage = () => {
-  // const [currentImage, setCurrentImage] = useState(0);
-  // const [direction, setDirection] = useState(0);
   const { cartOpen } = useCart();
-  const { currentImage, direction, handleNextImage, handlePrevImage} = useImageGallery(imageProducts)
-
-  // const handleNextImage = () => {
-  //   setDirection(1);
-  //   setCurrentImage((prev) => (prev + 1) % imageProducts.length);
-  // };
-
-  // const handlePrevImage = () => {
-  //   setDirection(-1);
-  //   setCurrentImage(
-  //     (prev) => (prev - 1 + imageProducts.length) % imageProducts.length,
-  //   );
-  // };
+  const { currentImage, direction, handleNextImage, handlePrevImage } =
+    useImageGallery(imageProducts);
 
   const slideVariants = {
     enter: (direction: number) => ({

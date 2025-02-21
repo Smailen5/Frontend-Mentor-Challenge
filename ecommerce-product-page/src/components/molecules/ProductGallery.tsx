@@ -1,5 +1,6 @@
 import { imageProducts } from "@/assets/images";
-import { useState } from "react";
+// import { useState } from "react";
+import { useImageGallery } from "@/lib/hooks/useImageGallery";
 import Image from "../atoms/Image";
 import Ring from "../atoms/Ring";
 import GalleryButton from "./GalleryButton";
@@ -9,11 +10,13 @@ interface ProductGalleryProps {
 }
 
 const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
-  const [currentImage, setCurrentImage] = useState<number>(0);
+  // const [currentImage, setCurrentImage] = useState<number>(0);
+  const { currentImage, handleImage, handlePrevImage, handleNextImage } =
+    useImageGallery(imageProducts);
 
-  const handleImage = (index: number) => {
-    setCurrentImage(index);
-  };
+  // const handleImage = (index: number) => {
+  //   setCurrentImage(index);
+  // };
 
   const handleOverlay = () => {
     if (setOverlay) {
@@ -21,15 +24,15 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
     }
   };
 
-  const handlePrevImage = () => {
-    setCurrentImage(
-      (prev) => (prev - 1 + imageProducts.length) % imageProducts.length,
-    );
-  };
+  // const handlePrevImage = () => {
+  //   setCurrentImage(
+  //     (prev) => (prev - 1 + imageProducts.length) % imageProducts.length,
+  //   );
+  // };
 
-  const handleNextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % imageProducts.length);
-  };
+  // const handleNextImage = () => {
+  //   setCurrentImage((prev) => (prev + 1) % imageProducts.length);
+  // };
 
   return (
     <>
@@ -50,7 +53,7 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
           <Image
             src={imageProducts[currentImage]}
             alt={`product image ${currentImage + 1}`}
-            className="rounded-2xl cursor-pointer"
+            className="cursor-pointer rounded-2xl"
             onClick={handleOverlay}
           />
         )}

@@ -2,6 +2,7 @@ import { imageProducts } from "@/assets/images";
 import { useState } from "react";
 import Image from "../atoms/Image";
 import Ring from "../atoms/Ring";
+import GalleryButton from "./GalleryButton";
 
 interface ProductGalleryProps {
   setOverlay?: (overlay: boolean) => void;
@@ -20,16 +21,39 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
     }
   };
 
-  console.log(currentImage);
+  const handlePrevImage = () => {
+    setCurrentImage(
+      (prev) => (prev - 1 + imageProducts.length) % imageProducts.length,
+    );
+  };
+
+  const handleNextImage = () => {
+    setCurrentImage((prev) => (prev + 1) % imageProducts.length);
+  };
+
   return (
     <>
       <div className="space-y-8">
-        <Image
-          src={imageProducts[currentImage]}
-          alt={`product image ${currentImage + 1}`}
-          className={`rounded-2xl ${setOverlay && "cursor-pointer"}`}
-          onClick={handleOverlay}
-        />
+        {!setOverlay ? (
+          <GalleryButton
+            handlePrevImage={handlePrevImage}
+            handleNextImage={handleNextImage}
+          >
+            <Image
+              src={imageProducts[currentImage]}
+              alt={`product image ${currentImage + 1}`}
+              className="rounded-2xl"
+              onClick={handleOverlay}
+            />
+          </GalleryButton>
+        ) : (
+          <Image
+            src={imageProducts[currentImage]}
+            alt={`product image ${currentImage + 1}`}
+            className="rounded-2xl cursor-pointer"
+            onClick={handleOverlay}
+          />
+        )}
 
         <div className="flex h-20 w-full flex-wrap justify-between gap-4">
           {imageProducts.map((image, index) => {

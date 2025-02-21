@@ -3,7 +3,9 @@
  * @description Template component for the product page layout
  */
 
+import { IconClose } from "@/assets/images";
 import { lazy, Suspense } from "react";
+import { Button } from "../atoms/Button";
 import Layout from "../layout/Layout";
 import Loading from "../molecules/Loading";
 import ProductButton from "../molecules/ProductButton";
@@ -38,6 +40,22 @@ function ProductTemplate() {
         {/* Contenitore componente immagini */}
         <div className="hidden w-1/2 flex-1 lg:block">
           <ProductGallery />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 flex items-center justify-center bg-black/75">
+            {/* Contenitore overlay */}
+            <div className="flex flex-col items-center justify-center">
+              {/* Contenitore immagine */}
+              <div className="z-50 h-1/2 w-1/2">
+                <div className="flex justify-end">
+                  <Button variant={"ghost"} size={"icon"} className=''>
+                    <IconClose className='' />
+                  </Button>
+                </div>
+                <ProductGallery />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="flex-1 space-y-4 p-6">

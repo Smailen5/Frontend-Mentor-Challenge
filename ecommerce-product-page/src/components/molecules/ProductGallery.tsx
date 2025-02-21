@@ -1,5 +1,4 @@
 import { imageProducts } from "@/assets/images";
-// import { useState } from "react";
 import { useImageGallery } from "@/lib/hooks/useImageGallery";
 import Image from "../atoms/Image";
 import Ring from "../atoms/Ring";
@@ -10,29 +9,14 @@ interface ProductGalleryProps {
 }
 
 const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
-  // const [currentImage, setCurrentImage] = useState<number>(0);
   const { currentImage, handleImage, handlePrevImage, handleNextImage } =
     useImageGallery(imageProducts);
-
-  // const handleImage = (index: number) => {
-  //   setCurrentImage(index);
-  // };
 
   const handleOverlay = () => {
     if (setOverlay) {
       setOverlay(true);
     }
   };
-
-  // const handlePrevImage = () => {
-  //   setCurrentImage(
-  //     (prev) => (prev - 1 + imageProducts.length) % imageProducts.length,
-  //   );
-  // };
-
-  // const handleNextImage = () => {
-  //   setCurrentImage((prev) => (prev + 1) % imageProducts.length);
-  // };
 
   return (
     <>

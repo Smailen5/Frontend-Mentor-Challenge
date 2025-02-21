@@ -1,6 +1,53 @@
+/**
+ * @file useImageGallery.ts
+ * @description Custom hook for managing image gallery state and navigation
+ */
+
 import { useState } from "react";
 
-export const useImageGallery = (images: string[]) => {
+/**
+ * Interface for the return value of useImageGallery
+ * @interface ImageGalleryHook
+ * @property {number} currentImage - Index of the currently displayed image
+ * @property {number} direction - Direction of the animation (-1 for prev, 1 for next)
+ * @property {(index: number) => void} handleImage - Function to set current image by index
+ * @property {() => void} handlePrevImage - Function to navigate to previous image
+ * @property {() => void} handleNextImage - Function to navigate to next image
+ */
+interface ImageGalleryHook {
+  currentImage: number;
+  direction: number;
+  handleImage: (index: number) => void;
+  handlePrevImage: () => void;
+  handleNextImage: () => void;
+}
+
+/**
+ * Custom hook for managing image gallery functionality
+ * @function useImageGallery
+ * @description Manages state and navigation for an image gallery/carousel component
+ *
+ * @param {string[]} images - Array of image URLs to display in the gallery
+ *
+ * @returns {ImageGalleryHook} Object containing:
+ * - Current image index
+ * - Animation direction
+ * - Functions for image navigation
+ *
+ * @example
+ * ```tsx
+ * const { currentImage, handleNextImage, handlePrevImage } = useImageGallery(images);
+ *
+ * return (
+ *   <div>
+ *     <img src={images[currentImage]} />
+ *     <button onClick={handlePrevImage}>Previous</button>
+ *     <button onClick={handleNextImage}>Next</button>
+ *   </div>
+ * );
+ * ```
+ */
+export const useImageGallery = (images: string[]): ImageGalleryHook => {
   const [currentImage, setCurrentImage] = useState<number>(0);
   const [direction, setDirection] = useState<number>(0);
 

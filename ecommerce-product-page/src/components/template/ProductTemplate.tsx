@@ -44,7 +44,10 @@ function ProductTemplate() {
 
           {/* Overlay */}
           {overlayGallery && (
-            <div className="absolute inset-0 flex items-center justify-center bg-black/75">
+            <div
+              className="absolute inset-0 flex items-center justify-center bg-black/75"
+              onClick={() => setOverlayGallery(false)}
+            >
               {/* Contenitore overlay */}
               <div className="flex flex-col items-center justify-center">
                 {/* Contenitore immagine */}

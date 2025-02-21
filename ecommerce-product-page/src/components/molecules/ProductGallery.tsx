@@ -2,11 +2,21 @@ import { imageProducts } from "@/assets/images";
 import { useState } from "react";
 import Image from "../atoms/Image";
 
-const ProductGallery = () => {
+interface ProductGalleryProps {
+  setOverlay?: (overlay: boolean) => void;
+}
+
+const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
   const [currentImage, setCurrentImage] = useState<number>(0);
 
   const handleImage = (index: number) => {
     setCurrentImage(index);
+  };
+
+  const handleOverlay = () => {
+    if (setOverlay) {
+      setOverlay(true);
+    }
   };
 
   console.log(currentImage);
@@ -16,7 +26,8 @@ const ProductGallery = () => {
         <Image
           src={imageProducts[currentImage]}
           alt={`product image ${currentImage + 1}`}
-          className="rounded-2xl"
+          className={`rounded-2xl ${setOverlay && "cursor-pointer"}`}
+          onClick={handleOverlay}
         />
 
         <div className="flex h-20 w-full flex-wrap justify-between gap-4">
@@ -37,7 +48,6 @@ const ProductGallery = () => {
           })}
         </div>
       </div>
-
     </>
   );
 };

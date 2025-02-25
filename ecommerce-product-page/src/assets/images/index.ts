@@ -15,10 +15,10 @@ import Logo from "@/assets/images/logo.svg?react";
 import imageAvatar from "@/assets/images/image-avatar.png";
 
 // Images
-import imageProduct1 from "@/assets/images/image-product-1.jpg";
-import imageProduct2 from "@/assets/images/image-product-2.jpg";
-import imageProduct3 from "@/assets/images/image-product-3.jpg";
-import imageProduct4 from "@/assets/images/image-product-4.jpg";
+import imageProduct1 from "@/assets/images/image-product-1.webp";
+import imageProduct2 from "@/assets/images/image-product-2.webp";
+import imageProduct3 from "@/assets/images/image-product-3.webp";
+import imageProduct4 from "@/assets/images/image-product-4.webp";
 const imageProducts = [
   imageProduct1,
   imageProduct2,
@@ -27,10 +27,10 @@ const imageProducts = [
 ];
 
 // Thumbnails
-import thumbnailProduct1 from "@/assets/images/image-product-1-thumbnail.jpg";
-import thumbnailProduct2 from "@/assets/images/image-product-2-thumbnail.jpg";
-import thumbnailProduct3 from "@/assets/images/image-product-3-thumbnail.jpg";
-import thumbnailProduct4 from "@/assets/images/image-product-4-thumbnail.jpg";
+import thumbnailProduct1 from "@/assets/images/image-product-1-thumbnail.webp";
+import thumbnailProduct2 from "@/assets/images/image-product-2-thumbnail.webp";
+import thumbnailProduct3 from "@/assets/images/image-product-3-thumbnail.webp";
+import thumbnailProduct4 from "@/assets/images/image-product-4-thumbnail.webp";
 
 export {
   IconCart,

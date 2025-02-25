@@ -57,6 +57,7 @@ function Navbar() {
           <div className="relative">
             {/* Cart icon */}
             <Button
+              aria-label="cart"
               variant={"ghost"}
               size={"icon"}
               rounded={"lg"}

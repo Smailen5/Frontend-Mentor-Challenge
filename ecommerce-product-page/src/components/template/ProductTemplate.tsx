@@ -33,31 +33,31 @@ function ProductTemplate() {
       {/* Carousel */}
       <Suspense fallback={<Loading />}>
         <Carousel />
-      </Suspense>
 
-      <div className="lg:flex lg:items-center lg:gap-24 lg:px-10 lg:py-20">
-        {/* Contenitore componente immagini */}
-        <GalleryDesktop
-          setOverlayGallery={setOverlayGallery}
-          overlayGallery={overlayGallery}
-        />
+        <div className="lg:flex lg:items-center lg:gap-24 lg:px-10 lg:py-20">
+          {/* Contenitore componente immagini */}
+          <GalleryDesktop
+            setOverlayGallery={setOverlayGallery}
+            overlayGallery={overlayGallery}
+          />
 
-        <div className="flex-1 space-y-4 p-6">
-          {/* Componente descrizione */}
-          <ProductDescription />
+          <div className="flex-1 space-y-4 p-6">
+            {/* Componente descrizione */}
+            <ProductDescription />
 
-          {/* Componente prezzo */}
-          <ProductPrice />
+            {/* Componente prezzo */}
+            <ProductPrice />
 
-          <div className="gap-4 space-y-4 lg:flex lg:h-12 lg:space-y-0">
-            {/* Componente quantità */}
-            <ProductQuantity />
+            <div className="gap-4 space-y-4 lg:flex lg:h-12 lg:space-y-0">
+              {/* Componente quantità */}
+              <ProductQuantity />
 
-            {/* Componente aggiungi al carrello */}
-            <ProductButton />
+              {/* Componente aggiungi al carrello */}
+              <ProductButton />
+            </div>
           </div>
         </div>
-      </div>
+      </Suspense>
     </Layout>
   );
 }

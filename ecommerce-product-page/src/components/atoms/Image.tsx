@@ -59,6 +59,9 @@ function Image({
 }: ImageProps) {
   return (
     <img
+      rel="preload"
+      loading="lazy"
+      fetchPriority="high"
       src={src}
       alt={alt}
       className={className}

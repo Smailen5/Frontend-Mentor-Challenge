@@ -1,42 +1,54 @@
 import { imageProducts } from "@/assets/images";
 import { useImageGallery } from "@/lib/hooks/useImageGallery";
 import Image from "../atoms/Image";
-import Ring from "../atoms/Ring";
 import GalleryButton from "./GalleryButton";
+import ProductsGalleryThumbnail from "./ProductsGalleryThumbnail";
 
 interface ProductGalleryProps {
-  setOverlay?: (overlay: boolean) => void;
+  setIsOverlay?: (overlay: boolean) => void;
 }
 
-const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
+const ProductGallery = ({ setIsOverlay }: ProductGalleryProps) => {
   const { currentImage, handleImage, handlePrevImage, handleNextImage } =
     useImageGallery(imageProducts);
 
   const handleOverlay = () => {
-    if (setOverlay) {
-      setOverlay(true);
+    if (setIsOverlay) {
+      setIsOverlay(true);
     }
   };
 
   return (
     <>
       <div className="space-y-8">
-        {!setOverlay ? (
-          <div className="relative">
-            <GalleryButton
-              handlePrevImage={handlePrevImage}
-              handleNextImage={handleNextImage}
-              productGallery
-            >
-              <Image
-                src={imageProducts[currentImage]}
-                alt={`product image ${currentImage + 1}`}
-                className="rounded-2xl"
-                onClick={handleOverlay}
+        {/* Immagine desktop con overlay */}
+        {!setIsOverlay ? (
+          <>
+            <div className="relative">
+              <GalleryButton
+                handlePrevImage={handlePrevImage}
+                handleNextImage={handleNextImage}
+                productGallery
+              >
+                <Image
+                  src={imageProducts[currentImage]}
+                  alt={`product image ${currentImage + 1}`}
+                  className="rounded-2xl"
+                  onClick={handleOverlay}
+                />
+              </GalleryButton>
+            </div>
+            <div className="flex h-20 w-full flex-wrap justify-between gap-4 px-8">
+              <ProductsGalleryThumbnail
+                imageProducts={imageProducts}
+                setOverlay={setIsOverlay}
+                currentImage={currentImage}
+                handleImage={handleImage}
               />
-            </GalleryButton>
-          </div>
+            </div>
+          </>
         ) : (
+          // Immagine desktop senza overlay
           <Image
             src={imageProducts[currentImage]}
             alt={`product image ${currentImage + 1}`}
@@ -45,33 +57,17 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
           />
         )}
 
-        <div className="flex h-20 w-full flex-wrap justify-between gap-4">
-          {imageProducts.map((image, index) => {
-            return (
-              <div key={index} className="relative">
-                <Image
-                  src={image}
-                  alt={`product image ${index + 1}`}
-                  className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${!setOverlay && currentImage === index ? "opacity-75" : currentImage === index && "opacity-25"}`}
-                  onClick={() => handleImage(index)}
-                />
-
-                {/* Ring ha bisogno di gestire l'immagine perche crea un overlay */}
-                {!setOverlay && currentImage === index ? (
-                  <Ring className="bg-white/75" />
-                ) : !setOverlay ? (
-                  <Ring
-                    noRing
-                    className="hover:bg-white/50"
-                    onClick={() => handleImage(index)}
-                  />
-                ) : (
-                  currentImage === index && <Ring />
-                )}
-              </div>
-            );
-          })}
-        </div>
+        {/* Thumbnail senza overlay */}
+        {setIsOverlay && (
+          <div className="flex h-20 w-full flex-wrap justify-between gap-4">
+            <ProductsGalleryThumbnail
+              imageProducts={imageProducts}
+              setOverlay={setIsOverlay}
+              currentImage={currentImage}
+              handleImage={handleImage}
+            />
+          </div>
+        )}
       </div>
     </>
   );

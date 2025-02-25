@@ -39,7 +39,7 @@ function ProductTemplate() {
       <div className="lg:flex lg:items-center lg:gap-24 lg:px-10 lg:py-20">
         {/* Contenitore componente immagini */}
         <div className="hidden w-1/2 flex-1 lg:block">
-          <ProductGallery setOverlay={setOverlayGallery} />
+          <ProductGallery setIsOverlay={setOverlayGallery} />
 
           {/* Overlay */}
           <OverlayGallery

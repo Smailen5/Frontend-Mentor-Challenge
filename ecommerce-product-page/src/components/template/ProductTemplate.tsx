@@ -6,14 +6,13 @@
 import { lazy, Suspense, useState } from "react";
 import Layout from "../layout/Layout";
 import Loading from "../molecules/Loading";
-import OverlayGallery from "../molecules/OverlayGallery";
 import ProductButton from "../molecules/ProductButton";
 import ProductDescription from "../molecules/ProductDescription";
 import ProductPrice from "../molecules/ProductPrice";
 import ProductQuantity from "../molecules/ProductQuantity";
-import ProductGallery from "../organism/ProductGallery";
 
 const Carousel = lazy(() => import("../molecules/CarouselImage"));
+const GalleryDesktop = lazy(() => import("../organism/GalleryDesktop.tsx"));
 
 /**
  * ProductTemplate component
@@ -38,15 +37,10 @@ function ProductTemplate() {
 
       <div className="lg:flex lg:items-center lg:gap-24 lg:px-10 lg:py-20">
         {/* Contenitore componente immagini */}
-        <div className="hidden w-1/2 flex-1 lg:block">
-          <ProductGallery setIsOverlay={setOverlayGallery} />
-
-          {/* Overlay */}
-          <OverlayGallery
-            overlay={overlayGallery}
-            setOverlay={setOverlayGallery}
-          />
-        </div>
+        <GalleryDesktop
+          setOverlayGallery={setOverlayGallery}
+          overlayGallery={overlayGallery}
+        />
 
         <div className="flex-1 space-y-4 p-6">
           {/* Componente descrizione */}

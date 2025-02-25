@@ -1,7 +1,34 @@
+/**
+ * @file CartContent.tsx
+ * @description Component for rendering the contents of the shopping cart
+ */
+
 import { IconDelete } from "@/assets/images";
 import { CartContentProps } from "@/types";
 import { Button } from "../atoms/Button";
 
+/**
+ * CartContent component
+ * @component
+ * @description Displays cart items, quantities, prices and checkout button
+ *
+ * @example
+ * ```tsx
+ * <CartContent
+ *   cartData={cart}
+ *   title="Product Title"
+ *   handleRemoveCart={handleRemove}
+ * />
+ * ```
+ *
+ * @returns {JSX.Element} Cart contents with items or empty state message
+ *
+ * @accessibility
+ * - Uses semantic HTML (article, main)
+ * - Includes screen reader text for empty state
+ * - Uses proper heading hierarchy
+ * - Provides clear button labels
+ */
 const CartContent = ({
   cartData,
   title,
@@ -19,7 +46,11 @@ const CartContent = ({
 
   return (
     <main
-      className={`${quantity > 0 ? "space-y-6 p-6 pb-8" : "flex h-48 items-center justify-center"}`}
+      className={`${
+        quantity > 0
+          ? "space-y-6 p-6 pb-8"
+          : "flex h-48 items-center justify-center"
+      }`}
     >
       {quantity > 0 ? (
         <>

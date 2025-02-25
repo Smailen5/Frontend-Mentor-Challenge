@@ -1,12 +1,43 @@
-import { linksNav } from "@/data/links/linksNav";
-import { Link } from 'react-router-dom';
+/**
+ * @file NavLinks.tsx
+ * @description Navigation links component for header and sidebar navigation
+ */
 
-interface NavLinsPros {
+import { linksNav } from "@/data/links/linksNav";
+import { Link } from "react-router-dom";
+
+/**
+ * @interface NavLinksProps
+ * @property {(boolean: boolean) => void} [setIsOpen] - Optional function to control sidebar state
+ * @property {boolean} [isSidebar] - Optional flag to enable sidebar-specific styling
+ */
+interface NavLinksProps {
   setIsOpen?: (boolean: boolean) => void;
   isSidebar?: boolean;
 }
 
-const NavLinks = ({ setIsOpen, isSidebar }: NavLinsPros) => {
+/**
+ * NavLinks component
+ * @component
+ * @description Renders a list of navigation links with optional sidebar behavior
+ *
+ * @example
+ * ```tsx
+ * // In header
+ * <NavLinks isSidebar={true} />
+ *
+ * // In sidebar
+ * <NavLinks setIsOpen={setIsOpen} />
+ * ```
+ *
+ * @returns {JSX.Element} A list of navigation links with appropriate styling
+ *
+ * @accessibility
+ * - Uses semantic list elements
+ * - Employs React Router Links for navigation
+ * - Includes hover effects for visual feedback
+ */
+const NavLinks = ({ setIsOpen, isSidebar }: NavLinksProps) => {
   const handleOpen = () => {
     if (setIsOpen) {
       setIsOpen(false);

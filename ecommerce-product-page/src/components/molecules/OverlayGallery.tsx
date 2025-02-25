@@ -1,12 +1,42 @@
+/**
+ * @file OverlayGallery.tsx
+ * @description Modal gallery component for displaying images in a fullscreen overlay
+ */
+
 import { IconClose } from "@/assets/images";
 import { Button } from "../atoms/Button";
 import ProductGallery from "../organism/ProductGallery";
 
+/**
+ * @interface OverlayGalleryProps
+ * @property {boolean} overlay - Controls visibility of the overlay
+ * @property {(overlay: boolean) => void} setOverlay - Function to update overlay state
+ */
 interface OverlayGalleryProps {
   overlay: boolean;
   setOverlay: (overlay: boolean) => void;
 }
 
+/**
+ * OverlayGallery component
+ * @component
+ * @description Displays a fullscreen modal gallery with close button and product images
+ *
+ * @example
+ * ```tsx
+ * <OverlayGallery
+ *   overlay={isOpen}
+ *   setOverlay={setIsOpen}
+ * />
+ * ```
+ *
+ * @returns {JSX.Element} A modal overlay containing the product gallery
+ *
+ * @accessibility
+ * - Modal can be closed via button
+ * - Uses semantic button elements
+ * - Includes proper ARIA attributes
+ */
 const OverlayGallery = ({ overlay, setOverlay }: OverlayGalleryProps) => {
   return (
     <>

@@ -11,6 +11,7 @@
  * @property {Function=} onClick - Optional click handler function
  * @property {number} width - Width of the image in pixels
  * @property {number} height - Height of the image in pixels
+ * @property {boolean=} priority - Optional flag to indicate if the image is priority
  */
 type ImageProps = {
   src: string;
@@ -19,6 +20,7 @@ type ImageProps = {
   onClick?: () => void;
   width: number;
   height: number;
+  priority?: boolean;
 };
 
 /**
@@ -56,12 +58,12 @@ function Image({
   onClick,
   width,
   height,
+  priority = false,
 }: ImageProps) {
   return (
     <img
-      rel="preload"
-      loading="lazy"
-      fetchPriority="high"
+      loading={priority ? undefined : "lazy"}
+      fetchPriority={priority ? "high" : "auto"}
       src={src}
       alt={alt}
       className={className}

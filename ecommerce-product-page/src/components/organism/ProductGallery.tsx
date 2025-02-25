@@ -37,6 +37,7 @@ const ProductGallery = ({ setIsOverlay }: ProductGalleryProps) => {
                   alt={`product image ${currentImage + 1}`}
                   className="rounded-2xl"
                   onClick={handleOverlay}
+                  priority={true}
                 />
               </GalleryButton>
             </div>

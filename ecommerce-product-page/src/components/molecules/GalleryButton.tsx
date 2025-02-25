@@ -14,8 +14,8 @@ const GalleryButton = ({
   children,
   productGallery,
 }: GalleryButtonProps) => {
-  const leftButton = productGallery && "left-1/3 -translate-x-3/4 size-12";
-  const rightButton = productGallery && "right-1/3 translate-x-3/4 size-12";
+  const leftButton = productGallery && "-left-8 size-14";
+  const rightButton = productGallery && "-right-8 size-14";
 
   return (
     <>

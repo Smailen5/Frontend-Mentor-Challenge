@@ -22,18 +22,20 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
     <>
       <div className="space-y-8">
         {!setOverlay ? (
-          <GalleryButton
-            handlePrevImage={handlePrevImage}
-            handleNextImage={handleNextImage}
-            productGallery
-          >
-            <Image
-              src={imageProducts[currentImage]}
-              alt={`product image ${currentImage + 1}`}
-              className="rounded-2xl"
-              onClick={handleOverlay}
-            />
-          </GalleryButton>
+          <div className="relative">
+            <GalleryButton
+              handlePrevImage={handlePrevImage}
+              handleNextImage={handleNextImage}
+              productGallery
+            >
+              <Image
+                src={imageProducts[currentImage]}
+                alt={`product image ${currentImage + 1}`}
+                className="rounded-2xl"
+                onClick={handleOverlay}
+              />
+            </GalleryButton>
+          </div>
         ) : (
           <Image
             src={imageProducts[currentImage]}

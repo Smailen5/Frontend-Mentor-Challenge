@@ -56,6 +56,8 @@ const ProductsGalleryThumbnail = ({
               <Image
                 src={image}
                 alt={`product image ${index + 1}`}
+                width={80}
+                height={80}
                 className={`size-20 cursor-pointer rounded-xl transition-all duration-300 ease-in-out hover:opacity-50 ${
                   !setOverlay && currentImage === index
                     ? "opacity-75"

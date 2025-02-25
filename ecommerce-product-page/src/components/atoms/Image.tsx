@@ -9,12 +9,16 @@
  * @property {string} alt - Alternative text description for accessibility
  * @property {string=} className - Optional CSS classes for styling
  * @property {Function=} onClick - Optional click handler function
+ * @property {number} width - Width of the image in pixels
+ * @property {number} height - Height of the image in pixels
  */
 type ImageProps = {
   src: string;
   alt: string;
   className?: string;
   onClick?: () => void;
+  width: number;
+  height: number;
 };
 
 /**
@@ -45,8 +49,28 @@ type ImageProps = {
  * - Requires alt text for screen readers
  * - Maintains semantic HTML structure
  */
-function Image({ src, alt, className = "", onClick }: ImageProps) {
-  return <img src={src} alt={alt} className={className} onClick={onClick} />;
+function Image({
+  src,
+  alt,
+  className = "",
+  onClick,
+  width,
+  height,
+}: ImageProps) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      onClick={onClick}
+      width={width}
+      height={height}
+      style={{
+        maxWidth: "100%",
+        height: "auto",
+      }}
+    />
+  );
 }
 
 export default Image;

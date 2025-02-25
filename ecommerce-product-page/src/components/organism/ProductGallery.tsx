@@ -32,6 +32,8 @@ const ProductGallery = ({ setIsOverlay }: ProductGalleryProps) => {
               >
                 <Image
                   src={imageProducts[currentImage]}
+                  width={1000}
+                  height={1000}
                   alt={`product image ${currentImage + 1}`}
                   className="rounded-2xl"
                   onClick={handleOverlay}
@@ -51,6 +53,8 @@ const ProductGallery = ({ setIsOverlay }: ProductGalleryProps) => {
           // Immagine desktop senza overlay
           <Image
             src={imageProducts[currentImage]}
+            width={600}
+            height={600}
             alt={`product image ${currentImage + 1}`}
             className="cursor-pointer rounded-2xl"
             onClick={handleOverlay}

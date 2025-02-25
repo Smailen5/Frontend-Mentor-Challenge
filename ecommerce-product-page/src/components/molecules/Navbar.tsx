@@ -46,10 +46,7 @@ function Navbar() {
           </Button>
 
           {/* Logo */}
-          <Logo
-            className="cursor-pointer"
-            onClick={() => navigate("/")}
-          />
+          <Logo className="cursor-pointer" onClick={() => navigate("/")} />
 
           <ul className="hidden gap-6 lg:flex">
             <NavLinks isSidebar />
@@ -79,6 +76,8 @@ function Navbar() {
           {/* User avatar */}
           <Image
             src={imageAvatar}
+            width={24}
+            height={24}
             alt="user"
             className="ring-primary h-6 w-6 cursor-pointer rounded-full hover:ring-2 lg:h-10 lg:w-10"
             onClick={() => navigate("/")}

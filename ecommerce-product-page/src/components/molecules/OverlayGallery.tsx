@@ -19,11 +19,11 @@ const OverlayGallery = ({ overlay, setOverlay }: OverlayGalleryProps) => {
               <div className="flex justify-end">
                 <Button
                   variant={"ghost"}
-                  size={"icon"}
+                  size={"close"}
                   onClick={() => setOverlay(false)}
-                  className="group/close"
+                  className="group/close mb-8"
                 >
-                  <IconClose className="group-hover/close:[&>path]:fill-primary [&>path]:fill-white" />
+                  <IconClose className="group-hover/close:[&>path]:fill-primary scale-150 [&>path]:fill-white" />
                 </Button>
               </div>
               <ProductGallery />

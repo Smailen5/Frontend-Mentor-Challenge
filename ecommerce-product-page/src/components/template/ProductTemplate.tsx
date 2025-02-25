@@ -9,9 +9,9 @@ import Loading from "../molecules/Loading";
 import OverlayGallery from "../molecules/OverlayGallery";
 import ProductButton from "../molecules/ProductButton";
 import ProductDescription from "../molecules/ProductDescription";
-import ProductGallery from "../molecules/ProductGallery";
 import ProductPrice from "../molecules/ProductPrice";
 import ProductQuantity from "../molecules/ProductQuantity";
+import ProductGallery from "../organism/ProductGallery";
 
 const Carousel = lazy(() => import("../molecules/CarouselImage"));
 

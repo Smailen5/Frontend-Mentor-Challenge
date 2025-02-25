@@ -1,8 +1,8 @@
 import { imageProducts } from "@/assets/images";
 import { useImageGallery } from "@/lib/hooks/useImageGallery";
 import Image from "../atoms/Image";
-import GalleryButton from "./GalleryButton";
-import ProductsGalleryThumbnail from "./ProductsGalleryThumbnail";
+import GalleryButton from "../molecules/GalleryButton";
+import ProductsGalleryThumbnail from "../molecules/ProductsGalleryThumbnail";
 
 interface ProductGalleryProps {
   setIsOverlay?: (overlay: boolean) => void;

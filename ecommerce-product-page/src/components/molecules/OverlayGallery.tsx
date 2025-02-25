@@ -1,6 +1,6 @@
 import { IconClose } from "@/assets/images";
 import { Button } from "../atoms/Button";
-import ProductGallery from "./ProductGallery";
+import ProductGallery from "../organism/ProductGallery";
 
 interface OverlayGalleryProps {
   overlay: boolean;

@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 /**
  * @interface NavLinksProps
- * @property {(boolean: boolean) => void} [setIsOpen] - Optional function to control sidebar state
- * @property {boolean} [isSidebar] - Optional flag to enable sidebar-specific styling
+ * @property {Function=} setIsOpen - Optional function to control sidebar state
+ * @property {boolean=} isSidebar - Optional flag to enable sidebar-specific styling
  */
 interface NavLinksProps {
   setIsOpen?: (boolean: boolean) => void;

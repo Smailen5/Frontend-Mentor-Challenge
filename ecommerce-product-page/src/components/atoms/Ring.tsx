@@ -5,9 +5,9 @@
 
 /**
  * @interface RingProps
- * @property {string} [className] - Optional additional CSS classes
- * @property {boolean} [noRing] - Optional flag to disable the ring border
- * @property {() => void} [onClick] - Optional click handler function
+ * @property {string=} className - Optional CSS classes for styling
+ * @property {boolean=} noRing - Optional flag to disable the ring border
+ * @property {Function=} onClick - Optional click handler function
  */
 interface RingProps {
   className?: string;

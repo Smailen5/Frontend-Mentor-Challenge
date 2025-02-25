@@ -10,7 +10,7 @@ import ProductGallery from "../organism/ProductGallery";
 /**
  * @interface OverlayGalleryProps
  * @property {boolean} overlay - Controls visibility of the overlay
- * @property {(overlay: boolean) => void} setOverlay - Function to update overlay state
+ * @property {Function} setOverlay - Function to update overlay state
  */
 interface OverlayGalleryProps {
   overlay: boolean;

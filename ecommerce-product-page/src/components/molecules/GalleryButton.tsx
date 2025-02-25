@@ -8,10 +8,10 @@ import { twMerge } from "tailwind-merge";
 
 /**
  * @interface GalleryButtonProps
- * @property {() => void} handlePrevImage - Function to handle previous image navigation
- * @property {() => void} handleNextImage - Function to handle next image navigation
+ * @property {Function} handlePrevImage - Function to handle previous image navigation
+ * @property {Function} handleNextImage - Function to handle next image navigation
  * @property {React.ReactNode} children - Content to be displayed between navigation buttons
- * @property {boolean} [productGallery] - Optional flag to enable product gallery specific styling
+ * @property {boolean=} productGallery - Optional flag to enable product gallery specific styling
  */
 interface GalleryButtonProps {
   handlePrevImage: () => void;

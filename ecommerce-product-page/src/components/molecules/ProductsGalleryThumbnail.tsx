@@ -8,10 +8,10 @@ import Ring from "../atoms/Ring";
 
 /**
  * @interface ProductsGalleryThumbnailProps
- * @property {string[]} [imageProducts] - Array of product image URLs
- * @property {(overlay: boolean) => void} [setOverlay] - Optional function to control overlay state
+ * @property {Array<string>=} imageProducts - Array of product image URLs
+ * @property {Function=} setOverlay - Optional function to control overlay state
  * @property {number} currentImage - Index of currently selected image
- * @property {(index: number) => void} handleImage - Function to handle image selection
+ * @property {Function} handleImage - Function to handle image selection
  */
 interface ProductsGalleryThumbnailProps {
   imageProducts?: string[];

@@ -7,8 +7,8 @@
  * @interface ImageProps
  * @property {string} src - Source URL of the image
  * @property {string} alt - Alternative text description for accessibility
- * @property {string} [className] - Optional CSS classes for styling
- * @property {() => void} [onClick] - Optional click handler function
+ * @property {string=} className - Optional CSS classes for styling
+ * @property {Function=} onClick - Optional click handler function
  */
 type ImageProps = {
   src: string;

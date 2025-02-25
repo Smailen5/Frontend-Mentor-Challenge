@@ -10,9 +10,9 @@ import { useState } from "react";
  * @interface ImageGalleryHook
  * @property {number} currentImage - Index of the currently displayed image
  * @property {number} direction - Direction of the animation (-1 for prev, 1 for next)
- * @property {(index: number) => void} handleImage - Function to set current image by index
- * @property {() => void} handlePrevImage - Function to navigate to previous image
- * @property {() => void} handleNextImage - Function to navigate to next image
+ * @property {Function} handleImage - Function to set current image by index
+ * @property {Function} handlePrevImage - Function to navigate to previous image
+ * @property {Function} handleNextImage - Function to navigate to next image
  */
 interface ImageGalleryHook {
   currentImage: number;

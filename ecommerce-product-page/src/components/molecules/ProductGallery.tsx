@@ -25,6 +25,7 @@ const ProductGallery = ({ setOverlay }: ProductGalleryProps) => {
           <GalleryButton
             handlePrevImage={handlePrevImage}
             handleNextImage={handleNextImage}
+            productGallery
           >
             <Image
               src={imageProducts[currentImage]}

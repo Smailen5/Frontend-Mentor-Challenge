@@ -8,6 +8,10 @@
 
 ---
 
+#### Ecommerce Product Page [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/ecommerce-product-page) - [Live site](https://funny-swan-69bb4e.netlify.app/)
+
+![Anteprima](./screen-capture/ecommerce-product-page.webp)
+
 #### New Homepage [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/news-homepage) - [Live site](https://news-homepage-beta-eight.vercel.app/)
 
 ![Anteprima](./screen%20capture/news-homepage-desktop.jpeg)

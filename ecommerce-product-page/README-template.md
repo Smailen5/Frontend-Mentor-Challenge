@@ -2,34 +2,18 @@
 
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size ✔
-- See hover states for all interactive elements on the page ✔
-- Open a lightbox gallery by clicking on the large product image ✔
-- Switch the large product image by clicking on the small thumbnail images ✔
-- Add items to the cart ✔
-- View the cart and remove items from it ✔
+- ✔ View the optimal layout for the site depending on their device's screen size
+- ✔ See hover states for all interactive elements on the page
+- ✔ Open a lightbox gallery by clicking on the large product image
+- ✔ Switch the large product image by clicking on the small thumbnail images
+- ✔ Add items to the cart
+- ✔ View the cart and remove items from it
 
 ### Screenshot
 
@@ -61,76 +45,117 @@ Users should be able to:
 
 </details>
 
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/ecommerce-product-page)
+- Live Site URL: [Live site](https://funny-swan-69bb4e.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
+- Tailwind v4.0.6
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- TypeScript
+- SVGR
+- React
+- React Router
+- Framer Motion
+- Vite
+- JSDoc
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned to create a responsive website using HTML, Tailwind and React, organizing the code into components following the atomic design convention. I learned to separate component logic with custom hooks and TypeScript types. I learned to optimize the application using code splitting and lazy loading, and I also divided the bundle into chunks to improve performance. I learned to use AI (Claude 3.5 Sonnet) to generate project documentation. I learned to use `Tailwind CSS v4.0.6`, first migrating the project from `v3.5.0` with Tailwind's migration tool.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I really like the new Tailwind structure, now I don't have to keep switching between the `index.css` file and `tailwind.config.ts` to modify Tailwind variables:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-kumbh: "Kumbh Sans", sans-serif;
+
+  --color-background: var(--white);
+  --color-foreground: var(--very-dark-blue);
+
+  --color-primary: var(--orange);
+  --color-primary-foreground: var(--very-dark-blue);
+}
+
+@layer base {
+  :root {
+    --orange: hsl(26, 100%, 55%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --white: hsl(0, 0%, 100%);
+  }
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+I learned to use SVGs as React components and change the color with the `[&>path]:fill-current` class:
+
+```tsx
+<IconCart aria-hidden={true} className="[&>path]:fill-current" />
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I started using Framer Motion for animations:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```jsx
+const slideVariants = {
+  enter: (direction: number) => ({
+    x: direction > 0 ? 1000 : -1000,
+    opacity: 0,
+  }),
+  center: {
+    zIndex: 1,
+    x: 0,
+    opacity: 1,
+  },
+  exit: (direction: number) => ({
+    zIndex: 0,
+    x: direction < 0 ? 1000 : -1000,
+    opacity: 0,
+  }),
+};
+
+<AnimatePresence initial={false} custom={direction}>
+  <motion.img
+    key={currentImage}
+    src={imageProducts[currentImage]}
+    custom={direction}
+    variants={slideVariants}
+    initial="enter"
+    animate="center"
+    exit="exit"
+    transition={{
+      x: { type: "spring", stiffness: 300, damping: 30 },
+      opacity: { duration: 0.2 },
+    }}
+  />
+</AnimatePresence>
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I really like React Router, but I've watched some videos about TanStack Router and it seems very powerful and more convenient to use, so I plan to explore it in the future.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I've gained some understanding of how Framer Motion works, and besides diving deeper into it, I'm also looking for a new animation library.
+
+It was interesting to see how AI generated comments and documentation for the project. I've decided that in the future, I'll let AI write the documentation, limiting myself to reviewing the comments before committing.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+...
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Smailen Vargas portfolio](https://smailenvargas.com/)
+- Github - [Smailen5](https://github.com/Smailen5)
+- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+...

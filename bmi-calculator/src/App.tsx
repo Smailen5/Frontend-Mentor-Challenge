@@ -1,4 +1,4 @@
-function App() {
+const App = () => {
   return (
     <div className="min-h-screen bg-white p-8 md:p-16">
       <h1 className="text-preset-1 mb-8 text-blue-900">Esempio di Preset 1</h1>
@@ -19,6 +19,6 @@ function App() {
       </p>
     </div>
   );
-}
+};
 
 export default App;

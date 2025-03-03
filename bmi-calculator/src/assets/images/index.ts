@@ -25,7 +25,7 @@ export {
   IconRace,
   IconSleep,
   Logo,
+  ManEating,
   PatternCurvedLeft,
   PatternCurvedRight,
-  ManEating,
 };

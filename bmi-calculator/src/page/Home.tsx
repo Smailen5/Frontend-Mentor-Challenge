@@ -1,7 +1,9 @@
+import IntroHeader from "@/components/molecules/IntroHeader";
+
 const Home = () => {
   return (
     <>
-      <p>prova</p>
+      <IntroHeader />
     </>
   );
 };

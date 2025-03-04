@@ -1,4 +1,4 @@
-import { LayoutProps } from "@/test/layout";
+import { LayoutProps } from "@/types/layout";
 
 const Layout = ({ children }: LayoutProps) => {
   return (

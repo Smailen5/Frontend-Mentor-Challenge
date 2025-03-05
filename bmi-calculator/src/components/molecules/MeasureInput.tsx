@@ -1,17 +1,26 @@
-import { MeasurementProps } from "@/types";
+import { MeasureInputProps } from "@/types";
 
-const MeasureInput = ({ name }: MeasurementProps) => {
+const MeasureInput = ({ name, unit }: MeasureInputProps) => {
   return (
     <div className="space-y-2">
-      <label htmlFor="height" className="text-preset-7-regular block capitalize">
+      <label
+        htmlFor="height"
+        className="text-preset-7-regular block capitalize"
+      >
         {name}
       </label>
 
-      <input
-        type="number"
-        id="height"
-        className="text-preset-5 rounded-xl border py-6"
-      />
+      <div className="relative">
+        <input
+          type="number"
+          id="height"
+          placeholder="0"
+          className="text-preset-4 placeholder:text-grey-500 container rounded-xl border p-6 pr-16"
+        />
+        <span className="text-preset-4 absolute top-1/2 right-6 -translate-y-1/2 text-blue-500">
+          {unit}
+        </span>
+      </div>
     </div>
   );
 };

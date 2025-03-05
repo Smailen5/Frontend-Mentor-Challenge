@@ -12,7 +12,11 @@ const Form = () => {
         <InputMisure name="imperial" />
       </div>
 
-      <MeasureInput name="height" />
+      <div className="space-y-4">
+        <MeasureInput name="height" unit="cm" />
+
+        <MeasureInput name="weight" unit="kg" />
+      </div>
     </div>
   );
 };

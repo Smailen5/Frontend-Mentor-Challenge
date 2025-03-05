@@ -1,12 +1,12 @@
 import IntroHeader from "@/components/molecules/IntroHeader";
-import Form from "@/components/organisms/Form";
+import CardForm from "@/components/organisms/CardForm";
 
 const Home = () => {
   return (
     <>
       <IntroHeader />
 
-      <Form />
+      <CardForm />
     </>
   );
 };

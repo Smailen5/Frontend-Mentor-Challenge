@@ -1,3 +1,4 @@
+import { ManEating } from "@/assets/images";
 import IntroHeader from "@/components/molecules/IntroHeader";
 import CardForm from "@/components/organisms/CardForm";
 
@@ -7,6 +8,8 @@ const Home = () => {
       <IntroHeader />
 
       <CardForm />
+
+      <img src={ManEating} alt="Man Eating" className="scale-110" />
     </>
   );
 };

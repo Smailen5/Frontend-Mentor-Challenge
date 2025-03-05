@@ -4,8 +4,8 @@ interface InputMisureProps {
 
 const InputMisure = ({ name }: InputMisureProps) => {
   return (
-    <div className="flex items-center space-x-4">
-      <div className='rounded-full has-checked:bg-blue-300 flex items-center justify-center size-8 has-not-checked:border has-not-checked:border-white'>
+    <div className="flex items-center space-x-4 flex-1">
+      <div className="flex size-8 items-center justify-center rounded-full has-not-checked:border has-not-checked:border-black has-checked:bg-blue-300">
         <input
           type="radio"
           name="misure"
@@ -13,7 +13,10 @@ const InputMisure = ({ name }: InputMisureProps) => {
           className="size-4 appearance-none rounded-full checked:bg-blue-500"
         />
       </div>
-      <label htmlFor={name} className="text-white has-checked:bg-blue-300">
+      <label
+        htmlFor={name}
+        className="text-preset-5 capitalize has-checked:bg-blue-300"
+      >
         {name}
       </label>
     </div>

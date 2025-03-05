@@ -70,7 +70,7 @@
   .text-preset-4 {
     font-size: var(--font-24);
     line-height: var(--line-height-120);
-    letter-spacing: var(--letter-spacing-0);
+    letter-spacing: var(--letter-spacing-05);
     font-weight: var(--font-weight-600);
   }
 

@@ -1,10 +1,8 @@
-interface InputMisureProps {
-  name: string;
-}
+import { MeasurementProps } from "@/types";
 
-const InputMisure = ({ name }: InputMisureProps) => {
+const MeasurementSystemRadio = ({ name }: MeasurementProps) => {
   return (
-    <div className="flex items-center space-x-4 flex-1">
+    <div className="flex flex-1 items-center space-x-4">
       <div className="flex size-8 items-center justify-center rounded-full has-not-checked:border has-not-checked:border-black has-checked:bg-blue-300">
         <input
           type="radio"
@@ -23,4 +21,4 @@ const InputMisure = ({ name }: InputMisureProps) => {
   );
 };
 
-export default InputMisure;
+export default MeasurementSystemRadio;

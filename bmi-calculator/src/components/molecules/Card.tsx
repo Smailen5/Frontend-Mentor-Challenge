@@ -8,7 +8,7 @@ import {
   IconRace,
   IconSleep,
 } from "@/assets/images";
-import { CardProps, LimitationCardProps } from "@/types";
+import { CardProps } from "@/types";
 
 const iconMap = {
   IconEating: IconEating,
@@ -24,7 +24,7 @@ const iconLimitationMap = {
   IconRace: IconRace,
 };
 
-const Card = ({ icon, title, description }: CardProps) => {
+export const Card = ({ icon, title, description }: CardProps) => {
   const IconComponent = iconMap[icon as keyof typeof iconMap];
   return (
     <>
@@ -37,26 +37,21 @@ const Card = ({ icon, title, description }: CardProps) => {
   );
 };
 
-export const LimitationCard = ({
-  icon,
-  title,
-  description,
-  limitation,
-}: LimitationCardProps) => {
+export const LimitationCard = ({ icon, title, description }: CardProps) => {
   const IconComponent =
     iconLimitationMap[icon as keyof typeof iconLimitationMap];
 
-  if (limitation)
-
   return (
     <>
-      <IconComponent />
-      <div className="space-y-6">
-        <h4 className="text-preset-4 text-blue-900">{title}</h4>
-        <p className="text-preset-6-regular text-grey-500">{description}</p>
+      <div className="w-full space-y-4 rounded-2xl bg-black p-6">
+        <div className="flex items-left space-x-4">
+          <IconComponent />
+          <h4 className="text-preset-5 text-blue-900 capitalize">{title}</h4>
+        </div>
+        <div className="space-y-6">
+          <p className="text-preset-6-regular text-grey-500">{description}</p>
+        </div>
       </div>
     </>
   );
 };
-
-export default Card;

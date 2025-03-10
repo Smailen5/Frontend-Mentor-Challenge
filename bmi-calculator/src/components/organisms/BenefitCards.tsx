@@ -1,5 +1,5 @@
 import benefitCards from "@/data/benefitCards.json";
-import Card from "../molecules/Card";
+import { Card } from "../molecules/Card";
 
 const BenefitCards = () => {
   return (

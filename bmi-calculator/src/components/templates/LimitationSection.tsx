@@ -1,4 +1,3 @@
-// import { IconGender } from "@/assets/images";
 import cards from "@/data/cards.json";
 import limitation from "@/data/limitation.json";
 import Layout from "../atoms/Layout";
@@ -8,30 +7,27 @@ const LimitationSection = () => {
   return (
     <>
       <Layout>
-        <div className="mx-2 space-y-8">
+        <div className="mx-2 space-y-4">
           <div className="space-y-8 py-10 text-center">
             <h2 className="text-preset-3 text-blue-900">{limitation.title}</h2>
             <p className="text-grey-500 text-preset-6-regular">
               {limitation.description}
             </p>
           </div>
-          {/* <IconGender /> */}
+          <div className='space-y-4'>
+
           {cards.map((card, index) => {
+            const { icon, title, description } = card;
             return (
-              <>
-                <div
-                  key={index}
-                  className="h-20 w-full rounded-2xl bg-black text-white"
-                >
-                  <LimitationCard
-                    title={card.title}
-                    description={card.description}
-                    icon={card.icon}
-                  />
-                </div>
-              </>
+              <LimitationCard
+              key={index}
+              title={title}
+              description={description}
+              icon={icon}
+              />
             );
           })}
+          </div>
         </div>
       </Layout>
     </>

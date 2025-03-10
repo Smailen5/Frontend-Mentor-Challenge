@@ -7,21 +7,21 @@
   {
     "icon": "IconAge",
     "title": "age",
-    "description": "In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat."
+    "description": "In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content."
   },
   {
     "icon": "IconMuscle",
     "title": "muscle",
-    "description": "BMI may misclassify muscle builders as overweight or obese, as it doesn't differentiate between types of fat and muscle."
+    "description": "BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat."
   },
   {
     "icon": "IconPregnancy",
     "title": "pregnancy",
-    "description": "Expectant mothers experience weight gain due to the additional load of their growing child."
+    "description": "Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child."
   },
   {
     "icon": "IconRace",
     "title": "race",
-    "description": "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others."
+    "description": "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse."
   }
 ]

@@ -4,6 +4,6 @@ export interface CardProps {
   description: string;
 }
 
-export interface LimitationCardProps extends CardProps {
-  limitation?: boolean;
-}
+// export interface LimitationCardProps extends CardProps {
+//   limitation?: boolean;
+// }

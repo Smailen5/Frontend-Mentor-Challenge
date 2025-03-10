@@ -1,10 +1,27 @@
-import { IconEating, IconExercise, IconSleep } from "@/assets/images";
+import {
+  IconAge,
+  IconEating,
+  IconExercise,
+  IconGender,
+  IconMuscle,
+  IconPregnancy,
+  IconRace,
+  IconSleep,
+} from "@/assets/images";
 import { CardProps } from "@/types";
 
 const iconMap = {
   IconEating: IconEating,
   IconExercise: IconExercise,
   IconSleep: IconSleep,
+};
+
+const iconLimitationMap = {
+  IconGender: IconGender,
+  IconAge: IconAge,
+  IconMuscle: IconMuscle,
+  IconPregnancy: IconPregnancy,
+  IconRace: IconRace,
 };
 
 const Card = ({ icon, title, description }: CardProps) => {

@@ -14,19 +14,19 @@ const LimitationSection = () => {
               {limitation.description}
             </p>
           </div>
-          <div className='space-y-4'>
 
-          {cards.map((card, index) => {
-            const { icon, title, description } = card;
-            return (
-              <LimitationCard
-              key={index}
-              title={title}
-              description={description}
-              icon={icon}
-              />
-            );
-          })}
+          <div className="space-y-4">
+            {cards.map((card, index) => {
+              const { icon, title, description } = card;
+              return (
+                <LimitationCard
+                  key={index}
+                  title={title}
+                  description={description}
+                  icon={icon}
+                />
+              );
+            })}
           </div>
         </div>
       </Layout>

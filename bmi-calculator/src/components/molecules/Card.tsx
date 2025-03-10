@@ -43,8 +43,8 @@ export const LimitationCard = ({ icon, title, description }: CardProps) => {
 
   return (
     <>
-      <div className="w-full space-y-4 rounded-2xl bg-white p-6 shadow-xl shadow-blue-100">
-        <div className="flex items-left space-x-4">
+      <div className="w-full space-y-4 rounded-2xl bg-white p-6 shadow-2xl shadow-blue-100">
+        <div className="items-left flex space-x-4">
           <IconComponent />
           <h4 className="text-preset-5 text-blue-900 capitalize">{title}</h4>
         </div>

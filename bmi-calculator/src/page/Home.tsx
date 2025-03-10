@@ -6,7 +6,7 @@ import NutritionSection from "@/components/templates/NutritionSection";
 const Home = () => {
   return (
     <>
-      <div className="space-y-16">
+      <div className="space-y-16 pb-24">
         <HeroSection />
         <NutritionSection />
         <CardsSection />

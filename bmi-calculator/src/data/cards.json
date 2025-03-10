@@ -1,21 +1,26 @@
 [
   {
+    "icon": "IconGender",
     "title": "gender",
     "description": "The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI."
   },
   {
+    "icon": "IconAge",
     "title": "age",
     "description": "In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat."
   },
   {
+    "icon": "IconMuscle",
     "title": "muscle",
     "description": "BMI may misclassify muscle builders as overweight or obese, as it doesn't differentiate between types of fat and muscle."
   },
   {
+    "icon": "IconPregnancy",
     "title": "pregnancy",
     "description": "Expectant mothers experience weight gain due to the additional load of their growing child."
   },
   {
+    "icon": "IconRace",
     "title": "race",
     "description": "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others."
   }

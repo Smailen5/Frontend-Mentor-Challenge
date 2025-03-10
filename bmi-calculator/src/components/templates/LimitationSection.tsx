@@ -1,7 +1,8 @@
-import { IconGender } from "@/assets/images";
+// import { IconGender } from "@/assets/images";
 import cards from "@/data/cards.json";
 import limitation from "@/data/limitation.json";
 import Layout from "../atoms/Layout";
+import { LimitationCard } from "../molecules/Card";
 
 const LimitationSection = () => {
   return (
@@ -14,17 +15,23 @@ const LimitationSection = () => {
               {limitation.description}
             </p>
           </div>
-          <div className="h-20 w-full rounded-2xl bg-black text-white">
-            <IconGender />
-            {cards.map((card, index) => {
-              return (
-                <>
-                  <h3 key={index}>{card.title}</h3>
-                  <p>{card.description}</p>
-                </>
-              );
-            })}
-          </div>
+          {/* <IconGender /> */}
+          {cards.map((card, index) => {
+            return (
+              <>
+                <div
+                  key={index}
+                  className="h-20 w-full rounded-2xl bg-black text-white"
+                >
+                  <LimitationCard
+                    title={card.title}
+                    description={card.description}
+                    icon={card.icon}
+                  />
+                </div>
+              </>
+            );
+          })}
         </div>
       </Layout>
     </>

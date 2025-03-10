@@ -7,12 +7,9 @@ const BenefitCards = () => {
       {benefitCards.map((card, index) => {
         const { icon, title, description } = card;
         return (
-          <Card
-            key={index}
-            icon={icon}
-            title={title}
-            description={description}
-          />
+          <div className="space-y-8" key={index}>
+            <Card icon={icon} title={title} description={description} />
+          </div>
         );
       })}
     </>

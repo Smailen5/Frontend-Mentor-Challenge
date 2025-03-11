@@ -1,4 +1,4 @@
-import { MeasureRadioProps } from "@/types";
+import { type MeasureRadioProps } from "@/types";
 
 const MeasurementSystemRadio = ({
   name,

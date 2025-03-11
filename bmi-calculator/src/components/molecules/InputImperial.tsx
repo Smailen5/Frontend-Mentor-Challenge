@@ -1,15 +1,16 @@
+import { type FormFieldProps } from "@/types";
 import InputLabel from "../atoms/InputLabel";
 import InputNumber from "../atoms/InputNumber";
 import InputSpan from "../atoms/InputSpan";
 
-const InputImperial = ({ name }: { name: string }) => {
+const InputImperial = ({ name, fieldAPi }: FormFieldProps) => {
   return (
     <div className="space-y-2">
       <InputLabel name={name} />
 
       <div className="flex gap-4">
         <div className="relative">
-          <InputNumber name={name} />
+          <InputNumber name={name} fieldApi={fieldAPi} />
 
           {name === "height" ? (
             <InputSpan unit="ft" />
@@ -19,7 +20,7 @@ const InputImperial = ({ name }: { name: string }) => {
         </div>
 
         <div className="relative">
-          <InputNumber name={name} />
+          <InputNumber name={name} fieldApi={fieldAPi} />
 
           {name === "height" ? (
             <InputSpan unit="in" />

@@ -15,9 +15,9 @@ const Form = () => {
       </div>
 
       <div className="space-y-4">
-        <MeasureInput name="height" unit="cm" />
+        <MeasureInput name="height" height measureActive={measureActive} />
 
-        <MeasureInput name="weight" unit="kg" />
+        <MeasureInput name="weight" />
       </div>
     </>
   );

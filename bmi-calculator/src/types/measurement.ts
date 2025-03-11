@@ -5,5 +5,7 @@ export interface MeasurementProps {
 }
 
 export interface MeasureInputProps extends MeasurementProps {
-  unit: string;
+  height?: boolean;
+  weight?: boolean;
+  measureActive?: string;
 }

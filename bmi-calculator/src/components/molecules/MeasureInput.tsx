@@ -48,7 +48,7 @@ const MeasureInput = ({ name, measureActive }: MeasurementProps) => {
                 </span>
               )}
             </div>
-            
+
             <div className="relative">
               <input
                 type="number"

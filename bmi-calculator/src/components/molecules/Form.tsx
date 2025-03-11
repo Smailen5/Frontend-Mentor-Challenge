@@ -9,9 +9,9 @@ const Form = () => {
   return (
     <>
       <div className="flex items-center justify-between">
-        <InputMisure name="metric" onClick={()=>setMeasureActive('metric')} />
+        <InputMisure name="metric" handleClick={setMeasureActive} />
 
-        <InputMisure name="imperial" onClick={()=>setMeasureActive('imperial')} />
+        <InputMisure name="imperial" handleClick={setMeasureActive} />
       </div>
 
       <div className="space-y-4">

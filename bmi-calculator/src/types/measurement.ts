@@ -1,6 +1,6 @@
 export interface MeasurementProps {
   name: string;
-  onClick?: () => void;
+  handleClick?: (name: string) => void;
 }
 
 export interface MeasureInputProps extends MeasurementProps {

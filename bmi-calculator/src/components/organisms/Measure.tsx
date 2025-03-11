@@ -98,13 +98,13 @@ const Measure = ({ measureActive }: MeasurementProps) => {
             {/* height section */}
             <div className="space-y-4">
               <div className="space-y-2">
-                <InputLabel name="height" />
+                <InputLabel name="heightFt" />
                 <div className="flex gap-4">
                   <imperialForm.Field
                     name="heightFt"
                     children={(field) => (
                       <InputImperialSingle
-                        name="heightFt"
+                        name="height"
                         fieldApi={field}
                         unit="ft"
                       />
@@ -125,7 +125,7 @@ const Measure = ({ measureActive }: MeasurementProps) => {
 
               {/* weight section */}
               <div className="space-y-2">
-                <InputLabel name="weight" />
+                <InputLabel name="weightSt" />
                 <div className="flex gap-4">
                   <imperialForm.Field
                     name="weightSt"

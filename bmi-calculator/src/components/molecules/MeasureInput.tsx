@@ -1,6 +1,6 @@
-import { MeasureInputProps } from "@/types";
+import { MeasurementProps } from "@/types";
 
-const MeasureInput = ({ name, measureActive }: MeasureInputProps) => {
+const MeasureInput = ({ name, measureActive }: MeasurementProps) => {
   return (
     <div className="space-y-2">
       <label

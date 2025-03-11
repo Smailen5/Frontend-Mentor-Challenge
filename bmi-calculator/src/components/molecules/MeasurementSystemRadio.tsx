@@ -1,10 +1,10 @@
-import { MeasurementProps } from "@/types";
+import { MeasureRadioProps } from "@/types";
 
 const MeasurementSystemRadio = ({
   name,
   handleClick,
   measureActive,
-}: MeasurementProps) => {
+}: MeasureRadioProps) => {
   const handleActive = (name: string) => {
     if (handleClick) {
       handleClick(name);

@@ -1,8 +1,10 @@
+import { Dispatch, SetStateAction } from 'react';
+
 export interface MeasurementProps {
   name: string;
-  measureActive?: string;
+  measureActive: "metric" | "imperial";
 }
 
 export interface MeasureRadioProps extends MeasurementProps {
-  handleClick?: (name: string) => void;
+  handleClick?: Dispatch<SetStateAction<"metric" | "imperial">>;
 }

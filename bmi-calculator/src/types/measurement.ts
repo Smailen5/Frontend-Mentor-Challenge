@@ -11,6 +11,8 @@ export interface MeasureRadioProps extends MeasurementProps {
 
 export interface FormFieldProps {
   name: string;
+  // @ts-expect-error - Tanstack Form richiede 19 parametri di tipo
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   fieldApi: FieldApi<any, any, any>;
   unit?: string;
   placeholder?: string;
@@ -18,12 +20,8 @@ export interface FormFieldProps {
 
 export interface ImperialFieldProps {
   name: string;
+  // @ts-expect-error - Tanstack Form richiede 19 parametri di tipo
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   fieldApi: FieldApi<any, any, any>;
   unit: string;
-}
-
-export interface ImperialFieldProps {
-  name: string;
-  primaryFieldApi?: any;
-  secondaryFieldApi?: any;
 }

@@ -1,13 +1,12 @@
 import { type FieldApi } from "@tanstack/react-form";
-import { Dispatch, SetStateAction } from "react";
 
 export interface MeasurementProps {
-  name?: string;
+  name?: "metric" | "imperial";
   measureActive: "metric" | "imperial";
 }
 
 export interface MeasureRadioProps extends MeasurementProps {
-  handleClick?: Dispatch<SetStateAction<"metric" | "imperial">>;
+  handleClick?: (value: "metric" | "imperial") => void;
 }
 
 export interface FormFieldProps {

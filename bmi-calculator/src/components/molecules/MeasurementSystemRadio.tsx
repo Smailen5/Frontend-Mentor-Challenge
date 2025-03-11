@@ -5,9 +5,9 @@ const MeasurementSystemRadio = ({
   handleClick,
   measureActive,
 }: MeasureRadioProps) => {
-  const handleActive = (name: string) => {
+  const handleActive = (value: "metric" | "imperial") => {
     if (handleClick) {
-      handleClick(name);
+      handleClick(value);
     }
   };
 
@@ -19,7 +19,11 @@ const MeasurementSystemRadio = ({
           name="misure"
           id={name}
           checked={measureActive === name}
-          onChange={() => handleActive(name)}
+          onChange={() => {
+            if (name === "metric" || name === "imperial") {
+              handleActive(name);
+            }
+          }}
           className="size-4 appearance-none rounded-full checked:bg-blue-500"
         />
       </div>

@@ -3,9 +3,7 @@ import Measure from "../organisms/Measure";
 import InputMisure from "./MeasurementSystemRadio";
 
 const Form = () => {
-  const [measureActive, setMeasureActive] = useState<"metric" | "imperial">(
-    "metric",
-  );
+  const [measureActive, setMeasureActive] = useState<"metric" | "imperial">("metric");
 
   return (
     <>

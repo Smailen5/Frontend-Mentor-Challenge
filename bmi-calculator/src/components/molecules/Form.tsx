@@ -1,13 +1,17 @@
+import { useState } from 'react';
 import MeasureInput from "./MeasureInput";
 import InputMisure from "./MeasurementSystemRadio";
 
 const Form = () => {
+  const [measureActive, setMeasureActive] = useState<string>('metric')
+
+  console.log(measureActive)
   return (
     <>
       <div className="flex items-center justify-between">
-        <InputMisure name="metric" />
+        <InputMisure name="metric" onClick={()=>setMeasureActive('metric')} />
 
-        <InputMisure name="imperial" />
+        <InputMisure name="imperial" onClick={()=>setMeasureActive('imperial')} />
       </div>
 
       <div className="space-y-4">

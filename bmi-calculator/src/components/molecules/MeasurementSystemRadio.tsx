@@ -1,6 +1,6 @@
 import { MeasurementProps } from "@/types";
 
-const MeasurementSystemRadio = ({ name }: MeasurementProps) => {
+const MeasurementSystemRadio = ({ name, onClick }: MeasurementProps) => {
   return (
     <div className="flex flex-1 items-center space-x-4">
       <div className="flex size-8 items-center justify-center rounded-full has-not-checked:border has-not-checked:border-black has-checked:bg-blue-300">
@@ -13,7 +13,8 @@ const MeasurementSystemRadio = ({ name }: MeasurementProps) => {
       </div>
       <label
         htmlFor={name}
-        className="text-preset-5 capitalize has-checked:bg-blue-300"
+        className="text-preset-5 capitalize has-checked:bg-blue-300 cursor-pointer"
+        onClick={onClick}
       >
         {name}
       </label>

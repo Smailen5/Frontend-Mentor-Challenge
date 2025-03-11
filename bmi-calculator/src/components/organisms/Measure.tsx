@@ -52,26 +52,28 @@ const Measure = ({ measureActive }: MeasurementProps) => {
               metricForm.handleSubmit();
             }}
           >
-            <metricForm.Field
-              name="height"
-              children={(field) => (
-                <InputMetric name={"height"} fieldApi={field} />
-              )}
-            />
-            <metricForm.Field
-              name="weight"
-              children={(field) => (
-                <InputMetric name={"weight"} fieldApi={field} />
-              )}
-            />
-            <metricForm.Subscribe
-              selector={(state) => [state.canSubmit, state.isSubmitting]}
-              children={([canSubmit, isSubmitting]) => (
-                <button type="submit" disabled={!canSubmit}>
-                  {isSubmitting ? "Calcolo..." : "Calcola BMi"}
-                </button>
-              )}
-            />
+            <div className="space-y-4">
+              <metricForm.Field
+                name="height"
+                children={(field) => (
+                  <InputMetric name={"height"} fieldApi={field} />
+                )}
+              />
+              <metricForm.Field
+                name="weight"
+                children={(field) => (
+                  <InputMetric name={"weight"} fieldApi={field} />
+                )}
+              />
+              <metricForm.Subscribe
+                selector={(state) => [state.canSubmit, state.isSubmitting]}
+                children={([canSubmit, isSubmitting]) => (
+                  <button type="submit" disabled={!canSubmit}>
+                    {isSubmitting ? "Calcolo..." : "Calcola BMi"}
+                  </button>
+                )}
+              />
+            </div>
           </form>
         </>
       ) : (
@@ -86,54 +88,58 @@ const Measure = ({ measureActive }: MeasurementProps) => {
             }}
           >
             {/* height section */}
-            <div className="space-y-2">
-              <InputLabel name="height" />
-              <div className="flex gap-4">
-                <imperialForm.Field
-                  name="heightFt"
-                  children={(field) => (
-                    <InputImperialSingle
-                      name="heightFt"
-                      fieldApi={field}
-                      unit="ft"
-                    />
-                  )}
-                />
-                <imperialForm.Field
-                  name="weightSt"
-                  children={(field) => (
-                    <InputImperialSingle
-                      name="heightIn"
-                      fieldApi={field}
-                      unit="in"
-                    />
-                  )}
-                />
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <InputLabel name="height" />
+                <div className="flex gap-4">
+                  <imperialForm.Field
+                    name="heightFt"
+                    children={(field) => (
+                      <InputImperialSingle
+                        name="heightFt"
+                        fieldApi={field}
+                        unit="ft"
+                      />
+                    )}
+                  />
+                  <imperialForm.Field
+                    name="heightIn"
+                    children={(field) => (
+                      <InputImperialSingle
+                        name="heightIn"
+                        fieldApi={field}
+                        unit="in"
+                      />
+                    )}
+                  />
+                </div>
               </div>
 
               {/* weight section */}
-              <InputLabel name="weight" />
-              <div className="flex gap-4">
-                <imperialForm.Field
-                  name="weightSt"
-                  children={(field) => (
-                    <InputImperialSingle
-                      name="weightSt"
-                      fieldApi={field}
-                      unit="st"
-                    />
-                  )}
-                />
-                <imperialForm.Field
-                  name="weightSt"
-                  children={(field) => (
-                    <InputImperialSingle
-                      name="weightLbs"
-                      fieldApi={field}
-                      unit="lbs"
-                    />
-                  )}
-                />
+              <div className="space-y-2">
+                <InputLabel name="weight" />
+                <div className="flex gap-4">
+                  <imperialForm.Field
+                    name="weightSt"
+                    children={(field) => (
+                      <InputImperialSingle
+                        name="weightSt"
+                        fieldApi={field}
+                        unit="st"
+                      />
+                    )}
+                  />
+                  <imperialForm.Field
+                    name="weightLbs"
+                    children={(field) => (
+                      <InputImperialSingle
+                        name="weightLbs"
+                        fieldApi={field}
+                        unit="lbs"
+                      />
+                    )}
+                  />
+                </div>
               </div>
             </div>
           </form>

@@ -1,25 +1,20 @@
-import MeasureInput from "../molecules/MeasureInput";
+import { MeasurementProps } from "@/types";
+import InputImperial from "../molecules/InputImperial";
+import InputMetric from "../molecules/InputMetric";
 
-const Measure = ({
-  measureActive,
-}: {
-  measureActive: "metric" | "imperial";
-}) => {
+const Measure = ({ measureActive }: MeasurementProps) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-2">
       {measureActive === "metric" ? (
         <>
-          <MeasureInput name="height" measureActive={measureActive} />
-          <MeasureInput name="weight" measureActive={measureActive} />
+          <InputMetric name={"height"} />
+          <InputMetric name={"weight"} />
         </>
       ) : (
         <>
-          <div className="flex gap-4">
-            <MeasureInput name="height" measureActive={measureActive} />
-          </div>
-          <div className="flex gap-4">
-            <MeasureInput name="weight" measureActive={measureActive} />
-          </div>
+          {/* imperial double input */}
+          <InputImperial name={"height"} />
+          <InputImperial name={"weight"} />
         </>
       )}
     </div>

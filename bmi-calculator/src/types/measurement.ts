@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 
 export interface MeasurementProps {
-  name: string;
+  name?: string;
   measureActive: "metric" | "imperial";
 }
 

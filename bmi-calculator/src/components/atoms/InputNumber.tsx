@@ -1,8 +1,6 @@
 import { FormFieldProps } from "@/types";
 
 const InputNumber = ({ name, fieldApi, placeholder = "0" }: FormFieldProps) => {
-
-
   return (
     <div>
       <input
@@ -10,7 +8,11 @@ const InputNumber = ({ name, fieldApi, placeholder = "0" }: FormFieldProps) => {
         id={name}
         placeholder={placeholder}
         value={fieldApi.state.value ?? ""}
-        onChange={(e) => fieldApi.handleChange(Number(e.target.value))}
+        onChange={(e) =>
+          fieldApi.handleChange(
+            e.target.value === "" ? "" : Number(e.target.value),
+          )
+        }
         className="text-preset-4 placeholder:text-grey-500 container rounded-xl border p-6 pr-16"
       />
       {fieldApi.state.meta.isTouched ? (

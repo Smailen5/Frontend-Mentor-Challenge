@@ -13,13 +13,13 @@ const Measure = ({ measureActive }: MeasurementProps) => {
   // Form per unità metriche
   const metricForm = useForm({
     defaultValues: {
-      height: 0,
-      weight: 0,
+      height: "",
+      weight: "",
     },
     onSubmit: async ({ value }) => {
       // Calcolo BMI metrico
-      const height = value.height / 100;
-      const bmi = value.weight / (height * height);
+      const height = Number(value.height) / 100;
+      const bmi = Number(value.weight) / (height * height);
       setBmiResult(parseFloat(bmi.toFixed(1)));
     },
   });
@@ -27,17 +27,25 @@ const Measure = ({ measureActive }: MeasurementProps) => {
   // Form per unità imperiali
   const imperialForm = useForm({
     defaultValues: {
-      heightFt: 0,
-      heightIn: 0,
-      weightSt: 0,
-      weightLbs: 0,
+      heightFt: "",
+      heightIn: "",
+      weightSt: "",
+      weightLbs: "",
     },
     onSubmit: async ({ value }) => {
+      // Converte i valori in numeri
+      const heightFt = Number(value.heightFt) || 0;
+      const heightIn = Number(value.heightIn) || 0;
+      const weightSt = Number(value.weightSt) || 0;
+      const weightLbs = Number(value.weightLbs) || 0;
+
       // Calcolo BMI imperiale
-      const heightInches = value.heightFt * 12 + value.heightIn;
-      const weightLbs = value.weightSt * 14 + value.weightLbs;
-      const bmi = (weightLbs * 703) / (heightInches * heightInches);
-      setBmiResult(parseFloat(bmi.toFixed(1)));
+      if ((heightFt > 0 || heightIn > 0) && (weightSt > 0 || weightLbs > 0)) {
+        const heightInches = heightFt * 12 + heightIn;
+        const weightLbsTotal = weightSt * 14 + weightLbs;
+        const bmi = (weightLbsTotal * 703) / (heightInches * heightInches);
+        setBmiResult(parseFloat(bmi.toFixed(1)));
+      }
     },
   });
 

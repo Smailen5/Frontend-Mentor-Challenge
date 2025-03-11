@@ -15,3 +15,15 @@ export interface FormFieldProps {
   unit?: string;
   placeholder?: string;
 }
+
+export interface ImperialFieldProps {
+  name: string;
+  fieldApi: FieldApi<any, any, any>;
+  unit: string;
+}
+
+export interface ImperialFieldProps {
+  name: string;
+  primaryFieldApi?: any;
+  secondaryFieldApi?: any;
+}

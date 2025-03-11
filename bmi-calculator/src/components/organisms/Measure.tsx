@@ -2,7 +2,8 @@ import { MeasurementProps } from "@/types";
 import { useForm } from "@tanstack/react-form";
 // import { zodValidator } from "@tanstack/zod-form-adapter";
 import { useState } from "react";
-import InputImperial from "../molecules/InputImperial";
+import InputLabel from "../atoms/InputLabel";
+import InputImperialSingle from "../molecules/InputImperialSingle";
 import InputMetric from "../molecules/InputMetric";
 // import { metricSchema } from '@/schemas/bmiSchema';
 
@@ -84,18 +85,57 @@ const Measure = ({ measureActive }: MeasurementProps) => {
               imperialForm.handleSubmit();
             }}
           >
-            <imperialForm.Field
-              name="heightFt"
-              children={(field) => (
-                <InputImperial name={"height"} fieldApi={field} />
-              )}
-            />
-            <imperialForm.Field
-              name="weightSt"
-              children={(field) => (
-                <InputImperial name={"weight"} fieldApi={field} />
-              )}
-            />
+            {/* height section */}
+            <div className="space-y-2">
+              <InputLabel name="height" />
+              <div className="flex gap-4">
+                <imperialForm.Field
+                  name="heightFt"
+                  children={(field) => (
+                    <InputImperialSingle
+                      name="heightFt"
+                      fieldApi={field}
+                      unit="ft"
+                    />
+                  )}
+                />
+                <imperialForm.Field
+                  name="weightSt"
+                  children={(field) => (
+                    <InputImperialSingle
+                      name="heightIn"
+                      fieldApi={field}
+                      unit="in"
+                    />
+                  )}
+                />
+              </div>
+
+              {/* weight section */}
+              <InputLabel name="weight" />
+              <div className="flex gap-4">
+                <imperialForm.Field
+                  name="weightSt"
+                  children={(field) => (
+                    <InputImperialSingle
+                      name="weightSt"
+                      fieldApi={field}
+                      unit="st"
+                    />
+                  )}
+                />
+                <imperialForm.Field
+                  name="weightSt"
+                  children={(field) => (
+                    <InputImperialSingle
+                      name="weightLbs"
+                      fieldApi={field}
+                      unit="lbs"
+                    />
+                  )}
+                />
+              </div>
+            </div>
           </form>
         </>
       )}

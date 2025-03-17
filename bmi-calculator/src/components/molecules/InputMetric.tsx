@@ -2,7 +2,7 @@ import { FormFieldProps } from "@/types";
 import InputLabel from "../atoms/InputLabel";
 import InputNumber from "../atoms/InputNumber";
 
-const InputMetric = ({ name, value, onChange, error }: FormFieldProps) => {
+const InputMetric = ({ name, value, onChange, error, unit }: FormFieldProps) => {
   return (
     <div className="space-y-2">
       <InputLabel name={name} />
@@ -11,7 +11,7 @@ const InputMetric = ({ name, value, onChange, error }: FormFieldProps) => {
         value={value}
         onChange={onChange}
         error={error}
-        unit="cm"
+        unit={unit}
       />
     </div>
   );

@@ -12,7 +12,7 @@ export interface FormFieldProps {
   value: string | number;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   error?: string;
-  unit?: string;
+  unit: string;
   placeholder?: string;
 }
 

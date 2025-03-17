@@ -1,9 +1,9 @@
 export type BMICategory =
-  | "sottopeso"
-  | "normale"
-  | "sovrappeso"
-  | "obeso"
-  | "obeso grave";
+  | "underweight"
+  | "healthy"
+  | "overweight"
+  | "obese"
+  | "severely obese";
 
 export interface BMIResult {
   value: number;
@@ -15,11 +15,11 @@ export interface BMIResult {
 }
 
 export const getBMICategory = (bmi: number): BMICategory => {
-  if (bmi < 18.5) return "sottopeso";
-  if (bmi < 25) return "normale";
-  if (bmi < 30) return "sovrappeso";
-  if (bmi < 35) return "obeso";
-  return "obeso grave";
+  if (bmi < 18.5) return "underweight";
+  if (bmi < 25) return "healthy";
+  if (bmi < 30) return "overweight";
+  if (bmi < 35) return "obese";
+  return "severely obese";
 };
 
 export const calculateIdealWeight = (

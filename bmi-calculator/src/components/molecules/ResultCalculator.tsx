@@ -3,16 +3,16 @@ import { formatIdealWeight } from "@/utils/formatIdealWeight";
 
 const getBMIMessage = (result: BMIResult) => {
   switch (result.category) {
-    case "sottopeso":
-      return "Il tuo BMI suggerisce che sei sottopeso. il tuo peso ideale è tra";
-    case "normale":
-      return "Il tuo BMI suggerisce che sei normale. il tuo peso ideale è tra";
-    case "sovrappeso":
-      return "Il tuo BMI suggerisce che sei sovrappeso. il tuo peso ideale è tra";
-    case "obeso":
-      return "Il tuo BMI suggerisce che sei obeso. il tuo peso ideale è tra";
-    case "obeso grave":
-      return "Il tuo BMI suggerisce che sei obeso grave. il tuo peso ideale è tra";
+    case "underweight":
+      return "Your BMI suggests you're underweight. Your ideal weight is between";
+    case "healthy":
+      return "Your BMI suggests you're a healthy weight. Your ideal weight is between";
+    case "overweight":
+      return "Your BMI suggests you're overweight. Your ideal weight is between";
+    case "obese":
+      return "Your BMI suggests you're obese. Your ideal weight is between";
+    case "severely obese":
+      return "Your BMI suggests you're severely obese. Your ideal weight is between";
   }
 };
 

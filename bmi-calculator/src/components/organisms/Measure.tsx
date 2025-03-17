@@ -3,7 +3,7 @@ import { useState } from "react";
 // import { metricSchema } from '@/schemas/bmiSchema';
 import InputImperial from "../molecules/InputImperial";
 import InputMetric from "../molecules/InputMetric";
-import ResultCalculator from '../molecules/ResultCalculator';
+import ResultCalculator from "../molecules/ResultCalculator";
 
 const Measure = ({ measureActive }: MeasurementProps) => {
   const [values, setValues] = useState({
@@ -72,9 +72,8 @@ const Measure = ({ measureActive }: MeasurementProps) => {
           errors={errors}
         />
       )}
-      {bmiResult && (
-        <ResultCalculator result={bmiResult} />
-      )}
+
+      <ResultCalculator result={bmiResult} />
     </div>
   );
 };

@@ -11,6 +11,8 @@ const getBMIMessage = (result: BMIResult) => {
       return "Il tuo BMI suggerisce che sei sovrappeso. il tuo peso ideale è tra";
     case "obeso":
       return "Il tuo BMI suggerisce che sei obeso. il tuo peso ideale è tra";
+    case "obeso grave":
+      return "Il tuo BMI suggerisce che sei obeso grave. il tuo peso ideale è tra";
   }
 };
 

@@ -13,7 +13,13 @@ const getBMIMessage = (result: BMIResult) => {
   }
 };
 
-const ResultCalculator = ({ result }: { result?: BMIResult | null }) => {
+const ResultCalculator = ({
+  result,
+  isMetric = true,
+}: {
+  result?: BMIResult | null;
+  isMetric?: boolean;
+}) => {
   if (!result) {
     return (
       <div className="h-auto w-full space-y-5 rounded-xl bg-blue-500 p-8 text-white">
@@ -25,6 +31,14 @@ const ResultCalculator = ({ result }: { result?: BMIResult | null }) => {
     );
   }
 
+  const formatIdealWeight = (weight: BMIResult["idealWeight"]['min']) => {
+    if (isMetric) {
+      return `${(weight as number).toFixed()} kg`;
+    }
+    const imperialWeight = weight as { stones: number; pounds: number };
+    return `${imperialWeight.stones}st ${imperialWeight.pounds}lbs`;
+  };
+
   return (
     <div className="h-auto w-full space-y-5 rounded-xl bg-blue-500 p-8 text-white">
       <h4 className="text-preset-5">Your BMI is...</h4>
@@ -32,8 +46,8 @@ const ResultCalculator = ({ result }: { result?: BMIResult | null }) => {
       <p className="text-preset-7-regular">
         {getBMIMessage(result)}{" "}
         <strong>
-          {result.idealWeight.min.toFixed(1)} kg -
-          {result.idealWeight.max.toFixed(1)} kg
+          {formatIdealWeight(result.idealWeight.min)} -{" "}
+          {formatIdealWeight(result.idealWeight.max)}
         </strong>
       </p>
     </div>

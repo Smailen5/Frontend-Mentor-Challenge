@@ -9,8 +9,8 @@ export interface BMIResult {
   value: number;
   category: BMICategory;
   idealWeight: {
-    min: number;
-    max: number;
+    min: number | { stones: number; pounds: number};
+    max: number | { stones: number; pounds: number};
   };
 }
 
@@ -34,9 +34,29 @@ export const calculateIdealWeight = (
   const idealWeightKg = 47.75 + 2.3 * (heightInches - 60);
 
   // Aggiungiamo un range di 10%
+  if (isMetric) {
+    return {
+      min: idealWeightKg * 0.9,
+      max: idealWeightKg * 1.1,
+    };
+  }
+
+  // Conversione in stones e pounds
+  const kgToStones = (kg: number) => {
+    const stones = Math.floor(kg/6.35029318)
+    const pounds = Math.floor((kg % 6.35029318 )/ 0.45359237)
+    return {
+      stones, pounds
+    }
+  }
+
+  const minKg = idealWeightKg * 0.9;
+  const maxKg = idealWeightKg * 1.1;
+
+
   return {
-    min: idealWeightKg * 0.9,
-    max: idealWeightKg * 1.1,
+    min: kgToStones(minKg),
+    max: kgToStones(maxKg),
   };
 };
 

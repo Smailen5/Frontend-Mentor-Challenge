@@ -68,7 +68,10 @@ const Measure = ({ measureActive }: MeasurementProps) => {
       )}
 
       <div className="pt-2">
-        <ResultCalculator result={bmiResult} />
+        <ResultCalculator
+          result={bmiResult}
+          isMetric={measureActive === "metric"}
+        />
       </div>
     </div>
   );

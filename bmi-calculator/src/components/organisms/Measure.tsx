@@ -14,13 +14,11 @@ const Measure = ({ measureActive }: MeasurementProps) => {
     weightSt: "",
     weightLbs: "",
   });
-  const [errors, setErrors] = useState<Record<string, string>>({});
   const [bmiResult, setBmiResult] = useState<number | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setValues((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({ ...prev, [name]: "" }));
     calculateBMI({ ...values, [name]: value });
   };
 
@@ -69,7 +67,6 @@ const Measure = ({ measureActive }: MeasurementProps) => {
         <InputImperial
           values={values}
           onChange={handleChange}
-          errors={errors}
         />
       )}
 

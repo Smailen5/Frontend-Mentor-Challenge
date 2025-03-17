@@ -23,5 +23,4 @@ export interface ImperialFieldProps {
     weightLbs: string;
   };
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  errors: Record<string, string>;
 }

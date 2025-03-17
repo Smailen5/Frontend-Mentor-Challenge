@@ -1,16 +1,40 @@
-const ResultCalculator = ({ result }: { result?: number | null }) => {
+import { BMIResult } from "@/utils/bmiCalculator";
+
+const getBMIMessage = (result: BMIResult) => {
+  switch (result.category) {
+    case "sottopeso":
+      return "Il tuo BMI suggerisce che sei sottopeso. il tuo peso ideale è tra";
+    case "normale":
+      return "Il tuo BMI suggerisce che sei normale. il tuo peso ideale è tra";
+    case "sovrappeso":
+      return "Il tuo BMI suggerisce che sei sovrappeso. il tuo peso ideale è tra";
+    case "obeso":
+      return "Il tuo BMI suggerisce che sei obeso. il tuo peso ideale è tra";
+  }
+};
+
+const ResultCalculator = ({ result }: { result?: BMIResult | null }) => {
+  if (!result) {
+    return (
+      <div className="h-auto w-full space-y-5 rounded-xl bg-blue-500 p-8 text-white">
+        <h4 className="text-preset-4 capitalize">Welcome!</h4>
+        <p className="text-preset-7-regular">
+          Enter your height and weight and you'll see your BMI result here
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="h-auto w-full space-y-5 rounded-xl bg-blue-500 p-8 text-white">
-      <h4
-        className={`capitalize ${result ? "text-preset-5" : "text-preset-4"}`}
-      >
-        {result ? "your BMI is..." : "welcome!"}
-      </h4>
-      {result && <h5 className="text-preset-2">{result}</h5>}
+      <h4 className="text-preset-5">Your BMI is...</h4>
+      <h5 className="text-preset-2">{result.value}</h5>
       <p className="text-preset-7-regular">
-        {result
-          ? "Your BMI suggests you're a healthy weight. Your ideal weight is between <strong>9st 6lbs - 12st 10lbs</strong>"
-          : "Enter your height and weight and you'll see your BMI result here"}
+        {getBMIMessage(result)}{" "}
+        <strong>
+          {result.idealWeight.min.toFixed(1)} kg -
+          {result.idealWeight.max.toFixed(1)} kg
+        </strong>
       </p>
     </div>
   );

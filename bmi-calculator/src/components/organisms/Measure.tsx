@@ -3,6 +3,7 @@ import { useState } from "react";
 // import { metricSchema } from '@/schemas/bmiSchema';
 import InputImperial from "../molecules/InputImperial";
 import InputMetric from "../molecules/InputMetric";
+import ResultCalculator from '../molecules/ResultCalculator';
 
 const Measure = ({ measureActive }: MeasurementProps) => {
   const [values, setValues] = useState({
@@ -72,9 +73,7 @@ const Measure = ({ measureActive }: MeasurementProps) => {
         />
       )}
       {bmiResult && (
-        <div>
-          <p>Il tuo BMI è {bmiResult}</p>
-        </div>
+        <ResultCalculator result={bmiResult} />
       )}
     </div>
   );

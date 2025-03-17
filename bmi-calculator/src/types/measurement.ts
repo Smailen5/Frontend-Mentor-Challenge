@@ -1,5 +1,3 @@
-import { type FieldApi } from "@tanstack/react-form";
-
 export interface MeasurementProps {
   name?: "metric" | "imperial";
   measureActive: "metric" | "imperial";
@@ -11,17 +9,20 @@ export interface MeasureRadioProps extends MeasurementProps {
 
 export interface FormFieldProps {
   name: string;
-  // @ts-expect-error - Tanstack Form richiede 19 parametri di tipo
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  fieldApi: FieldApi<any, any, any>;
+  value: string | number;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  error?: string;
   unit?: string;
   placeholder?: string;
 }
 
 export interface ImperialFieldProps {
-  name: string;
-  // @ts-expect-error - Tanstack Form richiede 19 parametri di tipo
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  fieldApi: FieldApi<any, any, any>;
-  unit: string;
+  values: {
+    heightFt: string;
+    heightIn: string;
+    weightSt: string;
+    weightLbs: string;
+  };
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  errors: Record<string, string>;
 }

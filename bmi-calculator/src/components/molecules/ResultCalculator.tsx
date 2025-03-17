@@ -1,4 +1,5 @@
 import { BMIResult } from "@/utils/bmiCalculator";
+import { formatIdealWeight } from "@/utils/formatIdealWeight";
 
 const getBMIMessage = (result: BMIResult) => {
   switch (result.category) {
@@ -31,14 +32,6 @@ const ResultCalculator = ({
     );
   }
 
-  const formatIdealWeight = (weight: BMIResult["idealWeight"]['min']) => {
-    if (isMetric) {
-      return `${(weight as number).toFixed()} kg`;
-    }
-    const imperialWeight = weight as { stones: number; pounds: number };
-    return `${imperialWeight.stones}st ${imperialWeight.pounds}lbs`;
-  };
-
   return (
     <div className="h-auto w-full space-y-5 rounded-xl bg-blue-500 p-8 text-white">
       <h4 className="text-preset-5">Your BMI is...</h4>
@@ -46,8 +39,8 @@ const ResultCalculator = ({
       <p className="text-preset-7-regular">
         {getBMIMessage(result)}{" "}
         <strong>
-          {formatIdealWeight(result.idealWeight.min)} -{" "}
-          {formatIdealWeight(result.idealWeight.max)}
+          {formatIdealWeight(result.idealWeight.min, isMetric)} -{" "}
+          {formatIdealWeight(result.idealWeight.max, isMetric)}
         </strong>
       </p>
     </div>

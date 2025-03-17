@@ -64,13 +64,12 @@ const Measure = ({ measureActive }: MeasurementProps) => {
           />
         </>
       ) : (
-        <InputImperial
-          values={values}
-          onChange={handleChange}
-        />
+        <InputImperial values={values} onChange={handleChange} />
       )}
 
-      <ResultCalculator result={bmiResult} />
+      <div className="pt-2">
+        <ResultCalculator result={bmiResult} />
+      </div>
     </div>
   );
 };

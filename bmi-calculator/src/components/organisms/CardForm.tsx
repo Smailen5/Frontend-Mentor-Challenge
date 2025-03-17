@@ -1,5 +1,4 @@
 import Form from "../molecules/Form";
-import ResultCalculator from "../molecules/ResultCalculator";
 
 const CardForm = () => {
   return (
@@ -9,7 +8,6 @@ const CardForm = () => {
 
         <Form />
 
-        <ResultCalculator />
       </div>
     </>
   );

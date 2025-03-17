@@ -11,7 +11,6 @@ export interface FormFieldProps {
   name: string;
   value: string | number;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  error?: string;
   unit: string;
   placeholder?: string;
 }

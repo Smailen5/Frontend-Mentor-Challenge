@@ -56,14 +56,12 @@ const Measure = ({ measureActive }: MeasurementProps) => {
             name="height"
             value={values.height}
             onChange={handleChange}
-            error={errors.height}
             unit="cm"
           />
           <InputMetric
             name="weight"
             value={values.weight}
             onChange={handleChange}
-            error={errors.weight}
             unit="kg"
           />
         </>

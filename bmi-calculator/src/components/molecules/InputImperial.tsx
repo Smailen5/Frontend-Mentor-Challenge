@@ -2,7 +2,7 @@ import { ImperialFieldProps } from "@/types";
 import InputLabel from "../atoms/InputLabel";
 import InputNumber from "../atoms/InputNumber";
 
-const InputImperial = ({ values, onChange, errors }: ImperialFieldProps) => {
+const InputImperial = ({ values, onChange }: ImperialFieldProps) => {
   return (
     <>
       <div className="space-y-2">
@@ -12,14 +12,12 @@ const InputImperial = ({ values, onChange, errors }: ImperialFieldProps) => {
             name="heightFt"
             value={values.heightFt}
             onChange={onChange}
-            error={errors.heightFt}
             unit="ft"
           />
           <InputNumber
             name="heightIn"
             value={values.heightIn}
             onChange={onChange}
-            error={errors.heightIn}
             unit="in"
           />
         </div>
@@ -32,14 +30,12 @@ const InputImperial = ({ values, onChange, errors }: ImperialFieldProps) => {
             name="weightSt"
             value={values.weightSt}
             onChange={onChange}
-            error={errors.weightSt}
             unit="st"
           />
           <InputNumber
             name="weightLbs"
             value={values.weightLbs}
             onChange={onChange}
-            error={errors.weightLbs}
             unit="lbs"
           />
         </div>

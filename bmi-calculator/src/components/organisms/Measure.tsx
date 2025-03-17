@@ -1,5 +1,5 @@
 import { MeasurementProps } from "@/types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import { metricSchema } from '@/schemas/bmiSchema';
 import { BMIResult, calculateBMIResult } from "@/utils/bmiCalculator";
 import InputImperial from "../molecules/InputImperial";
@@ -17,6 +17,19 @@ const Measure = ({ measureActive }: MeasurementProps) => {
   });
   const [bmiResult, setBmiResult] = useState<BMIResult | null>(null);
 
+  // Rest dei valori quando cambia il sistema di misura
+  useEffect(() => {
+    setValues({
+      height: "",
+      weight: "",
+      heightFt: "",
+      heightIn: "",
+      weightSt: "",
+      weightLbs: "",
+    });
+    setBmiResult(null);
+  }, [measureActive]);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setValues((prev) => ({ ...prev, [name]: value }));
@@ -30,6 +43,8 @@ const Measure = ({ measureActive }: MeasurementProps) => {
       if (height > 0 && weight > 0) {
         const result = calculateBMIResult(height, weight, true);
         setBmiResult(result);
+      } else {
+        setBmiResult(null);
       }
     } else {
       const heightFt = Number(currentValues.heightFt) || 0;
@@ -42,6 +57,8 @@ const Measure = ({ measureActive }: MeasurementProps) => {
         const weightLbsTotal = weightSt * 14 + weightLbs;
         const result = calculateBMIResult(heightInches, weightLbsTotal, false);
         setBmiResult(result);
+      } else {
+        setBmiResult(null);
       }
     }
   };

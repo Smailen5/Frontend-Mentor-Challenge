@@ -84,7 +84,7 @@ const Measure = ({ measureActive }: MeasurementProps) => {
         <InputImperial values={values} onChange={handleChange} />
       )}
 
-      <div className="pt-2">
+      <div className="pt-2 md:pt-0">
         <ResultCalculator
           result={bmiResult}
           isMetric={measureActive === "metric"}

@@ -27,13 +27,13 @@ const iconLimitationMap = {
 export const Card = ({ icon, title, description }: CardProps) => {
   const IconComponent = iconMap[icon as keyof typeof iconMap];
   return (
-    <>
-      <IconComponent />
+    <div className="md:flex md:gap-10">
+      <IconComponent className="md:h-24 md:w-24 md:items-center" />
       <div className="space-y-6">
         <h4 className="text-preset-4 text-blue-900">{title}</h4>
         <p className="text-preset-6-regular text-grey-500">{description}</p>
       </div>
-    </>
+    </div>
   );
 };
 

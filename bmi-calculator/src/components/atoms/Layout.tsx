@@ -1,9 +1,10 @@
 import { LayoutProps } from "@/types";
+import { twMerge } from "tailwind-merge";
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, className }: LayoutProps) => {
   return (
     <>
-      <div className="relative container mx-auto px-4 pt-8">{children}</div>
+      <div className={twMerge("relative container mx-auto px-4 pt-8", className)}>{children}</div>
     </>
   );
 };

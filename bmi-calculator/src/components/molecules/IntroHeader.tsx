@@ -8,7 +8,9 @@ const IntroHeader = () => {
         <br className="hidden md:block" />
         {header.title.split(" ").slice(2).join(" ")}
       </h1>
-      <p className="px-3">{header.description}</p>
+      <p className="text-preset-6-regular text-grey-500 px-3">
+        {header.description}
+      </p>
     </div>
   );
 };

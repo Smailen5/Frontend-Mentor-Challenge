@@ -15,7 +15,6 @@
   --color-blue-100: hsl(228, 94%, 94%);
   --color-gradient-1: hsl(183, 95%, 92%);
   --color-gradient-2: hsl(216, 95%, 92%);
-
 }
 
 @layer base {
@@ -108,5 +107,13 @@
     line-height: var(--line-height-150);
     letter-spacing: var(--letter-spacing-0);
     font-weight: var(--font-weight-500);
+  }
+  @media (min-width: 768px) {
+    .md\:text-preset-6-semibold {
+      font-size: var(--font-16);
+      line-height: var(--line-height-150);
+      letter-spacing: var(--letter-spacing-0);
+      font-weight: var(--font-weight-600);
+    }
   }
 }

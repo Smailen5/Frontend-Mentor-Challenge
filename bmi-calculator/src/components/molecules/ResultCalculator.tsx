@@ -35,14 +35,17 @@ const ResultCalculator = ({
   }
 
   return (
-    <div className="h-auto w-full space-y-5 rounded-xl bg-blue-500 p-8 text-white">
-      <div className="md:space-y-2">
-        <h4 className="text-preset-5 md:text-preset-2">
+    /* FIX sembra che la classe md:rounded-r-full sovrascriva la classe rounded-xl */
+    <div
+      className="h-auto w-full space-y-5 rounded-xl bg-blue-500 p-8 text-white md:flex md:items-center md:gap-6 md:space-y-0 md:rounded-r-full"
+    >
+      <div className="md:flex-1 md:space-y-2">
+        <h4 className="text-preset-5 md:text-preset-6-semibold">
           Your BMI is...
         </h4>
         <h5 className="text-preset-2">{result.value}</h5>
       </div>
-      <p className="text-preset-7-regular">
+      <p className="text-preset-7-regular md:flex-1 md:pr-2">
         {getBMIMessage(result)}{" "}
         <strong>
           {formatIdealWeight(result.idealWeight.min, isMetric)} -{" "}

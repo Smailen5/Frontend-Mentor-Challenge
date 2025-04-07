@@ -116,4 +116,12 @@
       font-weight: var(--font-weight-600);
     }
   }
+  @media (min-width: 1280px) {
+    .xl\:text-preset-1 {
+      font-size: var(--font-64);
+      line-height: var(--line-height-110);
+      letter-spacing: var(--letter-spacing-05);
+      font-weight: var(--font-weight-600);
+    }
+  }
 }

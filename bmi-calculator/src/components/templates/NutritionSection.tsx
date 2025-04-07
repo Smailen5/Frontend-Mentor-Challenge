@@ -3,8 +3,12 @@ import mainContent from "@/data/mainContent.json";
 import Layout from "../atoms/Layout";
 const NutritionSection = () => {
   return (
-    <div className="space-y-4">
-      <img src={ManEating} alt="Man Eating" className="" />
+    <div className="space-y-4 md:relative md:top-6 md:-left-20 md:flex md:w-[840px] md:gap-4">
+      <img
+        src={ManEating}
+        alt="Man Eating"
+        className="md:relative md:h-[411px] md:w-[435px]"
+      />
 
       <Layout>
         <div className="space-y-8 px-2">

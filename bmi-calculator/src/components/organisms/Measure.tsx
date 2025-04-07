@@ -66,7 +66,7 @@ const Measure = ({ measureActive }: MeasurementProps) => {
   return (
     <div className="space-y-4">
       {measureActive === "metric" ? (
-        <>
+        <div className="space-y-4 md:flex md:gap-6">
           <InputMetric
             name="height"
             value={values.height}
@@ -79,12 +79,12 @@ const Measure = ({ measureActive }: MeasurementProps) => {
             onChange={handleChange}
             unit="kg"
           />
-        </>
+        </div>
       ) : (
         <InputImperial values={values} onChange={handleChange} />
       )}
 
-      <div className="pt-2">
+      <div className="pt-2 md:pt-0">
         <ResultCalculator
           result={bmiResult}
           isMetric={measureActive === "metric"}

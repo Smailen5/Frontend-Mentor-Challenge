@@ -6,15 +6,17 @@ import CardForm from "../organisms/CardForm";
 const HeroSection = () => {
   return (
     <>
-      <Layout>
+      <Layout className="xl:space-y-6">
         {/* Background gradiente */}
-        <div className="from-gradient-2 absolute inset-0 -z-10 max-h-[70vh] w-full rounded-br-4xl bg-linear-to-l to-white" />
-        <div className="flex w-full justify-center">
-          <Logo className="size-10" />
+        <div className="from-gradient-2 absolute inset-0 -z-10 max-h-[70vh] w-full rounded-br-4xl bg-linear-to-l to-white md:max-h-[62vh]" />
+        <div className="flex w-full justify-center xl:justify-start">
+          <Logo className="size-10 xl:size-16" />
         </div>
-        <IntroHeader />
+        <div className="xl: xl:flex xl:gap-8">
+          <IntroHeader />
 
-        <CardForm />
+          <CardForm />
+        </div>
       </Layout>
     </>
   );

@@ -44,7 +44,7 @@ export const LimitationCard = ({ icon, title, description }: CardProps) => {
   return (
     <>
       <div
-        className="w-full space-y-4 rounded-2xl bg-white p-6 md:w-[calc(50%-8px)] md:p-8 xl:max-w-[365px] xl:max-h-[232px]"
+        className="w-full space-y-4 rounded-2xl bg-white p-6 md:w-[calc(50%-8px)] md:p-8 xl:max-w-[365px]"
         style={{ filter: "drop-shadow(16px 32px 56px hsl(228, 94%, 94%))" }}
       >
         <div className="items-left flex space-x-4">

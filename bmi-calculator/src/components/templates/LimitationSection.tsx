@@ -51,14 +51,13 @@ const LimitationSection = () => {
         </div>
 
         {/* Desktop Layout */}
-        <div className="top-0 right-0 hidden xl:absolute xl:flex xl:max-w-[961px] xl:flex-col xl:space-y-8">
+        <div className="top-0 right-0 hidden xl:absolute xl:flex xl:flex-col xl:space-y-8">
           {chunkCards(cards).map((row, index) => (
             <div
               key={index}
-              className="flex justify-end gap-8 flex-1 xl:max-w-[961px]"
+              className="flex flex-1 justify-end gap-8"
               style={{
                 marginRight: `${row.rowNumber % 2 === 0 ? 0 : row.rowNumber * 4}rem`,
-                marginLeft: `${row.rowNumber % 2 === 0 ? row.rowNumber * 4 : 0}rem`,
               }}
             >
               {row.cards.map((card, index) => (

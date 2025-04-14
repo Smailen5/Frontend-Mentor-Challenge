@@ -1,3 +1,4 @@
+import { PatternCurvedRight } from "@/assets/images";
 import cards from "@/data/cards.json";
 import limitation from "@/data/limitation.json";
 import Layout from "../atoms/Layout";
@@ -39,7 +40,7 @@ const LimitationSection = () => {
         </div>
 
         {/* Mobile e Tablet Layout */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:hidden">
+        <div className="space-y-4 md:flex md:flex-wrap md:justify-center md:space-y-0 md:gap-x-4 md:gap-y-6 xl:hidden">
           {cards.map((card, index) => (
             <LimitationCard
               key={index}
@@ -71,6 +72,8 @@ const LimitationSection = () => {
             </div>
           ))}
         </div>
+
+        <PatternCurvedRight className="absolute top-1/3 left-1/12 hidden xl:block" />
       </div>
     </Layout>
   );

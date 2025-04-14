@@ -29,7 +29,7 @@ const LimitationSection = () => {
 
   return (
     <Layout className="xl:py-[104px]">
-      <div className="mx-2 space-y-14 xl:relative xl:m-0 xl:min-h-[704px]">
+      <div className="mx-2 space-y-14 md:mx-8 xl:relative xl:m-0 xl:min-h-[704px]">
         <div className="space-y-8 pt-10 text-center md:pt-4 xl:max-w-[564px] xl:p-0 xl:text-left">
           <h2 className="text-preset-3 xl:text-preset-2 text-blue-900">
             {limitation.title}

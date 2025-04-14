@@ -1,32 +1,11 @@
 import { PatternCurvedRight } from "@/assets/images";
 import cards from "@/data/cards.json";
 import limitation from "@/data/limitation.json";
+import { chunkCards } from "@/utils/chunkCards";
 import Layout from "../atoms/Layout";
 import { LimitationCard } from "../molecules/Card";
 
-interface Card {
-  icon: string;
-  title: string;
-  description: string;
-}
-
 const LimitationSection = () => {
-  // funzione per dividere le cards in righe (spostala in utils)
-  function chunkCards(cards: Card[]): { cards: Card[]; rowNumber: number }[] {
-    const rows: { cards: Card[]; rowNumber: number }[] = [];
-    let index = 0;
-    let rowNumber = 1;
-    for (let rowSize = 1; index < cards.length; rowSize++) {
-      rows.push({
-        cards: cards.slice(index, index + rowSize),
-        rowNumber: rowNumber,
-      });
-      index += rowSize;
-      rowNumber++;
-    }
-    return rows;
-  }
-
   return (
     <Layout className="xl:py-[104px]">
       <div className="mx-2 space-y-14 md:mx-8 xl:relative xl:m-0 xl:min-h-[704px]">

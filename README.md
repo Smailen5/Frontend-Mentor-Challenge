@@ -1,6 +1,6 @@
 # My portfolio from Frontend Mentor 🚀 [Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 
-### Trovi altri esercizi non inerenti a Frontend Mentor in react [qui](https://smailen5.github.io/react-esercizi/)
+### Trovi altri progetti non inerenti a Frontend Mentor in react [qui](https://smailen5.github.io/react-esercizi/)
 
 ---
 

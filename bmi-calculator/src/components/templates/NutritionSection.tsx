@@ -1,4 +1,4 @@
-import { ManEating } from "@/assets/images";
+import { ManEating, PatternCurvedLeft } from "@/assets/images";
 import mainContent from "@/data/mainContent.json";
 import Layout from "../atoms/Layout";
 const NutritionSection = () => {
@@ -20,6 +20,8 @@ const NutritionSection = () => {
           </p>
         </div>
       </Layout>
+
+      <PatternCurvedLeft className="absolute -top-20 right-1/12 hidden xl:block" />
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Measure = ({ measureActive }: MeasurementProps) => {
   });
   const [bmiResult, setBmiResult] = useState<BMIResult | null>(null);
 
-  // Rest dei valori quando cambia il sistema di misura
+  // Reset dei valori quando cambia il sistema di misura
   useEffect(() => {
     setValues({
       height: "",

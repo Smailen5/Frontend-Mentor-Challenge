@@ -1,12 +1,12 @@
-import CardsSection from '@/components/templates/CardsSection';
+import CardsSection from "@/components/templates/CardsSection";
 import HeroSection from "@/components/templates/HeroSection";
-import LimitationSection from '@/components/templates/LimitationSection';
+import LimitationSection from "@/components/templates/LimitationSection";
 import NutritionSection from "@/components/templates/NutritionSection";
 
 const Home = () => {
   return (
     <>
-      <div className="space-y-16 pb-24">
+      <div className="space-y-16 pb-24 md:pb-0">
         <HeroSection />
         <NutritionSection />
         <CardsSection />

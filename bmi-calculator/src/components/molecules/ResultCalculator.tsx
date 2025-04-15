@@ -43,7 +43,7 @@ const ResultCalculator = ({
         <h4 className="text-preset-5 md:text-preset-6-semibold">
           Your BMI is...
         </h4>
-        <h5 className="text-preset-2">{result.value}</h5>
+        <h5 className="text-preset-2 xl:text-preset-1">{result.value}</h5>
       </div>
       <p className="text-preset-7-regular md:flex-1 md:pr-2">
         {getBMIMessage(result)}{" "}

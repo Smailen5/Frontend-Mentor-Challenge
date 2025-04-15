@@ -17,7 +17,7 @@ const InputNumber = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="text-preset-4 placeholder:text-grey-500 container rounded-xl border p-6 pr-16"
+        className="text-preset-4 placeholder:text-grey-500 container rounded-xl border p-6 pr-16 text-blue-900 xl:p-4 xl:px-6 xl:pr-16"
       />
       <InputSpan unit={unit} />
     </div>

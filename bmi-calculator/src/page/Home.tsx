@@ -5,14 +5,12 @@ import NutritionSection from "@/components/templates/NutritionSection";
 
 const Home = () => {
   return (
-    <>
-      <div className="space-y-16 pb-24 md:pb-0">
-        <HeroSection />
-        <NutritionSection />
-        <CardsSection />
-        <LimitationSection />
-      </div>
-    </>
+    <div className="space-y-16 pb-24 md:pb-0">
+      <HeroSection />
+      <NutritionSection />
+      <CardsSection />
+      <LimitationSection />
+    </div>
   );
 };
 

@@ -13,6 +13,7 @@ export interface FormFieldProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   unit: string;
   placeholder?: string;
+  error?: string;
 }
 
 export interface ImperialFieldProps {
@@ -23,4 +24,5 @@ export interface ImperialFieldProps {
     weightLbs: string;
   };
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  errors?: Record<string, string>;
 }

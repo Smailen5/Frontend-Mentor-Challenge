@@ -5,11 +5,11 @@
   },
   {
     "title": "Regular exercise",
-    "description": "Exercise improves fitness, aids weight control, bolsters immunity, and elevates mood, providing an overall sense of well-being."
+    "description": "Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity."
   },
   {
     "title": "Adequate sleep",
-    "description": "Sleep enhances both mental clarity and physical health. It lowers stress, boosts mood, and boosts the immune system."
+    "description": "Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation."
   },
   {
     "cards": [
@@ -19,19 +19,19 @@
       },
       {
         "title": "age",
-        "description": "In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat."
+        "description": "In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content."
       },
       {
         "title": "muscle",
-        "description": "BMI may misclassify muscle builders as overweight or obese, as it doesn't differentiate between types of fat and muscle."
+        "description": "BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat."
       },
       {
         "title": "pregnancy",
-        "description": "Expectant mothers experience weight gain due to the additional load of their growing child."
+        "description": "Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child."
       },
       {
         "title": "race",
-        "description": "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others."
+        "description": "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse."
       }
     ]
   }

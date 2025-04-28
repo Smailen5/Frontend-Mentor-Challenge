@@ -8,6 +8,10 @@
 
 ---
 
+#### BMI Calculator [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/bmi-calculator) - [Live site](https://melodic-bublanina-b5bb80.netlify.app/)
+
+![Anteprima](./screen-capture/bmi-calculator.webp)
+
 #### Ecommerce Product Page [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/ecommerce-product-page) - [Live site](https://funny-swan-69bb4e.netlify.app/)
 
 ![Anteprima](./screen-capture/ecommerce-product-page.webp)

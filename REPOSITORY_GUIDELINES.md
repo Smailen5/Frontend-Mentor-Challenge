@@ -59,6 +59,7 @@ Questi screenshot servono al sito <a href='smailenvargas.com'>smailenvargas.com<
 
 - [ ] <a href='#screenshot-dei-progetti'>Screenshot progetto</a> aggiunto
 - [ ] <a href='#aggiornamento-readme-progetto'>README progetto</a> aggiornato
+- [ ] Merge progetto nel ramo principale
 - [ ] <a href='#screenshot-repository-principale'>Screenshot repository principale</a>
 - [ ] <a href='#aggiornamento-readme-principale'>README principale</a> aggiornato
 - [ ] ...

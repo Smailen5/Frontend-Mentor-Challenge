@@ -52,7 +52,6 @@ Users should be able to:
 ### What I learned
 
 - Add a dinamic margin to the cards with the row number `${row.rowNumber % 2 === 0 ? 0 : row.rowNumber * 4}rem`
-- Divide the cards in rows with `chunkCards`
 
 ```tsx
 <div className="top-0 right-0 hidden xl:absolute xl:flex xl:flex-col xl:space-y-8">
@@ -76,6 +75,8 @@ Users should be able to:
   ))}
 </div>
 ```
+
+- Divide the cards in rows with `chunkCards`
 
 ```ts
 function chunkCards(cards: CardProps[]): { cards: CardProps[]; rowNumber: number }[] {

@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "IconEating",
+    "title": "Healthy eating",
+    "description": "Healthy eating promotes weight control, disease prevention, better digestion, immunity,mental clarity, and mood."
+  },
+  {
+    "icon": "IconExercise",
+    "title": "Regular exercise",
+    "description": "Exercise improves fitness, aids weight control, bolsters immunity, and elevates mood, providing an overall sense of well-being."
+  },
+  {
+    "icon": "IconSleep",
+    "title": "Adequate sleep",
+    "description": "Sleep enhances both mental clarity and physical health. It lowers stress, boosts mood, and boosts the immune system."
+  }
+]

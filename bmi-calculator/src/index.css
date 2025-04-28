@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-family: "Inter", sans-serif;
+
+  --color-*: initial;
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-grey-500: hsl(215, 17%, 45%);
+  --color-grey-300: hsl(215, 43%, 77%);
+  --color-blue-900: hsl(215, 31%, 21%);
+  --color-blue-500: hsl(227, 92%, 58%);
+  --color-blue-300: hsl(209, 68%, 82%);
+  --color-blue-100: hsl(228, 94%, 94%);
+  --color-gradient-1: hsl(183, 95%, 92%);
+  --color-gradient-2: hsl(216, 95%, 92%);
+  --color-error: hsl(0, 100%, 50%);
+}
+
+@layer base {
+  :root {
+    /* Font size */
+    --font-64: 64px;
+    --font-48: 48px;
+    --font-32: 32px;
+    --font-24: 24px;
+    --font-20: 20px;
+    --font-16: 16px;
+    --font-14: 14px;
+    /* Line height */
+    --line-height-110: 110%;
+    --line-height-120: 120%;
+    --line-height-150: 150%;
+    /* Letter spacing */
+    --letter-spacing-05: -0.05em;
+    --letter-spacing-0: 0;
+    /* Font weight */
+    --font-weight-700: 700;
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+  }
+  body {
+    font-family: var(--font-family);
+  }
+}
+
+/* Classi di utilità per i preset di tipografia */
+@layer utilities {
+  .text-preset-1 {
+    font-size: var(--font-64);
+    line-height: var(--line-height-110);
+    letter-spacing: var(--letter-spacing-05);
+    font-weight: var(--font-weight-600);
+  }
+
+  .text-preset-2 {
+    font-size: var(--font-48);
+    line-height: var(--line-height-110);
+    letter-spacing: var(--letter-spacing-0);
+    font-weight: var(--font-weight-600);
+  }
+
+  .text-preset-3 {
+    font-size: var(--font-32);
+    line-height: var(--line-height-110);
+    letter-spacing: var(--letter-spacing-05);
+    font-weight: var(--font-weight-600);
+  }
+
+  .text-preset-4 {
+    font-size: var(--font-24);
+    line-height: var(--line-height-120);
+    letter-spacing: var(--letter-spacing-05);
+    font-weight: var(--font-weight-600);
+  }
+
+  .text-preset-5 {
+    font-size: var(--font-20);
+    line-height: var(--line-height-120);
+    letter-spacing: var(--letter-spacing-05);
+    font-weight: var(--font-weight-600);
+  }
+
+  .text-preset-6-semibold {
+    font-size: var(--font-16);
+    line-height: var(--line-height-150);
+    letter-spacing: var(--letter-spacing-0);
+    font-weight: var(--font-weight-600);
+  }
+
+  .text-preset-6-regular {
+    font-size: var(--font-16);
+    line-height: var(--line-height-150);
+    letter-spacing: var(--letter-spacing-0);
+    font-weight: var(--font-weight-500);
+  }
+
+  .text-preset-7-bold {
+    font-size: var(--font-14);
+    line-height: var(--line-height-150);
+    letter-spacing: var(--letter-spacing-0);
+    font-weight: var(--font-weight-700);
+  }
+
+  .text-preset-7-regular {
+    font-size: var(--font-14);
+    line-height: var(--line-height-150);
+    letter-spacing: var(--letter-spacing-0);
+    font-weight: var(--font-weight-500);
+  }
+  @media (min-width: 768px) {
+    .md\:text-preset-6-semibold {
+      font-size: var(--font-16);
+      line-height: var(--line-height-150);
+      letter-spacing: var(--letter-spacing-0);
+      font-weight: var(--font-weight-600);
+    }
+  }
+  @media (min-width: 1280px) {
+    .xl\:text-preset-1 {
+      font-size: var(--font-64);
+      line-height: var(--line-height-110);
+      letter-spacing: var(--letter-spacing-05);
+      font-weight: var(--font-weight-600);
+    }
+    .xl\:text-preset-2 {
+      font-size: var(--font-48);
+      line-height: var(--line-height-110);
+      letter-spacing: var(--letter-spacing-0);
+      font-weight: var(--font-weight-600);
+    }
+  }
+}

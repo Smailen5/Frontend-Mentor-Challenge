@@ -1,5 +1,68 @@
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap");
+@import "tailwindcss";
 
-:root {
-  
+@theme {
+  /* Color */
+  --color-*: initial;
+  --color-light-blue: hsl(178, 60%, 48%);
+  --color-light-blue-hover: hsl(178, 75%, 65%);
+  --color-light-yellow: hsl(39, 88%, 58%);
+  --color-light-yellow-hover: hsl(39, 100%, 69%);
+  --color-dark-navy: hsl(202, 32%, 15%);
+  --color-semi-dark-navy: hsl(199, 35%, 19%);
+  --color-silver: hsl(198, 23%, 72%);
+  --color-silver-hover: hsl(197, 33%, 89%);
+}
+
+@layer base {
+  :root {
+    --font-40: 40px;
+    --font-24: 24px;
+    --font-20: 20px;
+    --font-16: 16px;
+    --font-14: 14px;
+
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+
+    --letter-spacing-1: 1px;
+    --letter-spacing-125: 1.25px;
+    --letter-spacing-15: 1.5px;
+    --letter-spacing-25: 2.5px;
+    --letter-spacing-08: 0.8px;
+  }
+
+  body {
+    font-family: "Outfit", sans-serif;
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+/* Heading utilities */
+@layer utilities {
+  .heading-l {
+    font-size: var(--font-40);
+    letter-spacing: var(--letter-spacing-25);
+  }
+
+  .heading-m {
+    font-size: var(--font-24);
+    letter-spacing: var(--letter-spacing-15);
+  }
+
+  .heading-s {
+    font-size: var(--font-20);
+    letter-spacing: var(--letter-spacing-125);
+  }
+
+  .heading-xs {
+    font-size: var(--font-16);
+    letter-spacing: var(--letter-spacing-1);
+  }
+
+  .body-m {
+    font-size: var(--font-14);
+    letter-spacing: var(--letter-spacing-08);
+    font-weight: var(--font-weight-medium);
+  }
 }

@@ -3,7 +3,11 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  return <div>{children}</div>;
+  return (
+    <main className="flex h-screen w-full items-center justify-center">
+      {children}
+    </main>
+  );
 };
 
 export default Layout;

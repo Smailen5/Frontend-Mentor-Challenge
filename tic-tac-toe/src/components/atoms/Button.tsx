@@ -41,31 +41,29 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     ref,
   ) => {
     return (
-      <>
-        <button
-          className={cn(buttonVariants({ variant, styleColor, className }))}
-          ref={ref}
-          {...props}
-        >
-          {children}
-          {/* Ombreggiatura inferiore */}
-          <div
-            className={cn(
-              "absolute inset-0 -z-10 rounded-2xl brightness-90",
-              styleColor === "yellow"
-                ? "bg-light-yellow"
-                : styleColor === "blue"
-                  ? "bg-light-blue"
-                  : "bg-silver",
-              variant === "primary"
-                ? "h-16"
-                : variant === "secondary"
-                  ? "h-13"
-                  : "h-14",
-            )}
-          />
-        </button>
-      </>
+      <button
+        className={cn(buttonVariants({ variant, styleColor, className }))}
+        ref={ref}
+        {...props}
+      >
+        {children}
+        {/* Ombreggiatura inferiore */}
+        <div
+          className={cn(
+            "absolute inset-0 -z-10 rounded-2xl brightness-90",
+            styleColor === "yellow"
+              ? "bg-light-yellow"
+              : styleColor === "blue"
+                ? "bg-light-blue"
+                : "bg-silver",
+            variant === "primary"
+              ? "h-16"
+              : variant === "secondary"
+                ? "h-13"
+                : "h-14",
+          )}
+        />
+      </button>
     );
   },
 );

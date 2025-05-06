@@ -18,6 +18,7 @@ const buttonVariants = cva(
       styleColor: {
         yellow: "bg-light-yellow hover:bg-light-yellow-hover",
         blue: "bg-light-blue hover:bg-light-blue-hover",
+        silver: "bg-silver hover:bg-silver-hover",
       },
     },
     defaultVariants: {
@@ -51,7 +52,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           <div
             className={cn(
               "absolute inset-0 -z-10 h-16 rounded-2xl brightness-90",
-              styleColor === "yellow" ? "bg-light-yellow" : "bg-light-blue",
+              styleColor === "yellow"
+                ? "bg-light-yellow"
+                : styleColor === "blue"
+                  ? "bg-light-blue"
+                  : "bg-silver",
             )}
           />
         </button>

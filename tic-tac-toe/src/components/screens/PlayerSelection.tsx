@@ -1,5 +1,7 @@
+import { Layout } from "../atoms";
+
 const PlayerSelection = () => {
-  return <div>PlayerSelection</div>;
+  return <Layout>PlayerSelection</Layout>;
 };
 
 export default PlayerSelection;

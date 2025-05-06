@@ -1,9 +1,12 @@
 import { Layout } from "../atoms";
+import { Logo } from "../molecules";
 
 const PlayerSelection = () => {
   return (
     <Layout>
-      <div>logo</div>
+      <div>
+        <Logo />
+      </div>
       <div>scheda seleziona simbolo giocatore</div>
       <div>bottoni nuovo giocatore e multiplayer</div>
     </Layout>

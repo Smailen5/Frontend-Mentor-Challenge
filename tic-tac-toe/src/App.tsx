@@ -1,10 +1,13 @@
-import Button from './components/atoms/Button';
+import Button from "./components/atoms/Button";
 
 function App() {
   return (
     <>
       <div>App Home</div>
-      <Button >button</Button>
+      <div className="space-y-4">
+        <Button>button</Button>
+        <Button variant={"secondary"}>button</Button>
+      </div>
     </>
   );
 }

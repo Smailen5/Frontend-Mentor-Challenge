@@ -1,10 +1,10 @@
-import { SingleLogo } from "../atoms";
+import { IconO, IconX } from "../../assets";
 
 const Logo = () => {
   return (
-    <div>
-      <SingleLogo />
-      <SingleLogo />
+    <div className="flex items-center gap-2">
+      <IconX className="size-8" />
+      <IconO className="size-8" />
     </div>
   );
 };

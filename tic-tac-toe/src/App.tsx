@@ -1,3 +1,4 @@
+import PlayerSelection from "./components/screens/PlayerSelection";
 import { useGameStore } from "./store/gameStore";
 
 function App() {
@@ -5,9 +6,8 @@ function App() {
     useGameStore();
   return (
     <>
-      <div>App Home</div>
       <div>
-        {phase === "player-selection" && <div>fase seleziona giocatore</div>}
+        {phase === "player-selection" && <PlayerSelection />}
         {phase === "game" && <div>fase di gioco</div>}
         {phase === "result" && <div>fase di risultato</div>}
       </div>

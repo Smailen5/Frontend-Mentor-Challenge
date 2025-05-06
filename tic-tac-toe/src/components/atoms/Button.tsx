@@ -9,21 +9,21 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: "w-full",
-        secondary: "px-2",
+        secondary: "px-4",
       },
       size: {
         default: "h-14",
         sm: "h-12",
       },
       styleColor: {
-        default: "bg-light-yellow hover:bg-light-yellow-hover",
+        yellow: "bg-light-yellow hover:bg-light-yellow-hover",
         blue: "bg-light-blue hover:bg-light-blue-hover",
       },
     },
     defaultVariants: {
       variant: "primary",
       size: "default",
-      styleColor: "default",
+      styleColor: "yellow",
     },
   },
 );
@@ -34,7 +34,7 @@ interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { className, variant, size, styleColor = "default", children, ...props },
+    { className, variant, size, styleColor = "yellow", children, ...props },
     ref,
   ) => {
     return (
@@ -51,7 +51,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           <div
             className={cn(
               "absolute inset-0 -z-10 h-16 rounded-2xl brightness-90",
-              styleColor === "default" ? "bg-light-yellow" : "bg-light-blue",
+              styleColor === "yellow" ? "bg-light-yellow" : "bg-light-blue",
             )}
           />
         </button>

@@ -4,12 +4,12 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/utils";
 
 const buttonVariants = cva(
-  "relative w-full cursor-pointer rounded-2xl py-4 text-center text-dark-navy uppercase",
+  "relative w-full cursor-pointer rounded-2xl py-4 text-center text-dark-navy uppercase transition-colors ease-in-out duration-500",
   {
     variants: {
       variant: {
-        default: "bg-light-yellow",
-        secondary: "bg-light-blue",
+        default: "bg-light-yellow hover:bg-light-yellow-hover",
+        secondary: "bg-light-blue hover:bg-light-blue-hover",
       },
       size: {
         default: "h-14",

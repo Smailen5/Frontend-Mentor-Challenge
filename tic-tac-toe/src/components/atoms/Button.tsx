@@ -8,12 +8,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "w-full",
-        secondary: "px-4",
-      },
-      size: {
-        default: "h-14",
-        sm: "h-12",
+        primary: "w-full h-14",
+        secondary: "p-4 h-12 flex items-center",
+        icon: "p-4 h-12 size-13 text-semi-dark-navy",
       },
       styleColor: {
         yellow: "bg-light-yellow hover:bg-light-yellow-hover",
@@ -23,7 +20,6 @@ const buttonVariants = cva(
     },
     defaultVariants: {
       variant: "primary",
-      size: "default",
       styleColor: "yellow",
     },
   },
@@ -35,15 +31,19 @@ interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { className, variant, size, styleColor = "yellow", children, ...props },
+    {
+      className,
+      variant = "primary",
+      styleColor = "yellow",
+      children,
+      ...props
+    },
     ref,
   ) => {
     return (
       <>
         <button
-          className={cn(
-            buttonVariants({ variant, size, styleColor, className }),
-          )}
+          className={cn(buttonVariants({ variant, styleColor, className }))}
           ref={ref}
           {...props}
         >
@@ -51,12 +51,17 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           {/* Ombreggiatura inferiore */}
           <div
             className={cn(
-              "absolute inset-0 -z-10 h-16 rounded-2xl brightness-90",
+              "absolute inset-0 -z-10 rounded-2xl brightness-90",
               styleColor === "yellow"
                 ? "bg-light-yellow"
                 : styleColor === "blue"
                   ? "bg-light-blue"
                   : "bg-silver",
+              variant === "primary"
+                ? "h-16"
+                : variant === "secondary"
+                  ? "h-13"
+                  : "h-14",
             )}
           />
         </button>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconO, IconX } from "../../assets";
+import { IconO, IconOOutline, IconX, IconXOutline } from "../../assets";
 
 interface SwitchSelectionProps {
   initialSelection?: "player-x" | "player-o";
@@ -31,7 +31,7 @@ const SwitchSelection = ({
           aria-checked={playerSelection === "player-x"}
           onClick={() => handlePlayerSelection("player-x")}
         >
-          <IconX />
+          {playerSelection === "player-x" ? <IconXOutline /> : <IconX />}
         </button>
 
         <button
@@ -40,7 +40,7 @@ const SwitchSelection = ({
           aria-checked={playerSelection === "player-o"}
           onClick={() => handlePlayerSelection("player-o")}
         >
-          <IconO />
+          {playerSelection === "player-o" ? <IconOOutline /> : <IconO />}
         </button>
       </div>
     </div>

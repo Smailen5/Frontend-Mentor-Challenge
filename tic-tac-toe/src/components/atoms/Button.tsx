@@ -8,16 +8,16 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "w-full h-14",
+        primary: "w-full h-13",
         secondary: "p-4 h-12 flex items-center",
         icon: "p-4 h-12 size-13 text-semi-dark-navy",
       },
       styleColor: {
         yellow:
-          "bg-light-yellow hover:bg-light-yellow-hover shadow-[0_8px_0_0_rgba(242,176,54,0.5)] hover:shadow-[0_8px_0_0_rgba(255,200,97,0.5)]",
-        blue: "bg-light-blue hover:bg-light-blue-hover shadow-[0_8px_0_0_rgba(49,196,191,0.5)] hover:shadow-[0_8px_0_0_rgba(99,233,228,0.5)]",
+          "bg-light-yellow hover:bg-light-yellow-hover shadow-[0_8px_0_0_rgba(242,176,54,0.75)] hover:shadow-[0_8px_0_0_rgba(255,200,97,0.75)]",
+        blue: "bg-light-blue hover:bg-light-blue-hover shadow-[0_8px_0_0_rgba(49,196,191,0.75)] hover:shadow-[0_8px_0_0_rgba(99,233,228,0.75)]",
         silver:
-          "bg-silver hover:bg-silver-hover shadow-[0_8px_0_0_rgba(167,190,200,0.5)] hover:shadow-[0_8px_0_0_rgba(218,231,236,0.5)]",
+          "bg-silver hover:bg-silver-hover shadow-[0_8px_0_0_rgba(167,190,200,0.75)] hover:shadow-[0_8px_0_0_rgba(218,231,236,0.75)]",
       },
     },
     defaultVariants: {

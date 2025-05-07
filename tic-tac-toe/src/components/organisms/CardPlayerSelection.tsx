@@ -1,9 +1,9 @@
 import { Card } from "../atoms";
-import SwitchSelection from "../molecules/SwitchSelection";
+import { SwitchSelection } from "../molecules";
 
 const CardSelection = () => {
   return (
-    <Card className="text-center space-y-6">
+    <Card className="space-y-6 text-center">
       <h4 className="heading-xs">pick player 1's mark</h4>
 
       <SwitchSelection />

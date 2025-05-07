@@ -1,5 +1,6 @@
-import { Layout } from "../atoms";
+import { Button, Layout } from "../atoms";
 import { Logo } from "../molecules";
+import { CardPlayerSelection } from "../organisms";
 
 const PlayerSelection = () => {
   return (
@@ -7,8 +8,15 @@ const PlayerSelection = () => {
       <div>
         <Logo />
       </div>
-      <div>scheda seleziona simbolo giocatore</div>
-      <div>bottoni nuovo giocatore e multiplayer</div>
+      <div>
+        <CardPlayerSelection />
+      </div>
+      <div className="space-y-6">
+        <Button variant={"primary"}>new game (vs cpu)</Button>
+        <Button variant={"primary"} styleColor={"blue"}>
+          new game (vs player)
+        </Button>
+      </div>
     </Layout>
   );
 };

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconO, IconOOutline, IconX, IconXOutline } from "../../assets";
+import { IconO, IconX } from "../../assets";
 
 interface SwitchSelectionProps {
   initialSelection?: "player-x" | "player-o";
@@ -16,22 +16,23 @@ const SwitchSelection = ({
     setPlayerSelection(selection);
   };
 
-  console.log(playerSelection);
-
   return (
     <div className="bg-dark-navy rounded-2xl p-4">
       <div
         role="radiogroup"
         aria-label="Selezione giocatore"
-        className="flex justify-between"
+        className="flex justify-between gap-2"
       >
         <button
           type="button"
           role="radio"
           aria-checked={playerSelection === "player-x"}
           onClick={() => handlePlayerSelection("player-x")}
+          className={`flex items-center justify-center rounded-xl px-6 cursor-pointer ${playerSelection === "player-x" ? "bg-silver" : "bg-dark-navy"}`}
         >
-          {playerSelection === "player-x" ? <IconXOutline /> : <IconX />}
+          <IconX
+            className={`m-2 size-8 ${playerSelection === "player-x" && "text-dark-navy"}`}
+          />
         </button>
 
         <button
@@ -39,8 +40,11 @@ const SwitchSelection = ({
           role="radio"
           aria-checked={playerSelection === "player-o"}
           onClick={() => handlePlayerSelection("player-o")}
+          className={`flex items-center justify-center rounded-xl px-6 cursor-pointer ${playerSelection === "player-o" ? "bg-silver" : "bg-dark-navy"}`}
         >
-          {playerSelection === "player-o" ? <IconOOutline /> : <IconO />}
+          <IconO
+            className={`m-2 size-8 ${playerSelection === "player-o" && "text-dark-navy"}`}
+          />
         </button>
       </div>
     </div>

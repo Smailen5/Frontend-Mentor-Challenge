@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../../lib/utils";
 
 const buttonVariants = cva(
-  "relative cursor-pointer rounded-2xl py-4 text-center text-dark-navy uppercase transition-colors ease-in-out duration-500",
+  "relative cursor-pointer rounded-2xl py-4 text-center text-dark-navy uppercase transition-all ease-in-out duration-500",
   {
     variants: {
       variant: {
@@ -13,9 +13,11 @@ const buttonVariants = cva(
         icon: "p-4 h-12 size-13 text-semi-dark-navy",
       },
       styleColor: {
-        yellow: "bg-light-yellow hover:bg-light-yellow-hover",
-        blue: "bg-light-blue hover:bg-light-blue-hover",
-        silver: "bg-silver hover:bg-silver-hover",
+        yellow:
+          "bg-light-yellow hover:bg-light-yellow-hover shadow-[0_8px_0_0_rgba(242,176,54,0.5)] hover:shadow-[0_8px_0_0_rgba(255,200,97,0.5)]",
+        blue: "bg-light-blue hover:bg-light-blue-hover shadow-[0_8px_0_0_rgba(49,196,191,0.5)] hover:shadow-[0_8px_0_0_rgba(99,233,228,0.5)]",
+        silver:
+          "bg-silver hover:bg-silver-hover shadow-[0_8px_0_0_rgba(167,190,200,0.5)] hover:shadow-[0_8px_0_0_rgba(218,231,236,0.5)]",
       },
     },
     defaultVariants: {
@@ -48,7 +50,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       >
         {children}
         {/* Ombreggiatura inferiore */}
-        <div
+        {/* <div
           className={cn(
             "absolute inset-0 -z-10 rounded-2xl brightness-90",
             styleColor === "yellow"
@@ -62,7 +64,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 ? "h-13"
                 : "h-14",
           )}
-        />
+        /> */}
       </button>
     );
   },

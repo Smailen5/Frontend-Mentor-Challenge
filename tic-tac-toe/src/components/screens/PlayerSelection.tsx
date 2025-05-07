@@ -1,8 +1,10 @@
+import { useGameStore } from "../../store/gameStore";
 import { Button, Layout } from "../atoms";
 import { Logo } from "../molecules";
 import { CardPlayerSelection } from "../organisms";
 
 const PlayerSelection = () => {
+  const setPhase = useGameStore((state) => state.setPhase);
   return (
     <Layout className="gap-y-10">
       <Logo />
@@ -10,8 +12,14 @@ const PlayerSelection = () => {
       <CardPlayerSelection />
 
       <div className="space-y-6">
-        <Button variant={"primary"}>new game (vs cpu)</Button>
-        <Button variant={"primary"} styleColor={"blue"}>
+        <Button variant={"primary"} onClick={() => setPhase("game")}>
+          new game (vs cpu)
+        </Button>
+        <Button
+          variant={"primary"}
+          styleColor={"blue"}
+          onClick={() => alert("not implemented")}
+        >
           new game (vs player)
         </Button>
       </div>

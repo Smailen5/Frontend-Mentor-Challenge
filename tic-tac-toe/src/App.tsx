@@ -2,8 +2,7 @@ import { GameBoard, GameResult, PlayerSelection } from "./components/screens";
 import { useGameStore } from "./store/gameStore";
 
 function App() {
-  const { phase, selectedPlayer, setPhase, setSelectedPlayer, resetGame } =
-    useGameStore();
+  const { phase } = useGameStore();
   return (
     <>
       <div>

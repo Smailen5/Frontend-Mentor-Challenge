@@ -4,13 +4,11 @@ import { CardPlayerSelection } from "../organisms";
 
 const PlayerSelection = () => {
   return (
-    <Layout>
-      <div>
-        <Logo />
-      </div>
-      <div>
-        <CardPlayerSelection />
-      </div>
+    <Layout className="gap-y-10">
+      <Logo />
+
+      <CardPlayerSelection />
+
       <div className="space-y-6">
         <Button variant={"primary"}>new game (vs cpu)</Button>
         <Button variant={"primary"} styleColor={"blue"}>

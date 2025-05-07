@@ -17,7 +17,7 @@ const SwitchSelection = ({
   };
 
   return (
-    <div className="bg-dark-navy rounded-2xl p-4">
+    <div className="bg-dark-navy rounded-2xl p-2">
       <div
         role="radiogroup"
         aria-label="Selezione giocatore"
@@ -28,7 +28,7 @@ const SwitchSelection = ({
           role="radio"
           aria-checked={playerSelection === "player-x"}
           onClick={() => handlePlayerSelection("player-x")}
-          className={`flex items-center justify-center rounded-xl px-6 cursor-pointer ${playerSelection === "player-x" ? "bg-silver" : "bg-dark-navy"}`}
+          className={`flex cursor-pointer items-center justify-center rounded-xl px-12 py-1 ${playerSelection === "player-x" ? "bg-silver" : "bg-dark-navy"}`}
         >
           <IconX
             className={`m-2 size-8 ${playerSelection === "player-x" && "text-dark-navy"}`}
@@ -40,7 +40,7 @@ const SwitchSelection = ({
           role="radio"
           aria-checked={playerSelection === "player-o"}
           onClick={() => handlePlayerSelection("player-o")}
-          className={`flex items-center justify-center rounded-xl px-6 cursor-pointer ${playerSelection === "player-o" ? "bg-silver" : "bg-dark-navy"}`}
+          className={`flex cursor-pointer items-center justify-center rounded-xl px-12 py-1 ${playerSelection === "player-o" ? "bg-silver" : "bg-dark-navy"}`}
         >
           <IconO
             className={`m-2 size-8 ${playerSelection === "player-o" && "text-dark-navy"}`}

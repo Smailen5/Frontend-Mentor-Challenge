@@ -12,13 +12,13 @@ const PlayerSelection = () => {
       <CardPlayerSelection />
 
       <div className="space-y-6">
-        <Button variant={"primary"} onClick={() => setPhase("game")}>
+        <Button variant={"primary"} onClick={() => alert("not implemented")}>
           new game (vs cpu)
         </Button>
         <Button
           variant={"primary"}
           styleColor={"blue"}
-          onClick={() => alert("not implemented")}
+          onClick={() => setPhase("game")}
         >
           new game (vs player)
         </Button>

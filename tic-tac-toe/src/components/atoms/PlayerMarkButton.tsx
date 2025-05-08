@@ -1,9 +1,4 @@
-interface PlayerMarkButtonProps {
-  children: React.ReactNode;
-  buttonPlayer: "player-x" | "player-o";
-  playerSelection: "player-x" | "player-o";
-  handlePlayerSelection: (playerSelection: "player-x" | "player-o") => void;
-}
+import { PlayerMarkButtonProps } from "../../types/atoms.types";
 
 const PlayerMarkButton = ({
   children,

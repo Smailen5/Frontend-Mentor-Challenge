@@ -1,9 +1,5 @@
 import { twMerge } from "tailwind-merge";
-
-interface BoxStatisticsProps {
-  children: React.ReactNode;
-  className: string;
-}
+import { BoxStatisticsProps } from "../../types/atoms.types";
 
 const BoxStatistics = ({ children, className }: BoxStatisticsProps) => {
   return (

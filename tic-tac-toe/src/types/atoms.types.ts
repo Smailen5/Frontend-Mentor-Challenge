@@ -24,3 +24,5 @@ export interface PlayerMarkButtonProps {
   playerSelection: "player-x" | "player-o";
   handlePlayerSelection: (playerSelection: "player-x" | "player-o") => void;
 }
+
+export interface ModalProps extends BaseProps {}

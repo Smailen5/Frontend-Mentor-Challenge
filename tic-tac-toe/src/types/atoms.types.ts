@@ -1,24 +1,22 @@
 import { Player } from "./game.types";
 
-export interface BoxStatisticsProps {
-  children: React.ReactNode;
-  className: string;
-}
-
-export interface CardProps {
+interface BaseProps {
   children: React.ReactNode;
   className?: string;
 }
+
+export interface BoxStatisticsProps extends BaseProps {
+  className: string;
+}
+
+export interface CardProps extends BaseProps {}
 
 export interface GameButtonProps {
   position: number;
   value: Player | null;
 }
 
-export interface LayoutProps {
-  children: React.ReactNode;
-  className?: string;
-}
+export interface LayoutProps extends BaseProps {}
 
 export interface PlayerMarkButtonProps {
   children: React.ReactNode;

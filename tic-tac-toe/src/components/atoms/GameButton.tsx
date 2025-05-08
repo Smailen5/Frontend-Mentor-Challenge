@@ -3,10 +3,12 @@ import { useGameStore } from "../../store/gameStore";
 import { GameButtonProps } from "../../types/atoms.types";
 
 const GameButton = ({ position, value }: GameButtonProps) => {
-  const { makeMove } = useGameStore();
+  const { makeMove, phase } = useGameStore();
 
   const handleClick = () => {
-    makeMove(position);
+    if (phase === "game") {
+      makeMove(position);
+    }
   };
   return (
     <button

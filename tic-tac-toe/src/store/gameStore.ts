@@ -1,7 +1,5 @@
 import { create } from "zustand";
-
-type GamePhase = "player-selection" | "game" | "result";
-type Player = "player-x" | "player-o";
+import { GamePhase, Player } from "../types/game.types";
 
 interface GameState {
   phase: GamePhase;

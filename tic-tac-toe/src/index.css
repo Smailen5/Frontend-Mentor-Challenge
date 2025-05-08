@@ -3,7 +3,6 @@
 
 @theme {
   /* Color */
-  --color-*: initial;
   --color-light-blue: hsl(178, 60%, 48%);
   --color-light-blue-hover: hsl(178, 75%, 65%);
   --color-light-yellow: hsl(39, 88%, 58%);

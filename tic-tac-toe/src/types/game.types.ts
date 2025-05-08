@@ -5,6 +5,7 @@ export interface GameState {
   phase: GamePhase;
   selectedPlayer: Player;
   currentPlayer: Player;
+  winner: Player | null;
   grid: (Player | null)[]; // array di 9 celle
   setPhase: (phase: GamePhase) => void;
   setSelectedPlayer: (player: Player) => void;

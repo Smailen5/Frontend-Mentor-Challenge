@@ -3,10 +3,10 @@ import { useGameStore } from "../../store/gameStore";
 import { Card } from "../atoms";
 
 const CardPlayerTurn = () => {
-  const { selectedPlayer } = useGameStore();
+  const { currentPlayer } = useGameStore();
   return (
     <Card className="flex items-center justify-center gap-2 rounded-md p-2 px-4 shadow-[0_4px_0_0_rgba(0,0,0,0.25)]">
-      {selectedPlayer === "player-x" ? <IconX /> : <IconO />} turn
+      {currentPlayer === "player-x" ? <IconX /> : <IconO />} turn
     </Card>
   );
 };

@@ -1,16 +1,14 @@
-import { useGameStore } from "../../store/gameStore";
+import { StatisticsGroup } from "../molecules";
+import { GameBar, GameGrid } from "../organisms";
 
 const GameBoard = () => {
-  const { resetGame } = useGameStore();
-
-  const handleResetGame = () => {
-    resetGame();
-  };
-
   return (
     <div>
-      GameBoard
-      <button onClick={handleResetGame}>torna indietro</button>
+      <GameBar />
+      <GameGrid />
+      <div className="flex justify-between px-8">
+        <StatisticsGroup />
+      </div>
     </div>
   );
 };

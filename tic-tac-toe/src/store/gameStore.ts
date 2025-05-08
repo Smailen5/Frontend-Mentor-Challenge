@@ -6,6 +6,7 @@ export const useGameStore = create<GameState>((set) => ({
   phase: "player-selection",
   selectedPlayer: "player-x",
   currentPlayer: "player-x",
+  winner: null,
   grid: Array(9).fill(null),
   setPhase: (phase) => set({ phase }),
   setSelectedPlayer: (player) => set({ selectedPlayer: player }),

@@ -17,7 +17,7 @@ const buttonVariants = cva(
           "bg-light-yellow hover:bg-light-yellow-hover shadow-[0_8px_0_0_rgba(242,176,54,0.75)] hover:shadow-[0_8px_0_0_rgba(255,200,97,0.75)]",
         blue: "bg-light-blue hover:bg-light-blue-hover shadow-[0_8px_0_0_rgba(49,196,191,0.75)] hover:shadow-[0_8px_0_0_rgba(99,233,228,0.75)]",
         silver:
-          "bg-silver hover:bg-silver-hover shadow-[0_4px_0_0_rgba(167,190,200,0.6)] hover:shadow-[0_8px_0_0_rgba(218,231,236,0.75)]",
+          "bg-silver hover:bg-silver-hover shadow-[0_4px_0_0_rgba(167,190,200,0.6)] hover:shadow-[0_4px_0_0_rgba(218,231,236,0.75)]",
       },
     },
     defaultVariants: {

@@ -1,6 +1,4 @@
-interface ModalProps {
-  children: React.ReactNode;
-}
+import { ModalProps } from "../../types/atoms.types";
 
 const Modal = ({ children }: ModalProps) => {
   return (

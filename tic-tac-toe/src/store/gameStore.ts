@@ -1,16 +1,5 @@
 import { create } from "zustand";
-import { GamePhase, Player } from "../types/game.types";
-
-interface GameState {
-  phase: GamePhase;
-  selectedPlayer: Player;
-  currentPlayer: Player;
-  grid: (Player | null)[]; // array di 9 celle
-  setPhase: (phase: GamePhase) => void;
-  setSelectedPlayer: (player: Player) => void;
-  makeMove: (position: number) => void;
-  resetGame: () => void;
-}
+import { GameState } from "../types/game.types";
 
 export const useGameStore = create<GameState>((set) => ({
   phase: "player-selection",

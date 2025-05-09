@@ -17,17 +17,11 @@ export const useGameStats = () => {
     return selectedPlayer === "player-o" ? "o (you)" : "o (cpu)";
   };
 
-  const getXWins = () => {
-    return gameMode === "multiplayer"
-      ? stats.multiplayer.xWins
-      : stats.cpu.xWins;
-  };
+  const XWins =
+    gameMode === "multiplayer" ? stats.multiplayer.xWins : stats.cpu.xWins;
 
-  const getOWins = () => {
-    return gameMode === "multiplayer"
-      ? stats.multiplayer.oWins
-      : stats.cpu.oWins;
-  };
+  const OWins =
+    gameMode === "multiplayer" ? stats.multiplayer.oWins : stats.cpu.oWins;
 
-  return { getXLabel, getOLabel, getXWins, getOWins };
+  return { getXLabel, getOLabel, XWins, OWins };
 };

@@ -34,14 +34,12 @@ export const useGameStore = create<GameState>((set) => ({
     })),
   makeMove: (position) =>
     set((state) => {
-      console.log(state)
       // se la cella e vuota fai la mossa
       if (state.grid[position] === null) {
         const newGrid = [...state.grid]; // crea una nuova copia dell'array grid
         newGrid[position] = state.currentPlayer; // assegna il simbolo al posto selezionato
 
         const winner = checkWinner(newGrid);
-        console.log(winner)
 
         if (winner) {
           const newStats = { ...state.stats };

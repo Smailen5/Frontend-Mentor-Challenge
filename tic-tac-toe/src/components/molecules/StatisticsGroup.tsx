@@ -4,8 +4,6 @@ import { BoxStatistics } from "../atoms";
 const StatisticsGroup = () => {
   const { getXLabel, getOLabel, XWins, OWins } = useGameStats();
 
-  // console.log("StatisticsGroup render - X wins:", getXWins(), "O wins:", getOWins());
-
   return (
     <>
       <BoxStatistics className="bg-light-blue">

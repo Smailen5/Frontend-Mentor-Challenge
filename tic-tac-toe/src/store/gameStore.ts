@@ -21,6 +21,17 @@ export const useGameStore = create<GameState>((set) => ({
   grid: Array(9).fill(null),
   setPhase: (phase) => set({ phase }),
   setSelectedPlayer: (player) => set({ selectedPlayer: player }),
+  setGameMode: (mode) =>
+    set((state) => ({
+      gameMode: mode,
+      stats:
+        mode === "multiplayer"
+          ? { multiplayer: { xWins: 0, oWins: 0 }, cpu: state.stats.cpu }
+          : {
+              multiplayer: state.stats.multiplayer,
+              cpu: { xWins: 0, oWins: 0 },
+            },
+    })),
   makeMove: (position) =>
     set((state) => {
       // se la cella e vuota fai la mossa

@@ -20,6 +20,7 @@ export interface GameState {
   winner: Player | null;
   grid: (Player | null)[]; // array di 9 celle
   setPhase: (phase: GamePhase) => void;
+  setGameMode: (gameMode: GameMode) => void;
   setSelectedPlayer: (player: Player) => void;
   makeMove: (position: number) => void;
   resetGame: () => void;

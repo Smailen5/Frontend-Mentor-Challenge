@@ -36,4 +36,11 @@ export const useGameStore = create<GameState>((set) => ({
       currentPlayer: "player-x",
       grid: Array(9).fill(null),
     }),
+  nextRound: () =>
+    set((state) => ({
+      phase: "game",
+      grid: Array(9).fill(null),
+      currentPlayer: state.selectedPlayer,
+      winner: null,
+    })),
 }));

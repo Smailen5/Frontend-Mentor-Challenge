@@ -34,19 +34,45 @@ export const useGameStore = create<GameState>((set) => ({
     })),
   makeMove: (position) =>
     set((state) => {
+      console.log(state)
       // se la cella e vuota fai la mossa
       if (state.grid[position] === null) {
         const newGrid = [...state.grid]; // crea una nuova copia dell'array grid
         newGrid[position] = state.currentPlayer; // assegna il simbolo al posto selezionato
 
         const winner = checkWinner(newGrid);
+        console.log(winner)
+
+        if (winner) {
+          const newStats = { ...state.stats };
+          if (state.gameMode === "multiplayer") {
+            if (winner === "player-x") {
+              newStats.multiplayer.xWins += 1;
+            } else {
+              newStats.multiplayer.oWins += 1;
+            }
+          } else {
+            if (winner === "player-x") {
+              newStats.cpu.xWins += 1;
+            } else {
+              newStats.cpu.oWins += 1;
+            }
+          }
+          return {
+            grid: newGrid,
+            currentPlayer: state.currentPlayer === 'player-x' ? 'player-o' :"player-x",
+            stats: newStats,
+            winner: winner,
+            phase: "result",
+          };
+        }
 
         return {
           grid: newGrid, // aggiorna l'array grid con la nuova mossa
           currentPlayer:
             state.currentPlayer === "player-x" ? "player-o" : "player-x", // cambia il turno
           winner: winner,
-          phase: winner ? "result" : state.phase,
+          phase: state.phase,
         };
       }
       return state;

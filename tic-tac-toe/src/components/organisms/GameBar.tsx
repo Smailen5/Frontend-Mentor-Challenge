@@ -17,10 +17,10 @@ const GameBar = () => {
       <CardPlayerTurn />
 
       <Button
-        variant={"secondary"}
+        variant={"icon"}
         styleColor={"silver"}
+        shadowSize={"small"}
         onClick={handleResetGame}
-        className="size-10 rounded-md"
       >
         <IconRestart className="size-4" />
       </Button>

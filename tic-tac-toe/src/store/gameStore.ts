@@ -24,13 +24,7 @@ export const useGameStore = create<GameState>((set) => ({
   setGameMode: (mode) =>
     set((state) => ({
       gameMode: mode,
-      stats:
-        mode === "multiplayer"
-          ? { multiplayer: { xWins: 0, oWins: 0 }, cpu: state.stats.cpu }
-          : {
-              multiplayer: state.stats.multiplayer,
-              cpu: { xWins: 0, oWins: 0 },
-            },
+      stats: state.stats,
     })),
   makeMove: (position) =>
     set((state) => {
@@ -58,7 +52,8 @@ export const useGameStore = create<GameState>((set) => ({
           }
           return {
             grid: newGrid,
-            currentPlayer: state.currentPlayer === 'player-x' ? 'player-o' :"player-x",
+            currentPlayer:
+              state.currentPlayer === "player-x" ? "player-o" : "player-x",
             stats: newStats,
             winner: winner,
             phase: "result",
@@ -84,10 +79,7 @@ export const useGameStore = create<GameState>((set) => ({
       stats:
         state.gameMode === "multiplayer"
           ? { multiplayer: { xWins: 0, oWins: 0 }, cpu: state.stats.cpu }
-          : {
-              multiplayer: state.stats.multiplayer,
-              cpu: { xWins: 0, oWins: 0 },
-            },
+          : state.stats,
     })),
   nextRound: () =>
     set((state) => ({

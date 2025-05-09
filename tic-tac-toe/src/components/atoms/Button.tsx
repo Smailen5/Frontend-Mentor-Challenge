@@ -10,7 +10,7 @@ const buttonVariants = cva(
       variant: {
         primary: "w-full h-13",
         secondary: "p-3 px-4 rounded-lg",
-        icon: "p-4 h-12 size-13 text-semi-dark-navy",
+        icon: "p-0 size-10 text-semi-dark-navy flex items-center justify-center rounded-md",
       },
       styleColor: {
         yellow: "bg-light-yellow hover:bg-light-yellow-hover",
@@ -46,6 +46,12 @@ const buttonVariants = cva(
         shadowSize: "small",
         className:
           "shadow-[0_4px_0_0_rgba(49,196,191,0.75)] hover:shadow-[0_4px_0_0_rgba(99,233,228,0.75)]",
+      },
+      {
+        styleColor: "silver",
+        shadowSize: "large",
+        className:
+          "shadow-[0_8px_0_0_rgba(167,190,200,0.6)] hover:shadow-[0_8px_0_0_rgba(218,231,236,0.75)]",
       },
       {
         styleColor: "silver",

@@ -11,4 +11,5 @@ export interface GameState {
   setSelectedPlayer: (player: Player) => void;
   makeMove: (position: number) => void;
   resetGame: () => void;
+  nextRound: ()=> void;
 }

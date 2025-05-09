@@ -1,4 +1,6 @@
 import { useGameStore } from "../../store/gameStore";
+import { Button, Modal } from "../atoms";
+import WinnerMessage from "../molecules/WinnerMessage";
 import GameBoard from "./GameBoard";
 
 const GameResult = () => {
@@ -6,15 +8,31 @@ const GameResult = () => {
   return (
     <div className="relative">
       <GameBoard />
-      {/* Overlay */}
-      <div className="absolute inset-0 flex h-screen items-center bg-black/70">
-        {/* Modal */}
-        <div className="bg-semi-dark-navy w-full">
-          <h2 className="flex items-center justify-center gap-2">
-            Player {winner === "player-x" ? "1" : "2"} wins!
-          </h2>
+      <Modal>
+        <WinnerMessage winner={winner} />
+
+        {/* Play again */}
+        <div className="flex justify-center">
+          <div className="space-x-4">
+            <Button
+              variant={"secondary"}
+              styleColor={"silver"}
+              shadowSize={"small"}
+              className=""
+            >
+              quit
+            </Button>
+            <Button
+              variant={"secondary"}
+              styleColor={"yellow"}
+              shadowSize={"small"}
+              className=""
+            >
+              next round
+            </Button>
+          </div>
         </div>
-      </div>
+      </Modal>
     </div>
   );
 };

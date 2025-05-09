@@ -52,8 +52,7 @@ export const useGameStore = create<GameState>((set) => ({
           }
           return {
             grid: newGrid,
-            currentPlayer:
-              state.currentPlayer === "player-x" ? "player-o" : "player-x",
+            currentPlayer: winner === "player-x" ? "player-o" : "player-x",
             stats: newStats,
             winner: winner,
             phase: "result",
@@ -85,7 +84,7 @@ export const useGameStore = create<GameState>((set) => ({
     set((state) => ({
       phase: "game",
       grid: Array(9).fill(null),
-      currentPlayer: state.selectedPlayer,
+      currentPlayer: state.currentPlayer,
       winner: null,
     })),
 }));

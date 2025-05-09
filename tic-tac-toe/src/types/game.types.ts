@@ -1,8 +1,20 @@
 export type GamePhase = "player-selection" | "game" | "result";
 export type Player = "player-x" | "player-o";
+export type GameMode = "multiplayer" | "cpu";
 
 export interface GameState {
   phase: GamePhase;
+  gameMode: GameMode;
+  stats: {
+    multiplayer: {
+      xWins: number;
+      oWins: number;
+    };
+    cpu: {
+      xWins: number;
+      oWins: number;
+    };
+  };
   selectedPlayer: Player;
   currentPlayer: Player;
   winner: Player | null;
@@ -11,5 +23,5 @@ export interface GameState {
   setSelectedPlayer: (player: Player) => void;
   makeMove: (position: number) => void;
   resetGame: () => void;
-  nextRound: ()=> void;
+  nextRound: () => void;
 }

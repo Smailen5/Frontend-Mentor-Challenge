@@ -4,6 +4,17 @@ import { checkWinner } from "../utils/checkWinner";
 
 export const useGameStore = create<GameState>((set) => ({
   phase: "player-selection",
+  gameMode: "multiplayer",
+  stats: {
+    multiplayer: {
+      xWins: 0,
+      oWins: 0,
+    },
+    cpu: {
+      xWins: 0,
+      oWins: 0,
+    },
+  },
   selectedPlayer: "player-x",
   currentPlayer: "player-x",
   winner: null,
@@ -30,12 +41,19 @@ export const useGameStore = create<GameState>((set) => ({
       return state;
     }),
   resetGame: () =>
-    set({
+    set((state) => ({
       phase: "player-selection",
       selectedPlayer: "player-x",
       currentPlayer: "player-x",
       grid: Array(9).fill(null),
-    }),
+      stats:
+        state.gameMode === "multiplayer"
+          ? { multiplayer: { xWins: 0, oWins: 0 }, cpu: state.stats.cpu }
+          : {
+              multiplayer: state.stats.multiplayer,
+              cpu: { xWins: 0, oWins: 0 },
+            },
+    })),
   nextRound: () =>
     set((state) => ({
       phase: "game",

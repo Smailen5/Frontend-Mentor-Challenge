@@ -1,0 +1,8 @@
+{
+  "name": "frontend-mentor-challenge",
+  "private": true,
+  "scripts": {
+    "build:all": "pnpm -r build",
+    "dev:all": "pnpm -r dev"
+  }
+}

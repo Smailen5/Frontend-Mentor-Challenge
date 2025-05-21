@@ -28,7 +28,7 @@ Questi sono gli screenshot dei progetti da mostrare nel file `README.md` di ogni
 
 Segui le linee guida di Frontend Mentor per aggiornare il file `README.md` del progetto, utilizza il file `README-template.md`
 
-⚠ Nella sezione `Build with` fare attenzione ad aggiungere massimo 10 tecnologie tra le piu importanti.
+⚠ ~~Nella sezione `Build with` fare attenzione ad aggiungere massimo 10 tecnologie tra le piu importanti.~~
 I filtri disponibili al momento sono:
 
 - CSS[2]
@@ -37,9 +37,24 @@ I filtri disponibili al momento sono:
 - Tailwind
 - React
 
+## 📝 Aggiornamento Package.json
+
+Aggiorna il file `package.json` aggiungendo:
+
+```json
+{
+  "name": "nome-progetto",
+  "technologies": ["tech 1", "tech 2", "tech 3"],
+  "description": "breve descrizione del progetto",
+  "createdAt": "2025-05-21 00:00:00.000 +00:00"
+}
+```
+
+Se non vengono aggiunti questi dati o manca il file `package.json` il server estrarra il nome del progetto dal nome della cartella e imposterà come data di creazione la data in cui viene aggiunto il progetto al db, tecnologie e descrizione saranno impostate a array vuoto e stringa vuota.
+
 ## 📷 Screenshot repository principale
 
-Questi screenshot servono al sito <a href='smailenvargas.com'>smailenvargas.com</a> per mostrare l'anteprima dei progetti, e richiesto che le immagini vengano salvate in `webp` per una migliore performance nel recupero, se le immagini non vengono salvate in `webp` il sito mostrera un placeholder indicante immagine mancante.
+Questi screenshot servono al sito <a href='https://www.smailenvargas.com'>smailenvargas.com</a> per mostrare l'anteprima dei progetti, e richiesto che le immagini vengano salvate in `webp` per una migliore performance nel recupero, se le immagini non vengono salvate in `webp` il sito mostrera un placeholder indicante immagine mancante.
 
 - Dimensioni consigliate: 1280x800
 - Formato: Webp
@@ -72,5 +87,7 @@ Questi screenshot servono al sito <a href='smailenvargas.com'>smailenvargas.com<
 - [ ] ...
 
 [1] Attenzione a nominare correttamente il file con lo stesso nome della cartella di root del progetto in questione, il sito associa lo screenshot leggendo il nome del progetto dalla cartella.
+
 [2] ⚠ Fare attenzione a `JavaScript` e `TypeScript`, vanno scritti in camel case o il sito non li filtrera correttamente, stessa cosa vale per `CSS`, tutto maiuscolo.
+
 [3] Cartella rimossa.

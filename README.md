@@ -12,13 +12,13 @@
 
 ![Anteprima](./screen-capture/bmi-calculator.webp)
 
-#### Ecommerce Product Page [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/ecommerce-product-page) - [Live site](https://funny-swan-69bb4e.netlify.app/)
+#### Ecommerce Product Page [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/ecommerce-product-page) - [Live site](https://funny-swan-69bb4e.netlify.app/)
 
 ![Anteprima](./screen-capture/ecommerce-product-page.webp)
 
-#### New Homepage [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/news-homepage) - [Live site](https://news-homepage-beta-eight.vercel.app/)
+#### New Homepage [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/news-homepage) - [Live site](https://news-homepage-beta-eight.vercel.app/)
 
-![Anteprima](./screen%20capture/news-homepage-desktop.jpeg)
+![Anteprima](./screen-capture/news-homepage.webp)
 
 #### Contact Form [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/contact-form) - [Live site](https://deft-taiyaki-8b9fbf.netlify.app/)
 

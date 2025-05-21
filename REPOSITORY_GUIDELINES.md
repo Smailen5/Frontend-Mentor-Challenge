@@ -1,5 +1,11 @@
 # Guida alla aggiunta dei nuovi progetti
 
+## Prima di iniziare
+
+- Crea un nuovo ramo partendo da `main` e chiamalo `nome-progetto`
+- Nella cartella `packages` creare una nuova cartella con il nome del progetto
+- Copia il progetto in questa cartella
+
 ## 📷 Screenshot dei progetti
 
 Questi sono gli screenshot dei progetti da mostrare nel file `README.md` di ogni singolo progetto
@@ -40,7 +46,7 @@ Questi screenshot servono al sito <a href='smailenvargas.com'>smailenvargas.com<
 - Dove salvarli: `/screen-capture/`
 - Come nominarli: `nome-progetto.webp`[1]
 
-⚠ `screen capture` e deprecato, utilizzare ora `screen-capture` per salvare gli screenshot. La cartella `screen capture` verra rimossa in aggiornamenti futuri.
+⚠ `screen capture` e deprecato, utilizzare ora `screen-capture` per salvare gli screenshot. ~~La cartella `screen capture` verra rimossa in aggiornamenti futuri.~~[3]
 
 ## 📝 Aggiornamento README principale
 
@@ -62,7 +68,9 @@ Questi screenshot servono al sito <a href='smailenvargas.com'>smailenvargas.com<
 - [ ] Merge progetto nel ramo principale
 - [ ] <a href='#screenshot-repository-principale'>Screenshot repository principale</a>
 - [ ] <a href='#aggiornamento-readme-principale'>README principale</a> aggiornato
+- [ ] Forza aggiornamento del <a href='https://github.com/Smailen5/server-portfolio'>server portfolio<a>
 - [ ] ...
 
 [1] Attenzione a nominare correttamente il file con lo stesso nome della cartella di root del progetto in questione, il sito associa lo screenshot leggendo il nome del progetto dalla cartella.
 [2] ⚠ Fare attenzione a `JavaScript` e `TypeScript`, vanno scritti in camel case o il sito non li filtrera correttamente, stessa cosa vale per `CSS`, tutto maiuscolo.
+[3] Cartella rimossa.

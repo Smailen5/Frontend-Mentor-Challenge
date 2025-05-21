@@ -86,10 +86,10 @@
 
 #### meet landing page [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/meet-landing-page-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/meet-landing-page-main/)
 
-![Anteprima](./screen-capture/meet-landing-page-main.webp)
+~~Il design sembra rotto in desktop ultra wide controlla bene~~
+~~EDIT: le dimensioni massime della card vanno limitate, in wide e in ultra wide la scheda si allarga troppo~~
 
-<!-- Il design sembra rotto in desktop ultra wide controlla bene -->
-<!-- EDIT: le dimensioni massime della card vanno limitate, in wide e in ultra wide la scheda si allarga troppo -->
+![Anteprima](./screen-capture/meet-landing-page-main.webp)
 
 #### newsletter sign up with success message [Repository](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/newsletter-sign-up-with-success-message-main-main) - [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/newsletter-sign-up-with-success-message-main-main/)
 

@@ -1,4 +1,17 @@
 {
+  "name": "article-preview-component",
+  "version": "1.0.0",
+  "description": "Componente di anteprima articolo con condivisione social, realizzato con HTML, Tailwind CSS e JavaScript per la gestione degli eventi.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "javascript",
+    "responsive design",
+    "css grid",
+    "flexbox"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-02T00:00:00.000Z",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"

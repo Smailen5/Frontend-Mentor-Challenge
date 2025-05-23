@@ -1,0 +1,15 @@
+{
+  "name": "product-preview-card",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Card prodotto con design responsive, realizzata con HTML e CSS puro per una presentazione elegante e accessibile.",
+  "technologies": [
+    "html",
+    "css",
+    "responsive design",
+    "flexbox",
+    "media queries"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-01T00:00:00.000Z"
+}

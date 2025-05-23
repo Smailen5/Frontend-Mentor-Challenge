@@ -1,7 +1,17 @@
 {
   "name": "frontend-quiz-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "App quiz frontend con routing dinamico, realizzata con React, TypeScript e Tailwind CSS per un'esperienza interattiva.",
+  "technologies": [
+    "react",
+    "typescript",
+    "tailwind css",
+    "react router",
+    "vite"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-25T00:00:00.000Z",
   "type": "module",
   "scripts": {
     "dev": "vite",

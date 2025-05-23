@@ -1,14 +1,23 @@
 {
   "name": "meet-landing-page",
+  "private": true,
   "version": "1.0.0",
-  "description": "Frontend Mentor challenge",
+  "description": "Landing page per Meet con sezioni interattive, realizzata con HTML e Tailwind CSS per un design moderno e responsive.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "responsive design",
+    "flexbox",
+    "css grid"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-11T00:00:00.000Z",
   "main": "(./starter-code/index.html)",
   "scripts": {
     "build": "npx tailwindcss -i ./starter-code/src/input.css -o ./starter-code/src/output.css",
     "watch": "npx tailwindcss -i ./starter-code/src/input.css -o ./starter-code/src/output.css --minify --watch",
     "minify": "npx tailwindcss -i ./starter-code/src/input.css -o ./starter-code/src/output.css --minify"
   },
-  "author": "Smailen",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.3"

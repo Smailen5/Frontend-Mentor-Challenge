@@ -1,5 +1,6 @@
 {
   "name": "3-column-preview-card-component",
+  "private": true,
   "version": "1.0.0",
   "description": "Progetto responsive che utilizza HTML e CSS puro per creare un layout moderno e accessibile.",
   "technologies": [

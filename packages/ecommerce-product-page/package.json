@@ -1,7 +1,17 @@
 {
   "name": "ecommerce-product-page",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Pagina prodotto e-commerce con animazioni, realizzata con React, TypeScript e Framer Motion per un'esperienza utente coinvolgente.",
+  "technologies": [
+    "react",
+    "typescript",
+    "framer motion",
+    "tailwind css",
+    "vite"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-29T00:00:00.000Z",
   "type": "module",
   "scripts": {
     "dev": "vite",

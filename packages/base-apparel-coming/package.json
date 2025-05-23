@@ -13,7 +13,7 @@
     "typescript"
   ],
   "author": "Smailen Vargas",
-  "createdAt": "2024-01-15T00:00:00.000Z",
+  "createdAt": "2024-01-23T00:00:00.000Z",
   "type": "module",
   "scripts": {
     "dev": "vite",

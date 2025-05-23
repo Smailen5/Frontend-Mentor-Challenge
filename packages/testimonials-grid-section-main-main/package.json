@@ -1,0 +1,15 @@
+{
+  "name": "testimonials-grid-section",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sezione di testimonianze con layout a griglia responsive, realizzata con HTML e Tailwind CSS per una presentazione elegante dei feedback.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "css grid",
+    "responsive design",
+    "flexbox"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-02T00:00:00.000Z"
+}

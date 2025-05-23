@@ -1,0 +1,14 @@
+{
+  "name": "3-column-preview-card-component",
+  "version": "1.0.0",
+  "description": "Progetto responsive che utilizza HTML e CSS puro per creare un layout moderno e accessibile.",
+  "technologies": [
+    "html",
+    "css",
+    "responsive design",
+    "flexbox",
+    "css grid"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-01T00:00:00.000Z"
+}

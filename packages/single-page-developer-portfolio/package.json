@@ -11,7 +11,7 @@
     "responsive design"
   ],
   "author": "Smailen Vargas",
-  "createdAt": "2024-01-01T00:00:00.000Z",
+  "createdAt": "2024-01-22T00:00:00.000Z",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,5 +1,6 @@
 {
   "name": "article-preview-component",
+  "private": true,
   "version": "1.0.0",
   "description": "Componente di anteprima articolo con condivisione social, realizzato con HTML, Tailwind CSS e JavaScript per la gestione degli eventi.",
   "technologies": [

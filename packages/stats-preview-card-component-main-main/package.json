@@ -1,0 +1,15 @@
+{
+  "name": "stats-preview-card-component",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Card di anteprima con statistiche aziendali, realizzata con HTML e CSS puro per un design responsive e accessibile.",
+  "technologies": [
+    "html",
+    "css",
+    "responsive design",
+    "flexbox",
+    "css grid"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-03T00:00:00.000Z"
+}

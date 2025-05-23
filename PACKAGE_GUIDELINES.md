@@ -52,11 +52,20 @@ Questa è la versione del progetto, utilizza il formato semantico versioning.
 "version": "1.0.0",
 ```
 
+## Rendere il package.json privato
+
+Questo è un progetto privato, per evitare pubblicazioni accidentali aggiungere `"private": true`.
+
+```json
+"private": true,
+```
+
 ## Placeholder da copiare e incollare
 
 ```json
 {
   "name": "nome-progetto",
+  "private": true,
   "version": "1.0.0",
   "description": "descrizione progetto breve",
   "technologies": ["tech 1", "tech 2", "tech 3"],

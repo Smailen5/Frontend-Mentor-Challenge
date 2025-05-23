@@ -2,6 +2,16 @@
   "name": "single-page-developer-portfolio",
   "private": true,
   "version": "1.0.1",
+  "description": "Portfolio sviluppatore con form di contatto, realizzato con React, Vite e Tailwind CSS per una presentazione professionale.",
+  "technologies": [
+    "react",
+    "vite",
+    "tailwind css",
+    "formik",
+    "responsive design"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-01T00:00:00.000Z",
   "type": "module",
   "scripts": {
     "dev": "vite",

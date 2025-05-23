@@ -12,7 +12,7 @@
     "flexbox"
   ],
   "author": "Smailen Vargas",
-  "createdAt": "2024-01-02T00:00:00.000Z",
+  "createdAt": "2024-01-15T00:00:00.000Z",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"

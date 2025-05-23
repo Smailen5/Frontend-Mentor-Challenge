@@ -1,6 +1,17 @@
 {
   "name": "frontend-mentor-challenge",
   "private": true,
+  "description": "Raccolta di progetti e sfide di Frontend Mentor per migliorare le competenze di sviluppo web. Include componenti UI, landing page e applicazioni interattive.",
+  "keywords": [
+    "frontend",
+    "challenges",
+    "web-development",
+    "html",
+    "css",
+    "javascript",
+    "react",
+    "responsive-design"
+  ],
   "scripts": {
     "build:all": "pnpm -r build",
     "dev:all": "pnpm -r dev"

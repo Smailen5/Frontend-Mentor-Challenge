@@ -1,7 +1,19 @@
 {
   "name": "base-apparel-coming",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Landing page per Base Apparel con form di iscrizione, realizzata con React, Vite e Tailwind CSS per un'esperienza utente ottimale.",
+  "technologies": [
+    "react",
+    "vite",
+    "tailwind css",
+    "formik",
+    "yup",
+    "responsive design",
+    "typescript"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-15T00:00:00.000Z",
   "type": "module",
   "scripts": {
     "dev": "vite",

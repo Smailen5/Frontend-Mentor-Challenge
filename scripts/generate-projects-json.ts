@@ -12,7 +12,7 @@ const OUTPUT_FILE = path.join(process.cwd(), "public", "projects.json")
 type Project = {
   name: string;
   description: string | null;
-  technologies: string[];
+  technologies: string[] | [];
   createdAt: string;
   imageUrl: string | null;
   readmeUrl: string | null;

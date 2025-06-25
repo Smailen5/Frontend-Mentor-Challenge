@@ -22,6 +22,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: 🔧 Installa pnpm
+        run: npm install -g pnpm
+
       - name: 🔧 Installa dipendenze
         run: pnpm install
 

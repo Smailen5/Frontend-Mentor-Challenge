@@ -5,6 +5,7 @@ import path from "path";
 // Percorsi
 const PACKAGES_DIR = "packages/*/package.json"
 const SCREENSHOTS_DIR = "screen-capture"
+const IMAGE_BASE_URL = "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/refs/heads/main" // Url raw di github cambiare in futuro con link Netlify
 const OUTPUT_FILE = path.join(process.cwd(), "public", "projects.json")
 
 type Project = {
@@ -41,7 +42,7 @@ const generateProjects = async ()=>{
         description: packageJson.description || "",
         technologies: packageJson.technologies || [],
         createdAt: packageJson.createdAt || new Date().toISOString(),
-        imageUrl: imagePath,
+        imageUrl: `${IMAGE_BASE_URL}/${imagePath}`,
         _v: packageJson.version,
       }
 

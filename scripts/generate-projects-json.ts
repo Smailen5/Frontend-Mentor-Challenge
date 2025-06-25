@@ -5,7 +5,8 @@ import path from "path";
 // Percorsi
 const PACKAGES_DIR = "packages/*/package.json"
 const SCREENSHOTS_DIR = "screen-capture"
-const IMAGE_BASE_URL = "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/refs/heads/main" // Url raw di github cambiare in futuro con link Netlify
+const MONOREPO_DIR = "packages"
+const MONOREPO_BASE_URL = "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/refs/heads/main"
 const OUTPUT_FILE = path.join(process.cwd(), "public", "projects.json")
 
 type Project = {
@@ -13,8 +14,8 @@ type Project = {
   description: string;
   technologies: string[];
   createdAt: string;
-  imageUrl: string;
-  readme: string;
+  imageUrl: string | null;
+  readmeUrl: string | null;
   _v: string;
 }
 
@@ -33,20 +34,15 @@ const generateProjects = async ()=>{
       // Recupera il nome della cartella
       const folderName = path.basename(packageFolder)
 
-      // Recupera il readme e controlla se esiste
-      let readmeContent = ""
-      const readmePath = path.join(packageFolder, "README.md")
-      if (await fs.pathExists(readmePath)) {
-        readmeContent = await fs.readFile(readmePath, "utf8")
-      } else {
-        console.warn(`❌ Readme non trovato per ${folderName}`)
-      }
+      // Recupera percorso readme e controlla se esiste
+      const readmePath = path.join(MONOREPO_DIR, folderName, "README.md").replace(/\\/g, "/")
+      const readmeExists = await fs.pathExists(readmePath)
+      if (!readmeExists) console.warn(`❌ Readme non trovato per ${folderName}`)
 
-      // Controlla se esiste l'immagine
+      // Recupera percorso immagine e controlla se esiste
       const imagePath = path.join(SCREENSHOTS_DIR, `${folderName}.webp`).replace(/\\/g, "/")
-      if (!fs.existsSync(imagePath)) {
-        console.warn(`❌ Immagine non trovata per ${folderName}`)
-      }
+      const imageExists = await fs.pathExists(imagePath)
+      if (!imageExists) console.warn(`❌ Immagine non trovata per ${folderName}`)
 
       // Crea oggetto progetto
       const project: Project = {
@@ -54,8 +50,8 @@ const generateProjects = async ()=>{
         description: packageJson.description || "",
         technologies: packageJson.technologies || [],
         createdAt: packageJson.createdAt || new Date().toISOString(),
-        imageUrl: `${IMAGE_BASE_URL}/${imagePath}`,
-        readme: readmeContent,
+        imageUrl: imageExists ? `${MONOREPO_BASE_URL}/${imagePath}` : null,
+        readmeUrl: readmeExists ? `${MONOREPO_BASE_URL}/${MONOREPO_DIR}/${folderName}/README.md` : null,
         _v: packageJson.version,
       }
 

@@ -11,7 +11,7 @@ const OUTPUT_FILE = path.join(process.cwd(), "public", "projects.json")
 
 type Project = {
   name: string;
-  description: string;
+  description: string | null;
   technologies: string[];
   createdAt: string;
   imageUrl: string | null;
@@ -55,11 +55,11 @@ const generateProjects = async ()=>{
       // Crea oggetto progetto
       const project: Project = {
         name: packageJson.name,
-        description: packageJson.description || "",
+        description: packageJson.description || null,
         technologies: packageJson.technologies || [],
         createdAt,
         imageUrl: imageExists ? `${MONOREPO_BASE_URL}/${imagePath}` : null,
-        readmeUrl: readmeExists ? `${MONOREPO_BASE_URL}/${MONOREPO_DIR}/${folderName}/README.md` : null,
+        readmeUrl: readmeExists ? `${MONOREPO_BASE_URL}/${readmePath}` : null,
         _v: packageJson.version,
       }
 

@@ -14,6 +14,7 @@ type Project = {
   technologies: string[];
   createdAt: string;
   imageUrl: string;
+  readme: string;
   _v: string;
 }
 
@@ -25,10 +26,21 @@ const generateProjects = async ()=>{
 
   for (const packagePath of projectDirs) {
     try {
+      const packageFolder = path.dirname(packagePath)
+
       const packageJson = await fs.readJSON(packagePath)
 
       // Recupera il nome della cartella
-      const folderName = path.basename(path.dirname(packagePath))
+      const folderName = path.basename(packageFolder)
+
+      // Recupera il readme e controlla se esiste
+      let readmeContent = ""
+      const readmePath = path.join(packageFolder, "README.md")
+      if (await fs.pathExists(readmePath)) {
+        readmeContent = await fs.readFile(readmePath, "utf8")
+      } else {
+        console.warn(`❌ Readme non trovato per ${folderName}`)
+      }
 
       // Controlla se esiste l'immagine
       const imagePath = path.join(SCREENSHOTS_DIR, `${folderName}.webp`).replace(/\\/g, "/")
@@ -43,6 +55,7 @@ const generateProjects = async ()=>{
         technologies: packageJson.technologies || [],
         createdAt: packageJson.createdAt || new Date().toISOString(),
         imageUrl: `${IMAGE_BASE_URL}/${imagePath}`,
+        readme: readmeContent,
         _v: packageJson.version,
       }
 

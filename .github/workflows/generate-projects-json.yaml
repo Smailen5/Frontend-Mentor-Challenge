@@ -25,6 +25,14 @@ jobs:
       - name: 🔧 Installa pnpm
         run: npm install -g pnpm
 
+      - name: 📦 Cache pnpm
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
       - name: 🔧 Installa dipendenze
         run: pnpm install
 

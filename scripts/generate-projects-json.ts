@@ -25,6 +25,8 @@ const generateProjects = async ()=>{
 
   const projects: Project[] = []
 
+  const existingProjects = await fs.pathExists(OUTPUT_FILE) ? await fs.readJSON(OUTPUT_FILE) : []
+
   for (const packagePath of projectDirs) {
     try {
       const packageFolder = path.dirname(packagePath)
@@ -33,6 +35,12 @@ const generateProjects = async ()=>{
 
       // Recupera il nome della cartella
       const folderName = path.basename(packageFolder)
+
+      // Controlla se il progetto esiste gia in projects.json
+      const existingProject = existingProjects.find((p: Project) => p.name === packageJson.name)
+
+      // Recupera la data di creazione o aggiunge la data odierna se non esiste
+      const createdAt = packageJson.createdAt || (existingProject ? existingProject.createdAt : new Date().toISOString())
 
       // Recupera percorso readme e controlla se esiste
       const readmePath = path.join(MONOREPO_DIR, folderName, "README.md").replace(/\\/g, "/")
@@ -49,7 +57,7 @@ const generateProjects = async ()=>{
         name: packageJson.name,
         description: packageJson.description || "",
         technologies: packageJson.technologies || [],
-        createdAt: packageJson.createdAt || new Date().toISOString(),
+        createdAt,
         imageUrl: imageExists ? `${MONOREPO_BASE_URL}/${imagePath}` : null,
         readmeUrl: readmeExists ? `${MONOREPO_BASE_URL}/${MONOREPO_DIR}/${folderName}/README.md` : null,
         _v: packageJson.version,

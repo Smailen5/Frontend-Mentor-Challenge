@@ -18,7 +18,8 @@
     "fast-glob": "^3.3.3",
     "fs-extra": "^11.3.0",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.11"
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tsx": "^4.20.3"
   },
   "scripts": {
     "build:all": "pnpm -r build",

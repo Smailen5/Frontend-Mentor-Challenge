@@ -58,7 +58,7 @@ Questi screenshot servono al sito <a href='https://www.smailenvargas.com'>smaile
 
 - Dimensioni consigliate: 1280x800
 - Formato: Webp
-- Dove salvarli: `/screen-capture/`
+- Dove salvarli: `/screen-capture/full-images/`
 - Come nominarli: `nome-progetto.webp`[1]
 
 ⚠ `screen capture` e deprecato, utilizzare ora `screen-capture` per salvare gli screenshot. ~~La cartella `screen capture` verra rimossa in aggiornamenti futuri.~~[3]
@@ -72,8 +72,6 @@ Questi screenshot servono al sito <a href='https://www.smailenvargas.com'>smaile
    #### Nome Progetto [Repository](link-al-repo) - [Live site](link-al-sito)
 
    ![Preview](./screen-capture/nome-progetto.webp)
-
-   <!-- Breve descrizione del progetto da aggiungere in futuro -->
    ```
 
 ## 🔍 Checklist Prima del Commit

@@ -1,6 +1,7 @@
 [
   {
     "name": "bmi-calculator",
+    "nameFolder": "bmi-calculator",
     "description": "Calcolatore BMI con validazione, realizzato con React, TypeScript e Zod per calcoli precisi e sicuri.",
     "technologies": [
       "react",
@@ -16,6 +17,7 @@
   },
   {
     "name": "ecommerce-product-page",
+    "nameFolder": "ecommerce-product-page",
     "description": "Pagina prodotto e-commerce con animazioni, realizzata con React, TypeScript e Framer Motion per un'esperienza utente coinvolgente.",
     "technologies": [
       "react",
@@ -31,6 +33,7 @@
   },
   {
     "name": "news-homepage",
+    "nameFolder": "news-homepage",
     "description": "Homepage di notizie responsive, realizzata con Next.js, TypeScript e Tailwind CSS per un'esperienza utente ottimizzata.",
     "technologies": [
       "next.js",
@@ -46,6 +49,7 @@
   },
   {
     "name": "contact-form",
+    "nameFolder": "contact-form",
     "description": "Form di contatto con validazione, realizzato con React, TypeScript e Formik per una gestione efficiente dei dati.",
     "technologies": [
       "react",
@@ -61,6 +65,7 @@
   },
   {
     "name": "faq-accordion",
+    "nameFolder": "faq-accordion",
     "description": "Componente FAQ con accordion interattivo, realizzato con React, TypeScript e Radix UI per un'esperienza utente accessibile.",
     "technologies": [
       "react",
@@ -76,6 +81,7 @@
   },
   {
     "name": "frontend-quiz-app",
+    "nameFolder": "frontend-quiz-app",
     "description": "App quiz frontend con routing dinamico, realizzata con React, TypeScript e Tailwind CSS per un'esperienza interattiva.",
     "technologies": [
       "react",
@@ -91,6 +97,7 @@
   },
   {
     "name": "skilled-elearning-landing-page",
+    "nameFolder": "skilled-elearning-landing-page",
     "description": "Landing page per piattaforma e-learning, realizzata con React, TypeScript e Tailwind CSS per un'interfaccia moderna e performante.",
     "technologies": [
       "react",
@@ -106,6 +113,7 @@
   },
   {
     "name": "base-apparel-coming",
+    "nameFolder": "base-apparel-coming",
     "description": "Landing page per Base Apparel con form di iscrizione, realizzata con React, Vite e Tailwind CSS per un'esperienza utente ottimale.",
     "technologies": [
       "react",
@@ -123,6 +131,7 @@
   },
   {
     "name": "single-page-developer-portfolio",
+    "nameFolder": "single-page-developer-portfolio",
     "description": "Portfolio sviluppatore con form di contatto, realizzato con React, Vite e Tailwind CSS per una presentazione professionale.",
     "technologies": [
       "react",
@@ -138,6 +147,7 @@
   },
   {
     "name": "component-with-signup-form",
+    "nameFolder": "component-with-signup-form",
     "description": "Componente di iscrizione con validazione form, realizzato con React, Vite e Tailwind CSS per un'esperienza utente moderna.",
     "technologies": [
       "react",
@@ -153,6 +163,7 @@
   },
   {
     "name": "password-generator-app",
+    "nameFolder": "password-generator-app",
     "description": "Generatore di password con opzioni personalizzabili, realizzato con HTML, Tailwind CSS e JavaScript per una generazione sicura.",
     "technologies": [
       "html",
@@ -167,6 +178,7 @@
   },
   {
     "name": "tip-calculator-app",
+    "nameFolder": "tip-calculator-app-main",
     "description": "Calcolatrice di mance con calcoli in tempo reale, realizzata con HTML, Tailwind CSS e JavaScript per un'interfaccia interattiva.",
     "technologies": [
       "html",
@@ -182,6 +194,7 @@
   },
   {
     "name": "time-tracking-dashboard",
+    "nameFolder": "time-tracking-dashboard-main-main",
     "description": "Dashboard di tracciamento tempo con grafici interattivi, realizzata con HTML, Tailwind CSS e JavaScript per la gestione dei dati.",
     "technologies": [
       "html",
@@ -196,6 +209,7 @@
   },
   {
     "name": "qr-code-component",
+    "nameFolder": "qr-code-component-main-main",
     "description": "Componente QR code con descrizione, realizzato con HTML e CSS puro per un design minimalista e responsive.",
     "technologies": [
       "html",
@@ -210,6 +224,7 @@
   },
   {
     "name": "3-column-preview-card-component",
+    "nameFolder": "3-column-preview-card-component-main-main",
     "description": "Progetto responsive che utilizza HTML e CSS puro per creare un layout moderno e accessibile.",
     "technologies": [
       "html",
@@ -225,6 +240,7 @@
   },
   {
     "name": "article-preview-component",
+    "nameFolder": "article-preview-component-master-main",
     "description": "Componente di anteprima articolo con condivisione social, realizzato con HTML, Tailwind CSS e JavaScript per la gestione degli eventi.",
     "technologies": [
       "html",
@@ -241,6 +257,7 @@
   },
   {
     "name": "blog-preview-card",
+    "nameFolder": "blog-preview-card-main-main",
     "description": "Card di anteprima blog con immagine e contenuti, realizzata con HTML e CSS puro per un design pulito e responsive.",
     "technologies": [
       "html",
@@ -256,6 +273,7 @@
   },
   {
     "name": "four-card-feature-section",
+    "nameFolder": "four-card-feature-section-master-main",
     "description": "Sezione con quattro card di funzionalità, realizzata con HTML e Tailwind CSS per un layout responsive e colorato.",
     "technologies": [
       "html",
@@ -271,6 +289,7 @@
   },
   {
     "name": "interactive-rating-component",
+    "nameFolder": "interactive-rating-component-main-main",
     "description": "Componente di valutazione interattivo con feedback, realizzato con HTML, CSS e JavaScript per un'esperienza utente dinamica.",
     "technologies": [
       "html",
@@ -286,6 +305,7 @@
   },
   {
     "name": "meet-landing-page",
+    "nameFolder": "meet-landing-page-main",
     "description": "Landing page per Meet con sezioni interattive, realizzata con HTML e Tailwind CSS per un design moderno e responsive.",
     "technologies": [
       "html",
@@ -301,6 +321,7 @@
   },
   {
     "name": "newsletter-sign-up",
+    "nameFolder": "newsletter-sign-up-with-success-message-main-main",
     "description": "Form di iscrizione newsletter con messaggio di successo, realizzato con HTML, Tailwind CSS e JavaScript per una validazione in tempo reale.",
     "technologies": [
       "html",
@@ -316,6 +337,7 @@
   },
   {
     "name": "nft-preview-card-component",
+    "nameFolder": "nft-preview-card-component-main-main",
     "description": "Card di anteprima NFT con effetti hover, realizzata con HTML, CSS e JavaScript per un'interfaccia interattiva e moderna.",
     "technologies": [
       "html",
@@ -331,6 +353,7 @@
   },
   {
     "name": "order-summary-component",
+    "nameFolder": "order-summary-component-main-main",
     "description": "Componente di riepilogo ordine con piano annuale, realizzato con HTML e CSS puro per un'interfaccia utente pulita e responsive.",
     "technologies": [
       "html",
@@ -346,6 +369,7 @@
   },
   {
     "name": "pod-request-access-landing-page",
+    "nameFolder": "pod-request-access-landing-page-main",
     "description": "Landing page con form di accesso e validazione email, realizzata con HTML, CSS e JavaScript per un'esperienza utente interattiva.",
     "technologies": [
       "html",
@@ -361,6 +385,7 @@
   },
   {
     "name": "recipe-page",
+    "nameFolder": "recipe-page-main-main",
     "description": "Pagina ricetta con layout responsive, realizzata con HTML e Tailwind CSS per una presentazione elegante dei contenuti culinari.",
     "technologies": [
       "html",
@@ -376,6 +401,7 @@
   },
   {
     "name": "results-summary-component",
+    "nameFolder": "results-summary-component-main-main",
     "description": "Componente di riepilogo risultati con grafici e statistiche, realizzato con HTML e CSS puro per una visualizzazione chiara dei dati.",
     "technologies": [
       "html",
@@ -391,6 +417,7 @@
   },
   {
     "name": "social-links-profile",
+    "nameFolder": "social-links-profile-main-main",
     "description": "Profilo con link social interattivi, realizzato con HTML e Tailwind CSS per un design moderno e responsive.",
     "technologies": [
       "html",
@@ -406,6 +433,7 @@
   },
   {
     "name": "social-proof-section",
+    "nameFolder": "social-proof-section-master-main",
     "description": "Sezione di social proof con recensioni e valutazioni, realizzata con HTML e CSS puro per un layout responsive e interattivo.",
     "technologies": [
       "html",
@@ -421,6 +449,7 @@
   },
   {
     "name": "stats-preview-card-component",
+    "nameFolder": "stats-preview-card-component-main-main",
     "description": "Card di anteprima con statistiche aziendali, realizzata con HTML e CSS puro per un design responsive e accessibile.",
     "technologies": [
       "html",
@@ -436,6 +465,7 @@
   },
   {
     "name": "testimonials-grid-section",
+    "nameFolder": "testimonials-grid-section-main-main",
     "description": "Sezione di testimonianze con layout a griglia responsive, realizzata con HTML e Tailwind CSS per una presentazione elegante dei feedback.",
     "technologies": [
       "html",
@@ -451,6 +481,7 @@
   },
   {
     "name": "product-preview-card",
+    "nameFolder": "product-preview-card-component-main-main",
     "description": "Card prodotto con design responsive, realizzata con HTML e CSS puro per una presentazione elegante e accessibile.",
     "technologies": [
       "html",
@@ -466,6 +497,7 @@
   },
   {
     "name": "profile-card-component",
+    "nameFolder": "profile-card-component-main-main",
     "description": "Card profilo con design responsive, realizzata con HTML e CSS puro per una presentazione professionale e moderna.",
     "technologies": [
       "html",

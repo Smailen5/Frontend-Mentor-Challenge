@@ -4,7 +4,7 @@ import sharp from 'sharp';
 
 // Percorsi
 const INPUT_DIR = path.join(__dirname, "../screen-capture")
-const OUTPUT_DIR = INPUT_DIR // cambialo in "../screen-capture/preview" in futuro
+const OUTPUT_DIR = path.join(__dirname, "../screen-capture/preview") // cambialo in "../screen-capture/preview" in futuro
 
 const resizeImage = async (file: string) =>{
   const inputPath = path.join(INPUT_DIR, file)

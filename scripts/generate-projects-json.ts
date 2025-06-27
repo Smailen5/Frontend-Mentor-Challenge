@@ -12,7 +12,7 @@ const OUTPUT_FILE = path.join(process.cwd(), "public", "projects.json")
 
 type Project = {
   name: string;
-  nameProject: string;
+  nameFolder: string;
   description: string | null;
   technologies: string[] | [];
   createdAt: string;
@@ -57,7 +57,7 @@ const generateProjects = async ()=>{
       // Crea oggetto progetto
       const project: Project = {
         name: packageJson.name,
-        nameProject: `${folderName}`,
+        nameFolder: `${folderName}`,
         description: packageJson.description || null,
         technologies: packageJson.technologies || [],
         createdAt,

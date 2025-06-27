@@ -4,10 +4,11 @@ import path from "path";
 
 // Percorsi
 const PACKAGES_DIR = "packages/*/package.json"
-const SCREENSHOTS_DIR = "screen-capture"
+const SCREENSHOTS_DIR = "screen-capture/preview"
 const MONOREPO_DIR = "packages"
 const MONOREPO_BASE_URL = "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/refs/heads/main"
 const OUTPUT_FILE = path.join(process.cwd(), "public", "projects.json")
+// https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/refs/heads/main/screen-capture/preview/bmi-calculator.webp
 
 type Project = {
   name: string;

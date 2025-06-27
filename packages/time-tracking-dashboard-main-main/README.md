@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/time-tracking-dashboard-main-main)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/time-tracking-dashboard-main-main)
 - Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/time-tracking-dashboard-main-main/)
 
 ## My process

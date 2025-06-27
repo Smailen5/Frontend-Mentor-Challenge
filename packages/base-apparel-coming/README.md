@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/base-apparel-coming)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/base-apparel-coming)
 - Live Site URL: [Live site](https://66b50fe73bacca6322bb5a2a--iridescent-entremet-637a7d.netlify.app/)
 
 ## My process

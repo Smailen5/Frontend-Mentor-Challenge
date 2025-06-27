@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/bmi-calculator)
+- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/bmi-calculator)
 - Live Site URL: [Add live site URL here](https://melodic-bublanina-b5bb80.netlify.app/)
 
 ## My process

@@ -1,6 +1,6 @@
 # Meet landing page
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
 ## Overview
@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/meet-landing-page-main)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/meet-landing-page-main)
 - Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/meet-landing-page-main/)
 
 ## My process

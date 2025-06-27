@@ -20,7 +20,7 @@ This is my first challenge on [Frontend Mentor](https://www.frontendmentor.io/ho
 
 ### Links
 
-- URL Soluzione: [Soluzione](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/qr-code-component-main-main)
+- URL Soluzione: [Soluzione](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/qr-code-component-main-main)
 - URL Sito: [Sito](https://smailen5.github.io/Frontend-Mentor-Challenge/qr-code-component-main-main/)
 
 ### Built with
@@ -34,4 +34,3 @@ This is my first challenge on [Frontend Mentor](https://www.frontendmentor.io/ho
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-

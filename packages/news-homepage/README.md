@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/news-homepage)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/news-homepage)
 - Live Site URL: [Live site](https://news-homepage-beta-eight.vercel.app/)
 
 ## My process

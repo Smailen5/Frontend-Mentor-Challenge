@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/article-preview-component-master-main)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/article-preview-component-master-main)
 - Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/article-preview-component-master-main/)
 
 ## My process

@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/product-preview-card-component-main-main)
+- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/product-preview-card-component-main-main)
 - Live Site URL: [Add live site URL here](https://smailen5.github.io/Frontend-Mentor-Challenge/product-preview-card-component-main-main/)
 
 ## My process

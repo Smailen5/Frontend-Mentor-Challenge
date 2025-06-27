@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/skilled-elearning-landing-page)
+- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/skilled-elearning-landing-page)
 - Live Site URL: [Live site URL here](https://soft-shortbread-7ebd18.netlify.app/)
 
 ## My process

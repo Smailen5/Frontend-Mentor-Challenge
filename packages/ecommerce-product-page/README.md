@@ -47,7 +47,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/ecommerce-product-page)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/ecommerce-product-page)
 - Live Site URL: [Live site](https://funny-swan-69bb4e.netlify.app/)
 
 ## My process

@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/four-card-feature-section-master-main)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/four-card-feature-section-master-main)
 - Live Site URL: [Site](https://smailen5.github.io/Frontend-Mentor-Challenge/four-card-feature-section-master-main/)
 
 ## My process

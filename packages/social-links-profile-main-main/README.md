@@ -1,6 +1,6 @@
 # Social links profile
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
 ## Overview
@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/social-links-profile-main-main)
+- Solution URL: [solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/social-links-profile-main-main)
 - Live Site URL: [live site](https://smailen5.github.io/Frontend-Mentor-Challenge/social-links-profile-main-main/)
 
 ## My process

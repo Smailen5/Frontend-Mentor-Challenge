@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/password-generator-app)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/password-generator-app)
 - Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/password-generator-app/)
 
 ## My process

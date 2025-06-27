@@ -1,6 +1,6 @@
 # Social proof section
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
 ## Overview
@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Soluzione URL: [Soluzione QUI](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/social-proof-section-master-main)
+- Soluzione URL: [Soluzione QUI](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/social-proof-section-master-main)
 - Sito Live URL: [Sito live QUI](https://smailen5.github.io/Frontend-Mentor-Challenge/social-proof-section-master-main/)
 
 ## My process
@@ -42,7 +42,7 @@ In questo esercizio ho usato per la prima volta:
 .container-review span:first-child
 ```
 
-## Continued development 
+## Continued development
 
 - Rendere responsive il layout non utilizzando più misure fisse
 - Aggiungere una media query per tablet

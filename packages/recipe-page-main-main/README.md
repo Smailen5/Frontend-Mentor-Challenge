@@ -1,6 +1,6 @@
 # Recipe page
 
-This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
 ## Overview
@@ -13,7 +13,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/recipe-page-main-main)
+- Solution URL: [solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/recipe-page-main-main)
 - Live Site URL: [live site](https://smailen5.github.io/Frontend-Mentor-Challenge/recipe-page-main-main/)
 
 ## My process

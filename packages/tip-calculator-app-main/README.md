@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/tip-calculator-app-main)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/tip-calculator-app-main)
 - Live Site URL: [Live site](https://smailen5.github.io/Frontend-Mentor-Challenge/tip-calculator-app-main/)
 
 ## My process

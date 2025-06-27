@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/component-with-signup-form)
+- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/component-with-signup-form)
 - Live Site URL: [Add live site URL here](https://component-with-sigup-form.netlify.app/)
 
 ## My process

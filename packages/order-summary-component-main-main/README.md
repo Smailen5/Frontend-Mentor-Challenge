@@ -1,6 +1,6 @@
 # Order summary card
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
 ## Overview
@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/order-summary-component-main-main)
+- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/order-summary-component-main-main)
 - Live Site URL: [live site](https://smailen5.github.io/Frontend-Mentor-Challenge/order-summary-component-main-main/)
 
 ## My process
@@ -57,4 +57,3 @@ Tutto il codice l'ho scritto da solo con l'ausilio di ChatGpt per il css. Usato 
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
-

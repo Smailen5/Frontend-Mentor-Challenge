@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/faq-accordion)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/faq-accordion)
 - Live Site URL: [Live site](https://velvety-pixie-ac034e.netlify.app/)
 
 ## My process

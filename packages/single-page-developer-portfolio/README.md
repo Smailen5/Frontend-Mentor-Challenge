@@ -11,7 +11,7 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/single-page-developer-portfolio)
+- Solution URL: [Add solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/single-page-developer-portfolio)
 - Live Site URL: [Add live site URL here](https://66acfedd0175d378b05368b4--fanciful-tulumba-14b591.netlify.app/)
 
 ## My process

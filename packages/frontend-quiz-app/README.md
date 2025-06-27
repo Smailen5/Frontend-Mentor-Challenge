@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/frontend-quiz-app)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/frontend-quiz-app)
 - Live Site URL: [Live site](https://bejewelled-creponne-01b996.netlify.app/)
 
 ## My process

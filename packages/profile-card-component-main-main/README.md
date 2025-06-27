@@ -1,13 +1,13 @@
 # Profile card component
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
 ## Overview
 
 ### The challenge
 
-- View the optimal layout depending on their device's screen size 
+- View the optimal layout depending on their device's screen size
 
 
 ### Screenshot
@@ -18,7 +18,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/profile-card-component-main-main)
+- Solution URL: [Solution URL here](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/profile-card-component-main-main)
 - Live Site URL: [Live site URL here](https://smailen5.github.io/Frontend-Mentor-Challenge/profile-card-component-main-main/)
 
 ## My process

@@ -13,7 +13,7 @@
 
 ### Links
 
-- Solution here: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/results-summary-component-main-main)
+- Solution here: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/results-summary-component-main-main)
 - Live Site URL: [Live site URL here](https://smailen5.github.io/Frontend-Mentor-Challenge/results-summary-component-main-main/)
 
 ### My process
@@ -49,4 +49,3 @@ Thanks to [@Bader-Idris](https://www.frontendmentor.io/profile/Bader-Idris) for 
   transform: translate(-50%, -50%);
 }
 to center the containers
-

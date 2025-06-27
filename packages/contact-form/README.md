@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/contact-form)
+- Solution URL: [Solution](https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/contact-form)
 - Live Site URL: [Live site](https://deft-taiyaki-8b9fbf.netlify.app/)
 
 ## My process

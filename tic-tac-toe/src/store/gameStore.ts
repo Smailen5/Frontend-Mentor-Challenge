@@ -57,6 +57,13 @@ export const useGameStore = create<GameState>((set) => ({
             winner: winner,
             phase: "result",
           };
+        } else if(newGrid.every(cell => cell !== null)) {
+          return {
+            grid: newGrid,
+            currentPlayer: state.currentPlayer,
+            winner: "tie",
+            phase: "result",
+          }
         }
 
         return {

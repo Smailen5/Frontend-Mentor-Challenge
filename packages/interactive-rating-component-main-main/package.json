@@ -1,0 +1,15 @@
+{
+  "name": "interactive-rating-component",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Componente di valutazione interattivo con feedback, realizzato con HTML, CSS e JavaScript per un'esperienza utente dinamica.",
+  "technologies": [
+    "html",
+    "css",
+    "javascript",
+    "responsive design",
+    "event handling"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-12T00:00:00.000Z"
+}

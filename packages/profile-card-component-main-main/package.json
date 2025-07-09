@@ -1,0 +1,15 @@
+{
+  "name": "profile-card-component",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Card profilo con design responsive, realizzata con HTML e CSS puro per una presentazione professionale e moderna.",
+  "technologies": [
+    "html",
+    "css",
+    "responsive design",
+    "flexbox",
+    "media queries"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-01T00:00:00.000Z"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "social-links-profile",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Profilo con link social interattivi, realizzato con HTML e Tailwind CSS per un design moderno e responsive.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "responsive design",
+    "flexbox",
+    "css grid"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-04T00:00:00.000Z",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./css/style.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "tip-calculator-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Calcolatrice di mance con calcoli in tempo reale, realizzata con HTML, Tailwind CSS e JavaScript per un'interfaccia interattiva.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "javascript",
+    "responsive design",
+    "form handling"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-19T00:00:00.000Z",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

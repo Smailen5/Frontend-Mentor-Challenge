@@ -1,0 +1,14 @@
+{
+  "name": "qr-code-component",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Componente QR code con descrizione, realizzato con HTML e CSS puro per un design minimalista e responsive.",
+  "technologies": [
+    "html",
+    "css",
+    "responsive design",
+    "flexbox"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-17T00:00:00.000Z"
+}

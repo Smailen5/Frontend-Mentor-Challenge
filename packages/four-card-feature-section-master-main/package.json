@@ -1,0 +1,22 @@
+{
+  "name": "four-card-feature-section",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sezione con quattro card di funzionalità, realizzata con HTML e Tailwind CSS per un layout responsive e colorato.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "responsive design",
+    "flexbox",
+    "css grid"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-13T00:00:00.000Z",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

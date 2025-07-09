@@ -1,0 +1,26 @@
+{
+  "name": "recipe-page",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pagina ricetta con layout responsive, realizzata con HTML e Tailwind CSS per una presentazione elegante dei contenuti culinari.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "responsive design",
+    "flexbox",
+    "css grid"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-06T00:00:00.000Z",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

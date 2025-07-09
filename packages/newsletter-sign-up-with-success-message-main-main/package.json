@@ -1,0 +1,24 @@
+{
+  "name": "newsletter-sign-up",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Form di iscrizione newsletter con messaggio di successo, realizzato con HTML, Tailwind CSS e JavaScript per una validazione in tempo reale.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "javascript",
+    "responsive design",
+    "form validation"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-10T00:00:00.000Z",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

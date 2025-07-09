@@ -1,0 +1,15 @@
+{
+  "name": "pod-request-access-landing-page",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Landing page con form di accesso e validazione email, realizzata con HTML, CSS e JavaScript per un'esperienza utente interattiva.",
+  "technologies": [
+    "html",
+    "css",
+    "javascript",
+    "responsive design",
+    "form validation"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-07T00:00:00.000Z"
+}

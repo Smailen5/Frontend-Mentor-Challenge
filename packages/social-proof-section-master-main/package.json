@@ -1,0 +1,15 @@
+{
+  "name": "social-proof-section",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sezione di social proof con recensioni e valutazioni, realizzata con HTML e CSS puro per un layout responsive e interattivo.",
+  "technologies": [
+    "html",
+    "css",
+    "responsive design",
+    "flexbox",
+    "css grid"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-03T00:00:00.000Z"
+}

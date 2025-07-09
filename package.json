@@ -1,0 +1,32 @@
+{
+  "name": "frontend-mentor-challenges",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Raccolta di progetti e sfide di Frontend Mentor per migliorare le competenze di sviluppo web. Include componenti UI, landing page e applicazioni interattive.",
+  "keywords": [
+    "frontend",
+    "challenges",
+    "web-development",
+    "html",
+    "css",
+    "javascript",
+    "react",
+    "responsive-design"
+  ],
+  "author": "Smailen Vargas",
+  "devDependencies": {
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "sharp": "^0.34.2",
+    "tsx": "^4.20.3"
+  },
+  "scripts": {
+    "build:all": "pnpm -r build",
+    "dev:all": "pnpm -r dev",
+    "generate:projects": "tsx scripts/generate-projects-json.ts",
+    "resize:images": "tsx scripts/resize-images.ts"
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
+}

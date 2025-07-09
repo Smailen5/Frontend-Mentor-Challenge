@@ -1,0 +1,21 @@
+{
+  "name": "time-tracking-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dashboard di tracciamento tempo con grafici interattivi, realizzata con HTML, Tailwind CSS e JavaScript per la gestione dei dati.",
+  "technologies": [
+    "html",
+    "tailwind css",
+    "javascript",
+    "responsive design"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-18T00:00:00.000Z",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

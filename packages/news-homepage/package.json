@@ -1,0 +1,42 @@
+{
+  "name": "news-homepage",
+  "private": true,
+  "version": "0.1.10",
+  "description": "Homepage di notizie responsive, realizzata con Next.js, TypeScript e Tailwind CSS per un'esperienza utente ottimizzata.",
+  "technologies": [
+    "next.js",
+    "typescript",
+    "tailwind css",
+    "react",
+    "responsive design"
+  ],
+  "author": "Smailen Vargas",
+  "createdAt": "2024-01-28T00:00:00.000Z",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "release": "standard-version --packageFiles package.json --bumpFiles package.json --infile CHANGELOG.md --tag-prefix 'news-homepage@'"
+  },
+  "dependencies": {
+    "next": "15.0.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "standard-version": "^9.5.0",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8.5.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
+}

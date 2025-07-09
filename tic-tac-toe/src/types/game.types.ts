@@ -17,7 +17,7 @@ export interface GameState {
   };
   selectedPlayer: Player;
   currentPlayer: Player;
-  winner: Player | null;
+  winner: Player | "tie" | null;
   grid: (Player | null)[]; // array di 9 celle
   setPhase: (phase: GamePhase) => void;
   setGameMode: (gameMode: GameMode) => void;

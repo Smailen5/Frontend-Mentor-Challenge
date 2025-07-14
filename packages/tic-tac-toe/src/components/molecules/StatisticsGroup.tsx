@@ -2,7 +2,7 @@ import { useGameStats } from "../../hooks/useGameStats";
 import { BoxStatistics } from "../atoms";
 
 const StatisticsGroup = () => {
-  const { getXLabel, getOLabel, XWins, OWins } = useGameStats();
+  const { getXLabel, getOLabel, XWins, OWins, ties } = useGameStats();
 
   return (
     <>
@@ -12,7 +12,7 @@ const StatisticsGroup = () => {
       </BoxStatistics>
       <BoxStatistics className="bg-silver">
         <span>ties</span>
-        <span>32</span>
+        <span>{ties}</span>
       </BoxStatistics>
       <BoxStatistics className="bg-light-yellow">
         <span>{getOLabel()}</span>

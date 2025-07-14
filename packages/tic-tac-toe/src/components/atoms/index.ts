@@ -5,3 +5,4 @@ export { default as PlayerMarkButton } from "./PlayerMarkButton.tsx";
 export { default as GameButton } from "./GameButton.tsx";
 export { default as BoxStatistics } from "./BoxStatistics.tsx";
 export { default as Modal } from "./Modal.tsx";
+export { default as StatisticLabel } from "./StatisticLabel.tsx";

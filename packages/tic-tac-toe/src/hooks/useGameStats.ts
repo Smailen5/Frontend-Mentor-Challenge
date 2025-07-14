@@ -23,5 +23,7 @@ export const useGameStats = () => {
   const OWins =
     gameMode === "multiplayer" ? stats.multiplayer.oWins : stats.cpu.oWins;
 
-  return { getXLabel, getOLabel, XWins, OWins };
+  const ties = gameMode === "multiplayer" ? stats.multiplayer.ties : stats.cpu.ties;
+
+  return { getXLabel, getOLabel, XWins, OWins, ties };
 };

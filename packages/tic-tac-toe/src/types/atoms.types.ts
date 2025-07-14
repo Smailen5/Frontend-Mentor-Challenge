@@ -26,3 +26,8 @@ export interface PlayerMarkButtonProps {
 }
 
 export type ModalProps = BaseProps;
+
+export interface StatisticLabelProps {
+  label: string;
+  value: number;
+}

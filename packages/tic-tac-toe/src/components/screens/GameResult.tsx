@@ -5,12 +5,12 @@ import WinnerMessage from "../molecules/WinnerMessage";
 import GameBoard from "./GameBoard";
 
 const GameResult = () => {
-  const { winner } = useGameStore();
+  const { winner, gameMode } = useGameStore();
   return (
     <div className="relative">
       <GameBoard />
       <Modal>
-        <WinnerMessage winner={winner} />
+        <WinnerMessage winner={winner} gameMode={gameMode} />
 
         <PlayAgainButtons />
       </Modal>

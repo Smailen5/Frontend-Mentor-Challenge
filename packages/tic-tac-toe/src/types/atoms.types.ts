@@ -1,4 +1,4 @@
-import { Player } from "./game.types";
+import { Player } from './game.types';
 
 interface BaseProps {
   children: React.ReactNode;
@@ -9,20 +9,20 @@ export interface BoxStatisticsProps extends BaseProps {
   className: string;
 }
 
-export interface CardProps extends BaseProps {}
+export type CardProps = BaseProps;
 
 export interface GameButtonProps {
   position: number;
   value: Player | null;
 }
 
-export interface LayoutProps extends BaseProps {}
+export type LayoutProps = BaseProps;
 
 export interface PlayerMarkButtonProps {
   children: React.ReactNode;
-  buttonPlayer: "player-x" | "player-o";
-  playerSelection: "player-x" | "player-o";
-  handlePlayerSelection: (playerSelection: "player-x" | "player-o") => void;
+  buttonPlayer: 'player-x' | 'player-o';
+  playerSelection: 'player-x' | 'player-o';
+  handlePlayerSelection: (playerSelection: 'player-x' | 'player-o') => void;
 }
 
-export interface ModalProps extends BaseProps {}
+export type ModalProps = BaseProps;

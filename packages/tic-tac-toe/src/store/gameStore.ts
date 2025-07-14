@@ -1,22 +1,24 @@
-import { create } from "zustand";
-import { GameState } from "../types/game.types";
-import { checkWinner } from "../utils/checkWinner";
+import { create } from 'zustand';
+import { GameState } from '../types/game.types';
+import { checkWinner } from '../utils/checkWinner';
 
 export const useGameStore = create<GameState>((set) => ({
-  phase: "player-selection",
-  gameMode: "multiplayer",
+  phase: 'player-selection',
+  gameMode: 'multiplayer',
   stats: {
     multiplayer: {
       xWins: 0,
       oWins: 0,
+      ties: 0,
     },
     cpu: {
       xWins: 0,
       oWins: 0,
+      ties: 0,
     },
   },
-  selectedPlayer: "player-x",
-  currentPlayer: "player-x",
+  selectedPlayer: 'player-x',
+  currentPlayer: 'player-x',
   winner: null,
   grid: Array(9).fill(null),
   setPhase: (phase) => set({ phase }),
@@ -35,16 +37,16 @@ export const useGameStore = create<GameState>((set) => ({
 
         const winner = checkWinner(newGrid);
 
+        const newStats = { ...state.stats };
         if (winner) {
-          const newStats = { ...state.stats };
-          if (state.gameMode === "multiplayer") {
-            if (winner === "player-x") {
+          if (state.gameMode === 'multiplayer') {
+            if (winner === 'player-x') {
               newStats.multiplayer.xWins += 1;
             } else {
               newStats.multiplayer.oWins += 1;
             }
           } else {
-            if (winner === "player-x") {
+            if (winner === 'player-x') {
               newStats.cpu.xWins += 1;
             } else {
               newStats.cpu.oWins += 1;
@@ -52,24 +54,31 @@ export const useGameStore = create<GameState>((set) => ({
           }
           return {
             grid: newGrid,
-            currentPlayer: winner === "player-x" ? "player-o" : "player-x",
+            currentPlayer: winner === 'player-x' ? 'player-o' : 'player-x',
             stats: newStats,
             winner: winner,
-            phase: "result",
+            phase: 'result',
           };
-        } else if(newGrid.every(cell => cell !== null)) {
+        } else if (newGrid.every((cell) => cell !== null)) {
+          // caso di pareggio
+          if (state.gameMode === "multiplayer") {
+            newStats.multiplayer.ties += 1;
+          } else {
+            newStats.cpu.ties += 1;
+          }
           return {
             grid: newGrid,
             currentPlayer: state.currentPlayer,
-            winner: "tie",
-            phase: "result",
-          }
+            winner: 'tie',
+            stats: newStats,
+            phase: 'result',
+          };
         }
 
         return {
           grid: newGrid, // aggiorna l'array grid con la nuova mossa
           currentPlayer:
-            state.currentPlayer === "player-x" ? "player-o" : "player-x", // cambia il turno
+            state.currentPlayer === 'player-x' ? 'player-o' : 'player-x', // cambia il turno
           winner: winner,
           phase: state.phase,
         };
@@ -78,18 +87,21 @@ export const useGameStore = create<GameState>((set) => ({
     }),
   resetGame: () =>
     set((state) => ({
-      phase: "player-selection",
-      selectedPlayer: "player-x",
-      currentPlayer: "player-x",
+      phase: 'player-selection',
+      selectedPlayer: 'player-x',
+      currentPlayer: 'player-x',
       grid: Array(9).fill(null),
       stats:
-        state.gameMode === "multiplayer"
-          ? { multiplayer: { xWins: 0, oWins: 0 }, cpu: state.stats.cpu }
+        state.gameMode === 'multiplayer'
+          ? {
+              multiplayer: { xWins: 0, oWins: 0, ties: 0 },
+              cpu: state.stats.cpu,
+            }
           : state.stats,
     })),
   nextRound: () =>
     set((state) => ({
-      phase: "game",
+      phase: 'game',
       grid: Array(9).fill(null),
       currentPlayer: state.currentPlayer,
       winner: null,

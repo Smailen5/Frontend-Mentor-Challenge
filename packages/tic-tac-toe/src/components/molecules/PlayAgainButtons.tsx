@@ -2,7 +2,7 @@ import { useGameStore } from '../../store/gameStore';
 import { Button } from '../atoms';
 
 const PlayAgainButtons = () => {
-  const { resetGame, nextRound, winner } = useGameStore();
+  const { resetGame, nextRound, winner, gameMode } = useGameStore();
 
   const handleQuit = () => {
     resetGame();
@@ -20,7 +20,7 @@ const PlayAgainButtons = () => {
           shadowSize={'small'}
           onClick={handleQuit}
         >
-          {winner !== 'tie' ? 'quit' : 'no, cancel'}
+          {gameMode === "cpu" && winner === "tie" ? "no, cancel" : 'quit'}
         </Button>
         <Button
           variant={'secondary'}
@@ -28,7 +28,7 @@ const PlayAgainButtons = () => {
           shadowSize={'small'}
           onClick={handleNextRound}
         >
-          {winner !== 'tie' ? 'next round' : 'yes, restart'}
+          {gameMode === "cpu" && winner === "tie" ? "yes, restart" : "next round"}
         </Button>
       </div>
     </div>

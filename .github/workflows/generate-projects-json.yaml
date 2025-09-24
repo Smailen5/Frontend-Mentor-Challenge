@@ -52,3 +52,19 @@ jobs:
           git add public/projects.json
           git diff --cached --quiet || git commit -m "📦 Aggiorna projects.json e ridimensiona immagini"
           git push
+          
+          - name: Trigger CDN Sync
+          if: success()
+          uses: peter-evans/repository-dispatch@v2
+          with:
+            token: ${{ secrets.CDN_REPO_TOKEN }}
+            repository: Smailen5/portfolio-cdn
+            event-type: sync-cdn
+            client-payload: |
+              {
+                "monorepo": "${{ github.repository }}",
+                "commit": "${{ github.sha }}",
+                "branch": "${{ github.ref_name }}",
+                "author": "${{ github.actor }}",
+                "triggered_by": "generate-projects-json"
+              }

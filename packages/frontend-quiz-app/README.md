@@ -22,10 +22,10 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](./screenshot/smartphone.jpeg)
-![smartphone](./screenshot/smartphone%20quiz.jpeg)
-![desktop](./screenshot/desktop%20dark.jpeg)
-![desktop](./screenshot/desktop%20ligth.jpeg)
+![smartphone](./screenshots/smartphone.jpeg)
+![smartphone](./screenshots/smartphone-quiz.jpeg)
+![desktop](./screenshots/desktop-dark.jpeg)
+![desktop](./screenshots/desktop-ligth.jpeg)
 
 ### Links
 

@@ -1,7 +1,7 @@
 {
   "name": "social-proof-section",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sezione di social proof con recensioni e valutazioni, realizzata con HTML e CSS puro per un layout responsive e interattivo.",
   "technologies": [
     "html",

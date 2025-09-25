@@ -1,7 +1,7 @@
 {
   "name": "time-tracking-dashboard",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dashboard di tracciamento tempo con grafici interattivi, realizzata con HTML, Tailwind CSS e JavaScript per la gestione dei dati.",
   "technologies": [
     "html",

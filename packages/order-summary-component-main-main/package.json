@@ -1,7 +1,7 @@
 {
   "name": "order-summary-component",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Componente di riepilogo ordine con piano annuale, realizzato con HTML e CSS puro per un'interfaccia utente pulita e responsive.",
   "technologies": [
     "html",

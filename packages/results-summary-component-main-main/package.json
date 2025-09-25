@@ -1,7 +1,7 @@
 {
   "name": "results-summary-component",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Componente di riepilogo risultati con grafici e statistiche, realizzato con HTML e CSS puro per una visualizzazione chiara dei dati.",
   "technologies": [
     "html",

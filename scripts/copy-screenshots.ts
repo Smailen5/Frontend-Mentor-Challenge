@@ -20,8 +20,8 @@ const copyProjectScreenshots = async () => {
         const packageFolder = path.dirname(packagePath);
         const packageJson: PackageJson = await fs.readJSON(packagePath);
 
-        // Percorso della cartella screenshot
-        const screenshotDir = path.join(packageFolder, 'screenshot');
+        // Percorso della cartella screenshots
+        const screenshotDir = path.join(packageFolder, 'screenshots');
 
         // Verifica se esiste la cartella screenshot
         if (!(await fs.pathExists(screenshotDir))) {

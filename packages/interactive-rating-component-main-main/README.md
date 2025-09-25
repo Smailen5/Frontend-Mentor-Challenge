@@ -16,9 +16,9 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](./screenshot/smartphone.jpeg)
-![desktop](./screenshot/desktop.jpeg)
-![desktop](./screenshot/desktop%20message.jpeg)
+![smartphone](./screenshots/smartphone.jpeg)
+![desktop](./screenshots/desktop.jpeg)
+![desktop](./screenshots/desktop-message.jpeg)
 
 ### Links
 

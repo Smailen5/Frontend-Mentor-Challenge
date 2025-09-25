@@ -1,7 +1,7 @@
 {
   "name": "contact-form",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Form di contatto con validazione, realizzato con React, TypeScript e Formik per una gestione efficiente dei dati.",
   "technologies": [
     "react",

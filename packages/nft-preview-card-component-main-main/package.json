@@ -1,7 +1,7 @@
 {
   "name": "nft-preview-card-component",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Card di anteprima NFT con effetti hover, realizzata con HTML, CSS e JavaScript per un'interfaccia interattiva e moderna.",
   "technologies": [
     "html",

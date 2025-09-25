@@ -44,6 +44,9 @@ jobs:
       - name: ⚡ Ridimensiona immagini
         run: pnpm resize:images
 
+      - name: 📷 Copia screenshot
+        run: pnpm copy:screenshots
+
       - name: 💾 Commit e push
         run: |
           git config user.name "github-actions[bot]"

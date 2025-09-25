@@ -64,7 +64,7 @@ jobs:
           event-type: monorepo-updated
           client-payload: |
             {
-              "monorepo": "${{ github.repository }}",
+              "monorepo": "${{ github.event.repository.name }}",
               "commit": "${{ github.sha }}",
               "branch": "${{ github.ref_name }}",
               "author": "${{ github.actor }}",

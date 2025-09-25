@@ -1,7 +1,7 @@
 {
   "name": "interactive-rating-component",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Componente di valutazione interattivo con feedback, realizzato con HTML, CSS e JavaScript per un'esperienza utente dinamica.",
   "technologies": [
     "html",

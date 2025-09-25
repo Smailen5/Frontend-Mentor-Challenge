@@ -20,28 +20,28 @@ Users should be able to:
 <details>
 <summary> 📱 View Smartphone</summary>
 
-![smartphone](./screenshot/smartphone.jpeg)
+![smartphone](./screenshots/smartphone.jpeg)
 
 </details>
 
 <details>
 <summary> 💻 View Desktop</summary>
 
-![desktop](./screenshot/desktop.jpeg)
+![desktop](./screenshots/desktop.jpeg)
 
 </details>
 
 <details>
 <summary>🚀 View Desktop Hover</summary>
 
-![desktop](./screenshot/desktop-hover.jpeg)
+![desktop](./screenshots/desktop-hover.jpeg)
 
 </details>
 
 <details>
 <summary>🚀 View Lighthouse Performance</summary>
 
-![lighthouse](./screenshot/lighthouse-result-dist.PNG)
+![lighthouse](./screenshots/lighthouse-result-dist.PNG)
 
 </details>
 

@@ -41,7 +41,7 @@ Ho utilizzato per la prima volta la regola !important, in quanto il selettore us
 
 ### Continued development
 
-In futuro vorrei aggiungere degli effiti di slide con JavaScript e magari animare le icone svg
+In futuro vorrei aggiungere degli effetti di slide con JavaScript e magari animare le icone svg
 
 ## Author
 

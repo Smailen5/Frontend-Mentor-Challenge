@@ -14,8 +14,8 @@ Gli utenti dovrebbero essere in grado di:
 
 ### Screenshot
 
-![smartphone](./screenshot/smartphone.jpeg)
-![desktop](./screenshot/desktop.jpeg)
+![smartphone](./screenshots/smartphone.jpeg)
+![desktop](./screenshots/desktop.jpeg)
 
 
 ### Links

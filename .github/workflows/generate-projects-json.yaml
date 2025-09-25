@@ -7,7 +7,6 @@ on:
       - main
     paths:
       - 'packages/*/package.json'
-      - 'scripts/generate-projects-json.ts'
 
 permissions:
   contents: write

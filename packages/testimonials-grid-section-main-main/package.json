@@ -1,7 +1,7 @@
 {
   "name": "testimonials-grid-section",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sezione di testimonianze con layout a griglia responsive, realizzata con HTML e Tailwind CSS per una presentazione elegante dei feedback.",
   "technologies": [
     "html",

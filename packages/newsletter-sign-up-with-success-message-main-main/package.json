@@ -1,7 +1,7 @@
 {
   "name": "newsletter-sign-up",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Form di iscrizione newsletter con messaggio di successo, realizzato con HTML, Tailwind CSS e JavaScript per una validazione in tempo reale.",
   "technologies": [
     "html",

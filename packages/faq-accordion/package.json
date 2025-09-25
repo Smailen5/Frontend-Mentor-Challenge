@@ -1,7 +1,7 @@
 {
   "name": "faq-accordion",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Componente FAQ con accordion interattivo, realizzato con React, TypeScript e Radix UI per un'esperienza utente accessibile.",
   "technologies": [
     "react",

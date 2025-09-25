@@ -18,10 +18,10 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](./screenshot/smartphone.jpeg)
-![smartphone](./screenshot/smartphone%20error.jpeg)
-![desktop](./screenshot/desktop.jpeg)
-![desktop](./screenshot/desktop%20error.jpeg)
+![smartphone](./screenshots/smartphone.jpeg)
+![smartphone](./screenshots/smartphone-error.jpeg)
+![desktop](./screenshots/desktop.jpeg)
+![desktop](./screenshots/desktop-error.jpeg)
 
 ### Links
 

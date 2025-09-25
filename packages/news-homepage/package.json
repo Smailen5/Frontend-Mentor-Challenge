@@ -1,7 +1,7 @@
 {
   "name": "news-homepage",
   "private": true,
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Homepage di notizie responsive, realizzata con Next.js, TypeScript e Tailwind CSS per un'esperienza utente ottimizzata.",
   "technologies": [
     "next.js",

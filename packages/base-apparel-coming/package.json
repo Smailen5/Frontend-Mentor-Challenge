@@ -1,7 +1,7 @@
 {
   "name": "base-apparel-coming",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Landing page per Base Apparel con form di iscrizione, realizzata con React, Vite e Tailwind CSS per un'esperienza utente ottimale.",
   "technologies": [
     "react",

@@ -1,7 +1,7 @@
 {
   "name": "four-card-feature-section",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sezione con quattro card di funzionalità, realizzata con HTML e Tailwind CSS per un layout responsive e colorato.",
   "technologies": [
     "html",

@@ -31,7 +31,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-Progetto impegnativo, per centrare il nome e tutto il contenuto ho preferito usare flex-box e l'imitare l'uso di margine. Ho completato il componente guradando il progetto su figma per la prima volta.
+Progetto impegnativo, per centrare il nome e tutto il contenuto ho preferito usare flex-box e l'imitare l'uso di margine. Ho completato il componente guardando il progetto su figma per la prima volta.
 
 Prima volta che setto l'attributo alt
 

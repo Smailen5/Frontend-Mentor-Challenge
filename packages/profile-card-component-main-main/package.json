@@ -1,7 +1,7 @@
 {
   "name": "profile-card-component",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Card profilo con design responsive, realizzata con HTML e CSS puro per una presentazione professionale e moderna.",
   "technologies": [
     "html",

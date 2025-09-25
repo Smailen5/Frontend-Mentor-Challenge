@@ -1,7 +1,7 @@
 {
   "name": "single-page-developer-portfolio",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Portfolio sviluppatore con form di contatto, realizzato con React, Vite e Tailwind CSS per una presentazione professionale.",
   "technologies": [
     "react",

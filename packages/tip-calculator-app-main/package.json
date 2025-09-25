@@ -1,7 +1,7 @@
 {
   "name": "tip-calculator-app",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calcolatrice di mance con calcoli in tempo reale, realizzata con HTML, Tailwind CSS e JavaScript per un'interfaccia interattiva.",
   "technologies": [
     "html",

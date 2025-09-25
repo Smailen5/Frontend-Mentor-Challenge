@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](./screenshot/news-homepage-smartphone.jpeg)
-![desktop](./screenshot/news-homepage-desktop.jpeg)
+![smartphone](./screenshots/smartphone.jpeg)
+![desktop](./screenshots/desktop.jpeg)
 
 
 ### Links

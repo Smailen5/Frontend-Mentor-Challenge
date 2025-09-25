@@ -1,7 +1,7 @@
 {
   "name": "social-links-profile",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Profilo con link social interattivi, realizzato con HTML e Tailwind CSS per un design moderno e responsive.",
   "technologies": [
     "html",

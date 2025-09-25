@@ -1,7 +1,7 @@
 {
   "name": "password-generator-app",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generatore di password con opzioni personalizzabili, realizzato con HTML, Tailwind CSS e JavaScript per una generazione sicura.",
   "technologies": [
     "html",

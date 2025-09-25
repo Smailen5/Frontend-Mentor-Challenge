@@ -1,7 +1,7 @@
 {
   "name": "meet-landing-page",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Landing page per Meet con sezioni interattive, realizzata con HTML e Tailwind CSS per un design moderno e responsive.",
   "technologies": [
     "html",

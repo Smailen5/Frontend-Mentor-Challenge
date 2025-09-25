@@ -1,7 +1,7 @@
 {
   "name": "qr-code-component",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Componente QR code con descrizione, realizzato con HTML e CSS puro per un design minimalista e responsive.",
   "technologies": [
     "html",

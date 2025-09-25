@@ -19,10 +19,10 @@ Users should be able to:
 
 ### Screenshot
 
-![smartphone](./screenshot/smartphone.jpeg)
-![desktop](./screenshot/desktop.jpeg)
-![desktop](./screenshot/desktop%20error.jpeg)
-![ligthouse score](./screenshot/litgthouse-result.PNG)
+![smartphone](./screenshots/smartphone.jpeg)
+![desktop](./screenshots/desktop.jpeg)
+![desktop](./screenshots/desktop-error.jpeg)
+![ligthouse score](./screenshots/litgthouse-result.PNG)
 
 ### Links
 

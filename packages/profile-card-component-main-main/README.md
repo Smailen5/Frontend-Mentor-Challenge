@@ -12,8 +12,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![smartphone](./screenshot/smartphone.jpeg)
-![desktop](./screenshot/desktop.jpeg)
+![smartphone](./screenshots/smartphone.jpeg)
+![desktop](./screenshots/desktop.jpeg)
 
 
 ### Links

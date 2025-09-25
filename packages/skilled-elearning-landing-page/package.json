@@ -1,7 +1,7 @@
 {
   "name": "skilled-elearning-landing-page",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Landing page per piattaforma e-learning, realizzata con React, TypeScript e Tailwind CSS per un'interfaccia moderna e performante.",
   "technologies": [
     "react",

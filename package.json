@@ -28,6 +28,7 @@
     "dev:all": "pnpm -r dev",
     "generate:projects": "tsx scripts/generate-projects-json.ts",
     "resize:images": "tsx scripts/resize-images.ts",
+    "copy:screenshots": "tsx scripts/copy-screenshots.ts",
     "prerelease": "npx changeset add",
     "release": "pnpm changeset version"
   },

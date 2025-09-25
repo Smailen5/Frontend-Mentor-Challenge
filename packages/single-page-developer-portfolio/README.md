@@ -4,9 +4,9 @@
 
 ### Screenshot
 
-![smartphone](./screenshot/smartphone.jpeg)
+![smartphone](./screenshots/smartphone.jpeg)
 <!-- converti questa immagine in jpeg -->
-<!-- ![desktop](./screenshot/single-page-developer-portfolio.webp) -->
+<!-- ![desktop](./screenshots/desktop.webp) -->
 
 
 ### Links

@@ -1,7 +1,7 @@
 {
   "name": "blog-preview-card",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Card di anteprima blog con immagine e contenuti, realizzata con HTML e CSS puro per un design pulito e responsive.",
   "technologies": [
     "html",

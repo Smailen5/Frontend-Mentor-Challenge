@@ -24,6 +24,10 @@ Questi sono gli screenshot dei progetti da mostrare nel file `README.md` di ogni
 - Dove salvarli: `/nome-progetto/screenshots/`
 - Come nominarli: `smartphone.jpeg`
 
+### ALtri screenshot
+
+In caso di screenshot aggiuntivi, salvarli sempre nella cartella `/nome-progetto/screenshots/` specificando il tipo di screenshot separando la modalita dello schermo da un trattino es. `desktop-hover.jpeg` o `smartphone-dark.jpeg`.
+
 ## 📝 Aggiornamento README progetto
 
 Segui le linee guida di Frontend Mentor per aggiornare il file `README.md` del progetto, utilizza il file `README-template.md`

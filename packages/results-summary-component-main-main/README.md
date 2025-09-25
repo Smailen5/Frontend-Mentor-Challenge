@@ -7,9 +7,9 @@
 
 ### Screenshot
 
-![capture smartphone version](./screenshot/result-summary-mobile-version.jpeg)
-![capture desktop version](./screenshot/result-summary-web-version.jpeg)
-![capture desktop version button active](./screenshot/result-summary-web-version-active-button.jpeg)
+![capture smartphone](./screenshots/smartphone.jpeg)
+![capture desktop](./screenshots/desktop.jpeg)
+![capture desktop button active](./screenshots/desktop-active.jpeg)
 
 ### Links
 

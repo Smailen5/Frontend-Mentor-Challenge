@@ -1,7 +1,7 @@
 {
   "name": "pod-request-access-landing-page",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Landing page con form di accesso e validazione email, realizzata con HTML, CSS e JavaScript per un'esperienza utente interattiva.",
   "technologies": [
     "html",

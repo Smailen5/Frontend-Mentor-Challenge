@@ -1,7 +1,7 @@
 {
   "name": "product-preview-card",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Card prodotto con design responsive, realizzata con HTML e CSS puro per una presentazione elegante e accessibile.",
   "technologies": [
     "html",
